@@ -6,3 +6,5 @@ __pycache__/
 build/
 dist/
 books/
+data/retrieval/cache/
+temp/

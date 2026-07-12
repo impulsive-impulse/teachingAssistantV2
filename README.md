@@ -5,8 +5,8 @@ textbook-grounded QA/RAG research project. It extracts every PDF page, preserves
 PDF and printed-page identity, assigns index-grounded chapters, and produces a
 human-readable suitability audit.
 
-The project deliberately does **not** implement embeddings, vector search, an
-LLM call, or an application frontend.
+The repository also includes a page-level retrieval baseline. It does not call
+an LLM or implement answer generation, query rewriting, reranking, or chunking.
 
 ## Source books
 
@@ -32,6 +32,7 @@ src/textbook_audit/
   cli.py                       Command-line interface
   pipeline.py                  Extraction, mapping, cleaning, and reporting
 tests/test_pipeline.py         Mapping and artifact integrity checks
+tests/test_retrieval.py        Loading, ranking, matching, and metric regressions
 pyproject.toml                 Package metadata and dependencies
 ```
 
@@ -156,6 +157,47 @@ for later retrieval work are:
 
 See `reports/book_extraction_audit.md` for chapter-level confidence, sampled
 pages, representative formula issues, image/table counts, and the full verdict.
+
+## Page-Level Retrieval Baseline v1
+
+The canonical reviewed benchmark is
+`data/benchmarks/retrieval_benchmark_v1.jsonl`. The runner deliberately fails
+if that file is absent and never substitutes the `_candidates` artifact.
+
+Install retrieval dependencies and run from the repository root:
+
+```powershell
+python -m pip install -e .
+python scripts/run_page_retrieval.py
+```
+
+Equivalent installed entry point:
+
+```powershell
+page-retrieval --root X:\teachingAssistantV2 --top-k 5
+```
+
+Useful options are `--benchmark`, `--results`, `--metrics`, `--report`,
+`--cache-dir`, `--top-k`, and `--device`. `--top-k` must be at least 5 because
+the required evaluation includes Hit@5. Page embeddings are cached under
+`data/retrieval/cache/` and invalidated when cleaned page text changes.
+
+The methods are Okapi BM25 (`k1=1.5`, `b=0.75`), normalized cosine retrieval
+with `BAAI/bge-small-en-v1.5`, and reciprocal rank fusion (`k=60`) of their full
+rankings. Retrieval is book-scoped and indexes `cleaned_text` only; pages with
+no printed textbook-page mapping are excluded as front matter.
+
+Outputs:
+
+- `data/retrieval/page_level_results.jsonl`
+- `reports/page_level_retrieval_metrics.json`
+- `reports/page_level_retrieval_baseline.md`
+
+Run all regression tests with:
+
+```powershell
+python -m unittest discover -s tests -v
+```
 
 ## Recommended next research step
 

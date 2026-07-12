@@ -1,0 +1,582 @@
+{
+  "run_metadata": {
+    "benchmark": "X:\\teachingAssistantV2\\data\\benchmarks\\retrieval_benchmark_v1.jsonl",
+    "top_k": 5,
+    "search_unit": "page",
+    "search_field": "cleaned_text",
+    "front_matter_excluded": true,
+    "book_scoped": true,
+    "answerable_questions": 36,
+    "negative_questions": 4,
+    "dense": {
+      "model_name": "BAAI/bge-small-en-v1.5",
+      "model_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+      "sentence_transformers_version": "5.6.0",
+      "transformers_version": "5.13.1",
+      "torch_version": "2.13.0+cpu",
+      "embedding_dimensions": 384,
+      "runtime_device": "cpu",
+      "normalized": true,
+      "similarity": "cosine (dot product of L2-normalized vectors)",
+      "query_prefix": "Represent this sentence for searching relevant passages: ",
+      "corpus_fingerprints_sha256": {
+        "biology": "66d9859f0267ee0c6ac6c7f53b843af453529750da8c02f2263e8881738d7054",
+        "physical_sciences": "8823bc36653e5ac9b94a42255a7ec10964b5a0363b3cb65f3928026cfd567625"
+      },
+      "python": "3.12.13"
+    },
+    "bm25": {
+      "variant": "Okapi BM25",
+      "k1": 1.5,
+      "b": 0.75
+    },
+    "hybrid": {
+      "method": "reciprocal_rank_fusion",
+      "rrf_k": 60
+    }
+  },
+  "overall_by_retriever": {
+    "bm25": {
+      "questions": 40,
+      "answerable_questions": 36,
+      "hit_at_1": 0.3888888888888889,
+      "hit_at_3": 0.6388888888888888,
+      "hit_at_5": 0.7777777777777778,
+      "mrr": 0.5360411125872342,
+      "average_latency_ms": 3.9341550014796667,
+      "p95_latency_ms": 7.100335005816303
+    },
+    "dense_bge_small": {
+      "questions": 40,
+      "answerable_questions": 36,
+      "hit_at_1": 0.4444444444444444,
+      "hit_at_3": 0.7222222222222222,
+      "hit_at_5": 0.8055555555555556,
+      "mrr": 0.6088799427329176,
+      "average_latency_ms": 43.37690000029397,
+      "p95_latency_ms": 57.61757500295052
+    },
+    "hybrid_rrf": {
+      "questions": 40,
+      "answerable_questions": 36,
+      "hit_at_1": 0.5,
+      "hit_at_3": 0.7222222222222222,
+      "hit_at_5": 0.8055555555555556,
+      "mrr": 0.6341004288920956,
+      "average_latency_ms": 47.83691000120598,
+      "p95_latency_ms": 62.88704501421298
+    }
+  },
+  "by_book_and_retriever": {
+    "biology": {
+      "bm25": {
+        "questions": 20,
+        "answerable_questions": 18,
+        "hit_at_1": 0.4444444444444444,
+        "hit_at_3": 0.7777777777777778,
+        "hit_at_5": 0.8888888888888888,
+        "mrr": 0.6200958370769691,
+        "average_latency_ms": 3.177640000649262,
+        "p95_latency_ms": 5.243629998585675
+      },
+      "dense_bge_small": {
+        "questions": 20,
+        "answerable_questions": 18,
+        "hit_at_1": 0.5,
+        "hit_at_3": 0.8333333333333334,
+        "hit_at_5": 0.8333333333333334,
+        "mrr": 0.6719715956558061,
+        "average_latency_ms": 47.30073500104481,
+        "p95_latency_ms": 90.87613500159932
+      },
+      "hybrid_rrf": {
+        "questions": 20,
+        "answerable_questions": 18,
+        "hit_at_1": 0.6666666666666666,
+        "hit_at_3": 0.7777777777777778,
+        "hit_at_5": 0.8888888888888888,
+        "mrr": 0.7506613756613757,
+        "average_latency_ms": 50.924645001941826,
+        "p95_latency_ms": 93.36272999789799
+      }
+    },
+    "physical_sciences": {
+      "bm25": {
+        "questions": 20,
+        "answerable_questions": 18,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.5,
+        "hit_at_5": 0.6666666666666666,
+        "mrr": 0.4519863880974992,
+        "average_latency_ms": 4.690670002310071,
+        "p95_latency_ms": 7.871845006593504
+      },
+      "dense_bge_small": {
+        "questions": 20,
+        "answerable_questions": 18,
+        "hit_at_1": 0.3888888888888889,
+        "hit_at_3": 0.6111111111111112,
+        "hit_at_5": 0.7777777777777778,
+        "mrr": 0.5457882898100289,
+        "average_latency_ms": 39.45306499954313,
+        "p95_latency_ms": 46.33346999689821
+      },
+      "hybrid_rrf": {
+        "questions": 20,
+        "answerable_questions": 18,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.7222222222222222,
+        "mrr": 0.5175394821228154,
+        "average_latency_ms": 44.74917500047013,
+        "p95_latency_ms": 55.4990099859424
+      }
+    }
+  },
+  "by_difficulty_and_retriever": {
+    "easy": {
+      "bm25": {
+        "questions": 7,
+        "answerable_questions": 7,
+        "hit_at_1": 0.42857142857142855,
+        "hit_at_3": 0.8571428571428571,
+        "hit_at_5": 1.0,
+        "mrr": 0.630952380952381,
+        "average_latency_ms": 2.337700001329982,
+        "p95_latency_ms": 3.5582699929364017
+      },
+      "dense_bge_small": {
+        "questions": 7,
+        "answerable_questions": 7,
+        "hit_at_1": 0.5714285714285714,
+        "hit_at_3": 0.8571428571428571,
+        "hit_at_5": 0.8571428571428571,
+        "mrr": 0.7238095238095238,
+        "average_latency_ms": 47.775128573578385,
+        "p95_latency_ms": 77.0218800025759
+      },
+      "hybrid_rrf": {
+        "questions": 7,
+        "answerable_questions": 7,
+        "hit_at_1": 0.8571428571428571,
+        "hit_at_3": 0.8571428571428571,
+        "hit_at_5": 0.8571428571428571,
+        "mrr": 0.8775510204081634,
+        "average_latency_ms": 50.590671432603685,
+        "p95_latency_ms": 79.267229999823
+      }
+    },
+    "hard": {
+      "bm25": {
+        "questions": 12,
+        "answerable_questions": 10,
+        "hit_at_1": 0.3,
+        "hit_at_3": 0.5,
+        "hit_at_5": 0.7,
+        "mrr": 0.4490662796323174,
+        "average_latency_ms": 4.195308333388918,
+        "p95_latency_ms": 6.3835550005023824
+      },
+      "dense_bge_small": {
+        "questions": 12,
+        "answerable_questions": 10,
+        "hit_at_1": 0.3,
+        "hit_at_3": 0.7,
+        "hit_at_5": 0.7,
+        "mrr": 0.49748977186048127,
+        "average_latency_ms": 39.85364166510408,
+        "p95_latency_ms": 46.82435499780694
+      },
+      "hybrid_rrf": {
+        "questions": 12,
+        "answerable_questions": 10,
+        "hit_at_1": 0.3,
+        "hit_at_3": 0.7,
+        "hit_at_5": 0.7,
+        "mrr": 0.48065476190476186,
+        "average_latency_ms": 44.55235833180874,
+        "p95_latency_ms": 51.968830002442694
+      }
+    },
+    "medium": {
+      "bm25": {
+        "questions": 21,
+        "answerable_questions": 19,
+        "hit_at_1": 0.42105263157894735,
+        "hit_at_3": 0.631578947368421,
+        "hit_at_5": 0.7368421052631579,
+        "mrr": 0.5468500310605574,
+        "average_latency_ms": 4.317076192819513,
+        "p95_latency_ms": 7.824900007108226
+      },
+      "dense_bge_small": {
+        "questions": 21,
+        "answerable_questions": 19,
+        "hit_at_1": 0.47368421052631576,
+        "hit_at_3": 0.6842105263157895,
+        "hit_at_5": 0.8421052631578947,
+        "mrr": 0.6251638712165029,
+        "average_latency_ms": 43.92411428645054,
+        "p95_latency_ms": 55.87850000301842
+      },
+      "hybrid_rrf": {
+        "questions": 21,
+        "answerable_questions": 19,
+        "hit_at_1": 0.47368421052631576,
+        "hit_at_3": 0.6842105263157895,
+        "hit_at_5": 0.8421052631578947,
+        "mrr": 0.6251689830637199,
+        "average_latency_ms": 48.795876192300405,
+        "p95_latency_ms": 61.29800001508556
+      }
+    }
+  },
+  "slices_by_retriever": {
+    "formula_dependent": {
+      "bm25": {
+        "questions": 11,
+        "answerable_questions": 11,
+        "hit_at_1": 0.2727272727272727,
+        "hit_at_3": 0.45454545454545453,
+        "hit_at_5": 0.5454545454545454,
+        "mrr": 0.382038332038332,
+        "average_latency_ms": 5.4268090924861925,
+        "p95_latency_ms": 8.294350001960993
+      },
+      "dense_bge_small": {
+        "questions": 11,
+        "answerable_questions": 11,
+        "hit_at_1": 0.36363636363636365,
+        "hit_at_3": 0.5454545454545454,
+        "hit_at_5": 0.7272727272727273,
+        "mrr": 0.5223092125266038,
+        "average_latency_ms": 41.517954544608735,
+        "p95_latency_ms": 50.85479999979725
+      },
+      "hybrid_rrf": {
+        "questions": 11,
+        "answerable_questions": 11,
+        "hit_at_1": 0.36363636363636365,
+        "hit_at_3": 0.6363636363636364,
+        "hit_at_5": 0.6363636363636364,
+        "mrr": 0.519988849534304,
+        "average_latency_ms": 47.54469090866306,
+        "p95_latency_ms": 58.24589999974705
+      }
+    },
+    "visual_dependent": {
+      "bm25": {
+        "questions": 4,
+        "answerable_questions": 4,
+        "hit_at_1": 0.5,
+        "hit_at_3": 0.75,
+        "hit_at_5": 0.75,
+        "mrr": 0.6083333333333333,
+        "average_latency_ms": 3.912875003152294,
+        "p95_latency_ms": 5.089095007133437
+      },
+      "dense_bge_small": {
+        "questions": 4,
+        "answerable_questions": 4,
+        "hit_at_1": 0.5,
+        "hit_at_3": 0.75,
+        "hit_at_5": 0.75,
+        "mrr": 0.5946969696969697,
+        "average_latency_ms": 36.59764999974868,
+        "p95_latency_ms": 37.311149993911386
+      },
+      "hybrid_rrf": {
+        "questions": 4,
+        "answerable_questions": 4,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.75,
+        "hit_at_5": 0.75,
+        "mrr": 0.515625,
+        "average_latency_ms": 41.11220000413596,
+        "p95_latency_ms": 42.99968999839621
+      }
+    },
+    "table_dependent": {
+      "bm25": {
+        "questions": 2,
+        "answerable_questions": 2,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr": 1.0,
+        "average_latency_ms": 3.6068499975954182,
+        "p95_latency_ms": 3.8563749920285773
+      },
+      "dense_bge_small": {
+        "questions": 2,
+        "answerable_questions": 2,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr": 1.0,
+        "average_latency_ms": 41.00995000771945,
+        "p95_latency_ms": 43.49219500363688
+      },
+      "hybrid_rrf": {
+        "questions": 2,
+        "answerable_questions": 2,
+        "hit_at_1": 1.0,
+        "hit_at_3": 1.0,
+        "hit_at_5": 1.0,
+        "mrr": 1.0,
+        "average_latency_ms": 45.022600002994295,
+        "p95_latency_ms": 47.31238000022131
+      }
+    },
+    "multi_page": {
+      "bm25": {
+        "questions": 12,
+        "answerable_questions": 12,
+        "hit_at_1": 0.5,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.8333333333333334,
+        "mrr": 0.6307389937106919,
+        "average_latency_ms": 4.518824998134126,
+        "p95_latency_ms": 8.247405002475716
+      },
+      "dense_bge_small": {
+        "questions": 12,
+        "answerable_questions": 12,
+        "hit_at_1": 0.5833333333333334,
+        "hit_at_3": 0.9166666666666666,
+        "hit_at_5": 0.9166666666666666,
+        "mrr": 0.7404970760233919,
+        "average_latency_ms": 39.60874166659778,
+        "p95_latency_ms": 44.438829999853624
+      },
+      "hybrid_rrf": {
+        "questions": 12,
+        "answerable_questions": 12,
+        "hit_at_1": 0.5833333333333334,
+        "hit_at_3": 0.8333333333333334,
+        "hit_at_5": 0.8333333333333334,
+        "mrr": 0.7232142857142857,
+        "average_latency_ms": 44.64637499768287,
+        "p95_latency_ms": 52.18931499694008
+      }
+    },
+    "multi_chunk": {
+      "bm25": {
+        "questions": 15,
+        "answerable_questions": 15,
+        "hit_at_1": 0.4,
+        "hit_at_3": 0.6,
+        "hit_at_5": 0.8,
+        "mrr": 0.5530038933812519,
+        "average_latency_ms": 4.4088199986921,
+        "p95_latency_ms": 8.106570004019884
+      },
+      "dense_bge_small": {
+        "questions": 15,
+        "answerable_questions": 15,
+        "hit_at_1": 0.4666666666666667,
+        "hit_at_3": 0.9333333333333333,
+        "hit_at_5": 0.9333333333333333,
+        "mrr": 0.6812865497076023,
+        "average_latency_ms": 41.25033333354319,
+        "p95_latency_ms": 52.5777000002563
+      },
+      "hybrid_rrf": {
+        "questions": 15,
+        "answerable_questions": 15,
+        "hit_at_1": 0.4666666666666667,
+        "hit_at_3": 0.8,
+        "hit_at_5": 0.8666666666666667,
+        "mrr": 0.6396825396825396,
+        "average_latency_ms": 46.176713332533836,
+        "p95_latency_ms": 57.325020009011496
+      }
+    }
+  },
+  "negative_questions": [
+    {
+      "question_id": "BIO-019",
+      "question": "What was Telangana's kidney-disease incidence rate in 2025?",
+      "book_id": "biology",
+      "review_status": "confirmed_unanswerable",
+      "handling": "reported_only_not_scored"
+    },
+    {
+      "question_id": "BIO-020",
+      "question": "Which kidney disease does a particular patient have based only on frequent urination?",
+      "book_id": "biology",
+      "review_status": "confirmed_unanswerable",
+      "handling": "reported_only_not_scored"
+    },
+    {
+      "question_id": "PSC-019",
+      "question": "What is the current residential electricity tariff per kWh in Hyderabad?",
+      "book_id": "physical_sciences",
+      "review_status": "confirmed_unanswerable",
+      "handling": "reported_only_not_scored"
+    },
+    {
+      "question_id": "PSC-020",
+      "question": "What is the exact pH of an unknown household liquid without indicator readings or measurements?",
+      "book_id": "physical_sciences",
+      "review_status": "confirmed_unanswerable",
+      "handling": "reported_only_not_scored"
+    }
+  ],
+  "top_5_failures": [
+    {
+      "question_id": "BIO-004",
+      "question": "What is a food chain?",
+      "retriever": "dense_bge_small",
+      "failure_category": "relevant_page_ranked_below_top_5",
+      "gold_rank": 15
+    },
+    {
+      "question_id": "BIO-004",
+      "question": "What is a food chain?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "relevant_page_ranked_below_top_5",
+      "gold_rank": 7
+    },
+    {
+      "question_id": "BIO-005",
+      "question": "How does food move from the mouth through the oesophagus, and what begins carbohydrate digestion?",
+      "retriever": "bm25",
+      "failure_category": "multi_page_evidence_dilution",
+      "gold_rank": 7
+    },
+    {
+      "question_id": "BIO-015",
+      "question": "How do arteries and veins differ in the direction of blood flow?",
+      "retriever": "dense_bge_small",
+      "failure_category": "relevant_page_ranked_below_top_5",
+      "gold_rank": 7
+    },
+    {
+      "question_id": "BIO-017",
+      "question": "How do nervous control and hormonal control coordinate responses in the human body?",
+      "retriever": "bm25",
+      "failure_category": "multi_page_evidence_dilution",
+      "gold_rank": 53
+    },
+    {
+      "question_id": "BIO-017",
+      "question": "How do nervous control and hormonal control coordinate responses in the human body?",
+      "retriever": "dense_bge_small",
+      "failure_category": "multi_page_evidence_dilution",
+      "gold_rank": 19
+    },
+    {
+      "question_id": "BIO-017",
+      "question": "How do nervous control and hormonal control coordinate responses in the human body?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "multi_page_evidence_dilution",
+      "gold_rank": 28
+    },
+    {
+      "question_id": "PSC-002",
+      "question": "What relationship is expressed by Snell's law?",
+      "retriever": "bm25",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 27
+    },
+    {
+      "question_id": "PSC-002",
+      "question": "What relationship is expressed by Snell's law?",
+      "retriever": "dense_bge_small",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 8
+    },
+    {
+      "question_id": "PSC-002",
+      "question": "What relationship is expressed by Snell's law?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 9
+    },
+    {
+      "question_id": "PSC-003",
+      "question": "State Ohm's law and its condition.",
+      "retriever": "bm25",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 13
+    },
+    {
+      "question_id": "PSC-005",
+      "question": "What is the mirror formula relating focal length, object distance, and image distance?",
+      "retriever": "bm25",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 20
+    },
+    {
+      "question_id": "PSC-005",
+      "question": "What is the mirror formula relating focal length, object distance, and image distance?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 7
+    },
+    {
+      "question_id": "PSC-006",
+      "question": "How are focal length, object distance, and image distance related for a lens?",
+      "retriever": "bm25",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 12
+    },
+    {
+      "question_id": "PSC-006",
+      "question": "How are focal length, object distance, and image distance related for a lens?",
+      "retriever": "dense_bge_small",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 13
+    },
+    {
+      "question_id": "PSC-006",
+      "question": "How are focal length, object distance, and image distance related for a lens?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 11
+    },
+    {
+      "question_id": "PSC-009",
+      "question": "How is an image constructed using principal rays for a concave mirror?",
+      "retriever": "bm25",
+      "failure_category": "visual_evidence_not_represented_in_text",
+      "gold_rank": 10
+    },
+    {
+      "question_id": "PSC-009",
+      "question": "How is an image constructed using principal rays for a concave mirror?",
+      "retriever": "dense_bge_small",
+      "failure_category": "visual_evidence_not_represented_in_text",
+      "gold_rank": 22
+    },
+    {
+      "question_id": "PSC-009",
+      "question": "How is an image constructed using principal rays for a concave mirror?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "visual_evidence_not_represented_in_text",
+      "gold_rank": 16
+    },
+    {
+      "question_id": "PSC-013",
+      "question": "Which equation and sign convention should be used to calculate image distance for a spherical mirror?",
+      "retriever": "bm25",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 26
+    },
+    {
+      "question_id": "PSC-013",
+      "question": "Which equation and sign convention should be used to calculate image distance for a spherical mirror?",
+      "retriever": "dense_bge_small",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 23
+    },
+    {
+      "question_id": "PSC-013",
+      "question": "Which equation and sign convention should be used to calculate image distance for a spherical mirror?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 24
+    }
+  ]
+}
