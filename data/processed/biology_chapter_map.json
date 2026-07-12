@@ -1,0 +1,126 @@
+{
+  "book_id": "biology",
+  "source_file": "X Biology EM 2025-26.pdf",
+  "chapters": [
+    {
+      "chapter_number": 1,
+      "chapter_title": "Nutrition",
+      "index_textbook_page_start": 1,
+      "detected_pdf_page_start": 10,
+      "detected_pdf_page_end": 34,
+      "confidence": "high",
+      "notes": [
+        "Index start 1 maps by constant PDF offset +9.",
+        "Chapter title confirmed in start-page text."
+      ]
+    },
+    {
+      "chapter_number": 2,
+      "chapter_title": "Respiration",
+      "index_textbook_page_start": 26,
+      "detected_pdf_page_start": 35,
+      "detected_pdf_page_end": 59,
+      "confidence": "high",
+      "notes": [
+        "Index start 26 maps by constant PDF offset +9.",
+        "Chapter title confirmed in start-page text."
+      ]
+    },
+    {
+      "chapter_number": 3,
+      "chapter_title": "Circulation",
+      "index_textbook_page_start": 51,
+      "detected_pdf_page_start": 60,
+      "detected_pdf_page_end": 86,
+      "confidence": "high",
+      "notes": [
+        "Index start 51 maps by constant PDF offset +9.",
+        "Chapter title confirmed in start-page text."
+      ]
+    },
+    {
+      "chapter_number": 4,
+      "chapter_title": "Excretion",
+      "index_textbook_page_start": 78,
+      "detected_pdf_page_start": 87,
+      "detected_pdf_page_end": 108,
+      "confidence": "high",
+      "notes": [
+        "Index start 78 maps by constant PDF offset +9.",
+        "Chapter title confirmed in start-page text."
+      ]
+    },
+    {
+      "chapter_number": 5,
+      "chapter_title": "Coordination",
+      "index_textbook_page_start": 100,
+      "detected_pdf_page_start": 109,
+      "detected_pdf_page_end": 131,
+      "confidence": "high",
+      "notes": [
+        "Index start 100 maps by constant PDF offset +9.",
+        "Chapter title confirmed in start-page text."
+      ]
+    },
+    {
+      "chapter_number": 6,
+      "chapter_title": "Reproduction",
+      "index_textbook_page_start": 123,
+      "detected_pdf_page_start": 132,
+      "detected_pdf_page_end": 161,
+      "confidence": "high",
+      "notes": [
+        "Index start 123 maps by constant PDF offset +9.",
+        "Chapter title confirmed in start-page text."
+      ]
+    },
+    {
+      "chapter_number": 7,
+      "chapter_title": "Coordination in Life Processes",
+      "index_textbook_page_start": 153,
+      "detected_pdf_page_start": 162,
+      "detected_pdf_page_end": 184,
+      "confidence": "high",
+      "notes": [
+        "Index start 153 maps by constant PDF offset +9.",
+        "Chapter title confirmed in start-page text."
+      ]
+    },
+    {
+      "chapter_number": 8,
+      "chapter_title": "Heredity - Evolution",
+      "index_textbook_page_start": 176,
+      "detected_pdf_page_start": 185,
+      "detected_pdf_page_end": 213,
+      "confidence": "high",
+      "notes": [
+        "Index start 176 maps by constant PDF offset +9.",
+        "Chapter title confirmed in start-page text."
+      ]
+    },
+    {
+      "chapter_number": 9,
+      "chapter_title": "Our Environment",
+      "index_textbook_page_start": 205,
+      "detected_pdf_page_start": 214,
+      "detected_pdf_page_end": 233,
+      "confidence": "high",
+      "notes": [
+        "Index start 205 maps by constant PDF offset +9.",
+        "Chapter title confirmed in start-page text."
+      ]
+    },
+    {
+      "chapter_number": 10,
+      "chapter_title": "Natural Resources",
+      "index_textbook_page_start": 225,
+      "detected_pdf_page_start": 234,
+      "detected_pdf_page_end": 257,
+      "confidence": "high",
+      "notes": [
+        "Index start 225 maps by constant PDF offset +9.",
+        "Chapter title confirmed in start-page text."
+      ]
+    }
+  ]
+}
