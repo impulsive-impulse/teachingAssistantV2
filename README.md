@@ -5,8 +5,8 @@ textbook-grounded QA/RAG research project. It extracts every PDF page, preserves
 PDF and printed-page identity, assigns index-grounded chapters, and produces a
 human-readable suitability audit.
 
-The repository also includes a page-level retrieval baseline. It does not call
-an LLM or implement answer generation, query rewriting, reranking, or chunking.
+The repository also includes page-level and chunk-level retrieval baselines. They
+do not call an LLM or implement answer generation, query rewriting, or reranking.
 
 ## Source books
 
@@ -27,12 +27,17 @@ reports/                       Generated extraction suitability audit
 scripts/audit_textbooks.py     Source-checkout compatibility entry point
 scripts/generate_retrieval_benchmark.py
                                Candidate benchmark generator and validator
+scripts/run_page_retrieval.py  Page-level retrieval source entry point
+scripts/run_chunk_retrieval.py Chunk-level retrieval source entry point
 src/textbook_audit/
   config.py                    Immutable book/chapter/page-offset catalog
   cli.py                       Command-line interface
   pipeline.py                  Extraction, mapping, cleaning, and reporting
+  retrieval.py                 Page BM25, dense, RRF, metrics, and reporting
+  chunk_retrieval.py           Chunking, chunk retrieval, gold mapping, reports
 tests/test_pipeline.py         Mapping and artifact integrity checks
 tests/test_retrieval.py        Loading, ranking, matching, and metric regressions
+tests/test_chunk_retrieval.py  Chunk boundaries, metadata, gold, and metrics tests
 pyproject.toml                 Package metadata and dependencies
 ```
 
@@ -193,6 +198,42 @@ Outputs:
 - `reports/page_level_retrieval_metrics.json`
 - `reports/page_level_retrieval_baseline.md`
 
+## Chunk-Level Retrieval Baseline v1
+
+Run the fixed-size and structure-aware experiment after the page baseline:
+
+```powershell
+python scripts/run_chunk_retrieval.py --device cpu
+```
+
+Equivalent installed entry point:
+
+```powershell
+chunk-retrieval --root X:\teachingAssistantV2 --top-k 5 --fixed-size 400 --overlap 80 --structured-min 250 --structured-max 500
+```
+
+Fixed chunks target 400 tokens with an 80-token overlap and do not cross chapter
+boundaries. Structured chunks use chapter, section, paragraph, sentence, and
+page-continuation boundaries, normally targeting 250–500 tokens. Both preserve
+all contributing PDF/textbook pages and source indicators. Gold chunks are
+derived after ranking from reviewed pages plus contiguous answer-span overlap;
+uncertain mappings are reported for review and excluded from metrics.
+
+Chunk embeddings have separate strategy/book caches under
+`data/retrieval/cache/`. Use `--cache-dir`, `--results`, `--metrics`, and
+`--report` to override output locations, and `--gold-min-coverage` to configure
+the conservative automatic gold-mapping threshold.
+
+Outputs:
+
+- `data/processed/biology_chunks_fixed.jsonl`
+- `data/processed/biology_chunks_structured.jsonl`
+- `data/processed/physical_sciences_chunks_fixed.jsonl`
+- `data/processed/physical_sciences_chunks_structured.jsonl`
+- `data/retrieval/chunk_level_results.jsonl`
+- `reports/chunk_level_retrieval_metrics.json`
+- `reports/chunk_level_retrieval_baseline.md`
+
 Run all regression tests with:
 
 ```powershell
@@ -204,7 +245,8 @@ change, append one row describing what was tested, the command, and the result.
 
 ## Recommended next research step
 
-Create a manually checked retrieval benchmark containing `book_id`, chapter,
-printed page(s), answer span, and `visual_dependency`/`formula_dependency`
-labels. Evaluate page retrieval before section or chunk retrieval, and report
-visual- and formula-dependent questions as separate slices.
+Test deterministic neighbour expansion around the first-stage retrieved chunk.
+Compare the retrieved chunk alone with previous-plus-current, current-plus-next,
+and previous-plus-current-plus-next context while retaining the same reviewed
+benchmark, BGE-small model, BM25 settings, and RRF settings. Keep formula,
+visual, table, and multi-page results as separate slices.
