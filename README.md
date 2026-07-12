@@ -199,6 +199,9 @@ Run all regression tests with:
 python -m unittest discover -s tests -v
 ```
 
+Keep brief validation history in `reports/test_runs.md`. After a meaningful
+change, append one row describing what was tested, the command, and the result.
+
 ## Recommended next research step
 
 Create a manually checked retrieval benchmark containing `book_id`, chapter,

@@ -17,6 +17,8 @@ from typing import Any, Iterable
 
 import numpy as np
 
+# Centralized method constants make the generated metadata and actual ranking
+# implementation agree, and make future baseline changes easy to audit.
 MODEL_NAME = "BAAI/bge-small-en-v1.5"
 QUERY_PREFIX = "Represent this sentence for searching relevant passages: "
 RETRIEVERS = ("bm25", "dense_bge_small", "hybrid_rrf")
@@ -24,6 +26,12 @@ TOKEN_RE = re.compile(r"[A-Za-z0-9]+(?:[.'-][A-Za-z0-9]+)*")
 
 
 def read_jsonl(path: Path) -> list[dict[str, Any]]:
+    """Load non-empty JSONL records, failing explicitly for missing inputs.
+
+    The same loader is used for page artifacts and the benchmark. The error
+    deliberately calls out the reviewed benchmark because silently switching
+    to the candidate file would make reported metrics invalid.
+    """
     if not path.is_file():
         raise FileNotFoundError(f"Required reviewed benchmark is missing: {path}. "
                                "Create/review retrieval_benchmark_v1.jsonl; candidates are never used.")
@@ -31,6 +39,7 @@ def read_jsonl(path: Path) -> list[dict[str, Any]]:
 
 
 def load_pages(root: Path) -> dict[str, list[dict[str, Any]]]:
+    """Load searchable pages for each supported book in original page order."""
     books: dict[str, list[dict[str, Any]]] = {}
     for book_id in ("biology", "physical_sciences"):
         rows = read_jsonl(root / "data" / "processed" / f"{book_id}_pages.jsonl")
@@ -43,24 +52,36 @@ def load_pages(root: Path) -> dict[str, list[dict[str, Any]]]:
 
 
 def tokenize(text: str) -> list[str]:
+    """Convert text to deterministic lowercase terms for BM25 and snippets."""
     return [m.group(0).lower() for m in TOKEN_RE.finditer(text)]
 
 
 class BM25:
-    """Okapi BM25 with conventional k1=1.5, b=0.75."""
+    """Minimal deterministic Okapi BM25 index over page text.
+
+    Keeping this implementation local avoids hidden preprocessing defaults in
+    a third-party BM25 package. ``k1`` controls term-frequency saturation and
+    ``b`` controls page-length normalization.
+    """
 
     def __init__(self, texts: Iterable[str], k1: float = 1.5, b: float = 0.75):
+        """Tokenize pages and precompute lengths, document frequency, and IDF."""
         self.k1, self.b = k1, b
+        # Counter retains each term's frequency while keeping the index small.
         self.docs = [Counter(tokenize(t)) for t in texts]
         self.lengths = np.asarray([sum(d.values()) for d in self.docs], dtype=np.float64)
         self.avgdl = float(self.lengths.mean()) if len(self.lengths) else 0.0
         df: Counter[str] = Counter()
         for doc in self.docs:
+            # Updating with keys counts a term once per page, which is document
+            # frequency rather than total term frequency.
             df.update(doc.keys())
         n = len(self.docs)
+        # This positive-IDF form is stable even for terms occurring in most pages.
         self.idf = {term: math.log(1.0 + (n - freq + 0.5) / (freq + 0.5)) for term, freq in df.items()}
 
     def scores(self, query: str) -> np.ndarray:
+        """Return one BM25 relevance score per indexed page for ``query``."""
         result = np.zeros(len(self.docs), dtype=np.float64)
         for term in tokenize(query):
             idf = self.idf.get(term)
@@ -69,6 +90,8 @@ class BM25:
             for i, doc in enumerate(self.docs):
                 tf = doc.get(term, 0)
                 if tf:
+                    # Normalize raw frequency by page length, then apply the
+                    # standard saturating BM25 term contribution.
                     denom = tf + self.k1 * (1 - self.b + self.b * self.lengths[i] / self.avgdl)
                     result[i] += idf * tf * (self.k1 + 1) / denom
         return result
@@ -80,6 +103,7 @@ def stable_ranking(scores: np.ndarray) -> np.ndarray:
 
 
 def reciprocal_rank_fusion(rankings: list[np.ndarray], size: int, rrf_k: int = 60) -> np.ndarray:
+    """Fuse rankings without mixing incomparable BM25 and cosine score scales."""
     scores = np.zeros(size, dtype=np.float64)
     for ranking in rankings:
         for rank, index in enumerate(ranking, 1):
@@ -88,7 +112,10 @@ def reciprocal_rank_fusion(rankings: list[np.ndarray], size: int, rrf_k: int = 6
 
 
 def accepted_pdf_pages(question: dict[str, Any], pages: list[dict[str, Any]]) -> set[int]:
+    """Resolve primary and alternative reviewed evidence to PDF page numbers."""
     accepted = {int(x) for x in question.get("gold_pdf_pages", [])}
+    # Reviewers express alternatives using printed textbook-page identity, so
+    # translate those values through the loaded page metadata before scoring.
     alternatives = {str(x) for x in question.get("alternative_gold_pages", [])}
     for page in pages:
         if str(page.get("textbook_page_number")) in alternatives:
@@ -97,12 +124,16 @@ def accepted_pdf_pages(question: dict[str, Any], pages: list[dict[str, Any]]) ->
 
 
 def percentile95(values: list[float]) -> float:
+    """Calculate the linearly interpolated 95th percentile, or zero if empty."""
     if not values:
         return 0.0
     return float(np.percentile(np.asarray(values), 95, method="linear"))
 
 
 def metric_block(items: list[dict[str, Any]]) -> dict[str, Any]:
+    """Compute effectiveness for answerable items and latency for all items."""
+    # Negative questions have no relevant rank and therefore must not lower
+    # Hit@K or MRR. Their latency remains useful operational information.
     answerable = [x for x in items if x["answerable"]]
     latencies = [x["latency_ms"] for x in items]
     ranks = [x["first_relevant_rank"] for x in answerable]
@@ -119,6 +150,7 @@ def metric_block(items: list[dict[str, Any]]) -> dict[str, Any]:
 
 
 def group_metrics(evals: list[dict[str, Any]], key: str) -> dict[str, Any]:
+    """Partition evaluation rows by ``key`` and compute a metric block per value."""
     groups: dict[str, list[dict[str, Any]]] = defaultdict(list)
     for row in evals:
         groups[str(row[key])].append(row)
@@ -126,6 +158,9 @@ def group_metrics(evals: list[dict[str, Any]], key: str) -> dict[str, Any]:
 
 
 def failure_category(q: dict[str, Any], gold_rank: int | None) -> str:
+    """Assign the most likely reviewed-data cause for an answerable top-5 miss."""
+    # Dependency labels are stronger evidence than a generic ranking diagnosis,
+    # so they take precedence in this intentionally simple error taxonomy.
     if q.get("visual_dependency"):
         return "visual_evidence_not_represented_in_text"
     if q.get("table_dependency"):
@@ -140,6 +175,7 @@ def failure_category(q: dict[str, Any], gold_rank: int | None) -> str:
 
 
 def snippet(text: str, query: str, width: int = 360) -> str:
+    """Build a compact result preview near the first meaningful query term."""
     flat = " ".join(text.split())
     terms = set(tokenize(query))
     positions = [flat.lower().find(t) for t in terms if len(t) > 3 and flat.lower().find(t) >= 0]
@@ -150,12 +186,15 @@ def snippet(text: str, query: str, width: int = 360) -> str:
 
 @dataclass
 class DenseIndex:
+    """Loaded Sentence Transformer, per-book matrices, and run metadata."""
+
     model: Any
     embeddings: dict[str, np.ndarray]
     metadata: dict[str, Any]
 
 
 def _corpus_fingerprint(pages: list[dict[str, Any]]) -> str:
+    """Hash page identity and cleaned text to detect stale embedding caches."""
     h = hashlib.sha256()
     for p in pages:
         h.update(f'{p["book_id"]}:{p["pdf_page_number"]}:'.encode())
@@ -164,6 +203,7 @@ def _corpus_fingerprint(pages: list[dict[str, Any]]) -> str:
 
 
 def load_dense_index(books: dict[str, list[dict[str, Any]]], cache_dir: Path, device: str | None) -> DenseIndex:
+    """Load BGE-small and reuse or create normalized per-book page embeddings."""
     try:
         import sentence_transformers
         import torch
@@ -171,10 +211,13 @@ def load_dense_index(books: dict[str, list[dict[str, Any]]], cache_dir: Path, de
         from sentence_transformers import SentenceTransformer
     except ImportError as exc:
         raise RuntimeError("Dense retrieval requires sentence-transformers. Run `python -m pip install -e .`.") from exc
+    # Sentence Transformers selects an available device when ``device`` is None;
+    # recording the resolved value makes latency results interpretable.
     model = SentenceTransformer(MODEL_NAME, device=device)
     runtime_device = str(model.device)
     get_dimension = getattr(model, "get_embedding_dimension", model.get_sentence_embedding_dimension)
     dimension = int(get_dimension())
+    # Capture the Hub commit resolved by Sentence Transformers where available.
     revision = getattr(getattr(model, "_first_module", lambda: None)(), "auto_model", None)
     revision = getattr(getattr(revision, "config", None), "_commit_hash", None) or "default"
     cache_dir.mkdir(parents=True, exist_ok=True)
@@ -186,11 +229,15 @@ def load_dense_index(books: dict[str, list[dict[str, Any]]], cache_dir: Path, de
         cache = cache_dir / f"{book_id}_bge-small-en-v1.5.npz"
         valid = False
         if cache.is_file():
+            # Pickle is disabled because the cache contains only numeric arrays
+            # and scalar metadata; this avoids executing arbitrary cache data.
             stored = np.load(cache, allow_pickle=False)
             valid = str(stored["fingerprint"].item()) == fp and int(stored["dimension"].item()) == dimension
             if valid:
                 embeddings[book_id] = stored["embeddings"].astype(np.float32)
         if not valid:
+            # Normalization at encoding time turns the later matrix dot product
+            # into cosine similarity without repeated per-query normalization.
             matrix = model.encode([p["cleaned_text"] for p in pages], batch_size=32,
                                   convert_to_numpy=True, normalize_embeddings=True,
                                   show_progress_bar=True).astype(np.float32)
@@ -214,8 +261,12 @@ def load_dense_index(books: dict[str, list[dict[str, Any]]], cache_dir: Path, de
 
 
 def render_report(metrics: dict[str, Any], evals: list[dict[str, Any]], failures: list[dict[str, Any]]) -> str:
+    """Render the machine-readable evaluation into a self-contained Markdown report."""
     overall = metrics["overall_by_retriever"]
-    def pct(v: float | None) -> str: return "n/a" if v is None else f"{100*v:.1f}%"
+
+    def pct(v: float | None) -> str:
+        """Format a ratio for report tables while preserving empty slices."""
+        return "n/a" if v is None else f"{100*v:.1f}%"
     lines = ["# Page-Level Retrieval Baseline v1", "",
              "One cleaned textbook page is one retrieval unit. Front matter is excluded, each query searches only its labeled book, and no gold label participates in ranking.", "",
              "## Headline results", "",
@@ -230,6 +281,8 @@ def render_report(metrics: dict[str, Any], evals: list[dict[str, Any]], failures
     bm_wins, dense_wins = [], []
     for qid in answer_ids:
         b, d = qmap[(qid, "bm25")], qmap[(qid, "dense_bge_small")]
+        # Treat a missing relevant page as worse than every concrete corpus rank
+        # so win/loss comparisons remain simple and deterministic.
         br, dr = b["first_relevant_rank"] or 10**9, d["first_relevant_rank"] or 10**9
         if br < dr: bm_wins.append((qid, br, None if dr == 10**9 else dr))
         if dr < br: dense_wins.append((qid, dr, None if br == 10**9 else br))
@@ -282,10 +335,13 @@ def render_report(metrics: dict[str, Any], evals: list[dict[str, Any]], failures
 
 def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path,
         report_path: Path, cache_dir: Path, top_k: int = 5, device: str | None = None) -> dict[str, Any]:
+    """Execute all retrievers, evaluate rankings, and write requested artifacts."""
     if top_k < 5:
         raise ValueError("top_k must be at least 5 to compute required Hit@5 and top-5 failures")
     questions = read_jsonl(benchmark)
     if benchmark.name.endswith("_candidates.jsonl"):
+        # This guard prevents an explicit CLI override from bypassing the
+        # reviewed-benchmark requirement.
         raise ValueError("Candidate benchmarks are not valid evaluation inputs; use retrieval_benchmark_v1.jsonl")
     books = load_pages(root)
     unknown = sorted({q["book_id"] for q in questions} - set(books))
@@ -296,14 +352,22 @@ def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path,
     evals: list[dict[str, Any]] = []
     failures: list[dict[str, Any]] = []
     for q in questions:
+        # Book scoping happens here: every score vector and page lookup uses only
+        # the corpus selected by the benchmark question's book_id.
         pages = books[q["book_id"]]
         gold = accepted_pdf_pages(q, pages)
         answerable = bool(gold)
+        # Timings cover query-time work only; model startup, page loading, and
+        # page embedding creation are intentionally excluded.
         t0 = time.perf_counter(); bs = bm25[q["book_id"]].scores(q["question"]); br = stable_ranking(bs); bm_ms = (time.perf_counter()-t0)*1000
         t0 = time.perf_counter(); qe = dense.model.encode([QUERY_PREFIX + q["question"]], convert_to_numpy=True, normalize_embeddings=True, show_progress_bar=False)[0]; ds = dense.embeddings[q["book_id"]] @ qe; dr = stable_ranking(ds); dense_ms = (time.perf_counter()-t0)*1000
+        # Hybrid latency includes both component retrievers because both must run
+        # before RRF can combine their ranks.
         t0 = time.perf_counter(); hs = reciprocal_rank_fusion([br, dr], len(pages)); hr = stable_ranking(hs); hybrid_ms = bm_ms + dense_ms + (time.perf_counter()-t0)*1000
         variants = (("bm25", bs, br, bm_ms), ("dense_bge_small", ds, dr, dense_ms), ("hybrid_rrf", hs, hr, hybrid_ms))
         for retriever, scores, ranking, latency in variants:
+            # The first accepted page controls Hit@K and reciprocal rank. Gold is
+            # consulted only after ranking has completed.
             relevant_ranks = [i for i, idx in enumerate(ranking, 1) if int(pages[int(idx)]["pdf_page_number"]) in gold]
             first = min(relevant_ranks) if relevant_ranks else None
             failure = failure_category(q, first) if answerable and (first is None or first > 5) else None
@@ -311,6 +375,8 @@ def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path,
             if failure:
                 failures.append({"question_id": q["question_id"], "question": q["question"], "retriever": retriever, "failure_category": failure, "gold_rank": first})
             for rank, idx in enumerate(ranking[:top_k], 1):
+                # Save one record per retrieved page so individual successes and
+                # misses can be inspected without recomputing the ranking.
                 page = pages[int(idx)]
                 output_rows.append({"question_id": q["question_id"], "question": q["question"], "book_id": q["book_id"], "retriever": retriever, "rank": rank, "score": float(scores[int(idx)]), "retrieved_pdf_page": page["pdf_page_number"], "retrieved_textbook_page": page["textbook_page_number"], "chapter_title": page.get("chapter_title"), "section_title": page.get("section_title"), "text_snippet": snippet(page["cleaned_text"], q["question"]), "matches_accepted_gold_evidence": int(page["pdf_page_number"]) in gold, "latency_ms": latency, "failure_category": failure})
     answerable_evals = [e for e in evals if e["answerable"]]
@@ -327,6 +393,8 @@ def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path,
         metrics["slices_by_retriever"][flag] = group_metrics([e for e in evals if e[flag]], "retriever")
     for q in questions:
         if not q.get("gold_pdf_pages"):
+            # Preserve negatives for auditability, but do not invent relevance
+            # labels or fold them into answerable-question metrics.
             metrics["negative_questions"].append({"question_id": q["question_id"], "question": q["question"], "book_id": q["book_id"], "review_status": q.get("review_status"), "handling": "reported_only_not_scored"})
     for path in (results_path, metrics_path, report_path): path.parent.mkdir(parents=True, exist_ok=True)
     results_path.write_text("".join(json.dumps(r, ensure_ascii=False) + "\n" for r in output_rows), encoding="utf-8")
@@ -336,6 +404,7 @@ def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path,
 
 
 def build_parser() -> argparse.ArgumentParser:
+    """Define the reproducible CLI and configurable artifact locations."""
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("--root", type=Path, default=Path.cwd())
     p.add_argument("--benchmark", type=Path)
@@ -349,6 +418,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 
 def main(argv: list[str] | None = None) -> None:
+    """Resolve root-relative defaults, run evaluation, and print headline JSON."""
     args = build_parser().parse_args(argv)
     root = args.root.resolve()
     metrics = run(root,
