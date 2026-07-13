@@ -411,6 +411,8 @@ def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path, rep
                 first = next((r for r, i in enumerate(ranking, 1) if levels["paragraphs"][int(i)]["chunk_id"] in gold["paragraphs"]), None)
                 answerable = gold["status"] == "mapped"; failure = classify_failure(question, approach, gold, stage, base_first) if gold["status"] == "manual_review" or answerable and (first is None or first > 5) else None
                 evals.append({"question_id": question["question_id"], "approach": approach, "retriever": retriever, "book_id": book,
+                    "benchmark_slice": question.get("benchmark_slice", "canonical"),
+                    "query_style": question.get("query_style", "canonical"),
                     "difficulty": question.get("difficulty", "unknown"), "formula_dependent": bool(question.get("formula_dependency")),
                     "visual_dependent": bool(question.get("visual_dependency")), "table_dependent": bool(question.get("table_dependency")),
                     "multi_page": bool(question.get("requires_multiple_pages")), "multi_chunk": bool(question.get("requires_multiple_chunks")),
@@ -424,6 +426,8 @@ def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path, rep
                 for rank, index in enumerate(ranking[:top_k], 1):
                     leaf = levels["paragraphs"][int(index)]
                     results.append({"question_id": question["question_id"], "question": question["question"], "book_id": book,
+                        "benchmark_slice": question.get("benchmark_slice", "canonical"),
+                        "parent_question_id": question.get("parent_question_id"), "query_style": question.get("query_style"),
                         "approach": approach, "retriever": retriever, "rank": rank, "score": float(final_scores[int(index)]),
                         "retrieved_chunk_id": leaf["chunk_id"], "chapter_id": leaf["chapter_id"], "chapter_title": leaf["chapter_title"],
                         "section_id": leaf["section_id"], "section_title": leaf["section_title"], "heading_confidence": leaf["heading_confidence"],
@@ -456,6 +460,11 @@ def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path, rep
                "front_matter_definition": "outside verified chapter-map PDF ranges", "dense": dense_info["metadata"]},
                "overall_by_approach_and_retriever": overall, "stage_level_recall": stage_metrics,
                "by_book": nested("book_id"), "by_difficulty": nested("difficulty"), "by_heading_confidence": nested("heading_confidence"),
+               "by_benchmark_slice": nested("benchmark_slice"),
+               "natural_student_by_query_style": {
+                   a: {str(v): group_metrics([e for e in evals if e["approach"] == a and e["benchmark_slice"] == "natural_student" and e["query_style"] == v], "retriever")
+                       for v in sorted({e["query_style"] for e in evals if e["benchmark_slice"] == "natural_student"})}
+                   for a in APPROACHES},
                "slices": {flag: {a: group_metrics([e for e in evals if e["approach"] == a and e[flag]], "retriever") for a in APPROACHES}
                           for flag in ("formula_dependent", "visual_dependent", "table_dependent", "multi_page", "multi_chunk")},
                "gold_mappings": mappings, "top_5_failures": failures, "hierarchy_audit": audits,
@@ -514,6 +523,15 @@ def render_report(metrics: dict[str, Any]) -> str:
         if hierarchical and prior:
             delta = hierarchical["hit_at_5"] - prior["hit_at_5"]
             slice_comparisons.append(f'{name.replace("_", " ")} {delta:+.1%} Hit@5')
+    lines += ["", "## Canonical versus natural-student queries", "",
+              "| Slice | Approach | Retriever | N | Hit@1 | Hit@3 | Hit@5 | MRR |",
+              "|---|---|---|---:|---:|---:|---:|---:|"]
+    for approach, groups in metrics["by_benchmark_slice"].items():
+        for group, retrievers in groups.items():
+            for retriever in RETRIEVERS:
+                m = retrievers[retriever]
+                lines.append(f'| {group} | {approach.replace("_", " ")} | {labels[retriever]} | {m["answerable_questions"]} | {pct(m["hit_at_1"])} | {pct(m["hit_at_3"])} | {pct(m["hit_at_5"])} | {m["mrr"]:.3f} |')
+    lines += ["", "Natural-student results are also broken down by `query_style` in `hierarchical_retrieval_metrics.json`."]
     lines += ["", "## Dependency and evidence-span slices", "", "| Slice | Approach | Retriever | N | Hit@1 | Hit@3 | Hit@5 | MRR |", "|---|---|---|---:|---:|---:|---:|---:|"]
     for slice_name, approaches in metrics["slices"].items():
         for approach, retrievers in approaches.items():

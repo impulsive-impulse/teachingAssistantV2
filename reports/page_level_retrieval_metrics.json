@@ -6,8 +6,12 @@
     "search_field": "cleaned_text",
     "front_matter_excluded": true,
     "book_scoped": true,
-    "answerable_questions": 41,
+    "answerable_questions": 61,
     "negative_questions": 5,
+    "benchmark_slice_counts": {
+      "canonical": 46,
+      "natural_student": 20
+    },
     "dense": {
       "model_name": "BAAI/bge-small-en-v1.5",
       "model_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
@@ -23,7 +27,7 @@
         "biology": "66d9859f0267ee0c6ac6c7f53b843af453529750da8c02f2263e8881738d7054",
         "physical_sciences": "8823bc36653e5ac9b94a42255a7ec10964b5a0363b3cb65f3928026cfd567625"
       },
-      "python": "3.12.13"
+      "python": "3.12.10"
     },
     "bm25": {
       "variant": "Okapi BM25",
@@ -37,359 +41,619 @@
   },
   "overall_by_retriever": {
     "bm25": {
-      "questions": 46,
-      "answerable_questions": 41,
-      "hit_at_1": 0.36585365853658536,
-      "hit_at_3": 0.5609756097560976,
-      "hit_at_5": 0.6829268292682927,
-      "mrr": 0.49148706329712877,
-      "average_latency_ms": 3.4199434779546447,
-      "p95_latency_ms": 6.752699997377931
+      "questions": 66,
+      "answerable_questions": 61,
+      "hit_at_1": 0.3114754098360656,
+      "hit_at_3": 0.5081967213114754,
+      "hit_at_5": 0.6229508196721312,
+      "mrr": 0.44831320943912367,
+      "average_latency_ms": 3.068854544835631,
+      "p95_latency_ms": 5.5602749962417874
     },
     "dense_bge_small": {
-      "questions": 46,
-      "answerable_questions": 41,
-      "hit_at_1": 0.43902439024390244,
-      "hit_at_3": 0.6829268292682927,
-      "hit_at_5": 0.7317073170731707,
-      "mrr": 0.5892623732552291,
-      "average_latency_ms": 40.74999565209905,
-      "p95_latency_ms": 61.08759999733593
+      "questions": 66,
+      "answerable_questions": 61,
+      "hit_at_1": 0.3770491803278688,
+      "hit_at_3": 0.6557377049180327,
+      "hit_at_5": 0.7049180327868853,
+      "mrr": 0.5405067203740117,
+      "average_latency_ms": 32.372289393551355,
+      "p95_latency_ms": 37.67607499867154
     },
     "hybrid_rrf": {
-      "questions": 46,
-      "answerable_questions": 41,
-      "hit_at_1": 0.4634146341463415,
-      "hit_at_3": 0.6341463414634146,
-      "hit_at_5": 0.7317073170731707,
-      "mrr": 0.584620324389817,
-      "average_latency_ms": 44.59599347683252,
-      "p95_latency_ms": 65.72514999606938
+      "questions": 66,
+      "answerable_questions": 61,
+      "hit_at_1": 0.3770491803278688,
+      "hit_at_3": 0.5901639344262295,
+      "hit_at_5": 0.7049180327868853,
+      "mrr": 0.5237247717665618,
+      "average_latency_ms": 35.86717121068046,
+      "p95_latency_ms": 42.128249995585065
     }
   },
   "by_book_and_retriever": {
     "biology": {
       "bm25": {
-        "questions": 22,
-        "answerable_questions": 20,
-        "hit_at_1": 0.4,
-        "hit_at_3": 0.7,
-        "hit_at_5": 0.8,
-        "mrr": 0.5645988584112891,
-        "average_latency_ms": 2.7193681823767046,
-        "p95_latency_ms": 4.192760004661977
+        "questions": 32,
+        "answerable_questions": 30,
+        "hit_at_1": 0.36666666666666664,
+        "hit_at_3": 0.6333333333333333,
+        "hit_at_5": 0.7,
+        "mrr": 0.5259474684890889,
+        "average_latency_ms": 2.6293874991552,
+        "p95_latency_ms": 4.384960000243154
       },
       "dense_bge_small": {
-        "questions": 22,
-        "answerable_questions": 20,
-        "hit_at_1": 0.45,
-        "hit_at_3": 0.75,
-        "hit_at_5": 0.75,
-        "mrr": 0.620250626566416,
-        "average_latency_ms": 44.19765909055555,
-        "p95_latency_ms": 96.30293999907732
+        "questions": 32,
+        "answerable_questions": 30,
+        "hit_at_1": 0.43333333333333335,
+        "hit_at_3": 0.8,
+        "hit_at_5": 0.8,
+        "mrr": 0.6266948621553884,
+        "average_latency_ms": 33.0946968747412,
+        "p95_latency_ms": 38.950975000989274
       },
       "hybrid_rrf": {
-        "questions": 22,
-        "answerable_questions": 20,
-        "hit_at_1": 0.6,
+        "questions": 32,
+        "answerable_questions": 30,
+        "hit_at_1": 0.5,
         "hit_at_3": 0.7,
-        "hit_at_5": 0.85,
-        "mrr": 0.6927380952380953,
-        "average_latency_ms": 47.279427271860186,
-        "p95_latency_ms": 100.38826499912827
+        "hit_at_5": 0.8333333333333334,
+        "mrr": 0.6388624338624338,
+        "average_latency_ms": 36.09373437325303,
+        "p95_latency_ms": 42.12351000314811
       }
     },
     "physical_sciences": {
       "bm25": {
-        "questions": 24,
-        "answerable_questions": 21,
-        "hit_at_1": 0.3333333333333333,
-        "hit_at_3": 0.42857142857142855,
-        "hit_at_5": 0.5714285714285714,
-        "mrr": 0.4218567822360238,
-        "average_latency_ms": 4.06213749890109,
-        "p95_latency_ms": 7.527114998811156
+        "questions": 34,
+        "answerable_questions": 31,
+        "hit_at_1": 0.25806451612903225,
+        "hit_at_3": 0.3870967741935484,
+        "hit_at_5": 0.5483870967741935,
+        "mrr": 0.3731832813262541,
+        "average_latency_ms": 3.4824705878289772,
+        "p95_latency_ms": 6.921994996446299
       },
       "dense_bge_small": {
-        "questions": 24,
-        "answerable_questions": 21,
-        "hit_at_1": 0.42857142857142855,
-        "hit_at_3": 0.6190476190476191,
-        "hit_at_5": 0.7142857142857143,
-        "mrr": 0.5597497510540989,
-        "average_latency_ms": 37.589637500180594,
-        "p95_latency_ms": 46.82111000511212
+        "questions": 34,
+        "answerable_questions": 31,
+        "hit_at_1": 0.3225806451612903,
+        "hit_at_3": 0.5161290322580645,
+        "hit_at_5": 0.6129032258064516,
+        "mrr": 0.4570988412307438,
+        "average_latency_ms": 31.692376470078564,
+        "p95_latency_ms": 37.17149500189407
       },
       "hybrid_rrf": {
-        "questions": 24,
-        "answerable_questions": 21,
-        "hit_at_1": 0.3333333333333333,
-        "hit_at_3": 0.5714285714285714,
-        "hit_at_5": 0.6190476190476191,
-        "mrr": 0.48165101882002825,
-        "average_latency_ms": 42.13617916472382,
-        "p95_latency_ms": 55.38043498709156
+        "questions": 34,
+        "answerable_questions": 31,
+        "hit_at_1": 0.25806451612903225,
+        "hit_at_3": 0.4838709677419355,
+        "hit_at_5": 0.5806451612903226,
+        "mrr": 0.41230122780281486,
+        "average_latency_ms": 35.6539352929651,
+        "p95_latency_ms": 42.33952999966277
       }
     }
   },
   "by_difficulty_and_retriever": {
     "easy": {
       "bm25": {
-        "questions": 7,
-        "answerable_questions": 7,
-        "hit_at_1": 0.42857142857142855,
-        "hit_at_3": 0.8571428571428571,
-        "hit_at_5": 1.0,
-        "mrr": 0.630952380952381,
-        "average_latency_ms": 2.1805285702742236,
-        "p95_latency_ms": 3.4396500006550914
+        "questions": 9,
+        "answerable_questions": 9,
+        "hit_at_1": 0.4444444444444444,
+        "hit_at_3": 0.7777777777777778,
+        "hit_at_5": 0.8888888888888888,
+        "mrr": 0.6177248677248677,
+        "average_latency_ms": 1.950022221232454,
+        "p95_latency_ms": 3.8901399995665993
       },
       "dense_bge_small": {
-        "questions": 7,
-        "answerable_questions": 7,
-        "hit_at_1": 0.5714285714285714,
-        "hit_at_3": 0.8571428571428571,
-        "hit_at_5": 0.8571428571428571,
-        "mrr": 0.7238095238095238,
-        "average_latency_ms": 45.26068571327154,
-        "p95_latency_ms": 81.3363300003402
+        "questions": 9,
+        "answerable_questions": 9,
+        "hit_at_1": 0.5555555555555556,
+        "hit_at_3": 0.7777777777777778,
+        "hit_at_5": 0.7777777777777778,
+        "mrr": 0.6810185185185185,
+        "average_latency_ms": 35.666277778444865,
+        "p95_latency_ms": 59.933879997697645
       },
       "hybrid_rrf": {
-        "questions": 7,
-        "answerable_questions": 7,
-        "hit_at_1": 0.8571428571428571,
-        "hit_at_3": 0.8571428571428571,
-        "hit_at_5": 0.8571428571428571,
-        "mrr": 0.8775510204081634,
-        "average_latency_ms": 47.84004285258042,
-        "p95_latency_ms": 84.77340999961594
+        "questions": 9,
+        "answerable_questions": 9,
+        "hit_at_1": 0.7777777777777778,
+        "hit_at_3": 0.7777777777777778,
+        "hit_at_5": 0.7777777777777778,
+        "mrr": 0.8059964726631393,
+        "average_latency_ms": 38.02946666675982,
+        "p95_latency_ms": 62.39937999489483
       }
     },
     "hard": {
       "bm25": {
-        "questions": 13,
-        "answerable_questions": 11,
-        "hit_at_1": 0.2727272727272727,
-        "hit_at_3": 0.45454545454545453,
-        "hit_at_5": 0.6363636363636364,
-        "mrr": 0.4087864382068427,
-        "average_latency_ms": 3.8516307697416496,
-        "p95_latency_ms": 6.090479996055365
+        "questions": 21,
+        "answerable_questions": 19,
+        "hit_at_1": 0.3157894736842105,
+        "hit_at_3": 0.47368421052631576,
+        "hit_at_5": 0.631578947368421,
+        "mrr": 0.45479448761682706,
+        "average_latency_ms": 3.250557141741627,
+        "p95_latency_ms": 4.666100001486484
       },
       "dense_bge_small": {
-        "questions": 13,
-        "answerable_questions": 11,
-        "hit_at_1": 0.36363636363636365,
-        "hit_at_3": 0.7272727272727273,
-        "hit_at_5": 0.7272727272727273,
-        "mrr": 0.5431725198731647,
-        "average_latency_ms": 37.331761537643615,
-        "p95_latency_ms": 42.21854000061284
+        "questions": 21,
+        "answerable_questions": 19,
+        "hit_at_1": 0.3157894736842105,
+        "hit_at_3": 0.7368421052631579,
+        "hit_at_5": 0.7368421052631579,
+        "mrr": 0.5208175073284069,
+        "average_latency_ms": 32.00557142866143,
+        "p95_latency_ms": 36.828199998126365
       },
       "hybrid_rrf": {
-        "questions": 13,
-        "answerable_questions": 11,
-        "hit_at_1": 0.2727272727272727,
-        "hit_at_3": 0.6363636363636364,
-        "hit_at_5": 0.6363636363636364,
-        "mrr": 0.4409114436288349,
-        "average_latency_ms": 41.57304615308441,
-        "p95_latency_ms": 47.34493999858387
+        "questions": 21,
+        "answerable_questions": 19,
+        "hit_at_1": 0.21052631578947367,
+        "hit_at_3": 0.6842105263157895,
+        "hit_at_5": 0.7368421052631579,
+        "mrr": 0.4438610112237114,
+        "average_latency_ms": 35.660933331070865,
+        "p95_latency_ms": 42.1141999977408
       }
     },
     "medium": {
       "bm25": {
-        "questions": 26,
-        "answerable_questions": 23,
-        "hit_at_1": 0.391304347826087,
-        "hit_at_3": 0.5217391304347826,
-        "hit_at_5": 0.6086956521739131,
-        "mrr": 0.4885935699234932,
-        "average_latency_ms": 3.5377884610520245,
-        "p95_latency_ms": 7.457324998540571
+        "questions": 36,
+        "answerable_questions": 33,
+        "hit_at_1": 0.2727272727272727,
+        "hit_at_3": 0.45454545454545453,
+        "hit_at_5": 0.5454545454545454,
+        "mrr": 0.3983783848952431,
+        "average_latency_ms": 3.2425694442079274,
+        "p95_latency_ms": 6.211374997292296
       },
       "dense_bge_small": {
-        "questions": 26,
-        "answerable_questions": 23,
-        "hit_at_1": 0.43478260869565216,
-        "hit_at_3": 0.6086956521739131,
-        "hit_at_5": 0.6956521739130435,
-        "mrr": 0.5703562138344747,
-        "average_latency_ms": 41.24469615439571,
-        "p95_latency_ms": 61.08759999733593
+        "questions": 36,
+        "answerable_questions": 33,
+        "hit_at_1": 0.36363636363636365,
+        "hit_at_3": 0.5757575757575758,
+        "hit_at_5": 0.6666666666666666,
+        "mrr": 0.5135215344517671,
+        "average_latency_ms": 31.762711110180437,
+        "p95_latency_ms": 37.13472500203352
       },
       "hybrid_rrf": {
-        "questions": 26,
-        "answerable_questions": 23,
-        "hit_at_1": 0.43478260869565216,
-        "hit_at_3": 0.5652173913043478,
-        "hit_at_5": 0.7391304347826086,
-        "mrr": 0.5641978381394858,
-        "average_latency_ms": 45.23406922985137,
-        "p95_latency_ms": 65.72514999606938
+        "questions": 36,
+        "answerable_questions": 33,
+        "hit_at_1": 0.36363636363636365,
+        "hit_at_3": 0.48484848484848486,
+        "hit_at_5": 0.6666666666666666,
+        "mrr": 0.492723745773985,
+        "average_latency_ms": 35.446902776432886,
+        "p95_latency_ms": 42.27680001167755
+      }
+    }
+  },
+  "by_benchmark_slice_and_retriever": {
+    "canonical": {
+      "bm25": {
+        "questions": 46,
+        "answerable_questions": 41,
+        "hit_at_1": 0.36585365853658536,
+        "hit_at_3": 0.5609756097560976,
+        "hit_at_5": 0.6829268292682927,
+        "mrr": 0.49148706329712877,
+        "average_latency_ms": 2.952706521128952,
+        "p95_latency_ms": 5.993224995108903
+      },
+      "dense_bge_small": {
+        "questions": 46,
+        "answerable_questions": 41,
+        "hit_at_1": 0.43902439024390244,
+        "hit_at_3": 0.6829268292682927,
+        "hit_at_5": 0.7317073170731707,
+        "mrr": 0.5892623732552291,
+        "average_latency_ms": 32.87706304289041,
+        "p95_latency_ms": 38.54857499754871
+      },
+      "hybrid_rrf": {
+        "questions": 46,
+        "answerable_questions": 41,
+        "hit_at_1": 0.4634146341463415,
+        "hit_at_3": 0.6341463414634146,
+        "hit_at_5": 0.7317073170731707,
+        "mrr": 0.584620324389817,
+        "average_latency_ms": 36.258099998477796,
+        "p95_latency_ms": 42.60154999974475
+      }
+    },
+    "natural_student": {
+      "bm25": {
+        "questions": 20,
+        "answerable_questions": 20,
+        "hit_at_1": 0.2,
+        "hit_at_3": 0.4,
+        "hit_at_5": 0.5,
+        "mrr": 0.3598068090302133,
+        "average_latency_ms": 3.3359949993609916,
+        "p95_latency_ms": 5.243524998513749
+      },
+      "dense_bge_small": {
+        "questions": 20,
+        "answerable_questions": 20,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.6,
+        "hit_at_5": 0.65,
+        "mrr": 0.44055763196751563,
+        "average_latency_ms": 31.211310000071535,
+        "p95_latency_ms": 36.3867299973208
+      },
+      "hybrid_rrf": {
+        "questions": 20,
+        "answerable_questions": 20,
+        "hit_at_1": 0.2,
+        "hit_at_3": 0.5,
+        "hit_at_5": 0.65,
+        "mrr": 0.3988888888888889,
+        "average_latency_ms": 34.96803499874659,
+        "p95_latency_ms": 40.837150004153955
+      }
+    }
+  },
+  "natural_student_by_query_style_and_retriever": {
+    "cause_effect": {
+      "bm25": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.3333333333333333,
+        "hit_at_5": 0.3333333333333333,
+        "mrr": 0.2293144208037825,
+        "average_latency_ms": 3.476733332111811,
+        "p95_latency_ms": 4.890249994787155
+      },
+      "dense_bge_small": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.6666666666666666,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.6666666666666666,
+        "mrr": 0.6744186046511628,
+        "average_latency_ms": 34.8662333296185,
+        "p95_latency_ms": 36.14912999692024
+      },
+      "hybrid_rrf": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.6666666666666666,
+        "mrr": 0.5079365079365079,
+        "average_latency_ms": 38.74473332931908,
+        "p95_latency_ms": 39.56524999521207
+      }
+    },
+    "colloquial": {
+      "bm25": {
+        "questions": 4,
+        "answerable_questions": 4,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.25,
+        "hit_at_5": 0.5,
+        "mrr": 0.3732142857142857,
+        "average_latency_ms": 4.5662249976885505,
+        "p95_latency_ms": 5.538219995287363
+      },
+      "dense_bge_small": {
+        "questions": 4,
+        "answerable_questions": 4,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.5,
+        "hit_at_5": 0.75,
+        "mrr": 0.43333333333333335,
+        "average_latency_ms": 32.44647499923303,
+        "p95_latency_ms": 34.82207500055665
+      },
+      "hybrid_rrf": {
+        "questions": 4,
+        "answerable_questions": 4,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.25,
+        "hit_at_5": 0.75,
+        "mrr": 0.38035714285714284,
+        "average_latency_ms": 37.4712249958975,
+        "p95_latency_ms": 40.792034995683935
+      }
+    },
+    "different_vocabulary": {
+      "bm25": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.3333333333333333,
+        "hit_at_5": 0.3333333333333333,
+        "mrr": 0.40659340659340665,
+        "average_latency_ms": 3.0810333313032365,
+        "p95_latency_ms": 4.903309998917393
+      },
+      "dense_bge_small": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.6666666666666666,
+        "mrr": 0.5208333333333334,
+        "average_latency_ms": 33.55920000224918,
+        "p95_latency_ms": 34.86227000321378
+      },
+      "hybrid_rrf": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.3333333333333333,
+        "hit_at_5": 0.3333333333333333,
+        "mrr": 0.4259259259259259,
+        "average_latency_ms": 37.09683333242234,
+        "p95_latency_ms": 38.35002999694552
+      }
+    },
+    "imperfect_grammar": {
+      "bm25": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.6666666666666666,
+        "mrr": 0.25925925925925924,
+        "average_latency_ms": 3.2996333344878317,
+        "p95_latency_ms": 4.187809999712044
+      },
+      "dense_bge_small": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.6666666666666666,
+        "mrr": 0.5,
+        "average_latency_ms": 31.18900000117719,
+        "p95_latency_ms": 36.382590002176585
+      },
+      "hybrid_rrf": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.6666666666666666,
+        "mrr": 0.5,
+        "average_latency_ms": 34.96143333419847,
+        "p95_latency_ms": 40.22134000406368
+      }
+    },
+    "misconception": {
+      "bm25": {
+        "questions": 4,
+        "answerable_questions": 4,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.5,
+        "hit_at_5": 0.75,
+        "mrr": 0.4527777777777778,
+        "average_latency_ms": 2.89892500222777,
+        "p95_latency_ms": 3.343900000618305
+      },
+      "dense_bge_small": {
+        "questions": 4,
+        "answerable_questions": 4,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.5,
+        "hit_at_5": 0.5,
+        "mrr": 0.2718253968253968,
+        "average_latency_ms": 29.130250000889646,
+        "p95_latency_ms": 31.969299998672795
+      },
+      "hybrid_rrf": {
+        "questions": 4,
+        "answerable_questions": 4,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.75,
+        "hit_at_5": 0.75,
+        "mrr": 0.375,
+        "average_latency_ms": 32.366300003559445,
+        "p95_latency_ms": 35.093980006786296
+      }
+    },
+    "short_underspecified": {
+      "bm25": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.3333333333333333,
+        "hit_at_5": 0.3333333333333333,
+        "mrr": 0.4022222222222222,
+        "average_latency_ms": 2.429033331281971,
+        "p95_latency_ms": 3.137969997624168
+      },
+      "dense_bge_small": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.6666666666666666,
+        "mrr": 0.30158730158730157,
+        "average_latency_ms": 26.358666667268455,
+        "p95_latency_ms": 28.892709998763166
+      },
+      "hybrid_rrf": {
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.0,
+        "hit_at_3": 0.3333333333333333,
+        "hit_at_5": 0.6666666666666666,
+        "mrr": 0.21825396825396826,
+        "average_latency_ms": 29.20053332976143,
+        "p95_latency_ms": 32.36061999486992
       }
     }
   },
   "slices_by_retriever": {
     "formula_dependent": {
       "bm25": {
-        "questions": 11,
-        "answerable_questions": 11,
-        "hit_at_1": 0.36363636363636365,
-        "hit_at_3": 0.45454545454545453,
-        "hit_at_5": 0.5454545454545454,
-        "mrr": 0.44264439264439265,
-        "average_latency_ms": 4.969009089770473,
-        "p95_latency_ms": 8.16704999670037
+        "questions": 16,
+        "answerable_questions": 16,
+        "hit_at_1": 0.25,
+        "hit_at_3": 0.375,
+        "hit_at_5": 0.4375,
+        "mrr": 0.34287002939928474,
+        "average_latency_ms": 3.920437499346008,
+        "p95_latency_ms": 7.948800002850476
       },
       "dense_bge_small": {
-        "questions": 11,
-        "answerable_questions": 11,
-        "hit_at_1": 0.45454545454545453,
-        "hit_at_3": 0.6363636363636364,
-        "hit_at_5": 0.7272727272727273,
-        "mrr": 0.590491030708422,
-        "average_latency_ms": 38.419154545408674,
-        "p95_latency_ms": 48.24825000105193
+        "questions": 16,
+        "answerable_questions": 16,
+        "hit_at_1": 0.3125,
+        "hit_at_3": 0.5,
+        "hit_at_5": 0.5625,
+        "mrr": 0.45007480214286333,
+        "average_latency_ms": 32.298324999828765,
+        "p95_latency_ms": 37.499025000215624
       },
       "hybrid_rrf": {
-        "questions": 11,
-        "answerable_questions": 11,
-        "hit_at_1": 0.45454545454545453,
-        "hit_at_3": 0.6363636363636364,
-        "hit_at_5": 0.6363636363636364,
-        "mrr": 0.5805949101403647,
-        "average_latency_ms": 43.89341817957095,
-        "p95_latency_ms": 56.53879999590572
+        "questions": 16,
+        "answerable_questions": 16,
+        "hit_at_1": 0.3125,
+        "hit_at_3": 0.5,
+        "hit_at_5": 0.5,
+        "mrr": 0.44677804834054835,
+        "average_latency_ms": 36.70655625046493,
+        "p95_latency_ms": 43.577575004746905
       }
     },
     "visual_dependent": {
       "bm25": {
-        "questions": 4,
-        "answerable_questions": 4,
+        "questions": 6,
+        "answerable_questions": 6,
         "hit_at_1": 0.5,
-        "hit_at_3": 0.75,
-        "hit_at_5": 0.75,
-        "mrr": 0.6083333333333333,
-        "average_latency_ms": 4.310225000153878,
-        "p95_latency_ms": 5.924775000312365
+        "hit_at_3": 0.8333333333333334,
+        "hit_at_5": 0.8333333333333334,
+        "mrr": 0.6555555555555556,
+        "average_latency_ms": 3.038983334893904,
+        "p95_latency_ms": 4.519375001109438
       },
       "dense_bge_small": {
-        "questions": 4,
-        "answerable_questions": 4,
+        "questions": 6,
+        "answerable_questions": 6,
         "hit_at_1": 0.5,
-        "hit_at_3": 0.75,
-        "hit_at_5": 0.75,
-        "mrr": 0.5946969696969697,
-        "average_latency_ms": 38.932899999053916,
-        "p95_latency_ms": 41.62327999911213
+        "hit_at_3": 0.8333333333333334,
+        "hit_at_5": 0.8333333333333334,
+        "mrr": 0.6186868686868686,
+        "average_latency_ms": 32.42653333290946,
+        "p95_latency_ms": 35.15520000291872
       },
       "hybrid_rrf": {
-        "questions": 4,
-        "answerable_questions": 4,
-        "hit_at_1": 0.25,
-        "hit_at_3": 0.75,
-        "hit_at_5": 0.75,
-        "mrr": 0.515625,
-        "average_latency_ms": 43.75917499601201,
-        "p95_latency_ms": 47.49649999575922
+        "questions": 6,
+        "answerable_questions": 6,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.6666666666666666,
+        "hit_at_5": 0.8333333333333334,
+        "mrr": 0.5520833333333334,
+        "average_latency_ms": 35.95951666526768,
+        "p95_latency_ms": 39.414300001226366
       }
     },
     "table_dependent": {
       "bm25": {
-        "questions": 2,
-        "answerable_questions": 2,
+        "questions": 3,
+        "answerable_questions": 3,
         "hit_at_1": 1.0,
         "hit_at_3": 1.0,
         "hit_at_5": 1.0,
         "mrr": 1.0,
-        "average_latency_ms": 3.2450500002596527,
-        "p95_latency_ms": 3.8543950038729236
+        "average_latency_ms": 3.005899998242967,
+        "p95_latency_ms": 3.58463999509695
       },
       "dense_bge_small": {
-        "questions": 2,
-        "answerable_questions": 2,
-        "hit_at_1": 1.0,
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.6666666666666666,
         "hit_at_3": 1.0,
         "hit_at_5": 1.0,
-        "mrr": 1.0,
-        "average_latency_ms": 32.18209999613464,
-        "p95_latency_ms": 34.09549999560113
+        "mrr": 0.7777777777777778,
+        "average_latency_ms": 31.42719999838543,
+        "p95_latency_ms": 36.13475999809452
       },
       "hybrid_rrf": {
-        "questions": 2,
-        "answerable_questions": 2,
-        "hit_at_1": 1.0,
+        "questions": 3,
+        "answerable_questions": 3,
+        "hit_at_1": 0.6666666666666666,
         "hit_at_3": 1.0,
         "hit_at_5": 1.0,
-        "mrr": 1.0,
-        "average_latency_ms": 35.88634999687201,
-        "p95_latency_ms": 38.41305500063754
+        "mrr": 0.8333333333333334,
+        "average_latency_ms": 34.749866662120134,
+        "p95_latency_ms": 40.16245999300736
       }
     },
     "multi_page": {
       "bm25": {
-        "questions": 12,
-        "answerable_questions": 12,
-        "hit_at_1": 0.5,
+        "questions": 21,
+        "answerable_questions": 21,
+        "hit_at_1": 0.42857142857142855,
         "hit_at_3": 0.6666666666666666,
-        "hit_at_5": 0.8333333333333334,
-        "mrr": 0.6307389937106919,
-        "average_latency_ms": 4.538108333387451,
-        "p95_latency_ms": 8.113524996952037
+        "hit_at_5": 0.7619047619047619,
+        "mrr": 0.5847609064590197,
+        "average_latency_ms": 3.372895238239185,
+        "p95_latency_ms": 7.825300002878066
       },
       "dense_bge_small": {
-        "questions": 12,
-        "answerable_questions": 12,
-        "hit_at_1": 0.5833333333333334,
-        "hit_at_3": 0.9166666666666666,
-        "hit_at_5": 0.9166666666666666,
-        "mrr": 0.7404970760233919,
-        "average_latency_ms": 40.986866667177914,
-        "p95_latency_ms": 55.48611500234982
+        "questions": 21,
+        "answerable_questions": 21,
+        "hit_at_1": 0.47619047619047616,
+        "hit_at_3": 0.9047619047619048,
+        "hit_at_5": 0.9047619047619048,
+        "mrr": 0.6691729323308271,
+        "average_latency_ms": 33.03477618950031,
+        "p95_latency_ms": 37.41050000098767
       },
       "hybrid_rrf": {
-        "questions": 12,
-        "answerable_questions": 12,
-        "hit_at_1": 0.5833333333333334,
-        "hit_at_3": 0.8333333333333334,
-        "hit_at_5": 0.8333333333333334,
-        "mrr": 0.7232142857142857,
-        "average_latency_ms": 45.956049999707226,
-        "p95_latency_ms": 62.18569000011484
+        "questions": 21,
+        "answerable_questions": 21,
+        "hit_at_1": 0.42857142857142855,
+        "hit_at_3": 0.7619047619047619,
+        "hit_at_5": 0.8571428571428571,
+        "mrr": 0.6251700680272109,
+        "average_latency_ms": 36.84828571255951,
+        "p95_latency_ms": 42.758000003232155
       }
     },
     "multi_chunk": {
       "bm25": {
-        "questions": 15,
-        "answerable_questions": 15,
-        "hit_at_1": 0.4,
-        "hit_at_3": 0.6,
-        "hit_at_5": 0.8,
-        "mrr": 0.5530038933812519,
-        "average_latency_ms": 4.1899266667314805,
-        "p95_latency_ms": 7.952949997707036
+        "questions": 27,
+        "answerable_questions": 27,
+        "hit_at_1": 0.3333333333333333,
+        "hit_at_3": 0.5925925925925926,
+        "hit_at_5": 0.7407407407407407,
+        "mrr": 0.5076359078455515,
+        "average_latency_ms": 3.2877222221469746,
+        "p95_latency_ms": 6.76852000178769
       },
       "dense_bge_small": {
-        "questions": 15,
-        "answerable_questions": 15,
-        "hit_at_1": 0.4666666666666667,
-        "hit_at_3": 0.9333333333333333,
-        "hit_at_5": 0.9333333333333333,
-        "mrr": 0.6812865497076023,
-        "average_latency_ms": 41.01636000074601,
-        "p95_latency_ms": 52.85171000359694
+        "questions": 27,
+        "answerable_questions": 27,
+        "hit_at_1": 0.4074074074074074,
+        "hit_at_3": 0.8888888888888888,
+        "hit_at_5": 0.8888888888888888,
+        "mrr": 0.6306971131532535,
+        "average_latency_ms": 32.48537407327805,
+        "p95_latency_ms": 37.30019000140601
       },
       "hybrid_rrf": {
-        "questions": 15,
-        "answerable_questions": 15,
-        "hit_at_1": 0.4666666666666667,
-        "hit_at_3": 0.8,
-        "hit_at_5": 0.8666666666666667,
-        "mrr": 0.6396825396825396,
-        "average_latency_ms": 45.608480000616204,
-        "p95_latency_ms": 60.41596000213757
+        "questions": 27,
+        "answerable_questions": 27,
+        "hit_at_1": 0.37037037037037035,
+        "hit_at_3": 0.7777777777777778,
+        "hit_at_5": 0.8888888888888888,
+        "mrr": 0.5819223985890652,
+        "average_latency_ms": 36.177585183328056,
+        "p95_latency_ms": 42.570259999047266
       }
     }
   },
@@ -675,6 +939,174 @@
       "retriever": "hybrid_rrf",
       "failure_category": "relevant_page_ranked_below_top_5",
       "gold_rank": 38
+    },
+    {
+      "question_id": "BIO-023",
+      "question": "How do cells get usable energy out of food?",
+      "retriever": "bm25",
+      "failure_category": "relevant_page_ranked_below_top_5",
+      "gold_rank": 7
+    },
+    {
+      "question_id": "BIO-023",
+      "question": "How do cells get usable energy out of food?",
+      "retriever": "dense_bge_small",
+      "failure_category": "relevant_page_ranked_below_top_5",
+      "gold_rank": 16
+    },
+    {
+      "question_id": "BIO-023",
+      "question": "How do cells get usable energy out of food?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "relevant_page_ranked_below_top_5",
+      "gold_rank": 9
+    },
+    {
+      "question_id": "BIO-026",
+      "question": "Why does blood go through the heart twice?",
+      "retriever": "bm25",
+      "failure_category": "multi_page_evidence_dilution",
+      "gold_rank": 6
+    },
+    {
+      "question_id": "BIO-027",
+      "question": "How do kidneys turn waste in the blood into pee?",
+      "retriever": "bm25",
+      "failure_category": "multi_page_evidence_dilution",
+      "gold_rank": 10
+    },
+    {
+      "question_id": "BIO-029",
+      "question": "What carries oxygen from our lungs to the rest of the body?",
+      "retriever": "bm25",
+      "failure_category": "relevant_page_ranked_below_top_5",
+      "gold_rank": 13
+    },
+    {
+      "question_id": "BIO-029",
+      "question": "What carries oxygen from our lungs to the rest of the body?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "relevant_page_ranked_below_top_5",
+      "gold_rank": 6
+    },
+    {
+      "question_id": "BIO-032",
+      "question": "How does saving rainwater help when wells and groundwater are running out?",
+      "retriever": "bm25",
+      "failure_category": "multi_page_evidence_dilution",
+      "gold_rank": 6
+    },
+    {
+      "question_id": "PSC-025",
+      "question": "If I turn up the voltage, why does more current flow through the same wire?",
+      "retriever": "bm25",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 47
+    },
+    {
+      "question_id": "PSC-025",
+      "question": "If I turn up the voltage, why does more current flow through the same wire?",
+      "retriever": "dense_bge_small",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 43
+    },
+    {
+      "question_id": "PSC-025",
+      "question": "If I turn up the voltage, why does more current flow through the same wire?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 42
+    },
+    {
+      "question_id": "PSC-026",
+      "question": "How can moving a magnet make electricity in a wire?",
+      "retriever": "bm25",
+      "failure_category": "relevant_page_ranked_below_top_5",
+      "gold_rank": 7
+    },
+    {
+      "question_id": "PSC-026",
+      "question": "How can moving a magnet make electricity in a wire?",
+      "retriever": "dense_bge_small",
+      "failure_category": "relevant_page_ranked_below_top_5",
+      "gold_rank": 30
+    },
+    {
+      "question_id": "PSC-026",
+      "question": "How can moving a magnet make electricity in a wire?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "relevant_page_ranked_below_top_5",
+      "gold_rank": 14
+    },
+    {
+      "question_id": "PSC-027",
+      "question": "What formula tells where a mirror image gonna form?",
+      "retriever": "bm25",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 9
+    },
+    {
+      "question_id": "PSC-027",
+      "question": "What formula tells where a mirror image gonna form?",
+      "retriever": "dense_bge_small",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 6
+    },
+    {
+      "question_id": "PSC-027",
+      "question": "What formula tells where a mirror image gonna form?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 6
+    },
+    {
+      "question_id": "PSC-028",
+      "question": "Do stronger lenses have a shorter focus?",
+      "retriever": "bm25",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 25
+    },
+    {
+      "question_id": "PSC-028",
+      "question": "Do stronger lenses have a shorter focus?",
+      "retriever": "dense_bge_small",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 14
+    },
+    {
+      "question_id": "PSC-028",
+      "question": "Do stronger lenses have a shorter focus?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 14
+    },
+    {
+      "question_id": "PSC-031",
+      "question": "Can I just use positive distances in the mirror formula?",
+      "retriever": "bm25",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 9
+    },
+    {
+      "question_id": "PSC-031",
+      "question": "Can I just use positive distances in the mirror formula?",
+      "retriever": "dense_bge_small",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 9
+    },
+    {
+      "question_id": "PSC-031",
+      "question": "Can I just use positive distances in the mirror formula?",
+      "retriever": "hybrid_rrf",
+      "failure_category": "formula_or_symbol_extraction_mismatch",
+      "gold_rank": 6
+    },
+    {
+      "question_id": "PSC-034",
+      "question": "When atoms share electrons, are they actually giving them away?",
+      "retriever": "dense_bge_small",
+      "failure_category": "multi_page_evidence_dilution",
+      "gold_rank": 7
     }
   ]
 }

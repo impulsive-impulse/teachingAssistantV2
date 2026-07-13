@@ -351,6 +351,8 @@ def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path,
                 failure = chunk_failure_category(question, first, mapping["status"]) if (mapping["status"] == "manual_review" or answerable and (first is None or first > 5)) else None
                 evals.append({"question_id": question["question_id"], "chunking_strategy": strategy,
                               "retriever": retriever, "book_id": question["book_id"],
+                              "benchmark_slice": question.get("benchmark_slice", "canonical"),
+                              "query_style": question.get("query_style", "canonical"),
                               "difficulty": question.get("difficulty", "unknown"),
                               "formula_dependent": bool(question.get("formula_dependency")),
                               "visual_dependent": bool(question.get("visual_dependency")),
@@ -366,6 +368,9 @@ def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path,
                     chunk = chunks[int(idx)]
                     results.append({"question_id": question["question_id"], "question": question["question"],
                                     "book_id": question["book_id"], "chunking_strategy": strategy,
+                                    "benchmark_slice": question.get("benchmark_slice", "canonical"),
+                                    "parent_question_id": question.get("parent_question_id"),
+                                    "query_style": question.get("query_style"),
                                     "retriever": retriever, "rank": rank, "score": float(scores[int(idx)]),
                                     "retrieved_chunk_id": chunk["chunk_id"], "retrieved_text": chunk["text"],
                                     "pdf_pages": chunk["pdf_pages"], "textbook_pages": chunk["textbook_pages"],
@@ -392,7 +397,11 @@ def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path,
                "chunk_statistics": counts, "overall_by_strategy_and_retriever": overall,
                "page_level_overall_by_retriever": page_metrics,
                "by_book": _metric_nested(evals, "book_id"),
-               "by_difficulty": _metric_nested(evals, "difficulty"), "slices": {},
+               "by_difficulty": _metric_nested(evals, "difficulty"),
+               "by_benchmark_slice": _metric_nested(evals, "benchmark_slice"),
+               "natural_student_by_query_style": _metric_nested(
+                   [e for e in evals if e["benchmark_slice"] == "natural_student"], "query_style"),
+               "slices": {},
                "gold_chunk_mappings": mappings, "top_5_failures_and_manual_review": failures}
     for flag in ("formula_dependent", "visual_dependent", "table_dependent", "multi_page", "multi_chunk"):
         metrics["slices"][flag] = {s: group_metrics([e for e in evals if e["chunking_strategy"] == s and e[flag]], "retriever") for s in STRATEGIES}
@@ -433,6 +442,15 @@ def render_report(metrics: dict[str, Any], evals: list[dict[str, Any]], question
                 for retriever in RETRIEVERS:
                     m = retrievers[retriever]
                     lines.append(f'| {group} | {strategy} | {labels[retriever]} | {m["answerable_questions"]} | {pct(m["hit_at_1"])} | {pct(m["hit_at_3"])} | {pct(m["hit_at_5"])} | {m["mrr"]:.3f} |')
+    lines += ["", "## Canonical versus natural-student queries", "",
+              "| Slice | Strategy | Retriever | N | Hit@1 | Hit@3 | Hit@5 | MRR |",
+              "|---|---|---|---:|---:|---:|---:|---:|"]
+    for strategy, groups in metrics["by_benchmark_slice"].items():
+        for group, retrievers in groups.items():
+            for retriever in RETRIEVERS:
+                m = retrievers[retriever]
+                lines.append(f'| {group} | {strategy} | {labels[retriever]} | {m["answerable_questions"]} | {pct(m["hit_at_1"])} | {pct(m["hit_at_3"])} | {pct(m["hit_at_5"])} | {m["mrr"]:.3f} |')
+    lines += ["", "Natural-student results are also broken down by `query_style` in `chunk_level_retrieval_metrics.json`."]
     lines += ["", "## Dependency and evidence-span slices", "",
               "| Slice | Strategy | Retriever | N | Hit@1 | Hit@3 | Hit@5 | MRR |",
               "|---|---|---|---:|---:|---:|---:|---:|"]

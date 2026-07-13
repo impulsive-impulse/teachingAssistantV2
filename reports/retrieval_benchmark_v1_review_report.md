@@ -80,7 +80,7 @@ Reviewed `retrieval_benchmark_v1_candidates.jsonl` (40 rows) against the extract
 
 ## Post-baseline review addendum — 2026-07-13
 
-The canonical `retrieval_benchmark_v1.jsonl` now contains **46 rows**: 22
+At this review stage, `retrieval_benchmark_v1.jsonl` contained **46 rows**: 22
 Biology and 24 Physical Sciences questions. Of these, 41 are answerable and 5
 are confirmed negative or weak-evidence questions. The original candidates and
 reviewed snapshot remain the historical 40-row source set.
@@ -108,3 +108,21 @@ All seven answerable corrected/added rows map to one hierarchy paragraph with
 100% contiguous normalized answer-span coverage. PSC-022 remains unscored as a
 negative. Page, chunk, and hierarchical evaluations were regenerated after the
 update.
+
+## Natural-student slice addendum — 2026-07-14
+
+Twenty reviewer-approved natural student questions were derived from existing
+answerable parents without changing the 46 existing questions. The expanded
+benchmark contains **66 rows**: 46 `canonical` and 20 `natural_student`; 61 are
+answerable and 5 remain negative or weak-evidence rows.
+
+The new slice is balanced between Biology and Physical Sciences (10 each) and
+covers all six approved styles: colloquial 4, short/underspecified 3, different
+vocabulary 3, cause/effect 3, misconception 4, and imperfect grammar 3.
+
+Every new row inherited its parent's evidence, dependency flags, and difficulty.
+All primary textbook/PDF page pairs were resolved in processed page metadata,
+and inherited answer spans were checked against both processed text and the
+original PDF text layer. All 20 mappings passed. See
+`reports/natural_student_query_additions.md` for question-level validation and
+slice-separated evaluation results.

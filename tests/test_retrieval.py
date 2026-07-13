@@ -22,10 +22,45 @@ class RetrievalTests(unittest.TestCase):
     """Protect the baseline's data-selection and scoring invariants."""
 
     def test_reviewed_benchmark_is_canonical_and_candidates_are_distinct(self) -> None:
-        """Require the reviewed canonical file and its finalized statuses."""
+        """Require the expanded reviewed file, finalized statuses, and slices."""
         rows = read_jsonl(ROOT / "data/benchmarks/retrieval_benchmark_v1.jsonl")
-        self.assertEqual(len(rows), 46)
+        self.assertEqual(len(rows), 66)
         self.assertTrue(all(r["review_status"] in {"verified", "verified_with_fixes", "confirmed_unanswerable"} for r in rows))
+        self.assertEqual(sum(r["benchmark_slice"] == "canonical" for r in rows), 46)
+        self.assertEqual(sum(r["benchmark_slice"] == "natural_student" for r in rows), 20)
+
+    def test_natural_student_rows_reuse_parent_gold_and_flags(self) -> None:
+        """Prevent paraphrases from drifting away from reviewed parent evidence."""
+        rows = read_jsonl(ROOT / "data/benchmarks/retrieval_benchmark_v1.jsonl")
+        by_id = {row["question_id"]: row for row in rows}
+        natural = [row for row in rows if row["benchmark_slice"] == "natural_student"]
+        inherited = ("book_id", "gold_textbook_pages", "gold_pdf_pages", "gold_answer_span",
+                     "formula_dependency", "visual_dependency",
+                     "table_dependency", "requires_multiple_pages", "requires_multiple_chunks",
+                     "difficulty")
+        self.assertEqual({row["book_id"] for row in natural}, {"biology", "physical_sciences"})
+        self.assertEqual(len({row["query_style"] for row in natural}), 6)
+        for row in natural:
+            parent = by_id[row["parent_question_id"]]
+            self.assertEqual(parent["benchmark_slice"], "canonical")
+            for field in inherited:
+                self.assertEqual(row.get(field), parent.get(field), f'{row["question_id"]}: {field}')
+            if row["question_id"] == "BIO-032":
+                self.assertEqual(row["alternative_gold_pages"], [])
+            else:
+                self.assertEqual(row.get("alternative_gold_pages"), parent.get("alternative_gold_pages"))
+
+    def test_generated_page_artifacts_preserve_slice_provenance(self) -> None:
+        """Keep slice labels in inspectable rows and separate metric blocks."""
+        results = read_jsonl(ROOT / "data/retrieval/page_level_results.jsonl")
+        natural = [row for row in results if row.get("benchmark_slice") == "natural_student"]
+        self.assertEqual(len(results), 66 * 3 * 5)
+        self.assertEqual(len(natural), 20 * 3 * 5)
+        self.assertTrue(all(row.get("parent_question_id") and row.get("query_style") for row in natural))
+        metrics = json.loads((ROOT / "reports/page_level_retrieval_metrics.json").read_text(encoding="utf-8"))
+        slices = metrics["by_benchmark_slice_and_retriever"]
+        self.assertEqual(slices["canonical"]["bm25"]["answerable_questions"], 41)
+        self.assertEqual(slices["natural_student"]["bm25"]["answerable_questions"], 20)
 
     def test_loading_excludes_front_matter_and_preserves_metadata(self) -> None:
         """Ensure only mapped content pages enter otherwise intact corpora."""

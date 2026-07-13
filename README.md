@@ -173,9 +173,22 @@ pages, representative formula issues, image/table counts, and the full verdict.
 The canonical reviewed benchmark is
 `data/benchmarks/retrieval_benchmark_v1.jsonl`. The runner deliberately fails
 if that file is absent and never substitutes the `_candidates` artifact.
-The current reviewed set contains 46 questions: 41 answerable questions and 5
-confirmed negative/weak-evidence questions. The `_candidates` artifacts remain
-the original 40-row proposal set and are not evaluation inputs.
+The current reviewed set contains 66 questions: 46 canonical rows and 20
+natural-student paraphrases. There are 61 answerable questions and 5 confirmed
+negative/weak-evidence questions. The `_candidates` artifacts remain the
+original 40-row proposal set and are not evaluation inputs.
+
+Rebuild and validate the approved natural-student slice before retrieval runs:
+
+```powershell
+python scripts/expand_natural_student_benchmark.py
+```
+
+This idempotent command preserves canonical wording, derives each natural row
+from its `parent_question_id`, and verifies inherited page mappings and answer
+spans against both processed page records and the source PDFs. It writes
+`reports/natural_student_query_additions.md`. Do not use it to introduce
+unreviewed questions; its definitions represent the approved proposal.
 
 Install retrieval dependencies and run from the repository root:
 
@@ -205,6 +218,11 @@ Outputs:
 - `data/retrieval/page_level_results.jsonl`
 - `reports/page_level_retrieval_metrics.json`
 - `reports/page_level_retrieval_baseline.md`
+
+Metrics and result rows carry `benchmark_slice`, `parent_question_id`, and
+`query_style` where applicable. Page, chunk, and hierarchy reports compare the
+canonical and `natural_student` slices separately; JSON metrics additionally
+break natural-student performance down by query style.
 
 ## Chunk-Level Retrieval Baseline v1
 
@@ -284,6 +302,21 @@ Run all regression tests with:
 ```powershell
 python -m unittest discover -s tests -v
 ```
+
+To reproduce every benchmark artifact in dependency order:
+
+```powershell
+python scripts/expand_natural_student_benchmark.py
+python scripts/run_page_retrieval.py --device cpu
+python scripts/run_chunk_retrieval.py --device cpu
+python scripts/run_hierarchical_retrieval.py --device cpu
+python scripts/expand_natural_student_benchmark.py
+python -m unittest discover -s tests -v
+```
+
+The second expansion command refreshes the additions report with the newly
+generated slice metrics. On Windows ARM64, use an x64 Python runtime under
+Windows emulation because official PyTorch Windows wheels target x86-64.
 
 Keep brief validation history in `reports/test_runs.md`. After a meaningful
 change, append one row describing what was tested, the command, and the result.

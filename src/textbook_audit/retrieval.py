@@ -311,6 +311,21 @@ def render_report(metrics: dict[str, Any], evals: list[dict[str, Any]], failures
         for key in RETRIEVERS:
             m = values[key]
             lines.append(f'| {group} | {labels[key]} | {m["answerable_questions"]} | {pct(m["hit_at_1"])} | {pct(m["hit_at_3"])} | {pct(m["hit_at_5"])} | {m["mrr"]:.3f} |')
+    lines += ["", "## Canonical versus natural-student queries", "",
+              "Natural-student rows reuse canonical gold evidence but are scored as a separate query slice.", "",
+              "| Benchmark slice | Retriever | N | Hit@1 | Hit@3 | Hit@5 | MRR |",
+              "|---|---|---:|---:|---:|---:|---:|"]
+    for group, values in metrics["by_benchmark_slice_and_retriever"].items():
+        for key in RETRIEVERS:
+            m = values[key]
+            lines.append(f'| {group} | {labels[key]} | {m["answerable_questions"]} | {pct(m["hit_at_1"])} | {pct(m["hit_at_3"])} | {pct(m["hit_at_5"])} | {m["mrr"]:.3f} |')
+    lines += ["", "### Natural-student results by query style", "",
+              "| Query style | Retriever | N | Hit@1 | Hit@3 | Hit@5 | MRR |",
+              "|---|---|---:|---:|---:|---:|---:|"]
+    for group, values in metrics["natural_student_by_query_style_and_retriever"].items():
+        for key in RETRIEVERS:
+            m = values[key]
+            lines.append(f'| {group} | {labels[key]} | {m["answerable_questions"]} | {pct(m["hit_at_1"])} | {pct(m["hit_at_3"])} | {pct(m["hit_at_5"])} | {m["mrr"]:.3f} |')
     lines += ["", "## Dependency and evidence-span slices", "",
               "Only questions with the named flag are included.", "",
               "| Slice | Retriever | N | Hit@1 | Hit@3 | Hit@5 | MRR |", "|---|---|---:|---:|---:|---:|---:|"]
@@ -372,24 +387,43 @@ def run(root: Path, benchmark: Path, results_path: Path, metrics_path: Path,
             relevant_ranks = [i for i, idx in enumerate(ranking, 1) if int(pages[int(idx)]["pdf_page_number"]) in gold]
             first = min(relevant_ranks) if relevant_ranks else None
             failure = failure_category(q, first) if answerable and (first is None or first > 5) else None
-            evals.append({"question_id": q["question_id"], "retriever": retriever, "book_id": q["book_id"], "difficulty": q.get("difficulty", "unknown"), "formula_dependent": bool(q.get("formula_dependency")), "visual_dependent": bool(q.get("visual_dependency")), "table_dependent": bool(q.get("table_dependency")), "multi_page": bool(q.get("requires_multiple_pages")), "multi_chunk": bool(q.get("requires_multiple_chunks")), "answerable": answerable, "first_relevant_rank": first, "latency_ms": latency})
+            evals.append({"question_id": q["question_id"], "retriever": retriever, "book_id": q["book_id"],
+                          "benchmark_slice": q.get("benchmark_slice", "canonical"),
+                          "query_style": q.get("query_style", "canonical"),
+                          "difficulty": q.get("difficulty", "unknown"), "formula_dependent": bool(q.get("formula_dependency")), "visual_dependent": bool(q.get("visual_dependency")), "table_dependent": bool(q.get("table_dependency")), "multi_page": bool(q.get("requires_multiple_pages")), "multi_chunk": bool(q.get("requires_multiple_chunks")), "answerable": answerable, "first_relevant_rank": first, "latency_ms": latency})
             if failure:
                 failures.append({"question_id": q["question_id"], "question": q["question"], "retriever": retriever, "failure_category": failure, "gold_rank": first})
             for rank, idx in enumerate(ranking[:top_k], 1):
                 # Save one record per retrieved page so individual successes and
                 # misses can be inspected without recomputing the ranking.
                 page = pages[int(idx)]
-                output_rows.append({"question_id": q["question_id"], "question": q["question"], "book_id": q["book_id"], "retriever": retriever, "rank": rank, "score": float(scores[int(idx)]), "retrieved_pdf_page": page["pdf_page_number"], "retrieved_textbook_page": page["textbook_page_number"], "chapter_title": page.get("chapter_title"), "section_title": page.get("section_title"), "text_snippet": snippet(page["cleaned_text"], q["question"]), "matches_accepted_gold_evidence": int(page["pdf_page_number"]) in gold, "latency_ms": latency, "failure_category": failure})
+                output_rows.append({"question_id": q["question_id"], "question": q["question"], "book_id": q["book_id"],
+                                    "benchmark_slice": q.get("benchmark_slice", "canonical"),
+                                    "parent_question_id": q.get("parent_question_id"), "query_style": q.get("query_style"),
+                                    "retriever": retriever, "rank": rank, "score": float(scores[int(idx)]), "retrieved_pdf_page": page["pdf_page_number"], "retrieved_textbook_page": page["textbook_page_number"], "chapter_title": page.get("chapter_title"), "section_title": page.get("section_title"), "text_snippet": snippet(page["cleaned_text"], q["question"]), "matches_accepted_gold_evidence": int(page["pdf_page_number"]) in gold, "latency_ms": latency, "failure_category": failure})
     answerable_evals = [e for e in evals if e["answerable"]]
     metrics: dict[str, Any] = {
-        "run_metadata": {"benchmark": str(benchmark), "top_k": top_k, "search_unit": "page", "search_field": "cleaned_text", "front_matter_excluded": True, "book_scoped": True, "answerable_questions": len({e["question_id"] for e in answerable_evals}), "negative_questions": len(questions) - len({e["question_id"] for e in answerable_evals}), "dense": dense.metadata, "bm25": {"variant": "Okapi BM25", "k1": 1.5, "b": 0.75}, "hybrid": {"method": "reciprocal_rank_fusion", "rrf_k": 60}},
+        "run_metadata": {"benchmark": str(benchmark), "top_k": top_k, "search_unit": "page", "search_field": "cleaned_text", "front_matter_excluded": True, "book_scoped": True, "answerable_questions": len({e["question_id"] for e in answerable_evals}), "negative_questions": len(questions) - len({e["question_id"] for e in answerable_evals}),
+                         "benchmark_slice_counts": dict(Counter(q.get("benchmark_slice", "canonical") for q in questions)),
+                         "dense": dense.metadata, "bm25": {"variant": "Okapi BM25", "k1": 1.5, "b": 0.75}, "hybrid": {"method": "reciprocal_rank_fusion", "rrf_k": 60}},
         "overall_by_retriever": group_metrics(evals, "retriever"),
-        "by_book_and_retriever": {}, "by_difficulty_and_retriever": {}, "slices_by_retriever": {},
+        "by_book_and_retriever": {}, "by_difficulty_and_retriever": {},
+        "by_benchmark_slice_and_retriever": {}, "natural_student_by_query_style_and_retriever": {},
+        "slices_by_retriever": {},
         "negative_questions": [], "top_5_failures": failures,
     }
     for group_key, target in (("book_id", "by_book_and_retriever"), ("difficulty", "by_difficulty_and_retriever")):
         values = sorted({e[group_key] for e in evals})
         metrics[target] = {str(v): group_metrics([e for e in evals if e[group_key] == v], "retriever") for v in values}
+    metrics["by_benchmark_slice_and_retriever"] = {
+        str(value): group_metrics([e for e in evals if e["benchmark_slice"] == value], "retriever")
+        for value in sorted({e["benchmark_slice"] for e in evals})
+    }
+    natural_evals = [e for e in evals if e["benchmark_slice"] == "natural_student"]
+    metrics["natural_student_by_query_style_and_retriever"] = {
+        str(value): group_metrics([e for e in natural_evals if e["query_style"] == value], "retriever")
+        for value in sorted({e["query_style"] for e in natural_evals})
+    }
     for flag in ("formula_dependent", "visual_dependent", "table_dependent", "multi_page", "multi_chunk"):
         metrics["slices_by_retriever"][flag] = group_metrics([e for e in evals if e[flag]], "retriever")
     for q in questions:

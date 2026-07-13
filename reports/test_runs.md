@@ -17,6 +17,7 @@ change is tested; keep commands and outcomes concise.
 | 2026-07-12 | Full post-implementation regression and artifact-integrity check | `python -m unittest discover -s tests -v`; `python -m py_compile src/textbook_audit/hierarchical_retrieval.py scripts/run_hierarchical_retrieval.py tests/test_hierarchical_retrieval.py`; JSON/JSONL validation; `git diff --check` | PASS — 27 tests, all definitions documented, 1,200 valid result rows |
 | 2026-07-13 | Manual gold review for BIO-003/PSC-007 and six conversational query additions | Benchmark schema, source-page, normalized-span, ID, status, and hierarchy-mapping validation | PASS — 46 unique rows, 41 answerable, 5 negative; no uncertain hierarchy mappings |
 | 2026-07-13 | Expanded benchmark across page, chunk, and hierarchical baselines | `python scripts/run_page_retrieval.py --device cpu`; `python scripts/run_chunk_retrieval.py --device cpu`; `python scripts/run_hierarchical_retrieval.py --device cpu` | PASS — 690 page rows, 1,380 chunk rows, 1,380 hierarchy rows; reports regenerated |
+| 2026-07-14 | Approved 20-question natural-student slice, inherited-gold/PDF validation, slice metrics, and full regeneration | `python scripts/expand_natural_student_benchmark.py`; all three retrieval runners; `python -m unittest discover -s tests -v` | PASS — 66 questions, 61 scored and 5 negative; 990 page, 1,980 chunk, and 1,980 hierarchy result rows; 29 tests |
 
 ## Evaluation results — 2026-07-12
 
@@ -104,3 +105,31 @@ existing embedding caches.
 
 Outcome: fixed 400/80 BM25 remains best at Hit@5 on the harder expanded set
 (75.6%). Page dense has the best MRR (0.589), narrowly ahead of page Hybrid.
+
+## Natural-student slice evaluation — 2026-07-14
+
+Twenty approved natural queries were added without changing canonical queries
+or gold evidence. All 20 answerable rows mapped automatically at chunk and
+hierarchy levels; the five existing negatives remain separately reported.
+
+| Retrieval unit / approach | Retriever | Hit@1 | Hit@3 | Hit@5 | MRR |
+|---|---|---:|---:|---:|---:|
+| Page | BM25 | 20.0% | 40.0% | 50.0% | 0.360 |
+| Page | BGE-small dense | 25.0% | 60.0% | 65.0% | 0.441 |
+| Page | Hybrid RRF | 20.0% | 50.0% | 65.0% | 0.399 |
+| Fixed 400/80 | BM25 | 15.0% | 35.0% | 55.0% | 0.335 |
+| Fixed 400/80 | BGE-small dense | 15.0% | 45.0% | 55.0% | 0.342 |
+| Fixed 400/80 | Hybrid RRF | 20.0% | 45.0% | 65.0% | 0.390 |
+| Structured | BM25 | 15.0% | 30.0% | 45.0% | 0.305 |
+| Structured | BGE-small dense | 15.0% | 40.0% | 50.0% | 0.322 |
+| Structured | Hybrid RRF | 10.0% | 50.0% | 55.0% | 0.312 |
+| Strict cascade | BM25 | 10.0% | 15.0% | 20.0% | 0.140 |
+| Strict cascade | BGE-small dense | 15.0% | 45.0% | 55.0% | 0.336 |
+| Strict cascade | Hybrid RRF | 25.0% | 40.0% | 55.0% | 0.365 |
+| Soft fusion | BM25 | 25.0% | 45.0% | 55.0% | 0.375 |
+| Soft fusion | BGE-small dense | 15.0% | 50.0% | 55.0% | 0.357 |
+| Soft fusion | Hybrid RRF | 35.0% | 50.0% | 60.0% | 0.463 |
+
+Outcome: natural wording is substantially harder than the canonical slice.
+Page dense has the best natural-query MRR (0.441) among flat baselines; page
+dense, page Hybrid, and fixed-chunk Hybrid tie for best Hit@5 at 65.0%.
