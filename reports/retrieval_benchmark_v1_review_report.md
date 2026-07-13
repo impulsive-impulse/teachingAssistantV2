@@ -77,3 +77,34 @@ Reviewed `retrieval_benchmark_v1_candidates.jsonl` (40 rows) against the extract
 | PSC-018 | verified | high | Printed textbook page number on the gold PDF page matches gold_textbook_pages; chapter, section and answer span verified against extracted page text. |
 | PSC-019 | confirmed_unanswerable | high | Confirmed genuinely not answerable: the book defines kWh but contains no utility tariff (keyword scan for 'tariff' returned nothing). not_answerable label correct. |
 | PSC-020 | confirmed_unanswerable | high | Confirmed weak evidence: pH and indicators are explained, but no observation/measurement is supplied for the unknown sample, so an exact pH is unrecoverable. weak_evidence label correct. |
+
+## Post-baseline review addendum — 2026-07-13
+
+The canonical `retrieval_benchmark_v1.jsonl` now contains **46 rows**: 22
+Biology and 24 Physical Sciences questions. Of these, 41 are answerable and 5
+are confirmed negative or weak-evidence questions. The original candidates and
+reviewed snapshot remain the historical 40-row source set.
+
+Two spans flagged by hierarchical automatic gold mapping were manually checked:
+
+| Question | Review outcome |
+|---|---|
+| BIO-003 | Narrowed to the complete minimal nephron definition on textbook page 83 / PDF 92. Removed unrelated text from the following nephron-structure section. |
+| PSC-007 | Moved gold evidence from textbook page 95 / PDF 105 to the actual formula on textbook page 96 / PDF 106 and retained section 5.3.4. |
+
+Six qualitative post-baseline queries were added as conversational retrieval
+stress cases:
+
+| Question | Status | Evidence |
+|---|---|---|
+| BIO-021 — How do plants eat? | verified | Autotrophic Nutrition, textbook 1 / PDF 10 |
+| BIO-022 — How do green plants feed itself without eating anything? | verified | Photosynthesis, textbook 2 / PDF 11 |
+| PSC-021 — how do atomic relationship happen? | verified, medium confidence | Bond formation, textbook 164 / PDF 174; ambiguity retained deliberately |
+| PSC-022 — Why does pencil look bent when placed in water | confirmed weak evidence | Related refraction material exists, but no self-contained passage directly explains the stated phenomenon |
+| PSC-023 — Why does a car mirror make vehicles behind us look smaller | verified | Convex-mirror diminished virtual image, textbook 13 / PDF 23 |
+| PSC-024 — Two chemically opposite solutions cancel each other | verified | Neutralization, textbook 40 / PDF 50 |
+
+All seven answerable corrected/added rows map to one hierarchy paragraph with
+100% contiguous normalized answer-span coverage. PSC-022 remains unscored as a
+negative. Page, chunk, and hierarchical evaluations were regenerated after the
+update.

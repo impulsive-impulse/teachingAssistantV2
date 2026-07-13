@@ -320,10 +320,11 @@ def render_report(metrics: dict[str, Any], evals: list[dict[str, Any]], failures
             m = values.get(key)
             if m:
                 lines.append(f'| {slice_labels[group]} | {labels[key]} | {m["answerable_questions"]} | {pct(m["hit_at_1"])} | {pct(m["hit_at_3"])} | {pct(m["hit_at_5"])} | {m["mrr"]:.3f} |')
+    best_hit5 = max(m["hit_at_5"] or 0 for m in overall.values())
     lines += ["", "## Negative and not-answerable questions", "",
               f'{metrics["run_metadata"]["negative_questions"]} reviewed negative/weak-evidence questions were retrieved for inspection but excluded from Hit@K and MRR. Their IDs and handling are recorded in `page_level_retrieval_metrics.json`.',
               "", "## Decision", "",
-              "The result is strong enough as a diagnostic baseline to proceed to chunk-level experiments, but 80.6% best Hit@5 is not strong enough to treat page retrieval as a finished retrieval solution. "
+              f"The result is strong enough as a diagnostic baseline, but {pct(best_hit5)} best Hit@5 is not strong enough to treat page retrieval as a finished retrieval solution. "
               "BGE-small is a sufficient lightweight baseline, not a sufficient final retriever; chunk-level experiments should retain BM25 and RRF controls and focus on the documented miss categories.",
               "", "## Reproducibility", "",
               f'- Dense model: `{metrics["run_metadata"]["dense"]["model_name"]}` (`{metrics["run_metadata"]["dense"]["model_revision"]}`), {metrics["run_metadata"]["dense"]["embedding_dimensions"]} dimensions on `{metrics["run_metadata"]["dense"]["runtime_device"]}`.',

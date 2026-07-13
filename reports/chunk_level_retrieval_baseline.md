@@ -6,15 +6,15 @@ Fixed-size and structure-aware chunks are compared with the unchanged page basel
 
 | Unit / strategy | Retriever | Scored N | Hit@1 | Hit@3 | Hit@5 | MRR | Avg ms | p95 ms |
 |---|---|---:|---:|---:|---:|---:|---:|---:|
-| Page | BM25 | 36 | 38.9% | 63.9% | 77.8% | 0.536 | 3.93 | 7.10 |
-| Page | BGE-small dense | 36 | 44.4% | 72.2% | 80.6% | 0.609 | 43.38 | 57.62 |
-| Page | Hybrid RRF | 36 | 50.0% | 72.2% | 80.6% | 0.634 | 47.84 | 62.89 |
-| Fixed chunks | BM25 | 36 | 36.1% | 61.1% | 83.3% | 0.541 | 3.69 | 6.71 |
-| Fixed chunks | BGE-small dense | 36 | 22.2% | 52.8% | 66.7% | 0.423 | 36.37 | 40.90 |
-| Fixed chunks | Hybrid RRF | 36 | 27.8% | 69.4% | 77.8% | 0.504 | 40.52 | 46.25 |
-| Structured chunks | BM25 | 36 | 19.4% | 61.1% | 77.8% | 0.423 | 3.26 | 5.97 |
-| Structured chunks | BGE-small dense | 36 | 22.2% | 61.1% | 72.2% | 0.447 | 31.05 | 37.51 |
-| Structured chunks | Hybrid RRF | 36 | 27.8% | 69.4% | 80.6% | 0.500 | 34.74 | 41.56 |
+| Page | BM25 | 41 | 36.6% | 56.1% | 68.3% | 0.491 | 3.42 | 6.75 |
+| Page | BGE-small dense | 41 | 43.9% | 68.3% | 73.2% | 0.589 | 40.75 | 61.09 |
+| Page | Hybrid RRF | 41 | 46.3% | 63.4% | 73.2% | 0.585 | 44.60 | 65.73 |
+| Fixed chunks | BM25 | 41 | 34.1% | 58.5% | 75.6% | 0.507 | 3.50 | 6.93 |
+| Fixed chunks | BGE-small dense | 41 | 24.4% | 51.2% | 63.4% | 0.425 | 36.80 | 42.53 |
+| Fixed chunks | Hybrid RRF | 41 | 26.8% | 63.4% | 70.7% | 0.471 | 40.74 | 49.53 |
+| Structured chunks | BM25 | 41 | 19.5% | 53.7% | 68.3% | 0.392 | 3.11 | 5.61 |
+| Structured chunks | BGE-small dense | 41 | 24.4% | 58.5% | 65.9% | 0.447 | 32.65 | 37.59 |
+| Structured chunks | Hybrid RRF | 41 | 26.8% | 61.0% | 73.2% | 0.467 | 36.18 | 42.16 |
 
 ## Chunk distributions
 
@@ -29,36 +29,36 @@ Fixed-size and structure-aware chunks are compared with the unchanged page basel
 
 | Group | Strategy | Retriever | N | Hit@1 | Hit@3 | Hit@5 | MRR |
 |---|---|---|---:|---:|---:|---:|---:|
-| biology | fixed | BM25 | 18 | 33.3% | 72.2% | 94.4% | 0.567 |
-| biology | fixed | BGE-small dense | 18 | 22.2% | 61.1% | 77.8% | 0.464 |
-| biology | fixed | Hybrid RRF | 18 | 33.3% | 77.8% | 94.4% | 0.568 |
-| physical_sciences | fixed | BM25 | 18 | 38.9% | 50.0% | 72.2% | 0.514 |
-| physical_sciences | fixed | BGE-small dense | 18 | 22.2% | 44.4% | 55.6% | 0.381 |
-| physical_sciences | fixed | Hybrid RRF | 18 | 22.2% | 61.1% | 61.1% | 0.440 |
-| biology | structured | BM25 | 18 | 27.8% | 77.8% | 88.9% | 0.528 |
-| biology | structured | BGE-small dense | 18 | 33.3% | 72.2% | 72.2% | 0.546 |
-| biology | structured | Hybrid RRF | 18 | 50.0% | 77.8% | 88.9% | 0.657 |
-| physical_sciences | structured | BM25 | 18 | 11.1% | 44.4% | 66.7% | 0.318 |
-| physical_sciences | structured | BGE-small dense | 18 | 11.1% | 50.0% | 72.2% | 0.347 |
-| physical_sciences | structured | Hybrid RRF | 18 | 5.6% | 61.1% | 72.2% | 0.342 |
-| easy | fixed | BM25 | 7 | 57.1% | 57.1% | 100.0% | 0.671 |
+| biology | fixed | BM25 | 20 | 35.0% | 75.0% | 90.0% | 0.574 |
+| biology | fixed | BGE-small dense | 20 | 25.0% | 60.0% | 75.0% | 0.469 |
+| biology | fixed | Hybrid RRF | 20 | 35.0% | 75.0% | 90.0% | 0.562 |
+| physical_sciences | fixed | BM25 | 21 | 33.3% | 42.9% | 61.9% | 0.443 |
+| physical_sciences | fixed | BGE-small dense | 21 | 23.8% | 42.9% | 52.4% | 0.383 |
+| physical_sciences | fixed | Hybrid RRF | 21 | 19.0% | 52.4% | 52.4% | 0.384 |
+| biology | structured | BM25 | 20 | 25.0% | 70.0% | 80.0% | 0.482 |
+| biology | structured | BGE-small dense | 20 | 30.0% | 65.0% | 65.0% | 0.507 |
+| biology | structured | Hybrid RRF | 20 | 45.0% | 70.0% | 85.0% | 0.609 |
+| physical_sciences | structured | BM25 | 21 | 14.3% | 38.1% | 57.1% | 0.307 |
+| physical_sciences | structured | BGE-small dense | 21 | 19.0% | 52.4% | 66.7% | 0.390 |
+| physical_sciences | structured | Hybrid RRF | 21 | 9.5% | 52.4% | 61.9% | 0.331 |
+| easy | fixed | BM25 | 7 | 57.1% | 71.4% | 100.0% | 0.707 |
 | easy | fixed | BGE-small dense | 7 | 28.6% | 57.1% | 71.4% | 0.493 |
 | easy | fixed | Hybrid RRF | 7 | 57.1% | 71.4% | 85.7% | 0.692 |
-| hard | fixed | BM25 | 10 | 30.0% | 70.0% | 80.0% | 0.503 |
-| hard | fixed | BGE-small dense | 10 | 10.0% | 40.0% | 70.0% | 0.317 |
-| hard | fixed | Hybrid RRF | 10 | 10.0% | 70.0% | 80.0% | 0.389 |
-| medium | fixed | BM25 | 19 | 31.6% | 57.9% | 78.9% | 0.512 |
-| medium | fixed | BGE-small dense | 19 | 26.3% | 57.9% | 63.2% | 0.453 |
-| medium | fixed | Hybrid RRF | 19 | 26.3% | 68.4% | 73.7% | 0.495 |
+| hard | fixed | BM25 | 11 | 27.3% | 63.6% | 72.7% | 0.458 |
+| hard | fixed | BGE-small dense | 11 | 18.2% | 45.5% | 72.7% | 0.379 |
+| hard | fixed | Hybrid RRF | 11 | 9.1% | 63.6% | 72.7% | 0.358 |
+| medium | fixed | BM25 | 23 | 30.4% | 52.2% | 69.6% | 0.469 |
+| medium | fixed | BGE-small dense | 23 | 26.1% | 52.2% | 56.5% | 0.426 |
+| medium | fixed | Hybrid RRF | 23 | 26.1% | 60.9% | 65.2% | 0.457 |
 | easy | structured | BM25 | 7 | 42.9% | 71.4% | 100.0% | 0.619 |
 | easy | structured | BGE-small dense | 7 | 57.1% | 85.7% | 85.7% | 0.700 |
 | easy | structured | Hybrid RRF | 7 | 85.7% | 85.7% | 85.7% | 0.878 |
-| hard | structured | BM25 | 10 | 10.0% | 60.0% | 70.0% | 0.343 |
-| hard | structured | BGE-small dense | 10 | 10.0% | 50.0% | 50.0% | 0.343 |
-| hard | structured | Hybrid RRF | 10 | 10.0% | 60.0% | 70.0% | 0.356 |
-| medium | structured | BM25 | 19 | 15.8% | 57.9% | 73.7% | 0.394 |
-| medium | structured | BGE-small dense | 19 | 15.8% | 57.9% | 78.9% | 0.408 |
-| medium | structured | Hybrid RRF | 19 | 15.8% | 68.4% | 84.2% | 0.436 |
+| hard | structured | BM25 | 11 | 9.1% | 54.5% | 63.6% | 0.312 |
+| hard | structured | BGE-small dense | 11 | 18.2% | 54.5% | 54.5% | 0.403 |
+| hard | structured | Hybrid RRF | 11 | 9.1% | 54.5% | 63.6% | 0.328 |
+| medium | structured | BM25 | 23 | 17.4% | 47.8% | 60.9% | 0.362 |
+| medium | structured | BGE-small dense | 23 | 17.4% | 52.2% | 65.2% | 0.391 |
+| medium | structured | Hybrid RRF | 23 | 17.4% | 56.5% | 73.9% | 0.408 |
 
 ## Dependency and evidence-span slices
 
@@ -67,9 +67,9 @@ Fixed-size and structure-aware chunks are compared with the unchanged page basel
 | formula dependent | fixed | BM25 | 11 | 18.2% | 27.3% | 54.5% | 0.318 |
 | formula dependent | fixed | BGE-small dense | 11 | 27.3% | 45.5% | 45.5% | 0.418 |
 | formula dependent | fixed | Hybrid RRF | 11 | 18.2% | 45.5% | 45.5% | 0.367 |
-| formula dependent | structured | BM25 | 11 | 9.1% | 45.5% | 54.5% | 0.261 |
-| formula dependent | structured | BGE-small dense | 11 | 9.1% | 54.5% | 72.7% | 0.346 |
-| formula dependent | structured | Hybrid RRF | 11 | 9.1% | 63.6% | 63.6% | 0.346 |
+| formula dependent | structured | BM25 | 11 | 18.2% | 45.5% | 54.5% | 0.321 |
+| formula dependent | structured | BGE-small dense | 11 | 18.2% | 63.6% | 72.7% | 0.414 |
+| formula dependent | structured | Hybrid RRF | 11 | 18.2% | 63.6% | 63.6% | 0.407 |
 | visual dependent | fixed | BM25 | 4 | 75.0% | 100.0% | 100.0% | 0.875 |
 | visual dependent | fixed | BGE-small dense | 4 | 0.0% | 25.0% | 75.0% | 0.225 |
 | visual dependent | fixed | Hybrid RRF | 4 | 0.0% | 100.0% | 100.0% | 0.458 |
@@ -127,6 +127,17 @@ Rows whose answer span could not be mapped with at least the configured contiguo
 | PSC-013 | fixed | Hybrid RRF | 8 | formula or symbol extraction mismatch |
 | PSC-016 | fixed | BGE-small dense | 6 | formula or symbol extraction mismatch |
 | PSC-016 | fixed | Hybrid RRF | 7 | formula or symbol extraction mismatch |
+| BIO-022 | fixed | BM25 | 41 | relevant chunk ranked below top 5 |
+| BIO-022 | fixed | BGE-small dense | 80 | relevant chunk ranked below top 5 |
+| BIO-022 | fixed | Hybrid RRF | 53 | relevant chunk ranked below top 5 |
+| PSC-021 | fixed | BM25 | 150 | relevant chunk ranked below top 5 |
+| PSC-021 | fixed | Hybrid RRF | 20 | relevant chunk ranked below top 5 |
+| PSC-023 | fixed | BM25 | 29 | relevant chunk ranked below top 5 |
+| PSC-023 | fixed | BGE-small dense | 18 | relevant chunk ranked below top 5 |
+| PSC-023 | fixed | Hybrid RRF | 19 | relevant chunk ranked below top 5 |
+| PSC-024 | fixed | BM25 | 212 | relevant chunk ranked below top 5 |
+| PSC-024 | fixed | BGE-small dense | 8 | relevant chunk ranked below top 5 |
+| PSC-024 | fixed | Hybrid RRF | 40 | relevant chunk ranked below top 5 |
 | BIO-004 | structured | BGE-small dense | 15 | relevant chunk ranked below top 5 |
 | BIO-004 | structured | Hybrid RRF | 7 | relevant chunk ranked below top 5 |
 | BIO-005 | structured | BM25 | 6 | multi page evidence dilution |
@@ -152,22 +163,35 @@ Rows whose answer span could not be mapped with at least the configured contiguo
 | PSC-013 | structured | BM25 | 18 | formula or symbol extraction mismatch |
 | PSC-013 | structured | BGE-small dense | 17 | formula or symbol extraction mismatch |
 | PSC-013 | structured | Hybrid RRF | 17 | formula or symbol extraction mismatch |
+| BIO-021 | structured | BM25 | 16 | relevant chunk ranked below top 5 |
+| BIO-021 | structured | BGE-small dense | 7 | relevant chunk ranked below top 5 |
+| BIO-021 | structured | Hybrid RRF | 7 | relevant chunk ranked below top 5 |
+| BIO-022 | structured | BM25 | 17 | relevant chunk ranked below top 5 |
+| BIO-022 | structured | BGE-small dense | 6 | relevant chunk ranked below top 5 |
+| PSC-021 | structured | BM25 | 152 | relevant chunk ranked below top 5 |
+| PSC-021 | structured | Hybrid RRF | 23 | relevant chunk ranked below top 5 |
+| PSC-023 | structured | BM25 | 22 | relevant chunk ranked below top 5 |
+| PSC-023 | structured | BGE-small dense | 16 | relevant chunk ranked below top 5 |
+| PSC-023 | structured | Hybrid RRF | 15 | relevant chunk ranked below top 5 |
+| PSC-024 | structured | BM25 | 178 | relevant chunk ranked below top 5 |
+| PSC-024 | structured | BGE-small dense | 8 | relevant chunk ranked below top 5 |
+| PSC-024 | structured | Hybrid RRF | 37 | relevant chunk ranked below top 5 |
 
 ## Per-question improvements and regressions
 
-- **Fixed / BM25:** improves BIO-001, BIO-004, BIO-005, BIO-014, PSC-007, PSC-009, PSC-010, PSC-011, PSC-014, PSC-015, PSC-018; regresses BIO-002, BIO-003, BIO-013, BIO-015, PSC-001, PSC-016.
-- **Fixed / BGE-small dense:** improves BIO-004, BIO-005, BIO-008, PSC-008, PSC-009, PSC-011, PSC-014, PSC-015, PSC-018; regresses BIO-002, BIO-003, BIO-007, BIO-010, BIO-013, BIO-014, BIO-016, BIO-018, PSC-001, PSC-004, PSC-007, PSC-010, PSC-012, PSC-016, PSC-017.
-- **Fixed / Hybrid RRF:** improves BIO-004, BIO-005, BIO-008, PSC-007, PSC-008, PSC-009, PSC-011, PSC-014, PSC-015, PSC-018; regresses BIO-002, BIO-003, BIO-009, BIO-010, BIO-013, BIO-018, PSC-001, PSC-003, PSC-004, PSC-010, PSC-016.
+- **Fixed / BM25:** improves BIO-001, BIO-003, BIO-004, BIO-005, BIO-014, BIO-021, PSC-009, PSC-010, PSC-011, PSC-014, PSC-015, PSC-018; regresses BIO-002, BIO-013, BIO-015, PSC-001, PSC-016.
+- **Fixed / BGE-small dense:** improves BIO-004, BIO-005, BIO-008, BIO-021, PSC-008, PSC-009, PSC-011, PSC-014, PSC-015, PSC-018; regresses BIO-002, BIO-003, BIO-007, BIO-010, BIO-013, BIO-014, BIO-016, BIO-018, PSC-001, PSC-004, PSC-007, PSC-010, PSC-012, PSC-016, PSC-017.
+- **Fixed / Hybrid RRF:** improves BIO-004, BIO-005, BIO-008, BIO-021, PSC-008, PSC-009, PSC-011, PSC-014, PSC-015, PSC-018; regresses BIO-002, BIO-003, BIO-009, BIO-010, BIO-013, BIO-018, BIO-022, PSC-001, PSC-003, PSC-004, PSC-007, PSC-010, PSC-016.
 - **Structured / BM25:** improves BIO-009, BIO-014, PSC-010, PSC-016; regresses BIO-003, BIO-013, BIO-016, PSC-017.
 - **Structured / BGE-small dense:** improves BIO-014; regresses BIO-008, BIO-013, BIO-018, PSC-001, PSC-012, PSC-017.
 - **Structured / Hybrid RRF:** improves BIO-005, BIO-008, BIO-014, PSC-008; regresses PSC-003, PSC-014, PSC-017.
 
 ## Conclusions
 
-Best chunk result is **fixed / BM25** at 83.3% Hit@5 and 0.541 MRR.
+Best chunk result is **fixed / BM25** at 75.6% Hit@5 and 0.507 MRR.
 Chunk-level retrieval does **not** improve uniformly over page retrieval: fixed BM25 improves Hit@5, while both chunk-level dense variants regress versus page-level dense.
 Structure-aware chunking outperforms fixed chunks for dense Hit@3/Hit@5/MRR and hybrid Hit@5. Fixed chunks are stronger for BM25 and retain a slightly higher hybrid MRR.
-By retriever, the preferred chunk strategy is fixed for BM25 (83.3%) and dense (66.7%), and structured for hybrid (80.6% with higher MRR).
+By retriever, the preferred chunk strategy is fixed for BM25 (75.6%) and dense (63.4%), and structured for hybrid (73.2% with higher MRR).
 Automatic chunk scoring is unsuitable without review for: none.
 Formula, visual, table, multi-page, and multi-chunk slices are preserved in the JSON metrics; small slice counts should be interpreted descriptively.
 Use fixed 400-token chunks with 80-token overlap as the default lexical baseline. Retain structure-aware chunks as the hybrid comparison; they do not justify replacing the fixed default across all retrievers.

@@ -24,7 +24,7 @@ class RetrievalTests(unittest.TestCase):
     def test_reviewed_benchmark_is_canonical_and_candidates_are_distinct(self) -> None:
         """Require the reviewed canonical file and its finalized statuses."""
         rows = read_jsonl(ROOT / "data/benchmarks/retrieval_benchmark_v1.jsonl")
-        self.assertEqual(len(rows), 40)
+        self.assertEqual(len(rows), 46)
         self.assertTrue(all(r["review_status"] in {"verified", "verified_with_fixes", "confirmed_unanswerable"} for r in rows))
 
     def test_loading_excludes_front_matter_and_preserves_metadata(self) -> None:

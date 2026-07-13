@@ -29,15 +29,20 @@ scripts/generate_retrieval_benchmark.py
                                Candidate benchmark generator and validator
 scripts/run_page_retrieval.py  Page-level retrieval source entry point
 scripts/run_chunk_retrieval.py Chunk-level retrieval source entry point
+scripts/run_hierarchical_retrieval.py
+                               Hierarchical retrieval source entry point
 src/textbook_audit/
   config.py                    Immutable book/chapter/page-offset catalog
   cli.py                       Command-line interface
   pipeline.py                  Extraction, mapping, cleaning, and reporting
   retrieval.py                 Page BM25, dense, RRF, metrics, and reporting
   chunk_retrieval.py           Chunking, chunk retrieval, gold mapping, reports
+  hierarchical_retrieval.py    Chapter/section/paragraph hierarchy and retrieval
 tests/test_pipeline.py         Mapping and artifact integrity checks
 tests/test_retrieval.py        Loading, ranking, matching, and metric regressions
 tests/test_chunk_retrieval.py  Chunk boundaries, metadata, gold, and metrics tests
+tests/test_hierarchical_retrieval.py
+                               Hierarchy detection and ranking regressions
 pyproject.toml                 Package metadata and dependencies
 ```
 
@@ -168,6 +173,9 @@ pages, representative formula issues, image/table counts, and the full verdict.
 The canonical reviewed benchmark is
 `data/benchmarks/retrieval_benchmark_v1.jsonl`. The runner deliberately fails
 if that file is absent and never substitutes the `_candidates` artifact.
+The current reviewed set contains 46 questions: 41 answerable questions and 5
+confirmed negative/weak-evidence questions. The `_candidates` artifacts remain
+the original 40-row proposal set and are not evaluation inputs.
 
 Install retrieval dependencies and run from the repository root:
 
@@ -233,6 +241,43 @@ Outputs:
 - `data/retrieval/chunk_level_results.jsonl`
 - `reports/chunk_level_retrieval_metrics.json`
 - `reports/chunk_level_retrieval_baseline.md`
+
+## Hierarchical Chunking and Retrieval v1
+
+Run the chapter → section → paragraph-group experiment after the earlier
+baselines so their metrics are available for comparison:
+
+```powershell
+python scripts/run_hierarchical_retrieval.py --device cpu
+```
+
+Equivalent installed entry point:
+
+```powershell
+hierarchical-retrieval --root X:\teachingAssistantV2 --chapter-k 3 --section-k 8 --paragraph-target 250 --paragraph-min 150 --paragraph-max 350
+```
+
+Chapter assignment uses the verified chapter-map PDF ranges, excluding all
+pages outside those ranges. Numbered headings create high-confidence sections;
+conservative page-title matches may create medium-confidence sections. Leaf
+paragraph groups are the final targets. Strict cascade filters through top
+chapters and sections, while soft fusion combines paragraph and parent ranks
+without eliminating any paragraph.
+
+Hierarchy-level embeddings use `BAAI/bge-small-en-v1.5` and are cached by book
+and level. Long section vectors are normalized means of child paragraph
+vectors; chapter vectors aggregate section vectors with a separately embedded
+chapter title. Useful options include `--section-weight`, `--chapter-weight`,
+`--gold-min-coverage`, `--cache-dir`, and all output-path overrides.
+
+Outputs:
+
+- `data/processed/biology_hierarchy.jsonl`
+- `data/processed/physical_sciences_hierarchy.jsonl`
+- `data/retrieval/hierarchical_results.jsonl`
+- `reports/hierarchical_retrieval_metrics.json`
+- `reports/hierarchical_retrieval_baseline.md`
+- `reports/hierarchy_detection_audit.md`
 
 Run all regression tests with:
 
