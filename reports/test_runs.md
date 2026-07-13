@@ -133,3 +133,41 @@ hierarchy levels; the five existing negatives remain separately reported.
 Outcome: natural wording is substantially harder than the canonical slice.
 Page dense has the best natural-query MRR (0.441) among flat baselines; page
 dense, page Hybrid, and fixed-chunk Hybrid tie for best Hit@5 at 65.0%.
+
+## Candidate complementarity audit — 2026-07-14
+
+Change tested: added evidence-normalized top-5/10/20 candidate unions across all
+15 existing page, chunk, and hierarchy variants. The run reused the committed
+BGE-small caches, required contiguous answer-span evidence in addition to gold
+page membership, and left all prior baseline outputs unchanged.
+
+Commands:
+
+```powershell
+temp\python-x64\python.exe scripts\run_candidate_complementarity.py --device cpu
+python -m unittest discover -s tests -v
+```
+
+Result: the audit completed from cached corpus embeddings and all 35 regression
+tests passed. The detailed file contains 2,970 rows (66 questions × 15 methods ×
+3 candidate depths).
+
+| Primary retriever, all 61 answerable | Hit@5 | Hit@10 | Hit@20 | MRR |
+|---|---:|---:|---:|---:|
+| Page BGE-small | 38/61 (62.3%) | 49/61 (80.3%) | 56/61 (91.8%) | 0.441 |
+| Page BM25 | 37/61 (60.7%) | 45/61 (73.8%) | 51/61 (83.6%) | 0.380 |
+| Fixed 400/80 BM25 | 42/61 (68.9%) | 48/61 (78.7%) | 52/61 (85.2%) | 0.451 |
+| Soft-fusion Hybrid | 42/61 (68.9%) | 47/61 (77.0%) | 52/61 (85.2%) | 0.523 |
+
+| All-primary oracle slice | Oracle Hit@5 | Oracle Hit@10 | Oracle Hit@20 |
+|---|---:|---:|---:|
+| All answerable | 47/61 (77.0%) | 54/61 (88.5%) | 60/61 (98.4%) |
+| Canonical | 34/41 (82.9%) | 37/41 (90.2%) | 40/41 (97.6%) |
+| Natural student | 13/20 (65.0%) | 17/20 (85.0%) | 20/20 (100.0%) |
+
+Outcome: Page BGE-small, Fixed 400/80 BM25, and Soft-fusion Hybrid each supply
+unique top-20 wins; Page BM25 supplies none. The required unions miss only
+BIO-017 at depth 20, while Fixed 400/80 dense retrieves it at rank 12, bringing
+the full existing-method pool to 61/61. Candidate fusion plus reranking is
+therefore justified; improving first-stage generation is not the immediate
+bottleneck on this benchmark.

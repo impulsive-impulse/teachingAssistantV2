@@ -31,6 +31,8 @@ scripts/run_page_retrieval.py  Page-level retrieval source entry point
 scripts/run_chunk_retrieval.py Chunk-level retrieval source entry point
 scripts/run_hierarchical_retrieval.py
                                Hierarchical retrieval source entry point
+scripts/run_candidate_complementarity.py
+                               Existing-retriever candidate audit entry point
 src/textbook_audit/
   config.py                    Immutable book/chapter/page-offset catalog
   cli.py                       Command-line interface
@@ -38,11 +40,14 @@ src/textbook_audit/
   retrieval.py                 Page BM25, dense, RRF, metrics, and reporting
   chunk_retrieval.py           Chunking, chunk retrieval, gold mapping, reports
   hierarchical_retrieval.py    Chapter/section/paragraph hierarchy and retrieval
+  candidate_complementarity.py Evidence normalization, unions, overlap, decisions
 tests/test_pipeline.py         Mapping and artifact integrity checks
 tests/test_retrieval.py        Loading, ranking, matching, and metric regressions
 tests/test_chunk_retrieval.py  Chunk boundaries, metadata, gold, and metrics tests
 tests/test_hierarchical_retrieval.py
                                Hierarchy detection and ranking regressions
+tests/test_candidate_complementarity.py
+                               Deduplication, oracle, overlap, and slice regressions
 pyproject.toml                 Package metadata and dependencies
 ```
 
@@ -297,6 +302,40 @@ Outputs:
 - `reports/hierarchical_retrieval_baseline.md`
 - `reports/hierarchy_detection_audit.md`
 
+## Candidate Complementarity Audit v1
+
+Run the complementarity audit after the three retrieval baselines exist:
+
+```powershell
+python scripts/run_candidate_complementarity.py --device cpu
+```
+
+Equivalent installed entry point:
+
+```powershell
+candidate-complementarity --root X:\teachingAssistantV2 --depths 5 10 20
+```
+
+The audit does not add a retriever or reranker. It reconstructs the existing
+page, fixed/structured chunk, strict-cascade, and soft-fusion rankings to depth
+20 while reusing the validated BGE-small embedding caches. Existing baseline
+result and report files are not rewritten. Use `--benchmark`, `--results`,
+`--metrics`, `--report`, `--cache-dir`, `--depths`, and
+`--gold-min-coverage` to override defaults.
+
+Each union member contributes its own top-K list before deterministic
+cross-method deduplication. Evidence is considered duplicate only when it
+shares a source PDF page and has at least 80% five-token-shingle containment.
+A candidate is correct only when it is on a reviewed primary/alternative page
+and satisfies the baseline's contiguous answer-span coverage rule; gold labels
+never influence ranking.
+
+Outputs:
+
+- `data/retrieval/candidate_complementarity_results.jsonl`
+- `reports/candidate_complementarity_metrics.json`
+- `reports/candidate_complementarity_audit.md`
+
 Run all regression tests with:
 
 ```powershell
@@ -310,6 +349,7 @@ python scripts/expand_natural_student_benchmark.py
 python scripts/run_page_retrieval.py --device cpu
 python scripts/run_chunk_retrieval.py --device cpu
 python scripts/run_hierarchical_retrieval.py --device cpu
+python scripts/run_candidate_complementarity.py --device cpu
 python scripts/expand_natural_student_benchmark.py
 python -m unittest discover -s tests -v
 ```
@@ -323,8 +363,10 @@ change, append one row describing what was tested, the command, and the result.
 
 ## Recommended next research step
 
-Test deterministic neighbour expansion around the first-stage retrieved chunk.
-Compare the retrieved chunk alone with previous-plus-current, current-plus-next,
-and previous-plus-current-plus-next context while retaining the same reviewed
-benchmark, BGE-small model, BM25 settings, and RRF settings. Keep formula,
-visual, table, and multi-page results as separate slices.
+Build a deterministic candidate-fusion handoff followed by a reranking
+experiment. Retain Page BGE-small, Fixed 400/80 BM25, Fixed 400/80 BGE-small,
+and Soft-fusion Hybrid candidates; deduplicate substantially identical evidence
+before reranking. Keep Page BM25 as a cheap diagnostic control rather than a
+separate production candidate source because it supplies no unique top-20 win
+on the current benchmark. Continue reporting canonical, natural-student,
+formula, visual, table, multi-page, and multi-chunk slices separately.
