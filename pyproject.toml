@@ -20,6 +20,7 @@ page-retrieval = "textbook_audit.retrieval:main"
 chunk-retrieval = "textbook_audit.chunk_retrieval:main"
 hierarchical-retrieval = "textbook_audit.hierarchical_retrieval:main"
 candidate-complementarity = "textbook_audit.candidate_complementarity:main"
+local-reranker = "textbook_audit.reranker:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

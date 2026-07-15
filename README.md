@@ -336,6 +336,40 @@ Outputs:
 - `reports/candidate_complementarity_metrics.json`
 - `reports/candidate_complementarity_audit.md`
 
+## Local Cross-Encoder Reranking Baseline v1
+
+Run the local reranker after the candidate-complementarity artifact exists:
+
+```powershell
+python scripts/run_reranker.py --device cpu --batch-size 32 --candidate-budgets 10 20
+```
+
+Equivalent installed entry point:
+
+```powershell
+local-reranker --root X:\teachingAssistantV2 --device cpu --batch-size 32
+```
+
+The runner loads the four audited depth-20 source rankings (Page BGE-small,
+Fixed 400/80 BM25, Fixed 400/80 BGE-small, and Soft-fusion Hybrid), joins their
+IDs to full processed text, deduplicates evidence, and caps the deterministic
+RRF pool at 20. It then scores every query/passage pair locally with
+`BAAI/bge-reranker-base` through Sentence Transformers `CrossEncoder`.
+
+Model files are cached under `data/retrieval/cache/models/`. Passage content is
+whitespace-normalized and limited to 1,800 characters at a word boundary; the
+complete model pair is also capped at 512 tokens. Use `--model-name`,
+`--model-cache`, `--candidate-budgets`, `--batch-size`, `--device`, and output
+path options to override defaults. CPU is the portable default; `--device cuda`
+requires a CUDA-enabled PyTorch runtime. A physical Windows GPU is not enough
+when PyTorch has no compatible backend (for example, the Adreno/ARM test host).
+
+Outputs:
+
+- `data/retrieval/reranker_results.jsonl`
+- `reports/reranker_metrics.json`
+- `reports/reranker_baseline.md`
+
 Run all regression tests with:
 
 ```powershell
@@ -350,6 +384,7 @@ python scripts/run_page_retrieval.py --device cpu
 python scripts/run_chunk_retrieval.py --device cpu
 python scripts/run_hierarchical_retrieval.py --device cpu
 python scripts/run_candidate_complementarity.py --device cpu
+python scripts/run_reranker.py --device cpu --batch-size 32
 python scripts/expand_natural_student_benchmark.py
 python -m unittest discover -s tests -v
 ```

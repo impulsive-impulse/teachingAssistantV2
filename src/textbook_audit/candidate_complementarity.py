@@ -85,6 +85,8 @@ class Candidate:
     text: str
     matches_gold: bool
     matched_evidence: tuple[str, ...]
+    chapter_title: str | None = None
+    section_title: str | None = None
 
     def as_dict(self) -> dict[str, Any]:
         """Serialize stable identifiers and a short preview for detailed JSONL."""
@@ -97,6 +99,8 @@ class Candidate:
             "text_snippet": " ".join(self.text.split())[:500],
             "matches_accepted_evidence": self.matches_gold,
             "accepted_evidence_matched": list(self.matched_evidence),
+            "chapter_title": self.chapter_title,
+            "section_title": self.section_title,
         }
 
 
@@ -155,7 +159,8 @@ def _candidate(unit: dict[str, Any], retriever: str, rank: int,
         matched = candidate_id in accepted_ids
         evidence = (candidate_id,) if matched else ()
     return Candidate(retriever, rank, candidate_id, unit_type, unit["book_id"],
-                     pdf_pages, textbook_pages, text, matched, evidence)
+                     pdf_pages, textbook_pages, text, matched, evidence,
+                     unit.get("chapter_title"), unit.get("section_title"))
 
 
 @lru_cache(maxsize=None)

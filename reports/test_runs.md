@@ -18,6 +18,7 @@ change is tested; keep commands and outcomes concise.
 | 2026-07-13 | Manual gold review for BIO-003/PSC-007 and six conversational query additions | Benchmark schema, source-page, normalized-span, ID, status, and hierarchy-mapping validation | PASS — 46 unique rows, 41 answerable, 5 negative; no uncertain hierarchy mappings |
 | 2026-07-13 | Expanded benchmark across page, chunk, and hierarchical baselines | `python scripts/run_page_retrieval.py --device cpu`; `python scripts/run_chunk_retrieval.py --device cpu`; `python scripts/run_hierarchical_retrieval.py --device cpu` | PASS — 690 page rows, 1,380 chunk rows, 1,380 hierarchy rows; reports regenerated |
 | 2026-07-14 | Approved 20-question natural-student slice, inherited-gold/PDF validation, slice metrics, and full regeneration | `python scripts/expand_natural_student_benchmark.py`; all three retrieval runners; `python -m unittest discover -s tests -v` | PASS — 66 questions, 61 scored and 5 negative; 990 page, 1,980 chunk, and 1,980 hierarchy result rows; 29 tests |
+| 2026-07-14 | Local BGE cross-encoder reranking at candidate budgets 10 and 20 | `temp\python-x64\python.exe scripts\run_reranker.py --device cpu --batch-size 32`; full regression suite | PASS — 66 queries, 1,320 top-five rows; budget 10 reranker reached 36/61 Hit@5 at 7.0 s/query |
 
 ## Evaluation results — 2026-07-12
 
@@ -171,3 +172,45 @@ BIO-017 at depth 20, while Fixed 400/80 dense retrieves it at rank 12, bringing
 the full existing-method pool to 61/61. Candidate fusion plus reranking is
 therefore justified; improving first-stage generation is not the immediate
 bottleneck on this benchmark.
+
+## Local cross-encoder reranking — 2026-07-14
+
+Change tested: added deterministic four-source RRF pool construction,
+cross-unit deduplication, local `BAAI/bge-reranker-base` scoring, 10/20 budget
+comparison, required slices, negatives, and regression diagnostics.
+
+Commands:
+
+```powershell
+temp\python-x64\python.exe scripts\run_reranker.py --device cpu --batch-size 32
+temp\python-x64\python.exe -m unittest discover -s tests -v
+```
+
+The host exposes a Qualcomm Adreno X1-85 GPU, but Sentence Transformers uses
+PyTorch and the available PyTorch 2.13 runtime has no compatible Adreno/DirectML
+backend. The measured run therefore correctly used CPU; model files were cached
+locally for subsequent runs.
+
+| Method / budget | Hit@1 | Hit@3 | Hit@5 | MRR | Avg latency/query |
+|---|---:|---:|---:|---:|---:|
+| Page BGE-small source | 16/61 (26.2%) | 33/61 (54.1%) | 38/61 (62.3%) | 0.441 | Candidate-generation baseline |
+| Fixed 400/80 BM25 source | 17/61 (27.9%) | 31/61 (50.8%) | 42/61 (68.9%) | 0.451 | Candidate-generation baseline |
+| Fixed 400/80 BGE-small source | 13/61 (21.3%) | 30/61 (49.2%) | 37/61 (60.7%) | 0.398 | Candidate-generation baseline |
+| Soft-fusion Hybrid source | 25/61 (41.0%) | 34/61 (55.7%) | 42/61 (68.9%) | 0.523 | Candidate-generation baseline |
+| Fused control, budget 10 | 15/61 (24.6%) | 24/61 (39.3%) | 29/61 (47.5%) | 0.356 | <0.01 ms |
+| BGE reranker, budget 10 | 14/61 (23.0%) | 28/61 (45.9%) | 36/61 (59.0%) | 0.378 | 6,997.8 ms |
+| Fused control, budget 20 | 15/61 (24.6%) | 24/61 (39.3%) | 29/61 (47.5%) | 0.371 | <0.01 ms |
+| BGE reranker, budget 20 | 13/61 (21.3%) | 25/61 (41.0%) | 35/61 (57.4%) | 0.385 | 14,547.2 ms |
+
+| Slice, reranker | Budget | N | Hit@1 | Hit@3 | Hit@5 | MRR |
+|---|---:|---:|---:|---:|---:|---:|
+| Canonical | 10 | 41 | 9/41 (22.0%) | 16/41 (39.0%) | 22/41 (53.7%) | 0.347 |
+| Natural student | 10 | 20 | 5/20 (25.0%) | 12/20 (60.0%) | 14/20 (70.0%) | 0.442 |
+| Canonical | 20 | 41 | 10/41 (24.4%) | 15/41 (36.6%) | 21/41 (51.2%) | 0.376 |
+| Natural student | 20 | 20 | 3/20 (15.0%) | 10/20 (50.0%) | 14/20 (70.0%) | 0.405 |
+
+Outcome: budget 10 is the better reranking budget on this CPU host. The
+cross-encoder improves the compressed RRF control at Hit@3/5—especially for
+natural questions—but regresses Hit@1 and remains below Soft-fusion Hybrid and
+Fixed BM25. It stays a diagnostic baseline rather than entering the first
+offline generation architecture.
