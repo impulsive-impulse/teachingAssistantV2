@@ -62,12 +62,13 @@ def _normalized(text: str) -> str:
     return " ".join(tokenize(text))
 
 
-def _overlap_join(left: str, right: str, maximum: int = 140) -> str:
+def _overlap_join(left: str, right: str, maximum: int = 140,
+                  minimum: int = 8) -> str:
     """Join two chunks while removing their longest exact word overlap."""
     left_words, right_words = _word_tokens(left), _word_tokens(right)
     limit = min(len(left_words), len(right_words), maximum)
     overlap = 0
-    for width in range(limit, 7, -1):
+    for width in range(limit, minimum - 1, -1):
         if left_words[-width:] == right_words[:width]:
             overlap = width
             break
@@ -114,7 +115,9 @@ def _ranked_segments(ranking: list[int], chunks: list[dict[str, Any]],
             for rank, index in enumerate(ranking[:count], 1)]
 
 
-def _merge_segments(segments: list[dict[str, Any]], same_page_only: bool) -> list[dict[str, Any]]:
+def _merge_segments(segments: list[dict[str, Any]], same_page_only: bool,
+                    overlap_maximum: int = 140,
+                    overlap_minimum: int = 8) -> list[dict[str, Any]]:
     """Merge adjacent output segments when their source relationship permits."""
     output: list[dict[str, Any]] = []
     for segment in segments:
@@ -125,7 +128,8 @@ def _merge_segments(segments: list[dict[str, Any]], same_page_only: bool) -> lis
             output.append(dict(segment))
             continue
         previous = output[-1]
-        previous["text"] = _overlap_join(previous["text"], segment["text"])
+        previous["text"] = _overlap_join(
+            previous["text"], segment["text"], overlap_maximum, overlap_minimum)
         previous["source_chunk_ids"] += segment["source_chunk_ids"]
         previous["source_ranks"] += segment["source_ranks"]
         previous["source_metadata"] += segment["source_metadata"]
@@ -136,13 +140,15 @@ def _merge_segments(segments: list[dict[str, Any]], same_page_only: bool) -> lis
 
 
 def assemble_context(method: str, ranking: list[int],
-                     chunks: list[dict[str, Any]]) -> list[dict[str, Any]]:
+                     chunks: list[dict[str, Any]], count: int = POOL_SIZE,
+                     overlap_maximum: int = 140,
+                     overlap_minimum: int = 8) -> list[dict[str, Any]]:
     """Assemble one context using ranking/text metadata only, never gold labels."""
     if method not in METHODS:
         raise ValueError(f"unknown context assembly method: {method}")
     if not ranking:
         return []
-    base = _ranked_segments(ranking, chunks)
+    base = _ranked_segments(ranking, chunks, count)
     if method == "top3_relevance":
         return base[:3]
     if method == "top5_relevance":
@@ -150,9 +156,11 @@ def assemble_context(method: str, ranking: list[int],
     if method.startswith("token_budget_"):
         return _hard_budget(base, int(method.rsplit("_", 1)[1]))
     if method in {"overlap_merge", "overlap_merge_metadata_preserving"}:
-        return _merge_segments(base, same_page_only=False)
+        return _merge_segments(base, same_page_only=False, overlap_maximum=overlap_maximum,
+                               overlap_minimum=overlap_minimum)
     if method == "same_page_merge":
-        return _merge_segments(base, same_page_only=True)
+        return _merge_segments(base, same_page_only=True, overlap_maximum=overlap_maximum,
+                               overlap_minimum=overlap_minimum)
     if method == "redundancy_removal":
         output: list[dict[str, Any]] = []
         for segment in base:

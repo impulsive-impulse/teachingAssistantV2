@@ -530,22 +530,50 @@ configurations, failure audit, and architecture handoff with:
 python scripts\finalize_experiments.py
 ```
 
-Query any selected profile without benchmark labels:
+Query the frozen winning pipeline without benchmark labels:
 
 ```powershell
-# Quality/balanced: BGE-small + BM25 + activated specialists
 temp\python-x64\python.exe scripts\query_final_pipeline.py `
-  "How do plants eat?" --book-id biology --profile balanced --include-text
-
-# Lightweight: fixed-600/100 BM25; no neural model is loaded
-python scripts\query_final_pipeline.py `
-  "How do plants eat?" --book-id biology --profile lightweight --include-text
+  "How do plants eat?" --book-id biology --include-text
 ```
 
 The authoritative handoff is
 `reports/experiments/final_experiment_report.md`; machine-readable selections
 are in `reports/experiments/final_pipeline_selection.json`, with the full
 comparable leaderboard and Pareto frontier beside them as CSV files.
+
+## Retrieval Baseline v1 (frozen)
+
+The verified winner is frozen as Retrieval Baseline v1 (`1.0.0`). Its only
+behavioral source of truth is `config/retrieval_baseline_v1.yaml`; the public
+Python interface is
+`textbook_audit.retrieval_baseline.retrieve(question, book_id, config,
+include_text, profile)` and the source-checkout CLI is
+`scripts/query_final_pipeline.py`.
+
+The baseline uses fixed 600/100 chunks, local Okapi BM25, normalized
+`BAAI/bge-small-en-v1.5` revision
+`5c38ec7c405ec4b44b94cc5a9bb96e735b38267a`, deterministic synonym expansion,
+query-activated formula/table/visual page priors, equal-weight RRF `k=60`, five
+results, and metadata-preserving exact-overlap assembly. It reproduced
+26/44/50 Hit@1/3/5 and 0.601 MRR on 61 answerable rows.
+
+Canonical commands:
+
+```powershell
+temp\python-x64\python.exe scripts\manage_retrieval_baseline_v1.py build
+temp\python-x64\python.exe scripts\manage_retrieval_baseline_v1.py validate
+temp\python-x64\python.exe scripts\manage_retrieval_baseline_v1.py evaluate
+temp\python-x64\python.exe scripts\manage_retrieval_baseline_v1.py checksums
+temp\python-x64\python.exe scripts\query_final_pipeline.py `
+  "How do plants eat?" --book-id biology --include-text
+```
+
+Use `build --force-rebuild` to recreate only the named v1 indexes. Corpus
+preparation remains `scripts/audit_textbooks.py`. See
+`reports/retrieval_baseline_v1/README.md` for the architecture, complete frozen
+metrics, provenance manifest, golden fixture, all rebuild commands, and the
+immutability policy.
 
 ### Experiment artifact retention
 

@@ -411,3 +411,37 @@ Result: overlap merging is the smallest tested context that preserves every
 accepted span available in the top-five retrieval pool. Phase J is blocked
 because the retrieval benchmark does not score generated-answer correctness,
 faithfulness, citations, or abstention.
+
+## Retrieval Baseline v1 freeze — 2026-07-16
+
+Change tested: extracted the verified Phase H/I winner into a strict immutable
+YAML configuration, added the structured public retrieval API, provenance
+manifest, golden fixture, checksum protection, and canonical management CLI.
+
+| Validation | Result |
+|---|---:|
+| Focused existing ranking/query/context regressions | 18 passed |
+| New freeze/config/API/fixture/manifest regressions | 15 passed |
+| Complete repository regression suite | 126 passed |
+| Clean benchmark Hit@1 | 26/61 (42.6%) |
+| Clean benchmark Hit@3 | 44/61 (72.1%) |
+| Clean benchmark Hit@5 | 50/61 (82.0%) |
+| Clean benchmark MRR | 0.601127 (exact original match) |
+| Canonical Hit@5 | 34/41 (82.9%) |
+| Natural-student Hit@5 | 16/20 (80.0%) |
+| Golden fixture | 8/8 cases, identical top-five order across 2 runs |
+| Original / fresh warm p95 | 71.169 / 84.943 ms |
+| Original / fresh peak RSS | 688.223 / 677.227 MB |
+
+Commands/results:
+
+```powershell
+python -m pytest tests/test_query_processing.py tests/test_specialist_retrieval.py tests/test_context_assembly.py tests/test_final_pipeline.py -q
+temp\python-x64\python.exe -m pytest tests/test_retrieval_baseline_v1.py -q
+temp\python-x64\python.exe -m pytest -q
+temp\python-x64\python.exe scripts\manage_retrieval_baseline_v1.py validate
+```
+
+Result: effectiveness counts, full-rank MRR, every golden expectation, and
+repeat ordering reproduced exactly. Timing varied as expected; all eight
+embedding caches were valid hits and no historical experiment file changed.

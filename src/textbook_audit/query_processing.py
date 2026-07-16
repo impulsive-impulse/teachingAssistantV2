@@ -134,9 +134,29 @@ SYNONYM_RULES: tuple[tuple[str, tuple[str, ...], str], ...] = (
 
 def textbook_synonym_expansion(query: str) -> ProcessedQuery:
     """Append static textbook vocabulary when all neutral phrase triggers match."""
+    return apply_synonym_rules(query, SYNONYM_RULES)
+
+
+def apply_synonym_rules(
+    query: str,
+    rules_config: tuple[tuple[str, tuple[str, ...], str], ...] | list[dict[str, Any]],
+) -> ProcessedQuery:
+    """Apply an explicit ordered synonym table to one query deterministically.
+
+    ``textbook_synonym_expansion`` retains the historical experiment constant,
+    while the frozen baseline passes the equivalent table loaded from its
+    versioned configuration.  Keeping both paths in this one implementation
+    prevents a configuration freeze from duplicating query behavior.
+    """
     lowered = query.lower()
     additions, rules = [], []
-    for name, triggers, terms in SYNONYM_RULES:
+    normalized_rules = (
+        [(str(item["name"]), tuple(item["triggers"]), str(item["addition"]))
+         for item in rules_config]
+        if rules_config and isinstance(rules_config[0], dict)
+        else rules_config
+    )
+    for name, triggers, terms in normalized_rules:
         if all(trigger in lowered for trigger in triggers):
             additions.append(terms)
             rules.append(f"synonym:{name}")

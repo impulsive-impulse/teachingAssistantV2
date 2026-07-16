@@ -1,0 +1,185 @@
+# Retrieval Baseline v1 is immutable. Any behavior change requires a new file
+# and semantic version; see reports/retrieval_baseline_v1/README.md.
+schema_version: 1
+baseline:
+  name: Retrieval Baseline v1
+  semantic_version: 1.0.0
+  source_winning_run_id: phase_h_h3_combined_specialist_priors
+  context_assembly_run_id: phase_i_i0_overlap_merge_metadata_preserving
+  frozen: true
+
+inputs:
+  supported_books: [biology, physical_sciences]
+  source_pdfs:
+    biology: books/X Biology EM 2025-26.pdf
+    physical_sciences: books/X Physics EM 2025-26.pdf
+  processed_pages:
+    biology: data/processed/biology_pages.jsonl
+    physical_sciences: data/processed/physical_sciences_pages.jsonl
+  benchmark: data/benchmarks/retrieval_benchmark_v1.jsonl
+  corpus_version: processed-pages-at-baseline-v1
+  benchmark_version: retrieval_benchmark_v1-reviewed-66-rows
+  searchable_text_field: cleaned_text
+  front_matter_rule: require_textbook_page_and_exclude_front_matter_or_cover_note
+  search_scope: explicit_book_id_only
+
+chunking:
+  strategy: fixed
+  target_tokens: 600
+  overlap_tokens: 100
+  token_counting_method: textbook_audit.retrieval.tokenize
+  tokenizer_regex: "[A-Za-z0-9]+(?:[.'-][A-Za-z0-9]+)*"
+  boundary_units: cleaned_text_lines_then_sentences_with_hard_wrap
+  chapter_boundary_isolation: true
+  overlap_unit: whole_boundary_units_approximately_reaching_overlap_tokens
+  chapter_metadata: first_contributing_page
+  section_metadata: first_contributing_page
+  preserve_all_contributing_pages: true
+
+embedding:
+  library: sentence-transformers
+  library_version: 5.6.0
+  model_name: BAAI/bge-small-en-v1.5
+  revision: 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a
+  dimensions: 384
+  normalize_embeddings: true
+  similarity: cosine_via_dot_product_of_l2_normalized_vectors
+  query_prefix: "Represent this sentence for searching relevant passages: "
+  document_prefix: ""
+  trust_remote_code: false
+  local_files_only: true
+  device_policy:
+    default: cpu
+    allowed: [cpu, cuda]
+  batch_size: 16
+
+bm25:
+  implementation: textbook_audit.retrieval.BM25
+  variant: Okapi BM25
+  k1: 1.5
+  b: 0.75
+  tokenization: lowercase_tokenizer_regex_above
+  idf: "log(1 + (N - df + 0.5) / (df + 0.5))"
+
+query_processing:
+  method: textbook_synonym_expansion
+  preserve_original_query: true
+  append_label: " Related textbook terms: "
+  matching: case_insensitive_all_trigger_fragments_required
+  deduplicate_additions: stable_first_seen
+  fusion_with_original_query: false
+  synonym_resource: inline_frozen_v1
+  rules:
+    - {name: plant_nutrition, triggers: [plant, eat], addition: "autotrophic nutrition photosynthesis make food"}
+    - {name: plant_nutrition_feed, triggers: [plant, feed], addition: "autotrophic nutrition photosynthesis make food"}
+    - {name: cell_energy, triggers: [cell, energy, food], addition: "cellular respiration"}
+    - {name: kidney_units, triggers: [kidney, working unit], addition: "nephron"}
+    - {name: urine_colloquial, triggers: [kidney, pee], addition: "urine formation filtration"}
+    - {name: double_circulation, triggers: [blood, heart, twice], addition: "double circulation"}
+    - {name: flower_reproduction, triggers: [pollen, seed], addition: "pollination fertilization seed formation"}
+    - {name: oxygen_transport, triggers: [oxygen, lungs, body], addition: "haemoglobin oxygen transport"}
+    - {name: respiration_oxygen, triggers: [energy, without oxygen], addition: "anaerobic respiration aerobic respiration"}
+    - {name: cell_division, triggers: [cell, half, chromosome], addition: "meiosis mitosis daughter cells"}
+    - {name: water_conservation, triggers: [rainwater, groundwater], addition: "water harvesting groundwater recharge"}
+    - {name: induction, triggers: [magnet, electricity, wire], addition: "electromagnetic induction"}
+    - {name: myopia, triggers: [short-sighted, concave lens], addition: "myopia correction"}
+    - {name: parallel_paths, triggers: [broken, parallel circuit], addition: "independent current paths"}
+    - {name: covalent, triggers: [share electron], addition: "covalent bonding electron sharing"}
+    - {name: atomic_bond, triggers: [atomic relationship], addition: "chemical bonding atoms"}
+    - {name: refraction, triggers: [bent, water], addition: "refraction of light"}
+    - {name: convex_mirror, triggers: [mirror, vehicles, smaller], addition: "convex mirror diminished image"}
+    - {name: neutralisation, triggers: [chemically opposite, cancel], addition: "acid base neutralisation"}
+
+specialists:
+  formula:
+    method: formula_equation_context
+    representation_version: v2
+    activation_version: v2
+    activation_query: original_query
+    activation_pattern: '\b(formula|equation|law|voltage|resistance|electric power|focal length|object distance|image distance|sign convention|balanced|equivalent resistance|parallel resistors?|stronger lenses?|shorter focus)\b|\b\d+\s*W\b|[=Ωµ×÷]'
+    page_filter: has_equation_like_text
+    representation: equation_like_lines_plus_one_adjacent_line_each_side
+    normalize_unicode_formula_operators_and_units: true
+  table:
+    method: table_rows_with_headers
+    representation_version: v2
+    activation_version: v2
+    activation_query: original_query
+    activation_pattern: '\b(table|row|column|auxins?|cytokinins?|mitosis|meiosis)\b|\bchromosome(?:s)?\b.*\b(daughter cells?|half)\b|\bhalf\b.*\bchromosome(?:s)?\b'
+    page_filter: has_table
+    representation: each_extracted_row_with_repeated_detected_header
+  visual:
+    method: visual_caption_context
+    representation_version: v1
+    activation_version: v1
+    activation_query: processed_query
+    activation_pattern: '\b(diagram|figure|fig\.?|principal rays?|ray diagram|constructed|image formation|concave lens|convex lens|myopia|short-sighted|series|parallel circuit|branches)\b'
+    page_filter: has_image
+    representation: chapter_and_section_plus_caption_line_and_two_lines_each_side
+    fallback_when_no_caption: first_12_nonempty_raw_text_lines
+  specialist_retrieval:
+    dense_and_bm25_fusion: reciprocal_rank_fusion
+    rrf_k: 60
+    source_weights: {dense: 1.0, bm25: 1.0}
+    candidate_limit: full_specialist_corpus
+  page_to_child_lifting:
+    method: rank_all_children_by_best_contributing_pdf_page_rank
+    unrepresented_page_position: specialist_document_count_plus_child_count_plus_1
+    tie_break: child_corpus_order
+
+fusion:
+  method: reciprocal_rank_fusion
+  rrf_k: 60
+  base_sources: [fixed_chunk_dense, fixed_chunk_bm25]
+  activated_source_order: [formula, table, visual]
+  source_weights: 1.0
+  candidate_limit_per_source: full_book_corpus
+  score_formula: "sum(1 / (rrf_k + one_based_rank))"
+  tie_break: child_corpus_order
+
+output:
+  final_top_k: 5
+  evidence_unit: fixed_chunk
+  include_text_default: false
+  metadata_fields:
+    - rank
+    - evidence_id
+    - book_id
+    - pdf_pages
+    - textbook_pages
+    - chapter
+    - section
+    - evidence_text
+    - contributing_retrievers
+    - component_ranks
+    - component_scores
+    - fused_score
+    - activated_specialist_signals
+
+context_assembly:
+  method: overlap_merge_metadata_preserving
+  input_candidate_count: 5
+  input_order: retrieval_rank
+  exact_overlap_tokenization: whitespace_split
+  minimum_exact_overlap_words: 8
+  maximum_exact_overlap_words: 140
+  merge_without_detected_overlap: concatenate
+  same_page_only: false
+  preserve_source_metadata: true
+  deduplication: longest_exact_suffix_prefix_overlap_only
+  additional_overlap_threshold: null
+  token_budget: null
+
+indexes:
+  chunk_embeddings:
+    biology: data/retrieval/cache/experiments/phase_e/phase_f_bge_small_fixed_600_100_biology.npz
+    physical_sciences: data/retrieval/cache/experiments/phase_e/phase_f_bge_small_fixed_600_100_physical_sciences.npz
+  specialist_directory: data/retrieval/cache/experiments/phase_h
+  specialist_filename_template: "phase_h_{method}_{book_id}.npz"
+  cache_validation_fields: [corpus_fingerprint, model_revision, dimensions]
+
+reproducibility:
+  random_seeds: {python: 0, numpy: 0, torch: 0}
+  deterministic_tie_breaking: true
+  gold_labels_available_to_runtime: false
+  historical_experiment_artifacts_mutable: false

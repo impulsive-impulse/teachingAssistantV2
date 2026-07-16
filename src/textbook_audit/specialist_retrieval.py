@@ -105,7 +105,8 @@ FORMULA_QUERY_RE_V3 = re.compile(
 )
 
 
-def specialist_activated(branch: str, query: str, version: str = "v1") -> bool:
+def specialist_activated(branch: str, query: str, version: str = "v1",
+                         pattern: str | None = None) -> bool:
     """Classify a specialist branch from query text without benchmark labels."""
     patterns = ({"formula": FORMULA_QUERY_RE, "table": TABLE_QUERY_RE,
                  "visual": VISUAL_QUERY_RE} if version == "v1" else
@@ -115,7 +116,10 @@ def specialist_activated(branch: str, query: str, version: str = "v1") -> bool:
         raise ValueError(f"unknown activation version: {version}")
     if branch not in patterns:
         raise ValueError(f"unknown specialist branch: {branch}")
-    return bool(patterns[branch].search(query))
+    # Frozen baselines pass their recorded pattern explicitly. Historical
+    # experiment callers continue to use the versioned module constants.
+    active_pattern = re.compile(pattern, re.IGNORECASE) if pattern else patterns[branch]
+    return bool(active_pattern.search(query))
 
 
 def normalize_formula_text(text: str) -> str:
@@ -763,6 +767,7 @@ def rank_combined_query(
     resources: dict[str, tuple[dict[str, list[dict[str, Any]]], dict[str, np.ndarray]]],
     child_bm25: BM25,
     specialist_bm25: dict[str, dict[str, BM25]],
+    runtime_config: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     """Rank one arbitrary query with the retained gold-blind Phase H pipeline.
 
@@ -771,37 +776,66 @@ def rank_combined_query(
     Passing an empty specialist resource mapping reproduces the Phase G
     lightweight synonym/BM25/BGE-small hybrid.
     """
-    specifications = {
+    specifications: dict[str, Any] = {
         "formula_equation_context": ("formula", "v2"),
         "table_rows_with_headers": ("table", "v2"),
         "visual_caption_context": ("visual", "v1"),
     }
-    processed = textbook_synonym_expansion(question).text
+    rrf_constant = int((runtime_config or {}).get("rrf_constant", RRF_CONSTANT))
+    if runtime_config and "synonym_rules" in runtime_config:
+        from .query_processing import apply_synonym_rules
+        processed = apply_synonym_rules(question, runtime_config["synonym_rules"]).text
+    else:
+        processed = textbook_synonym_expansion(question).text
+    if runtime_config and "specialists" in runtime_config:
+        specifications = {
+            item["method"]: (item["branch"], item["activation_version"],
+                             item["activation_pattern"], item["activation_query"])
+            for item in runtime_config["specialists"]
+        }
     started = time.perf_counter()
     query = loaded.model.encode(
         [config["query_prefix"] + processed], convert_to_numpy=True,
         normalize_embeddings=True, show_progress_bar=False)[0]
-    rankings = [stable_ranking(chunk_matrix @ query),
-                stable_ranking(child_bm25.scores(processed))]
+    dense_scores = chunk_matrix @ query
+    bm25_scores = child_bm25.scores(processed)
+    rankings = [stable_ranking(dense_scores), stable_ranking(bm25_scores)]
+    component_names = ["fixed_chunk_dense", "fixed_chunk_bm25"]
+    component_raw_scores: dict[str, np.ndarray] = {
+        "fixed_chunk_dense": dense_scores,
+        "fixed_chunk_bm25": bm25_scores,
+    }
     activated = []
-    for method, (branch, version) in specifications.items():
+    for method, specification in specifications.items():
+        branch, version = specification[:2]
+        pattern = specification[2] if len(specification) > 2 else None
+        query_source = (specification[3] if len(specification) > 3 else
+                        ("processed_query" if version == "v1" else "original_query"))
         if method not in resources:
             continue
-        activation_query = question if version != "v1" else processed
-        if not specialist_activated(branch, activation_query, version):
+        activation_query = processed if query_source == "processed_query" else question
+        if not specialist_activated(branch, activation_query, version, pattern):
             continue
         activated.append(branch)
         documents, matrices = resources[method]
         dense = stable_ranking(matrices[book] @ query)
         lexical = stable_ranking(specialist_bm25[method][book].scores(processed))
         specialist_scores = reciprocal_rank_fusion(
-            [dense, lexical], len(documents[book]), RRF_CONSTANT)
-        rankings.append(lift_specialist_ranking(
-            corpus, documents[book], stable_ranking(specialist_scores)))
-    scores = reciprocal_rank_fusion(rankings, len(corpus), RRF_CONSTANT)
+            [dense, lexical], len(documents[book]), rrf_constant)
+        lifted = lift_specialist_ranking(
+            corpus, documents[book], stable_ranking(specialist_scores))
+        rankings.append(lifted)
+        component_names.append(f"{branch}_page_prior")
+    scores = reciprocal_rank_fusion(rankings, len(corpus), rrf_constant)
     ranking = stable_ranking(scores)
+    component_rankings = {
+        name: {int(index): rank for rank, index in enumerate(source_ranking, 1)}
+        for name, source_ranking in zip(component_names, rankings)
+    }
     return {"processed_query": processed, "activated_specialists": activated,
             "scores": scores, "ranking": ranking,
+            "component_rankings": component_rankings,
+            "component_raw_scores": component_raw_scores,
             "latency_ms": (time.perf_counter() - started) * 1000}
 
 

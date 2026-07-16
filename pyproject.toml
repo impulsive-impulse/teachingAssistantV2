@@ -12,6 +12,7 @@ dependencies = [
   "numpy>=1.26,<3",
   "pypdf>=5,<7",
   "psutil>=7,<8",
+  "PyYAML>=6,<7",
   "sentence-transformers>=3,<6",
 ]
 
@@ -45,7 +46,9 @@ specialist-retrieval = "textbook_audit.specialist_retrieval:main"
 extract-visual-assets = "textbook_audit.visual_assets:main"
 evidence-sets = "textbook_audit.evidence_sets:main"
 context-assembly = "textbook_audit.context_assembly:main"
-query-final-pipeline = "textbook_audit.final_pipeline:main"
+query-final-pipeline = "textbook_audit.retrieval_baseline:main"
+retrieval-baseline-v1 = "textbook_audit.retrieval_baseline:main"
+manage-retrieval-baseline-v1 = "textbook_audit.baseline_freeze:main"
 finalize-experiments = "textbook_audit.finalize_experiments:main"
 
 [tool.setuptools.packages.find]
