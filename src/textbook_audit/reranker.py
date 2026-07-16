@@ -216,8 +216,8 @@ def _resolve_device(configured: str | None) -> str:
     return configured
 
 
-def _load_candidate_rankings(root: Path, audit_path: Path,
-                             questions: list[dict[str, Any]]) -> tuple[dict[tuple[str, str], list[Candidate]], dict[str, Any]]:
+def load_candidate_rankings(root: Path, audit_path: Path,
+                            questions: list[dict[str, Any]]) -> tuple[dict[tuple[str, str], list[Candidate]], dict[str, Any]]:
     """Join audited candidate IDs back to full immutable processed-corpus text.
 
     The complementarity JSONL is the source of ranking and evidence labels.
@@ -269,6 +269,11 @@ def _load_candidate_rankings(root: Path, audit_path: Path,
     audit_metadata = (json.loads(metrics_path.read_text(encoding="utf-8"))["run_metadata"]
                       if metrics_path.is_file() else {})
     return output, audit_metadata
+
+
+# Keep the private spelling as a compatibility alias for older imports while
+# new experiment modules use the public, shared corpus-join implementation.
+_load_candidate_rankings = load_candidate_rankings
 
 
 def _failure_category(question: dict[str, Any], control_rank: int | None,
@@ -433,7 +438,7 @@ def run(root: Path, benchmark: Path, candidate_audit: Path, results_path: Path,
         raise ValueError("batch size must be positive and passage limit at least 100 characters")
     questions = read_jsonl(benchmark)
     configured_device = _resolve_device(device)
-    candidates, dense_metadata = _load_candidate_rankings(root, candidate_audit, questions)
+    candidates, dense_metadata = load_candidate_rankings(root, candidate_audit, questions)
     if model is None:
         model, reranker_metadata = _load_cross_encoder(model_name, configured_device,
                                                        batch_size, model_cache)

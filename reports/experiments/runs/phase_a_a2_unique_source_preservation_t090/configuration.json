@@ -1,0 +1,21 @@
+{
+  "pipeline_name": "unique_source_preservation_t090",
+  "selector": "unique_source_preservation",
+  "source_depth": 20,
+  "candidate_budgets": [
+    8,
+    10,
+    15,
+    20
+  ],
+  "deduplication_threshold": 0.9,
+  "rrf_constant": 60,
+  "source_weights": {},
+  "mmr_lambda": 0.75,
+  "candidate_sources": [
+    "page_dense_bge_small",
+    "fixed_400_80_bm25",
+    "fixed_400_80_dense_bge_small",
+    "soft_fusion_hybrid"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "name": "Retrieval Baseline v1",
+    "semantic_version": "1.0.0",
+    "source_winning_run_id": "phase_h_h3_combined_specialist_priors",
+    "context_assembly_run_id": "phase_i_i0_overlap_merge_metadata_preserving",
+    "frozen": true
+  },
+  "winning_experiment_run_id": "phase_h_h3_combined_specialist_priors",
+  "git": {
+    "commit": "c3752d369be296cdb36d5bd037423a917ea61192",
+    "branch": "codex/local-rag-experiment-loop",
+    "working_tree_dirty": true
+  },
+  "created_at": "2026-07-16T05:17:31+00:00",
+  "runtime": {
+    "python": "3.12.10",
+    "implementation": "CPython",
+    "operating_system": "Windows-11-10.0.26200-SP0",
+    "machine": "ARM64"
+  },
+  "dependencies": {
+    "numpy": "2.5.1",
+    "pypdf": "6.14.2",
+    "psutil": "7.2.2",
+    "PyYAML": "6.0.3",
+    "sentence-transformers": "5.6.0",
+    "transformers": "5.13.1",
+    "torch": "2.13.0"
+  },
+  "model": {
+    "name": "BAAI/bge-small-en-v1.5",
+    "resolved_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "dimensions": 384,
+    "runtime_device": "cpu",
+    "cache_identity": {
+      "path": "C:\\Users\\saman\\.cache\\huggingface\\hub\\models--BAAI--bge-small-en-v1.5\\snapshots\\5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+      "file_count": 11,
+      "size_bytes": 134505940,
+      "identity_sha256": "a76ed7f34fddfec52b0d6f9829f767fb2bcf1a05540e272b4ceb2e0081d846b4"
+    }
+  },
+  "source_pdfs": {
+    "biology": {
+      "path": "books/X Biology EM 2025-26.pdf",
+      "size_bytes": 12918026,
+      "sha256": "b88c63972c1eaf379ced00ff6d93fc953a594281535bcf86c51e184e170c6ba7"
+    },
+    "physical_sciences": {
+      "path": "books/X Physics EM 2025-26.pdf",
+      "size_bytes": 41198888,
+      "sha256": "db9e53ca92f83f40498314c6bc6f9ae29d538f60464668d4aeb933bfd7af8f59"
+    }
+  },
+  "processed_corpus_artifacts": {
+    "biology": {
+      "path": "data/processed/biology_pages.jsonl",
+      "size_bytes": 1118556,
+      "sha256": "dfc284072229a533fb89686f8bfb972887a9e79f8738cd55b0307a417906165b"
+    },
+    "physical_sciences": {
+      "path": "data/processed/physical_sciences_pages.jsonl",
+      "size_bytes": 1298839,
+      "sha256": "2cce56baa117196bc588e8092e9884dc95376fd422f1f60369096927b4ca2b72"
+    }
+  },
+  "index_artifacts": [
+    {
+      "path": "data/retrieval/cache/experiments/phase_e/phase_f_bge_small_fixed_600_100_biology.npz",
+      "size_bytes": 229485,
+      "sha256": "56221de24006f22da8be728c9fcf73ab77270d0ea669f96bf377e0dbbe2733de"
+    },
+    {
+      "path": "data/retrieval/cache/experiments/phase_e/phase_f_bge_small_fixed_600_100_physical_sciences.npz",
+      "size_bytes": 275237,
+      "sha256": "c93bfe73e2bbff1cf04a71ecf2585148663fb33322a0180db5baffdd02f83832"
+    },
+    {
+      "path": "data/retrieval/cache/experiments/phase_h/phase_h_formula_equation_context_biology.npz",
+      "size_bytes": 185089,
+      "sha256": "4a179c5b637c4f06c31ee45d7610a20969bdcaf07223bf45147fa83c5df4b630"
+    },
+    {
+      "path": "data/retrieval/cache/experiments/phase_h/phase_h_formula_equation_context_physical_sciences.npz",
+      "size_bytes": 367888,
+      "sha256": "626e99c801fc67cf387bd73787d44bf3774d8ef54393e7e07da953459073f321"
+    },
+    {
+      "path": "data/retrieval/cache/experiments/phase_h/phase_h_table_rows_with_headers_biology.npz",
+      "size_bytes": 40967,
+      "sha256": "392e4584ee2552cb1b411e5e3f1ad8c7cbe4d38a6bcf32505e9f16785b49eb58"
+    },
+    {
+      "path": "data/retrieval/cache/experiments/phase_h/phase_h_table_rows_with_headers_physical_sciences.npz",
+      "size_bytes": 59562,
+      "sha256": "f11f0d55eea0c4120f054911e61a790923bd1d6c20a4e75efe5864bbe5f68071"
+    },
+    {
+      "path": "data/retrieval/cache/experiments/phase_h/phase_h_visual_caption_context_biology.npz",
+      "size_bytes": 227881,
+      "sha256": "1a5100b0b4e8458f873c51ad61785a3adcfc2b516e14a6f0541264cc7f000c2e"
+    },
+    {
+      "path": "data/retrieval/cache/experiments/phase_h/phase_h_visual_caption_context_physical_sciences.npz",
+      "size_bytes": 273595,
+      "sha256": "74d19ebbdaefecf37dbeb1f59e8511f83d6dc22e8dbc8baf13756f248b39807e"
+    }
+  ],
+  "configuration": {
+    "path": "config/retrieval_baseline_v1.yaml",
+    "sha256": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6"
+  },
+  "benchmark": {
+    "path": "data/benchmarks/retrieval_benchmark_v1.jsonl",
+    "size_bytes": 97786,
+    "sha256": "d333768b9c645cf0048a38356bfea69aa4a9e7220010e2cdf6340b91af38c046"
+  },
+  "commands": {
+    "prepare_corpus": "temp\\python-x64\\python.exe scripts\\audit_textbooks.py",
+    "build_or_reuse_indexes": "temp\\python-x64\\python.exe scripts\\manage_retrieval_baseline_v1.py build",
+    "validate_baseline": "temp\\python-x64\\python.exe scripts\\manage_retrieval_baseline_v1.py validate",
+    "full_benchmark_evaluation": "temp\\python-x64\\python.exe scripts\\manage_retrieval_baseline_v1.py evaluate",
+    "query_one_book": "temp\\python-x64\\python.exe scripts\\query_final_pipeline.py \"How do plants eat?\" --book-id biology --include-text",
+    "rebuild_indexes_from_scratch": "temp\\python-x64\\python.exe scripts\\manage_retrieval_baseline_v1.py build --force-rebuild",
+    "verify_checksums": "temp\\python-x64\\python.exe scripts\\manage_retrieval_baseline_v1.py checksums"
+  }
+}

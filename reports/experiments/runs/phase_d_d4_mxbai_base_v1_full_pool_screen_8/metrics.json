@@ -1,0 +1,38 @@
+{
+  "run_metadata": {
+    "run_id": "phase_d_d4_mxbai_base_v1_full_pool_screen_8",
+    "phase": "D",
+    "status": "stopped",
+    "stop_reason": "runtime infeasible before first full-pool query completed",
+    "selection_uses_gold": false
+  },
+  "model": {
+    "model_name": "mixedbread-ai/mxbai-rerank-base-v1",
+    "requested_revision": "800f24c113213a187e65bde9db00c15a2bb12738",
+    "resolved_model_revision": "800f24c113213a187e65bde9db00c15a2bb12738",
+    "device": "cpu",
+    "local_files_only": true,
+    "model_max_length_tokens": 512,
+    "batch_size": 32
+  },
+  "screen": {
+    "queries_planned": 8,
+    "queries_completed": 0,
+    "minimum_elapsed_before_stop_ms": 300000.0,
+    "quality_metrics_available": false
+  },
+  "overall": {
+    "answerable_questions": 0,
+    "hit_at_1_count": 0,
+    "hit_at_1": 0.0,
+    "hit_at_3_count": 0,
+    "hit_at_3": 0.0,
+    "hit_at_5_count": 0,
+    "hit_at_5": 0.0,
+    "mrr": 0.0,
+    "average_latency_ms": null,
+    "p50_latency_ms": null,
+    "p95_latency_ms": null,
+    "maximum_latency_ms": null
+  }
+}

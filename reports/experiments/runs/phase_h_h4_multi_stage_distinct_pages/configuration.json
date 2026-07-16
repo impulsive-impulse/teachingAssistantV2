@@ -1,0 +1,8 @@
+{
+  "pipeline_name": "combined_specialists_multi_stage_distinct_pages",
+  "selector": "multi_stage_distinct_pages",
+  "candidate_budget": 5,
+  "parent_ranking_run_id": "phase_h_h3_combined_specialist_priors",
+  "gold_blind_selection": true,
+  "returned_unit": "fixed_600_100_chunk"
+}

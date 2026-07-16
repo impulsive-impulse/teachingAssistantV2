@@ -1,0 +1,56 @@
+{
+  "pipeline_name": "e5_fixed_600_100_page_prior_rrf",
+  "strategy": "fixed_600_100",
+  "method": "page_prior_rrf",
+  "embedding": "e5_large_v2",
+  "front_matter_excluded": true,
+  "book_local_search": true,
+  "gold_blind_ranking": true,
+  "parent_page_budget": null,
+  "query_window_tokens": null,
+  "query_window_overlap": null,
+  "corpus_counts": {
+    "biology": 160,
+    "physical_sciences": 192
+  },
+  "child_index": {
+    "biology": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\phase_f_e5_fixed_600_100_biology.npz",
+      "cache_hit": true,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "5929dc08d46107c7595e97456b77e2cbe33c1a3e4b860e956e565381a0b36fe5",
+      "chunk_count": 160,
+      "elapsed_ms": 17.56290000048466,
+      "size_bytes": 608874
+    },
+    "physical_sciences": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\phase_f_e5_fixed_600_100_physical_sciences.npz",
+      "cache_hit": true,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "f978cfc116ca655e30193da3374ad9236ee8c7d64c5ff966be9df1ca265cb7f5",
+      "chunk_count": 192,
+      "elapsed_ms": 16.915299998800037,
+      "size_bytes": 730607
+    }
+  },
+  "page_index": {
+    "biology": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\phase_f_e5_pages_biology.npz",
+      "cache_hit": true,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "09248a5b09977c0d8d6cce17dc71bd15623a4e493c9de7138b2694fef4c45491",
+      "chunk_count": 248,
+      "elapsed_ms": 17.615299999306444,
+      "size_bytes": 943098
+    },
+    "physical_sciences": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\phase_f_e5_pages_physical_sciences.npz",
+      "cache_hit": true,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "b0780af4d4324c3b30ac2226c0cfbf8370bcd8faa25138d753e420d0e1115473",
+      "chunk_count": 317,
+      "elapsed_ms": 19.042500000068685,
+      "size_bytes": 1205895
+    }
+  }
+}

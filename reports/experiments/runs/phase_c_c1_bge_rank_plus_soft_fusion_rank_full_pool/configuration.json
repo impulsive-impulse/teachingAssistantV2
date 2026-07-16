@@ -1,0 +1,8 @@
+{
+  "pipeline_name": "bge_rank_plus_soft_fusion_rank",
+  "fusion_method": "bge_rank_plus_soft_fusion_rank",
+  "candidate_budget": "full",
+  "rrf_constant": 60,
+  "source_weights": {},
+  "score_blend_alpha": null
+}

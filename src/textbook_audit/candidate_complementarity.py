@@ -190,12 +190,21 @@ def substantially_same_evidence(left: Candidate, right: Candidate,
     return len(a.intersection(b)) / min(len(a), len(b)) >= threshold
 
 
-def deduplicate_candidates(candidates: Iterable[Candidate]) -> list[list[Candidate]]:
-    """Cluster substantially identical evidence in deterministic input order."""
+def deduplicate_candidates(candidates: Iterable[Candidate],
+                           threshold: float = 0.8) -> list[list[Candidate]]:
+    """Cluster substantially identical evidence in deterministic input order.
+
+    ``threshold`` is explicit so candidate-compression experiments can measure
+    how conservative evidence equivalence affects recall.  The historical
+    callers retain the original 0.80 behaviour through the default value.
+    """
+    if not 0.0 <= threshold <= 1.0:
+        raise ValueError("deduplication threshold must be between 0 and 1")
     clusters: list[list[Candidate]] = []
     for candidate in candidates:
         existing = next((cluster for cluster in clusters
-                         if any(substantially_same_evidence(candidate, item) for item in cluster)), None)
+                         if any(substantially_same_evidence(candidate, item, threshold)
+                                for item in cluster)), None)
         if existing is None:
             clusters.append([candidate])
         else:
@@ -505,6 +514,7 @@ def _pool_sizes(question_ids: list[str], candidates: dict[tuple[str, str], list[
 def render_report(metrics: dict[str, Any]) -> str:
     """Render headline complementarity findings and the architecture decision."""
     def pct(value: float | None) -> str:
+        """Format an optional metric as a one-decimal percentage."""
         return "n/a" if value is None else f"{100 * value:.1f}%"
 
     labels = metrics["run_metadata"]["retriever_labels"]

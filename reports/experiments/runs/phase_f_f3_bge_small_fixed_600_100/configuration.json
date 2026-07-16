@@ -1,0 +1,16 @@
+{
+  "pipeline_name": "bge_small_fixed_600_100_hybrid_rrf",
+  "strategy": "fixed_600_100",
+  "method": "hybrid_rrf",
+  "embedding": "bge_small",
+  "corpus_counts": {
+    "biology": 160,
+    "physical_sciences": 192
+  },
+  "retrievers_evaluated": [
+    "dense",
+    "hybrid_rrf"
+  ],
+  "front_matter_excluded": true,
+  "book_local_search": true
+}

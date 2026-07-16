@@ -1,0 +1,299 @@
+{
+  "question": "How do plants eat?",
+  "book_id": "biology",
+  "profile": "balanced",
+  "processed_query": "How do plants eat? Related textbook terms: autotrophic nutrition photosynthesis make food",
+  "activated_specialists": [],
+  "retrieval_latency_ms": 83.66940000269096,
+  "retrieved": [
+    {
+      "rank": 1,
+      "score": 0.03278688524590164,
+      "chunk_id": "biology:fixed:00000",
+      "pdf_pages": [
+        10,
+        11,
+        12
+      ],
+      "textbook_pages": [
+        1,
+        2,
+        3
+      ],
+      "chapter_title": "Nutrition",
+      "section_title": "1.1 Autotrophic Nutrition",
+      "text_snippet": "Nutrition 1 Food is needed by all living organisms mainly for growth and repair. Several organisms need food to maintain body temperature as well. A variety of substances are taken as food by organisms from single celluar organisms like amoeba to the complex multicellular organisms like the human being. Even within the human body the cells require a wide variety of substances as food to carryout their functions. The mode of acquiring food varies from organism to organism. You have studied in the"
+    },
+    {
+      "rank": 2,
+      "score": 0.03200204813108039,
+      "chunk_id": "biology:fixed:00012",
+      "pdf_pages": [
+        31,
+        32,
+        33
+      ],
+      "textbook_pages": [
+        22,
+        23,
+        24
+      ],
+      "chapter_title": "Nutrition",
+      "section_title": null,
+      "text_snippet": "x During photosynthesis the important events which occur in the chloroplast area) Conversion of light energy into chemical energy b) Splitting of water molecule c) Reduction of carbon dioxide to carbohydrates x Heterotrophic Nutrition involves the intake of complex material prepared by other organisms. x The form of nutrition differs depending on the type and availability of food material as well as how it is obtained by the organism. x In a single celled organisms the food may be taken in by th"
+    },
+    {
+      "rank": 3,
+      "score": 0.030536130536130537,
+      "chunk_id": "biology:fixed:00001",
+      "pdf_pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "textbook_pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "chapter_title": "Nutrition",
+      "section_title": "1.2 Photosynthesis",
+      "text_snippet": "process, along with carbohydrate one molecule each of oxygen and water are produced”. Fig-1: Photosynthesis oxygen sunlight water carbon dioxide chlorophyll Nutrition 3 CO2 + 2H2O CH2O + H2O + O2 What would be the reaction to show that glucose (C6H12O6) is being synthesized? Write down a balanced equation to show this. (Refer the lessons Chemical equations, Carbon and its compounds in your textbook of physical science class X). Light Chlorophyll C.B. Van Niel first worked on purple sulphur bacte"
+    }
+  ],
+  "assembled_context": [
+    {
+      "source_chunk_ids": [
+        "biology:fixed:00000",
+        "biology:fixed:00012",
+        "biology:fixed:00001",
+        "biology:fixed:00013",
+        "biology:fixed:00135"
+      ],
+      "source_ranks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pdf_pages": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        31,
+        32,
+        33,
+        34,
+        221,
+        222
+      ],
+      "textbook_pages": [
+        1,
+        2,
+        3,
+        22,
+        23,
+        24,
+        4,
+        5,
+        25,
+        212,
+        213
+      ],
+      "chapter_title": "Nutrition",
+      "section_title": "1.1 Autotrophic Nutrition",
+      "source_metadata": [
+        {
+          "chunk_id": "biology:fixed:00000",
+          "source_rank": 1,
+          "pdf_pages": [
+            10,
+            11,
+            12
+          ],
+          "textbook_pages": [
+            1,
+            2,
+            3
+          ],
+          "chapter_title": "Nutrition",
+          "section_title": "1.1 Autotrophic Nutrition"
+        },
+        {
+          "chunk_id": "biology:fixed:00012",
+          "source_rank": 2,
+          "pdf_pages": [
+            31,
+            32,
+            33
+          ],
+          "textbook_pages": [
+            22,
+            23,
+            24
+          ],
+          "chapter_title": "Nutrition",
+          "section_title": null
+        },
+        {
+          "chunk_id": "biology:fixed:00001",
+          "source_rank": 3,
+          "pdf_pages": [
+            11,
+            12,
+            13,
+            14
+          ],
+          "textbook_pages": [
+            2,
+            3,
+            4,
+            5
+          ],
+          "chapter_title": "Nutrition",
+          "section_title": "1.2 Photosynthesis"
+        },
+        {
+          "chunk_id": "biology:fixed:00013",
+          "source_rank": 4,
+          "pdf_pages": [
+            32,
+            33,
+            34
+          ],
+          "textbook_pages": [
+            23,
+            24,
+            25
+          ],
+          "chapter_title": "Nutrition",
+          "section_title": "1. Write differences between the following (AS1)"
+        },
+        {
+          "chunk_id": "biology:fixed:00135",
+          "source_rank": 5,
+          "pdf_pages": [
+            221,
+            222
+          ],
+          "textbook_pages": [
+            212,
+            213
+          ],
+          "chapter_title": "Our Environment",
+          "section_title": null
+        }
+      ],
+      "truncated": false,
+      "text_snippet": "Nutrition 1 Food is needed by all living organisms mainly for growth and repair. Several organisms need food to maintain body temperature as well. A variety of substances are taken as food by organisms from single celluar organisms like amoeba to the complex multicellular organisms like the human being. Even within the human body the cells require a wide variety of substances as food to carryout their functions. The mode of acquiring food varies from organism to organism. You have studied in the previous classes about how different organisms get their food. Let us recall them. x What are autotrophs? How do autotrophs get their food? x What are heterotrophs? How do heterotrophs get their food? Let us study about autotrophic and heterotrophic modes of nutrition and also find out why most of the plants are called as autotrophs. 1.1 Autotrophic Nutrition We know that autotrophs are the organisms capable of using light energy to synthesize chemical compounds. They acquire nutrients like min"
+    }
+  ],
+  "model": {
+    "model_name": "BAAI/bge-small-en-v1.5",
+    "requested_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "resolved_model_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "sentence_transformers_version": "5.6.0",
+    "transformers_version": "5.13.1",
+    "torch_version": "2.13.0+cpu",
+    "device": "cpu",
+    "dimensions": 384,
+    "batch_size": 16,
+    "normalized": true,
+    "similarity": "cosine via dot product of L2-normalized vectors",
+    "query_prefix": "Represent this sentence for searching relevant passages: ",
+    "document_prefix": "",
+    "trust_remote_code": false,
+    "custom_code_revision": null,
+    "local_files_only": true,
+    "snapshot_path": "C:\\Users\\saman\\.cache\\huggingface\\hub\\models--BAAI--bge-small-en-v1.5\\snapshots\\5c38ec7c405ec4b44b94cc5a9bb96e735b38267a"
+  },
+  "cache": {
+    "chunks": {
+      "biology": {
+        "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\phase_f_bge_small_fixed_600_100_biology.npz",
+        "cache_hit": true,
+        "derived_from_model_key": null,
+        "corpus_fingerprint_sha256": "5929dc08d46107c7595e97456b77e2cbe33c1a3e4b860e956e565381a0b36fe5",
+        "chunk_count": 160,
+        "elapsed_ms": 14.503099999274127,
+        "size_bytes": 229485
+      },
+      "physical_sciences": {
+        "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\phase_f_bge_small_fixed_600_100_physical_sciences.npz",
+        "cache_hit": true,
+        "derived_from_model_key": null,
+        "corpus_fingerprint_sha256": "f978cfc116ca655e30193da3374ad9236ee8c7d64c5ff966be9df1ca265cb7f5",
+        "chunk_count": 192,
+        "elapsed_ms": 7.919800002127886,
+        "size_bytes": 275237
+      }
+    },
+    "specialists": {
+      "formula_equation_context": {
+        "biology": {
+          "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_formula_equation_context_biology.npz",
+          "cache_hit": true,
+          "derived_from_model_key": null,
+          "corpus_fingerprint_sha256": "2f1b3e5bd46db961de6fc6fbfb0bffe580514815e5fa593e1ec8bffcd5e564f1",
+          "chunk_count": 129,
+          "elapsed_ms": 6.495499997981824,
+          "size_bytes": 185089
+        },
+        "physical_sciences": {
+          "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_formula_equation_context_physical_sciences.npz",
+          "cache_hit": true,
+          "derived_from_model_key": null,
+          "corpus_fingerprint_sha256": "ccd315730dec6f68196a6ba5b1b3943443fd643abe7b3dce27167c30c6456276",
+          "chunk_count": 257,
+          "elapsed_ms": 6.986400003370363,
+          "size_bytes": 367888
+        }
+      },
+      "table_rows_with_headers": {
+        "biology": {
+          "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_table_rows_with_headers_biology.npz",
+          "cache_hit": true,
+          "derived_from_model_key": null,
+          "corpus_fingerprint_sha256": "a428c15c3b6c2ad7caf3672b4fa8aaf3c7114648e5dbe6aaa6ed9e8e888b9f9b",
+          "chunk_count": 28,
+          "elapsed_ms": 2.162500000849832,
+          "size_bytes": 40967
+        },
+        "physical_sciences": {
+          "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_table_rows_with_headers_physical_sciences.npz",
+          "cache_hit": true,
+          "derived_from_model_key": null,
+          "corpus_fingerprint_sha256": "546f09c12f902c0938b1983851596b4ca5f3c78d89a984f530708d4a287dd779",
+          "chunk_count": 41,
+          "elapsed_ms": 3.465699999651406,
+          "size_bytes": 59562
+        }
+      },
+      "visual_caption_context": {
+        "biology": {
+          "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_visual_caption_context_biology.npz",
+          "cache_hit": true,
+          "derived_from_model_key": null,
+          "corpus_fingerprint_sha256": "96f93609ce6b4b9a923861573041cfbbb6c10cf28e1ada0c493300260258742d",
+          "chunk_count": 159,
+          "elapsed_ms": 4.949100002704654,
+          "size_bytes": 227881
+        },
+        "physical_sciences": {
+          "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_visual_caption_context_physical_sciences.npz",
+          "cache_hit": true,
+          "derived_from_model_key": null,
+          "corpus_fingerprint_sha256": "bb2f9e9ee53a78c53b4b4f8a2059fe1858245d4afc67351c68554462721c6d3a",
+          "chunk_count": 191,
+          "elapsed_ms": 8.019700006116182,
+          "size_bytes": 273595
+        }
+      }
+    }
+  }
+}

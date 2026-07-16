@@ -1,0 +1,7 @@
+{
+  "assembler": "overlap_merge",
+  "parent_ranking_run_id": "phase_h_h3_combined_specialist_priors",
+  "candidate_pool": 5,
+  "gold_blind_assembly": true,
+  "returned_unit": "assembled_fixed_600_100_context"
+}

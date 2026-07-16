@@ -8,3 +8,14 @@ dist/
 books/
 data/retrieval/cache/
 temp/
+
+# Full per-query experiment payloads are reproducible local evidence and total
+# nearly 1 GB. Keep compact configurations, metrics, ledgers, hashes, and
+# reports in Git while excluding bulky detail rows from repository history.
+reports/experiments/runs/**/candidate_pools.jsonl
+reports/experiments/runs/**/representations.jsonl
+reports/experiments/runs/**/ranked_candidates.jsonl
+reports/experiments/runs/**/preselected_candidates.jsonl
+reports/experiments/runs/**/rankings.jsonl
+reports/experiments/runs/**/evidence_sets.jsonl
+reports/experiments/runs/**/contexts.jsonl

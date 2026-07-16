@@ -1,0 +1,15 @@
+{
+  "pipeline_name": "bm25_paragraph_groups",
+  "strategy": "paragraph_groups",
+  "retriever": "BM25",
+  "front_matter_excluded": true,
+  "search_scope": "corresponding book only",
+  "corpus_counts": {
+    "biology": 395,
+    "physical_sciences": 460
+  },
+  "corpus_fingerprints_sha256": {
+    "biology": "6a5e89d7136b1971c8aa72b93a6f7d57c6f97d86d521efb5fe2e6b310be9d727",
+    "physical_sciences": "06e8d62c22194e7c98a29ea90d6b6a08dab9fba4f2c371af651e147fb69a9e93"
+  }
+}

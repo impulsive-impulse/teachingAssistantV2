@@ -1,0 +1,8 @@
+{
+  "pipeline_name": "soft_fusion_no_reranker",
+  "fusion_method": "soft_fusion_no_reranker",
+  "candidate_budget": "full",
+  "rrf_constant": 60,
+  "source_weights": {},
+  "score_blend_alpha": null
+}

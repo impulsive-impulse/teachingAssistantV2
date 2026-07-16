@@ -1,0 +1,76 @@
+{
+  "pipeline_name": "synonym_bge_fixed_600_100_combined_specialist_priors",
+  "strategy": "fixed_600_100",
+  "embedding": "bge_small",
+  "retriever": "hybrid_rrf_plus_activated_specialist_page_priors",
+  "query_method": "textbook_synonym_expansion",
+  "specialists": {
+    "formula": "formula_equation_context_v2",
+    "table": "table_rows_with_headers_v2",
+    "visual": "visual_caption_context_v1"
+  },
+  "gold_blind_activation_and_ranking": true,
+  "rrf_constant": 60,
+  "index": {
+    "formula_equation_context": {
+      "biology": {
+        "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_formula_equation_context_biology.npz",
+        "cache_hit": true,
+        "derived_from_model_key": null,
+        "corpus_fingerprint_sha256": "2f1b3e5bd46db961de6fc6fbfb0bffe580514815e5fa593e1ec8bffcd5e564f1",
+        "chunk_count": 129,
+        "elapsed_ms": 2.637899997353088,
+        "size_bytes": 185089
+      },
+      "physical_sciences": {
+        "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_formula_equation_context_physical_sciences.npz",
+        "cache_hit": true,
+        "derived_from_model_key": null,
+        "corpus_fingerprint_sha256": "ccd315730dec6f68196a6ba5b1b3943443fd643abe7b3dce27167c30c6456276",
+        "chunk_count": 257,
+        "elapsed_ms": 3.635299995949026,
+        "size_bytes": 367888
+      }
+    },
+    "table_rows_with_headers": {
+      "biology": {
+        "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_table_rows_with_headers_biology.npz",
+        "cache_hit": true,
+        "derived_from_model_key": null,
+        "corpus_fingerprint_sha256": "a428c15c3b6c2ad7caf3672b4fa8aaf3c7114648e5dbe6aaa6ed9e8e888b9f9b",
+        "chunk_count": 28,
+        "elapsed_ms": 3.1858000002102926,
+        "size_bytes": 40967
+      },
+      "physical_sciences": {
+        "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_table_rows_with_headers_physical_sciences.npz",
+        "cache_hit": true,
+        "derived_from_model_key": null,
+        "corpus_fingerprint_sha256": "546f09c12f902c0938b1983851596b4ca5f3c78d89a984f530708d4a287dd779",
+        "chunk_count": 41,
+        "elapsed_ms": 2.6690000013331883,
+        "size_bytes": 59562
+      }
+    },
+    "visual_caption_context": {
+      "biology": {
+        "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_visual_caption_context_biology.npz",
+        "cache_hit": true,
+        "derived_from_model_key": null,
+        "corpus_fingerprint_sha256": "96f93609ce6b4b9a923861573041cfbbb6c10cf28e1ada0c493300260258742d",
+        "chunk_count": 159,
+        "elapsed_ms": 20.641700000851415,
+        "size_bytes": 227881
+      },
+      "physical_sciences": {
+        "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_visual_caption_context_physical_sciences.npz",
+        "cache_hit": true,
+        "derived_from_model_key": null,
+        "corpus_fingerprint_sha256": "bb2f9e9ee53a78c53b4b4f8a2059fe1858245d4afc67351c68554462721c6d3a",
+        "chunk_count": 191,
+        "elapsed_ms": 20.276299997931346,
+        "size_bytes": 273595
+      }
+    }
+  }
+}

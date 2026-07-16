@@ -1,0 +1,12 @@
+{
+  "pipeline_name": "chunk_chapter_chunk",
+  "dimension": "chunk",
+  "page_policy": "leading_text",
+  "chunk_policy": "chapter_chunk",
+  "maximum_passage_chars": 1800,
+  "window_words": 220,
+  "window_stride": 110,
+  "two_window_words": 140,
+  "full_page_word_limit": 300,
+  "candidate_pool": "phase_a_a4_uncompressed_union_t080"
+}

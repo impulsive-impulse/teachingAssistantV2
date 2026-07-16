@@ -1,0 +1,15 @@
+{
+  "pipeline_name": "bm25_fixed_400_80",
+  "strategy": "fixed_400_80",
+  "retriever": "BM25",
+  "front_matter_excluded": true,
+  "search_scope": "corresponding book only",
+  "corpus_counts": {
+    "biology": 249,
+    "physical_sciences": 295
+  },
+  "corpus_fingerprints_sha256": {
+    "biology": "16d0007be54910acbaef5f1e93fdeb610706771b553a07f16e3a6ea295b992eb",
+    "physical_sciences": "9d675913d00ab66caba22ba00c52673ef8e683c002eccd222b4a8fd506dd8e5d"
+  }
+}

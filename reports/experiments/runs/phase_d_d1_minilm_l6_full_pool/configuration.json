@@ -1,0 +1,9 @@
+{
+  "model_name": "cross-encoder/ms-marco-MiniLM-L6-v2",
+  "revision": "c5ee24cb16019beea0893ab7796b1df96625c6b8",
+  "run_id": "phase_d_d1_minilm_l6_full_pool",
+  "batch_size": 32,
+  "device": "cpu",
+  "maximum_length": 512,
+  "selected_logic": "reranker_rank_plus_rrf_rank"
+}

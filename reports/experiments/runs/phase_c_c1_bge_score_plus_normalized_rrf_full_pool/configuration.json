@@ -1,0 +1,8 @@
+{
+  "pipeline_name": "bge_score_plus_normalized_rrf",
+  "fusion_method": "bge_score_plus_normalized_rrf",
+  "candidate_budget": "full",
+  "rrf_constant": 60,
+  "source_weights": {},
+  "score_blend_alpha": 0.5
+}

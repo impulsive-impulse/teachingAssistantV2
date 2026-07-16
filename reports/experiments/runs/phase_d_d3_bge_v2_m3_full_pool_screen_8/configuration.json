@@ -1,0 +1,9 @@
+{
+  "model_name": "BAAI/bge-reranker-v2-m3",
+  "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+  "run_id": "phase_d_d3_bge_v2_m3_full_pool",
+  "batch_size": 32,
+  "device": "cpu",
+  "maximum_length": 512,
+  "selected_logic": "reranker_score"
+}

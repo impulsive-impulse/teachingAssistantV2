@@ -1,0 +1,40 @@
+{
+  "pipeline_name": "synonym_bge_fixed_600_100_visual_caption_context",
+  "strategy": "fixed_600_100",
+  "retriever": "hybrid_rrf_plus_page_prior",
+  "embedding": "bge_small",
+  "query_method": "textbook_synonym_expansion",
+  "specialist_method": "visual_caption_context",
+  "specialist_branch": "visual",
+  "activation_pattern": "\\b(diagram|figure|fig\\.?|principal rays?|ray diagram|constructed|image formation|concave lens|convex lens|myopia|short-sighted|series|parallel circuit|branches)\\b",
+  "gold_blind_activation_and_ranking": true,
+  "rrf_constant": 60,
+  "specialist_corpus_counts": {
+    "biology": 159,
+    "physical_sciences": 191
+  },
+  "specialist_corpus_fingerprints_sha256": {
+    "biology": "96f93609ce6b4b9a923861573041cfbbb6c10cf28e1ada0c493300260258742d",
+    "physical_sciences": "bb2f9e9ee53a78c53b4b4f8a2059fe1858245d4afc67351c68554462721c6d3a"
+  },
+  "index": {
+    "biology": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_visual_caption_context_biology.npz",
+      "cache_hit": false,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "96f93609ce6b4b9a923861573041cfbbb6c10cf28e1ada0c493300260258742d",
+      "chunk_count": 159,
+      "elapsed_ms": 4507.525500004704,
+      "size_bytes": 227881
+    },
+    "physical_sciences": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_visual_caption_context_physical_sciences.npz",
+      "cache_hit": false,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "bb2f9e9ee53a78c53b4b4f8a2059fe1858245d4afc67351c68554462721c6d3a",
+      "chunk_count": 191,
+      "elapsed_ms": 7917.514199994912,
+      "size_bytes": 273595
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "pipeline_name": "query_relevance_fusion_t080",
+  "selector": "query_relevance_fusion",
+  "source_depth": 20,
+  "candidate_budgets": [
+    8,
+    10,
+    15,
+    20
+  ],
+  "deduplication_threshold": 0.8,
+  "rrf_constant": 60,
+  "source_weights": {},
+  "mmr_lambda": 0.75,
+  "query_signal_weights": {
+    "source_rrf": 1.0,
+    "dense_bge_small": 1.0,
+    "bm25": 1.0
+  },
+  "candidate_sources": [
+    "page_dense_bge_small",
+    "fixed_400_80_bm25",
+    "fixed_400_80_dense_bge_small",
+    "soft_fusion_hybrid"
+  ]
+}

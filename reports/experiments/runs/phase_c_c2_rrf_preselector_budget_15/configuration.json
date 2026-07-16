@@ -1,0 +1,7 @@
+{
+  "pipeline_name": "rrf_preselector_budget_15",
+  "preselector": "rrf_preselector",
+  "candidate_budget": 15,
+  "stronger_reranker": "BAAI/bge-reranker-base",
+  "stop_before_stronger_reranker_on_recall_loss": true
+}

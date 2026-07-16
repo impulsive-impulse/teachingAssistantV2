@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "baseline_version": "1.0.0",
+  "cases": [
+    {
+      "question_id": "BIO-001",
+      "question": "What is photosynthesis?",
+      "book_id": "biology",
+      "coverage": ["biology", "canonical"],
+      "expected_evidence_ids_in_top_five": ["biology:fixed:00000"],
+      "expected_activated_specialists": []
+    },
+    {
+      "question_id": "BIO-027",
+      "question": "How do kidneys turn waste in the blood into pee?",
+      "book_id": "biology",
+      "coverage": ["biology", "natural_student", "synonym_expansion", "multi_page", "multi_chunk"],
+      "expected_evidence_ids_in_top_five": ["biology:fixed:00051"],
+      "expected_activated_specialists": []
+    },
+    {
+      "question_id": "BIO-013",
+      "question": "What functions are attributed to auxins and cytokinins?",
+      "book_id": "biology",
+      "coverage": ["canonical", "table_specialist"],
+      "expected_evidence_ids_in_top_five": ["biology:fixed:00071"],
+      "expected_activated_specialists": ["table"]
+    },
+    {
+      "question_id": "BIO-016",
+      "question": "How does meiosis differ from mitosis in chromosome number and daughter cells?",
+      "book_id": "biology",
+      "coverage": ["canonical", "table_specialist", "multi_page", "distributed_evidence"],
+      "expected_evidence_ids_in_top_five": ["biology:fixed:00089"],
+      "expected_activated_specialists": ["table"]
+    },
+    {
+      "question_id": "PSC-007",
+      "question": "How is the power of a lens related to its focal length?",
+      "book_id": "physical_sciences",
+      "coverage": ["physical_sciences", "canonical", "formula_specialist"],
+      "expected_evidence_ids_in_top_five": ["physical_sciences:fixed:00055"],
+      "expected_activated_specialists": ["formula"]
+    },
+    {
+      "question_id": "PSC-009",
+      "question": "How is an image constructed using principal rays for a concave mirror?",
+      "book_id": "physical_sciences",
+      "coverage": ["physical_sciences", "canonical", "visual_specialist"],
+      "expected_evidence_ids_in_top_five": ["physical_sciences:fixed:00003"],
+      "expected_activated_specialists": ["visual"]
+    },
+    {
+      "question_id": "BIO-032",
+      "question": "How does saving rainwater help when wells and groundwater are running out?",
+      "book_id": "biology",
+      "coverage": ["natural_student", "synonym_expansion", "multi_page", "multi_chunk"],
+      "expected_evidence_ids_in_top_five": ["biology:fixed:00147"],
+      "expected_activated_specialists": []
+    },
+    {
+      "question_id": "PSC-030",
+      "question": "Why doesn't one broken branch stop the rest of a parallel circuit?",
+      "book_id": "physical_sciences",
+      "coverage": ["natural_student", "synonym_expansion", "visual_specialist", "multi_page", "distributed_evidence"],
+      "expected_evidence_ids_in_top_five": ["physical_sciences:fixed:00125"],
+      "expected_activated_specialists": ["visual"]
+    }
+  ],
+  "required_evidence_fields": [
+    "rank", "evidence_id", "book_id", "pdf_pages", "textbook_pages",
+    "chapter", "section", "text_snippet", "contributing_retrievers",
+    "component_ranks", "component_scores", "fused_score",
+    "activated_specialist_signals"
+  ]
+}
