@@ -1,0 +1,42 @@
+{
+  "pipeline_name": "synonym_bge_fixed_600_100_formula_equation_context",
+  "strategy": "fixed_600_100",
+  "retriever": "hybrid_rrf_plus_page_prior",
+  "embedding": "bge_small",
+  "query_method": "textbook_synonym_expansion",
+  "specialist_method": "formula_equation_context",
+  "specialist_branch": "formula",
+  "activation_version": "v2",
+  "activation_query": "original_student_query",
+  "activation_pattern": "\\b(formula|equation|law|voltage|resistance|electric power|focal length|object distance|image distance|sign convention|balanced|equivalent resistance|parallel resistors?|stronger lenses?|shorter focus)\\b|\\b\\d+\\s*W\\b|[=Ωµ×÷]",
+  "gold_blind_activation_and_ranking": true,
+  "rrf_constant": 60,
+  "specialist_corpus_counts": {
+    "biology": 129,
+    "physical_sciences": 257
+  },
+  "specialist_corpus_fingerprints_sha256": {
+    "biology": "2f1b3e5bd46db961de6fc6fbfb0bffe580514815e5fa593e1ec8bffcd5e564f1",
+    "physical_sciences": "ccd315730dec6f68196a6ba5b1b3943443fd643abe7b3dce27167c30c6456276"
+  },
+  "index": {
+    "biology": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_formula_equation_context_biology.npz",
+      "cache_hit": true,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "2f1b3e5bd46db961de6fc6fbfb0bffe580514815e5fa593e1ec8bffcd5e564f1",
+      "chunk_count": 129,
+      "elapsed_ms": 32.533500001591165,
+      "size_bytes": 185089
+    },
+    "physical_sciences": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_formula_equation_context_physical_sciences.npz",
+      "cache_hit": true,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "ccd315730dec6f68196a6ba5b1b3943443fd643abe7b3dce27167c30c6456276",
+      "chunk_count": 257,
+      "elapsed_ms": 17.662899997958448,
+      "size_bytes": 367888
+    }
+  }
+}

@@ -11,7 +11,20 @@ requires-python = ">=3.10"
 dependencies = [
   "numpy>=1.26,<3",
   "pypdf>=5,<7",
+  "psutil>=7,<8",
   "sentence-transformers>=3,<6",
+]
+
+[project.optional-dependencies]
+experiment-m3 = [
+  "FlagEmbedding>=1.3,<2",
+]
+experiment-nomic = [
+  # Nomic's pinned custom encoder implementation imports einops at load time.
+  "einops>=0.7,<1",
+]
+visual-assets = [
+  "Pillow>=10,<13",
 ]
 
 [project.scripts]
@@ -21,6 +34,25 @@ chunk-retrieval = "textbook_audit.chunk_retrieval:main"
 hierarchical-retrieval = "textbook_audit.hierarchical_retrieval:main"
 candidate-complementarity = "textbook_audit.candidate_complementarity:main"
 local-reranker = "textbook_audit.reranker:main"
+candidate-compression = "textbook_audit.candidate_compression:main"
+candidate-representation = "textbook_audit.candidate_representation:main"
+fusion-reranking = "textbook_audit.fusion_reranking:main"
+reranker-bakeoff = "textbook_audit.reranker_bakeoff:main"
+embedding-bakeoff = "textbook_audit.embedding_bakeoff:main"
+chunking-bakeoff = "textbook_audit.chunking_bakeoff:main"
+query-processing = "textbook_audit.query_processing:main"
+specialist-retrieval = "textbook_audit.specialist_retrieval:main"
+extract-visual-assets = "textbook_audit.visual_assets:main"
+evidence-sets = "textbook_audit.evidence_sets:main"
+context-assembly = "textbook_audit.context_assembly:main"
+query-final-pipeline = "textbook_audit.final_pipeline:main"
+finalize-experiments = "textbook_audit.finalize_experiments:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
+
+[tool.pytest.ini_options]
+# The repository carries an unpacked x64 Python runtime under temp/ for local
+# model inference.  Restrict discovery so pytest never collects dependency
+# suites from that runtime when invoked at the repository root.
+testpaths = ["tests"]

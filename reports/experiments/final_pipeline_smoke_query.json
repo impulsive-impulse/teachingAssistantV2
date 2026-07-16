@@ -1,0 +1,128 @@
+{
+  "question": "How do plants eat?",
+  "book_id": "biology",
+  "profile": "lightweight",
+  "processed_query": "How do plants eat?",
+  "activated_specialists": [],
+  "retrieval_latency_ms": 1.6260999982478097,
+  "retrieved": [
+    {
+      "rank": 1,
+      "score": 5.742462391217179,
+      "chunk_id": "biology:fixed:00134",
+      "pdf_pages": [
+        219,
+        220,
+        221
+      ],
+      "textbook_pages": [
+        210,
+        211,
+        212
+      ],
+      "chapter_title": "Our Environment",
+      "section_title": "9.3.2 Pyramid of Biomass",
+      "text_snippet": "(Insects) Secondary consumers (Fish and other aquatic animals) To reduce our dependence on fossil fuels (fuels like coal, petrol etc. formed by natural processes such as anaerobic decomposition of buried dead organisms), and to help reduce air pollution, biomass can also be used as a energy source. Using biomass as fuel still puts carbon dioxide back into the atmosphere, but it is the same carbon dioxide taken from the air as the biomass was produced. Do you know?! Reflection of light at curved "
+    },
+    {
+      "rank": 2,
+      "score": 4.736265256062179,
+      "chunk_id": "biology:fixed:00000",
+      "pdf_pages": [
+        10,
+        11,
+        12
+      ],
+      "textbook_pages": [
+        1,
+        2,
+        3
+      ],
+      "chapter_title": "Nutrition",
+      "section_title": "1.1 Autotrophic Nutrition",
+      "text_snippet": "Nutrition 1 Food is needed by all living organisms mainly for growth and repair. Several organisms need food to maintain body temperature as well. A variety of substances are taken as food by organisms from single celluar organisms like amoeba to the complex multicellular organisms like the human being. Even within the human body the cells require a wide variety of substances as food to carryout their functions. The mode of acquiring food varies from organism to organism. You have studied in the"
+    },
+    {
+      "rank": 3,
+      "score": 4.56165706556367,
+      "chunk_id": "biology:fixed:00055",
+      "pdf_pages": [
+        100,
+        101,
+        102,
+        103
+      ],
+      "textbook_pages": [
+        91,
+        92,
+        93,
+        94
+      ],
+      "chapter_title": "Excretion",
+      "section_title": "4.10 Excretion in plants",
+      "text_snippet": "x How do the plants manage or send out waste products from its body? Plants can get rid of excess water by a process like transpiration and guttation. Waste products may be stored in leaves, bark, and fruits. Table-4 Name of the phylum Excretory system/ organ Protozoa Simple diffusion from the body surface in to the surrounding water Porifera and coelenterates Water bathes almost all the cells Platyhelminthes Flame cells Nematoda Renette cells Annelids Nephridia Arthropoda Green glands, Malpighi"
+    }
+  ],
+  "assembled_context": [
+    {
+      "source_chunk_ids": [
+        "biology:fixed:00134",
+        "biology:fixed:00000",
+        "biology:fixed:00055",
+        "biology:fixed:00135",
+        "biology:fixed:00119"
+      ],
+      "source_ranks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "pdf_pages": [
+        10,
+        11,
+        12,
+        100,
+        101,
+        102,
+        103,
+        197,
+        198,
+        199,
+        219,
+        220,
+        221,
+        222
+      ],
+      "textbook_pages": [
+        210,
+        211,
+        212,
+        1,
+        2,
+        3,
+        91,
+        92,
+        93,
+        94,
+        213,
+        188,
+        189,
+        190
+      ],
+      "chapter_title": "Our Environment",
+      "section_title": "9.3.2 Pyramid of Biomass",
+      "truncated": false,
+      "text_snippet": "(Insects) Secondary consumers (Fish and other aquatic animals) To reduce our dependence on fossil fuels (fuels like coal, petrol etc. formed by natural processes such as anaerobic decomposition of buried dead organisms), and to help reduce air pollution, biomass can also be used as a energy source. Using biomass as fuel still puts carbon dioxide back into the atmosphere, but it is the same carbon dioxide taken from the air as the biomass was produced. Do you know?! Reflection of light at curved surfaces211 Our Environment The biomass in a trophic level may be more or less than the other trophic levels. Biomass is a measure of the amount of food available. When animals eat, only a small proportion of their food is converted into new tissue, which inturn forms the food for the next trophic level. Part of biomass that animals eat is used to provide energy needed for staying alive, rest passes out of its body. The biomass pyramid shows that animals are relatively inefficient in converting "
+    }
+  ],
+  "model": {
+    "model_name": null,
+    "retriever": "BM25"
+  },
+  "cache": {
+    "chunks": {},
+    "specialists": {}
+  }
+}

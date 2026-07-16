@@ -1,0 +1,79 @@
+{
+  "visual_questions": 6,
+  "any_page_coverage_count": 6,
+  "all_pages_coverage_count": 4,
+  "questions": [
+    {
+      "question_id": "PSC-009",
+      "gold_pdf_pages": [
+        18
+      ],
+      "pages_with_raster_assets": [
+        18
+      ],
+      "any_gold_page_has_raster": true,
+      "all_gold_pages_have_raster": true
+    },
+    {
+      "question_id": "PSC-010",
+      "gold_pdf_pages": [
+        82
+      ],
+      "pages_with_raster_assets": [
+        82
+      ],
+      "any_gold_page_has_raster": true,
+      "all_gold_pages_have_raster": true
+    },
+    {
+      "question_id": "PSC-011",
+      "gold_pdf_pages": [
+        102,
+        103
+      ],
+      "pages_with_raster_assets": [
+        102,
+        103
+      ],
+      "any_gold_page_has_raster": true,
+      "all_gold_pages_have_raster": true
+    },
+    {
+      "question_id": "PSC-012",
+      "gold_pdf_pages": [
+        215,
+        218
+      ],
+      "pages_with_raster_assets": [
+        218
+      ],
+      "any_gold_page_has_raster": true,
+      "all_gold_pages_have_raster": false
+    },
+    {
+      "question_id": "PSC-029",
+      "gold_pdf_pages": [
+        102,
+        103
+      ],
+      "pages_with_raster_assets": [
+        102,
+        103
+      ],
+      "any_gold_page_has_raster": true,
+      "all_gold_pages_have_raster": true
+    },
+    {
+      "question_id": "PSC-030",
+      "gold_pdf_pages": [
+        215,
+        218
+      ],
+      "pages_with_raster_assets": [
+        218
+      ],
+      "any_gold_page_has_raster": true,
+      "all_gold_pages_have_raster": false
+    }
+  ]
+}

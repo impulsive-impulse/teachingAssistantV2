@@ -1,0 +1,9 @@
+{
+  "model_name": "mixedbread-ai/mxbai-rerank-base-v1",
+  "revision": "800f24c113213a187e65bde9db00c15a2bb12738",
+  "run_id": "phase_d_d4_mxbai_base_v1_full_pool",
+  "screen_per_book_slice_group": 2,
+  "batch_size": 32,
+  "maximum_length": 512,
+  "status": "stopped_runtime_infeasible"
+}

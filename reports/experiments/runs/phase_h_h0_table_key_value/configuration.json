@@ -1,0 +1,40 @@
+{
+  "pipeline_name": "synonym_bge_fixed_600_100_table_key_value",
+  "strategy": "fixed_600_100",
+  "retriever": "hybrid_rrf_plus_page_prior",
+  "embedding": "bge_small",
+  "query_method": "textbook_synonym_expansion",
+  "specialist_method": "table_key_value",
+  "specialist_branch": "table",
+  "activation_pattern": "\\b(table|row|column|compare|differ(?:ence)?|functions?|attributed|auxins?|cytokinins?|mitosis|meiosis|chromosome(?:s)?|daughter cells?)\\b",
+  "gold_blind_activation_and_ranking": true,
+  "rrf_constant": 60,
+  "specialist_corpus_counts": {
+    "biology": 28,
+    "physical_sciences": 41
+  },
+  "specialist_corpus_fingerprints_sha256": {
+    "biology": "2d3adc6e61d19890610e209750918473de520b568c070cd77ad09ed5930d68af",
+    "physical_sciences": "5b1ae663d0d46689a5e235d76c6c556d40250e1accf886d4fc2b547122809621"
+  },
+  "index": {
+    "biology": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_table_key_value_biology.npz",
+      "cache_hit": false,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "2d3adc6e61d19890610e209750918473de520b568c070cd77ad09ed5930d68af",
+      "chunk_count": 28,
+      "elapsed_ms": 3780.1499999986845,
+      "size_bytes": 41006
+    },
+    "physical_sciences": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_h\\phase_h_table_key_value_physical_sciences.npz",
+      "cache_hit": false,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "5b1ae663d0d46689a5e235d76c6c556d40250e1accf886d4fc2b547122809621",
+      "chunk_count": 41,
+      "elapsed_ms": 5063.851099999738,
+      "size_bytes": 59556
+    }
+  }
+}

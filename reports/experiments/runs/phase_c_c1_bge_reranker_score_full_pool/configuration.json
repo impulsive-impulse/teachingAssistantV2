@@ -1,0 +1,8 @@
+{
+  "pipeline_name": "bge_reranker_score",
+  "fusion_method": "bge_reranker_score",
+  "candidate_budget": "full",
+  "rrf_constant": 60,
+  "source_weights": {},
+  "score_blend_alpha": null
+}

@@ -1,0 +1,7 @@
+{
+  "pipeline_name": "bm25_fast_reranker_budget_10",
+  "preselector": "bm25_fast_reranker",
+  "candidate_budget": 10,
+  "stronger_reranker": "BAAI/bge-reranker-base",
+  "stop_before_stronger_reranker_on_recall_loss": true
+}

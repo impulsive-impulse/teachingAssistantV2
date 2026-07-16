@@ -1,0 +1,24 @@
+{
+  "pipeline_name": "uncompressed_union_t080",
+  "selector": "uncompressed_union",
+  "source_depth": 20,
+  "candidate_budgets": "all",
+  "deduplication_threshold": 0.8,
+  "rrf_constant": 60,
+  "source_weights": {},
+  "mmr_lambda": 0.75,
+  "query_signal_weights": {},
+  "candidate_sources": [
+    "page_dense_bge_small",
+    "fixed_400_80_bm25",
+    "fixed_400_80_dense_bge_small",
+    "soft_fusion_hybrid"
+  ],
+  "pool_statistics": {
+    "minimum": 31,
+    "average": 40.833333333333336,
+    "p50": 40.0,
+    "p95": 51.75,
+    "maximum": 57
+  }
+}

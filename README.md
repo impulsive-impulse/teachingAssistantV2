@@ -370,6 +370,198 @@ Outputs:
 - `reports/reranker_metrics.json`
 - `reports/reranker_baseline.md`
 
+## Long-lived local RAG experiments
+
+The approved research loop starts by repairing candidate compression before
+introducing another model. Run the controlled Phase A comparison from a source
+checkout with:
+
+```powershell
+temp\python-x64\python.exe scripts\run_candidate_compression.py --stage all
+```
+
+For inspection or recovery, the two stages can be run independently with
+`--stage a1` and `--stage a2`. A single registered selector can be diagnosed
+without changing the plan, for example:
+
+```powershell
+temp\python-x64\python.exe scripts\run_candidate_compression.py `
+  --stage single --selector plain_rrf --dedup-threshold 0.8
+```
+
+Each completed configuration has an immutable directory under
+`reports/experiments/runs/`. The append-only run history is
+`reports/experiments/experiment_runs.jsonl`; current state, the sortable
+leaderboard, important decisions, and restart instructions live alongside it.
+Candidate construction uses source ranks and candidate text only. Reviewed
+gold evidence is read only after selection to compute recall and ranking
+metrics. Phase A rejects compression that loses accepted evidence available in
+the four source rankings.
+
+Phase B compares deterministic candidate text representations without using
+gold labels for selection. Reproduce its successive-narrowing stages in order:
+
+```powershell
+temp\python-x64\python.exe scripts\run_candidate_representation.py --stage prescreen
+temp\python-x64\python.exe scripts\run_candidate_representation.py --stage member_prescreen
+temp\python-x64\python.exe scripts\run_candidate_representation.py --stage combination_prescreen
+temp\python-x64\python.exe scripts\run_candidate_representation.py --stage boundary_prescreen
+temp\python-x64\python.exe scripts\run_candidate_representation.py --stage rerank
+```
+
+Completed stage/run IDs are skipped on rerun rather than overwritten. The
+Phase B comparison report is
+`reports/experiments/phase_b_candidate_representation.md`; the retained
+representation uses the query-dense-best duplicate member, two non-overlapping
+query-relevant page windows, and neighbouring chunk context.
+
+Phase C reuses those cached full-pool scores to compare fusion logic, then
+audits 8/10/15-candidate preselectors before allowing another expensive model
+call:
+
+```powershell
+temp\python-x64\python.exe scripts\run_fusion_reranking.py --stage all
+```
+
+Use `--stage logic` or `--stage budgets` for an isolated resumable stage. The
+report is `reports/experiments/phase_c_fusion_reranking.md`. A capped run that
+loses accepted evidence is recorded and rejected before the stronger reranker
+runs; existing Phase B scores are never presented as newly measured inference.
+
+Phase D runs pinned local cross-encoders over the retained full pool. Reproduce
+the retained MiniLM run and finalize the successive-stopping decision with:
+
+```powershell
+temp\python-x64\python.exe scripts\run_reranker_bakeoff.py `
+  --model minilm_l6 --device cpu --batch-size 32 --maximum-length 512
+temp\python-x64\python.exe scripts\run_reranker_bakeoff.py --finalize
+```
+
+The generic runner also supports `bge_v2_m3` and `mxbai_base_v1` plus
+`--screen-per-group 2`. Their pinned snapshots must already exist in
+`data/retrieval/cache/models`; inference always sets `local_files_only=True`.
+The Phase D report records the rejected BGE-v2 screen and runtime-infeasible
+mxbai attempt without treating either as a full benchmark result.
+
+Phase E compares only approved, pinned local embedding models on the same
+front-matter-free fixed 400/80 corpus. Reproduce an individual run with the
+model-specific flags shown by `--help`; completed run IDs and fingerprinted
+indexes are reused. Finalize the retained lightweight and quality models with:
+
+```powershell
+temp\python-x64\python.exe scripts\run_embedding_bakeoff.py --apply-bge-gate
+temp\python-x64\python.exe scripts\run_embedding_bakeoff.py --finalize-phase-e
+```
+
+Phase F uses successive narrowing: screen every approved chunk corpus with
+BM25, encode only three finalists with E5-large-v2, evaluate page-aware
+methods, then confirm the winner with BGE-small. Run the resumable stages in
+order:
+
+```powershell
+temp\python-x64\python.exe scripts\run_chunking_bakeoff.py --stage bm25_screen
+temp\python-x64\python.exe scripts\run_chunking_bakeoff.py --stage e5_finalists --device cpu --batch-size 8
+temp\python-x64\python.exe scripts\run_chunking_bakeoff.py --stage multi_granularity --device cpu --batch-size 8
+temp\python-x64\python.exe scripts\run_chunking_bakeoff.py --stage bge_confirmation --device cpu --batch-size 16
+```
+
+The retained lightweight Phase F retriever is BGE-small fixed 600/100 Hybrid
+RRF. The retained E5 quality method adds the parent-page ranking as a third RRF
+prior. Full configurations, candidate recall, slice metrics, and complete
+rankings are under `reports/experiments/runs/`; the compact comparison is in
+`reports/experiments/phase_f_chunking_bakeoff.md`.
+
+Phase G screens deterministic query processing on that balanced pipeline and
+stores every processed query plus its fired static rules. Run:
+
+```powershell
+temp\python-x64\python.exe scripts\run_query_processing.py --stage screen --device cpu --batch-size 16
+temp\python-x64\python.exe scripts\run_query_processing.py --stage fusion --device cpu --batch-size 16
+```
+
+The retained deterministic method appends neutral textbook aliases while
+keeping the student's original wording. Original-plus-expanded source fusion
+was measured but was slower and weaker. See
+`reports/experiments/phase_g_query_processing.md` for the comparison. Local
+Gemma rewriting is a separate approval gate and is not started by these
+commands.
+
+Phase H adds static, gold-blind textbook specialists for equations, tables,
+and nearby figure captions, then tests distributed evidence selectors. The
+visual-asset command extracts embedded PDF rasters for a capability audit; it
+does not run an unapproved multimodal model.
+
+```powershell
+temp\python-x64\python.exe scripts\run_specialist_retrieval.py --stage screen --device cpu --batch-size 16
+temp\python-x64\python.exe scripts\run_specialist_retrieval.py --stage formula_activation_v2 --device cpu --batch-size 16
+temp\python-x64\python.exe scripts\run_specialist_retrieval.py --stage table_activation_v2 --device cpu --batch-size 16
+temp\python-x64\python.exe scripts\run_specialist_retrieval.py --stage combined --device cpu --batch-size 16
+temp\python-x64\python.exe scripts\extract_visual_assets.py
+temp\python-x64\python.exe scripts\run_evidence_sets.py
+```
+
+The retained combined specialist ranking reaches 26/44/50 Hit@1/3/5 and 0.601
+MRR. The final distributed-evidence gate keeps its unmodified top five: a
+coverage-diversity alternative completes one extra multi-page label but loses
+four accepted-evidence hits. See
+`reports/experiments/phase_h_specialist_retrieval.md` and
+`reports/experiments/phase_h_distributed_evidence.md`.
+
+Phase I compares top-K, hard token budgets, overlap/same-page merging,
+redundancy removal, diversity, and output order over that fixed top-five pool:
+
+```powershell
+temp\python-x64\python.exe scripts\run_context_assembly.py
+```
+
+Overlap-aware merging is retained because it preserves all 50/61 accepted
+chunks and 55/61 complete reviewed page sets available in the top five while
+reducing average context from 3,000 to 2,965 word tokens. Inspect the comparison
+in `reports/experiments/phase_i_context_assembly.md` and per-question assembled
+text under
+`reports/experiments/runs/phase_i_i0_overlap_merge_metadata_preserving/contexts.jsonl`.
+Each merged context includes a `source_metadata` entry for every contributing
+chunk, retaining its rank, PDF/textbook pages, chapter, and section.
+
+Generate the final comparable leaderboard, Pareto frontier, selected pipeline
+configurations, failure audit, and architecture handoff with:
+
+```powershell
+python scripts\finalize_experiments.py
+```
+
+Query any selected profile without benchmark labels:
+
+```powershell
+# Quality/balanced: BGE-small + BM25 + activated specialists
+temp\python-x64\python.exe scripts\query_final_pipeline.py `
+  "How do plants eat?" --book-id biology --profile balanced --include-text
+
+# Lightweight: fixed-600/100 BM25; no neural model is loaded
+python scripts\query_final_pipeline.py `
+  "How do plants eat?" --book-id biology --profile lightweight --include-text
+```
+
+The authoritative handoff is
+`reports/experiments/final_experiment_report.md`; machine-readable selections
+are in `reports/experiments/final_pipeline_selection.json`, with the full
+comparable leaderboard and Pareto frontier beside them as CSV files.
+
+### Experiment artifact retention
+
+Git tracks every run's compact `configuration.json` and `metrics.json`, the
+append-only run ledger, current state, decisions, summary reports, final
+leaderboard, Pareto frontier, and
+`reports/experiments/experiment_artifact_manifest.jsonl`. The manifest records
+the owner run, byte size, and SHA-256 digest for every declared run artifact.
+
+Complete per-query rankings, representations, candidate pools, evidence sets,
+and assembled contexts remain under `reports/experiments/runs/` locally but are
+gitignored because they total roughly 900 MB. They can be regenerated with the
+per-run commands in `experiment_runs.jsonl`; this keeps traceability without
+bloating normal clones. The selected smoke-query outputs and final reports are
+tracked directly.
+
 Run all regression tests with:
 
 ```powershell
@@ -398,10 +590,8 @@ change, append one row describing what was tested, the command, and the result.
 
 ## Recommended next research step
 
-Build a deterministic candidate-fusion handoff followed by a reranking
-experiment. Retain Page BGE-small, Fixed 400/80 BM25, Fixed 400/80 BGE-small,
-and Soft-fusion Hybrid candidates; deduplicate substantially identical evidence
-before reranking. Keep Page BM25 as a cheap diagnostic control rather than a
-separate production candidate source because it supplies no unique top-20 win
-on the current benchmark. Continue reporting canonical, natural-student,
-formula, visual, table, multi-page, and multi-chunk slices separately.
+Create and review a generation benchmark before Phase J. It must label answer
+correctness, faithfulness to supplied context, citation support, and abstention
+for the five negative questions. Answer generation remains blocked until that
+benchmark exists; neither the separately gated Gemma rewrite nor a multimodal
+encoder was downloaded or run.

@@ -1,0 +1,16 @@
+run_id,phase,pipeline_name,hit_at_1,hit_at_1_pct,hit_at_3,hit_at_3_pct,hit_at_5,hit_at_5_pct,mrr,natural_hit_at_5,natural_hit_at_5_pct,natural_mrr,canonical_hit_at_5,canonical_hit_at_5_pct,candidate_recall,p50_latency_ms,p95_latency_ms,peak_memory_mb,index_bytes,pareto_frontier,historical_decision
+phase_h_h3_combined_specialist_priors,H,synonym_bge_fixed_600_100_combined_specialist_priors,26,42.623,44,72.131,50,81.967,0.601127,16,80.0,0.599464,34,82.927,61,55.507,71.169,688.223,1154982,True,retain
+phase_h_h0_visual_caption_context,H,synonym_bge_fixed_600_100_visual_caption_context,23,37.705,44,72.131,50,81.967,0.572327,16,80.0,0.586587,34,82.927,61,28.168,33.739,962.836,501476,True,retain
+phase_h_h1_formula_context_activation_v2,H,synonym_bge_fixed_600_100_formula_equation_context,23,37.705,43,70.492,50,81.967,0.571619,16,80.0,0.574464,34,82.927,61,55.19,84.207,678.555,552977,True,retain
+phase_h_h2_formula_context_activation_v3,H,synonym_bge_fixed_600_100_formula_equation_context,22,36.066,43,70.492,50,81.967,0.563422,16,80.0,0.574464,34,82.927,61,58.94,83.662,684.094,552977,True,reject
+phase_f_f4_bge_small_page_prior_rrf,F,bge_small_fixed_600_100_page_prior_rrf,24,39.344,39,63.934,48,78.689,0.558089,16,80.0,0.511104,32,78.049,61,25.129,30.758,755.844,1313467,True,reject
+phase_g_g0_textbook_synonym_expansion,G,g0_textbook_synonym_expansion,21,34.426,43,70.492,50,81.967,0.551015,16,80.0,0.561587,34,82.927,61,38.132,46.684,693.801,504722,True,retain
+phase_g_g1_original_plus_textbook_synonym_expansion,G,g1_original_plus_textbook_synonym_expansion,20,32.787,42,68.852,48,78.689,0.528045,16,80.0,0.543403,32,78.049,61,62.209,146.466,673.234,504722,True,retain
+phase_g_g0_formula_symbol_normalization,G,g0_formula_symbol_normalization,22,36.066,38,62.295,47,77.049,0.529733,15,75.0,0.547321,32,78.049,61,33.666,42.1,700.617,504722,True,retain
+phase_g_g0_acronym_expansion,G,g0_acronym_expansion,21,34.426,39,63.934,45,73.77,0.521901,14,70.0,0.525099,31,75.61,61,32.994,41.726,697.082,504722,True,retain
+phase_g_g0_grammar_cleanup,G,g0_grammar_cleanup,20,32.787,39,63.934,45,73.77,0.513886,14,70.0,0.525655,31,75.61,61,35.515,48.423,691.801,504722,True,retain
+phase_f_f3_bge_small_fixed_600_100,F,bge_small_fixed_600_100_hybrid_rrf,20,32.787,39,63.934,45,73.77,0.513704,14,70.0,0.525099,31,75.61,61,21.431,28.965,755.418,504722,True,retain
+phase_g_g0_raw,G,g0_raw,20,32.787,39,63.934,45,73.77,0.513704,14,70.0,0.525099,31,75.61,61,36.575,43.988,677.859,504722,True,retain
+phase_f_f0_bm25_fixed_600_100,F,bm25_fixed_600_100,20,32.787,38,62.295,45,73.77,0.509037,12,60.0,0.421149,33,80.488,61,0.875,1.784,131.773,0,True,investigate
+phase_f_f0_bm25_fixed_400_80,F,bm25_fixed_400_80,17,27.869,31,50.82,41,67.213,0.449935,11,55.0,0.335008,30,73.171,61,1.186,2.465,130.816,0,True,investigate
+phase_f_f0_bm25_fixed_300_50,F,bm25_fixed_300_50,14,22.951,26,42.623,38,62.295,0.382341,9,45.0,0.26501,29,70.732,61,1.435,3.834,107.93,0,True,investigate

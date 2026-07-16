@@ -1,0 +1,15 @@
+{
+  "pipeline_name": "bm25_section_aware",
+  "strategy": "section_aware",
+  "retriever": "BM25",
+  "front_matter_excluded": true,
+  "search_scope": "corresponding book only",
+  "corpus_counts": {
+    "biology": 241,
+    "physical_sciences": 278
+  },
+  "corpus_fingerprints_sha256": {
+    "biology": "9174eb3bcd211f7b35a0aff37a9d240417a8e322a87d25e8de830c46d5ac0066",
+    "physical_sciences": "c7d7709d3a055e3c41606906daeee90166c61209a83e9a9402f52f06a8dfcff7"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "model_key": "bge_m3_sparse",
+  "model_name": "BAAI/bge-m3",
+  "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+  "query_prefix": "",
+  "run_id": "phase_e_e2_bge_m3_sparse_and_fusion_fixed_400_80",
+  "selected_retriever": "sparse",
+  "retrievers_evaluated": [
+    "sparse",
+    "sparse_bm25_rrf",
+    "dense_sparse_rrf",
+    "dense_sparse_bm25_rrf"
+  ],
+  "chunking": {
+    "strategy": "fixed",
+    "target_tokens": 400,
+    "overlap_tokens": 80,
+    "front_matter_excluded": true
+  },
+  "maximum_length": 512,
+  "rrf_constant": 60,
+  "search_scope": "corresponding book only",
+  "index": {
+    "biology": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\bge_m3_sparse_biology.json",
+      "cache_hit": false,
+      "corpus_fingerprint_sha256": "16d0007be54910acbaef5f1e93fdeb610706771b553a07f16e3a6ea295b992eb",
+      "chunk_count": 249,
+      "elapsed_ms": 374634.38479999965,
+      "size_bytes": 1625248
+    },
+    "physical_sciences": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\bge_m3_sparse_physical_sciences.json",
+      "cache_hit": false,
+      "corpus_fingerprint_sha256": "9d675913d00ab66caba22ba00c52673ef8e683c002eccd222b4a8fd506dd8e5d",
+      "chunk_count": 295,
+      "elapsed_ms": 921199.4140999996,
+      "size_bytes": 1537628
+    }
+  }
+}

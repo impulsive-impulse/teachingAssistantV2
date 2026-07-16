@@ -1,0 +1,35 @@
+{
+  "pipeline_name": "e5_fixed_400_80_dense",
+  "strategy": "fixed_400_80",
+  "embedding": "e5_large_v2",
+  "selected_retriever": "dense",
+  "retrievers_evaluated": [
+    "dense",
+    "hybrid_rrf"
+  ],
+  "front_matter_excluded": true,
+  "corpus_counts": {
+    "biology": 249,
+    "physical_sciences": 295
+  },
+  "index": {
+    "biology": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\e5_large_v2_biology.npz",
+      "cache_hit": true,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "16d0007be54910acbaef5f1e93fdeb610706771b553a07f16e3a6ea295b992eb",
+      "chunk_count": 249,
+      "elapsed_ms": 62.23920000047656,
+      "size_bytes": 946939
+    },
+    "physical_sciences": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\e5_large_v2_physical_sciences.npz",
+      "cache_hit": true,
+      "derived_from_model_key": null,
+      "corpus_fingerprint_sha256": "9d675913d00ab66caba22ba00c52673ef8e683c002eccd222b4a8fd506dd8e5d",
+      "chunk_count": 295,
+      "elapsed_ms": 45.051799999782816,
+      "size_bytes": 1122154
+    }
+  }
+}

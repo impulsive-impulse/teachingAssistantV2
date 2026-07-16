@@ -1,0 +1,8 @@
+{
+  "pipeline_name": "plain_rrf",
+  "fusion_method": "plain_rrf",
+  "candidate_budget": "full",
+  "rrf_constant": 60,
+  "source_weights": {},
+  "score_blend_alpha": null
+}

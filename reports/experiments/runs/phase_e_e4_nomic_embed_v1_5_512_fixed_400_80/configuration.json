@@ -1,0 +1,45 @@
+{
+  "model_key": "nomic_512",
+  "model_name": "nomic-ai/nomic-embed-text-v1.5",
+  "revision": "e9b6763023c676ca8431644204f50c2b100d9aab",
+  "custom_code_revision": "7710840340a098cfb869c4f65e87cf2b1b70caca",
+  "query_prefix": "search_query: ",
+  "document_prefix": "search_document: ",
+  "trust_remote_code": true,
+  "truncate_dim": 512,
+  "derived_from_model_key": "nomic_full",
+  "run_id": "phase_e_e4_nomic_embed_v1_5_512_fixed_400_80",
+  "selected_retriever": "hybrid_rrf",
+  "chunking": {
+    "strategy": "fixed",
+    "target_tokens": 400,
+    "overlap_tokens": 80,
+    "front_matter_excluded": true
+  },
+  "rrf_constant": 60,
+  "search_scope": "corresponding book only",
+  "corpus_counts": {
+    "biology": 249,
+    "physical_sciences": 295
+  },
+  "index": {
+    "biology": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\nomic_512_biology.npz",
+      "cache_hit": true,
+      "derived_from_model_key": "nomic_full",
+      "corpus_fingerprint_sha256": "16d0007be54910acbaef5f1e93fdeb610706771b553a07f16e3a6ea295b992eb",
+      "chunk_count": 249,
+      "elapsed_ms": 52.62539999966975,
+      "size_bytes": 473849
+    },
+    "physical_sciences": {
+      "path": "X:\\teachingAssistantV2\\data\\retrieval\\cache\\experiments\\phase_e\\nomic_512_physical_sciences.npz",
+      "cache_hit": true,
+      "derived_from_model_key": "nomic_full",
+      "corpus_fingerprint_sha256": "9d675913d00ab66caba22ba00c52673ef8e683c002eccd222b4a8fd506dd8e5d",
+      "chunk_count": 295,
+      "elapsed_ms": 67.74530000257073,
+      "size_bytes": 561271
+    }
+  }
+}
