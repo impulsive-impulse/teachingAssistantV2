@@ -1,0 +1,30 @@
+{
+  "rows": 40,
+  "unique_ids": 40,
+  "source_urls": {
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Biology-Lesson-10-Natural-Resources&chpid=287": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Biology-Lesson-2-Respiration&chpid=279": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Biology-Lesson-3-Circulation&chpid=280": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Biology-Lesson-4-Excretion&chpid=281": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Biology-Lesson-5-Coordination&chpid=282": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Biology-Lesson-6-Reproduction&chpid=283": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Biology-Lesson-7-Coordination-in-Life-Processes&chpid=284": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Biology-Lesson-8-Heredity-and-Evolution&chpid=285": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Biology-Lesson-9-Our-Environment&chpid=286": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Physical-Science-Lesson-1-Reflection-of-Light-at-Curved-Surfaces&chpid=309": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Physical-Science-Lesson-10-Electromagnetism&chpid=318": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Physical-Science-Lesson-11-Principles-of-Metallurgy&chpid=319": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Physical-Science-Lesson-12-Carbon-and-its-Compounds&chpid=320": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Physical-Science-Lesson-3-Acids-Bases-and-Salts&chpid=311": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Physical-Science-Lesson-4-Refraction-of-Light-at-Curved-Surfaces&chpid=312": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Physical-Science-Lesson-5-Human-Eye-and-Colourful-World&chpid=313": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Physical-Science-Lesson-6-Structure-of-Atom&chpid=314": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Physical-Science-Lesson-7-Classification-of-Elements-The-Periodic-Table&chpid=315": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Physical-Science-Lesson-8-Chemical-Bonding&chpid=316": 200,
+    "https://www.manabadi.co.in/articles/scert/SCERT-Chapter-Wise-Solutions.aspx?Chp=ts-scert-10th-class-Physical-Science-Lesson-9-Electric-Current&chpid=317": 200,
+    "https://www.manabadi.co.in/ts-scert-10th-class-Biology-Lesson-1-Nutrition/278": 200,
+    "https://www.manabadi.co.in/ts-scert-10th-class-Physical-Science-Lesson-2-Chemical-Equations/310": 200
+  },
+  "errors": [],
+  "passed": true
+}

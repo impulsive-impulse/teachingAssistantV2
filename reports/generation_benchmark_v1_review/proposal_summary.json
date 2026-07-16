@@ -1,0 +1,63 @@
+{
+  "total": 40,
+  "by_book": {
+    "biology": 20,
+    "physical_sciences": 20
+  },
+  "by_chapter": {
+    "biology:1": 2,
+    "biology:2": 2,
+    "biology:3": 2,
+    "biology:4": 2,
+    "biology:5": 2,
+    "biology:6": 2,
+    "biology:7": 2,
+    "biology:8": 2,
+    "biology:9": 2,
+    "biology:10": 2,
+    "physical_sciences:1": 2,
+    "physical_sciences:2": 2,
+    "physical_sciences:3": 2,
+    "physical_sciences:4": 2,
+    "physical_sciences:5": 2,
+    "physical_sciences:6": 1,
+    "physical_sciences:7": 1,
+    "physical_sciences:8": 2,
+    "physical_sciences:9": 2,
+    "physical_sciences:10": 2,
+    "physical_sciences:11": 1,
+    "physical_sciences:12": 1
+  },
+  "by_type": {
+    "experiment_based": 9,
+    "process_explanation": 5,
+    "structure_function": 4,
+    "comparison": 5,
+    "cause_effect": 9,
+    "multi_point_explanation": 3,
+    "formula_numerical": 1,
+    "formula_explanation": 1,
+    "visual_explanation": 3
+  },
+  "by_difficulty": {
+    "medium": 18,
+    "easy": 9,
+    "hard": 13
+  },
+  "dependencies": {
+    "requires_formula": 10,
+    "requires_visual": 2,
+    "requires_table": 1,
+    "requires_multiple_passages": 11
+  },
+  "website_status": {
+    "supported": 28,
+    "partially supported": 5,
+    "formatting corrupted": 6,
+    "contradicted": 1
+  },
+  "recommendations": {
+    "accept": 33,
+    "revise": 7
+  }
+}

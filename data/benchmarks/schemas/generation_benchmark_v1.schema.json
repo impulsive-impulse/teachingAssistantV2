@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "generation_benchmark_v1.schema.json",
+  "title": "Generation Benchmark v1 row",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "question_id",
+    "book_id",
+    "chapter_id",
+    "chapter_number",
+    "chapter_title",
+    "original_source_question",
+    "normalized_question",
+    "source_name",
+    "source_url",
+    "source_question_number",
+    "question_type",
+    "difficulty",
+    "required_answer_points",
+    "optional_answer_points",
+    "prohibited_or_unsupported_claims",
+    "accepted_pdf_pages",
+    "accepted_textbook_pages",
+    "accepted_evidence_references",
+    "requires_formula",
+    "requires_visual",
+    "requires_table",
+    "requires_multiple_passages",
+    "expected_answer_depth",
+    "website_answer_status",
+    "website_answer_notes",
+    "verification_notes",
+    "reviewer_status",
+    "benchmark_version"
+  ],
+  "properties": {
+    "question_id": {"type": "string", "pattern": "^GEN-(BIO|PSC)-[0-9]{3}$"},
+    "book_id": {"enum": ["biology", "physical_sciences"]},
+    "chapter_id": {"type": "string", "pattern": "^(biology|physical_sciences)-ch[0-9]{2}$"},
+    "chapter_number": {"type": "integer", "minimum": 1, "maximum": 12},
+    "chapter_title": {"type": "string", "minLength": 1},
+    "original_source_question": {"type": "string", "minLength": 1},
+    "normalized_question": {"type": "string", "minLength": 1},
+    "source_name": {"const": "Manabadi"},
+    "source_url": {"type": "string", "pattern": "^https://www\\.manabadi\\.co\\.in/"},
+    "source_question_number": {"type": "string", "minLength": 1},
+    "question_type": {
+      "enum": [
+        "cause_effect",
+        "comparison",
+        "experiment_based",
+        "formula_explanation",
+        "formula_numerical",
+        "multi_point_explanation",
+        "process_explanation",
+        "structure_function",
+        "visual_explanation"
+      ]
+    },
+    "difficulty": {"enum": ["easy", "medium", "hard"]},
+    "required_answer_points": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string", "minLength": 1}
+    },
+    "optional_answer_points": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "prohibited_or_unsupported_claims": {
+      "type": "array",
+      "items": {"type": "string", "minLength": 1}
+    },
+    "accepted_pdf_pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "integer", "minimum": 1}
+    },
+    "accepted_textbook_pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "integer", "minimum": 1}
+    },
+    "accepted_evidence_references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["book_id", "source_file", "pdf_page", "textbook_page"],
+        "properties": {
+          "book_id": {"enum": ["biology", "physical_sciences"]},
+          "source_file": {"type": "string", "minLength": 1},
+          "pdf_page": {"type": "integer", "minimum": 1},
+          "textbook_page": {"type": "integer", "minimum": 1}
+        }
+      }
+    },
+    "requires_formula": {"type": "boolean"},
+    "requires_visual": {"type": "boolean"},
+    "requires_table": {"type": "boolean"},
+    "requires_multiple_passages": {"type": "boolean"},
+    "expected_answer_depth": {"enum": ["short", "medium", "detailed"]},
+    "website_answer_status": {
+      "enum": ["supported", "partially supported", "contradicted", "formatting corrupted"]
+    },
+    "website_answer_notes": {"type": "string"},
+    "verification_notes": {"type": "string", "minLength": 1},
+    "reviewer_status": {"const": "approved"},
+    "benchmark_version": {"const": "generation_benchmark_v1"}
+  }
+}
