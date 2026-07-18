@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "a5fcbf82255098bdb4f1f05b4d8c70d8779c820e31b9debae4b7531b3c854cdb",
+  "question_id": "GEN-PSC-008",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:09:23+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"The lens maker’s formula is given by:\\n\\n\\\\[\\n\\\\frac{1}{f} = \\\\left(n - 1\\\\right) \\\\left(\\\\frac{1}{R_1} - \\\\frac{1}{R_2}\\\\right)\\n\\\\]\\n\\n**Explanation of the terms:**\\n\\n- **f**: The focal length of the lens. It is the distance from the lens to the point where parallel rays of light converge or appear to diverge from.\\n- **n**: The refractive index of the lens material. It is a measure of how much the speed of light is reduced inside the lens material compared to the speed of light in a vacuum.\\n- **R₁**: The radius of curvature of the first lens surface. It is positive if the surface is convex and negative if the surface is concave.\\n- **R₂**: The radius of curvature of the second lens surface. Similar to R₁, it is positive for a convex surface and negative for a concave surface.\\n\\nThis formula is used to calculate the focal length of a lens based on its material and the curvature of its surfaces. It is particularly useful for designing lenses with specific optical properties.\",\"selected_evidence_ids\":[\"E3\",\"E5\"],\"citations\":[{\"evidence_id\":\"E3\",\"pdf_page\":90,\"textbook_page\":80},{\"evidence_id\":\"E5\",\"pdf_page\":93,\"textbook_page\":83}],\"missing_information\":[]}",
+    "latency_seconds": 8.7332,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_08a0436676ab05e4006a5b42b87eb08194abed09df7d51c4ed",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4913,
+      "completion_tokens": 321,
+      "total_tokens": 5234
+    }
+  }
+}

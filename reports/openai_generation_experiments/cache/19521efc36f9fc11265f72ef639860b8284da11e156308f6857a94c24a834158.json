@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "19521efc36f9fc11265f72ef639860b8284da11e156308f6857a94c24a834158",
+  "question_id": "GEN-PSC-004",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:09:01+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Balancing a chemical equation is important because it ensures that the law of conservation of mass is followed. This law states that the total mass of the products formed in a chemical reaction must be equal to the total mass of the reactants consumed. In other words, the number of atoms of each element must be the same on both sides of the equation. This is because atoms are neither created nor destroyed in chemical reactions. By balancing the equation, we ensure that the chemical reaction accurately represents the conservation of mass, showing that the same number of each type of atom is present before and after the reaction.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":35,\"textbook_page\":25}],\"missing_information\":[]}",
+    "latency_seconds": 2.1368,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_06fb2164b974adff006a5b42a92aec8196bd92ae53c27afd2d",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4720,
+      "completion_tokens": 163,
+      "total_tokens": 4883
+    }
+  }
+}

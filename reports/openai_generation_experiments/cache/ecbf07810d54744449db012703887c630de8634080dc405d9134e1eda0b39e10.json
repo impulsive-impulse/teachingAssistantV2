@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "ecbf07810d54744449db012703887c630de8634080dc405d9134e1eda0b39e10",
+  "question_id": "GEN-BIO-004",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:01+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"To understand anaerobic respiration in a school laboratory, you can perform an experiment using yeast and glucose solution. Here’s the procedure:\\n\\n1. **Prepare the Glucose Solution:** Start by heating a glucose solution to remove dissolved oxygen. After heating, let it cool without shaking.\\n\\n2. **Add Yeast:** Once cooled, add yeast to the glucose solution. \\n\\n3. **Remove Oxygen:** To cut off the oxygen supply, pour a one-centimeter layer of liquid paraffin over the mixture. This prevents air from reaching the yeast.\\n\\n4. **Check Oxygen Removal:** To ensure oxygen is removed, add a few drops of diazine green (Janus Green B) solution to the yeast suspension before adding the paraffin. This dye turns pink when oxygen is scarce.\\n\\n5. **Set Up Apparatus:** Attach a bottle containing bicarbonate/indicator solution or lime water to the setup. This will help detect carbon dioxide production.\\n\\n6. **Observe Changes:** During anaerobic respiration, carbon dioxide is released, which will turn the lime water milky. You can also observe a rise in temperature, indicating energy release.\\n\\nThis experiment demonstrates how yeast can respire anaerobically, producing carbon dioxide and energy without oxygen.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":49,\"textbook_page\":40},{\"evidence_id\":\"E2\",\"pdf_page\":50,\"textbook_page\":41}],\"missing_information\":[]}",
+    "latency_seconds": 4.4549,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0d7b8f49dfa2c367006a5b417b0ed88196835a306bcdda4eba",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1206,
+      "completion_tokens": 325,
+      "total_tokens": 1531
+    }
+  }
+}

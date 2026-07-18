@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "dcde4b7802a3f873228db55c1cf4f95b191c122b52045f54e71b37b3da15311a",
+  "question_id": "GEN-BIO-017",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:08:40+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"In a food chain, the amount of energy transferred from one step to the next decreases significantly. At each transfer, a large proportion of energy, about 80 to 90 percent, is lost as heat during processes like respiration. This means that only a small fraction of the energy is passed on to the next trophic level. As a result, after three steps in a food chain, very little energy is available for top carnivores to use. This is why food chains are typically short, consisting of only a few steps.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":215,\"textbook_page\":206}],\"missing_information\":[]}",
+    "latency_seconds": 2.177,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_08b9b48cb8d082e0006a5b4293d77c819596b5a23a7114e7a5",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 3950,
+      "completion_tokens": 151,
+      "total_tokens": 4101
+    }
+  }
+}

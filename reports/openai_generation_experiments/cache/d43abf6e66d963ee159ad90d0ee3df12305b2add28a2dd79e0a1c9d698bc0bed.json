@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "d43abf6e66d963ee159ad90d0ee3df12305b2add28a2dd79e0a1c9d698bc0bed",
+  "question_id": "GEN-BIO-015",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:06:19+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Mendel’s monohybrid experiment involved crossing two pea plants that differed in just one trait. For example, he crossed a pure-breeding yellow seed plant (YY) with a pure-breeding green seed plant (yy). In the first generation (F1), all the offspring had yellow seeds, indicating that yellow is the dominant trait. When these F1 plants were self-pollinated, the second generation (F2) showed a 3:1 ratio of yellow to green seeds. This experiment demonstrated the Law of Dominance, which states that in a pair of contrasting traits, one trait is dominant and appears in the F1 generation, while the other is recessive and reappears in the F2 generation.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":191,\"textbook_page\":182}],\"missing_information\":[]}",
+    "latency_seconds": 8.0012,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0481c059d2125ffa006a5b420166008193801804d317887fe2",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4677,
+      "completion_tokens": 192,
+      "total_tokens": 4869
+    }
+  }
+}

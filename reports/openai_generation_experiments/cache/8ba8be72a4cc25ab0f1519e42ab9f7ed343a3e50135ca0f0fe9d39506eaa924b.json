@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "8ba8be72a4cc25ab0f1519e42ab9f7ed343a3e50135ca0f0fe9d39506eaa924b",
+  "question_id": "GEN-PSC-016",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:12:12+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"In a household circuit, electric appliances are connected in parallel. This is because a parallel connection ensures that each appliance receives the full voltage supply, which is typically 240V in household circuits. This allows each device to operate independently and at its optimal performance level. If one appliance is turned off or fails, it does not affect the operation of other appliances, as each has its own separate path for the flow of current.\\n\\nIf appliances were connected in series, they would share the same current. This means that if one appliance is turned off or fails, the entire circuit would be broken, and all appliances would stop working. Additionally, in a series connection, the voltage is divided among the appliances, which could result in insufficient voltage for each appliance to function properly.\\n\\nTherefore, connecting appliances in parallel is more practical and efficient for household circuits, ensuring that each appliance operates independently and receives the necessary voltage to function correctly.\",\"selected_evidence_ids\":[\"E2\",\"E4\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":216,\"textbook_page\":206},{\"evidence_id\":\"E4\",\"pdf_page\":226,\"textbook_page\":216}],\"missing_information\":[]}",
+    "latency_seconds": 4.2573,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0dc544cf1116498a006a5b4365b6308195b67fdd043be70891",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4463,
+      "completion_tokens": 251,
+      "total_tokens": 4714
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "experiment_id": "openai_generation_comparison_v1",
+  "local_experiment_config": "config/generation_experiments_v1.json",
+  "provider": {
+    "name": "openai-responses",
+    "model": "gpt-4o",
+    "credential_env_file": ".env",
+    "api_key_environment_variable": "OPENAI_API_KEY",
+    "base_url_environment_variable": "OPENAI_BASE_URL",
+    "timeout_seconds": 120,
+    "max_retries": 0
+  },
+  "frozen_configuration": {
+    "prompt_strategy": "P1",
+    "gold_context_strategy": "gold_separate_full",
+    "retrieved_context_strategy": "retrieved_top5_page_order_compact",
+    "max_output_tokens": 768,
+    "temperature": 0.0
+  },
+  "paid_call_stages": {
+    "smoke": 16,
+    "holdout_additional": 48,
+    "full_completion_additional": 16,
+    "maximum_unique_calls": 80
+  },
+  "pricing_snapshot": {
+    "checked_on": "2026-07-18",
+    "currency": "USD",
+    "input_per_million_tokens": 2.5,
+    "cached_input_per_million_tokens": 1.25,
+    "output_per_million_tokens": 10.0,
+    "source": "https://developers.openai.com/api/docs/models/gpt-4o"
+  },
+  "local_comparison_runs": {
+    "gold": "reports/generation_experiments/runs/qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f/results.jsonl",
+    "retrieved": "reports/generation_experiments/runs/qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb/results.jsonl"
+  }
+}

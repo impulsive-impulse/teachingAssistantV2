@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "db0b0229a6250ec98595d14d4f9ce4cd5a9938edb3aeb6efa56635855075747d",
+  "question_id": "GEN-PSC-017",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:05:18+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Faraday's law of induction is a fundamental principle of electromagnetism that describes how a current can be generated in a coil when there is a change in magnetic flux. This can be understood through a simple activity:\\n\\nIn the activity, you connect the terminals of a coil to a sensitive ammeter or galvanometer. Initially, there is no deflection in the galvanometer needle because there is no electromotive force in the circuit. However, when you push a bar magnet towards the coil with its north pole facing the coil, the needle deflects, indicating that a current is generated in the coil. This happens because the movement of the magnet changes the magnetic flux linked with the coil.\\n\\nIf the magnet is moved away from the coil, the needle deflects again, but in the opposite direction, showing that the current is now in the opposite direction. This demonstrates that the relative motion between the magnet and the coil induces a current.\\n\\nFaraday's law states: \\\"Whenever there is a continuous change of magnetic flux linked with a closed coil, a current is generated in the coil.\\\" This means that the key factor is the change in magnetic flux, not the specific movement of the magnet or coil.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":250,\"textbook_page\":235}],\"missing_information\":[]}",
+    "latency_seconds": 2.7885,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0f6629ccb33a9bc6006a5b41c901d48197b8683c6612271d23",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 757,
+      "completion_tokens": 291,
+      "total_tokens": 1048
+    }
+  }
+}

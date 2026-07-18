@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-18T08:46:40+00:00",
+  "online_results": [
+    "X:\\teachingAssistantV2\\reports\\openai_generation_experiments\\runs\\openai__gpt_4o__smoke__gold_retrieved__934d177d7dc1\\results.jsonl",
+    "X:\\teachingAssistantV2\\reports\\openai_generation_experiments\\runs\\openai__gpt_4o__smoke__gold_retrieved__818769828116\\results.jsonl"
+  ],
+  "questions_with_all_four_answers": 8,
+  "completion": {
+    "local_gold": {
+      "planned": 8,
+      "completed": 8
+    },
+    "local_retrieved": {
+      "planned": 8,
+      "completed": 8
+    },
+    "openai_gold": {
+      "planned": 8,
+      "completed": 8
+    },
+    "openai_retrieved": {
+      "planned": 8,
+      "completed": 8
+    }
+  },
+  "metrics": {
+    "local_gold": {
+      "questions": 8,
+      "completed": 8,
+      "required_point_coverage": 0.5396,
+      "citation_validity": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "structured_output_rate": 1.0,
+      "false_insufficient_count": 0,
+      "formula_accuracy": 0.0,
+      "model_load_seconds": null,
+      "p50_latency_seconds": 55.1,
+      "p95_latency_seconds": 82.3022,
+      "p50_time_to_first_token_seconds": 19.3956,
+      "p95_time_to_first_token_seconds": 34.6867,
+      "mean_tokens_per_second": 4.5055,
+      "peak_rss_bytes": 17922732032
+    },
+    "local_retrieved": {
+      "questions": 8,
+      "completed": 8,
+      "required_point_coverage": 0.6771,
+      "citation_validity": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "structured_output_rate": 1.0,
+      "false_insufficient_count": 0,
+      "formula_accuracy": 0.3333,
+      "model_load_seconds": null,
+      "p50_latency_seconds": 190.7787,
+      "p95_latency_seconds": 201.2608,
+      "p50_time_to_first_token_seconds": 127.3702,
+      "p95_time_to_first_token_seconds": 140.6069,
+      "mean_tokens_per_second": 1.3236,
+      "peak_rss_bytes": 19291516928
+    },
+    "openai_gold": {
+      "questions": 8,
+      "completed": 8,
+      "required_point_coverage": 0.7271,
+      "citation_validity": 1.0,
+      "unsupported_claim_rate": 0.25,
+      "structured_output_rate": 1.0,
+      "false_insufficient_count": 0,
+      "formula_accuracy": 0.3333,
+      "model_load_seconds": null,
+      "p50_latency_seconds": 4.3776,
+      "p95_latency_seconds": 7.6895,
+      "p50_time_to_first_token_seconds": null,
+      "p95_time_to_first_token_seconds": null,
+      "mean_tokens_per_second": 64.7128,
+      "peak_rss_bytes": null
+    },
+    "openai_retrieved": {
+      "questions": 8,
+      "completed": 8,
+      "required_point_coverage": 0.6708,
+      "citation_validity": 1.0,
+      "unsupported_claim_rate": 0.25,
+      "structured_output_rate": 1.0,
+      "false_insufficient_count": 0,
+      "formula_accuracy": 0.0,
+      "model_load_seconds": null,
+      "p50_latency_seconds": 4.4247,
+      "p95_latency_seconds": 6.3963,
+      "p50_time_to_first_token_seconds": null,
+      "p95_time_to_first_token_seconds": null,
+      "mean_tokens_per_second": 76.8384,
+      "peak_rss_bytes": null
+    }
+  }
+}

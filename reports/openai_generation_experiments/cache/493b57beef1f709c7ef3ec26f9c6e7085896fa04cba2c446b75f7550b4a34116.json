@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "493b57beef1f709c7ef3ec26f9c6e7085896fa04cba2c446b75f7550b4a34116",
+  "question_id": "GEN-PSC-002",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T08:46:05+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"To find the distance of the image when an object is placed on the principal axis of a concave mirror, we can use the mirror formula:\\n\\n\\\\[ \\\\frac{1}{f} = \\\\frac{1}{v} + \\\\frac{1}{u} \\\\]\\n\\nwhere:\\n- \\\\( f \\\\) is the focal length of the mirror,\\n- \\\\( v \\\\) is the image distance,\\n- \\\\( u \\\\) is the object distance.\\n\\nGiven:\\n- The object distance \\\\( u = -10 \\\\) cm (the negative sign is due to the sign convention for mirrors),\\n- The radius of curvature \\\\( R = 8 \\\\) cm.\\n\\nThe focal length \\\\( f \\\\) is half of the radius of curvature for a concave mirror:\\n\\n\\\\[ f = \\\\frac{R}{2} = \\\\frac{8}{2} = 4 \\\\text{ cm} \\\\]\\n\\nSubstituting the values into the mirror formula:\\n\\n\\\\[ \\\\frac{1}{4} = \\\\frac{1}{v} + \\\\frac{1}{-10} \\\\]\\n\\nSolving for \\\\( \\\\frac{1}{v} \\\\):\\n\\n\\\\[ \\\\frac{1}{v} = \\\\frac{1}{4} + \\\\frac{1}{10} \\\\]\\n\\n\\\\[ \\\\frac{1}{v} = \\\\frac{5}{20} + \\\\frac{2}{20} = \\\\frac{7}{20} \\\\]\\n\\n\\\\[ v = \\\\frac{20}{7} \\\\approx 2.86 \\\\text{ cm} \\\\]\\n\\nThus, the image distance \\\\( v \\\\) is approximately 2.86 cm in front of the mirror, indicating a real and inverted image.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":26,\"textbook_page\":16}],\"missing_information\":[]}",
+    "latency_seconds": 4.5128,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_07763962b9f1ffb6006a5b3d47532c819497c8c8729a697364",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4240,
+      "completion_tokens": 430,
+      "total_tokens": 4670
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "709d4619f0415efd092b36bff5668f46195387a61b1ddfe30c88b70622831c51",
+  "question_id": "GEN-BIO-010",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:05:55+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"A synapse is the functional region of contact between two neurons. It is where information from one neuron is transmitted to another. Although there is a minute gap between neurons at the synapse, information is passed through these gaps in the form of chemical or electrical signals, or both. This process allows neurons to communicate effectively, enabling the transmission of signals throughout the nervous system. Synapses are primarily found in the brain and spinal cord, facilitating complex processes like thought, movement, and reflexes.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":112,\"textbook_page\":103}],\"missing_information\":[]}",
+    "latency_seconds": 1.8396,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0074170a31fa672c006a5b41efde3481948e270092a84e5363",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4421,
+      "completion_tokens": 142,
+      "total_tokens": 4563
+    }
+  }
+}

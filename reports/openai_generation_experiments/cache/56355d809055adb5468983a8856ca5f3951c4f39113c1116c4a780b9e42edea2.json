@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "56355d809055adb5468983a8856ca5f3951c4f39113c1116c4a780b9e42edea2",
+  "question_id": "GEN-BIO-009",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:05:54+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Phototropism in plants is the growth movement in response to light. This process is primarily controlled by plant hormones called auxins. When a plant is exposed to light from one direction, auxins accumulate on the shaded side of the plant. This causes the cells on that side to elongate more than those on the side exposed to light, resulting in the bending of the plant towards the light source. This bending allows the plant to maximize its exposure to sunlight, which is essential for photosynthesis. The experiments by Charles Darwin and his son Francis Darwin demonstrated that the tip of the plant is crucial for sensing light and directing growth, as covering the tip prevented the bending response. Later, F.W. Went identified auxin as the chemical responsible for this growth response, confirming that it acts as a chemical stimulus rather than a physical one.\",\"selected_evidence_ids\":[\"E3\",\"E4\"],\"citations\":[{\"evidence_id\":\"E3\",\"pdf_page\":125,\"textbook_page\":116},{\"evidence_id\":\"E4\",\"pdf_page\":126,\"textbook_page\":117}],\"missing_information\":[]}",
+    "latency_seconds": 2.9807,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_087a8d79a1332906006a5b41ece0d081948f4b98c9f13a786e",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4520,
+      "completion_tokens": 231,
+      "total_tokens": 4751
+    }
+  }
+}

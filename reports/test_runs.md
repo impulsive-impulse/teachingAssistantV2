@@ -554,3 +554,131 @@ JSONL packet and placed its generated output in the dedicated
 Result: the generated view exposes rubric points, citations and collapsed
 evidence while hiding evaluation mode and automatic scores by default. It does
 not mutate the source packet or store reviewer decisions.
+
+## Selective OpenAI generation harness — 2026-07-18
+
+Change tested: added a GPT-4o Responses API provider around the frozen
+generation experiment, strict structured outputs, response-hash caching, an
+exact paid-call approval gate, local-vs-online comparison artifacts, and a
+four-answer blinded review-packet builder. All provider tests used an injected
+fake client; the real smoke command was run in its default zero-call mode.
+
+| Test / evaluation set | Rows or tests | Key result | Outcome |
+|---|---:|---|---|
+| New OpenAI harness regressions | 6 | schema, request shape, 16-call plan, cache, cap, blind mapping | Passed |
+| Focused local + online generation tests | 13 | 13 passed in 33.87 s | Passed |
+| Full repository suite | 159 | 159 passed in 86.90 s | Passed |
+| GPT-4o smoke preflight | 8 questions / 16 requests | 16 uncached; 0 API calls | Passed |
+| Preflight token/cost screen | 16 requests | 44,148 estimated input tokens; 6,144 max output tokens; $0.1718 upper bound | Informational |
+| Frozen retrieval eval | 61 answerable | Hit@1 26/61; Hit@3 44/61; Hit@5 50/61; MRR 0.601127 | Unchanged |
+
+Commands/results:
+
+```powershell
+$env:PYTHONPATH = "src"
+temp\python-x64\python.exe -m pytest tests\test_openai_generation.py tests\test_generation_experiments.py -q
+temp\python-x64\python.exe scripts\run_openai_generation_experiment.py --split smoke
+temp\python-x64\python.exe -m pytest -q
+temp\python-x64\python.exe scripts\manage_retrieval_baseline_v1.py validate
+```
+
+Result: the preflight materialized exactly 8 gold and 8 retrieved GPT-4o
+requests, with no cache hits and no network calls. An initial attempt with the
+system ARM64 Python stopped during test collection because PyYAML was absent;
+rerunning with the documented x64 project runtime passed. The full suite and
+frozen retrieval golden regression passed, and no paid generation result or
+quality claim has been recorded yet.
+
+## GPT-4o smoke completion at 768 tokens — 2026-07-18
+
+Change tested: added a Git-ignored `.env` credential loader, made 768 tokens
+the online default, selectively retried only the six 384-token truncations,
+and merged retry rows over the original cached run for a complete blinded
+four-way comparison. The original ten successful online answers were not
+regenerated.
+
+| Evaluation source | Complete / planned | Coverage | Citation | Structured | Unsupported screen | p95 latency |
+|---|---:|---:|---:|---:|---:|---:|
+| Local Qwen gold | 8 / 8 | 0.5396 | 1.0000 | 1.0000 | 0.0000 | 82.3022 s |
+| Local Qwen retrieved | 8 / 8 | 0.6771 | 1.0000 | 1.0000 | 0.0000 | 201.2608 s |
+| GPT-4o gold, merged | 8 / 8 | 0.7271 | 1.0000 | 1.0000 | 0.2500 | 7.6895 s |
+| GPT-4o retrieved, merged | 8 / 8 | 0.6708 | 1.0000 | 1.0000 | 0.2500 | 6.3963 s |
+
+| Paid-run accounting | Result |
+|---|---:|
+| Original calls at 384 tokens | 16 |
+| Selective retry calls at 768 tokens | 6 |
+| Retry input / output tokens | 16,924 / 2,672 |
+| Approximate retry cost at pricing snapshot | $0.0690 |
+| Retry structured completions | 6 / 6 |
+| Final HTML questions / anonymous answers | 8 / 32 |
+| Full repository regression suite | 161 passed in 103.56 s |
+
+Commands/results:
+
+```powershell
+temp\python-x64\python.exe scripts\run_openai_generation_experiment.py --split smoke --question-id GEN-BIO-012 --question-id GEN-PSC-002 --question-id GEN-PSC-015 --execute-paid --approved-new-calls 6
+temp\python-x64\python.exe scripts\build_openai_generation_comparison.py --online-results <base-results.jsonl> <retry-results.jsonl> --output-dir reports\openai_generation_experiments\comparisons\smoke_complete_768
+temp\python-x64\python.exe scripts\build_review_packet_view.py --input reports\openai_generation_experiments\comparisons\smoke_complete_768\blinded_human_review_packet.jsonl --output reports\openai_generation_experiments\comparisons\smoke_complete_768\blinded_human_review_packet.html
+```
+
+Result: all six retries completed with valid structured output and citations;
+the merged packet contains all eight questions. The automatic unsupported
+screen's two concepts are lexical false positives caused by correct contrast
+statements (mitosis versus meiosis, and series circuit versus parallel
+voltmeter), so human review remains authoritative. All 161 repository tests
+passed after the credential-loader, retry, merge, and 768-token default changes.
+
+## Full 40-question GPT-4o comparison — 2026-07-18
+
+Change tested: completed GPT-4o gold and retrieved generation for the 32
+questions not present in the earlier eight-question smoke run, reused the 16
+valid smoke answers without regeneration, and produced a 40-question HTML with
+explicit local-Qwen/GPT-4o and gold/retrieved labels.
+
+| Evaluation source | Complete / planned | Coverage | Citation | Structured | Unsupported screen | p95 latency |
+|---|---:|---:|---:|---:|---:|---:|
+| Local Qwen — Gold evidence | 40 / 40 | 0.4654 | 0.9750 | 0.9750 | 0.0250 | 85.7361 s |
+| Local Qwen — Retrieved evidence | 40 / 40 | 0.4704 | 0.9500 | 0.9750 | 0.0250 | 229.4036 s |
+| GPT-4o API — Gold evidence | 40 / 40 | 0.5779 | 1.0000 | 1.0000 | 0.1000 | 6.2071 s |
+| GPT-4o API — Retrieved evidence | 40 / 40 | 0.5450 | 0.9500 | 1.0000 | 0.0750 | 8.7332 s |
+
+| Paid-run and report validation | Result |
+|---|---:|
+| Previously retained complete GPT answers | 16 (8 questions × 2 modes) |
+| New successful GPT calls | 64 (32 questions × 2 modes) |
+| Duplicate calls among the 32-question completion set | 0 |
+| Historical truncated calls retained for audit | 6 |
+| Total provider responses cached | 86 (80 complete, 6 incomplete) |
+| Input / output tokens across all paid responses | 245,544 / 23,364 |
+| Approximate cumulative cost at the frozen pricing snapshot | $0.8475 |
+| Labeled HTML questions / answers | 40 / 160 |
+| Focused online/local generation regressions | 15 passed in 67.05 s |
+| Full repository regression suite | 161 passed in 228.07 s |
+
+Result: all 80 final GPT-4o question-mode answers are complete. The provider's
+30,000-token-per-minute limit caused two controlled stops; cache-aware
+preflight/resume completed only the outstanding 21 and then eight calls, with
+no automatic retries. Automatic coverage favors GPT-4o by 0.1125 on gold
+evidence and 0.0746 on retrieved evidence. The labeled HTML is the final source
+for human comparison because coverage and unsupported-claim screens are
+lexical diagnostics rather than scientific judgments.
+
+## OpenAI artifact-structure validation — 2026-07-18
+
+Change tested: consolidated online experiment outputs under separate `cache/`,
+`runs/`, and named `comparisons/` stages, then updated all documented paths and
+the report builder's default destination.
+
+| Validation | Result |
+|---|---:|
+| OpenAI regression tests | 8 passed in 44.66 s |
+| Full labeled questions / answers | 40 / 160 |
+| HTML default state | Explicit labels revealed |
+| Cache entries retained for no-repeat resume | 86 |
+| Immutable run result/manifest artifacts | 6 |
+| Repository whitespace check | Passed |
+
+Result: the move changed artifact organization only. The final paired-question
+count remains 40, all four source labels remain visible, and raw run/cache
+traceability is preserved.

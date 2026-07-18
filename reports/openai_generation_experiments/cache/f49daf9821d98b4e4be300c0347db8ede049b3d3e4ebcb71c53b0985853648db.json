@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "f49daf9821d98b4e4be300c0347db8ede049b3d3e4ebcb71c53b0985853648db",
+  "question_id": "GEN-BIO-002",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T08:25:29+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Fats are primarily digested in the small intestine. The process begins when bile juice, secreted by the liver, emulsifies fats. Emulsification breaks down large fat globules into smaller ones, making it easier for enzymes to act on them. The pancreatic juice, which contains the enzyme lipase, further digests these emulsified fats into fatty acids and glycerol. This digestion occurs in the duodenum, the first part of the small intestine, where the environment is made alkaline by the secretions from the liver and pancreas, facilitating the action of digestive enzymes.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":25,\"textbook_page\":16}],\"missing_information\":[]}",
+    "latency_seconds": 5.744,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_01d92be4c38c1912006a5b3874068c81968bc4f0bbaf05ac72",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1147,
+      "completion_tokens": 160,
+      "total_tokens": 1307
+    }
+  }
+}

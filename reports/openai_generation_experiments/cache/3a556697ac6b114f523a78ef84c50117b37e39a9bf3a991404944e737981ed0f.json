@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "3a556697ac6b114f523a78ef84c50117b37e39a9bf3a991404944e737981ed0f",
+  "question_id": "GEN-PSC-010",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:57+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"The blue color of the sky is due to a phenomenon called scattering of light. When sunlight enters the Earth's atmosphere, it interacts with molecules like nitrogen (N2) and oxygen (O2). These molecules are small and comparable in size to the wavelength of blue light. As a result, they scatter blue light more effectively than other colors. This scattered blue light reaches our eyes from all directions, making the sky appear blue. The intensity of the scattered light is highest when viewed at a 90-degree angle to the direction of the sun, which is why the sky looks particularly blue when you look away from the sun.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":115,\"textbook_page\":105},{\"evidence_id\":\"E2\",\"pdf_page\":116,\"textbook_page\":106}],\"missing_information\":[]}",
+    "latency_seconds": 2.6204,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0a91c78ee4c44eed006a5b41b51bd881908f2a12db090a520e",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1146,
+      "completion_tokens": 189,
+      "total_tokens": 1335
+    }
+  }
+}

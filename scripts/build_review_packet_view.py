@@ -1,4 +1,4 @@
-"""Render a blinded human-review JSONL packet into a readable, self-contained HTML report.
+"""Render a blinded or explicitly labeled JSONL packet as self-contained HTML.
 
 Usage:
     python scripts/build_review_packet_view.py \
@@ -146,7 +146,7 @@ def render_screen(screen: dict[str, Any]) -> str:
 
 
 def render_answer(ans: dict[str, Any]) -> str:
-    """Render one anonymous answer, its citations, metrics, and supplied evidence."""
+    """Render one answer label, its citations, metrics, and supplied evidence."""
     label = esc(ans.get("label"))
     mode = esc(ans.get("evaluation_mode"))
     mode_badge = (
@@ -313,10 +313,18 @@ ce.addEventListener('change', () => {
 """
 
 
-def build_html(records: list[dict[str, Any]], source_name: str) -> str:
-    """Build a self-contained offline HTML document from packet records."""
+def build_html(records: list[dict[str, Any]], source_name: str, revealed: bool = False) -> str:
+    """Build a self-contained offline HTML document from packet records.
+
+    ``revealed`` keeps provider labels, modes, and automatic screens visible
+    by default for explicit local-vs-online gap analysis. Historical blinded
+    review behavior remains the default.
+    """
     sections = "\n".join(render_question(i + 1, rec) for i, rec in enumerate(records))
     total_answers = sum(len(r.get("answers", [])) for r in records)
+    body_class = "" if revealed else "blind"
+    heading = "Labeled local-vs-online comparison" if revealed else "Blinded human-review packet"
+    checked = "" if revealed else " checked"
     return f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -325,12 +333,12 @@ def build_html(records: list[dict[str, Any]], source_name: str) -> str:
 <title>Review packet &middot; {esc(source_name)}</title>
 <style>{CSS}</style>
 </head>
-<body class="blind">
+<body class="{body_class}">
 <header class="top">
-  <h1>Blinded human-review packet</h1>
+  <h1>{heading}</h1>
   <span class="sub">{esc(source_name)} &middot; {len(records)} questions &middot; {total_answers} answers</span>
   <div class="toolbar">
-    <label><input type="checkbox" id="blindToggle" checked /> Blind mode (hide mode &amp; auto-screen)</label>
+    <label><input type="checkbox" id="blindToggle"{checked} /> Blind mode (hide mode &amp; auto-screen)</label>
     <label><input type="checkbox" id="expandToggle" /> Expand all evidence</label>
   </div>
 </header>
@@ -348,6 +356,10 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--input", required=True, type=Path)
     parser.add_argument("--output", required=True, type=Path)
+    parser.add_argument(
+        "--revealed", action="store_true",
+        help="Show explicit labels, evidence mode, and automatic screens by default.",
+    )
     args = parser.parse_args()
 
     records: list[dict[str, Any]] = []
@@ -357,7 +369,7 @@ def main() -> None:
             if line:
                 records.append(json.loads(line))
 
-    html_doc = build_html(records, args.input.name)
+    html_doc = build_html(records, args.input.name, revealed=args.revealed)
     # Model answers can contain spaces before newlines, and the readable HTML
     # templates contain indented blank lines. Normalize both in the derived
     # artifact so repository whitespace checks remain clean.

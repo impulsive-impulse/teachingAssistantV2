@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "65b32ffffa6dd9d4d82d324fd36c9628336ef7b1517c59b8cf81762254ffe925",
+  "question_id": "GEN-PSC-003",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:44+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"A balanced chemical equation provides several important pieces of information:\\n\\n1. **Conservation of Mass**: It shows that the number of atoms of each element is the same on both sides of the equation, which aligns with the law of conservation of mass. This means that the total mass of reactants equals the total mass of products.\\n\\n2. **Reactants and Products**: It identifies the reactants (substances that start the reaction) and the products (substances formed by the reaction).\\n\\n3. **Mole Ratios**: The coefficients in a balanced equation indicate the ratio of moles of each substance involved in the reaction.\\n\\n4. **Physical States**: The equation can also include the physical states of the reactants and products, such as solid (s), liquid (l), gas (g), or aqueous (aq).\\n\\n5. **Additional Information**: It can show if a reaction is exothermic or endothermic, if a gas is evolved, or if a precipitate is formed.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":35,\"textbook_page\":25},{\"evidence_id\":\"E2\",\"pdf_page\":39,\"textbook_page\":29}],\"missing_information\":[]}",
+    "latency_seconds": 2.8957,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0e915de6d2cde06d006a5b41a777048194a8f8bbf5d2f957bd",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1746,
+      "completion_tokens": 280,
+      "total_tokens": 2026
+    }
+  }
+}

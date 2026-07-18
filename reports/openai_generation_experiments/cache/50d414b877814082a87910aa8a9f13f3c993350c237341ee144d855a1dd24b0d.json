@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "50d414b877814082a87910aa8a9f13f3c993350c237341ee144d855a1dd24b0d",
+  "question_id": "GEN-BIO-018",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:08:45+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"The use of toxic materials, such as pesticides and industrial chemicals, can have significant effects on ecosystems. These substances can enter the environment through various means, such as agricultural runoff or industrial discharges, and can lead to pollution of water bodies and soil.\\n\\nOne of the key processes affected by toxic materials is bioaccumulation. Bioaccumulation refers to the entry and buildup of pollutants in the tissues of organisms. When these pollutants enter a food chain, they can become more concentrated at each successive trophic level, a process known as biomagnification. This means that top predators, such as hawks or large fish, can accumulate high levels of toxins, which can be harmful or even lethal.\\n\\nFor example, if a pesticide is used on crops, it may wash into nearby water bodies, affecting aquatic life. Small organisms like plankton may absorb the pesticide, and when fish eat the plankton, they accumulate more of the toxin. As larger fish eat the smaller ones, the concentration of the toxin increases further. This can lead to health problems for animals at the top of the food chain, including humans who consume these fish.\\n\\nThus, the use of toxic materials can disrupt food chains and food webs, leading to a decrease in biodiversity and affecting the balance of ecosystems.\",\"selected_evidence_ids\":[\"E3\"],\"citations\":[{\"evidence_id\":\"E3\",\"pdf_page\":225,\"textbook_page\":216}],\"missing_information\":[]}",
+    "latency_seconds": 4.7601,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_02cc818441cc775c006a5b429604308197b0ff8f004a7a16c6",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4215,
+      "completion_tokens": 305,
+      "total_tokens": 4520
+    }
+  }
+}

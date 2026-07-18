@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "9e55353a4a32cb156a7fd268daa3aeff9f5c75ab755f9c03c2f4a74a1f068559",
+  "question_id": "GEN-PSC-012",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:12:00+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Mendeleev's periodic table had several limitations:\\n\\n1. **Anomalous Pairs**: Some elements with higher atomic weights were placed before those with lower atomic weights. For example, tellurium (Te) with a higher atomic weight was placed before iodine (I) with a lower atomic weight. \\n\\n2. **Dissimilar Elements Together**: Elements with different properties were placed in the same group. For instance, alkali metals like lithium (Li), sodium (Na), and potassium (K) were placed in the same group as coinage metals like copper (Cu), silver (Ag), and gold (Au).\\n\\n3. **No Fixed Position for Hydrogen**: Hydrogen's placement was problematic as it could fit into more than one group.\\n\\n4. **No Room for New Elements**: Mendeleev's table did not leave spaces for elements that were yet to be discovered.\\n\\nThe modern periodic table addresses these limitations by arranging elements in order of increasing atomic number rather than atomic weight. This change resolves the issue of anomalous pairs, as elements are now placed according to their atomic number, which is a more fundamental property. For example, tellurium and iodine are correctly placed based on their atomic numbers, eliminating the previous anomaly.\\n\\nAdditionally, the modern table is structured to accommodate new elements, and elements are grouped based on similar electronic configurations, which better reflects their chemical properties.\",\"selected_evidence_ids\":[\"E3\",\"E4\"],\"citations\":[{\"evidence_id\":\"E3\",\"pdf_page\":152,\"textbook_page\":142},{\"evidence_id\":\"E4\",\"pdf_page\":153,\"textbook_page\":143}],\"missing_information\":[]}",
+    "latency_seconds": 6.7999,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_02bfa134fe85acac006a5b435997308194a9b8c35fc78ed99a",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4974,
+      "completion_tokens": 360,
+      "total_tokens": 5334
+    }
+  }
+}

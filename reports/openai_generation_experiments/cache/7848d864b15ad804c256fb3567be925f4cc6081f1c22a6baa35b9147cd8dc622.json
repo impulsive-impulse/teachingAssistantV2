@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "7848d864b15ad804c256fb3567be925f4cc6081f1c22a6baa35b9147cd8dc622",
+  "question_id": "GEN-BIO-001",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:03:54+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"To study the presence of starch in leaves in the laboratory, follow these steps:\\n\\n1. **Select a Leaf**: Choose a soft and thin leaf from a plant that has been well exposed to sunlight.\\n\\n2. **Boil the Leaf in Water**: First, boil the leaf in water to kill it and stop all chemical processes.\\n\\n3. **Boil in Methylated Spirit**: Transfer the leaf into a test tube containing methylated spirit. Boil this tube in a water bath. This step removes chlorophyll, making the leaf pale.\\n\\n4. **Test with Iodine Solution**: Carefully take the leaf out using a brush, spread it in a petri dish, and add a few drops of iodine solution. If starch is present, the leaf will turn a bluish-black color.\\n\\nThis experiment demonstrates the presence of starch, a carbohydrate, in leaves, indicating that photosynthesis has occurred.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":12,\"textbook_page\":3},{\"evidence_id\":\"E2\",\"pdf_page\":13,\"textbook_page\":4}],\"missing_information\":[]}",
+    "latency_seconds": 6.2071,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0d507acbce8753bc006a5b4173c93481938de6f0fd342c8257",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1096,
+      "completion_tokens": 260,
+      "total_tokens": 1356
+    }
+  }
+}

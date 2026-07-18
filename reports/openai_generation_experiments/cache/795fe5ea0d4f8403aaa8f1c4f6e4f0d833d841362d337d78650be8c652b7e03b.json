@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "795fe5ea0d4f8403aaa8f1c4f6e4f0d833d841362d337d78650be8c652b7e03b",
+  "question_id": "GEN-PSC-005",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:47+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"When an acid reacts with a metal, hydrogen gas (H₂) is usually liberated. To test for the presence of hydrogen gas, you can pass the gas through soap water to form bubbles. Then, bring a burning candle near the gas-filled bubble. If the gas is hydrogen, it will burn with a pop sound, confirming its presence.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":48,\"textbook_page\":38}],\"missing_information\":[]}",
+    "latency_seconds": 1.6173,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0894585ac03b4566006a5b41ac13f48197bd1b51b2efb63297",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 627,
+      "completion_tokens": 113,
+      "total_tokens": 740
+    }
+  }
+}

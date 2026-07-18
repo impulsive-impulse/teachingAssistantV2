@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "c57db5c53b42c34c475fab22a6cf5fb1c0192921a864d02c58f1217de75029ae",
+  "question_id": "GEN-PSC-011",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:09:39+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"An orbital is a region of space around the nucleus of an atom where the probability of finding an electron is maximum. It is a concept from the quantum mechanical model of the atom, which suggests that electrons do not follow fixed paths but are found in these regions of space.\\n\\nIn contrast, Bohr’s orbit refers to the fixed circular paths around the nucleus where electrons were thought to revolve in Bohr’s model of the atom. These orbits have specific energy levels and distances from the nucleus.\\n\\nThe main difference is that Bohr’s orbits are defined paths with fixed distances and energies, while orbitals are regions of space with a high probability of finding an electron, without a defined path.\\n\\nThis distinction arises because the quantum mechanical model accounts for the wave-like nature of electrons, which Bohr’s model does not.\",\"selected_evidence_ids\":[\"E3\"],\"citations\":[{\"evidence_id\":\"E3\",\"pdf_page\":129,\"textbook_page\":119}],\"missing_information\":[]}",
+    "latency_seconds": 9.205,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0f7aa454801957e0006a5b42c87f40819089063aedcc7a76f7",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4461,
+      "completion_tokens": 213,
+      "total_tokens": 4674
+    }
+  }
+}

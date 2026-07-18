@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "655c0fac5e57051870c08b1979da75862200c85e40f2660b33b9b71c16c5953c",
+  "question_id": "GEN-BIO-003",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:03:57+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Alveoli are designed to maximize the exchange of gases by having a large surface area and being numerous in number. The interior of the lungs is divided into millions of small chambers, which significantly increases the moist surface available for the transfer of gases between air and blood. This large surface area is crucial for efficient gas exchange. If all the alveoli in our lungs were spread out, they would cover an area of nearly 160 square meters, which is equivalent to the size of a tennis court. This extensive surface area allows for more oxygen to be absorbed into the blood and more carbon dioxide to be expelled from the blood efficiently.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":40,\"textbook_page\":31}],\"missing_information\":[]}",
+    "latency_seconds": 2.7208,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0b6cfe328bb77c3b006a5b4178cf4c8196b2d94a9a345c9903",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1180,
+      "completion_tokens": 169,
+      "total_tokens": 1349
+    }
+  }
+}

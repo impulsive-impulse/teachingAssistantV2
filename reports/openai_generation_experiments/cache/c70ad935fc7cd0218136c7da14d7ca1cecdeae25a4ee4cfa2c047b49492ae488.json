@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "c70ad935fc7cd0218136c7da14d7ca1cecdeae25a4ee4cfa2c047b49492ae488",
+  "question_id": "GEN-PSC-008",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:55+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"The lens maker’s formula is given by:\\n\\n\\\\[\\n\\\\frac{1}{f} = \\\\left(n - 1\\\\right) \\\\left(\\\\frac{1}{R_1} - \\\\frac{1}{R_2}\\\\right)\\n\\\\]\\n\\n**Explanation of terms:**\\n- **f**: The focal length of the lens.\\n- **n**: The absolute refractive index of the lens material.\\n- **R1**: The radius of curvature of the first lens surface.\\n- **R2**: The radius of curvature of the second lens surface.\\n\\nThis formula is used to calculate the focal length of a lens based on its material and the curvature of its surfaces. It assumes the lens is placed in air.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":91,\"textbook_page\":81}],\"missing_information\":[]}",
+    "latency_seconds": 2.4266,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0a31f17d7dff5efd006a5b41b2a7bc8193b5001e25a7ffe481",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1160,
+      "completion_tokens": 207,
+      "total_tokens": 1367
+    }
+  }
+}

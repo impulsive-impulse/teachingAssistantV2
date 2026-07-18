@@ -710,6 +710,36 @@ readable offline review, open
 `reports/generation_experiments/review/blinded_human_review_packet.html`; its
 folder README explains the blinded workflow and regeneration command.
 
+## Selective OpenAI generation comparison
+
+The online comparison changes only the generator: it retains Generation
+Benchmark v1, the fixed 8/16/24 split, P1, gold evidence,
+and frozen retrieved top-5 page-order compact evidence. The configured target
+is GPT-4o through the Responses API with strict JSON Schema output. Credentials
+come from `OPENAI_API_KEY` or the Git-ignored root `.env`; process variables
+take precedence. Online calls now use a 768-token ceiling; historical local
+Qwen runs remain at their frozen 384-token setting. SDK retries and runner
+retries are disabled.
+
+Run the default zero-call smoke preflight:
+
+```powershell
+$env:PYTHONPATH = "src"
+temp\python-x64\python.exe scripts\run_openai_generation_experiment.py --split smoke
+```
+
+Review `reports/openai_generation_experiments/preflight.json`. Paid execution
+requires `--execute-paid` plus `--approved-new-calls` exactly equal to that
+file's uncached count (16 on the initial smoke run). Successful responses are
+cached by model, prompt, settings, and schema hash. See
+`reports/openai_generation_experiments/README.md` for setup, execution,
+comparison, and blinded human-review commands.
+
+The completed 40-question direct comparison is available at
+`reports/openai_generation_experiments/comparisons/full_40_labeled/local_vs_gpt4o_labeled_comparison.html`.
+It explicitly labels every local-Qwen and GPT-4o answer and its gold or
+retrieved evidence mode; identities are visible by default.
+
 ### Hardware-backend verification
 
 Backend claims are kept separate from model-quality experiments. The following

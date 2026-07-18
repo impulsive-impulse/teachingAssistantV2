@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "45bdfecf1271f39b1e9ed10a4a25c106a3d1962f85f65f0db488d4bbb5db82f2",
+  "question_id": "GEN-PSC-001",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:08:54+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Convex mirrors are preferred as rear-view mirrors in vehicles because they provide a wider field of view compared to other types of mirrors. This is due to the way convex mirrors reflect light. When parallel rays of light hit a convex mirror, they diverge after reflection, making it appear as if they are coming from a focal point behind the mirror. This property allows drivers to see a larger area of the road behind them, which is crucial for safety while driving. Additionally, the images formed by convex mirrors are diminished, meaning they appear smaller, which helps in fitting a larger scene into the mirror view. These images are also virtual and erect, making them easy to interpret for the driver.\",\"selected_evidence_ids\":[\"E3\"],\"citations\":[{\"evidence_id\":\"E3\",\"pdf_page\":22,\"textbook_page\":12}],\"missing_information\":[]}",
+    "latency_seconds": 3.8506,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_086b9333570c2899006a5b429ffb0c81909e2475db393a3d6d",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4044,
+      "completion_tokens": 181,
+      "total_tokens": 4225
+    }
+  }
+}

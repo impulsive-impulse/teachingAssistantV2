@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "bd3a27737f7285fa675d0b4c1933b82f3026912298192907e4912cdd04ff8f69",
+  "question_id": "GEN-PSC-015",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T08:26:21+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Ohm’s law states that the potential difference (V) between the ends of a conductor is directly proportional to the electric current (I) passing through it, provided the temperature remains constant. Mathematically, it is expressed as \\\\( V \\\\propto I \\\\) or \\\\( V = IR \\\\), where \\\\( R \\\\) is the resistance of the conductor.\\n\\nTo verify Ohm’s law, you can perform a simple experiment using a circuit with a conductor, a battery, an ammeter, and a voltmeter.\\n\\n### Experiment Procedure:\\n1. **Set Up the Circuit:** Connect a conductor (like an iron spoke) in series with a battery, an ammeter, and a key. Connect a voltmeter in parallel across the conductor.\\n\\n2. **Measure Current and Voltage:** Start with one cell in the battery and close the key to complete the circuit. Record the readings of the ammeter (current \\\\( I \\\\)) and the voltmeter (potential difference \\\\( V \\\\)).\\n\\n3. **Increase the Number of Cells:** Add more cells in series (two, three, four, and five cells) and repeat the measurements for each case. Record the values of \\\\( V \\\\) and \\\\( I \\\\) each time.\\n\\n4. **Calculate the Ratio:** For each set of readings, calculate the ratio \\\\( \\\\frac{V}{I} \\\\). You should find that this ratio remains constant, confirming Ohm’s law.\\n\\n5. **Plot a Graph:** Plot a graph of \\\\( V \\\\) (on the x-axis) against \\\\( I \\\\) (on the y-axis). The graph should be a straight line passing through the origin, indicating that \\\\( V \\\\) is directly proportional to \\\\( I \\\\).\\n\\nThis experiment demonstrates",
+    "latency_seconds": 3.2849,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_09cd895e3c2c9b0e006a5b38a89058819788985d34365bbf64",
+    "response_status": "incomplete",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4069,
+      "completion_tokens": 384,
+      "total_tokens": 4453
+    }
+  }
+}

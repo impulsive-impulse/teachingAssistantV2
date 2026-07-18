@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "e3edeb4c9783206363ad31ef061f5dc9e350937477b87ce905b5abe2694fa10c",
+  "question_id": "GEN-PSC-014",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:05:11+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Covalent compounds generally have low melting points compared to ionic compounds due to the nature of the forces holding their molecules together. In covalent compounds, the forces of attraction between the molecules are weak. These are known as van der Waals forces or London dispersion forces. Because these forces are relatively weak, it requires less energy to overcome them, resulting in lower melting points. \\n\\nIn contrast, ionic compounds have strong electrostatic forces of attraction between the oppositely charged ions. These forces are much stronger than the intermolecular forces in covalent compounds, requiring more energy to break, which leads to higher melting points. Therefore, the difference in the strength of these forces explains why covalent compounds typically have lower melting points than ionic compounds.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":196,\"textbook_page\":181}],\"missing_information\":[]}",
+    "latency_seconds": 2.3224,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0f1f40f7cd771b5d006a5b41c2a8108194b5600dffc38964f4",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1325,
+      "completion_tokens": 194,
+      "total_tokens": 1519
+    }
+  }
+}

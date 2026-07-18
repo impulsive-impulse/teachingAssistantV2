@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "a84889d13978cc2d19d092b96c8d7bae6b4dfbcb9fc49dc1ff96b9c6a4e492a5",
+  "question_id": "GEN-BIO-007",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:05:47+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Excretion is the biological process of removing waste products from the body. These wastes are generated from various metabolic activities and can be harmful if not removed. In humans, excretion involves the removal of nitrogenous wastes, excess salts, and water.\\n\\nThe process of urine formation occurs in the kidneys and involves four main stages:\\n\\n1. **Glomerular Filtration:** Blood enters the kidneys through the renal artery and reaches the glomerulus, a network of capillaries. Here, blood pressure forces water, salts, glucose, and waste products like urea out of the blood and into the Bowman’s capsule, forming a filtrate.\\n\\n2. **Tubular Reabsorption:** As the filtrate passes through the proximal convoluted tubule (PCT), useful substances such as glucose, amino acids, and certain ions are reabsorbed back into the blood.\\n\\n3. **Tubular Secretion:** In the distal convoluted tubule (DCT), additional wastes and excess ions are secreted from the blood into the tubule.\\n\\n4. **Formation of Concentrated Urine:** The filtrate moves through the loop of Henle, where water and salts are reabsorbed, concentrating the urine. Finally, the urine passes through the collecting duct and is transported to the bladder for storage until excretion.\\n\\nThis process ensures that waste products are efficiently removed from the body while maintaining essential nutrients and water balance.\",\"selected_evidence_ids\":[\"E1\",\"E4\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":87,\"textbook_page\":78},{\"evidence_id\":\"E4\",\"pdf_page\":104,\"textbook_page\":95}],\"missing_information\":[]}",
+    "latency_seconds": 4.0847,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0ddcbc2dd954ab6b006a5b41e4e7b88196894cc4a7bafd90d4",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4948,
+      "completion_tokens": 361,
+      "total_tokens": 5309
+    }
+  }
+}

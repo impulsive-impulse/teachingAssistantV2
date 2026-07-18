@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "a7166ae2d3ca4a2601a0e1d8380362bb787351d256cfefe5e74d586fbbc191c7",
+  "question_id": "GEN-PSC-015",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T08:45:55+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Ohm’s law states that the potential difference (voltage) across the ends of a conductor is directly proportional to the electric current passing through it, provided the temperature remains constant. Mathematically, it is expressed as \\\\( V = IR \\\\), where \\\\( V \\\\) is the potential difference, \\\\( I \\\\) is the current, and \\\\( R \\\\) is the resistance of the conductor.\\n\\nTo verify Ohm’s law, you can perform an experiment using a simple circuit:\\n\\n1. **Materials Needed:** An iron spoke, a battery, an ammeter, a voltmeter, and connecting wires.\\n\\n2. **Procedure:**\\n   - Connect the circuit as shown in the textbook figure, with the iron spoke as the conductor.\\n   - Close the circuit by turning on the key.\\n   - Measure the current using the ammeter and the potential difference using the voltmeter. Record these values in a table.\\n   - Increase the number of cells in series (one, two, three, etc.) and record the corresponding current and voltage each time.\\n   - Calculate the ratio \\\\( \\\\frac{V}{I} \\\\) for each set of measurements.\\n\\n3. **Observation:**\\n   - You will notice that the ratio \\\\( \\\\frac{V}{I} \\\\) remains constant, confirming that \\\\( V \\\\) is directly proportional to \\\\( I \\\\).\\n   - Plot a graph of \\\\( V \\\\) against \\\\( I \\\\). The graph should be a straight line passing through the origin, indicating a constant resistance.\\n\\nThis experiment demonstrates Ohm’s law by showing that the potential difference across a conductor is proportional to the current flowing through it, as long as the temperature remains constant.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":208,\"textbook_page\":193},{\"evidence_id\":\"E2\",\"pdf_page\":209,\"textbook_page\":194}],\"missing_information\":[]}",
+    "latency_seconds": 4.3776,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_088174f1826b234d006a5b3d3cbf98819583c735203b983e0b",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1198,
+      "completion_tokens": 431,
+      "total_tokens": 1629
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "227591adc28d92b11b4263b3ac694ac32947bcc6ba5470a66707e12af8e90547",
+  "question_id": "GEN-PSC-018",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:12:17+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"insufficient_evidence\",\"answer\":\"\",\"selected_evidence_ids\":[],\"citations\":[],\"missing_information\":[\"Detailed explanation of the working of an electric motor\",\"Diagram of an electric motor\"]}",
+    "latency_seconds": 1.46,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0f25f65cddd05ab4006a5b436d66e081978b06794cb0bfbb29",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4092,
+      "completion_tokens": 41,
+      "total_tokens": 4133
+    }
+  }
+}

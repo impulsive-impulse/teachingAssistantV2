@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "fbff0f56a2e3fc9f812bc1a0a934b6369d874e2fb3a8606d51ad978c503f8592",
+  "question_id": "GEN-BIO-006",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:05+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Arteries and veins are two types of blood vessels with distinct differences:\\n\\n1. **Thickness of Walls**: Arteries have thick walls composed of elastic and muscular layers, which help them withstand high pressure from the heart. Veins have thinner walls as they carry blood under lower pressure.\\n\\n2. **Valves**: Veins contain valves that prevent the backflow of blood, ensuring it moves towards the heart. Arteries do not have valves because the blood pressure from the heart keeps the blood flowing in one direction.\\n\\n3. **Shape Retention**: Arteries can retain their shape even when blood is not present due to their thick and elastic walls. Veins, on the other hand, cannot retain their shape as well without blood.\\n\\n4. **Direction of Blood Flow**: Arteries carry blood away from the heart to various body parts, while veins carry blood from the body organs back to the heart.\\n\\n5. **Pressure**: Blood in arteries is under high pressure as it is pumped directly from the heart. In veins, the pressure is lower.\\n\\n6. **Type of Blood Transported**: Generally, arteries carry oxygenated blood from the heart to the body, while veins carry deoxygenated blood back to the heart. However, there are exceptions like the pulmonary artery and vein.\\n\\nThese differences are crucial for the efficient circulation of blood throughout the body.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":69,\"textbook_page\":60},{\"evidence_id\":\"E2\",\"pdf_page\":70,\"textbook_page\":61}],\"missing_information\":[]}",
+    "latency_seconds": 3.5236,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0256a991a4955561006a5b417f87c48190ab4ac337a496e9ed",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1024,
+      "completion_tokens": 355,
+      "total_tokens": 1379
+    }
+  }
+}

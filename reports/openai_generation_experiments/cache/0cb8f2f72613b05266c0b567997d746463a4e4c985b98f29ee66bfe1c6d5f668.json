@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "0cb8f2f72613b05266c0b567997d746463a4e4c985b98f29ee66bfe1c6d5f668",
+  "question_id": "GEN-BIO-007",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:08+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Excretion is the process by which waste products and excess substances are removed from the body. In humans, the kidneys play a crucial role in excretion by forming urine, which carries these waste products out of the body.\\n\\nThe process of urine formation involves four main stages:\\n\\n1. **Glomerular Filtration:** Blood enters the kidneys through the renal artery and flows into the glomerulus, a network of capillaries. Here, blood is filtered under high pressure, allowing waste materials, water, and some useful substances to pass into the Bowman’s capsule. This filtered fluid is known as 'primary urine.'\\n\\n2. **Tubular Re-absorption:** As the primary urine moves through the renal tubule, essential substances and excess water are reabsorbed back into the bloodstream by the peritubular capillaries surrounding the tubule. This ensures that useful substances are not lost from the body.\\n\\n3. **Tubular Secretion:** Additional waste materials that were not filtered out in the glomerulus are secreted into the tubule from the blood in the peritubular capillaries. This helps in further cleansing the blood.\\n\\n4. **Formation of Concentrated Urine:** The urine is concentrated as it moves through the collecting tubule, especially in the presence of the hormone vasopressin. This hormone helps the body retain water, and its deficiency can lead to a condition called 'diabetes insipidus,' characterized by excessive urination.\\n\\nThese stages ensure that waste products are efficiently removed from the body while conserving necessary substances and water.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":93,\"textbook_page\":84},{\"evidence_id\":\"E2\",\"pdf_page\":94,\"textbook_page\":85}],\"missing_information\":[]}",
+    "latency_seconds": 3.6236,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_06acf18eb80fc459006a5b418308c48190b2627cac3ecad812",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1621,
+      "completion_tokens": 394,
+      "total_tokens": 2015
+    }
+  }
+}

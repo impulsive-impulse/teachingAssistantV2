@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "c1e6cd34818d9e5c42d9743bc285592f581def31b81cc8150b5fd62afd88c18c",
+  "question_id": "GEN-PSC-009",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T08:25:50+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Myopia, also known as near-sightedness, is a condition where a person can see nearby objects clearly but has difficulty seeing objects at a distance. This occurs because the eye lens focuses images in front of the retina instead of directly on it. To correct myopia, a concave lens is used. \\n\\nA concave lens diverges the light rays before they enter the eye, effectively moving the image back onto the retina. This allows the person to see distant objects clearly. The focal length of the concave lens is chosen such that it forms an image at the person's far point for an object at infinity. This image then acts as an object for the eye lens, allowing the final image to be formed on the retina.\\n\\nThe ray diagram for correcting myopia with a concave lens shows parallel rays from a distant object entering the concave lens. The lens diverges these rays so that they appear to come from the far point of the myopic eye. The eye lens then focuses these rays onto the retina, allowing clear vision of distant objects.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":103,\"textbook_page\":93}],\"missing_information\":[]}",
+    "latency_seconds": 2.7927,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0914b0c2630f3bbc006a5b388993bc8194bf01151180b304fb",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1118,
+      "completion_tokens": 260,
+      "total_tokens": 1378
+    }
+  }
+}

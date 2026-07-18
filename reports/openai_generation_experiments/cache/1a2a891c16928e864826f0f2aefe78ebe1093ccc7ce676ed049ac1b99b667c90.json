@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "1a2a891c16928e864826f0f2aefe78ebe1093ccc7ce676ed049ac1b99b667c90",
+  "question_id": "GEN-BIO-020",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:38+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Recharging groundwater sources is crucial because it helps maintain the availability of fresh water, which is a limited resource. According to the textbook, only a small percentage of the Earth's water is fresh, with a significant portion locked in glaciers and ice. Groundwater, which makes up about 0.7–0.8% of fresh water, is essential for agriculture, drinking, and other uses. \\n\\nAs groundwater resources are being depleted rapidly, recharging them ensures a sustainable supply of water for future needs. The textbook highlights that excessive exploitation of water resources can lead to scarcity, affecting millions of people. By recharging groundwater, we can prevent such scarcity and ensure that water remains available for agricultural and personal use, supporting both human and environmental health.\",\"selected_evidence_ids\":[\"E3\"],\"citations\":[{\"evidence_id\":\"E3\",\"pdf_page\":243,\"textbook_page\":234}],\"missing_information\":[]}",
+    "latency_seconds": 2.7461,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0ef1aa068ff564b4006a5b41a1ae5481978f828ae314d9af99",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1462,
+      "completion_tokens": 195,
+      "total_tokens": 1657
+    }
+  }
+}

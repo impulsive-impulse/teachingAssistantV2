@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "9e187fb5e2d9916ba16750484c4fc492d9bf663e487e5dd7f45aaa190870d768",
+  "question_id": "GEN-BIO-020",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:08:50+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Recharging groundwater sources is important because it helps ensure a sustainable supply of water for various needs. Groundwater is a crucial part of the freshwater available on Earth, and it supports agriculture, drinking water supplies, and industrial processes. As groundwater resources are being depleted rapidly, recharging them helps maintain the balance and availability of water. Techniques like building water storage structures and using rainwater harvesting can help recharge groundwater, ensuring that it remains a reliable resource for future generations. Sustainable management of water resources, as seen in the case of Kothapally village, demonstrates how communities can effectively conserve and restore water resources to prevent depletion.\",\"selected_evidence_ids\":[\"E1\",\"E3\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":239,\"textbook_page\":230},{\"evidence_id\":\"E3\",\"pdf_page\":243,\"textbook_page\":234}],\"missing_information\":[]}",
+    "latency_seconds": 2.6413,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0065b146c7f872a5006a5b429d4d088193896eac4e73e63a87",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4400,
+      "completion_tokens": 189,
+      "total_tokens": 4589
+    }
+  }
+}

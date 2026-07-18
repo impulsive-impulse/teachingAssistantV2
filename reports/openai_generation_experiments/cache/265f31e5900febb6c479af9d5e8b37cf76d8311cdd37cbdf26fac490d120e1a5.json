@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "265f31e5900febb6c479af9d5e8b37cf76d8311cdd37cbdf26fac490d120e1a5",
+  "question_id": "GEN-PSC-019",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:05:27+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"To prove that the presence of air and water are essential for corrosion, you can perform a simple experiment using iron nails and test tubes. Here's the procedure:\\n\\n1. **Materials Needed:**\\n   - Three clean iron nails\\n   - Three test tubes\\n   - Water\\n   - Boiled distilled water\\n   - Oil\\n   - Anhydrous calcium chloride\\n   - Corks for the test tubes\\n\\n2. **Setup:**\\n   - Label the test tubes as A, B, and C.\\n   - In test tube A, place an iron nail and pour some regular water into it. Cork the test tube.\\n   - In test tube B, place an iron nail and pour boiled distilled water into it. Add about 1 ml of oil on top of the water and cork the test tube. The oil will prevent air from dissolving in the water.\\n   - In test tube C, place an iron nail and add some anhydrous calcium chloride. Cork the test tube. The calcium chloride will absorb any moisture from the air, creating a dry environment.\\n\\n3. **Observation:**\\n   - Leave the test tubes for a few days and observe the condition of the iron nails.\\n   - You will notice that the iron nail in test tube A rusts because it is exposed to both air and water.\\n   - The iron nail in test tube B does not rust because it is only exposed to water, with no air.\\n   - The iron nail in test tube C does not rust because it is exposed to dry air, with no water.\\n\\n4. **Conclusion:**\\n   - This experiment demonstrates that both air and water are necessary for the rusting of iron, which is a form of corrosion.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":274,\"textbook_page\":259}],\"missing_information\":[]}",
+    "latency_seconds": 5.6972,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0a483bbbe2d278b7006a5b41cff9bc81979cdf5ccf0c13d4dd",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 788,
+      "completion_tokens": 408,
+      "total_tokens": 1196
+    }
+  }
+}

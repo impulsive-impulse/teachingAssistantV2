@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "c9512ae564cb99084a8c7c19e0bd522c26c5b954f5acb2304b9e885e9319f5e1",
+  "question_id": "GEN-PSC-006",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T08:26:14+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Tooth decay starts when the pH of the mouth is lower than 5.5. This is because tooth enamel, which is made of calcium phosphate, is the hardest substance in the body but can be corroded when the pH in the mouth drops below 5.5. Bacteria in the mouth produce acids by breaking down sugar and food particles, which lowers the pH and leads to tooth decay. Using toothpaste, which is generally basic, helps neutralize the excess acid and prevent tooth decay.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":59,\"textbook_page\":49}],\"missing_information\":[]}",
+    "latency_seconds": 1.9406,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_046213d108c0b02f006a5b38a231b48190a1c3b2d7f12e7ea6",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4362,
+      "completion_tokens": 148,
+      "total_tokens": 4510
+    }
+  }
+}

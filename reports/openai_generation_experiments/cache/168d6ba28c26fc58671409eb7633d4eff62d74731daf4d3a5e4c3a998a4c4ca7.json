@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "168d6ba28c26fc58671409eb7633d4eff62d74731daf4d3a5e4c3a998a4c4ca7",
+  "question_id": "GEN-PSC-018",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:05:22+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"An electric motor works by using the interaction between a current-carrying coil and a magnetic field. Here's how it operates:\\n\\n1. **Structure**: The motor consists of a rectangular coil placed in a uniform magnetic field. This setup is shown in figure 12(a) from the textbook.\\n\\n2. **Current Flow**: When the circuit is switched on, current flows through the coil. The direction of the current is crucial for understanding the forces acting on the coil.\\n\\n3. **Magnetic Forces**: The sides of the coil, labeled AB and CD, are perpendicular to the magnetic field. Using the right-hand rule, we can determine that the magnetic force on side AB acts inward, while on side CD, it acts outward.\\n\\n4. **Forces on Other Sides**: The sides BC and DA experience forces depending on their orientation to the magnetic field. If they are parallel to the field, no magnetic force acts on them. If perpendicular, BC is pulled up and DA is pulled down.\\n\\n5. **Net Force and Rotation**: Although the net force on the coil is zero because the forces on opposite sides cancel each other out, the coil still rotates. This rotation is due to the torque created by the forces on the sides of the coil, causing it to spin around its axis.\\n\\nThis interaction between the magnetic field and the current-carrying coil is what allows the electric motor to convert electrical energy into mechanical energy, resulting in motion.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":248,\"textbook_page\":233}],\"missing_information\":[]}",
+    "latency_seconds": 4.1638,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_02c0dfa701a8a1de006a5b41cbc90481938c6d1f91b4d2dde4",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 688,
+      "completion_tokens": 351,
+      "total_tokens": 1039
+    }
+  }
+}

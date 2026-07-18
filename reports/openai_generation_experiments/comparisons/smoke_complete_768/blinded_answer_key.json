@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "questions": {
+    "GEN-BIO-002": {
+      "Answer A": "local_gold",
+      "Answer B": "openai_retrieved",
+      "Answer C": "openai_gold",
+      "Answer D": "local_retrieved"
+    },
+    "GEN-BIO-005": {
+      "Answer A": "local_gold",
+      "Answer B": "local_retrieved",
+      "Answer C": "openai_retrieved",
+      "Answer D": "openai_gold"
+    },
+    "GEN-BIO-012": {
+      "Answer A": "local_retrieved",
+      "Answer B": "local_gold",
+      "Answer C": "openai_retrieved",
+      "Answer D": "openai_gold"
+    },
+    "GEN-BIO-014": {
+      "Answer A": "local_gold",
+      "Answer B": "openai_gold",
+      "Answer C": "local_retrieved",
+      "Answer D": "openai_retrieved"
+    },
+    "GEN-PSC-002": {
+      "Answer A": "openai_retrieved",
+      "Answer B": "openai_gold",
+      "Answer C": "local_gold",
+      "Answer D": "local_retrieved"
+    },
+    "GEN-PSC-006": {
+      "Answer A": "local_gold",
+      "Answer B": "openai_gold",
+      "Answer C": "openai_retrieved",
+      "Answer D": "local_retrieved"
+    },
+    "GEN-PSC-009": {
+      "Answer A": "openai_retrieved",
+      "Answer B": "openai_gold",
+      "Answer C": "local_gold",
+      "Answer D": "local_retrieved"
+    },
+    "GEN-PSC-015": {
+      "Answer A": "openai_retrieved",
+      "Answer B": "local_gold",
+      "Answer C": "local_retrieved",
+      "Answer D": "openai_gold"
+    }
+  }
+}

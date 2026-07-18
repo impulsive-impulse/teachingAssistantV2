@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "763f1772e1d25244f28472dd3662128c439fc941fd8dca7381bf446f86134dca",
+  "question_id": "GEN-BIO-005",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T08:26:02+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Double circulation refers to the process where blood passes through the heart twice during one complete cycle of circulation. In humans, this involves two main pathways: pulmonary circulation and systemic circulation.\\n\\n1. **Pulmonary Circulation**: Blood is pumped from the right ventricle of the heart to the lungs via the pulmonary arteries. In the lungs, the blood releases carbon dioxide and picks up oxygen. The oxygenated blood then returns to the left atrium of the heart through the pulmonary veins.\\n\\n2. **Systemic Circulation**: The oxygen-rich blood moves from the left atrium to the left ventricle, from where it is pumped out to the rest of the body through the aorta. As the blood circulates through the body, it delivers oxygen and nutrients to tissues and collects carbon dioxide and other waste products. The deoxygenated blood returns to the right atrium of the heart via the superior and inferior vena cava, completing the cycle.\\n\\nDouble circulation is important in humans because it ensures efficient oxygenation of blood and separation of oxygenated and deoxygenated blood, which is crucial for maintaining high metabolic rates and supporting complex bodily functions.\\n\\nThis system allows for a more efficient supply of oxygen to body tissues and organs, which is essential for sustaining the energy demands of the human body.\\n\\n[E1] PDF 66; textbook 57\\n[E2] PDF 67; textbook 58\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":66,\"textbook_page\":57},{\"evidence_id\":\"E2\",\"pdf_page\":67,\"textbook_page\":58}],\"missing_information\":[]}",
+    "latency_seconds": 3.7709,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0fc02b8c1df77b51006a5b38947a2c8196ad96040b22b19575",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4437,
+      "completion_tokens": 356,
+      "total_tokens": 4793
+    }
+  }
+}

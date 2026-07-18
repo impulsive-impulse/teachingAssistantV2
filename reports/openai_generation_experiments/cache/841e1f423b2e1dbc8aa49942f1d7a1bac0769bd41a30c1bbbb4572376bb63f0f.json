@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "841e1f423b2e1dbc8aa49942f1d7a1bac0769bd41a30c1bbbb4572376bb63f0f",
+  "question_id": "GEN-PSC-019",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:12:21+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"To prove that the presence of air and water are essential for corrosion, you can perform the following experiment:\\n\\n**Materials Needed:**\\n- Three test tubes\\n- Clean iron nails\\n- Water\\n- Boiled distilled water\\n- Oil (such as cooking oil)\\n- Anhydrous calcium chloride\\n- Corks for sealing test tubes\\n\\n**Procedure:**\\n1. **Label the Test Tubes:** Label three test tubes as A, B, and C.\\n\\n2. **Prepare Test Tube A:** Place a clean iron nail in test tube A. Add some water to the test tube and cork it. This setup will expose the nail to both air and water.\\n\\n3. **Prepare Test Tube B:** Place a clean iron nail in test tube B. Pour boiled distilled water into the test tube, add about 1 ml of oil, and cork it. The oil will float on the water, preventing air from dissolving in the water. This setup will expose the nail to only water.\\n\\n4. **Prepare Test Tube C:** Place a clean iron nail in test tube C. Add some anhydrous calcium chloride and cork it. The calcium chloride will absorb any moisture from the air, keeping the environment dry. This setup will expose the nail to only dry air.\\n\\n5. **Observation:** Leave the test tubes for a few days and observe the condition of the iron nails.\\n\\n**Expected Results:**\\n- In test tube A, the iron nail will rust because it is exposed to both air and water.\\n- In test tube B, the iron nail will not rust because it is only exposed to water, with no air.\\n- In test tube C, the iron nail will not rust because it is only exposed to dry air, with no water.\\n\\n**Conclusion:** This experiment demonstrates that both air and water are necessary for the corrosion of iron, as rusting occurs only when both are present.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":273,\"textbook_page\":263}],\"missing_information\":[]}",
+    "latency_seconds": 4.7682,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_043f88ae3237caeb006a5b436edffc8196b4315adb5e5e94c3",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4285,
+      "completion_tokens": 447,
+      "total_tokens": 4732
+    }
+  }
+}

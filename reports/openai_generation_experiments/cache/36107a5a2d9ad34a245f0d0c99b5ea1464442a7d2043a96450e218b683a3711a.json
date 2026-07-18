@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "36107a5a2d9ad34a245f0d0c99b5ea1464442a7d2043a96450e218b683a3711a",
+  "question_id": "GEN-BIO-002",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T08:25:58+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Fats are digested in the small intestine. The process begins with the secretion of bile juice from the liver, which emulsifies fats, breaking them down into smaller globules. This process is known as emulsification. The pancreatic juice, which contains the enzyme lipase, further digests these emulsified fats into fatty acids and glycerol. The small intestine also secretes intestinal juice, which continues the digestion process, ensuring fats are broken down into absorbable forms.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":24,\"textbook_page\":15}],\"missing_information\":[]}",
+    "latency_seconds": 3.2554,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0b587bf2d4f2d3fd006a5b38913f808190bb2e8d03d5a72b73",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4616,
+      "completion_tokens": 138,
+      "total_tokens": 4754
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "6beb81b1248fe4b2c1b1aaf349b8db705fb659be355ffa7767c29b2236d73607",
+  "question_id": "GEN-BIO-008",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:05:51+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Some people need to use a dialysis machine when their kidneys are damaged and cannot filter blood properly. This can happen due to infections, injury, high blood pressure, or high blood sugar, leading to the accumulation of poisonous wastes in the body, which can be fatal.\\n\\nThe principle involved in dialysis, specifically haemodialysis, is to mimic the kidney's function of filtering blood. In this process, blood is taken from the body and mixed with an anticoagulant to prevent clotting. It is then passed through a dialyzer, which contains tubes made of cellophane. These tubes are surrounded by a dialyzing fluid that has a similar composition to blood plasma but without nitrogenous wastes.\\n\\nA thin membrane separates the blood from the dialyzing fluid. Because the dialyzing fluid lacks nitrogenous wastes, these wastes move from the blood through the membrane into the fluid, effectively cleaning the blood. The cleaned blood is then returned to the body. This process does not involve reabsorption, which is a part of natural kidney function, but it effectively removes waste from the blood, similar to how kidneys do.\\n\\nEach dialysis session typically lasts between 3 to 6 hours and is crucial for patients with kidney failure to survive until a more permanent solution, like a kidney transplant, can be found.\",\"selected_evidence_ids\":[\"E2\",\"E3\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":96,\"textbook_page\":87},{\"evidence_id\":\"E3\",\"pdf_page\":104,\"textbook_page\":95}],\"missing_information\":[]}",
+    "latency_seconds": 3.8984,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_03d32870801c2164006a5b41e8fb8c81939c53d44646744922",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4799,
+      "completion_tokens": 334,
+      "total_tokens": 5133
+    }
+  }
+}

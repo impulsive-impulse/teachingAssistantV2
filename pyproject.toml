@@ -17,6 +17,12 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+online-generation = [
+  # Kept optional so retrieval and local-generation workflows do not require
+  # network-provider dependencies. The runner imports this SDK only after its
+  # explicit paid-execution gate has passed.
+  "openai>=1.66,<3",
+]
 experiment-m3 = [
   "FlagEmbedding>=1.3,<2",
 ]
@@ -52,6 +58,8 @@ manage-retrieval-baseline-v1 = "textbook_audit.baseline_freeze:main"
 finalize-experiments = "textbook_audit.finalize_experiments:main"
 generation-phase-a = "textbook_audit.generation_phase_a:main"
 generation-experiment = "textbook_audit.generation_experiments:main"
+openai-generation-experiment = "textbook_audit.openai_generation:main"
+openai-generation-report = "textbook_audit.openai_generation_report:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

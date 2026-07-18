@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "5b76e9b87350cd01af7b6bd7b43109a3b8b06091526471f9deeab16bfcccab22",
+  "question_id": "GEN-PSC-013",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:12:05+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"The formation of sodium chloride (NaCl) and calcium oxide (CaO) can be explained using the concept of electron transfer between atoms, which leads to the formation of ionic bonds.\\n\\n### Sodium Chloride (NaCl)\\n1. **Cation Formation**: Sodium (Na) has an electronic configuration of 2, 8, 1. It loses one electron to achieve a stable electronic configuration similar to neon, forming a sodium ion (Na⁺) with a configuration of 2, 8.\\n2. **Anion Formation**: Chlorine (Cl) has an electronic configuration of 2, 8, 7. It gains one electron to achieve a stable electronic configuration similar to argon, forming a chloride ion (Cl⁻) with a configuration of 2, 8, 8.\\n3. **Ionic Bond Formation**: The Na⁺ and Cl⁻ ions are attracted to each other due to electrostatic forces, forming the ionic compound sodium chloride (NaCl).\\n\\n### Calcium Oxide (CaO)\\n1. **Cation Formation**: Calcium (Ca) has an electronic configuration of 2, 8, 8, 2. It loses two electrons to achieve a stable electronic configuration similar to argon, forming a calcium ion (Ca²⁺) with a configuration of 2, 8, 8.\\n2. **Anion Formation**: Oxygen (O) has an electronic configuration of 2, 6. It gains two electrons to achieve a stable electronic configuration similar to neon, forming an oxide ion (O²⁻) with a configuration of 2, 8.\\n3. **Ionic Bond Formation**: The Ca²⁺ and O²⁻ ions are attracted to each other due to electrostatic forces, forming the ionic compound calcium oxide (CaO).\\n\\nIn both cases, the transfer of electrons from metal atoms (sodium and calcium) to non-metal atoms (chlorine and oxygen) results in the formation of ions, which are held together by ionic bonds due to electrostatic attraction.\",\"selected_evidence_ids\":[\"E2\",\"E3\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":179,\"textbook_page\":169},{\"evidence_id\":\"E3\",\"pdf_page\":180,\"textbook_page\":170}],\"missing_information\":[]}",
+    "latency_seconds": 5.3276,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0855f059fbb95a32006a5b435dde6081959d7b7c33f1f68c37",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4932,
+      "completion_tokens": 504,
+      "total_tokens": 5436
+    }
+  }
+}

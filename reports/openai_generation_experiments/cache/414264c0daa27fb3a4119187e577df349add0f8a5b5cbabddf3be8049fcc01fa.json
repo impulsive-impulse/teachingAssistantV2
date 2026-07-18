@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "414264c0daa27fb3a4119187e577df349add0f8a5b5cbabddf3be8049fcc01fa",
+  "question_id": "GEN-BIO-004",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:05:39+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"To understand anaerobic respiration in your school laboratory, you can follow a procedure involving yeast, which is a common organism used to study this process. Here’s a step-by-step guide based on the textbook evidence:\\n\\n1. **Prepare the Glucose Solution:** Start by preparing a glucose solution. This will serve as the food source for the yeast.\\n\\n2. **Remove Oxygen:** To create an anaerobic environment, you need to remove the dissolved oxygen from the glucose solution. This can be done by heating the solution for a minute and then allowing it to cool without shaking.\\n\\n3. **Add Yeast:** Once the solution is cooled, add yeast to it. Yeast will perform anaerobic respiration in the absence of oxygen.\\n\\n4. **Seal the Mixture:** To ensure no oxygen enters the mixture, pour a one-centimeter layer of liquid paraffin over it. This acts as a barrier to air.\\n\\n5. **Use an Indicator:** To confirm the absence of oxygen, add a few drops of diazine green (Janus Green B) solution. This dye turns pink when oxygen is scarce.\\n\\n6. **Set Up the Apparatus:** Connect the setup to a bottle containing lime water. As the yeast undergoes anaerobic respiration, it will produce carbon dioxide, which will pass through the tube and turn the lime water milky.\\n\\n7. **Observe Temperature Changes:** Use a thermometer to observe any rise in temperature, which indicates the release of energy during anaerobic respiration.\\n\\nThis experiment helps you observe the production of carbon dioxide and heat, which are indicators of anaerobic respiration in yeast.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":49,\"textbook_page\":40}],\"missing_information\":[]}",
+    "latency_seconds": 3.9853,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0cec273a990d7e29006a5b41ddb5388197b426c8d04307d3ec",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 3772,
+      "completion_tokens": 381,
+      "total_tokens": 4153
+    }
+  }
+}

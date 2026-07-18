@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "64a73262b1d4f0b3d4f4f3443070b2bcebef15bcc37fcfadc091376f9a61a80d",
+  "question_id": "GEN-PSC-015",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T08:25:55+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Ohm’s law states that the potential difference (voltage) across the ends of a conductor is directly proportional to the electric current passing through it, provided the temperature remains constant. Mathematically, it is expressed as \\\\( V \\\\propto I \\\\), or \\\\( V = IR \\\\), where \\\\( R \\\\) is the resistance of the conductor.\\n\\nTo verify Ohm’s law, you can perform an experiment using a simple circuit:\\n\\n1. **Set Up the Circuit:** Connect a circuit with a battery, an iron spoke (as the conductor), an ammeter to measure current, and a voltmeter to measure potential difference.\\n\\n2. **Record Measurements:** Close the circuit and note the readings of the current from the ammeter and the potential difference from the voltmeter. Record these values in a table.\\n\\n3. **Vary the Voltage:** Increase the number of cells in series in the circuit to change the potential difference. For each change, record the new current and potential difference.\\n\\n4. **Calculate and Analyze:** For each set of measurements, calculate the ratio \\\\( \\\\frac{V}{I} \\\\). You should find that this ratio remains constant, confirming Ohm’s law.\\n\\n5. **Graph the Results:** Plot a graph of current \\\\( I \\\\) on the y-axis against potential difference \\\\( V \\\\) on the x-axis. The graph should be a straight line passing through the origin, indicating a constant ratio \\\\( \\\\frac{V}{I} \\\\), which is the resistance.\\n\\nThis experiment demonstrates that the potential difference is directly proportional to the current, verifying Ohm’s law for the iron spoke.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":208,\"text",
+    "latency_seconds": 4.8256,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0a7bc12186271336006a5b388c6a108194bb8437a959bb6642",
+    "response_status": "incomplete",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1198,
+      "completion_tokens": 384,
+      "total_tokens": 1582
+    }
+  }
+}

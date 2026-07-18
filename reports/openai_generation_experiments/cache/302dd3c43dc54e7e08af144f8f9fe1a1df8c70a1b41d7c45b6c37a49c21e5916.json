@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "302dd3c43dc54e7e08af144f8f9fe1a1df8c70a1b41d7c45b6c37a49c21e5916",
+  "question_id": "GEN-BIO-012",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T08:45:43+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Mitosis and meiosis are two different types of cell division processes. Here are the differences between them:\\n\\n1. **Purpose**:\\n   - **Mitosis**: It is involved in the growth and repair of tissues. It helps in producing two identical daughter cells from a single parent cell, maintaining the same number of chromosomes as the parent cell.\\n   - **Meiosis**: It occurs during the formation of gametes in sexual reproduction. It reduces the chromosome number by half, resulting in four haploid daughter cells.\\n\\n2. **Number of Divisions**:\\n   - **Mitosis**: Involves one division cycle, resulting in two daughter cells.\\n   - **Meiosis**: Involves two division cycles (Meiosis I and Meiosis II), resulting in four daughter cells.\\n\\n3. **Chromosome Number**:\\n   - **Mitosis**: The daughter cells have the same diploid number of chromosomes as the parent cell.\\n   - **Meiosis**: The daughter cells have half the haploid number of chromosomes compared to the parent cell.\\n\\n4. **Genetic Variation**:\\n   - **Mitosis**: Produces genetically identical cells, with no variation.\\n   - **Meiosis**: Increases genetic variation through processes like crossing over and independent assortment.\\n\\n5. **Occurrence**:\\n   - **Mitosis**: Occurs in somatic (body) cells.\\n   - **Meiosis**: Occurs in germ cells during the formation of gametes.\\n\\nThese differences are crucial for understanding how organisms grow, repair tissues, and reproduce.\",\"selected_evidence_ids\":[\"E3\",\"E4\"],\"citations\":[{\"evidence_id\":\"E3\",\"pdf_page\":153,\"textbook_page\":144},{\"evidence_id\":\"E4\",\"pdf_page\":154,\"textbook_page\":145}],\"missing_information\":[]}",
+    "latency_seconds": 7.6895,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0d2aeb880ddc10d2006a5b3d2fc418819793af4d52cf52851e",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1836,
+      "completion_tokens": 413,
+      "total_tokens": 2249
+    }
+  }
+}

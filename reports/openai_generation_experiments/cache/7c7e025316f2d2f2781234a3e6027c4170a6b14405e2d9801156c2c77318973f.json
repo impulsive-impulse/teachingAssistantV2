@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "7c7e025316f2d2f2781234a3e6027c4170a6b14405e2d9801156c2c77318973f",
+  "question_id": "GEN-PSC-003",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:08:59+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"A balanced chemical equation provides several important pieces of information:\\n\\n1. **Conservation of Mass**: It shows that the total mass of the reactants equals the total mass of the products, following the law of conservation of mass. This means the number of atoms for each element is the same on both sides of the equation.\\n\\n2. **Reactants and Products**: It identifies the substances involved in the reaction as reactants and products, using their chemical symbols and formulae.\\n\\n3. **Molecular Ratios**: It indicates the ratio of molecules or formula units of reactants and products. This helps in understanding how much of each substance is involved in the reaction.\\n\\n4. **Relative Masses**: By using atomic masses, the equation provides the relative masses of reactants and products, which can be used to calculate the mass relationships in the reaction.\\n\\n5. **Molar Ratios**: If the masses are expressed in grams, the equation also gives the molar ratios of reactants and products, which is useful for calculations involving moles.\\n\\n6. **Volume Relationships**: For reactions involving gases, the equation can be used to relate the volumes of gases at a given temperature and pressure, using the molar volume relationship.\\n\\n7. **Number of Molecules**: Using Avogadro’s number, the equation can help calculate the number of molecules and atoms of different substances involved in the reaction.\\n\\nOverall, a balanced chemical equation is a powerful tool for understanding and calculating various aspects of a chemical reaction.\",\"selected_evidence_ids\":[\"E4\"],\"citations\":[{\"evidence_id\":\"E4\",\"pdf_page\":40,\"textbook_page\":30}],\"missing_information\":[]}",
+    "latency_seconds": 5.345,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_06ee89d83568c2c6006a5b42a3d0b4819391c7f63553b03830",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4740,
+      "completion_tokens": 366,
+      "total_tokens": 5106
+    }
+  }
+}

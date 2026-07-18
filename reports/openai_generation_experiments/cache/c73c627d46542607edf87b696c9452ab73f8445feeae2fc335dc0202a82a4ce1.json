@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "c73c627d46542607edf87b696c9452ab73f8445feeae2fc335dc0202a82a4ce1",
+  "question_id": "GEN-PSC-013",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:05:08+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"The formation of sodium chloride (NaCl) and calcium oxide (CaO) can be explained using the concept of electron transfer, which leads to the creation of ionic bonds.\\n\\n**Sodium Chloride (NaCl):**\\n- Sodium (Na) is a metal with an electronic configuration of 2, 8, 1. It has one electron in its outermost shell.\\n- To achieve a stable electronic configuration similar to the noble gas neon, sodium loses one electron, forming a sodium ion (Na⁺) with a configuration of 2, 8.\\n- Chlorine (Cl) is a non-metal with an electronic configuration of 2, 8, 7. It needs one more electron to complete its outer shell and achieve the stable configuration of argon.\\n- Chlorine gains the electron lost by sodium, forming a chloride ion (Cl⁻) with a configuration of 2, 8, 8.\\n- The Na⁺ and Cl⁻ ions are oppositely charged and attract each other due to electrostatic forces, forming the ionic compound NaCl.\\n\\n**Calcium Oxide (CaO):**\\n- Calcium (Ca) is a metal with an electronic configuration of 2, 8, 8, 2. It has two electrons in its outermost shell.\\n- To achieve a stable configuration similar to argon, calcium loses two electrons, forming a calcium ion (Ca²⁺) with a configuration of 2, 8, 8.\\n- Oxygen (O) is a non-metal with an electronic configuration of 2, 6. It needs two electrons to complete its outer shell and achieve the stable configuration of neon.\\n- Oxygen gains the two electrons lost by calcium, forming an oxide ion (O²⁻) with a configuration of 2, 8.\\n- The Ca²⁺ and O²⁻ ions are oppositely charged and attract each other, forming the ionic compound CaO.\\n\\nIn both cases, the transfer of electrons from metal to non-metal results in the formation of ions, which are held together by strong electrostatic forces, creating ionic bonds.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":180,\"textbook_page\":165}],\"missing_information\":[]}",
+    "latency_seconds": 4.7639,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0229c3da7e60e61f006a5b41bde6d481939c68a6caa9682f20",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1801,
+      "completion_tokens": 498,
+      "total_tokens": 2299
+    }
+  }
+}

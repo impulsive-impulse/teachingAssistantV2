@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "c98eb446e5335e0c84bc06439eed46400f6be2f5a003767df872546d43864faa",
+  "question_id": "GEN-PSC-015",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T08:46:11+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Ohm’s law states that the potential difference (V) between the ends of a conductor is directly proportional to the electric current (I) passing through it, provided the temperature remains constant. Mathematically, it is expressed as \\\\( V \\\\propto I \\\\), which can be rewritten as \\\\( V = IR \\\\), where \\\\( R \\\\) is the resistance of the conductor.\\n\\n### Experiment to Verify Ohm’s Law\\n\\n**Objective:** To verify Ohm’s law by demonstrating that the ratio of potential difference to current is constant for a conductor.\\n\\n**Materials Required:**\\n- A conductor (e.g., an iron spoke)\\n- Ammeter\\n- Voltmeter\\n- Battery\\n- Connecting wires\\n- Switch\\n\\n**Procedure:**\\n1. **Set Up the Circuit:** Connect the conductor in series with a battery, an ammeter, and a switch. Connect a voltmeter in parallel across the conductor.\\n\\n2. **Initial Measurement:** Close the switch to allow current to flow. Record the readings of the ammeter (current \\\\( I \\\\)) and the voltmeter (potential difference \\\\( V \\\\)).\\n\\n3. **Vary the Potential Difference:** Increase the number of cells in the battery to change the potential difference across the conductor. For each change, record the new readings of \\\\( V \\\\) and \\\\( I \\\\).\\n\\n4. **Calculate the Ratio:** For each set of readings, calculate the ratio \\\\( \\\\frac{V}{I} \\\\).\\n\\n5. **Observe the Results:** You should notice that the ratio \\\\( \\\\frac{V}{I} \\\\) remains constant, confirming Ohm’s law.\\n\\n6. **Graphical Representation:** Plot a graph of \\\\( V \\\\) (on the x-axis) against \\\\( I \\\\) (on the y-axis). The graph should be a straight line passing through the origin, indicating that \\\\( V \\\\) is directly proportional to \\\\( I \\\\).\\n\\nThis experiment demonstrates that for a conductor at constant temperature, the potential difference across it is directly proportional to the current flowing through it, verifying Ohm’s law.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":208,\"textbook_page\":198}],\"missing_information\":[]}",
+    "latency_seconds": 6.3963,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0cddfb0c056267f2006a5b3d4b64c081909b586858ab91506e",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4069,
+      "completion_tokens": 495,
+      "total_tokens": 4564
+    }
+  }
+}

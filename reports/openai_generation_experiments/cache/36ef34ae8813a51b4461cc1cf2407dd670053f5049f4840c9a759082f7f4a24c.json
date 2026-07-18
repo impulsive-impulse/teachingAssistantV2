@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "36ef34ae8813a51b4461cc1cf2407dd670053f5049f4840c9a759082f7f4a24c",
+  "question_id": "GEN-BIO-011",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:06:03+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"insufficient_evidence\",\"answer\":\"The textbook evidence provided does not contain information on why fish and frogs produce a large number of eggs each year. Therefore, I cannot answer the question based on the supplied evidence.\",\"selected_evidence_ids\":[],\"citations\":[],\"missing_information\":[\"Reasons for high egg production in fish and frogs\"]}",
+    "latency_seconds": 7.5409,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0bda0b90d7c66212006a5b41f1b3e88195bd219b16df037c3a",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4637,
+      "completion_tokens": 70,
+      "total_tokens": 4707
+    }
+  }
+}

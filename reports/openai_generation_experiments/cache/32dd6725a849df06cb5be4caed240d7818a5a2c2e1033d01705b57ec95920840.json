@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "32dd6725a849df06cb5be4caed240d7818a5a2c2e1033d01705b57ec95920840",
+  "question_id": "GEN-PSC-014",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:12:07+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Covalent compounds generally have low melting points compared to ionic compounds because of the nature of the forces holding their molecules together. In covalent compounds, atoms are bonded by sharing electrons, forming molecules. The forces between these molecules, known as intermolecular forces, are relatively weak. This means that less energy is required to separate the molecules, resulting in lower melting points.\\n\\nOn the other hand, ionic compounds consist of a lattice of positively and negatively charged ions held together by strong electrostatic forces. These forces are much stronger than the intermolecular forces in covalent compounds, requiring more energy to break, which leads to higher melting points.\\n\\nThus, the key reason for the low melting points of covalent compounds is the weak intermolecular forces compared to the strong ionic bonds in ionic compounds.\",\"selected_evidence_ids\":[\"E3\"],\"citations\":[{\"evidence_id\":\"E3\",\"pdf_page\":195,\"textbook_page\":185}],\"missing_information\":[]}",
+    "latency_seconds": 2.5069,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0eaccff8882ef633006a5b436335188190a3c1dedf5bbb9553",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4642,
+      "completion_tokens": 205,
+      "total_tokens": 4847
+    }
+  }
+}

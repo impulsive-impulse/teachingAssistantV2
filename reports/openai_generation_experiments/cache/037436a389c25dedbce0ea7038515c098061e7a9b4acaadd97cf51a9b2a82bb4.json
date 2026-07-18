@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "037436a389c25dedbce0ea7038515c098061e7a9b4acaadd97cf51a9b2a82bb4",
+  "question_id": "GEN-BIO-012",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T08:26:06+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Mitosis and meiosis are two types of cell division processes that serve different purposes in living organisms.\\n\\n1. **Purpose**:\\n   - **Mitosis**: This process occurs in all body cells and is responsible for growth, repair, and asexual reproduction. It ensures that each daughter cell receives an identical set of chromosomes as the parent cell.\\n   - **Meiosis**: This process occurs only in sex cells (gametes) and is crucial for sexual reproduction. It reduces the chromosome number by half, resulting in haploid cells, which is essential for maintaining the species' chromosome number through generations.\\n\\n2. **Chromosome Number**:\\n   - **Mitosis**: The chromosome number remains the same as the parent cell. If the parent cell is diploid (2n), the daughter cells will also be diploid.\\n   - **Meiosis**: The chromosome number is halved. If the parent cell is diploid (2n), the resulting gametes will be haploid (n).\\n\\n3. **Number of Divisions**:\\n   - **Mitosis**: Involves a single division resulting in two daughter cells.\\n   - **Meiosis**: Involves two successive divisions (meiosis I and meiosis II) resulting in four daughter cells.\\n\\n4. **Genetic Variation**:\\n   - **Mitosis**: Produces genetically identical cells, with no variation from the parent cell.\\n   - **Meiosis**: Increases genetic variation through processes like crossing over and independent assortment, which shuffle the genetic material.\\n\\n5. **Occurrence**:\\n   - **Mitosis**: Occurs in somatic (body) cells.\\n   - **Meiosis**: Occurs in germ cells during",
+    "latency_seconds": 3.7319,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_071df52f8dcec277006a5b389840d8819696ce9e540d9e7dd1",
+    "response_status": "incomplete",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4450,
+      "completion_tokens": 384,
+      "total_tokens": 4834
+    }
+  }
+}

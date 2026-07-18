@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "ed5e9af834300e470f184da34ba7a2273185547e9cefc29a78b6fbbc491dace8",
+  "question_id": "GEN-BIO-018",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:33+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"The use of toxic materials, such as pesticides and herbicides, can significantly affect an ecosystem. These substances are often used to eliminate pests and protect crops, but they can also harm other organisms within the ecosystem. Pesticides are not selective and can destroy a wide range of animals, including those that are natural predators of pests. This disruption can lead to unpredictable changes in food chains and upset the ecological balance.\\n\\nTwo important processes related to the impact of toxic materials are bioaccumulation and biomagnification. Bioaccumulation refers to the entry and buildup of pollutants in the tissues of organisms over time. When these pollutants are not easily broken down, they accumulate in the bodies of animals. Biomagnification, on the other hand, describes how these pollutants become more concentrated as they move up the food chain. As a result, animals at higher trophic levels, such as top predators, can accumulate harmful levels of toxins, which can lead to significant health issues or even death.\\n\\nThese processes highlight the dangers of using non-degradable toxic substances, as they can persist in the environment and cause long-term ecological harm.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":226,\"textbook_page\":217}],\"missing_information\":[]}",
+    "latency_seconds": 2.7741,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0baa7266f87d0b55006a5b419c1f208190a75782d0270ef848",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1284,
+      "completion_tokens": 272,
+      "total_tokens": 1556
+    }
+  }
+}

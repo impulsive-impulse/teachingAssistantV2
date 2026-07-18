@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "run_id": "openai__gpt_4o__smoke__gold_retrieved__934d177d7dc1",
+  "created_at": "2026-07-18T08:31:44+00:00",
+  "provider": {
+    "name": "openai-responses",
+    "model": "gpt-4o",
+    "api_key_environment_variable": "OPENAI_API_KEY",
+    "base_url_environment_variable": "OPENAI_BASE_URL",
+    "timeout_seconds": 120,
+    "max_retries": 0
+  },
+  "frozen_configuration": {
+    "prompt_strategy": "P1",
+    "gold_context_strategy": "gold_separate_full",
+    "retrieved_context_strategy": "retrieved_top5_page_order_compact",
+    "max_output_tokens": 384,
+    "temperature": 0.0
+  },
+  "split": "smoke",
+  "evaluation_modes": [
+    "gold",
+    "retrieved"
+  ],
+  "question_count": 8,
+  "request_count": 16,
+  "new_calls_approved_this_invocation": 0,
+  "new_calls_executed_this_invocation": 0,
+  "paid_provider_responses_recorded": 16,
+  "frozen_input_hashes": {
+    "generation_benchmark": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+    "retrieval_config": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6"
+  },
+  "online_config_sha256": "733261c33d8d62bc15fa01067eda84a7bfa74a6794db1d40a7b5aee5d0ffda12",
+  "metrics": {
+    "gold": {
+      "questions": 8,
+      "completed": 5,
+      "required_point_coverage": 0.7433,
+      "citation_validity": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "structured_output_rate": 1.0,
+      "false_insufficient_count": 0,
+      "formula_accuracy": 1.0,
+      "model_load_seconds": null,
+      "p50_latency_seconds": 2.8814,
+      "p95_latency_seconds": 5.744,
+      "p50_time_to_first_token_seconds": null,
+      "p95_time_to_first_token_seconds": null,
+      "mean_tokens_per_second": 64.523,
+      "peak_rss_bytes": null
+    },
+    "retrieved": {
+      "questions": 8,
+      "completed": 5,
+      "required_point_coverage": 0.6933,
+      "citation_validity": 1.0,
+      "unsupported_claim_rate": 0.0,
+      "structured_output_rate": 1.0,
+      "false_insufficient_count": 0,
+      "formula_accuracy": 0.0,
+      "model_load_seconds": null,
+      "p50_latency_seconds": 3.2554,
+      "p95_latency_seconds": 4.4247,
+      "p50_time_to_first_token_seconds": null,
+      "p95_time_to_first_token_seconds": null,
+      "mean_tokens_per_second": 68.1568,
+      "peak_rss_bytes": null
+    }
+  }
+}

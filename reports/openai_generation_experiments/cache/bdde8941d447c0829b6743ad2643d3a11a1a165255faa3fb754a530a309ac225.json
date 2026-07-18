@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "bdde8941d447c0829b6743ad2643d3a11a1a165255faa3fb754a530a309ac225",
+  "question_id": "GEN-BIO-014",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T08:26:08+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"The acid-and-leaf experiment is designed to model how the stomach is protected from its own acid. In this experiment, two similar green leaves are used. One leaf is coated with vaseline or petroleum jelly, while the other is left untreated. A few drops of weak acid are added to both leaves. After some time, observations are made to see which leaf is affected by the acid.\\n\\nThe leaf without the protective coating is damaged by the acid, while the leaf with the vaseline remains unaffected. This demonstrates how a protective barrier can prevent damage from acid.\\n\\nIn the human stomach, a similar protective mechanism is in place. The stomach walls secrete mucus, which forms a thin lining that protects the stomach from its own strong acids, such as hydrochloric acid (HCl). This mucus lining acts like the vaseline in the experiment, preventing the acid from damaging the stomach tissue.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":174,\"textbook_page\":165}],\"missing_information\":[]}",
+    "latency_seconds": 2.5716,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0d568f3e5954cb1f006a5b389bffa8819385e95007a3b79bbf",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4356,
+      "completion_tokens": 225,
+      "total_tokens": 4581
+    }
+  }
+}

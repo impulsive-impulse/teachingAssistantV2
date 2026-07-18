@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "c20f23d6e88092b57b4c16cd718e7a371ca8aa6a14a1be3f55fa94e74b9bae8e",
+  "question_id": "GEN-PSC-012",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:05:04+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Mendeleev’s periodic table had several limitations:\\n\\n1. **Anomalous Pairs**: Some elements with higher atomic weights were placed before those with lower atomic weights. For example, tellurium (Te) with a higher atomic weight was placed before iodine (I), which has a lower atomic weight.\\n\\n2. **Dissimilar Elements Together**: Elements with different properties were placed in the same group. For instance, alkali metals like lithium (Li) and sodium (Na) were grouped with coinage metals like copper (Cu) and silver (Ag), despite having different properties.\\n\\nThe modern periodic table addresses these limitations by arranging elements based on their atomic numbers rather than atomic weights. This change resolved the issue of anomalous pairs because the atomic number is a more fundamental property of elements. For example, tellurium and iodine are correctly ordered by atomic number, eliminating the previous anomaly. This new arrangement also ensures that elements with similar properties are grouped together more accurately, reflecting their chemical behavior more consistently.\\n\\nThus, the modern periodic table provides a more accurate and logical organization of elements, improving upon Mendeleev’s original design.\",\"selected_evidence_ids\":[\"E2\",\"E3\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":152,\"textbook_page\":142},{\"evidence_id\":\"E3\",\"pdf_page\":153,\"textbook_page\":143}],\"missing_information\":[]}",
+    "latency_seconds": 3.0892,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_073799e28b9131a6006a5b41bacc9881979c998c176b0ec55e",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1764,
+      "completion_tokens": 305,
+      "total_tokens": 2069
+    }
+  }
+}

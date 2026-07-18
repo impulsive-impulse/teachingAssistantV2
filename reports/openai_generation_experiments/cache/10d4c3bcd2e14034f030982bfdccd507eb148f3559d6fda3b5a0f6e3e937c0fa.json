@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "10d4c3bcd2e14034f030982bfdccd507eb148f3559d6fda3b5a0f6e3e937c0fa",
+  "question_id": "GEN-PSC-001",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:41+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"We prefer a convex mirror as a rear-view mirror in vehicles because it forms an erected, diminished, and virtual image of objects. This means that the image is smaller than the actual object, allowing the driver to see a wider field of view. This is particularly useful for seeing more of the road and traffic behind the vehicle, enhancing safety while driving. The virtual image formed by the convex mirror cannot be caught on a screen and is visible only in the mirror, which is suitable for the purpose of a rear-view mirror.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":23,\"textbook_page\":13}],\"missing_information\":[]}",
+    "latency_seconds": 3.0514,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_062ece4e9864e282006a5b41a46998819490e8368e031026e5",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1234,
+      "completion_tokens": 148,
+      "total_tokens": 1382
+    }
+  }
+}

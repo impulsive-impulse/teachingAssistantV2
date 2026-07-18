@@ -1,0 +1,470 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-18T09:11:48+00:00",
+  "provider": "openai-responses",
+  "model": "gpt-4o",
+  "planned_requests": 64,
+  "cache_hits": 56,
+  "new_calls_required": 8,
+  "estimated_new_input_tokens": 35339,
+  "maximum_new_output_tokens": 6144,
+  "estimated_upper_bound_cost_usd": 0.1498,
+  "pricing_snapshot": {
+    "checked_on": "2026-07-18",
+    "currency": "USD",
+    "input_per_million_tokens": 2.5,
+    "cached_input_per_million_tokens": 1.25,
+    "output_per_million_tokens": 10.0,
+    "source": "https://developers.openai.com/api/docs/models/gpt-4o"
+  },
+  "requests": [
+    {
+      "question_id": "GEN-BIO-001",
+      "evaluation_mode": "gold",
+      "request_sha256": "7848d864b15ad804c256fb3567be925f4cc6081f1c22a6baa35b9147cd8dc622",
+      "cached": true,
+      "estimated_input_tokens": 1021
+    },
+    {
+      "question_id": "GEN-BIO-003",
+      "evaluation_mode": "gold",
+      "request_sha256": "655c0fac5e57051870c08b1979da75862200c85e40f2660b33b9b71c16c5953c",
+      "cached": true,
+      "estimated_input_tokens": 1085
+    },
+    {
+      "question_id": "GEN-BIO-004",
+      "evaluation_mode": "gold",
+      "request_sha256": "ecbf07810d54744449db012703887c630de8634080dc405d9134e1eda0b39e10",
+      "cached": true,
+      "estimated_input_tokens": 1203
+    },
+    {
+      "question_id": "GEN-BIO-006",
+      "evaluation_mode": "gold",
+      "request_sha256": "fbff0f56a2e3fc9f812bc1a0a934b6369d874e2fb3a8606d51ad978c503f8592",
+      "cached": true,
+      "estimated_input_tokens": 932
+    },
+    {
+      "question_id": "GEN-BIO-007",
+      "evaluation_mode": "gold",
+      "request_sha256": "0cb8f2f72613b05266c0b567997d746463a4e4c985b98f29ee66bfe1c6d5f668",
+      "cached": true,
+      "estimated_input_tokens": 1510
+    },
+    {
+      "question_id": "GEN-BIO-008",
+      "evaluation_mode": "gold",
+      "request_sha256": "4bbbc1fa707380261643ab1a43390241751e8cacce7c63e6cfb5af678074b1a3",
+      "cached": true,
+      "estimated_input_tokens": 995
+    },
+    {
+      "question_id": "GEN-BIO-009",
+      "evaluation_mode": "gold",
+      "request_sha256": "108dff327d15a8c72db3c220aab3a70b528196d04842616b2e0a9ee0de5bd786",
+      "cached": true,
+      "estimated_input_tokens": 1296
+    },
+    {
+      "question_id": "GEN-BIO-010",
+      "evaluation_mode": "gold",
+      "request_sha256": "17688c3daf0d35542274730d0a215146e8c0a1e0352a1054056c6b870ee13ed8",
+      "cached": true,
+      "estimated_input_tokens": 711
+    },
+    {
+      "question_id": "GEN-BIO-011",
+      "evaluation_mode": "gold",
+      "request_sha256": "601f184b0ade8e22bcb3eb81bf05b052d18cc09b14622b494959869a5e5c515a",
+      "cached": true,
+      "estimated_input_tokens": 1193
+    },
+    {
+      "question_id": "GEN-BIO-013",
+      "evaluation_mode": "gold",
+      "request_sha256": "fadfaabea9bbfb662c05fa75520858efbccc487b9fd5eb86e9827b97fb52529c",
+      "cached": true,
+      "estimated_input_tokens": 1130
+    },
+    {
+      "question_id": "GEN-BIO-015",
+      "evaluation_mode": "gold",
+      "request_sha256": "7c2a40549087649cd0937330a20c72a58a8723476a7794edc0d2fe7640cb4758",
+      "cached": true,
+      "estimated_input_tokens": 2171
+    },
+    {
+      "question_id": "GEN-BIO-016",
+      "evaluation_mode": "gold",
+      "request_sha256": "4bf32bf97f3fb58a6c0835c8def235c0a2f7427d16f0f3786c24973dfd6c746e",
+      "cached": true,
+      "estimated_input_tokens": 1183
+    },
+    {
+      "question_id": "GEN-BIO-017",
+      "evaluation_mode": "gold",
+      "request_sha256": "4e5b8f4c8b1c0b40e9069a49d2e92f5b483e46d9ebfe2598223ee711c8480a0f",
+      "cached": true,
+      "estimated_input_tokens": 1326
+    },
+    {
+      "question_id": "GEN-BIO-018",
+      "evaluation_mode": "gold",
+      "request_sha256": "ed5e9af834300e470f184da34ba7a2273185547e9cefc29a78b6fbbc491dace8",
+      "cached": true,
+      "estimated_input_tokens": 1410
+    },
+    {
+      "question_id": "GEN-BIO-019",
+      "evaluation_mode": "gold",
+      "request_sha256": "a5f91c21999676c78b7299c18f3bc28a765b3f8a1c93c1b1740320eb3ef2d8ca",
+      "cached": true,
+      "estimated_input_tokens": 653
+    },
+    {
+      "question_id": "GEN-BIO-020",
+      "evaluation_mode": "gold",
+      "request_sha256": "1a2a891c16928e864826f0f2aefe78ebe1093ccc7ce676ed049ac1b99b667c90",
+      "cached": true,
+      "estimated_input_tokens": 1454
+    },
+    {
+      "question_id": "GEN-PSC-001",
+      "evaluation_mode": "gold",
+      "request_sha256": "10d4c3bcd2e14034f030982bfdccd507eb148f3559d6fda3b5a0f6e3e937c0fa",
+      "cached": true,
+      "estimated_input_tokens": 1086
+    },
+    {
+      "question_id": "GEN-PSC-003",
+      "evaluation_mode": "gold",
+      "request_sha256": "65b32ffffa6dd9d4d82d324fd36c9628336ef7b1517c59b8cf81762254ffe925",
+      "cached": true,
+      "estimated_input_tokens": 1557
+    },
+    {
+      "question_id": "GEN-PSC-004",
+      "evaluation_mode": "gold",
+      "request_sha256": "31c62363cf99d8545bfc4dd4c784c3c091ecdcf9eaa76623e7220f51ea34a6f6",
+      "cached": true,
+      "estimated_input_tokens": 685
+    },
+    {
+      "question_id": "GEN-PSC-005",
+      "evaluation_mode": "gold",
+      "request_sha256": "795fe5ea0d4f8403aaa8f1c4f6e4f0d833d841362d337d78650be8c652b7e03b",
+      "cached": true,
+      "estimated_input_tokens": 515
+    },
+    {
+      "question_id": "GEN-PSC-007",
+      "evaluation_mode": "gold",
+      "request_sha256": "04c31c930b7985ddf3f66ee7356a4094b6e83945e985ffc776612bed2ffd693a",
+      "cached": true,
+      "estimated_input_tokens": 1163
+    },
+    {
+      "question_id": "GEN-PSC-008",
+      "evaluation_mode": "gold",
+      "request_sha256": "c70ad935fc7cd0218136c7da14d7ca1cecdeae25a4ee4cfa2c047b49492ae488",
+      "cached": true,
+      "estimated_input_tokens": 865
+    },
+    {
+      "question_id": "GEN-PSC-010",
+      "evaluation_mode": "gold",
+      "request_sha256": "3a556697ac6b114f523a78ef84c50117b37e39a9bf3a991404944e737981ed0f",
+      "cached": true,
+      "estimated_input_tokens": 1161
+    },
+    {
+      "question_id": "GEN-PSC-011",
+      "evaluation_mode": "gold",
+      "request_sha256": "7632b6ccec158dca07866fe3fd79f22e39afaed50bd76dd468e3c341c2d72043",
+      "cached": true,
+      "estimated_input_tokens": 1765
+    },
+    {
+      "question_id": "GEN-PSC-012",
+      "evaluation_mode": "gold",
+      "request_sha256": "c20f23d6e88092b57b4c16cd718e7a371ca8aa6a14a1be3f55fa94e74b9bae8e",
+      "cached": true,
+      "estimated_input_tokens": 1753
+    },
+    {
+      "question_id": "GEN-PSC-013",
+      "evaluation_mode": "gold",
+      "request_sha256": "c73c627d46542607edf87b696c9452ab73f8445feeae2fc335dc0202a82a4ce1",
+      "cached": true,
+      "estimated_input_tokens": 1461
+    },
+    {
+      "question_id": "GEN-PSC-014",
+      "evaluation_mode": "gold",
+      "request_sha256": "e3edeb4c9783206363ad31ef061f5dc9e350937477b87ce905b5abe2694fa10c",
+      "cached": true,
+      "estimated_input_tokens": 1261
+    },
+    {
+      "question_id": "GEN-PSC-016",
+      "evaluation_mode": "gold",
+      "request_sha256": "6d91fb477d052d12145e3b27e5bc35f426823f370150aa9f337c5659831a249d",
+      "cached": true,
+      "estimated_input_tokens": 1552
+    },
+    {
+      "question_id": "GEN-PSC-017",
+      "evaluation_mode": "gold",
+      "request_sha256": "db0b0229a6250ec98595d14d4f9ce4cd5a9938edb3aeb6efa56635855075747d",
+      "cached": true,
+      "estimated_input_tokens": 700
+    },
+    {
+      "question_id": "GEN-PSC-018",
+      "evaluation_mode": "gold",
+      "request_sha256": "168d6ba28c26fc58671409eb7633d4eff62d74731daf4d3a5e4c3a998a4c4ca7",
+      "cached": true,
+      "estimated_input_tokens": 610
+    },
+    {
+      "question_id": "GEN-PSC-019",
+      "evaluation_mode": "gold",
+      "request_sha256": "265f31e5900febb6c479af9d5e8b37cf76d8311cdd37cbdf26fac490d120e1a5",
+      "cached": true,
+      "estimated_input_tokens": 681
+    },
+    {
+      "question_id": "GEN-PSC-020",
+      "evaluation_mode": "gold",
+      "request_sha256": "98370ed9acac8bbc5226ae8209a41ac4a038e29bcdc9b9b572ac8ff9ac178c12",
+      "cached": true,
+      "estimated_input_tokens": 1082
+    },
+    {
+      "question_id": "GEN-BIO-001",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "4b035a76d0e2c452d6b7fe9297b987438f58074fcd34ac675aeae0361790a65e",
+      "cached": true,
+      "estimated_input_tokens": 4752
+    },
+    {
+      "question_id": "GEN-BIO-003",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "310424fa314565d68bdff939e911c53ff0524fba697957c846dceb26552e1017",
+      "cached": true,
+      "estimated_input_tokens": 4741
+    },
+    {
+      "question_id": "GEN-BIO-004",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "414264c0daa27fb3a4119187e577df349add0f8a5b5cbabddf3be8049fcc01fa",
+      "cached": true,
+      "estimated_input_tokens": 4221
+    },
+    {
+      "question_id": "GEN-BIO-006",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "678d3bea12b4cd3ce9ea224de85f3e9dd7a7e54949c193614293f4c76a2c75e9",
+      "cached": true,
+      "estimated_input_tokens": 4598
+    },
+    {
+      "question_id": "GEN-BIO-007",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "a84889d13978cc2d19d092b96c8d7bae6b4dfbcb9fc49dc1ff96b9c6a4e492a5",
+      "cached": true,
+      "estimated_input_tokens": 4843
+    },
+    {
+      "question_id": "GEN-BIO-008",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "6beb81b1248fe4b2c1b1aaf349b8db705fb659be355ffa7767c29b2236d73607",
+      "cached": true,
+      "estimated_input_tokens": 4765
+    },
+    {
+      "question_id": "GEN-BIO-009",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "56355d809055adb5468983a8856ca5f3951c4f39113c1116c4a780b9e42edea2",
+      "cached": true,
+      "estimated_input_tokens": 4782
+    },
+    {
+      "question_id": "GEN-BIO-010",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "709d4619f0415efd092b36bff5668f46195387a61b1ddfe30c88b70622831c51",
+      "cached": true,
+      "estimated_input_tokens": 4727
+    },
+    {
+      "question_id": "GEN-BIO-011",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "36ef34ae8813a51b4461cc1cf2407dd670053f5049f4840c9a759082f7f4a24c",
+      "cached": true,
+      "estimated_input_tokens": 4982
+    },
+    {
+      "question_id": "GEN-BIO-013",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "ac01bb8877eba99157f4a1a33dd0eb61496d967aa17d26ff9e173f0da2bf1226",
+      "cached": true,
+      "estimated_input_tokens": 4615
+    },
+    {
+      "question_id": "GEN-BIO-015",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "d43abf6e66d963ee159ad90d0ee3df12305b2add28a2dd79e0a1c9d698bc0bed",
+      "cached": true,
+      "estimated_input_tokens": 4694
+    },
+    {
+      "question_id": "GEN-BIO-016",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "7375a8f2d1482c01d4584a7dffff28efd02ee5fcaf7451c2bd4a9d71f29a05fd",
+      "cached": true,
+      "estimated_input_tokens": 4785
+    },
+    {
+      "question_id": "GEN-BIO-017",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "dcde4b7802a3f873228db55c1cf4f95b191c122b52045f54e71b37b3da15311a",
+      "cached": true,
+      "estimated_input_tokens": 4349
+    },
+    {
+      "question_id": "GEN-BIO-018",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "50d414b877814082a87910aa8a9f13f3c993350c237341ee144d855a1dd24b0d",
+      "cached": true,
+      "estimated_input_tokens": 4703
+    },
+    {
+      "question_id": "GEN-BIO-019",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "5c8e0d469351f73211a1c308843abacae7bd6c7ae5456dc3a9e6e5f2f99991ae",
+      "cached": true,
+      "estimated_input_tokens": 4942
+    },
+    {
+      "question_id": "GEN-BIO-020",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "9e187fb5e2d9916ba16750484c4fc492d9bf663e487e5dd7f45aaa190870d768",
+      "cached": true,
+      "estimated_input_tokens": 4796
+    },
+    {
+      "question_id": "GEN-PSC-001",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "45bdfecf1271f39b1e9ed10a4a25c106a3d1962f85f65f0db488d4bbb5db82f2",
+      "cached": true,
+      "estimated_input_tokens": 3872
+    },
+    {
+      "question_id": "GEN-PSC-003",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "7c7e025316f2d2f2781234a3e6027c4170a6b14405e2d9801156c2c77318973f",
+      "cached": true,
+      "estimated_input_tokens": 4160
+    },
+    {
+      "question_id": "GEN-PSC-004",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "19521efc36f9fc11265f72ef639860b8284da11e156308f6857a94c24a834158",
+      "cached": true,
+      "estimated_input_tokens": 4209
+    },
+    {
+      "question_id": "GEN-PSC-005",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "45b5700f76ef846132f480e6b857fdd6cbc53794b8374d8702255bef660051f2",
+      "cached": true,
+      "estimated_input_tokens": 4525
+    },
+    {
+      "question_id": "GEN-PSC-007",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "f5e50bf8619f04dbfe7e0dbe17e97eee6ca41a8876cbabeb3336ddac015075f1",
+      "cached": true,
+      "estimated_input_tokens": 4184
+    },
+    {
+      "question_id": "GEN-PSC-008",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "a5fcbf82255098bdb4f1f05b4d8c70d8779c820e31b9debae4b7531b3c854cdb",
+      "cached": true,
+      "estimated_input_tokens": 4144
+    },
+    {
+      "question_id": "GEN-PSC-010",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "c5796b84b1afe635e9cd9a7b54a332688fe4d9f49a6b13faec86463e1bc45c74",
+      "cached": true,
+      "estimated_input_tokens": 4515
+    },
+    {
+      "question_id": "GEN-PSC-011",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "c57db5c53b42c34c475fab22a6cf5fb1c0192921a864d02c58f1217de75029ae",
+      "cached": true,
+      "estimated_input_tokens": 4365
+    },
+    {
+      "question_id": "GEN-PSC-012",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "9e55353a4a32cb156a7fd268daa3aeff9f5c75ab755f9c03c2f4a74a1f068559",
+      "cached": false,
+      "estimated_input_tokens": 4543
+    },
+    {
+      "question_id": "GEN-PSC-013",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "5b76e9b87350cd01af7b6bd7b43109a3b8b06091526471f9deeab16bfcccab22",
+      "cached": false,
+      "estimated_input_tokens": 4623
+    },
+    {
+      "question_id": "GEN-PSC-014",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "32dd6725a849df06cb5be4caed240d7818a5a2c2e1033d01705b57ec95920840",
+      "cached": false,
+      "estimated_input_tokens": 4781
+    },
+    {
+      "question_id": "GEN-PSC-016",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "8ba8be72a4cc25ab0f1519e42ab9f7ed343a3e50135ca0f0fe9d39506eaa924b",
+      "cached": false,
+      "estimated_input_tokens": 4130
+    },
+    {
+      "question_id": "GEN-PSC-017",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "34d3a49ba32b80e36aafe87d7226c66ccd3acb6d0fafb02f34cf9a65640a81f5",
+      "cached": false,
+      "estimated_input_tokens": 4414
+    },
+    {
+      "question_id": "GEN-PSC-018",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "227591adc28d92b11b4263b3ac694ac32947bcc6ba5470a66707e12af8e90547",
+      "cached": false,
+      "estimated_input_tokens": 4258
+    },
+    {
+      "question_id": "GEN-PSC-019",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "841e1f423b2e1dbc8aa49942f1d7a1bac0769bd41a30c1bbbb4572376bb63f0f",
+      "cached": false,
+      "estimated_input_tokens": 4019
+    },
+    {
+      "question_id": "GEN-PSC-020",
+      "evaluation_mode": "retrieved",
+      "request_sha256": "33cf9a953630b0ac5ad55b761817e3cd2d94e5e8768049244697ab45d64d9565",
+      "cached": false,
+      "estimated_input_tokens": 4571
+    }
+  ]
+}

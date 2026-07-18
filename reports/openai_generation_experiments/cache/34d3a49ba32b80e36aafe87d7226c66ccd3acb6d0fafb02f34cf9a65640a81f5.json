@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "34d3a49ba32b80e36aafe87d7226c66ccd3acb6d0fafb02f34cf9a65640a81f5",
+  "question_id": "GEN-PSC-017",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:12:15+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Faraday’s law of induction can be explained through a simple activity involving a coil of wire and a bar magnet. According to the textbook evidence, when a bar magnet is moved towards a coil with its north pole facing the coil, the needle of a galvanometer connected to the coil deflects. This deflection indicates that a current is induced in the coil. If the magnet is moved away, the needle deflects in the opposite direction, showing that the current direction is reversed.\\n\\nThis activity demonstrates Faraday’s law, which states that \\\"whenever there is a continuous change of magnetic flux linked with a closed coil, a current is generated in the coil.\\\" The induced electromotive force (EMF) is proportional to the rate of change of magnetic flux through the coil. This means that the faster the magnetic flux changes, the greater the induced EMF and the resulting current.\\n\\nThe activity shows that it doesn’t matter whether the magnet is moved towards the coil or the coil towards the magnet; what matters is the relative motion between them, which changes the magnetic flux and induces a current. This phenomenon is known as electromagnetic induction.\\n\\nIn summary, Faraday’s law of induction is demonstrated by the deflection of the galvanometer needle when the magnet is moved, indicating the presence of an induced current due to the change in magnetic flux through the coil.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":250,\"textbook_page\":240}],\"missing_information\":[]}",
+    "latency_seconds": 3.4231,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0620932201d55a17006a5b436a002481958cecdccabee127ce",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4433,
+      "completion_tokens": 322,
+      "total_tokens": 4755
+    }
+  }
+}

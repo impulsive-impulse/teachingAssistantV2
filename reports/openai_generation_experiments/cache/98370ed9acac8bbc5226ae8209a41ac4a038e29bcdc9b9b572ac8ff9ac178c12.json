@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "98370ed9acac8bbc5226ae8209a41ac4a038e29bcdc9b9b572ac8ff9ac178c12",
+  "question_id": "GEN-PSC-020",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:05:30+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"The cleansing action of soap is based on the structure of soap molecules, which have two distinct ends: a hydrophilic (water-attracting) end and a hydrophobic (water-repelling) end. When soap is added to water, the hydrophobic ends of the soap molecules attach themselves to dirt or grease on a cloth. These dirt particles are primarily greasy matter, which does not dissolve in water on its own.\\n\\nThe soap molecules arrange themselves around the dirt particles, with their hydrophobic ends sticking to the grease and their hydrophilic ends facing outward into the water. This arrangement forms a structure called a micelle, where the dirt is trapped at the center. The micelles remain suspended in the water, preventing the dirt from reattaching to the cloth.\\n\\nDue to the ion-ion repulsion between the micelles, they do not come together to form a precipitate, allowing the dirt to be easily rinsed away with water, leaving the cloth clean.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":317,\"textbook_page\":302},{\"evidence_id\":\"E2\",\"pdf_page\":318,\"textbook_page\":303}],\"missing_information\":[]}",
+    "latency_seconds": 2.7423,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0c18fd01b5cbaef4006a5b41d5a7788197a99383993d7d165d",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1155,
+      "completion_tokens": 265,
+      "total_tokens": 1420
+    }
+  }
+}

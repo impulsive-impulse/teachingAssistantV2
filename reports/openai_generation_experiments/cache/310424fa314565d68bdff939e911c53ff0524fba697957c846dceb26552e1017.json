@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "310424fa314565d68bdff939e911c53ff0524fba697957c846dceb26552e1017",
+  "question_id": "GEN-BIO-003",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:05:35+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Alveoli are designed to maximize the exchange of gases by being numerous and having very thin walls, only one cell thick. This structure allows for efficient diffusion of gases. They are surrounded by blood capillaries, which are also one cell thick, facilitating the exchange of oxygen and carbon dioxide between the alveoli and the blood. Oxygen from the alveoli diffuses into the blood, while carbon dioxide from the blood diffuses into the alveoli to be exhaled. This efficient design ensures that the blood leaving the lungs is rich in oxygen and ready to be transported to the rest of the body.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":43,\"textbook_page\":34}],\"missing_information\":[]}",
+    "latency_seconds": 2.6301,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_05ae12ad57264da2006a5b41db149081949fda876fbeb8f767",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4472,
+      "completion_tokens": 165,
+      "total_tokens": 4637
+    }
+  }
+}

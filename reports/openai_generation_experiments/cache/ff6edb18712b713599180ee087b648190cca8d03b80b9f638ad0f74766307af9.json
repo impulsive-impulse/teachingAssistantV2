@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "ff6edb18712b713599180ee087b648190cca8d03b80b9f638ad0f74766307af9",
+  "question_id": "GEN-BIO-012",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T08:46:01+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Mitosis and meiosis are two types of cell division processes that serve different purposes in living organisms.\\n\\n1. **Purpose**:\\n   - **Mitosis**: This process occurs in all body cells and is responsible for growth, repair, and asexual reproduction. It ensures that each daughter cell receives an identical set of chromosomes as the parent cell.\\n   - **Meiosis**: This process occurs only in sex cells (gametes) and is crucial for sexual reproduction. It reduces the chromosome number by half, resulting in haploid cells, which is essential for maintaining the species' chromosome number through generations.\\n\\n2. **Chromosome Number**:\\n   - **Mitosis**: The chromosome number remains the same as the parent cell. If the parent cell is diploid (2n), the daughter cells will also be diploid.\\n   - **Meiosis**: The chromosome number is halved. A diploid parent cell (2n) produces haploid (n) daughter cells.\\n\\n3. **Number of Divisions**:\\n   - **Mitosis**: Involves one division cycle, resulting in two daughter cells.\\n   - **Meiosis**: Involves two division cycles (meiosis I and meiosis II), resulting in four daughter cells.\\n\\n4. **Genetic Variation**:\\n   - **Mitosis**: Produces genetically identical cells, with no variation from the parent cell.\\n   - **Meiosis**: Increases genetic variation through processes like crossing over and independent assortment, which shuffle genetic material.\\n\\n5. **Occurrence**:\\n   - **Mitosis**: Occurs in somatic (body) cells.\\n   - **Meiosis**: Occurs in germ cells during the formation of gametes (sperm and eggs).\\n\\nThese differences highlight the distinct roles that mitosis and meiosis play in the life cycle of organisms, with mitosis focusing on growth and maintenance, and meiosis ensuring genetic diversity and proper chromosome number in offspring.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":150,\"textbook_page\":141},{\"evidence_id\":\"E2\",\"pdf_page\":151,\"textbook_page\":142}],\"missing_information\":[]}",
+    "latency_seconds": 5.7416,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0117ee5c6028076f006a5b3d41261c8195babe7c36b9d9b973",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4450,
+      "completion_tokens": 493,
+      "total_tokens": 4943
+    }
+  }
+}

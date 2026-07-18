@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "6d91fb477d052d12145e3b27e5bc35f426823f370150aa9f337c5659831a249d",
+  "question_id": "GEN-PSC-016",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:05:15+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"In a household circuit, electric appliances should be connected in parallel rather than in series. This is because when appliances are connected in parallel, each appliance receives the full voltage of the power supply, which is typically 240V in household circuits. This ensures that each appliance operates efficiently and independently of the others. \\n\\nIf appliances were connected in series, the total voltage would be divided among them, causing each appliance to receive only a fraction of the total voltage. This would result in appliances not functioning properly or at reduced efficiency. Additionally, if one appliance in a series circuit fails or is turned off, it would break the circuit and stop the flow of electricity to all other appliances in the series, similar to how a broken resistor in a series circuit stops the current flow (as mentioned in evidence E1).\\n\\nIn contrast, in a parallel circuit, each appliance is connected directly across the power supply. Therefore, if one appliance fails, it does not affect the operation of others, allowing them to continue functioning normally. This is why household appliances are connected in parallel, as it provides both reliability and efficiency.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":217,\"textbook_page\":202},{\"evidence_id\":\"E2\",\"pdf_page\":226,\"textbook_page\":211}],\"missing_information\":[]}",
+    "latency_seconds": 4.0242,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_03ef49fd4d26f4a8006a5b41c4f7d88197b5ce8a43e9e9d1d9",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1654,
+      "completion_tokens": 288,
+      "total_tokens": 1942
+    }
+  }
+}

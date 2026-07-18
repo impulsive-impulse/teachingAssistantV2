@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "fadfaabea9bbfb662c05fa75520858efbccc487b9fd5eb86e9827b97fb52529c",
+  "question_id": "GEN-BIO-013",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:22+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Mucus plays a crucial role in the passage of food through the oesophagus. It is a slippery substance secreted by the walls of the oesophagus, which helps to lubricate and protect the oesophageal walls from damage. This lubrication allows the food bolus to slide down easily through the oesophagus, similar to how oiled potatoes move through a tube. Additionally, the saliva present in the bolus also aids in the smooth movement of food into the stomach. This process is facilitated by the wave-like movements of the oesophagus walls, known as peristalsis, which is an involuntary action controlled by the autonomous nervous system.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":172,\"textbook_page\":163}],\"missing_information\":[]}",
+    "latency_seconds": 2.3866,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0480a1c6d9dd890f006a5b4191c7408193abc103cb926ba2db",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1174,
+      "completion_tokens": 173,
+      "total_tokens": 1347
+    }
+  }
+}

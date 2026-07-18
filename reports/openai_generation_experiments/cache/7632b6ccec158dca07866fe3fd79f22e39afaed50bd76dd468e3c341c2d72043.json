@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "7632b6ccec158dca07866fe3fd79f22e39afaed50bd76dd468e3c341c2d72043",
+  "question_id": "GEN-PSC-011",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:05:01+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"An orbital is a region of space around the nucleus where the probability of finding an electron is maximum. Unlike Bohr’s orbits, which are defined paths that electrons follow around the nucleus, orbitals do not have a definite path. Instead, they represent areas where electrons are likely to be found at any given time. This concept arises from the quantum mechanical model of the atom, which suggests that electrons do not have precise locations or velocities simultaneously. Orbitals are described by quantum numbers, which provide information about the energy, shape, and orientation of the electron's probable location.\\n\\nIn contrast, Bohr’s model describes electrons as moving in fixed orbits with specific energies around the nucleus, similar to planets orbiting the sun. This model is limited because it cannot accurately describe atoms with more than one electron or account for the complexities of electron behavior observed in experiments.\",\"selected_evidence_ids\":[\"E2\",\"E3\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":129,\"textbook_page\":119},{\"evidence_id\":\"E3\",\"pdf_page\":136,\"textbook_page\":126}],\"missing_information\":[]}",
+    "latency_seconds": 3.0583,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_00c4cc348ce87769006a5b41b7b8cc8190998f07bf2ae5f1ca",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1694,
+      "completion_tokens": 239,
+      "total_tokens": 1933
+    }
+  }
+}

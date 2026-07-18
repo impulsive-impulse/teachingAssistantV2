@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "run_id": "openai__gpt_4o__smoke__gold_retrieved__818769828116",
+  "created_at": "2026-07-18T08:46:11+00:00",
+  "provider": {
+    "name": "openai-responses",
+    "model": "gpt-4o",
+    "credential_env_file": ".env",
+    "api_key_environment_variable": "OPENAI_API_KEY",
+    "base_url_environment_variable": "OPENAI_BASE_URL",
+    "timeout_seconds": 120,
+    "max_retries": 0
+  },
+  "frozen_configuration": {
+    "prompt_strategy": "P1",
+    "gold_context_strategy": "gold_separate_full",
+    "retrieved_context_strategy": "retrieved_top5_page_order_compact",
+    "max_output_tokens": 768,
+    "temperature": 0.0
+  },
+  "split": "smoke",
+  "evaluation_modes": [
+    "gold",
+    "retrieved"
+  ],
+  "selected_question_ids": [
+    "GEN-BIO-012",
+    "GEN-PSC-002",
+    "GEN-PSC-015"
+  ],
+  "question_count": 3,
+  "request_count": 6,
+  "new_calls_approved_this_invocation": 6,
+  "new_calls_executed_this_invocation": 6,
+  "paid_provider_responses_recorded": 6,
+  "frozen_input_hashes": {
+    "generation_benchmark": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+    "retrieval_config": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6"
+  },
+  "online_config_sha256": "6c57dd2f1a72dc517335f67bcc579d9bfcea3760d5e6c126a645e327fe51a6dd",
+  "metrics": {
+    "gold": {
+      "questions": 3,
+      "completed": 3,
+      "required_point_coverage": 0.7,
+      "citation_validity": 1.0,
+      "unsupported_claim_rate": 0.6667,
+      "structured_output_rate": 1.0,
+      "false_insufficient_count": 0,
+      "formula_accuracy": 0.0,
+      "model_load_seconds": null,
+      "p50_latency_seconds": 7.2613,
+      "p95_latency_seconds": 7.6895,
+      "p50_time_to_first_token_seconds": null,
+      "p95_time_to_first_token_seconds": null,
+      "mean_tokens_per_second": 64.8786,
+      "peak_rss_bytes": null
+    },
+    "retrieved": {
+      "questions": 3,
+      "completed": 3,
+      "required_point_coverage": 0.6333,
+      "citation_validity": 1.0,
+      "unsupported_claim_rate": 0.6667,
+      "structured_output_rate": 1.0,
+      "false_insufficient_count": 0,
+      "formula_accuracy": 0.0,
+      "model_load_seconds": null,
+      "p50_latency_seconds": 5.7416,
+      "p95_latency_seconds": 6.3963,
+      "p50_time_to_first_token_seconds": null,
+      "p95_time_to_first_token_seconds": null,
+      "mean_tokens_per_second": 85.1616,
+      "peak_rss_bytes": null
+    }
+  }
+}

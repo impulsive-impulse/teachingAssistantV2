@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "4bf32bf97f3fb58a6c0835c8def235c0a2f7427d16f0f3786c24973dfd6c746e",
+  "question_id": "GEN-BIO-016",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:28+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"In humans, sex determination is controlled by the sex chromosomes, which are a specific pair of chromosomes among the 23 pairs present in each cell. Humans have 22 pairs of autosomes, which are chromosomes that do not differ between males and females. The 23rd pair consists of the sex chromosomes, which are either X or Y. Females have two X chromosomes (XX), while males have one X and one Y chromosome (XY).\\n\\nDuring reproduction, the mother provides an X chromosome in all her eggs, while the father can provide either an X or a Y chromosome in his sperm. If a sperm carrying an X chromosome fertilizes the egg, the resulting combination is XX, and the baby will be female. If a sperm carrying a Y chromosome fertilizes the egg, the combination is XY, and the baby will be male. Therefore, the sex of the baby is determined by the type of sperm that fertilizes the egg, making the father responsible for determining the sex of the baby.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":197,\"textbook_page\":188}],\"missing_information\":[]}",
+    "latency_seconds": 2.9438,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0687e90f1146faa5006a5b419706d88197ae7e6589f2a067f4",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1280,
+      "completion_tokens": 246,
+      "total_tokens": 1526
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "108dff327d15a8c72db3c220aab3a70b528196d04842616b2e0a9ee0de5bd786",
+  "question_id": "GEN-BIO-009",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:15+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Phototropism in plants occurs when they respond to light by bending towards it. This process was studied by Charles Darwin and his son, who found that when the tip of a plant's stem (coleoptile) is covered and exposed to light from one side, the plant does not bend. However, if light is allowed to reach the tip, the plant bends towards the light. This indicates that some 'influence' is transmitted from the tip to the lower parts of the plant, causing it to bend.\\n\\nF.W. Went later identified this 'influence' as a chemical stimulus, which he named auxin. He demonstrated that when the coleoptile tips were placed on agar blocks and then applied to one side of a decapitated seedling, the seedling bent away from the side with the agar block. This showed that auxin, a plant hormone, is responsible for the bending by promoting growth on one side of the plant, causing it to bend towards the light source. Thus, phototropism is a result of the uneven distribution of auxin in response to light, leading to differential growth and bending towards the light.\",\"selected_evidence_ids\":[\"E1\",\"E2\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":127,\"textbook_page\":118},{\"evidence_id\":\"E2\",\"pdf_page\":128,\"textbook_page\":119}],\"missing_information\":[]}",
+    "latency_seconds": 3.716,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0b5a6d42d2da32b6006a5b41899f2c8190bca179fb0058c4e5",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1289,
+      "completion_tokens": 297,
+      "total_tokens": 1586
+    }
+  }
+}

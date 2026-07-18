@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "4bbbc1fa707380261643ab1a43390241751e8cacce7c63e6cfb5af678074b1a3",
+  "question_id": "GEN-BIO-008",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:11+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Some people need to use a dialysis machine when their kidneys are damaged and unable to filter waste products from the blood. This can happen due to infections, injury, high blood pressure, high blood sugar, or restricted blood flow to the kidneys, leading to the accumulation of poisonous wastes in the body, which can be fatal.\\n\\nThe principle of a dialysis machine, also known as an artificial kidney, involves a process called 'haemodialysis.' In this process, blood is taken from the main artery and mixed with an anticoagulant to prevent clotting. It is then pumped into a device called a dialyzer. Inside the dialyzer, the blood flows through tubes made of cellophane, which are surrounded by a dialyzing fluid. This fluid has a similar composition to blood plasma but lacks nitrogenous wastes.\\n\\nA thin membrane separates the blood from the dialyzing fluid. Because the dialyzing fluid does not contain nitrogenous wastes, these wastes move from the blood into the fluid, effectively cleaning the blood. The cleaned blood is then returned to the body through a vein after adding an anticoagulant. Each dialysis session typically lasts between 3 to 6 hours. This process mimics the waste removal function of the kidneys but does not involve reabsorption of substances, which is a part of natural kidney function.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":97,\"textbook_page\":88}],\"missing_information\":[]}",
+    "latency_seconds": 2.9244,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0dc021e719015a70006a5b4186ade08197a0f0f4bbabeea905",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1019,
+      "completion_tokens": 318,
+      "total_tokens": 1337
+    }
+  }
+}

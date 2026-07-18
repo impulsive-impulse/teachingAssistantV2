@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "601f184b0ade8e22bcb3eb81bf05b052d18cc09b14622b494959869a5e5c515a",
+  "question_id": "GEN-BIO-011",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:19+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Fish and frogs produce a huge number of eggs each year because they undergo external fertilization. In this process, the female lays a large number of eggs in water, and the male releases millions of sperms over them. Since fertilization occurs outside the body and is controlled by natural conditions, producing a vast number of eggs and sperms increases the chances of successful fertilization.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":139,\"textbook_page\":130}],\"missing_information\":[]}",
+    "latency_seconds": 1.808,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_0585b8d0cf8c413f006a5b418ffef88195b9f975bb58461e5a",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 1325,
+      "completion_tokens": 119,
+      "total_tokens": 1444
+    }
+  }
+}

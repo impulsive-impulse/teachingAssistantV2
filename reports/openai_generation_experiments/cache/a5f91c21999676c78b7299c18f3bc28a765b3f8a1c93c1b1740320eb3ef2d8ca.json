@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "a5f91c21999676c78b7299c18f3bc28a765b3f8a1c93c1b1740320eb3ef2d8ca",
+  "question_id": "GEN-BIO-019",
+  "evaluation_mode": "gold",
+  "created_at": "2026-07-18T09:04:35+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Sustainable development is the practice of using the environment in ways that ensure resources are available for the future. It involves managing and conserving resources so that development and conservation can coexist harmoniously. This approach is crucial in natural resource management because it helps maintain the balance of ecosystems while allowing for human needs to be met. For example, sustainable forestry practices ensure that forests continue to provide resources and habitats without being depleted. This is important because forests are vital for biodiversity, climate regulation, and providing resources like wood and food. By adopting sustainable practices, we can prevent issues like deforestation, which leads to habitat destruction and contributes to global warming through the release of greenhouse gases.\",\"selected_evidence_ids\":[\"E1\"],\"citations\":[{\"evidence_id\":\"E1\",\"pdf_page\":245,\"textbook_page\":236}],\"missing_information\":[]}",
+    "latency_seconds": 2.7695,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_03409f8bdf7a7964006a5b419eebf881948b0ef664cdae4a16",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 679,
+      "completion_tokens": 176,
+      "total_tokens": 855
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "request_sha256": "5c8e0d469351f73211a1c308843abacae7bd6c7ae5456dc3a9e6e5f2f99991ae",
+  "question_id": "GEN-BIO-019",
+  "evaluation_mode": "retrieved",
+  "created_at": "2026-07-18T09:08:47+00:00",
+  "generation": {
+    "raw_text": "{\"status\":\"answered\",\"answer\":\"Sustainable development is the practice of using resources in a way that ensures they are available for future generations. It involves balancing the need for development with the need to conserve natural resources and protect the environment. This approach allows us to meet our current needs without compromising the ability of future generations to meet theirs.\\n\\nIn natural resource management, sustainable development is crucial because it helps ensure that resources like water, soil, and forests are used efficiently and responsibly. By managing these resources sustainably, we can prevent their depletion and maintain ecological balance. For example, sustainable forestry practices ensure that trees are harvested in a way that allows forests to regenerate, preserving habitats for wildlife and maintaining biodiversity.\",\"selected_evidence_ids\":[\"E2\"],\"citations\":[{\"evidence_id\":\"E2\",\"pdf_page\":244,\"textbook_page\":235}],\"missing_information\":[]}",
+    "latency_seconds": 2.5153,
+    "time_to_first_token_seconds": null,
+    "peak_rss_bytes": null,
+    "response_id": "resp_013fa7af85fe43e1006a5b429acb448190bc393cd5f942bc07",
+    "response_status": "completed",
+    "resolved_model": "gpt-4o-2024-08-06",
+    "usage": {
+      "prompt_tokens": 4359,
+      "completion_tokens": 178,
+      "total_tokens": 4537
+    }
+  }
+}
