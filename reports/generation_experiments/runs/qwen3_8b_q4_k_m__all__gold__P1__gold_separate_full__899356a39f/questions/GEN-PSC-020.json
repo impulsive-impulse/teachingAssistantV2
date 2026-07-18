@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f",
+  "question_id": "GEN-PSC-020",
+  "question": "Explain the cleansing action of soap.",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "f6e659ba0e8d2cdf5d9f43f6a73acea7299021da54d2a9a8357c7434a34fe18a",
+  "context_sha256": "812f2b82dd9a91191121d4742065846830446ceb2f2a7bbbb7912c1e38dfdf04",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 317,
+      "textbook_page": 302,
+      "text": "Carbon and its CompoundsGovernment’s Gift for Students’ Progress 302\nA soap molecule\nHydrophilic\nend\nHydrophobic\nend\nC\nO\nO\n12.15.3 Cleansing action of soap\nSuppose that we put dirty cloth in the soap solution. Dirt is mainly greasy\nmatter. The soap molecules are arranged radially with hydrocarbon ends\ndirected inwards into the greasy matter and ionic part directed outwards into\nwater.\nWhen a dirty cloth is inserted in the solution then the hydrocarbon part\nsticks to the dirt or oil. With a little agitation the\ndirt particles get entrapped by the soap micelles\nand get dispersed in water due to which the soap\nwater gets dirty and the cloth gets cleaned.\n· What is the action of soap particles on the\ngreasy cloth?\nWe know that soaps and detergents make oil\nand dirt present on the cloth come out into water, thereby making the cloth\nclean.\nSoap has one polar end (the end with carboxy) and one non-polar\nend (the end with hydrocarbon chain) as shown in the figure.\nThe polar end is hydrophilic in nature and this end is attracted towards\nwater.\nThe non-polar end is hydrophobic, in nature and it is attracted towards\ngrease or oil on the cloth, but not attracted towards water.\nWhen soap is dissolved in water, its hydrophobic ends attach themselves\nto dirt and remove it from the cloth, as shown sequentially in the figure that\nfollows.\nDirt\nFigure 1 : The hydrophobic end of the soap\nmolecules move towards the dirt or grease\nparticle.\nFigure 2: The hydrophobic ends attached to\nthe dirt particle and try to pull out.\ncloth\nSoap\nmolecules\nSoap\nsolution\nHydrophobic ends\nattach to the dirt\nparticle\nfigure 1\nfigure 2",
+      "text_sha256": "3b291fe9b525c013801291ba7dbbbbba49c87599cd62f51ba630a0fe655d784a"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 318,
+      "textbook_page": 303,
+      "text": "Carbon and its CompoundsGovernment’s Gift for Students’ Progress 303\nclean cloth\nRepresenting the\ncleansing action of\nsoap\nThird, Fourth\nFigure 3 & 4 : The molecules of soap surround\nthe dirt particle at the centre of the cluster\nand form a spherical structure called micelle.\nThese micelles remain suspended in water like\nparticles in a colloidal solution.\nThe various micelles present in water do not come\ntogether to form a precipitate as each micelle repels\nthe other because of the ion-ion repulsion.\nThus, the dust particles remain trapped in micelles\n(which remain suspended) and are easily rinsed away\nwith water. Hence, soap micelles remove dirt by\ndissolving it in water.\n· Carbon forms a large variety of compounds. Its tetravalency and the property of catenation and\nability to form four single bonds, a double bond and two single bonds, a triple bond and a single\nbond or two double bonds makes carbon versatile and brings one special branch in chemistry\nfor carbon compunds.\n· Hydrocarbons are the compounds of carbon and hydrogen.\n· Hydrocarbons are of two types – saturated hydrocarbons (alkanes) and unsaturated\nhydrocarbons (alkenes and alkynes).\n· Carbon forms covalent bonds with its own atoms and atoms of other elements such as hydrogen,\noxygen, sulphur, nitrogen and chlorine.\n· The functional groups such as alcohols, aldehydes, ketones and carboxylic acids bestow\ncharacteristic properties to the carbon compounds that contain them. Even C = C,C\nC , give\ncharacteristic properties.\ndirt with micelle\nKey words\nHybridisation, allotropy, diamond, graphite, buckminsterfullerene, nanotubes,\ncatenation, tetravalency, hydrocarbons, alkanes, alkenes, alkynes, saturated\nhydrocarbons, unsaturated hydrocarbons, functional group, isomerism, homologous\nseries, nomenclature, combustion, oxidation, addition reaction, substitution reaction,\nethanol, ethanoic acid, ester, esterification, saponification, micelle.\nWhat we have learnt\ndirt with micelle",
+      "text_sha256": "3db907c21c45372fe9580f798f4a0daa3467cf87383bfdde5b2e58daf41e08e2"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"The cleansing action of soap is due to the unique structure of soap molecules. Each soap molecule has two ends: one is hydrophilic (water-loving) and the other is hydrophobic (water-repelling). When soap is mixed with water, the hydrophobic end of the soap molecule attaches to dirt or grease on the cloth, while the hydrophilic end remains in contact with water. This causes the soap molecules to form structures called micelles, where the hydrophobic ends cluster together around the dirt particles, and the hydrophilic ends face outward, allowing the dirt to be suspended in water. As a result, the dirt is dispersed in water and can be rinsed away, leaving the cloth clean.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 317,\n      \"textbook_page\": 302\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 21.04275520000374,
+    "latency_seconds": 49.90467930000159,
+    "usage": {
+      "completion_tokens": 221,
+      "prompt_tokens": 1091,
+      "total_tokens": 1312,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-oK3cK3UoO3eZnXSIlTkuDyNhEkMkuvAq",
+    "peak_rss_bytes": 18785103872
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "The cleansing action of soap is due to the unique structure of soap molecules. Each soap molecule has two ends: one is hydrophilic (water-loving) and the other is hydrophobic (water-repelling). When soap is mixed with water, the hydrophobic end of the soap molecule attaches to dirt or grease on the cloth, while the hydrophilic end remains in contact with water. This causes the soap molecules to form structures called micelles, where the hydrophobic ends cluster together around the dirt particles, and the hydrophilic ends face outward, allowing the dirt to be suspended in water. As a result, the dirt is dispersed in water and can be rinsed away, leaving the cloth clean.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 317,
+        "textbook_page": 302
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "A soap molecule has a hydrophilic ionic/polar end and hydrophobic hydrocarbon tail",
+        "token_recall": 0.5556,
+        "matched": true
+      },
+      {
+        "point": "Tails embed in grease while heads remain in water",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "Agitation forms micelles around dirt",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Like-charge repulsion keeps droplets suspended",
+        "token_recall": 0.1667,
+        "matched": false
+      },
+      {
+        "point": "The dirt-containing micelles are washed away",
+        "token_recall": 0.6,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.8,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 112
+  },
+  "completed_at": "2026-07-17T19:15:23+00:00"
+}

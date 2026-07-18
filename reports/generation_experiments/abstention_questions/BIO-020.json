@@ -1,0 +1,153 @@
+{
+  "question_id": "BIO-020",
+  "question": "Which kidney disease does a particular patient have based only on frequent urination?",
+  "book_id": "biology",
+  "diagnostic_type": "weak_evidence",
+  "prompt_sha256": "e9fa690868420bcf76a3ea894ad9330ef062163eaa7bfd9ec3987b3d97083289",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 96,
+      "textbook_page": 87,
+      "pdf_pages": [
+        96,
+        97,
+        98,
+        99
+      ],
+      "textbook_pages": [
+        87,
+        88,
+        89,
+        90
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Hands and feet may swell.\nYou feel tired and weak because blood is not\npurified properly.\nIs there any solution to this problem?\nLet us know about artificial kidneys.\nThink and discuss\nxDo all cells need excretion?\nxWhy are we advised to take sufficient water?\nxWhy do some children pass urine during sleep at night until 15\nor 16 years of age?\nExcretion88\n4.6 Dialysis Machine (Artificial kidney)\nKidneys are vital organs for survival.\nSeveral factors like infections, injury, very\nhigh blood pressure, very high blood sugar\nor restricted blood flow to kidneys leads to\naccumulation of poisonous wastes in the\nbody and leads to death.\nDialysis machine is used to filter the\nblood of a person when both kidneys are\ndamaged.\nThe process is called\n‘haemodialysis’.\nIn this process, blood is taken out from the main artery,\nmixed with an anticoagulant, such as heparin, and then pumped into the\napparatus called dialyzer.\nIn this apparatus blood flows through channels\nor tubes which are madeup of cellophane.\nThese tubes are embedded in\nthe dialyzing fluid.\nA thin membrane separates the blood flowing inside\nthe tube and dialyzing fluid (dialysis), which has the same composition as\nthat of plasma, except the nitrogenous wastes.\nAs nitrogenous wastes are absent in dialyzing fluids, these substances\nfrom the blood move out freely, there by cleaning the blood of its wastes.\nThis process is called \"dialysis\".\nThis is similar to the function of the\nkidney, but is different as there is no reabsorption involved .The cleaned\nblood is pumped back to the body through a vein after adding anti-coagulant\n(heparin).\nEach dialysis session lasts for 3 to 6 hours.\nThis method has\nbeen using for thousands of uremic / kidney failure patients all over the\nworld.\nx Is there any long term solution for kidney failure patients?\nFig-7: Dialysis\nExcretion89\n4.7 Kidney transplantation\nThe best long term solution for kidney failure (acute renal failure) is\nKidney transplantation.\nA functioning kidney is used in transplantation from\na donor preferably a close relative.\nThe kidney that is received by a recipient\nmust be a good match to his body, to minimize the chances of rejection of\ntransplanted kidney by the immune system of the recipient.\nModern clinical\nprocedures have increased the success rate of such complicated technique.\nx Where is the transplanted kidney fixed in the\nbody of a kidney failure patient?\nx What do they do to failed kidneys?\nx Can donor lead normal life with single kidney\nwithout any complications?\nNow a days the process of organ donation helps\na lot for kidney failure patients.\nOrgans are collected\nfrom brain dead patients, then transplanted to the\nrecepient.\nThis is called organ donation.\nTo know\nmore about organ donation see in annexure.\n4.8 Other pathways of excretion (accessory excretory organs)\nYou have learnt about kidney, chief excretory organ of our body.\nx What are the other excretory organs of human body?\nLungs, skin, liver and large intestine have their own specific functions\nbut carry out excretion as a secondary function.\nLungs: In respiratory process lungs remove carbon dioxide and water\nvapour.\nSkin: It consists of large number of sweat glands richly supplied with\nblood capillaries, from which they extract sweat and some metabolic\nwastes from blood.\nSince the skin sends out plenty of water and small\namount of salts in the form of sweat.\nIt serves as an accessory excretory\norgan.\nFig-8: Kidney transplantation\nExcretion90\nSebaceous glands in skin secrete sebum, which contains waxes, sterols,\nhydrocarbons and fatty acids.\nx Collect information on sebum from library books and prepare a news\nbulletin, display it on bulletin board.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00053"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 95,
+      "textbook_page": 86,
+      "pdf_pages": [
+        95,
+        96,
+        97
+      ],
+      "textbook_pages": [
+        86,
+        87,
+        88
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "4.3.2 Urinary bladder\nIt is a median, pear shaped and distensible sac.\nIt is situated in the\npelvic region on the ventral side of the rectum in the abdomen.\nIt stores\n300-800ml of urine temporarily which is brought by two ureters.\n4.3.3 Urethra\nIt is a tube that takes urine from urinary bladder to outside.\nThe opening\nof urinary bladder into urethra is guarded by a ring of muscles or sphincter.\nUrethra is 4 cm long in females and open in to vestibule where as in males\nit is about 20cm long.\nIts opening is separate in females but is in common\nwith the reproductive tract in males (urino-genital duct).\n4.4 Micturition\nThe urine is temporarily stored in the bladder.\nThere are two sets of\ncircular sphincter muscles in the bladder.\nWhen the bladder is filling up,\nboth these sets of muscles are constricted, so the exit is closed.\nHowever\nas the pressure of the urine increases the walls of the bladder are stretched\nand this triggers off an automatic reflex action which causes the upper\nsphincter to relax.\nBut the lower sphincter is under the control of brain.\nSo urination is controlled.\nControl of urination is not possessed by very\nyoung children but is gradually learned.\nUrinary bladder can store a maximum of 700-800 ml. of urine.\nUrge\nfor micturition occurs when urinary bladder is filled with 300 - 400 ml. of\nurine.\nThe stretched bladder stimulates nerve endings and sends signlas to\nthe brain.\nAt this time the urge becomes painful and leads to voluntary\nmicturition (release of urine from urinary bladder).\nTotal amount of urine\nexcreted per day is about 1.6-1.8 litres.\nIts quantity increases with larger\nintake of fluids like water, fruit juices and decreases with lesser intake.\nExcretion87\n4.5 Composition of urine\nUrine is light yellowish fluid.\nUrochrome formed by the breakdown\nof haemoglobin in the blood is responsible for the yellowish colour of\nurine.\nIt is a transparent fluid formed by urinary system.\nComposition of\nnormal urine varies considerably depending on several factors.\nFor instance\ntaking a protein rich diet will results the formation of more urea in the\nurine.\nThis is because the proteins get de-aminated in the liver with\nsubsequent formation of urea.\nEven sugar can appear in a normal person\nafter a heavy intake of carbohydrates (sugars).\nA large intake of liquids or\nwater - rich food increases the volume of water in the blood, hence more\noften urine is excreted.\nUrine contains 96% of water, 2.5% of organic substances (urea, uric\nacid, creatine, creatinine, water soluble vitamins, hormones, and oxalates\netc) and 1.5% of inorganic solutes (sodium, chloride, phosphate, sulphate,\nmagnesium, calcium, iodine etc).\nIt is acidic (pH=6.0)in the beginning\nbut gradually becomes alkaline due to breakdown of urea to form ammonia.\nx What happens if both kidneys fail completely?\nComplete and irreversible kidney failure is called End Stage Renal\nDisease (ESRD).\nIf kidneys stop working completely, our body is filled\nwith extra water and waste products.\nThis condition is called \"uremia.\"\nHands and feet may swell.\nYou feel tired and weak because blood is not\npurified properly.\nIs there any solution to this problem?\nLet us know about artificial kidneys.\nThink and discuss\nxDo all cells need excretion?\nxWhy are we advised to take sufficient water?\nxWhy do some children pass urine during sleep at night until 15\nor 16 years of age?\nExcretion88\n4.6 Dialysis Machine (Artificial kidney)\nKidneys are vital organs for survival.\nSeveral factors like infections, injury, very\nhigh blood pressure, very high blood sugar\nor restricted blood flow to kidneys leads to\naccumulation of poisonous wastes in the",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00052"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 107,
+      "textbook_page": 98,
+      "pdf_pages": [
+        107,
+        108
+      ],
+      "textbook_pages": [
+        98,
+        99
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Gums and resins are the __________ products of the plants.\n6.\nBowman’s capsule and glomerulus together make ___________.\n7.\nThe alkaloid used for malaria treatment is ________________.\n8.\nThe principle involved in dialysis is __________________.\n9.\nRubber is produced from ______________ of Heavea braziliensis of rubber plants.\n10. ________________ performed first Kidney Transplantation.\n1.\nThe structural and functional unit of human kidney is called ( )\n(A) Neuron (B) nephron (C) nephridia (D) flame cell\n2.\nThe excretory organ in cockroach ( )\n(A) malpighian tubules (B) renette cells (C) flame cells (D) nephridia\n3.\nWhich of the following is the correct path taken by urine in our body? ( )\n(i) Kidneys (ii) Ureters (iii) Urethra (iv) Urinary bladder\n(A) i, ii, iv, iii (B) i, ii, iii, iv\n(c) iv, iii, i, ii (D) ii, iii, i, iv\n4.\nNephridia are excretory organs in ( )\n(A) earth worm (B) house fly (C) flat worm (D) hen\n5.\nMajor component of human urine is ( )\n(A) urea (B) sodium (C) water (D) creatinine\n6.\nSpecial excretory organs are absent in ( )\n(A) birds (B) amoeba (C) fish (D) snail\n7.\nWhich of the following hormone has direct impact on urination? ( )\n(A) adrenalin (B) vasopressin (C) testosterone (D) Oestrogen\n8.\nAmber colour of urine is due to ( )\n(A) urochrome ( B) bilirubin (C) biliverdin (D) chlorides\n9.\nCorrect sequence of urine formation in nephron is ( )\n(A) Glomerular filtration o Tubular reabsorption o Tubular secretion\n(B)Tubular reabsorption o Tubular secretion o Glomerular filtration\n(C)Tubular secretion o Glomerular filtration o Tubular reabsorption\n(D)Tubular reabsorption o concentration of urine o Tubular secretion\n10.\nPart of the nephron that exists in outer zone of kidney . ( )\nA) Loop of henle B) PCT C) DCT D) Bowman’s capsule\n11.\nAfter having lunch or dinner one can feel to pass urine, because of a ( )\nA) Pressure on urinary bladder B) Solids become liquids\nC) Water content in food material D) Spincter relaxation\nChoose the correct answer\nExcretion99\nOrgan donation - A gift for life\nThere is very less awareness among people about organ donation.\nSociety needs much\nawareness on organ donation, so that we can save many lives who are in need of different\norgans from donars for their survival.\nInstead of living in their memories, let us give them\na chance to live in others for one more life.\nBecause we are human beings.\nKind hearted\nhuman beings.\nSo many patients are waiting for suitable organ due to failure of vital organs.\nIn\nHyderabad where there are kidney transplantation facilities minimum 25 patients per\nhospital are waiting for kidney donors.\nDaily 10 - 100 people met with accident in our\nState.\nOut of them some people get brain dead.\nIf we collect organs from brain dead patients\nin time, we can save minimum 5 peoples’ life.\nBut lack of awareness on organ donation\nthose who are willing to donate organs and those who need organs do not get proper\ninformation even facilities are there.\nMedical personnels from government and private\nhospitals are not informing about brain dead patients.\nIf they inform in appropriate time it\nwill be very useful to patients those who are waiting for organ donation.\nIn Hyderabad,\norgan Transplantation facility is available only in two government hospitals (NIMS and\nOsmania) and in more than 10 corporate hospitals.\nOther organs like cornea, kidney, liver,\nheart, lungs, skin, bone, intestines and pancreas can be transplanted from brain dead\npatients.The process of transplantation of organs from brain dead patients to another is\ncalled cadaver transplantation.\nIf any person is willing to donate organs or in needy get\norgans.\nThey must register their names in transplantation facility hospitals.\nCollect information about a voluntary organisation working on organ donation and make",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00059"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 93,
+      "textbook_page": 84,
+      "pdf_pages": [
+        93,
+        94,
+        95
+      ],
+      "textbook_pages": [
+        84,
+        85,
+        86
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Bowman’s capsule which\naccommodates one glomerulus, is lined by a single layer of squamous\nepithelial cells called podocytes.\nThere are fine pores between podocyte\ncells to allow passage of materials filtered out of glomerulus.\n2.\nRenal tubule\nIt has three parts.\n1.\nProximal Convoluted Tubule (PCT),\n2.\nLoop of Henle (which is U shaped),3.\nDistal Convoluted Tubule (DCT).\nDistal convoluted tubules open into a collecting tube.\nCollecting\ntubules form pyramids and calyces which open into the pelvis.\nPelvis leads\ninto the ureter.\nAll the parts of the renal tubule are surrounded by a network\nof peritubular capillaries formed from efferent arteriole.\nThe peritubular\ncapillaries join to form renal venule, which joins the other venules to\nform finally the renal vein.\nx Why the nephron is considered to be the structural and functional\nunit of the kidney?\n4.3 Mechanism of urine formation\nFormation of urine involves 4 stages.\nThey are :\n1.\nGlomerular filtration 2.\nTubular re-absorption\n3.\nTubular secretion and 4.\nFormation of concentrated urine.\nFig-6: Structure of a nephron\ncortex\nrenal vein\nmedulla\nrenal artery\nureternephron\nBowman’s capsule\nProximal convoluted\ntubule (PCT)\nDistal convoluted\ntubule (DCT)\nglomerulus\nmalpighian body\n{\nFig-5: Internal structure of kidney\nafferent\narteriole\nefferent arteriole\npelvis\ncalyces\ncollecting duct\nloop of Henle\nnetwork of blood\ncapillaries\nopen to pelvis\nhilum\nExcretion85\n1.\nGlomerular filtration :\nThe blood from renal artery flows into afferent arteriole of glomerulus.\nThis blood is filtered under high pressure.\nAs a result waste materials along\nwith some water and useful substances are filtered out.\nThey enter into the\nBowman’s capsule.\nThis is called glomular filtration.\nThis filterate is called\nas ‘primary urine’.\n2.\nTubular re-absorption :\nPrimary urine which is in glomerulus is almost equal to blood in\nchemical composition except the presence of blood cells.\nPeritubular\ncapillaries present around the Henle’s loop reabsorb essential substances\nand excess water present in the primary urine.\n3.\nTubular secretion :\nAfter reabsorption of essential substances and water urine travels\nthrough the loop of Henle.\nFrom peritubular capillaries, present around\nthe loop of Henle, waste materials left unfiltered in the blood during\nglomerulus filteration are secreted into the loop of Henle.\n4.\nFormation of concentrated Urine :\nUrine that reaches into the collecting tubule from the loop of Henle is\nfurther concentrated in the presence of hormone vasopressin.\nDeficiency\nof vasopressin causes excessive dilute urination.\nThis condition is called\nas ‘diabetes insipidus’.\nx Why do we urinate more often in winter?\nx What happens if reabsorption of water does not takes place?\nNow let us discuss remaining parts of excretory system.\n4.3.1 Ureters\nThere are a pair of whitish, narrow distensible and muscular tubes of\n30cm length.\nEach ureter arises from the hilum of each kidney.\n!\nDo you know?\nAfter the age of 40 years, the number of functioning nephrons usually\ndecreases by about 10% in every 10 years.\nExcretion86\nThey move downward and obliquely opens into the urinary bladder.\nUreter carries urine from the kidney to the urinary bladder.\nThe movement\nof urine in the ureter is through peristalsis.\n4.3.2 Urinary bladder\nIt is a median, pear shaped and distensible sac.\nIt is situated in the\npelvic region on the ventral side of the rectum in the abdomen.\nIt stores\n300-800ml of urine temporarily which is brought by two ureters.\n4.3.3 Urethra\nIt is a tube that takes urine from urinary bladder to outside.\nThe opening\nof urinary bladder into urethra is guarded by a ring of muscles or sphincter.\nUrethra is 4 cm long in females and open in to vestibule where as in males\nit is about 20cm long.\nIts opening is separate in females but is in common",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00051"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 27,
+      "textbook_page": 18,
+      "pdf_pages": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "textbook_pages": [
+        18,
+        19,
+        20,
+        21
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Food Mouth Buccal cavity Pharynx\nStomach Oesophagus\nSmall intestine Large intestine\nAnus Rectum\nPancreas Liver\nDuodenum\nNutrition 19\nV omiting also occurs when we eat something indigestible or\npoisonous.\nWhen we have a greenish vomit usually called as ‘bilious’ or ‘liverish’,\nwe get a bitter taste and it is often the result of overeating.\nThe liver is\nunable to cope with the excessive fat and we get a feeling of nausea.\nIndigestion is a general term used when there is difficulty in digesting\nfood.\nHealthy people can usually avoid problems related to digestion by:\na) having simple, well balanced meals\nb) avoiding physical exercise soon after eating food\nc) Drinking adequate quantity of water.\nd) Intake of fibre rich food to avoid constipation.\nA serious condition of indigestion is caused by stomach and duodenal\nulcers.\nThe cause of this may be the kind of diet, an infection or habit.\nYou\nhave studied about recent researches in the peptic ulcers caused by some\nbacteria in class-VIII.\n1.7 Diseases due to malnutrition\nFood is essentional to maintain all life processes in our body.\nOur\ndiet should be a balanced one which contains proper amount of\ncarbohydrates, proteins, vitamins, mineral salts and fats.\nTwo third of world\npopulation is affected by food related diseases.\nMost of the people are\nprone to various diseases due to lack of balanced diet.\nIt is very important\nto discuss about food deficiency diseases.\nEating of food that does not have one or more than one nutrients in\nrequired amount is known as malnutrition.\nPoor health, willful starvation,\nlack of awareness on nutritional values and proper food preparation\nmethods, socio-economic factors are all the reasons for malnutrition in\nour country.\nNutrition 20\nMalnutrition may be as follows.\n1.\nProtein malnutrition,\n2.\nCalorie malnutrition,\n3.\nProtein calorie malnutrition.\nLet us discuss some of diseases caused due to the effect of\nmalnutrition in children.\nKwashiorkor:\nThis is due to protein deficiency in diet.\nBody parts become\nswollen due to accumulation of water in the intercellular spaces.\nVery poor muscle development, swollen legs, fluffy face difficult\nto eat, diarrhoea, dry skin are the symptoms of this disease.\nMarasmus:\nThis is due to deficiency of both proteins and calories.\nGenerally this disease occurs when there is an immediate second\npregnancy or repeated child births.\nLean and weak, less developed\nmuscles, dry skin, diarrhoea, etc., are the symptoms of this disease.\nObesity:\nApart from the deficiency diseases mentioned above, the constant\nintake of high calorific food may lead to a condition called obesity.\nIn this condition a person gains extra fat and becomes overweight.\nObese children may suffer from problems related to cardiovascular,\nrenal, gallbladder etc.\n1.8 Vitamin deficiency diseases\nVitamins are organic substances.\nThey are micro nutrients\nrequired in small quantities.\nActually vitamins are not synthesised in\nthe body.\nGenerally we do not suffer from vitamin deficiency.\nThe\nsource of vitamins to our body is through two ways.\nOne is diet we\nintake and other is bacteria present in the intestine that synthesises\nand supplies vitamins to the body.\nVitamins are classified into two\ngroups.\nThey are : 1.\nWater soluble vitamins (B-complex, vitamin C)\n2.\nFat soluble vitamins (vitamin A, D, E and K).\nIf we take food that does not contain vitamins in right proportions, it\ncan be lead to vitamin deficiency disorders.\nLet us study the chart showing\nvitamins, available sources and deficiency diseases.\nFig-14: Kwashiorkor\nFig-15: Marasmus\nFig-17: Pellagra\nFig-16: Obesity\nNutrition 21\nVitamin\nCereals, oil seeds, vegetables,\nmilk, meat, fish, eggs.\nMilk, eggs, liver, kidney, green\nleafy vegetables.\nKidney, liver, meat, egg, fish,\noil seeds.\nCereals, oil seeds, vegetables,",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00010"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"insufficient_evidence\",\n  \"answer\": \"Based on the information provided, frequent urination alone is not sufficient to determine the specific kidney disease a patient has. The textbook evidence mentions conditions like End Stage Renal Disease (ESRD) and diabetes insipidus, which can cause frequent urination, but it does not provide enough details to conclusively identify the exact disease from this symptom alone.\",\n  \"selected_evidence_ids\": [\"E1\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 96,\n      \"textbook_page\": 87\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 93,\n      \"textbook_page\": 84\n    }\n  ],\n  \"missing_information\": [\n    \"Specific symptoms or diagnostic criteria for the kidney disease in question\",\n    \"Information linking frequent urination directly to a specific kidney disease\"\n  ]\n}",
+    "time_to_first_token_seconds": 125.66399589998764,
+    "latency_seconds": 183.66794929999742,
+    "usage": {
+      "completion_tokens": 214,
+      "prompt_tokens": 4813,
+      "total_tokens": 5027,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-LG0OooTCsCnXTYbQFJMVMewYUkD2VuBw",
+    "peak_rss_bytes": 11394625536
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "insufficient_evidence",
+    "answer": "Based on the information provided, frequent urination alone is not sufficient to determine the specific kidney disease a patient has. The textbook evidence mentions conditions like End Stage Renal Disease (ESRD) and diabetes insipidus, which can cause frequent urination, but it does not provide enough details to conclusively identify the exact disease from this symptom alone.",
+    "selected_evidence_ids": [
+      "E1",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 96,
+        "textbook_page": 87
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 93,
+        "textbook_page": 84
+      }
+    ],
+    "missing_information": [
+      "Specific symptoms or diagnostic criteria for the kidney disease in question",
+      "Information linking frequent urination directly to a specific kidney disease"
+    ],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "model_abstained": true,
+  "deterministic_citation_support": 0.4286,
+  "model_plus_support_check_abstained": true,
+  "completed_at": "2026-07-17T21:24:37+00:00"
+}

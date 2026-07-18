@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__01c91d4040",
+  "question_id": "GEN-PSC-010",
+  "question": "Explain briefly the reason for the blue colour of the sky.",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "774da212a29e9d27799025a8747f25588204f6cd95576ab3ea315f0693428a4e",
+  "context_sha256": "9939eb59501d5535515e07b02947df4a7c14ba9abf21489ed07e3ee155e20ef1",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 112,
+      "textbook_page": 102,
+      "pdf_pages": [
+        112,
+        113
+      ],
+      "textbook_pages": [
+        102,
+        103
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "to colour?\n· Is the speed of light of each colour different?\nThe situation we witnessed in activities (3) and (4) rule out ray theory\nof light.\nWe can consider that white light is a collection of waves with\ndifferent wavelengths.\nViolet colour is known to have the shortest\nwavelength while red is of the longest wavelength.\nAccording to wave theory, light can be thought of a wave propagating in all\ndirections.\nLight is an electromagnetic wave.\nHere no particle physically\noscillates back and forth.\nInstead, the magnitude of electric and magnetic\nfields, associated with the electromagnetic wave, vary periodically at every\npoint.\nThese oscillating electric and magnetic fields propagate in all\ndirections with the speed of light.\n· Can you guess now, why light splits into different colours when it\npasses through a prism?\nThe reason lies in the fact that, while the speed of light is constant in\nvacuum for all colours, it depends on the wavelength of light when it passes\nthrough a medium.\nWe know that refractive index is the ratio of speeds in\nvacuum and in the medium.\nConsequently, the refractive index of a medium\ndepends on wavelength of light.\nWhen white light passes through a medium,\neach colour selects its least time path and we have refraction of different\ncolours to different extents.\nThis results in separation of colours, producing\na spectrum on the wall and in the mirror as we saw in activities (3) and (4).\nIt has been experimentally found that refractive index decreases with an\nincrease in wavelength.\nIf we compare the wave lengths of seven colours\nin VIBGYOR, red colour has longest wavelength and violet colour has\nshortest wavelength.\nThe refractive index of red is low hence it suffers\nlow deviation.\nWe noticed that when white light passes through a prism, it splits into\nseven colours.\nLet us assume that you have sent a single colour ray through\nthe prism.\n· Does it split into more colours?\nWhy?\nWe know that the frequency of light is the property of the source and\nit is equal to number of waves leaving the source per second.\nThis cannot\nbe changed by any medium.\nHence frequency doesn’t change due to\nrefraction.\nThus coloured light passing through any transparent medium\nretains its colour.\n103 Human Eye and Colourful World\nfig-13\nSun light\nWater drop\nRed\nViolet\n42o\n40o\nWhen refraction occurs at the interface, the number of waves that are\nincident on the interface in a second must be equal to the number of waves\npassing through any point taken in another medium.\nThis means that the\nfrequency of the light wave remains unaltered while its wavelength changes\ndepending on the medium through which it passes.\nWe know that the relation\namong the speed of wave (v), wavelength ( l) and frequency (u) is.\nv = u l (frequency denoted by u)\nFor refraction at any interface, v is proportional to l.\nSpeed of the\nwave increases with increase in wavelength of light and vice versa.\n· Can you give an example in nature, where you observe colours as seen\nin activity 3?\nYour answer certainly is a rainbow.\nThat is a good example of dispersion\nof light.\n· When do you see a rainbow in the sky?\n· Can we create a rainbow artificially?\nLet us see how.\nActivity 5\nSelect a white coloured wall on which the sun rays fall.\nStand in front\nof a wall in such a way that the sun rays fall on your back.\nHold a tube\nthrough which water is flowing.\nPlace your finger in the tube to obstruct\nthe flow of water.\nWater comes out through the small gaps between the",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00060"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 113,
+      "textbook_page": 103,
+      "pdf_pages": [
+        113,
+        114,
+        115
+      ],
+      "textbook_pages": [
+        103,
+        104,
+        105
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "· Can you give an example in nature, where you observe colours as seen\nin activity 3?\nYour answer certainly is a rainbow.\nThat is a good example of dispersion\nof light.\n· When do you see a rainbow in the sky?\n· Can we create a rainbow artificially?\nLet us see how.\nActivity 5\nSelect a white coloured wall on which the sun rays fall.\nStand in front\nof a wall in such a way that the sun rays fall on your back.\nHold a tube\nthrough which water is flowing.\nPlace your finger in the tube to obstruct\nthe flow of water.\nWater comes out through the small gaps between the\ntube and your finger like a fountain.\nObserve the changes on the wall\nwhile the water shower is maintained; you can see colours on the wall.\n· How is that you are able to see colours on the wall?\n· Are the sun rays coming back to your eyes from the wall or from\nwater drops?\nLet us find out.\nThe beautiful colours of the\nrainbow are due to dispersion of the\nsunlight by millions of tiny water\ndroplets.\nLet us consider the case of\nan individual water drop.\nObserve fig.- 13.\nThe rays of\nsunlight enter the drop near its top\nsurface.\nAt this first refraction,\nthe white light is dispersed into\nits spectrum of colours,\n104 Human Eye and Colourful World\nfig-15\nSun light\nSun\n42o\n40o\nfig-14\nSun light\nWater\ndrops\nRed\nViolet\n42o\n40o\nRed\nViolet\nviolet being deviated the most and red the least.\nReaching the opposite\nside of the drop, each colour is reflected back into the drop because of\ntotal internal reflection.\nArriving at the surface of the drop, each colour is\nagain refracted into air.\nAt the second refraction the angle between red and\nviolet rays further increases when compared to the angle between those at\nfirst refraction.\nThe angle between the incoming and outgoing rays can be anything\nbetween 00 and about 42 0.\nWe observe bright rainbow when the angle\nbetween incoming and outgoing rays is near the maximum angle of 420.\nDiagrammatically it is shown in fig.- 13.Although each drop disperses a\nfull spectrum of colours, an observer is in a position to see only a single\ncolour from any one drop depending upon its position.\nIf violet light from a single drop reaches the eye of an observer, red\nlight from the same drop can’t reach his eye.\nIt goes elsewhere possibly\ndownwards of the eye of the\nobserver (see in fig.- 14).\nTo\nsee red light, one must look at\nthe drop higher in the sky.\nThe\ncolour red will be seen when the\nangle between a beam of\nsunlight and light sent back by a\ndrop is 42 0.\nThe colour violet\nis seen when the angle between\na sunbeam and light sent back\nby a drop is 40 0.\nIf you look at an angle between 40 0 and 420, you will\nobserve the remaining colours of VIBGYOR\n· Why does the light dispersed by the raindrops appear as a bow?\nTo find answer this question, we need a little geometric reasoning.\nFirst of all, a rainbow is not the\nflat two dimensional arc as it\nappears to us.\nThe rainbow\nyou see is actually a three\ndimensional cone with the tip at\nyour eye as shown in fig.- 15.\n105 Human Eye and Colourful World\nAll the drops that disperse the light towards you lie in the shape of the\ncone – a cone of different layers.\nThe drops that disperse red colour to\nyour eye are on the outer most layer of the cone, similarly the drops that",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00061"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 114,
+      "textbook_page": 104,
+      "pdf_pages": [
+        114,
+        115,
+        116
+      ],
+      "textbook_pages": [
+        104,
+        105,
+        106
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "· Why does the light dispersed by the raindrops appear as a bow?\nTo find answer this question, we need a little geometric reasoning.\nFirst of all, a rainbow is not the\nflat two dimensional arc as it\nappears to us.\nThe rainbow\nyou see is actually a three\ndimensional cone with the tip at\nyour eye as shown in fig.- 15.\n105 Human Eye and Colourful World\nAll the drops that disperse the light towards you lie in the shape of the\ncone – a cone of different layers.\nThe drops that disperse red colour to\nyour eye are on the outer most layer of the cone, similarly the drops that\ndisperse orange colour to your eye are on the layer of the cone beneath\nthe red colour cone.\nIn this way the cone responsible for yellow lies beneath\norange and so on it till the violet colour cone becomes the innermost\ncone.(see in fig.- 15).\nIt is our common experience that the sky appears blue in colour on a\nbright dry day.\n· Why is the sky blue?\nTo answer this question, you need to understand another phenomenon\nof light called scattering.\n· What is scattering?\nLet us see\n5.4.4 Scattering of Light\nScattering of light is a complex phenomenon.\nLet us try to understand\nthe idea of scattering.\n· Do you know what happens to the free atom or molecule when it is\nexposed to certain frequency of light?\nAtoms or molecules which are exposed to light absorb light energy\nand emit some part of the light energy in different directions.\nThis is the\nbasic process happens in scattering of light.\nThe effect of light on a molecule or an atom depends on the size of\natom or molecule.\nIf the size of the particle (atom or molecule) is small, it\nwill be affected by higher frequency (lower wave length) light and vice versa.\nThink and discuss\n· Can you imagine the shape of rainbow when observed during travel\nin an airplane?\nDiscuss with your friends and collect information.\n106 Human Eye and Colourful World\nLet us consider that a certain frequency of light is incident on an atom.\nThen the atom comes into vibration due to this light.\nThis in turn releases\nor re-emits light in all directions with different intensity.\nThe intensity of light is the energy of light passing through unit area of\nplane, taken normal to the direction of propagation of light, in one second.\nLet us consider that the free atom or free molecule\nis somewhere in space as shown in fig.- 16.\nLight of certain frequency falls on that atom or\nmolecule.\nThis atom or molecule responds to the light\nwhenever the size of the atom or molecule is\ncomparable to the wave length of light.\nIf this condition\nis satisfied, the atom absorbs light and vibrates.\nDue to\nthese vibrations, the atom re-emits a certain fraction\nof absorbed energy in all directions with different\nintensities.\nThe re-emitted light is called scattered light and the process\nof re-emission of light in all directions with different intensity is called\nscattering of light.\nThe atoms or molecules are called scattering centre.\nLet us take the angle ‘q’ between the incident light and a direction in which\nthe intensity of scattered light is observed, we call this angle as angle of\nscattering.\nIt is experimentally observed that the intensity of scattered light\nvaries with angle of scattering.\nThe intensity is maximum at 900 angle of\nscattering.\nThis is the reason for the appearance of clear blue colour when look at\nthe sky in a direction perpendicular to the direction of the sun rays.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00062"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 116,
+      "textbook_page": 106,
+      "pdf_pages": [
+        116,
+        117,
+        118
+      ],
+      "textbook_pages": [
+        106,
+        107,
+        108
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "of re-emission of light in all directions with different intensity is called\nscattering of light.\nThe atoms or molecules are called scattering centre.\nLet us take the angle ‘q’ between the incident light and a direction in which\nthe intensity of scattered light is observed, we call this angle as angle of\nscattering.\nIt is experimentally observed that the intensity of scattered light\nvaries with angle of scattering.\nThe intensity is maximum at 900 angle of\nscattering.\nThis is the reason for the appearance of clear blue colour when look at\nthe sky in a direction perpendicular to the direction of the sun rays.\nIf our\nangle of view is changed, the intensity of blue colour also changes.\nNow you might have got a doubt why scattering of light gives blue\ncolour only.\nWhy can’t it give other colours?\nLet us find out whether the scattering centres are responsible for the\nblue colour of the sky?\nWe know that our atmosphere contains different types of molecules\nand atoms.\nThe reason for blue sky is due to the molecules N2 and O2.\nThe\nsizes of these molecules are comparable to the wavelength of blue light.\nThese molecules act as scattering centres for scattering of blue light.\n· Why is that the sky appears white sometimes when you view it in certain\ndirection on hot days?\nfig-16\nSun light\nScattered light\nAtom\nfig-16\n107 Human Eye and Colourful World\nOur atmosphere contains atoms and molecules of different sizes.\nAccording to their sizes, they are able to scatter different wavelengths of\nlight.\nFor example, the size of the water molecule is greater than the size\nof the N2 or O2.\nIt acts as a scattering centre for other frequencies which\nare lower than the frequency of blue light.\nOn a hot day, due to rise in the temperature water vapour enters into\natmosphere which leads to abundant presence of water molecules in the\natmosphere.\nThese water molecules scatter the colours of other\nfrequencies (other than blue).\nAll such colours of other frequencies reach\nyour eye and the sky appears white.\n· Can we demonstrate scattering of light by an experiment?\nLet us try\nActivity 6\nTake a solution of sodium-thio-sulphate (hypo) and sulphuric acid in a\nglass beaker.\nPlace the beaker in an open place where abundant sun light is\navailable.\nWatch the formation of grains of sulphur and observe changes\nin the beaker.\nYou will notice that sulphur precipitates as the reaction is in progress.\nAt the beginning, the grains of sulphur are smaller in size and as the reaction\nprogresses, their size increases due to precipitation.\nSulphur grains appear blue in colour at the beginning and slowly their\ncolour becomes white as their size increases.\nThe reason for this is\nscattering of light.\nAt the beginning, the size of grains is small and almost\ncomparable to the wave length of blue light.\nHence they appear blue in the\nbeginning.\nAs the size of grains increases, their size becomes comparable\nto wave lengths of other colours.\nAs a result of this, they act as scattering\ncentres for other colours.\nThe combination of all these colours appears as\nwhite.\n· Do you know the reasons for appearance the red colour of sun during\nsunrise and at sunset?\nThe atmosphere contains free molecules and atoms with different sizes.\nThese molecules and atoms scatter light of different wavelengths which\n108 Human Eye and Colourful World\nare comparable to their size.\nMolecules having a size that is comparable to\nthe wavelength of red light are less in the atmosphere.\nHence scattering of\nred light is less when compared to the other colours of light.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00063"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 124,
+      "textbook_page": 114,
+      "pdf_pages": [
+        124,
+        125,
+        126
+      ],
+      "textbook_pages": [
+        114,
+        115,
+        116
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Electromagnetic waves can have a wide variety of frequencies.\nThe\nentire range of electromagnetic wave frequencies is known as the\nelectromagnetic spectrum.\nThe familiar example of the visible spectrum in nature is the formation\nof a rainbow.\nEach colour in a rainbow is characterized by a specified wavelength\nfrom red (higher wavelength) to violet (shorter wavelength).\nThese colours\n(wavelengths), that the human naked eye is sensitive to, are called visible\nlight.\nThe range of wavelengths covering red colour to violet colour is\ncalled the visible spectrum.\n6.1.2 Electromagnetic spectrum\nElectromagnetic waves can have a wide range of wavelengths.\nThe entire\nrange of wavelengths is known as the electromagnetic spectrum.\nThe electromagnetic spectrum consists of a continuous range of\nwavelengths from gamma rays at the shorter wavelength to radio waves at\nfig-2: Electromagnetic Spectrum\nCosmic\nrays g-rays\nx-rays\nUV IR\nMicro\nwaves\nRadio Broadcast\nband\nUltraviolet (UV)\nrays Infrared (IR) raysVisible light\n10-12 m\nShort wavelength Long wavelength\n400 nm 500 nm 600 nm 700 nm\n10-9 m\n1 nm\n10 -6 m\n1000 nm\n10-3 m\n1 mm\n100 m\n1 m\n103 m\n1 km\nRadar\nthe longer wavelength.\nBut our eyes are sensitive only to visible light.\n· What happens when you heat an iron rod on a flame?\n· Do you find any change in colour on heating an iron rod?\n115 Structure of Atom\nWhen you heat an iron rod, some of the heat energy is emitted as\nlight.\nFirst it turns red (lower energy corresponding to higher wavelength)\nand as the temperature rises it glows with orange, yellow, blue(higher\nenergy and of lower wavelength) or even white (all visible wavelengths) if\nthe temperature is high enough.\n· Do you observe any other colour at the same time when one colour is\nemitted?\nWhen the temperature is high enough, other colours will also be\nemitted, but due to higher intensity of one particular emitted colour\n(e.g., red), others cannot be observed.\nMax Planck broke with the ‘continuous energy’ tradition of\nelectromagnetic energy by assuming that the energy is always absorbed or\nemitted in multiples of hu;\nFor example: hu, 2 hu, 3 hu... nhu\nThat is, the energy for a certain frequency E can be represented by the\nequation E = hu, where ‘h’ is Planck’ s constant which has the value\n6.626 X 10 -34Js and ‘ u’ is the frequency of the radiation absorbed or\nemitted.\nThe energy (E) for the red colour (higher wavelength or lower\nfrequency) is lower compared to the energy of blue colour (lower\nwavelength or higher frequency).\nThe energy emitted from a material body\nincreases with increase in temperature.\nThe significance of Planck’s proposal is that, electromagnetic energy\ncan be gained or lost in discrete values and not in a continuous manner.\nHence, emission or absorption spectrum of light is a collection of a\ngroup of wavelengths.\n· Do you enjoy Deepavali fireworks?\nVariety of colours is seen from fireworks.\n· How do these colours come from fireworks?\nActivity 2\nTake a pinch of cupric chloride in a watch glass and make a paste with\nconcentrated hydrochloric acid.\nTake this paste on a platinum loop and\nintroduce it into a non-luminous flame.\n· What colour do you observe?\nCarry out similar activity with strontium chloride.\nCupric chloride produces a green colour flame while strontium\nchloride produces a crimson red flame.\n· Do you observe yellow light in street lamps?\n116 Structure of Atom\nSodium vapours produce yellow light in street lamps.\n· Why do different elements emit different flame colours when heated by\nthe same non-luminous flame?\nScientists found that each element emits its own characteristic colour.",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00068"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"The blue colour of the sky is due to the scattering of light by molecules in the atmosphere. According to the textbook, when sunlight enters the atmosphere, the smaller molecules like nitrogen (N2) and oxygen (O2) scatter the shorter wavelengths of light more effectively. Blue light has a shorter wavelength compared to other colours, so it is scattered in all directions. This scattered blue light reaches our eyes from all parts of the sky, making the sky appear blue. The intensity of scattered light is maximum at a 90-degree angle of scattering, which is why the sky appears blue when viewed perpendicular to the direction of the sun rays.\",\n  \"selected_evidence_ids\": [\"E3\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 114,\n      \"textbook_page\": 104\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 116,\n      \"textbook_page\": 106\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 227.8443054999807,
+    "latency_seconds": 324.9608908999944,
+    "usage": {
+      "completion_tokens": 242,
+      "prompt_tokens": 4210,
+      "total_tokens": 4452,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-I0PVGU8yAeSOUgLUmGgF5G611HFVstRI",
+    "peak_rss_bytes": 26506964992
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "The blue colour of the sky is due to the scattering of light by molecules in the atmosphere. According to the textbook, when sunlight enters the atmosphere, the smaller molecules like nitrogen (N2) and oxygen (O2) scatter the shorter wavelengths of light more effectively. Blue light has a shorter wavelength compared to other colours, so it is scattered in all directions. This scattered blue light reaches our eyes from all parts of the sky, making the sky appear blue. The intensity of scattered light is maximum at a 90-degree angle of scattering, which is why the sky appears blue when viewed perpendicular to the direction of the sun rays.",
+    "selected_evidence_ids": [
+      "E3",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E3",
+        "pdf_page": 114,
+        "textbook_page": 104
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 116,
+        "textbook_page": 106
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Sunlight is scattered by atmospheric molecules",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Scattering depends on wavelength/frequency and scatterer size",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Nitrogen and oxygen molecules preferentially scatter blue light toward observers",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Without the atmosphere the sky would appear dark",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 109
+  },
+  "completed_at": "2026-07-17T17:53:45+00:00"
+}

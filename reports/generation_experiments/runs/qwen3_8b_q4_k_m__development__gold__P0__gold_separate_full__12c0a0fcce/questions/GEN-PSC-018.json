@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P0__gold_separate_full__12c0a0fcce",
+  "question_id": "GEN-PSC-018",
+  "question": "Explain the working of an electric motor with a neat diagram.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": true,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "15f0b2bea6dd1d091c09e05fc374743617fd8ffe9ead267622e42ee95a2c50ec",
+  "context_sha256": "8abd05a50d63b83f52061938200c72c3fb7717dbe0c394ddad0d691668095712",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 248,
+      "textbook_page": 233,
+      "text": "Government’s Gift for Students’ Progress 233 Electromagnetism\n10.4.1 Electric Motor\nTo understand the working of an electric motor we\nneed to understand the behaviour of a current carrying\ncoil kept in a uniform magnetic field.\nConsider a rectangular coil kept in a uniform\nmagnetic field as shown in figure 12(a). Switch on the\ncircuit so that the current flows through the rectangular\ncoil. The direction of current in the coil is shown in\nfigure 12(a).\n· What is the angle made by AB and CD with magnetic\nfield?\nYou will notice that they are always at right angles to the magnetic\nfield.\n· Can you draw the direction of magnetic force on sides AB and CD?\nApply right hand rule to get the direction of magnetic force. At AB, the\nmagnetic force acts inward perpendicular (F ) to field of the magnet and\non CD, it acts outward (F ).\nThe force on the sides BC and DA varies because they make different\nangles at different positions of the coil in the field.\n· What are the directions of forces on BC and DA?\nIf the direction of currents in BC and DA are parallel to the magnetic\nfield, magnetic force does’t act on them. If the direction of currents in BC\nand DA are perpendicular to the field, at BC magnetic force pulls the coil\nup and at DA magnetic force pulls it down.\n· What is the net force on the rectangular coil?\nThe force on AB is equal and opposite to the force on CD due to external\nmagnetic field because they carry equal currents in the opposite direction.\nSum of these forces is zero; similarly the sum of the forces on sides BC\nand DA is also zero for the same reason.\nSo, net force on the coil is zero. But there is rotation of the coil. How\nis it possible?\n· Why does the coil rotate?\nfig-12(a)\nMagnetic field (B)\nF F\nA\nB C\nD",
+      "text_sha256": "6584964688fd0cffb817b5437bdfaea10c1972a584d6a0fb82ba830153d3a090"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"insufficient_evidence\",\n  \"answer\": \"The textbook provides an explanation of the working of an electric motor, mentioning the behavior of a current-carrying coil in a uniform magnetic field. It describes the forces acting on the sides of the coil and how they contribute to rotation. However, it does not include a diagram or a detailed explanation of the mechanism of rotation, which is essential for a complete understanding. Additionally, the text does not explain the role of the commutator or the split ring in maintaining the rotation of the coil.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 248,\n      \"textbook_page\": 233\n    }\n  ],\n  \"missing_information\": [\n    \"Diagram of the electric motor\",\n    \"Role of the commutator or split ring\",\n    \"Detailed explanation of the rotation mechanism\"\n  ]\n}",
+    "latency_seconds": 44.52714199999173,
+    "usage": {
+      "completion_tokens": 208,
+      "prompt_tokens": 591,
+      "total_tokens": 799,
+      "prompt_tokens_details": {
+        "cached_tokens": 121
+      }
+    },
+    "response_id": "chatcmpl-KTRuxoKzr6D0Ca96LgIaSU9UQcE0Ijk3"
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "insufficient_evidence",
+    "answer": "The textbook provides an explanation of the working of an electric motor, mentioning the behavior of a current-carrying coil in a uniform magnetic field. It describes the forces acting on the sides of the coil and how they contribute to rotation. However, it does not include a diagram or a detailed explanation of the mechanism of rotation, which is essential for a complete understanding. Additionally, the text does not explain the role of the commutator or the split ring in maintaining the rotation of the coil.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 248,
+        "textbook_page": 233
+      }
+    ],
+    "missing_information": [
+      "Diagram of the electric motor",
+      "Role of the commutator or split ring",
+      "Detailed explanation of the rotation mechanism"
+    ],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Place a current-carrying rectangular coil in a magnetic field",
+        "token_recall": 0.7143,
+        "matched": true
+      },
+      {
+        "point": "Opposite magnetic forces on the coil sides produce torque",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "Use the appropriate hand rule to give force directions",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "A split-ring commutator reverses current each half turn",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Electrical energy is converted to mechanical rotation",
+        "token_recall": 0.2,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.4,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": true,
+    "answer_word_count": 86
+  },
+  "completed_at": "2026-07-16T20:09:05+00:00"
+}

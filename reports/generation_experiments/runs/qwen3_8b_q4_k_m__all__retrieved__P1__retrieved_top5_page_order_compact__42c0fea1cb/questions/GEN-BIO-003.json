@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb",
+  "question_id": "GEN-BIO-003",
+  "question": "How are alveoli designed to maximise the exchange of gases?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "d73ca41e416f4f49f66912d825cd1ab6bf709fe730087528a07be8725af357d8",
+  "context_sha256": "b8de12c6205ae63241a3b295c2ab55314589c398333f42ebed4ad2e2bc7472e2",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 36,
+      "textbook_page": 27,
+      "pdf_pages": [
+        36,
+        37,
+        38
+      ],
+      "textbook_pages": [
+        27,
+        28,
+        29
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The air that we breathe out made lime water milky while the air that is\nformed after heating metal did not.\nHe noted that fixed air also made lime\nwater milky.\nHe drew immediately the logical conclusion regarding the process of\nrespiration.\nEither eminently respirable air (O 2) is changed to fixed air\n(CO2) in the lungs or it may be exchanging.\nFig-2: Priestley\nRespiration28\nThe amount of air reached to the lungs is completely exchanged with\nalmost equal volume of fixed air being given out into the air from the\nlungs.\nLavoisier’s findings lead way to several other researchers.\nx As thought by Lavoisier what is the fixed air?\nx According to his findings which gas is useful for inhalation?\nx What steps in the process of respiration does Lavoisier mention as\nan inference of his experiments?\nA few lines from a textbook of Human Physiology, written by a\nrenowned chemist, John Daper around mid-19th century goes like\nthis...‘‘The chief materials which a living being receives are matter\nthat can be burnt, water and oxygen gas; and out of the action of\nthese upon one another, all the physical phenomena of its life arise.\nWhat the body expels out is water, oxide of carbon, phosphorous,\nsulphur and others.’’\nThus, we can see that the role of major compounds and elements in\nthe process of respiration was known by mid 19 th century.\nThe events\ninvolved were not very clearly understood, but people believed that there\nwas some relationship between the heat produced in the body and the\nprocess of respiration.\nx It is a common observation that the air we breath out is warmer\nthan the air around us; does respiration have anything to do with\nthis?\nLet us study the steps involved in respiration in human beings to figure\nit out.\n2.2 Steps in Respiration\nThere are no strict demarcations of steps involved in the process of\nrespiration.\nIt is a very complex process of several physical and\nbiochemical processes.\nBut for a general understanding on what goes on,\nwe shall study under the following heads.\nAir movement into\nand out of lungs\nExchange of gases\nbetween alveoli\nand blood\nTransport of oxygen\nfrom blood capillaries\nof alveoli to body\ncells and return of\ncarbon dioxide from\nblood into alveoli by\ndiffusion\nExchanging of\noxygen from blood\ninto the cells and\ncarbon dioxide from\ncells into the blood\nUtilising oxygen by\ncell to combust the\nglucose to produce\ncarbon dioxide and\nwater and release\nenergy to be used\nfor life processes\nBreathing\nGaseous\nexchange in\nlungs\nGas transport\nby blood\nGaseous\nexchange at\ntissue level\nCellular\nRespiration\nRespiration29\n2.2.1 Breathing (Inhalation and Exhalation)\nIn the previous classes we did experiments to find out what was there\nin the air we breathe out.\nWe had seen that in a set up with lime water, it turned milky white fast\nas we breathe out into it as compared to a similar set up in which normal\nair was passed with the help of a syringe or pichkari in lime water.\nArrange apparatus as shown in figure-3 and try to do the experiment\nonce again to find out what happens.\nx What does this experiment indicate?\nx Which gas turns lime water milky?\nx Which gas is present in greater quantities in the breath out air as\ncompared to air around us?\nx We are also aware of the fact that water vapour deposits on a\nmirror if we breathe out on it.\nx Where does the water vapour come from in exhaled air?\nWe shall have to study the pathway of air in our body through our",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00015"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 43,
+      "textbook_page": 34,
+      "pdf_pages": [
+        43,
+        44,
+        45
+      ],
+      "textbook_pages": [
+        34,
+        35,
+        36
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Gaseous exchange takes place within the lungs by diffusion from the\nalveoli to blood capillaries and vice versa.\nThe carbondioxide in the blood\nis exchanged for oxygen in the alveoli.\nThese tiny air sacs in the lungs are\nAs a result of gaseous exchange, the composition of inhaled and exhaled air is different.\nSee the table given below.\nApproximate values are given in the table.\nGas % in inhaled air % in exhaled air\nOxygen 21 16\nCarbondioxide 0.03 4.4\nNitrogen 78 78\nx Why does the amount of Oxygen vary between exhaled and inhaled air?\nx What has raised the percentage of carbon dioxide in exhaled air?\nFig-8: Alveolus with Blood capillary\nbronchiole\nAlveoli\nblood capillary\ncarbondioxide\noxygen red blood corpuscles\nnumerous and only one cell thick.\nThey\nare surrounded by blood capillaries\nwhich are also only one cell thick.\nDeoxygenated blood, dark red in\ncolour flows from the heart through\nthese capillaries and collects oxygen\nfrom the alveoli.\nAt the same time, carbondioxide\npasses out of the capillaries and into the\nalveoli.\nWhen we breathe out, we get rid\nof this carbondioxide.\nThe bright red,\noxygen-rich blood is returned to the\nheart and pumped out to all parts of the\nbody.\nT able - 1\nRespiration35\nThe total lung capacity of human being is nearly 5800ml.\nNormally at rest we\ninhale and exhale 500ml of air approximately.\n1200ml of air remains in lungs after\ncomplete exhalation.\nRecall the activity of lung capacity performed by you in class VII\nin the chapter ‘Respiration in Organisms’.\n2.3.4 Transportation of gases\nWe know that air is a mixture of gases, that fills the lungs and the\nalveoli when enters our body.\nThe relative amount of different gases in air\nand their combining capacity with haemoglobin and other substances in\nblood determine their transport via blood in the body.\nWhen oxygen present in the air is within normal limits (around 21%)\nthen almost all of it is carried in the blood by binding to haemoglobin\nwhich is present in the red blood cells.\nHaemoglobin is also a coloured\npigment like chlorophyll the only major difference being it has Iron (Fe+)\nmolecule in place of Magnesium (Mg+) as in chlorophyll.\nAs oxygen is diffused in the blood, it rapidly combines with the\nhaemoglobin to form oxyhaemoglobin.\nNot only haemoglobin can combine\nwith oxygen, but the reverse can also happen to yield a molecule of\nhaemoglobin and oxygen at the tissue level.\nCarbon dioxide is usually transported as bicarbonate, while some\namount of it combines with haemoglobin and rest is dissolved in blood\nplasma.\nStudy the following equation for better understanding.\nHb + 4O2 Hb(O2)4 (in lungs)\nHb(O2)4 Hb + 4O2 (in tissues)\nIf haemoglobin is exposed to air at sea\nlevel, nearly every molecule combines with\noxygen to form oxyhaemoglobin.\nAt a height\nof 13 km (about 8 miles) above sea level, the\nconcentration of oxygen is much lower about\none fifth at sea level.\nFig-9: Mountaneer\n!\nDo you know?\n!\nDo you know?\nRespiration36\n2.3.5 Gaseous exchange (capillaries to cells and cells to capillaries)\nIn the capillaries over the tissues, haemoglobin meets a very different\nenvironment.\nThe tissue are continuously using oxygen, hence, the\nconcentration of oxygen is quite low in them.\nIt might be only one third of\nthat in the lungs.\nAs the concentration of oxygen is so low, oxyhaemoglobin releases\nthe oxygen molecule that enters the cells.\nIn the reactions that occur within\ncells in our bodies, carbon dioxide and water are produced and energy is\nreleased to be used up for different purposes.\nThe carbondioxide released\nby cells enters into the blood capillaries",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00019"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 52,
+      "textbook_page": 43,
+      "pdf_pages": [
+        52,
+        53
+      ],
+      "textbook_pages": [
+        43,
+        44
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "So heat is also released\nin excess quantity.\nThat’s why we feel warm.\nIf the oxygen is not sufficient\nduring vigorous exersise muscles start anaerobic respiration.\nHence, lactic\nacid is formed.\nWe know that accumulation of lactic acid causes pain in\nmuscle.\nWe reach normal position after some rest.\nDeep breathing helps\nus to restore energy in our body.\nRefer in annexure about Pranayama.\n2.8 Evolution in gases exchanging system\nExchange of gases is a common life process in all living organisms,\nbut it is not same in all.\nSingle celled organisms Amoeba or multicellular\norganisms like Hydra, Planaria, roundworms and earthworms obtain\noxygen and expel carbon dioxide directly from the body by the process of\ndiffusion.\nIn other multicellular animals special organs are evolved.\nAnimals\neither terrestrial or aquatic adapted to different types of respiration and\npossess different types of respiratory organs mostly depending on the\nhabitat in which they live.\nBody size, availability of water and the type of\ntheir circulatory system are some of the factors for the animals to develop\ndifferent types of respiratory organs.\nThere is tracheal respiratory system in insects like cockroach,\ngrasshopper etc.\nTracheal respiratory system consists of series of tubes\ncalled trachea.\nThis is divided into fine branches called tracheoles which\ncarry air directly to the cells in the tissues.\nSome aquatic animals like fishes have developed special organs for\nrespiration which are known as gills or branchiae.\nBlood supplied to gills\nthrough capillaries which have thin walls where gases are exchanged.\nThis\nis called branchial respiration (gill respiration).\nFish keeps its mouth open\nand lowers the floor of the oral cavity.\nAs a result water from outside will\nbe drawn into the oral cavity.\nNow the mouth is closed and the floor of the\noral cavity is raised.\nWater is pushed into the pharynx and is forced to gill\npouches through internal branchial apertures.\nGill lamellae are bathed with\nwater and absorbs the oxygen dissolved in the water.\nRespiration44\nFig-15: Lenticels on stem\nRespiration through skin is called cutaneous respiration.\nFrog an\namphibian can respire through cutaneous and pulmonary respiration\n(through lungs) processes as well as Bucco-Pharyngeal Cavity.\nTerrestrial\nanimals like reptiles, birds and mammals, respire through lungs.\nAsk your\nteacher how crocodiles and dolphins respire?\nFig-14: Leaf as a respiratory organ\nwater film\nstomata\nair spaces\n2.9 Respiration in Plants\nYou already know about stomata in leaf where\ngaseous exchange takes place in plants.\nThere are\nother areas on the plant body as well through which\ngaseous exchange take place like surface of aerial\nroots, lenticels on stem etc.\nSome plants have\nspecialized structures like breathing roots of\nmangrove plants that produces oxygen is also\nrequired by plants to produce energy and carbon\ndioxide is released.\n2.9.1 Transportation of gases in plants\nThe stomatal openings lead to a series of spaces\nbetween the cells inside the plant.\nWhich form a\ncontinuous network all over the plant.\nThe spaces\nare very large in the leaves, much smaller in other\nparts of the plant.\nThe air spaces are lined with water\nwhere the oxygen is dissolved in this and passes\nthrough the porous cell walls into the cytoplasm.\nHere the glucose is broken down into carbon dioxide\nand water with the liberation of the energy.\nThe\nenergy released is stored in mitochondria in the form\nof A TP to perform metabolic activities.\nThe carbon dioxide passes out into the air spaces\nby a similar method.\nThe whole system works by\ndiffusion as the oxygen is used up by the cells a\ngradient develops between the cells and the air in\nthe spaces.",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00025"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 56,
+      "textbook_page": 47,
+      "pdf_pages": [
+        56,
+        57
+      ],
+      "textbook_pages": [
+        47,
+        48
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x The lungs have millions of alveoli and each lies in contact with capillaries.\nx Diaphragm is a muscular tissue present at the floor of the chest cavity.\nx During inspiration (inhalation) the volume of the chest cavity is increased as the diaphragm contracts\nand dome flattens out, its internal pressure decreases and the air from the outside rushes into the\nlungs.\nx During expiration, the chest wall is lowered and moves inward, and the diaphragm relaxes and\nassumes its dome shape.\nThese changes increase the pressure on the lungs; their elastic tissue\ncontracts and squeezes the air out through the nose to the external atmosphere.\nx Air is filtered in the nasal cavity and the whole length of the trachea.\nx The moist surface of the lining of the nasal cavity, and the hairs growing from its sides, remove some\nof the tiny particles of dirt in the air.\nIn addition, as the inhaled air passes through the nasal cavity, its\ntemperature is brought close to that of the body, and it takes up water vapour.\nSo that it becomes\nmore moist than before.\nx Pharynx is a common passage of digestive and respiratory system.\nEpiglottis, a flap like muscular\nvalve controls movement of air and food towards their respective passages.\nx Larynx is a stiff box like structure containing our vocal cords.\nWhen air passes out of the lungs and\nover the vocal cords, it causes them to vibrate.\nThis produces sounds on the basis of our speech,\nsong etc.\nWhat we have learnt?\nRespiration48\nx Trachea is the wind pipe channeling air to lungs.\nx At its lower end in chest cavity the trachea or the wind pipe divides into two bronchi-one leading to\neach lung.\nx The bronchi divide into smaller and smaller branches called bronchioles.\nx These finally terminate in clusters of air sacs called alveolus in the lungs which are very small and\nnumerous.\nGaseous exchange takes place here as blood capillaries take up oxygen and expel\ncarbon dioxide here.\nx Aerobic respiration occurs in adequate supply of air producing a lot of energy, carbon dioxide and\nwater.\nx Anaerobic respiration and fermentation occurs in inadequate supply or absence of oxygen to produce\nenergy.\nx Cells may resort to the breakdown of 3 carbon compound, pyruvate, aerobically or anaerobically\ndepending upon the availability of oxygen.\nUsually in multicellular organisms cells fail to carry on\nthe process of anaerobic respiration for long.\nx Respiration is not essentially a process of combustion differ due to following reasons\n- Glucose must be burnt at high temperature in the laboratory to liberate energy, if it happened in\nour cells, all cells would be burnt.\n- Once glucose starts burning we can’t stop the process easily, but living cells are able to exercise\ncontrol over the sort of burning of glucose in the presence of oxygen.\n- W ater normally stops combustion from taking place while cells contain a lot of water and\nrespiration still goes on.\nx Photosynthesis and respiration appear to be opposing reactions, but both have very different\nbiochemical pathways and are essential for a plant’s metabolism.\nx Photosynthesis takes place in the chloroplast to produce sugars, starch and other carbohydrates\nfor the plant’s metabolic needs.\nx Cellular respiration occurs in mitochondria where mainly these carbohydrates are “oxidised” to\nproduce chemical energy to do work at the cellular level.\n1.\nDistinguish between (AS1)\na) inspiration and expiration b) aerobic and anaerobic respiration\nc) respiration and combustion d) photosynthesis and respiration\n2.\nWrite two similarities between aerobic and anaerobic respiration. (AS1)\n3.\nFood sometimes enters the wind pipe and causes choking.",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00028"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 57,
+      "textbook_page": 48,
+      "pdf_pages": [
+        57,
+        58
+      ],
+      "textbook_pages": [
+        48,
+        49
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x Photosynthesis and respiration appear to be opposing reactions, but both have very different\nbiochemical pathways and are essential for a plant’s metabolism.\nx Photosynthesis takes place in the chloroplast to produce sugars, starch and other carbohydrates\nfor the plant’s metabolic needs.\nx Cellular respiration occurs in mitochondria where mainly these carbohydrates are “oxidised” to\nproduce chemical energy to do work at the cellular level.\n1.\nDistinguish between (AS1)\na) inspiration and expiration b) aerobic and anaerobic respiration\nc) respiration and combustion d) photosynthesis and respiration\n2.\nWrite two similarities between aerobic and anaerobic respiration. (AS1)\n3.\nFood sometimes enters the wind pipe and causes choking.\nHow does it happen? (AS1)\n4.\nWhy does the rate of breathing increase while walking uphill at a normal pace in the mountains?\nGive two reasons. (AS1)\n5.\nAir leaves the tiny sacs in the lungs to pass into capillaries.\nWhat modification is needed in the\nstatement? (AS1)\n6.\nPlants carryout photosynthesis during daytime and respiration during the night.\nDo you agree to this\nstatement?\nWhy?\nWhy not? (AS1)\n7.\nWhy does a deep sea diver and mountainair carry oxygen cylinder on their back? (AS1)\n8.\nHow are alveoli designed to maximize the exchange of gases? (AS1)\n9.\nWhere will the release of energy from glucose in respiration take place?\nMala writes lungs while\nRaziya writes muscles.\nWho is correct and why? (AS1)\n10.\nWhat is the role of epiglottis and diaphragm in respiration? (AS1)\n11.\nHow does gaseous exchange takes place at blood level (or) cellular level? (AS1)\n12.\nExplain the mechanism of gaseous exchange at branchiole level. (AS1)\n13.\nAfter a vigorous excercise or work we feel pain in muscles.\nWhat is the relationship between pain\nand respiration? (AS1)\n14.\nRaju said stem also respire along with leaves in plants.\nCan you support this statement?\nGive your\nreasons. (AS1)\nImprove your learning\nRespiration49\n15.\nWhat happen if diaphragm is not there in the human body? (AS2)\n16.\nIf you have a chance to meet pulmonologist what questions are you going to ask about pulmonory\nrespiration? (AS2)\n17.\nWhat procedure do you follow to understand anaerobic respiration in your school laboratory?\n(AS3)\n18.\nWhat are your observations in combustion of sugar activity? (AS3)\n19.\nCollect information about cutaneous respiration in frog.\nPrepare a note and display them in your\nclassroom. (AS4)\n20.\nCollect information about respiratory diseases (because of pollution, tobacco) and discuss with\nyour classmates. (AS4)\n21.\nWhat is the pathway taken by air in the respiratory system?\nIllustrate with a labelled diagram.\n(AS5)\n22.\nDraw a block diagram showing events in respiration.\nWrite what you understood about cellular\nrespiration. (AS5)\n23.\nHow do you appreciate the mechanism of respiration in our body? (AS6)\n24.\nPrepare an article on anaerobic respiration to present school symposium. (AS7)\n25.\nPrepare a cartoon on discussion between haemoglobin and chlorophyll about respiration. (AS7)\n1.\nExhaled air contains _________ and _________.\n2.\nA flap like muscular valve controls movement of air and food is ___________.\n3.\nEnergy currency of the cell is called _____________.\n4.\nLenticels are the respiratory organs exists in __________ part of plant.\n5.\nMangroove trees respire with their ____________.\n1.\nW e will find vocal cords in ( )\nA) larynx B) pharynx C) nasal cavity D) trachea\n2.\nCluster of air sacs in lungs are called ( )\nA) alveoli B) bronchi C) bronchioles D) air spaces\n3.\nWhich of the following is correct ( )\ni) the diaphragm contracts - volume of chest cavity increased\nii) the diaphragm contracts - volume of chest cavity decreased\niii) the diaphragm relax - volume of chest cavity increased\niv) the diaphragm relax - volume of chest cavity decreased",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00029"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Alveoli are designed to maximize the exchange of gases due to their structural features. They are numerous, which increases the surface area for gas exchange. Each alveolus is surrounded by a network of blood capillaries, allowing for efficient diffusion of oxygen into the blood and carbon dioxide out of the blood. Additionally, the walls of the alveoli and capillaries are only one cell thick, which further facilitates the exchange of gases by reducing the distance they need to travel.\",\n  \"selected_evidence_ids\": [\"E2\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 43,\n      \"textbook_page\": 34\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 56,\n      \"textbook_page\": 47\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 142.80083550000563,
+    "latency_seconds": 201.20243200002005,
+    "usage": {
+      "completion_tokens": 208,
+      "prompt_tokens": 4548,
+      "total_tokens": 4756,
+      "prompt_tokens_details": {
+        "cached_tokens": 127
+      }
+    },
+    "response_id": "chatcmpl-kyAMZ2cmugESwTRNemBIAJdh1tOc7qwz",
+    "peak_rss_bytes": 12106436608
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Alveoli are designed to maximize the exchange of gases due to their structural features. They are numerous, which increases the surface area for gas exchange. Each alveolus is surrounded by a network of blood capillaries, allowing for efficient diffusion of oxygen into the blood and carbon dioxide out of the blood. Additionally, the walls of the alveoli and capillaries are only one cell thick, which further facilitates the exchange of gases by reducing the distance they need to travel.",
+    "selected_evidence_ids": [
+      "E2",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E2",
+        "pdf_page": 43,
+        "textbook_page": 34
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 56,
+        "textbook_page": 47
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Alveoli are extremely numerous microscopic air sacs",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Their folding/number gives an enormous moist surface area",
+        "token_recall": 0.2857,
+        "matched": false
+      },
+      {
+        "point": "They are closely associated with blood capillaries",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "These features support rapid gas exchange by diffusion",
+        "token_recall": 0.5714,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 79
+  },
+  "completed_at": "2026-07-17T19:24:28+00:00"
+}

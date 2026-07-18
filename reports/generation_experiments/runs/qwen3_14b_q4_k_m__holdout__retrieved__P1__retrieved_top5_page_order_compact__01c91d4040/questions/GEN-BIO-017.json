@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__01c91d4040",
+  "question_id": "GEN-BIO-017",
+  "question": "What happens to the amount of energy transferred from one step to the next in a food chain?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "a2ddd059bc1c0b08da3da9c25a377ae32317c0ed74a6eb3b3cb75ad6a5001957",
+  "context_sha256": "03f2baa069408919b4f8844772514aec6ef11b3a98b44e18391f56851eb97594",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 214,
+      "textbook_page": 205,
+      "pdf_pages": [
+        214,
+        215
+      ],
+      "textbook_pages": [
+        205,
+        206
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Reflection of light at curved surfaces205 Our Environment\nEveryone is familiar with one’s own surrounding.\nOur surroundings\nplay an important role in the survival of all organisms.\nThe sum of physical\nand biological factors along with their chemical interactions that affect an\norganism is called environment.\nThe living organisms always try to maintain\na balance among themselves and with biotic and abiotic factors.\nAll\ncomponents of biosphere interact in an organized manner with the\norganisms.\nThis interaction assures an organism to survive that may result\nin gradual evolution of the organisms in the biosphere.\nThe physical factors\nrefer to abiotic factors (land, air, water, sunlight etc.) and biological factors\nrefer to biotic factors (flora and fauna).\nThe place where an organism lives\nis called habitat.\nAn organism can’t completely defy the balance to suit\none’s need.\nIt would in some way or the other affect the balance in such a\nway that the survival of the organism affecting the\ndamage would be at stake.\nYou have understood the relationships between\norganisms and their food in earlier classes with\nthe help of food chains and food webs.\nFood chains\nare interconnected and when we try to observe\nthese connections among a number of food chains\nthen it becomes a food web.\nAs you know a food\nchain shows who eats what in a particular habitat.\nFig-1: Biotic components of a food chain\nChapter\nOur Environment\n206 Our Environment\nThe arrows between two organisms in the food chain always point\nfrom the food to the feeder.\n9.1 Food Chain\nObserve the organisms in figure-1.\nPrepare a food chain consisting of\ngrass, snake, frog, locuse and hawk then connect the given organisms by\nputting arrows and make a food chain.\nx Name the producer and consumers in the food chain.\nx What does the arrows marked by you indicate in a food chain?\nx Identify at least four other food chains in your surroundings.\nName\nthe producers and different levels of consumers in those food chains.\nWhile identifying different food chains in your surroundings you will\nfind that most of the food chains are quite short and they rarely consists\nof not more than four steps.\nYou will also notice that as we move from\nproducer to consumers (primary, secondary & tertiary) in a food chain the\nnumber of organisms at each level decreases.\nWhat type of relationships exist among the biotic components?\nIn an\necosystem the energy rich food passes from producers to consumers\nstepwise, with respect to their (food) relationships.\nExamples\nGrass grasshopper frog snake Hawk\nGrass Rabbit Fox Wolf\nGrass Goat Man\nx Why do most of the food chains consist of four steps?\nx Why do the number of organisms get decreased as we move from\nproducer to different level of consumers?\nTo get answers for the above questions we have to recall some of the\nthings which have been discussed in the earlier classes.\nIn chapter 7\n“Different Ecosystems” of class 8th it was mentioned that all organisms in\nan ecosystem derive energy from food to live and sunlight is the main\nsource of the energy.\nFood chain shows that how the energy is passed\nfrom one organism to another.\nAt each transfer a large proportion (80 to\n90 percent) of energy is dissipated as heat produced during the process of\nrespiration and other reactions.\nAfter three steps in a food chain, very\nlittle energy is still available for top carnivores to use.\nWithin the biosphere there are a number of major ecosystems.\nThe terrestrial ecosystems are determined largely by the\nvariations in climatic conditions between the Poles and Equator.",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00130"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 215,
+      "textbook_page": 206,
+      "pdf_pages": [
+        215,
+        216,
+        217
+      ],
+      "textbook_pages": [
+        206,
+        207,
+        208
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "an ecosystem derive energy from food to live and sunlight is the main\nsource of the energy.\nFood chain shows that how the energy is passed\nfrom one organism to another.\nAt each transfer a large proportion (80 to\n90 percent) of energy is dissipated as heat produced during the process of\nrespiration and other reactions.\nAfter three steps in a food chain, very\nlittle energy is still available for top carnivores to use.\nWithin the biosphere there are a number of major ecosystems.\nThe terrestrial ecosystems are determined largely by the\nvariations in climatic conditions between the Poles and Equator.\nIn a similar way, if you climb a mountain such as Kilimanjaro\nin Equatorial Africa or Himalayan mountains in our country.\nProducers Primary\nConsumers\nSecondary\nConsumers\nTertiary\nConsumers\nTop level\nCarnivores\nSun\nReflection of light at curved surfaces207 Our Environment\nYou quickly go through a comparable system of\necosystems, starting with tropical rain forest at the base\nand ending with perpetual snow and ice at the summit.\nThe main climatic influences which determine these\necosystems are rainfall, temperature and the availability\nof light from the sun.\nFor instance, forests are usually\nassociated with high rainfall, but the type of forest is\ninfluenced by temperature and light.\nThe same applies\nto deserts which occur in regions where rainfall is\nextremely low.\nBut these links are never as simple or rigid as the\nword ‘chain’ suggests.\nFor example, aphids are eaten by\nmany insectivorous birds in addition to warblers, and also\nladybirds and other insects; eagles, on the other hand,\nprey upon a considerable variety of birds and small\nmammal.\nSo the term food web is often a better one to use when being\nprecise, as it suggests a far greater number of possible links and reflects the\nfact that the whole community is a complex inter-connected unit.\nThus the\noriginal energy from the sun flows through the whole ecosystem from one\ntropic level to another.\nLet us observe the figure-2 which shows some of the feeding\nrelationships amongst organisms living in deciduous woodland.\nYou will\nsee from the diagram that animals fit into special positions within the\nfood web; each is described as its niche.\nFor instance, there is a niche for\ninsects such as aphids which suck up the juices of leaves.\nAnother niche\nfor insects such as caterpillars which have strong jaws for biting off pieces\nof a leaf and a niche for relatively large animals such as deer which browse\non the vegetation.\nAll these animals feed on leaves but they differ both in\nsize and in the manner in which they feed.\nSo the term ‘niche’ denotes not\nonly the animal’s position in the food web and what it eats, but also its\nmode of life.\nJust as a habitat is the place where an animal lives, so a niche\ndescribes its occupation the way it ‘goes about its business and earns its\nlivings.\nx Discuss one more example of niche with your teacher.\nFig-2: Food chains in different\necosystems\nforest\ngrassland\npond\n208 Our Environment\n9.2 Food Web\nIn nature food chains are usually not simple and\nlinear.\nThey are often interlinked, because at every\nstage or trophic level consumers have several\nalternative forms of food to choose from.\nFor\nexample, in the fig.-3 snakes prey upon frogs, mice\nand small birds.\nSimilarly, cranes prey upon fish and\nfrogs.\nAs a result, food chains become branched and\ninterlinked at various stages leading to a web-like\nstructure.\nThis is called a food web.\nx Observe the figure of the given food web\nand draw two food chains from it.",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00131"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 219,
+      "textbook_page": 210,
+      "pdf_pages": [
+        219,
+        220,
+        221
+      ],
+      "textbook_pages": [
+        210,
+        211,
+        212
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "(Insects)\nSecondary consumers\n(Fish and other\naquatic animals)\nTo reduce our dependence on fossil fuels (fuels like coal, petrol etc. formed by\nnatural processes such as anaerobic decomposition of buried dead organisms), and to\nhelp reduce air pollution, biomass can also be used as a energy source.\nUsing biomass\nas fuel still puts carbon dioxide back into the atmosphere, but it is the same carbon\ndioxide taken from the air as the biomass was produced.\nDo you know?!\nReflection of light at curved surfaces211 Our Environment\nThe biomass in a trophic level may be more or less than the other\ntrophic levels.\nBiomass is a measure of the amount of food available.\nWhen\nanimals eat, only a small proportion of their food is converted into new\ntissue, which inturn forms the food for the next trophic level.\nPart of\nbiomass that animals eat is used to provide energy needed for staying alive,\nrest passes out of its body.\nThe biomass pyramid shows that animals are relatively inefficient in\nconverting food into body tissues, the remaining part of the food being\nundigested is passed out as waste, or broken down in respiration to supply\nenergy for activities such as feeding.\nMany animals convert not more than\n10% of their food into their body tissues, in some herbivores, it is even\nless.\nLet us take an example of a food chain which has been worked out in\nsome detail- one in which we are involved when we eat fish.\nIn this chain\nthe phytoplankton on the surface water of sea are food producers.\nThey\ntrap energy from sunlight.\nThe zooplankton feed on the microscopic plants\nand the fish in turn feed on the zooplankton; we are at the end of the chain\nwhen we eat the fish.\n9.3.3 Pyramid of Energy\nFood is the source of energy for organisms\nthat are used in the growth and rebuilding the\nparts of the body; that are constantly wearing out.\nThe food by its nature is the chemical energy\nand as in stored form, it is potential energy.\nThere\nare several mechanisms in organisms for\ncontinuous absorption of materials for the\nproduction of organic material, and for the\nrelease and conversion of organic material into\ninorganic form.\nPlants absorb the minerals from the soil.\nThey are absorbed\ninto the plant through roots.\nPhotosynthesis is an essential process for the life.\nThe energy in\nsunlight, carbon dioxide and the water which are needed by all living things\nbelong to nonliving things.\nAs a result of photosynthesis, these can be\nmade available in a suitable form of energy the food to the world of living\nthings the animals or consumers, only by the green plants the producers.\nThe food chains and food webs help in the transfer of the food and energy\nfrom the producers to different consumers.\nFig-7: Pyramid of Energy\neagle\nsnake\nfrog\ngrass\nhopper\ngrass\n212 Our Environment\nAnimals obtain the minerals from the plant or animal food or both.\nThus the mineral matter is constantly being removed from the earth to\nbecome a part of the plant, which may become a part of animal body.\nTry to identify the basic sources of various foods we eat.\nFor example\ncurd that we eat is processed from milk, which comes from a cow, which\nin turn eats grass.\nThe grass carries out photosynthesis and prepares food.\nIn every case, the origin of food materials can be traced back to green\nplants.\nOnce the food is eaten, its energy follows a variety of pattern through\nthe organisms.\nNot all the food can be fully digested and assimilated.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00134"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 221,
+      "textbook_page": 212,
+      "pdf_pages": [
+        221,
+        222
+      ],
+      "textbook_pages": [
+        212,
+        213
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Thus the mineral matter is constantly being removed from the earth to\nbecome a part of the plant, which may become a part of animal body.\nTry to identify the basic sources of various foods we eat.\nFor example\ncurd that we eat is processed from milk, which comes from a cow, which\nin turn eats grass.\nThe grass carries out photosynthesis and prepares food.\nIn every case, the origin of food materials can be traced back to green\nplants.\nOnce the food is eaten, its energy follows a variety of pattern through\nthe organisms.\nNot all the food can be fully digested and assimilated.\nHair,\nfeathers, insect exoskeletons, cartilage and bone in animal foods, cellulose\nand lignin in plant foods cannot be digested by the most animals.\nThese\nmaterials are either ejected by defecation or regurgitated as indigested\nremains.\nAssimilated energy (that is not lost through respiration or excretion)\nis available for the synthesis of new biomass through growth and\nreproduction.\nOrganisms lose some biomass by death, disease or annual\nleaf-drop, where they enter the detritus pathways of the food chain i.e.,\nafter the death and decomposition of organisms the materials flow back\ninto the environment(soil, water, air).\nThe remaining biomass is eventually\nconsumed by herbivores or predators and its energy there by enters the\nnext higher trophic level in the ecosystem.\nThe materials keep on cycling i.e. entering the living beings and through\ndeath and decay returning to the soil and atmosphere Such a flow of\nmaterials between organisms and their environment is called Cycling of\nmaterials or mineral circulation or Biogeochemical cycles (You have\nlearnt in class IX ).\nEnergy enters the producers in the ecosystem from the sun in\nthe form of solar energy or solar radiation.\nNo other organisms\nexcept green plants and Photosynthetic bacteria due to due to the\npresence of chlorophyll are capable of absorbing solar energy and\nconverting it into chemical energy (food).\nSolar energy Producers (Chemical energy) Consumers (Chemical energy)\nHeat Heat\nReflection of light at curved surfaces213 Our Environment\nFrom the producers, the chemical energy passes to the consumers\nfrom one trophic level to the next through food.\nAt each trophic level,\norganisms use most of the food energy that they assimilate into their bodies\nto fulfill their metabolic requirements- performance of work, growth and\nreproduction.\nBecause biological energy transformations are inefficient,\na substantial proportion of metabolized food energy is lost, unused as\nheat.\nHence pyramid of energy is always upright.\nOnly a small fraction goes to the eater at next trophic level.\nOrganisms\nare no different from man-made machines in this respect.\nMost of the\nenergy in petrol is lost as heat in a car’s engine rather than being\ntransformed into the energy of motion.\nIn natural communities, energy\nused to perform work or dissipated as heat cannot be consumed by other\norganism and is forever lost to the ecosystem.\n9.4 The effects of human activities on ecosystems\nIn the earlier classes we have studied about different types of pollution\nas a result of human interventions in ecosystem.\nIn this section we will try\nto understand that when we cut forest to grow food crops, how this activity\nbrings harmful changes in ecosystem and affects organisms of each trophic\nlevel.\nLet us study a pond ecosystem to understand the components of\nenvironment, their interactions and effects of human interventions in the\nfollowing story.\n9.4.1 Story of Kolleru Lake\nFresh water lakes provide the nutritional requirements of the world’s\nFig-8: Kolleru Lake\npoorest people.\nOne such lake is Kolleru which is not an ordinary wetland.\nIt is one of the largest fresh water lakes in India, existing between West",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00135"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 232,
+      "textbook_page": 223,
+      "pdf_pages": [
+        232,
+        233
+      ],
+      "textbook_pages": [
+        223,
+        224
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "What happens to the amount of energy transferred from one trophic level to\nthe next in a food chain? (AS1)\n2.\nWhat do pyramids and food chain indicate in an ecosystem? (AS1)\nImprove your learning\n224 Our Environment\n3.\nWrite a short note on pyramid of numbers of any food chain.\nWhat did you conclude from the\npyramid of numbers drawn using the following (AS1).\n(i) tree (ii) insects (iii) birds\n4.\nWhat is Biomass?\nDraw the pyramid of biomass using the biotic factors given below. (AS5)\n(i) grass (ii) herbivores (iii) predators (iv) hawk\n5.\nHow does the usage of toxics substances affect an ecosystem?\nWrite a short note on bioaccumulation\nand biomagnification. (AS1)\n6.\nShould we use pesticides to protect the crops and foods from pests?\nOr should we think of\nalternatives?\nWrite your opinion and the reasons for it. (AS1)\n7.\nWhat is a trophic level?\nWhat does it represent in an ecological pyramid? (AS1)\n8.\nWrite the question you would ask to know more about flow of energy in an ecosystem. (AS2)\n9.\nWhat will happen if we remove predators from food web? (AS2)\n10.\nObserve a plant in your kitchen garden, and write a note on producer- consumer relationship. (AS3)\n11.\nCollect information on laws and ethics concerned to the environment and display it on bulletin\nboard. (AS4)\n12.\nDraw a pyramid of numbers considering yourself as a top level consumer.\nWrite about the lower\ntrophic levels. (AS5)\n13.\nPrepare slogans to promote awareness in your classmates about ecofriendly activities. (AS7)\n14.\nSuggest any three programmes on avoiding pesticides and preventing soil pollution. (AS7)\n1.\nWhat does a food chain always start with - ( )\n(A) The herbivore (B) The carnivore (C) The producer (D) Omnivores\n2.\nWhich of the following do plants not compete for? ( )\n(A) Water (B) Food (C) Space (D) Mineral nutrients\n3.\nBan all pesticides, this means that ( )\nA) Control on usage of pesticides B) Prevention of pesticides\nC) Promote ecofriendly agricultural practices D) Stop biochemical factories\n4.\nIdentify the correct sentence according to Charles Elton ( )\nA) Omnivores at the top of the pyramid\nB) Energy trapping is high at the top of the pyramid\nC) No producers at the top of the pyramid\nD) Pyramid of biomass in an aquatic ecosystem is always upright.\nChoose the correct answer",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00143"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"In a food chain, a large proportion (80 to 90 percent) of energy is dissipated as heat during the process of respiration and other reactions at each transfer. As a result, the amount of energy transferred from one trophic level to the next decreases significantly. After three steps in a food chain, very little energy is still available for the top carnivores to use.\",\n  \"selected_evidence_ids\": [\"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 215,\n      \"textbook_page\": 206\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 226.62283310000203,
+    "latency_seconds": 284.36409889999777,
+    "usage": {
+      "completion_tokens": 155,
+      "prompt_tokens": 3935,
+      "total_tokens": 4090,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-jcjuN110QXugwx25qwzzpWbSujZhZfQV",
+    "peak_rss_bytes": 22850543616
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "In a food chain, a large proportion (80 to 90 percent) of energy is dissipated as heat during the process of respiration and other reactions at each transfer. As a result, the amount of energy transferred from one trophic level to the next decreases significantly. After three steps in a food chain, very little energy is still available for the top carnivores to use.",
+    "selected_evidence_ids": [
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E2",
+        "pdf_page": 215,
+        "textbook_page": 206
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Available energy decreases at each trophic transfer",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Only a small fraction becomes new biomass",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Energy is lost through respiration, activity, heat, and undigested material",
+        "token_recall": 0.375,
+        "matched": false
+      },
+      {
+        "point": "This limits food-chain length",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.25,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 64
+  },
+  "completed_at": "2026-07-17T17:11:48+00:00"
+}

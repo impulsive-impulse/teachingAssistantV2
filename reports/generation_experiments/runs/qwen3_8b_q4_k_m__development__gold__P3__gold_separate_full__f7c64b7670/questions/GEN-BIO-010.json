@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P3__gold_separate_full__f7c64b7670",
+  "question_id": "GEN-BIO-010",
+  "question": "What is a synapse, and how does it transfer information?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "9be1bebb460a37433d3dde1fca0e6e6d3ea0056077d2f0dd104a06ec6a2e4016",
+  "context_sha256": "d57e7ce4a170599082322d921f38f947a367dabc924e41a9f8529337819d6a7d",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 112,
+      "textbook_page": 103,
+      "text": "103Government’s Gift for Students’ Progress Coordination\nEach nerve cell consists of a cell body (cyton)\nwith a prominent nucleus. There are fine projections\nmainly of two types extending from the cell body\nof the nerve cell. The small projections are\ndendrites while a long one that extends to different\nparts of our body is called Axon. The axon is\nsurrounded by a specialized insulatory sheath called\nmyelin sheath.This sheath is interrupted at regular\nintervals called nodes of Ranvier . The myelin\nsheath is made up of Schwann cells and chiefly\nconsists of fatty material. Axons having sheath are\ncalled myelinated axon. Axons not having the sheath\nare non-myelinated axons. The covering separates\ndendrites\nnissl’s granules\naxon terminal\ncell body\nnucleus\nschwann cell\naxon\nmyelin sheath\nnode of ranvier\nsynaptic knob\nFig-3: Nerve cell\nadjacent axons. The nerve cell body lies in the brain, spinal cord or dorsal\nor ventral root ganglion of spinal cord. In the brain or spinal cord, it is\ndifficult to make out the difference between dendrites and axons on the\nbasis of their length. The presence of the sheath helps us to find out the\ndifference. But most of them are non-myelinated cells.\nWe know that the nerve cell is the structural and functional unit of\nnervous system. Our nervous system consists of more than100 billion of\nthem, which communicate with each other in a specific manner. Dendrites\nof one nerve cell connect to the axons of the other nerve cell through\nconnections called as a ‘synapse’ .\nFig-4: Synapse\nSynapse\nSynapse is the functional region of contact\nbetween two neurons, where information from one\nneuron is transmitted or relayed to another neuron.\nThough these are regions of minute gaps and\nessentially neurons do not have any protoplasmic\nconnection between them yet information is passed\nfrom one nerve cell to the other through these gaps\neither in the form of chemical or electrical signals\nor both. These synapses are mainly found usually in\nthe brain, spinal cord and around the spinal cord.\nBeyond these areas the axon carries the signals\nfrom brain and spinal cord to respective parts of\nour body.",
+      "text_sha256": "a4829b499814ba1b5fbaa544636438d7222f959d602202ba3ea27673b1bfc4b8"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"A synapse is the functional region where two nerve cells (neurons) connect. It allows information to be transferred from one neuron to another. The synapse is a tiny gap between the neurons, and even though there is no direct physical connection, information is passed through this gap either as chemical signals or electrical signals, or both.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 112,\n      \"textbook_page\": 103\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 18.439720900001703,
+    "latency_seconds": 40.88381559999834,
+    "usage": {
+      "completion_tokens": 142,
+      "prompt_tokens": 698,
+      "total_tokens": 840,
+      "prompt_tokens_details": {
+        "cached_tokens": 55
+      }
+    },
+    "response_id": "chatcmpl-hwhKwKVEytMs9IUAFrnHuTUQDrVusVit",
+    "peak_rss_bytes": 11601461248
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "A synapse is the functional region where two nerve cells (neurons) connect. It allows information to be transferred from one neuron to another. The synapse is a tiny gap between the neurons, and even though there is no direct physical connection, information is passed through this gap either as chemical signals or electrical signals, or both.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 112,
+        "textbook_page": 103
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "A synapse is the functional contact region between two neurons",
+        "token_recall": 0.8571,
+        "matched": true
+      },
+      {
+        "point": "The neurons are separated by a minute gap without protoplasmic continuity",
+        "token_recall": 0.2857,
+        "matched": false
+      },
+      {
+        "point": "Signals cross chemically, electrically, or both",
+        "token_recall": 0.4,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.3333,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 56
+  },
+  "completed_at": "2026-07-16T21:03:15+00:00"
+}

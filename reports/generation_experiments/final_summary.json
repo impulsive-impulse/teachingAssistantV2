@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-17T22:00:46+00:00",
+  "provisional_winner": {
+    "model_key": "qwen3_8b_q4_k_m",
+    "prompt_strategy": "P1",
+    "context_strategy": "retrieved_top5_page_order_compact",
+    "max_output_tokens": 384,
+    "holdout_retrieved_run": "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407",
+    "all_gold_run": "qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f",
+    "all_retrieved_run": "qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb"
+  },
+  "gold_metrics": {
+    "questions": 40,
+    "completed": 40,
+    "required_point_coverage": 0.4654,
+    "citation_validity": 0.975,
+    "unsupported_claim_rate": 0.025,
+    "structured_output_rate": 0.975,
+    "false_insufficient_count": 1,
+    "formula_accuracy": 0.0,
+    "model_load_seconds": 7.5175,
+    "p50_latency_seconds": 50.4694,
+    "p95_latency_seconds": 85.7361,
+    "p50_time_to_first_token_seconds": 21.6293,
+    "p95_time_to_first_token_seconds": 34.6867,
+    "mean_tokens_per_second": 4.2231,
+    "peak_rss_bytes": 18785103872
+  },
+  "retrieved_metrics": {
+    "questions": 40,
+    "completed": 40,
+    "required_point_coverage": 0.4704,
+    "citation_validity": 0.95,
+    "unsupported_claim_rate": 0.025,
+    "structured_output_rate": 0.975,
+    "false_insufficient_count": 2,
+    "formula_accuracy": 0.1,
+    "model_load_seconds": 5.8544,
+    "p50_latency_seconds": 187.2606,
+    "p95_latency_seconds": 229.4036,
+    "p50_time_to_first_token_seconds": 127.3702,
+    "p95_time_to_first_token_seconds": 143.3821,
+    "mean_tokens_per_second": 1.3347,
+    "peak_rss_bytes": 19322834944
+  },
+  "pareto_run_ids": [
+    "qwen3_8b_q4_k_m__development__gold__P0__gold_separate_full__12c0a0fcce",
+    "qwen3_8b_q4_k_m__development__gold__P1__gold_separate_full__a721a87e90",
+    "qwen3_8b_q4_k_m__development__gold__P2__gold_separate_full__14a86d960a",
+    "qwen3_14b_q4_k_m__smoke__retrieved__P1__retrieved_top5_page_order_compact__80aeeb36e7",
+    "qwen3_14b_q4_k_m__development__retrieved__P1__retrieved_top5_page_order_compact__606386b983",
+    "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6",
+    "qwen3_14b_q4_k_m__holdout__gold__P1__gold_separate_full__d7742c81bc",
+    "qwen3_14b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__01c91d4040",
+    "qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f"
+  ],
+  "failure_counts": {
+    "evidence present but incomplete": 18,
+    "evidence absent from retrieved context": 2,
+    "multi-passage synthesis failure": 6,
+    "formula error or omission": 8,
+    "unsupported extrapolation": 1,
+    "citation failure": 1,
+    "visual information unavailable": 1
+  },
+  "dependency_metrics": {
+    "multiple_passages": {
+      "questions": 11,
+      "required_point_coverage": 0.3273,
+      "citation_validity": 0.9091
+    },
+    "formula": {
+      "questions": 10,
+      "required_point_coverage": 0.445,
+      "citation_validity": 0.9
+    },
+    "visual": {
+      "questions": 2,
+      "required_point_coverage": 0.5,
+      "citation_validity": 0.5
+    },
+    "table": {
+      "questions": 1,
+      "required_point_coverage": 0.6,
+      "citation_validity": 1.0
+    }
+  },
+  "book_metrics": {
+    "biology": {
+      "questions": 20,
+      "required_point_coverage": 0.4717,
+      "citation_validity": 1.0
+    },
+    "physical_sciences": {
+      "questions": 20,
+      "required_point_coverage": 0.4692,
+      "citation_validity": 0.9
+    }
+  },
+  "difficulty_metrics": {
+    "medium": {
+      "questions": 18,
+      "required_point_coverage": 0.5,
+      "citation_validity": 1.0
+    },
+    "easy": {
+      "questions": 9,
+      "required_point_coverage": 0.5185,
+      "citation_validity": 1.0
+    },
+    "hard": {
+      "questions": 13,
+      "required_point_coverage": 0.3962,
+      "citation_validity": 0.8462
+    }
+  },
+  "blinded_review_questions": 24,
+  "abstention_diagnostic": {
+    "questions": 5,
+    "prompt_only_correct_abstentions": 4,
+    "model_plus_support_correct_abstentions": 5,
+    "fabricated_or_overconfident_answers": 1,
+    "invalid_structured_outputs": 0,
+    "interpretation": "diagnostic only; five rows are not statistically strong"
+  },
+  "gemma_status": "not_run_hugging_face_repository_access_denied",
+  "configuration_roles": {
+    "best_lightweight": "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407",
+    "best_quality": "qwen3_14b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__01c91d4040",
+    "preferred_balanced": "qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb"
+  }
+}

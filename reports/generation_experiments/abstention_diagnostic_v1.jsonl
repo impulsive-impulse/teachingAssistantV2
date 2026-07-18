@@ -1,0 +1,5 @@
+{"question_id":"BIO-019","question":"What was Telangana's kidney-disease incidence rate in 2025?","book_id":"biology","diagnostic_type":"not_answerable"}
+{"question_id":"BIO-020","question":"Which kidney disease does a particular patient have based only on frequent urination?","book_id":"biology","diagnostic_type":"weak_evidence"}
+{"question_id":"PSC-019","question":"What is the current residential electricity tariff per kWh in Hyderabad?","book_id":"physical_sciences","diagnostic_type":"not_answerable"}
+{"question_id":"PSC-020","question":"What is the exact pH of an unknown household liquid without indicator readings or measurements?","book_id":"physical_sciences","diagnostic_type":"weak_evidence"}
+{"question_id":"PSC-022","question":"Why does pencil look bent when placed in water","book_id":"physical_sciences","diagnostic_type":"weak_evidence_conversational"}

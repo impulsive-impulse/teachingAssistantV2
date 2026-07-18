@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407",
+  "question_id": "GEN-PSC-005",
+  "question": "Which gas is usually liberated when an acid reacts with a metal? How will you test for the presence of this gas?",
+  "book_id": "physical_sciences",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "f889780005a304c99b6576f56284bbfcff084b14b850b6d7a75e98d21553a770",
+  "context_sha256": "3df0357d8e8780c47b1818fc6424dfed0d2f17dd57ec9585f07ab0655cbe3d0e",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 47,
+      "textbook_page": 37,
+      "pdf_pages": [
+        47,
+        48,
+        49
+      ],
+      "textbook_pages": [
+        37,
+        38,
+        39
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "strips can now be used to test for acid or base.\n- Check the odour of the cloth strips.\n- Keep two strips on a clean surface and put a few drops of dilute HC l\non one strip and a few drops of dilute NaOH on the other.\n- Rinse both the strips separately with distilled water and again check\ntheir odour and note the observation.\n- Take some clove oil and vanilla essence.\n- Take some dilute HC l in one test tube and dilute NaOH in another test\ntube.\n- Add a drop of dilute vanilla essence to both test tubes and stirr well\nwith glass rod.\nCheck the odour and record your observations.\n- Test the change of odour with clove oil using dilute HC l and dilute\nNaOH and record your observations.\nSuggest which of these- onion, vanilla essence and clove oil, can be\nused as olfactory indicators on the basis of your observations.\n· What do you conclude from above activity?\n· Why pickles and sour substances are not stored in brass and copper\nvessels?\nThink and discuss\n· Can you give example for use of olfactory indicators in daily life?\nDiscuss with your teacher.\nReflection of light at curved surfaces38 Acids, Bases and Salts\n3.1.1 Reaction of Acids and Bases with Metals\nAim: To observe the reaction of Acids with Metals.\nMaterials required: test tube, delivery tube, glass trough, candle,\nsoap water, dil.\nHCl, and zinc granules, cork.\nProcedure: Set the apparatus as shown in fig.\n1.\n- Take about 10ml of dilute HC l in a test tube and add a few zinc\ngranules to it.\n- What do you observe on the surface of the zinc granules?\n- Pass the gas being evolved through the soap water.\n- Why are bubbles formed in the soap solution?\n- Bring a burning candle near the gas filled bubble.\n- What do you observe?\nYou will notice the gas evolved burns with a pop sound indicating H2 .\nThe chemical reaction of the above activity is:\nAcid + Metal g Salt + Hydrogen\n2 HCl (aq) + Zn(s) g Zn Cl2 (aq) + H2 (g)\nRepeat the above experiment with some other acids like H2SO4 and\nHNO3.\n· What do you observe in all these cases?\nFrom the above activities you can conclude that generally H2 gas is\nevolved when acid reacts with metal.\nZinc granules\nHCl\nH2 Testing of hydrogen gas\nSoap water\nStand\nTest tube\nCork Delivery tube\nfig-1: Reaction of zinc granules with dil.\nHCl and testing hydrogen gas by a burning candle\nGlass\ntrough\nLab Activity\nAcids, Bases and Salts39\nfig-2: Passing CO 2 gas through\nCa(OH)2 solution\ndil.\nHCl\nacid\nCO2 gas\nCork\nStand\nThistle\nfunnel\nTest tube\nNa2CO3\nCa(OH)2\nsolution\nActivity 3\nPlace a few granules of zinc metal in one of the test tubes and add\n10 ml of sodium hydroxide (NaOH) solution and warm the contents of the\ntest tube.\nRepeat the rest of the steps as in activity-2 and record your observations.\nIn this activity also you will notice that evolved gas is hydrogen\n(H2) and salt formed is sodium zincate.\nThe reaction is written as\nfollows.\n2 NaOH (aq) + Zn(s) g Na2 ZnO2 (aq) + H2 (g)­\n(Sodium zincate)\nFrom the above activity you can conclude that generally H 2 gas is\nevolved when base reacts with metal.\n3.1.2 Reaction of acids with carbonates and metal hydrogen\ncarbonates\nActivity 4\n· Take two test tubes; label them as A and B.\nTake about 0.5 gm of sodium\ncarbonate (Na2CO3) in test tube\nA and about 0.5 gm of sodium\nhydrogen carbonate (NaHCO3)\nin test tube B.\n· Add about 2 ml of dilute HCl to",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00021"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 49,
+      "textbook_page": 39,
+      "pdf_pages": [
+        49,
+        50,
+        51
+      ],
+      "textbook_pages": [
+        39,
+        40,
+        41
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "(H2) and salt formed is sodium zincate.\nThe reaction is written as\nfollows.\n2 NaOH (aq) + Zn(s) g Na2 ZnO2 (aq) + H2 (g)­\n(Sodium zincate)\nFrom the above activity you can conclude that generally H 2 gas is\nevolved when base reacts with metal.\n3.1.2 Reaction of acids with carbonates and metal hydrogen\ncarbonates\nActivity 4\n· Take two test tubes; label them as A and B.\nTake about 0.5 gm of sodium\ncarbonate (Na2CO3) in test tube\nA and about 0.5 gm of sodium\nhydrogen carbonate (NaHCO3)\nin test tube B.\n· Add about 2 ml of dilute HCl to\nboth the test tubes.\n· What do you observe?\n· Pass the gas produced in each\ncase through lime water\n(calcium hydroxide solution) as\nshown in Fig-2 and record your observations.\nThe reactions occurring in the above activities are as follows:\nNa2 CO3 (S) + 2 HCl (aq) g 2 NaCl (aq) + H2O (l) + CO2 (g)­\nDelivery tube\nReflection of light at curved surfaces40 Acids, Bases and Salts\nNaHCO3 (S) + HCl (aq) g NaCl (aq) + H2O (l) + CO2 (g)­\nPass the gas evolved through lime water.\nCa (OH)2 (aq) + CO2 (g) g CaCO3 $ + H2O (l)\n(White precipitate)\nOn passing excess carbon dioxide the following reaction takes place:\nCaCO3 (S) + H2O (l) + CO2 (g) g Ca (HCO3)2 (aq)\n(Soluble in water)\nThus from above activities you can conclude that the reaction of metal\ncarbonates and hydrogen carbonates with acids give a corresponding salt,\ncarbon dioxide and water.\nWe can write generalized form of these chemical\nreactions as shown below:\nmetal carbonate + acid g salt + carbon dioxide + water\nmetal hydrogen carbonate + acid g salt + carbon dioxide + water\n3.2 Neutralization reaction\nActivity 5\nAcid – base Neutralization reaction\nTake about 2 ml of dilute NaOH solution in a test tube and add one\ndrop of phenolphthalein indicator.\nObserve the colour of the solution.\n- Add dilute HC l solution to the above solution drop by drop.\nIs\nthere any change of colour of the solution?\n· Why did the colour of the solution change after adding the HC l\nsolution?\n- Now add one or two drops of NaOH to the above mixture.\n· Does the Pink colour reappear?\n· Do you guess the reason for reappearance of pink colour?\nIn the above activity you observe that the pink colour disappears on\nadding HCl because NaOH is completely reacted with HCl.\nThe effect of\nbase is nullified by an acid.\nPink colour reappears on adding a drop of\nNaOH because the solution becomes basic once again.\nThe reaction\noccuring between acid and base in the above activity can be written as:\nAcids, Bases and Salts41\nThink and discuss\n· Is the substance present in antacid tablet acidic or basic?\n· What type of reaction takes place in stomach when an antacid\ntablet is consumed?\nNaOH (aq) + HCl (aq) g NaCl (aq) + H2O (l)\nThe reaction of an acid with a base to give a salt and water is known as\na neutralization reaction.\nIn general, a neutralization reaction can be written as:\nBase + Acid g Salt + Water\n3.2.1 Reaction of Acids with metal oxides\nAcivity 6\n· Take a small amount of copper oxide (CuO) in a beaker and slowly add\ndilute hydrochloric acid while stirring.\nObserve the changes in the\nsolution.\nNote the colour of the solution.\n· What do you observe in the above reaction?\n· You will notice that the copper oxide present in the beaker dissolves\nin dilute HCl and the colour of the solution becomes blueish-green.\nThe reason for this change is the formation of copper (II) chloride in\nthe reaction.\nThe general reaction between a metal oxide and an acid",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00022"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 51,
+      "textbook_page": 41,
+      "pdf_pages": [
+        51,
+        52,
+        53
+      ],
+      "textbook_pages": [
+        41,
+        42,
+        43
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Base + Acid g Salt + Water\n3.2.1 Reaction of Acids with metal oxides\nAcivity 6\n· Take a small amount of copper oxide (CuO) in a beaker and slowly add\ndilute hydrochloric acid while stirring.\nObserve the changes in the\nsolution.\nNote the colour of the solution.\n· What do you observe in the above reaction?\n· You will notice that the copper oxide present in the beaker dissolves\nin dilute HCl and the colour of the solution becomes blueish-green.\nThe reason for this change is the formation of copper (II) chloride in\nthe reaction.\nThe general reaction between a metal oxide and an acid\ncan be written as:\nMetal oxide + Acid g Salt + Water\n· Write the chemical equation for the reaction between copper oxide\nand HCl and balance it.\nIn above reaction metal oxide reacts with acid to give salt and water.\nThis reaction is similar to the reaction of a base with an acid that we have\nobserved in activity - 5.\n· What do you conclude from the Activity-5 and 6?\nIn both the reactions salt and water are the products.\nBoth metallic\noxides and metallic hydrides give salt and water when they react with an\nacid.\nThus we can conclude that metal oxides are basic in nature like the\nmetal hydroxides.\n3.2.2 Reaction of base with non-metal oxide\nYou saw the reaction between carbon dioxide and calcium hydroxide\n(lime water) in activity-4.\nReflection of light at curved surfaces42 Acids, Bases and Salts\nThink and discuss\n· You are provided with three test tubes containing distilled water, an\nacid and a base solution respectively.\nIf you are given only blue\nlitmus paper, how do you identify the contents of each test tube?\n· A compound of Calcium reacts with dilute hydrochloric acid to\nproduce effervescence.\nThe gas evolved extinguishes a burning\ncandle; turns lime water milky.\nWrite a balanced chemical equation\nfor the reaction if one of the compounds formed is calcium chloride.\nCalcium hydroxide, which is a base, reacts with carbon dioxide to\nproduce a salt and water.\nThis reaction is similar to the reaction between a\nbase and an acid.\nThus we can conclude that carbon dioxide which is a non\nmetal oxide is acidic in nature.\nIn general all non-metal oxides are acidic\nin nature.\nCommon properties of Acids\nWhat do acids have in common?\nIn previous sections you have seen that acids have similar chemical\nproperties.\nIn lab activity you have observed that acids generate hydrogen\ngas on reacting with metals, so hydrogen seems to be common element to\nall acids.\nLet us perform an activity to investigate whether all compounds\ncontaining hydrogen are acids or not.\nActivity 7\nPrepare solutions of glucose, alcohol, hydrochloric acid and sulphuric\nacid etc.,\nConnect two different coloured electrical wires to graphite rods\nseparately in a 100 ml beaker as shown in figure.\nConnect free ends of the wire to 230 volts AC plug and complete the\ncircuit as shown in the fig-3 by connecting a bulb to one of the wires.\nNow pour some dilute HCl in the beaker and switch on the current.\nAcids, Bases and Salts43\n230 volt Bulb\nBeaker\nGraphite rods\ndil.\nHCl solution\nfig-3: Acid solution in water\nconducts electricity\nAC plug· What do you notice?\nRepeat activity with dilute\nsulphuric acid and glucose and\nalcohol solutions separately.\n· What do you observe?\n· Does the bulb glow in all cases?\nYou will notice that the bulb\nglows only in acid solutions but not\nin glucose and alcohol solutions.\nGlowing of bulb indicates that there\nis flow of electric current through\nthe solution.\nAcid solutions have ions\nand the moment of these ions in solution helps for flow of electric current",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00023"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 52,
+      "textbook_page": 42,
+      "pdf_pages": [
+        52,
+        53,
+        54,
+        55
+      ],
+      "textbook_pages": [
+        42,
+        43,
+        44,
+        45
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Now pour some dilute HCl in the beaker and switch on the current.\nAcids, Bases and Salts43\n230 volt Bulb\nBeaker\nGraphite rods\ndil.\nHCl solution\nfig-3: Acid solution in water\nconducts electricity\nAC plug· What do you notice?\nRepeat activity with dilute\nsulphuric acid and glucose and\nalcohol solutions separately.\n· What do you observe?\n· Does the bulb glow in all cases?\nYou will notice that the bulb\nglows only in acid solutions but not\nin glucose and alcohol solutions.\nGlowing of bulb indicates that there\nis flow of electric current through\nthe solution.\nAcid solutions have ions\nand the moment of these ions in solution helps for flow of electric current\nthrough the solution.\nThe positive ion (cation) present in HC l solution is H +.\nThis suggests\nthat acids produce hydrogen ions H+ in solution, which are responsible for\ntheir acidic properties.\nIn glucose and alcohol solution the bulb did not glow\nindicating the absence of (H+) hydrogen ions in these solutions.\nThe acidity\nof acids is attributed to the (H+) hydrogen ions produced by them in solutions.\n3.3 Properties of Bases\nRepeat the Activity-7 using alkalis such as sodium hydroxide, calcium\nhydroxide solutions etc., instead of acid solutions.\n· Does the bulb glow?\n· What do you conclude from the results of this activity?\nIn electrolysis blub glows as bases gives hydroxide (OH– ) a negative ion\n(Anion)\n3.4 Do acids produce ions only in aqueous solution?\nLet us test this.\nActivity 8\n- Take about 1.0g of solid NaC l in a clean and dry test tube.\n- Add some concentrated sulphuric acid to the test tube.\n· What do you observe?\nIs there a gas coming out of the delivery tube?\nLet us write chemical equation for the above reaction.\n2NaCl(s) + H2SO4(l) g 2HCl(g) # + Na2SO4(s)\nReflection of light at curved surfaces44 Acids, Bases and Salts\nTest tube\nNaCl\nTest tube\nCork\nDelivery tube\nMoist litmus paper\nConical flask\ncontaining\nconc H2SO4\nTest the gas evolved successively with dry and wet blue litmus paper.\nIn which case does the litmus paper change colour?\n· What do you infer from the above observation?\nYou can conclude that dry HCl gas (Hydrogen chloride) is not an acid\nbecause you have noticed that there is no change in colour of dry litmus\npaper but HCl aqueous solution is an acid because wet blue litmus paper\nturned into red.\nNote to teachers: If the climate is very humid, pass the gas produced\nthr-ough a guard tube (drying tube) containing calcium chloride to dry\nthe gas.\n· Can you write the chemical equation for the reaction takes place at\nthe mouth of delivery tube?\nLaboratory precautions : Observe the following pictures.\nDid you find\nany problems with this?\nWhen ever you work with concentrated\nsolutions it is very important to use test tube holder.\nIt is very dangerous\nto work with bare hands in the laboratory.\nThe HCl gas evolved at delivery tube dissociates in presence of water\nto produce hydrogen ions.\nIn the absence of water dissociation of HC l\nmolecules do not occur.\nThe dissociation of HCl in water is shown below.\nHCl + H2O g H3O+ + Cl –\nHydrogen ions cannot exist as bare ions.\nThey associate with water\nmolecules and exist as hydrated ions with each H+ attached by 4 to 6 water\nmolecules.\nFor this we represent H+ as hydronium ion, H3O+.\nH+ + H2O g H3O+\nYou have learnt that acids give H3O+ or H+ ion in water.\nfig-4: Preparation of HCl gas\nAcids, Bases and Salts45\nfig-5: Warning sign\ndisplayed on containers\ncontaining concentrated\nAcids and Bases\nLet us see what happens when a base is dissolved in water.",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00024"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 273,
+      "textbook_page": 263,
+      "pdf_pages": [
+        273,
+        274,
+        275
+      ],
+      "textbook_pages": [
+        263,
+        264,
+        265
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "from the anode to the cathode.\nfig-4: Experimental setup for the electrolytic\nrefining of copper\n259 Principles of Metallurgy\nBoiled\ndistilled water\nAnhydrous\ncalcium chloride\nWater\nRusty\niron\nnails\nAir Air Dry\nair\nLayer\nof oil\nfig-5: Investigating the conditions\nunder which iron rusts\nAnode: Cu g Cu2+ + 2e-\nCathode: Cu2+ + 2e- g Cu\nThe soluble impurities go into the solution, where as insoluble\nimpurities from the blister copper get deposited at the bottom of anode as\nanode mud which contains metals like antimony selenium, tellurium, silver,\ngold and platinum; recovery of these metals may meet the cost of refining.\nZinc may also be refined this way.\n11.3 Corrosion\nThe rusting of iron (iron oxide), tarnishing of silver (silver sulphide),\ndevelopment of green coating on copper (copper carbonate) and bronze\nare some of the examples of corrosion.\n· Do you know why corrosion occurs?\n· In which coses corrosion occurs?\nLet us find\nActivity 2\n· Take three test tubes and place clean iron nails in each of them.\n· Label these test tubes A,B and C.\nPour some water in test tube A and cork it.\n· Pour boiled distilled water in test tube B, add about 1 ml of oil and\ncork it.\nThe oil will float on water and prevent the air from dissolving\nin the water.\n· Put some anhydrous calcium chloride in test tube C and cork it.\nAnhydrous calcium chloride will absorb the moisture, if any, from the\nair.\nLeave these test tubes for a few days and then observe (see figure).\n· You will observe that iron nails rust in test tube\nA, but they do not rust in test tubes B and C.\nIn\nthe test tube A, the nails are exposed to both air\nand water.\nIn the test tube B, the nails are exposed\nto only water, and the nails in test tube C are\nexposed to dry air.\n· What does this tell us about the conditions under\nwhich iron articles rust?\nIn metallic corrosion, a metal is oxidised by loss\nof electrons generally to oxygen and results in the\nformation of oxides.\nCorrosion of iron (commonly\nknown as rusting) occurs in presence of water and\nair.\n260 Principles of Metallurgy\nThe chemistry of corrosion is quite complex but it may be considered\nessentially as an electrochemical phenomenon.\nDuring corrosion at a\nparticular spot on the surface of an object made of iron, oxidation takes\nplace and that spot behaves as anode.\nWe can write the reaction as.\nAnode: 2Fe(s) g 2Fe2+ + 4e–\nElectrons released at this anodic spot move through the metal and go\nto another spot on the metal and reduce oxygen at that spot in presence of\nH+ which is believed to be available from H2CO3 formed due to dissolution\nof carbon dioxide from air into water in moist air condition of atmosphere.\nHydrogen ion in water may also be available due to dissolution of other\nacidic oxides from the atmosphere.\nThis spot behaves as cathode with the\nreaction is.\nCathode: O2(g) + 4H+ (aq) + 4e- g 2H2 O(l)\nThe overall reaction is: 2Fe(s)+O2(g)+4H+\n(aq)g 2Fe2+\n(aq)+2H2O(l)\nThe Ferrous ions (Fe2+) are further oxidised by atmospheric oxygen to\nFerric ions (Fe3+) which come out as rust in the form of hydrated ferric\noxide (Fe2O3.XH2O) and with further production of hydrogen ions.\n11.3.1 Prevention of corrosion\nPrevention of corrosion is of prime importance.\nIt not only saves money\nbut also helps in preventing accidents such as a bridge collapse or failure\nof a key component due to corrosion.\nOne of the simplest methods of preventing corrosion is to prevent the",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00161"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"When an acid reacts with a metal, hydrogen gas (H₂) is usually liberated. To test for the presence of this gas, you can pass the gas through soap water. Bubbles will form in the soap solution. When a burning candle is brought near the gas-filled bubble, it will burn with a pop sound, confirming the presence of hydrogen gas.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 47,\n      \"textbook_page\": 37\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 170.48558439998305,
+    "latency_seconds": 211.96999409998534,
+    "usage": {
+      "completion_tokens": 145,
+      "prompt_tokens": 4695,
+      "total_tokens": 4840,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-nNtz4Huc9Jh9AXpK7O6BmjOQ5AeF2jCu",
+    "peak_rss_bytes": 19022409728
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "When an acid reacts with a metal, hydrogen gas (H₂) is usually liberated. To test for the presence of this gas, you can pass the gas through soap water. Bubbles will form in the soap solution. When a burning candle is brought near the gas-filled bubble, it will burn with a pop sound, confirming the presence of hydrogen gas.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 47,
+        "textbook_page": 37
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Acid plus a suitable metal liberates hydrogen gas",
+        "token_recall": 0.7143,
+        "matched": true
+      },
+      {
+        "point": "Collect/lead the gas through the delivery tube",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Bring a burning splint or match near the gas",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "A characteristic pop confirms hydrogen",
+        "token_recall": 0.75,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 59
+  },
+  "completed_at": "2026-07-17T14:38:31+00:00"
+}

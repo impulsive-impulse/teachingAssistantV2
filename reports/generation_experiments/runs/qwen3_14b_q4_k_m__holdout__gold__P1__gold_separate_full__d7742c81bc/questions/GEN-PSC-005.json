@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__gold__P1__gold_separate_full__d7742c81bc",
+  "question_id": "GEN-PSC-005",
+  "question": "Which gas is usually liberated when an acid reacts with a metal? How will you test for the presence of this gas?",
+  "book_id": "physical_sciences",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "2fd9b5bbc8aaaa13c724aa1e4f6b131a8bb073d404a0dcd4d3dd85a2be9e60f1",
+  "context_sha256": "a40ef4e7b38281789e95cd21efd22f41ab363be9e74b5a234267865947bd1170",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 48,
+      "textbook_page": 38,
+      "text": "Reflection of light at curved surfaces38 Acids, Bases and SaltsGovernment’s Gift for Students’ Progress\n3.1.1 Reaction of Acids and Bases with Metals\nAim: To observe the reaction of Acids with Metals.\nMaterials required: test tube, delivery tube, glass trough, candle,\nsoap water, dil. HCl, and zinc granules, cork.\nProcedure: Set the apparatus as shown in fig. 1.\n- Take about 10ml of dilute HC l in a test tube and add a few zinc\ngranules to it.\n- What do you observe on the surface of the zinc granules?\n- Pass the gas being evolved through the soap water.\n- Why are bubbles formed in the soap solution?\n- Bring a burning candle near the gas filled bubble.\n- What do you observe?\nYou will notice the gas evolved burns with a pop sound indicating H2 .\nThe chemical reaction of the above activity is:\nAcid + Metal g Salt + Hydrogen\n2 HCl (aq) + Zn(s) g Zn Cl2 (aq) + H2 (g)\nRepeat the above experiment with some other acids like H2SO4 and\nHNO3.\n· What do you observe in all these cases?\nFrom the above activities you can conclude that generally H2 gas is\nevolved when acid reacts with metal.\nZinc granules\nHCl\nH2 Testing of hydrogen gas\nSoap water\nStand\nTest tube\nCork Delivery tube\nfig-1: Reaction of zinc granules with dil. HCl and testing hydrogen gas by a burning candle\nGlass\ntrough\nLab Activity",
+      "text_sha256": "208dbbb67326522f829afb45c5c6bfe9f4065080b4b33c351590bbbd9ccb602d"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"When an acid reacts with a metal, hydrogen gas (H2) is usually liberated. To test for the presence of this gas, you can pass the gas through soap water, which forms bubbles. Then, bring a burning candle near the gas-filled bubble. If the gas is hydrogen, it will burn with a pop sound. This confirms the presence of hydrogen gas.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 48,\n      \"textbook_page\": 38\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 19.79836279997835,
+    "latency_seconds": 61.4260052999889,
+    "usage": {
+      "completion_tokens": 147,
+      "prompt_tokens": 533,
+      "total_tokens": 680,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-qhfLeSn6vRVimOf4cDnTgJ7CoMqF4RNX",
+    "peak_rss_bytes": 21629140992
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "When an acid reacts with a metal, hydrogen gas (H2) is usually liberated. To test for the presence of this gas, you can pass the gas through soap water, which forms bubbles. Then, bring a burning candle near the gas-filled bubble. If the gas is hydrogen, it will burn with a pop sound. This confirms the presence of hydrogen gas.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 48,
+        "textbook_page": 38
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Acid plus a suitable metal liberates hydrogen gas",
+        "token_recall": 0.7143,
+        "matched": true
+      },
+      {
+        "point": "Collect/lead the gas through the delivery tube",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Bring a burning splint or match near the gas",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "A characteristic pop confirms hydrogen",
+        "token_recall": 0.75,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.75,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 60
+  },
+  "completed_at": "2026-07-17T15:50:50+00:00"
+}

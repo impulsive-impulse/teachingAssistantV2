@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P0__gold_separate_full__12c0a0fcce",
+  "question_id": "GEN-BIO-007",
+  "question": "What is meant by excretion? Explain the process of formation of urine?",
+  "book_id": "biology",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "63d72eeb48268ae3b429c343195eb7b394f462502a4dab379ef59f40ec64df29",
+  "context_sha256": "a445f7b260d2e17842ec4e8db894df951b163e480aaf229123ea9ad4e46cac4a",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 93,
+      "textbook_page": 84,
+      "text": "Excretion84Government’s Gift for Students’ Progress\nBecause of the narrower efferent arteriole pressure exerts in the\nglomerulus. It functions as a filtration unit. Bowman’s capsule which\naccommodates one glomerulus, is lined by a single layer of squamous\nepithelial cells called podocytes. There are fine pores between podocyte\ncells to allow passage of materials filtered out of glomerulus.\n2. Renal tubule\nIt has three parts. 1. Proximal Convoluted Tubule (PCT),\n2. Loop of Henle (which is U shaped),3. Distal Convoluted Tubule (DCT).\nDistal convoluted tubules open into a collecting tube. Collecting\ntubules form pyramids and calyces which open into the pelvis. Pelvis leads\ninto the ureter. All the parts of the renal tubule are surrounded by a network\nof peritubular capillaries formed from efferent arteriole. The peritubular\ncapillaries join to form renal venule, which joins the other venules to\nform finally the renal vein.\nx Why the nephron is considered to be the structural and functional\nunit of the kidney?\n4.3 Mechanism of urine formation\nFormation of urine involves 4 stages. They are :\n1. Glomerular filtration 2. Tubular re-absorption\n3. Tubular secretion and 4. Formation of concentrated urine.\nFig-6: Structure of a nephron\ncortex\nrenal vein\nmedulla\nrenal artery\nureternephron\nBowman’s capsule\nProximal convoluted\ntubule (PCT)\nDistal convoluted\ntubule (DCT)\nglomerulus\nmalpighian body\n{\nFig-5: Internal structure of kidney\nafferent\narteriole\nefferent arteriole\npelvis\ncalyces\ncollecting duct\nloop of Henle\nnetwork of blood\ncapillaries\nopen to pelvis\nhilum",
+      "text_sha256": "ba0f07ae37bce9334fc854fa6097b1dae284957e0032ea9398aee7f122daa934"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 94,
+      "textbook_page": 85,
+      "text": "Excretion85Government’s Gift for Students’ Progress\n1. Glomerular filtration :\nThe blood from renal artery flows into afferent arteriole of glomerulus.\nThis blood is filtered under high pressure. As a result waste materials along\nwith some water and useful substances are filtered out. They enter into the\nBowman’s capsule. This is called glomular filtration. This filterate is called\nas ‘primary urine’.\n2. Tubular re-absorption :\nPrimary urine which is in glomerulus is almost equal to blood in\nchemical composition except the presence of blood cells. Peritubular\ncapillaries present around the Henle’s loop reabsorb essential substances\nand excess water present in the primary urine.\n3. Tubular secretion :\nAfter reabsorption of essential substances and water urine travels\nthrough the loop of Henle. From peritubular capillaries, present around\nthe loop of Henle, waste materials left unfiltered in the blood during\nglomerulus filteration are secreted into the loop of Henle.\n4. Formation of concentrated Urine :\nUrine that reaches into the collecting tubule from the loop of Henle is\nfurther concentrated in the presence of hormone vasopressin. Deficiency\nof vasopressin causes excessive dilute urination. This condition is called\nas ‘diabetes insipidus’.\nx Why do we urinate more often in winter?\nx What happens if reabsorption of water does not takes place?\nNow let us discuss remaining parts of excretory system.\n4.3.1 Ureters\nThere are a pair of whitish, narrow distensible and muscular tubes of\n30cm length. Each ureter arises from the hilum of each kidney.\n! Do you know?\nAfter the age of 40 years, the number of functioning nephrons usually\ndecreases by about 10% in every 10 years.",
+      "text_sha256": "ca9001a23255150fa73576cddb8e9cea65a7e8657df7ea25ea072c89a9716467"
+    },
+    {
+      "evidence_id": "E3",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 95,
+      "textbook_page": 86,
+      "text": "Excretion86Government’s Gift for Students’ Progress\nThey move downward and obliquely opens into the urinary bladder.\nUreter carries urine from the kidney to the urinary bladder. The movement\nof urine in the ureter is through peristalsis.\n4.3.2 Urinary bladder\nIt is a median, pear shaped and distensible sac. It is situated in the\npelvic region on the ventral side of the rectum in the abdomen. It stores\n300-800ml of urine temporarily which is brought by two ureters.\n4.3.3 Urethra\nIt is a tube that takes urine from urinary bladder to outside. The opening\nof urinary bladder into urethra is guarded by a ring of muscles or sphincter.\nUrethra is 4 cm long in females and open in to vestibule where as in males\nit is about 20cm long. Its opening is separate in females but is in common\nwith the reproductive tract in males (urino-genital duct).\n4.4 Micturition\nThe urine is temporarily stored in the bladder. There are two sets of\ncircular sphincter muscles in the bladder. When the bladder is filling up,\nboth these sets of muscles are constricted, so the exit is closed. However\nas the pressure of the urine increases the walls of the bladder are stretched\nand this triggers off an automatic reflex action which causes the upper\nsphincter to relax. But the lower sphincter is under the control of brain.\nSo urination is controlled. Control of urination is not possessed by very\nyoung children but is gradually learned.\nUrinary bladder can store a maximum of 700-800 ml. of urine. Urge\nfor micturition occurs when urinary bladder is filled with 300 - 400 ml. of\nurine. The stretched bladder stimulates nerve endings and sends signlas to\nthe brain. At this time the urge becomes painful and leads to voluntary\nmicturition (release of urine from urinary bladder). Total amount of urine\nexcreted per day is about 1.6-1.8 litres. Its quantity increases with larger\nintake of fluids like water, fruit juices and decreases with lesser intake.",
+      "text_sha256": "876f13da3128e426df59090dfc1566fe2bec5d2eeaa22c86f357c4761c4ab7cc"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Excretion is the process by which the body removes waste products and excess substances from the blood. The process of urine formation involves four main stages: glomerular filtration, tubular reabsorption, tubular secretion, and formation of concentrated urine. In glomerular filtration, blood from the renal artery enters the glomerulus through the afferent arteriole and is filtered under high pressure, allowing waste materials, water, and some useful substances to pass into Bowman’s capsule, forming primary urine. In tubular reabsorption, essential substances and excess water are reabsorbed from the primary urine by the peritubular capillaries. Tubular secretion involves the secretion of waste materials from the blood into the loop of Henle. Finally, the urine is concentrated in the collecting tubule with the help of the hormone vasopressin.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 93,\n      \"textbook_page\": 84\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 94,\n      \"textbook_page\": 85\n    }\n  ],\n  \"missing_information\": []\n}",
+    "latency_seconds": 50.69585139999981,
+    "usage": {
+      "completion_tokens": 284,
+      "prompt_tokens": 1560,
+      "total_tokens": 1844,
+      "prompt_tokens_details": {
+        "cached_tokens": 123
+      }
+    },
+    "response_id": "chatcmpl-LOcO4fYupevW65E4xS9qtEejH9mNyQiu"
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Excretion is the process by which the body removes waste products and excess substances from the blood. The process of urine formation involves four main stages: glomerular filtration, tubular reabsorption, tubular secretion, and formation of concentrated urine. In glomerular filtration, blood from the renal artery enters the glomerulus through the afferent arteriole and is filtered under high pressure, allowing waste materials, water, and some useful substances to pass into Bowman’s capsule, forming primary urine. In tubular reabsorption, essential substances and excess water are reabsorbed from the primary urine by the peritubular capillaries. Tubular secretion involves the secretion of waste materials from the blood into the loop of Henle. Finally, the urine is concentrated in the collecting tubule with the help of the hormone vasopressin.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 93,
+        "textbook_page": 84
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 94,
+        "textbook_page": 85
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Define excretion as removal of metabolic wastes",
+        "token_recall": 0.2,
+        "matched": false
+      },
+      {
+        "point": "Explain glomerular filtration",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Explain selective tubular reabsorption",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Explain tubular secretion",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Explain concentration of urine/water reabsorption",
+        "token_recall": 0.6,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.6,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 124
+  },
+  "completed_at": "2026-07-16T19:55:00+00:00"
+}

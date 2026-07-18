@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "question_id": "GEN-BIO-005",
+  "question": "What is double circulation? Why is it important in humans?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "question_type": "process_explanation",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "9bcdfac6bc9881d402ed5d0c0969910dc9404e79c91cf08fb25055ec4fcdbd05",
+  "context_sha256": "d92f93dcd0911cf36e0cc097cbd246f9b1911ee004ef4df9f84e6512a0db8d87",
+  "evidence_references": [
+    {
+      "evidence_id": "E1",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 67,
+      "textbook_page": 58
+    },
+    {
+      "evidence_id": "E2",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 72,
+      "textbook_page": 63
+    },
+    {
+      "evidence_id": "E3",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 73,
+      "textbook_page": 64
+    }
+  ],
+  "generation": {
+    "raw_text": "{\"claims\":[{\"text\":\"Double circulation refers to the process where blood passes through the heart twice during one complete cycle, once through the pulmonary circulation and once through the systemic circulation.\",\"citations\":[\"E1\"]},{\"text\":\"In pulmonary circulation, blood travels from the right ventricle to the lungs and returns to the left atrium.\",\"citations\":[\"E1\"]},{\"text\":\"In systemic circulation, blood travels from the left ventricle to the rest of the body and returns to the right atrium.\",\"citations\":[\"E1\"]},{\"text\":\"Double circulation ensures that oxygenated and deoxygenated blood are efficiently separated and circulated to different parts of the body.\",\"citations\":[\"E1\"]},{\"text\":\"The textbook explains that double circulation is important for maintaining the efficiency of blood flow and oxygen delivery to tissues.\",\"citations\":[\"E1\"]}]}",
+    "latency_seconds": 40.71342529999674,
+    "usage": {
+      "completion_tokens": 173,
+      "prompt_tokens": 1658,
+      "total_tokens": 1831,
+      "prompt_tokens_details": {
+        "cached_tokens": 71
+      }
+    },
+    "response_id": "chatcmpl-7IB8WnbbQyZFYmoTRgymqY65W9ohDU4h"
+  },
+  "citation_validation": {
+    "valid": false,
+    "structure_valid": true,
+    "citation_support_valid": false,
+    "errors": [
+      "claim 4 citation support 0.4167 is below 0.55",
+      "claim 5 citation support 0.3333 is below 0.55"
+    ],
+    "claims": [
+      {
+        "text": "Double circulation refers to the process where blood passes through the heart twice during one complete cycle, once through the pulmonary circulation and once through the systemic circulation.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "In pulmonary circulation, blood travels from the right ventricle to the lungs and returns to the left atrium.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "In systemic circulation, blood travels from the left ventricle to the rest of the body and returns to the right atrium.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "Double circulation ensures that oxygenated and deoxygenated blood are efficiently separated and circulated to different parts of the body.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "The textbook explains that double circulation is important for maintaining the efficiency of blood flow and oxygen delivery to tissues.",
+        "citations": [
+          "E1"
+        ]
+      }
+    ],
+    "answer_text": "Double circulation refers to the process where blood passes through the heart twice during one complete cycle, once through the pulmonary circulation and once through the systemic circulation. In pulmonary circulation, blood travels from the right ventricle to the lungs and returns to the left atrium. In systemic circulation, blood travels from the left ventricle to the rest of the body and returns to the right atrium. Double circulation ensures that oxygenated and deoxygenated blood are efficiently separated and circulated to different parts of the body. The textbook explains that double circulation is important for maintaining the efficiency of blood flow and oxygen delivery to tissues.",
+    "cited_evidence_ids": [
+      "E1"
+    ],
+    "citation_support": [
+      {
+        "claim_index": 1,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.5625,
+        "supported": true
+      },
+      {
+        "claim_index": 2,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.9,
+        "supported": true
+      },
+      {
+        "claim_index": 3,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.9091,
+        "supported": true
+      },
+      {
+        "claim_index": 4,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.4167,
+        "supported": false
+      },
+      {
+        "claim_index": 5,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.3333,
+        "supported": false
+      }
+    ],
+    "validator": "deterministic_rubric_and_citation_v1_1"
+  },
+  "rubric_evaluation": {
+    "required_points": [
+      {
+        "point": "Blood passes through the heart twice in one complete circulation",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Describe the pulmonary circuit",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Describe the systemic circuit",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Explain efficient separation/delivery of oxygenated and deoxygenated blood",
+        "token_recall": 0.7143,
+        "matched": true
+      }
+    ],
+    "optional_points": [
+      {
+        "point": "Trace the named heart chambers and major vessels",
+        "token_recall": 0.1667,
+        "matched": false
+      }
+    ],
+    "required_coverage": 0.5,
+    "optional_coverage": 0.0,
+    "possible_unsupported_claims": [],
+    "asserted_unsupported_claims": [],
+    "rubric_score": 0.375,
+    "automatic_pass": false,
+    "manual_review_required": true,
+    "evaluator": "deterministic_rubric_and_citation_v1_1"
+  },
+  "completed_at": "2026-07-16T19:22:47+00:00",
+  "initial_rubric_evaluation": {
+    "required_points": [
+      {
+        "point": "Blood passes through the heart twice in one complete circulation",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Describe the pulmonary circuit",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Describe the systemic circuit",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Explain efficient separation/delivery of oxygenated and deoxygenated blood",
+        "token_recall": 0.7143,
+        "matched": true
+      }
+    ],
+    "optional_points": [
+      {
+        "point": "Trace the named heart chambers and major vessels",
+        "token_recall": 0.1667,
+        "matched": false
+      }
+    ],
+    "required_coverage": 0.5,
+    "optional_coverage": 0.0,
+    "possible_unsupported_claims": [],
+    "rubric_score": 0.625,
+    "automatic_pass": false,
+    "manual_review_required": true,
+    "evaluator": "deterministic_token_recall_v1"
+  },
+  "reevaluated_at": "2026-07-16T19:39:49+00:00"
+}

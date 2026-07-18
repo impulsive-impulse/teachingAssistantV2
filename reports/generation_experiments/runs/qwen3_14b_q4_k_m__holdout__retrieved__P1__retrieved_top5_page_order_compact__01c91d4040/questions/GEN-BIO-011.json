@@ -1,0 +1,174 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__01c91d4040",
+  "question_id": "GEN-BIO-011",
+  "question": "Why do fish and frog produce a huge number of eggs each year?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "ded35957f64745cb3e98cc8166f34538f3ebccefa43bfb8ab51f6901b30df472",
+  "context_sha256": "08643136a66106b2e18e84d5c304403ab627762f2fef1c82077bdc3ad710e99e",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 52,
+      "textbook_page": 43,
+      "pdf_pages": [
+        52,
+        53
+      ],
+      "textbook_pages": [
+        43,
+        44
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "So heat is also released\nin excess quantity.\nThat’s why we feel warm.\nIf the oxygen is not sufficient\nduring vigorous exersise muscles start anaerobic respiration.\nHence, lactic\nacid is formed.\nWe know that accumulation of lactic acid causes pain in\nmuscle.\nWe reach normal position after some rest.\nDeep breathing helps\nus to restore energy in our body.\nRefer in annexure about Pranayama.\n2.8 Evolution in gases exchanging system\nExchange of gases is a common life process in all living organisms,\nbut it is not same in all.\nSingle celled organisms Amoeba or multicellular\norganisms like Hydra, Planaria, roundworms and earthworms obtain\noxygen and expel carbon dioxide directly from the body by the process of\ndiffusion.\nIn other multicellular animals special organs are evolved.\nAnimals\neither terrestrial or aquatic adapted to different types of respiration and\npossess different types of respiratory organs mostly depending on the\nhabitat in which they live.\nBody size, availability of water and the type of\ntheir circulatory system are some of the factors for the animals to develop\ndifferent types of respiratory organs.\nThere is tracheal respiratory system in insects like cockroach,\ngrasshopper etc.\nTracheal respiratory system consists of series of tubes\ncalled trachea.\nThis is divided into fine branches called tracheoles which\ncarry air directly to the cells in the tissues.\nSome aquatic animals like fishes have developed special organs for\nrespiration which are known as gills or branchiae.\nBlood supplied to gills\nthrough capillaries which have thin walls where gases are exchanged.\nThis\nis called branchial respiration (gill respiration).\nFish keeps its mouth open\nand lowers the floor of the oral cavity.\nAs a result water from outside will\nbe drawn into the oral cavity.\nNow the mouth is closed and the floor of the\noral cavity is raised.\nWater is pushed into the pharynx and is forced to gill\npouches through internal branchial apertures.\nGill lamellae are bathed with\nwater and absorbs the oxygen dissolved in the water.\nRespiration44\nFig-15: Lenticels on stem\nRespiration through skin is called cutaneous respiration.\nFrog an\namphibian can respire through cutaneous and pulmonary respiration\n(through lungs) processes as well as Bucco-Pharyngeal Cavity.\nTerrestrial\nanimals like reptiles, birds and mammals, respire through lungs.\nAsk your\nteacher how crocodiles and dolphins respire?\nFig-14: Leaf as a respiratory organ\nwater film\nstomata\nair spaces\n2.9 Respiration in Plants\nYou already know about stomata in leaf where\ngaseous exchange takes place in plants.\nThere are\nother areas on the plant body as well through which\ngaseous exchange take place like surface of aerial\nroots, lenticels on stem etc.\nSome plants have\nspecialized structures like breathing roots of\nmangrove plants that produces oxygen is also\nrequired by plants to produce energy and carbon\ndioxide is released.\n2.9.1 Transportation of gases in plants\nThe stomatal openings lead to a series of spaces\nbetween the cells inside the plant.\nWhich form a\ncontinuous network all over the plant.\nThe spaces\nare very large in the leaves, much smaller in other\nparts of the plant.\nThe air spaces are lined with water\nwhere the oxygen is dissolved in this and passes\nthrough the porous cell walls into the cytoplasm.\nHere the glucose is broken down into carbon dioxide\nand water with the liberation of the energy.\nThe\nenergy released is stored in mitochondria in the form\nof A TP to perform metabolic activities.\nThe carbon dioxide passes out into the air spaces\nby a similar method.\nThe whole system works by\ndiffusion as the oxygen is used up by the cells a\ngradient develops between the cells and the air in\nthe spaces.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00025"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 158,
+      "textbook_page": 149,
+      "pdf_pages": [
+        158,
+        159,
+        160
+      ],
+      "textbook_pages": [
+        149,
+        150,
+        151
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x Division of cytoplasm is called as Cytokinesis.\nx During meiosis the parent cell divides twice and four daughter cells are formed.\nx Reproductive health is important to possess sound mind in a sound body .\nx One should be aware of the facts related to transmission of sexually transmitted diseases.\nWhat we have learnt ?\n150 Reproduction\nx There is no cure for AIDS.\nPrevention is the only way to avoid it.\nLeading moral life is the right way\nto avoid AIDS.\nx Now a days various methods of contraception are available to control child birth.\nx It is our responsibility to build a healthy society.\nx Determination of sex before birth is illegal.\nx Stop female foeticide.\n1.\nWhy do fish and frog produce a huge number of eggs each year?(AS1)\n2.\nGive examples and explain what is meant by external fertilisation?(AS1)\n3.\nWrite differences between.(AS1)\na) Androecium - Gynoecium b) Mitosis - Meiosis c) Grafting - Layering\n4.\nExplain the process of fertilisation in plants. (AS1)\n5.\nWhat are the different modes of asexual reproduction?\nCite them with examples. (AS1)\n6.\nIn what ways does sexual reproduction differs from asexual one?\nState at least three reasons.(AS1)\n7.\nHow are sperm cells adapted for their function? (AS1)\n8.\nThe menstrual cycle prepares the uterus for a fertilised egg.\nHow long is an average menstrual\ncycle from start to finish? (AS1)\n9.\nWhen the foetus is growing inside the uterus it needs nutrients.\nWhat provides these nutrients? (AS1)\n10.\nWhich type of substances are obsorbed by foetus from the mother ? (AS1)\n11.\nWhat is the job of the amniotic sac? (AS1)\n12.\nWhat are the advantages of sexual reproduction? (AS1)\n13.\nHow does reproduction help in providing stability to population of species? (AS1)\n14.\nWrite the differences between mitosis and meiosis. (AS1)\n15.\nWhat happens to the wall of the uterus during menstruation? (AS1)\n16. “All unicellular organisms undergo only mitotic cell division during favourable conditions”- Do you\nsupport this statement?\nWhy? (AS2)\n17.\nVicky’s father wants to grow a single plant having two desirable characters colourful flowers and\nbig fruits What method will you suggest him and why? (AS3)\n18.\nUproot an onion plant and take a thin section of its root tip.\nStain it and observe under microscope.\nDraw as you see and identify the stages of the cell division. (AS3)\n19.\nVisit a nearby village and collect information how farmers grow sugarcane, flowering plants like\nchrysanthemum and vegetables like potatoes, plump gourd (dondakaya) etc.\nMake a report and\npresent in class. (AS4)\nImprove your learning\nReflection of light at curved surfacesReproduction151\n20.\nCollect information from school library or using internet what vegetative methods are followed in\nyour district as well as in your state to propagate various plants of economic importance.\nRepresent\nit in a graph. (AS5)\n21.\nMake a flow chart to show the cell cycle and explain cell division describing different stages of\nmitosis. (AS5)\n22.\nDraw neat labelled diagrams of male and female reproductive system\nof plant. (AS5)\n23.\nObserve the following part of a flowering plant prepare a note. (AS5)\n24.\nPrepare a flow chart to explain the process of sexual reproduction\nin plants. (AS5)\n25.\nDraw a neatly labled diagram to explain plant fertilisation.\nWrite few\npoints on pollen grain. (AS5)\n26.\nWhat would be the consequences if there is no meiosis in organisms\nthat reproduce sexually? (AS2)\n27.\nHow will you appreciate cell division that helps in perpetuation of life? (AS6)\n28.\nWhat precautions will you take to keep away from various sexually transmitted diseases? (AS7)\n29.\nConduct a seminar on child marriages and female foeticide. (AS7)",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00093"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 205,
+      "textbook_page": 196,
+      "pdf_pages": [
+        205,
+        206,
+        207
+      ],
+      "textbook_pages": [
+        196,
+        197,
+        198
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "whale (swimmer) wing of a bat (flyer), leg of a cheetah (runner), claw of a\nmole (digger) and hand of a man (grasping).\nIf we carefully observe the\nanatomy of all these animals, they show a common pattern in the\narrangement of bones, even though their external form and functions are\ndifferent.\nIt indicates that all the vertebrates have evolved from a common\nancestor and these organs are called homologous organs.\nThis type of\nevolution is called divergent evolution.\nHowever, all similarities simply in organ\nshape are not necessarily to have a common\nancestry.\nWhat would we think about the wings\nof birds and bats?\nFor example (Fig-12).\nBirds\nand bats have wings, but squirrels and lizards\ndo not.\nSo birds and bats are more closely\nrelated to each other than squirrels or lizards.\nBefore we jump into this conclusion, let\nus look at the wings of birds and insects more\nclosely.\nWhen we observe, we find that the\nwings of insects have outgrowths of\ntheir exoskeleton that enable them to fly.\nFig-12: Homologous organs\nHand Forelimb Flipper Wing\nReflection of light at curved surfaces197 Heredity and Evolution\nBut the wings of birds have a feathery covering all along the arm.\nThe designs of the two wings, their structure and components are\ndifferent.\nThey look similar because they have a common use for\nflying, but their origin is not common.\nThis gives the ‘analogous’\ncharacteristics (Traits).\nAs the above mentioned organs which are\nstructurally different but functionally similar are known as\n‘Analogous organs’.\nThis type of evolution is called convergent\nevolution.\nInsect wing\nBird wing\nAnalogous\norgans\n8.9.2 Evidences from embryology\nActivity-6\nLet us observe different stages of development of vertebrate embryos.\nTry to find out similarities and differences and discuss with your friends.\nEmbryology is the study of embryos and their\ndevelopment.\nTadpole of a frog resembles fish\nmore than the frog.\nWhat does this indicates?\nDoes it indicate that frogs have evolved from\nancestors of fish?\nThere are remarkable similarities in the\nembryos of different animals from fish to man.\nThe resemblance is so close that at an early stage\neven an experienced embryologist would find\ndifficulty to distinguish one embryo from the\nother.\nWhat does it indicate?\nDoes it indicate\nthat life history of every individual, exhibits the structural features of their\nancestors?\nThis strengthens the view of the existence of a common ancestor\nfrom which all these have evolved.\n8.9.3 Evidences from fossils\nWe know some species which existed million years ago, but we may\nnot find them now.\nThey might have extinct and some of them may be\nfound in the form of fossils.\nFor example we know Dinosaurs the biggest\nanimal on land which were present long time ago but now they are extinct.\nThe scientists got evidences of presence of Dinosaurs like animals in the\nform of fossils.\nFig-13: Embryological evidences\nfish Salamander T ortoise Chick Pig Calf Rabbit Human\n198 Heredity and Evolution\nWhat are fossils?\nFossils are evidences of ancient life forms or ancient habitats\nwhich have been preserved by natural processes.\nFossil evidence\nis typically preserved within the sediments deposited beneath\nwater and land.\nThey can be actual remains of once lived such as bones or\nseeds or even traces of past event such as dinosaur foot print or\nripple marks on a pre-historic shore.\nUsually when organisms\ndie, their bodies will be decomposed and lost.\nSometimes the body or some parts of\nthe body do not decompose completely.\nFor example if a dead insect get caught in mud,\nit will not decompose quickly and the mud will eventually harden and retain the",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00124"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 222,
+      "textbook_page": 213,
+      "pdf_pages": [
+        222,
+        223,
+        224
+      ],
+      "textbook_pages": [
+        213,
+        214,
+        215
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "In this section we will try\nto understand that when we cut forest to grow food crops, how this activity\nbrings harmful changes in ecosystem and affects organisms of each trophic\nlevel.\nLet us study a pond ecosystem to understand the components of\nenvironment, their interactions and effects of human interventions in the\nfollowing story.\n9.4.1 Story of Kolleru Lake\nFresh water lakes provide the nutritional requirements of the world’s\nFig-8: Kolleru Lake\npoorest people.\nOne such lake is Kolleru which is not an ordinary wetland.\nIt is one of the largest fresh water lakes in India, existing between West\nGodavari and Krishna districts of the state of Andhra Pradesh.\nThe\ncatchment of the lake extends up to 6121 km2.\nThe lake Kolleru discharges\nits excess water in to the Bay of Bengal through the twisty channel called\nUpputeru, which is about 60 km long.\nNevertheless, the Kolleru wetland receives\nhuge quantity of nutrient rich sediments from\nthe flood plains of these rivers.\nIn November 1999, the Government of\nIndia had declared the lake as Bird Sanctuary.\n214 Our Environment\nThis lake is hosting 193 species of birds and a variety of flora and fauna,\nincluding medicinal plants.\nIt attracts migratory birds from northern Asia\nand Eastern Europe between the months of October and March and it is\nestimated as 20,00,000 birds per year.\nThe lake was also an important\nhabitat for an estimated 20 million residents.\nThis largest fresh water lake\nhas not only shrunk in size but faced great threat due to pollution in the\nlast three decades as revealed by satellite pictures.\nThe decrease in water\narea and muddy ground in the lake resulted in flooding problems in the\nlake area.\nObserve the data given in the following table.\nx In which year lake-water spread area is more?\nWhy?\nx Why do you think weeds are more dense in the lake?\nx What are the reasons for decrease in lake area?\nx How do the above said reasons lead to pollution?\nx What could be the reason for the migration of birds to this lake?\nx How was the menance of pollution in lake discovered?\nBeing a profitable business, Aquaculture in Kolleru was started\nextensively in the eighties which later spread to other areas in the Krishna\nGodavari delta and attracted a large number of investors to the area.\nIn\n1996, almost entire lake was brought under cultivation and bunds were\nconstructed to keep water out to protect the crops.\nThis diversion affected\nthe natural flow system of the lake.\nThe water holding capacity of the lake\nis also found significantly reduced.\nIn due course of time activities such as agriculture and industries\ncame along in ever growing intensity in the catchment area of the lake.\nConsequently, the drains and rivulets carry substantial quantity of various\ntypes of pollutants into the lake.\nPortion of the Lake Area in 1967 Area in 2004\n(Km2) (Km2)\nWater spread area 70.70 62.65\nwith sparse weed 0 47.45\nwith dense weed 0 15.20\nliable to flood in rainy season 100.97 0\nAquaculture ponds 0 99.74\nRice fields 8.40 16.62\nEncroachment 0.31 1.37\nTotal 180.38 180.38\nTable-1\nReflection of light at curved surfaces215 Our Environment\nThe major sources of pollution are agricultural runoff containing\nresidues of several agrochemicals, fertilizers, fish tank discharges industrial\neffluents containing chemical residues and different types of organic\nsubstances, municipal and domestic sewage.\nExcessive nutrient addition,\nespecially from anthropogenic sources, led to explosive weed growth.\nEx: Eichhornia, Pistia (Eutrophication).\nAs a result balance of the lake is\ndamaged.\nAs a result, the water of the lake turned more alkaline in nature, turbid,",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00136"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 223,
+      "textbook_page": 214,
+      "pdf_pages": [
+        223,
+        224,
+        225,
+        226
+      ],
+      "textbook_pages": [
+        214,
+        215,
+        216,
+        217
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "liable to flood in rainy season 100.97 0\nAquaculture ponds 0 99.74\nRice fields 8.40 16.62\nEncroachment 0.31 1.37\nTotal 180.38 180.38\nTable-1\nReflection of light at curved surfaces215 Our Environment\nThe major sources of pollution are agricultural runoff containing\nresidues of several agrochemicals, fertilizers, fish tank discharges industrial\neffluents containing chemical residues and different types of organic\nsubstances, municipal and domestic sewage.\nExcessive nutrient addition,\nespecially from anthropogenic sources, led to explosive weed growth.\nEx: Eichhornia, Pistia (Eutrophication).\nAs a result balance of the lake is\ndamaged.\nAs a result, the water of the lake turned more alkaline in nature, turbid,\nnutrient rich, low in Dissolved Oxygen (DO) and high in Biological Oxygen\nDemand (BOD), which had great effect on aquatic animals.\nWater borne\ndiseases like diarrhoea, typhoid, amoebiasis and others are said to be\ncommon among the local inhabitants who are unaware of the state of\npollution in the lake water.\nVector like mosquitoes borne diseases also\nincreased.\nPrawn and fish have been found to be affected by diseases leading\nto some farms being abandoned.\nThe lands thus abandoned are useless for\nagriculture too.\nThe lake at present is prone to siltation, enchroachment, blockages in\ncanals.\nDue to aquaculture, 15 local varieties of fishes are endangered.\nAs\noxygen dissolution in water is decreasing, the number of fishes living in\nsurface water is increased.\nLet us observe the following table showing different activities in\nthe lake and their influence.\nThink answers to the following questions.\nProblem Agricultural Aquaculture Industrial Human\nPractices practices activities activities\nBiological\n1.\nDecreased\nMigratory birds\n2.\nPopulation loss of\nflora and fauna\n3.\nPathogens\nChemical\n1.\nEutrophication\n2.\nToxic contamination\nPhysical\n1.\nSiltation\n2.\nFlooding\nTable-2\n-\n-\n-\n+\n+\n-\n-\n-\n-\n-\n-\n+\n+\n+\n+\n+\n-\n+\n+\n-\n+\n+\n+\n+\n-\n-\n-\n+\nNote: (+) means has influence on the mentioned problem\n(-) means has no influence on the mentioned problem\n216 Our Environment\nx What are the factors that affected the number of migratory birds to\ndecrease?\nx Do you find any relationship between biological and physical\nproblems?\nWhat are they?\nx What are the reasons for chemical problems?\nx What happens if the dissolved oxygen is reduced in lake water?\nx Is BOD of turbid and nutrient rich water high or low?\nWhat are it’ s\nconsequences?\nx People living in catchment area of Kolleru faced so many\nproblems.\nWhy?\nx How does pollution influence the migration of birds?\nThe Ministry of Environment and Forest (MoEF), Government of India\nconstituted a committee “Operation Kolleru” to protect the lake.\nThe\nobjective of the programme is to bring back the ecological balance of\nKolleru Lake which is a Gift of nature.\nActivity-1\nObserve any (water) ecosystem in your surroundings and identify the\ndifferent food chains and food web operating in this ecosystem.\nWrite the\nfollowing details in your notebook, as under.\nWORKSHEET\n1.\nNames of the students in a group: _____________________ Date: _____________\n2.\nName of the ecosystem: _____________________________________________\n3.\nTopography: ______________________________________________________\n4.\nNames / Number of plants (producers) identified: _________________________\n5.\nNames / Number of animals identified: __________________________________\n6.\nIdentify the different types consumers and name them & mention their number below:\nHerbivores (Primary consumers): ___________________________________\nCarnivores (Secondary consumers): __________________________________\nTop level carnivores (Tertiary): _______________________________________\n7.\nFood relationships among them: food habits / preferences: ___________________\n8.\nShow / draw the different food chains: __________________________________\n9.\nShowcase the food web: _____________________________________________\n10.\nList out all abiotic factors existing in the ecosystem: ______________________\n( A check list can be given, and asked to tick)\n11.\nIs there any threat to the ecosystem?\nYes/No? _____________________________\nIf yes, what? and how? _____________________________________________\nSuggest few remedial measures _______________________________________\nReflection of light at curved surfaces217 Our Environment\nWhen a forest is cut down and a food crop is grown in its place, a\nnatural established ecosystem with its vast number of species in a state of",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00137"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\"status\":\"insufficient_evidence\",\"answer\":\"The provided textbook evidence does not contain information about why fish and frog produce a huge number of eggs each year. Therefore, it is not possible to answer the question based on the given evidence.\",\"selected_evidence_ids\":[],\"citations\":[],\"missing_information\":[\"Information about reproduction in fish and frogs\"]}",
+    "time_to_first_token_seconds": 298.07454929998494,
+    "latency_seconds": 330.1121277999773,
+    "usage": {
+      "completion_tokens": 70,
+      "prompt_tokens": 4718,
+      "total_tokens": 4788,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-1FHqI3bMmMjFYCo0Yrnw7gaQNVnvS98F",
+    "peak_rss_bytes": 22480326656
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "insufficient_evidence",
+    "answer": "The provided textbook evidence does not contain information about why fish and frog produce a huge number of eggs each year. Therefore, it is not possible to answer the question based on the given evidence.",
+    "selected_evidence_ids": [],
+    "citations": [],
+    "missing_information": [
+      "Information about reproduction in fish and frogs"
+    ],
+    "valid_citation_count": 0,
+    "citation_count": 0
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Fertilisation is external in water",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Eggs and sperm are exposed to currents and predators",
+        "token_recall": 0.2,
+        "matched": false
+      },
+      {
+        "point": "The chance of any one gamete/egg surviving and being fertilised is low",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Large numbers compensate for high loss",
+        "token_recall": 0.2,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.0,
+    "citation_validity": 0.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": true,
+    "answer_word_count": 35
+  },
+  "completed_at": "2026-07-17T16:54:56+00:00"
+}

@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6",
+  "question_id": "GEN-PSC-016",
+  "question": "Why should we connect electric appliances in parallel in a household circuit? What happens if they are connected in series?",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "d49da6978953facaf894e437804884a5f4abac5ec9d66155b598520f5df87ccb",
+  "context_sha256": "5533d3aa42480c7969e08db992f3c9934e6e29806b8485af2d638db127d0e39b",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 217,
+      "textbook_page": 202,
+      "text": "Government’s Gift for Students’ Progress 202 Electric Current\nfig-19keyBattery\nI\nA\nA\nammeter 1\nP\nI2\nI3\nQ\n· What do you mean by equivalent resistance?\nIf the current drawn by a resistor is equal to the current drawn by\nthe combination of resistors then the resistor is called as equivalent resistor\n(provided the source in the circuit is constant).\nSo, we have V = I Req\nSubstituting the values of V1, V2, V3 and V in the equation (1), we get\nIReq = IR1 + IR2 + IR3\nReq = R1 + R2 + R3\nFrom the above equation you can conclude that the sum of individual\nresistances is equal to their equivalent resistance when the resistors are\nconnected in series.\n· What happens when one of the resistors in series breaks down?\nWhen one of the resistors in series breaks down, the circuit\nbecomes open and flow of current cannot take place in the circuit. This is\nthe reason why household electrical appliances are not connected in series.\n· Can you guess in what way household wiring has been done?\nLet us see\n9.7.2 Parallel Connection of resistors\nActivity 7\nUse the bulbs used in activity 6 and connect\nthese bulbs as shown in fig.- 19.\nMeasure the potential difference across each\nbulb using a voltmeter or multi meter. Note these\nvalues in your note book. What do you notice? The\npotential difference at the ends of each bulb is the\nsame. These bulbs are said to be in parallel conne\nction. Measure electric currents flowing through\neach bulb using ammeters. Note these values.\nLet I1,I2 and I3 be the currents flowing through\nR1, R2 and R3 resistors respectively.\n· How much current is drawn from the battery?\n· Is it equal to individual currents drawn by the resistors?\nI1",
+      "text_sha256": "2bb3cd721614d16e37c3621ecfc57c5f2826d715144550501ef080e7bb82366b"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 226,
+      "textbook_page": 211,
+      "text": "Government’s Gift for Students’ Progress 211 Electric Current\n9.10 Overload\n· What do you mean by overload?\n· Why does it cause damage to electric appliances?\nWe frequently hear news about overload of current and damages caused\nby this overload.\nElectricity enters our homes through two wires called lines. These\nline wires have low resistance and the potential difference between the\nwires is usually about 240V . These two line wires run throughout the\nhousehold circuit, to which we connect various appliances such as fan, TV ,\nrefrigerator etc.\nAll the electric devices of our home are connected at different points\nbetween these two wires. This means all the electric appliances are in\nparallel connection. Hence, potential drop across each device is 240V . If\nwe know the value of resistance of the electric device, we can calculate\nthe current passing through it using the equation I = V/R. For example, the\ncurrent passing through a bulb with resistance 240 W is 1 A.\nBased on the resistance of each electric device, it draws some current\nfrom the supply. Total current drawn from the mains is equal to the sum of\nthe currents passing through each device (Junction law).\nIf we add more devices to the household circuit the current drawn\nfrom the mains also increases.\n· What happens when this current increases greatly?\nTo answer this, observe the values noted on digital meters fixed\nat your home. You will notice the following values on the meter.\nPotential difference: 240 V\nCurrent: 5 – 20A\nThis means the line wires that are entering the meter have a\npotential difference of 240V . The minimum and maximum limit\nof current that can be drawn from the mains is 5 – 20A. Thus, the\nmaximum current that we can draw from the mains is 20A. When\nthe current drawn from the mains is more than 20A. Overheating\noccurs and may cause a fire. This is called over loading. See fig.-\n32. If we switch on devices, such as heater shown in fig.- 32, the\ncurrent drawn from the mains exceeds the max limit 20A.\n· How can we prevent damage due to overloading?\n240V\nFuse\nTV\nFridge\nBulb\nFan\nHeater\n20A\n6A\n8A\n2A\n4A\nfig-32",
+      "text_sha256": "7b60979b013e02044c7a9821f38ce57eb21e7ad005d8468070c7ed978c8f620a"
+    },
+    {
+      "evidence_id": "E3",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 229,
+      "textbook_page": 214,
+      "text": "Government’s Gift for Students’ Progress 214 Electric Current\nII. Application of concepts\n1. Explain overloading of household circuit. (AS1)\n2. Why do we use fuses in household circuits? (AS1)\n3. Two bulbs have ratings 100 W , 220V and 60 W , 220 V . Which one has the greater\nresistance?(AS1)\n4. Why do we consider tungsten as a suitable material for making the filament of a bulb? (AS2)\n5. Are the head lights of a car connected in series or parallel? Why? (AS2)\n6. Why should we connect electric appliances in parallel in a household circuit? What happens\nif they are connected in series? (AS2)\n7. If the resistance of your body is 100000W. What would be the current that flows in your\nbody when you touch the terminals of a 12V battery? (AS7)\nIII. Higher Order Thinking Questions\n1. Imagine that you have three resistors of 30W each. How many resultant resistances can be\nobtained by connecting these three in different ways? Draw the relevant diagrams.\n2. A house has 3 tube lights, two fans and a Television. Each tube light draws 40W . The fan\ndraws 80W and the Television draws 60W . On the average, all the tube lights are kept on for\nfive hours, two fans for 12 hours and the television for five hours every day. Find the cost of\nelectric energy used in 30 days at the r ate of Rs. 3.00 per Kwh. (AS7)\n1. A uniform wire of resistance 50 W is cut into five equal parts. These parts are now connected\nin parallel. Then the equivalent resistance of the combination is [ ]\na) 2 W b) 10 W\nc) 250 W d) 6250 W\nMultiple choice questions",
+      "text_sha256": "cf35eaf64090a0185c84ca7fd4257ec303e50b69629abe3948c0303a24f3df42"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Electric appliances are connected in parallel in a household circuit because each appliance receives the full voltage from the power supply. When appliances are connected in parallel, the voltage across each appliance remains the same, allowing them to operate independently. If one appliance fails or is turned off, the others continue to function normally. In contrast, if appliances are connected in series, the voltage is divided among them, and if one appliance fails, the entire circuit is broken, causing all appliances to stop working. Additionally, in a series connection, the total resistance increases, which reduces the current flowing through the circuit, making it inefficient for household use.\",\n  \"selected_evidence_ids\": [\"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 229,\n      \"textbook_page\": 214\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 33.052450299990596,
+    "latency_seconds": 66.6739505000005,
+    "usage": {
+      "completion_tokens": 199,
+      "prompt_tokens": 1627,
+      "total_tokens": 1826,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-FBWvFSnDKQHuZxcI2fMs9wZxbXXdfokm",
+    "peak_rss_bytes": 14715600896
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Electric appliances are connected in parallel in a household circuit because each appliance receives the full voltage from the power supply. When appliances are connected in parallel, the voltage across each appliance remains the same, allowing them to operate independently. If one appliance fails or is turned off, the others continue to function normally. In contrast, if appliances are connected in series, the voltage is divided among them, and if one appliance fails, the entire circuit is broken, causing all appliances to stop working. Additionally, in a series connection, the total resistance increases, which reduces the current flowing through the circuit, making it inefficient for household use.",
+    "selected_evidence_ids": [
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E3",
+        "pdf_page": 229,
+        "textbook_page": 214
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Parallel branches receive the same supply potential difference",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Each appliance draws current according to its resistance/power",
+        "token_recall": 0.625,
+        "matched": true
+      },
+      {
+        "point": "Appliances can be switched independently",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Failure/opening of one branch does not stop the others",
+        "token_recall": 0.375,
+        "matched": false
+      },
+      {
+        "point": "In series, voltage is shared, total resistance rises, and all devices carry the same current",
+        "token_recall": 0.6364,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.4,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 107
+  },
+  "completed_at": "2026-07-17T11:52:57+00:00"
+}

@@ -1,0 +1,25 @@
+{
+  "planned_questions": 8,
+  "completed_questions": 8,
+  "failed_questions": 0,
+  "structured_output_valid": 8,
+  "lexical_citation_support_valid": 3,
+  "automatic_passes": 1,
+  "mean_required_coverage": 0.4854,
+  "mean_rubric_score": 0.4578,
+  "mean_latency_seconds": 34.5646,
+  "max_latency_seconds": 44.2484,
+  "manual_review_required": true,
+  "prompt_comparisons_started": false,
+  "other_models_downloaded": false,
+  "evaluator": "deterministic_rubric_and_citation_v1_1",
+  "manual_review": {
+    "reviewed_questions": 8,
+    "strict_gate_passes": 2,
+    "mean_strict_required_coverage": 0.6937,
+    "fully_supported_citations": 5,
+    "partially_supported_citations": 3,
+    "unsupported_citations": 0,
+    "unsupported_claims_found": 0
+  }
+}

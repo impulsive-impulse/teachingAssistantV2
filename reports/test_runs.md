@@ -445,3 +445,94 @@ temp\python-x64\python.exe scripts\manage_retrieval_baseline_v1.py validate
 Result: effectiveness counts, full-rank MRR, every golden expectation, and
 repeat ordering reproduced exactly. Timing varied as expected; all eight
 embedding caches were valid hits and no historical experiment file changed.
+
+## Generation Phase A gold-context smoke — 2026-07-17
+
+Change tested: added the fixed 8/32 generation split, accepted-PDF-page gold
+contexts, native ARM64 Qwen3-8B llama.cpp interface, claim-level JSON answers,
+citation checks, deterministic rubric scoring, atomic per-question resume
+state, and manual answer/citation review. No prompt comparison or other model
+download was run.
+
+| Question | Manual required coverage | Citation review | Strict pass | Latency |
+|---|---:|---|---:|---:|
+| GEN-BIO-002 | 1.00 | Supported | 1 | 20.73 s |
+| GEN-BIO-005 | 1.00 | Partially supported | 0 | 40.71 s |
+| GEN-BIO-012 | 0.80 | Partially supported | 0 | 44.25 s |
+| GEN-BIO-014 | 0.60 | Supported | 0 | 32.81 s |
+| GEN-PSC-002 | 0.50 | Partially supported | 0 | 35.24 s |
+| GEN-PSC-006 | 1.00 | Supported | 1 | 26.81 s |
+| GEN-PSC-009 | 0.25 | Supported | 0 | 32.91 s |
+| GEN-PSC-015 | 0.40 | Supported | 0 | 43.05 s |
+
+| Aggregate | Result |
+|---|---:|
+| Completed generations | 8/8 |
+| Valid JSON and evidence IDs | 8/8 |
+| Strict lexical citation-support checks | 3/8 |
+| Fully supported after manual citation review | 5/8 |
+| Strict manual answer-and-grounding passes | 2/8 |
+| Mean strict required-point coverage | 0.6937 |
+| Mean / maximum latency | 34.56 / 44.25 s |
+| Unsupported claims found manually | 0 |
+
+Commands/results:
+
+```powershell
+temp\python-x64\python.exe scripts\run_generation_phase_a.py --prepare-only
+temp\python-x64\python.exe scripts\run_generation_phase_a.py --llama-server <arm64-llama-server.exe> --model <Qwen3-8B-Q4_K_M.gguf>
+temp\python-x64\python.exe scripts\run_generation_phase_a.py --reevaluate-only
+temp\python-x64\python.exe -m pytest -q tests\test_generation_phase_a.py tests\test_generation_benchmark_v1.py
+temp\python-x64\python.exe -m pytest -q
+```
+
+Result: 20 focused tests and all 146 repository tests passed. Generation
+Benchmark v1 remained at SHA-256 `f756e633...6680`; Retrieval Benchmark v1
+remained at `d333768b...c046`. The infrastructure gate passed, but only 2/8
+answers passed strict manual completeness plus grounding review, so prompt
+comparisons and other model downloads remain gated.
+
+## Local generation matrix and hardware backends — 2026-07-18
+
+Change tested: completed the approved prompt, context, Qwen 8B/14B, output-cap,
+thinking, specialist, holdout, final-40 and abstention screens; then compared
+native CPU, Vulkan, DirectML and QNN under controlled local probes. Frozen
+retrieval and generation inputs were not modified.
+
+| Evaluation | Model / mode | Questions | Coverage | Citation | Unsupported | Formula | p95 latency | Outcome |
+|---|---|---:|---:|---:|---:|---:|---:|---|
+| Holdout | Qwen3-8B gold | 24 | 0.5028 | 0.9583 | 0.0417 | 0.0000 | 97.33 s | Lightweight finalist |
+| Holdout | Qwen3-8B retrieved | 24 | 0.4903 | 0.9583 | 0.0000 | 0.0000 | 351.70 s | Balanced winner |
+| Holdout | Qwen3-14B gold | 24 | 0.5215 | 1.0000 | 0.0000 | 0.0000 | 186.91 s | Quality finalist |
+| Holdout | Qwen3-14B retrieved | 24 | 0.5632 | 0.9583 | 0.0417 | 0.2000 | 469.42 s | Best automatic coverage |
+| Final | Qwen3-8B gold | 40 | 0.4654 | 0.9750 | 0.0250 | 0.0000 | 85.74 s | Completed |
+| Final | Qwen3-8B retrieved | 40 | 0.4704 | 0.9500 | 0.0250 | 0.1000 | 229.40 s | Provisional pipeline |
+| Diagnostic | Prompt-only abstention | 5 | — | — | — | — | — | 4/5 correct |
+| Diagnostic | Model + evidence check | 5 | — | — | — | — | — | 5/5 correct |
+
+| Backend control | Valid output | Measured result | Decision |
+|---|---:|---|---|
+| Native ARM64 llama.cpp CPU | 1 | Qwen deterministic output valid | Reliable fallback / selected runtime |
+| x64 llama.cpp Vulkan | 0 | Repeated invalid text | Reject |
+| QNN HTP QDQ micrograph | 1 | 0.0648 ms p50 vs CPU 0.0569 ms | Provider works, no acceleration |
+| DirectML QDQ micrograph | 0 | 0.3420 ms p50 vs CPU 0.0569 ms | Reject |
+| ORT GenAI Gemma CPU | 0 | 0.308 tokens/s; truncated/weak answer | Reject |
+| ORT GenAI Gemma DirectML | 0 | 4.404 tokens/s; corrupted token stream | Reject despite speed |
+
+Commands/results:
+
+```powershell
+temp\python-x64\python.exe scripts\run_generation_experiment_matrix.py --llama-server <arm64-server> --qwen8 <8b-gguf> --qwen14 <14b-gguf>
+temp\python-x64\python.exe -m pytest -q tests\test_generation_experiments.py tests\test_generation_phase_a.py tests\test_generation_benchmark_v1.py
+temp\python-x64\python.exe -m pytest -q
+temp\python-x64\python.exe scripts\manage_retrieval_baseline_v1.py validate
+```
+
+Result: the matrix and all 85 final/diagnostic generations completed. The CPU
+probe initially exposed a contradictory CPU-fallback option; the probe was
+fixed, rerun, and documented. Focused tests: 27 passed. Full suite: 153 passed.
+Frozen retrieval validation reproduced Hit@1/3/5 = 26/44/50 and MRR 0.601127.
+Generation benchmark, retrieval benchmark and frozen retrieval configuration
+hashes remained `f756e633...6680`, `d333768b...c046` and `736fb932...baa6`.
+The winner is useful as a reproducible baseline but misses the coverage and
+formula targets, so it remains provisional pending blinded review.

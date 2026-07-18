@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P3__gold_separate_full__f7c64b7670",
+  "question_id": "GEN-BIO-002",
+  "question": "How are fats digested? Where do they get digested?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "b07027b0a053ce141e83e67089279eeab8650cbd800fc2d4a1810c92145a1796",
+  "context_sha256": "b2122173d9f1f37920d11d0e8481dd8930b03df29e1dff6a06592224f2cf0bbd",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 25,
+      "textbook_page": 16,
+      "text": "NutritionGovernment’s Gift for Students’ Progress 16\nFood in the form of a soft slimy substance where some proteins and\ncarbohydrates have already been broken down is called chyme. Now the\nfood material passes from the stomach to the small intestine. Here the\nring like muscles called pyloric sphincters relax to open the passage into\nthe small intestine. The sphincters are responsible for regulating the\nopening of the passage such that only small quantities of the food material\nmay be passed into the small intestine at a time.\nThe small intestine is the longest part of the\nalimentary canal. Its proximal part is called duodenum.\nIt is the site of further digestion of carbohydrates,\nproteins and fats. It receives the secretion of liver and\npancreas for this purpose. These juices render the internal\ncondition of the intestine gradually to a basic or alkaline one.\nFats are digested by converting them into small globule\nlike forms by the help of the bile juice secreted from liver.\nThis process is called emulsification.\nPancreatic juice secreted from pancreas contains enzymes like trypsin\nfor carrying on the process of digestion of proteins and lipase for fats.\nWalls of the small intestine secrete intestinal juice (Succusentericus)\nwhich carry this process further that is small molecules of proteins are\nbroken down to further smaller molecules. The same is the condition with\nfats. Carbohydrate digestion that started in the mouth and did not occur in\nthe stomach, resumes now as the medium gradually changes to an alkaline\none and the enzymes become active for complete carbohydrate breakdown.\nFig-13: Peristaltic movement\nbolus\nperistaltic wave oesophagus\nstomach\nActivity-4\nStudying the enzymes chart\nLet us observe the digestive juices, enzymes and their functions shown\nin the table. Discuss about this in the class.",
+      "text_sha256": "6c14858eeb97e0abbff9292e5ddb40f2a8143936a7d990641df1ceda91bca67c"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 26,
+      "textbook_page": 17,
+      "text": "NutritionGovernment’s Gift for Students’ Progress 17\nx Name the enzymes which act on carbohydrates.\nx Which digestive juice contains no enzymes?\nx What are the end products formed after the digestion of fats?\nx What are the enzymes that act on proteins?\nTransport of the products of digestion from the intestine into blood\n(through the wall of small intestine) is called absorption. Internally,\nintestinal wall has a number of finger like projections called Microvilli.\nThe villi increase the surface area for absorption. Blood vessels and lymph\nvessels are present in the form of a network in the villi.\nProducts of digestion are absorbed first into the villi and from\nthere into the blood vessels. This means the digested food absorbed by\nthe walls of the small intestine. Thus after maximum absorption of food in\nthe small intestine the rest passes into the large intestine which is\nundigested.\nTable-1: Digestive enzymes\nEnzyme/Substance\nPtyalin\n(salivary amylase)\nPepsin\nBile juice\n(No enzymes)\nAmylase\nTrypsin\nLipase\nPeptidases\nSucrase\nS.No.\n1\n2\n3\n4\n5\n6\n7\n8\nSecreted by\nSalivary glands\nGastric glands\nLiver\nPancreas\nPancreas\nPancreas\nIntestinal glands\nIntestinal glands\nSecreted into\nBuccal cavity\nStomach\nDuodenum\nDuodenum\nDuodenum\nDuodenum\nSmall Intestine\nSmall Intestine\nDigestive juice\nSaliva\nGastric juice\nBile juice\nPancreatic juice\nPancreatic juice\nPancreatic juice\nIntestinal juice\nIntestinal juice\nActs on\nCarbohydrates\nProteins\nFats\nCarbohydrates\nProteins\nFats\nPeptides\nSucrose\nProducts\nMaltose\nPeptones\nEmulsification\n(breaking\ndown of fats\ninto small\nglobules)\nMaltose\nPeptones\nFatty acids\nand glycerol\nAmino acids\nGlucose",
+      "text_sha256": "a928f1256000a612252a928082909bab025a82839447b8c82dbd111d019790e0"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Fats are digested in the small intestine. The process begins when bile juice from the liver is released, which converts fats into small globule-like forms. This process is called emulsification. The pancreatic juice from the pancreas, which contains the enzyme lipase, further breaks down these fats into fatty acids and glycerol.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 25,\n      \"textbook_page\": 16\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 24.515156800000113,
+    "latency_seconds": 44.71934739999415,
+    "usage": {
+      "completion_tokens": 141,
+      "prompt_tokens": 1073,
+      "total_tokens": 1214,
+      "prompt_tokens_details": {
+        "cached_tokens": 127
+      }
+    },
+    "response_id": "chatcmpl-QCPc4xX9rmu3kZbhtEYonMhMIhgoT26W",
+    "peak_rss_bytes": 10863341568
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Fats are digested in the small intestine. The process begins when bile juice from the liver is released, which converts fats into small globule-like forms. This process is called emulsification. The pancreatic juice from the pancreas, which contains the enzyme lipase, further breaks down these fats into fatty acids and glycerol.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 25,
+        "textbook_page": 16
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Bile emulsifies fats into small globules",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Pancreatic lipase acts on fats",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Digestion is completed in the small intestine",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "End products include fatty acids and glycerol",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 51
+  },
+  "completed_at": "2026-07-16T20:59:59+00:00"
+}

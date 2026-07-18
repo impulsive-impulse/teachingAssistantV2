@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-07-17T21:52:03+00:00",
+  "current_phase": "complete",
+  "last_completed_run": "qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb",
+  "last_valid_checkpoint": "X:\\teachingAssistantV2\\reports\\generation_experiments\\provisional_winner.json",
+  "exact_next_action": "Complete blinded human review packet; do not retune on holdout.",
+  "frozen_input_hashes": {
+    "generation_benchmark": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+    "retrieval_config": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6"
+  }
+}

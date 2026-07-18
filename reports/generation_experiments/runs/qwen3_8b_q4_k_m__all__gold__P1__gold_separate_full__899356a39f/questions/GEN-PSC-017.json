@@ -1,0 +1,99 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f",
+  "question_id": "GEN-PSC-017",
+  "question": "Explain Faraday’s law of induction with the help of activity.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "9ecf38a76e6cf2c6d442f7f9cf148f02f9f3c075b788248feae378c23c4ec031",
+  "context_sha256": "7cf40308a6f85350fd24f765590e195e0410d88402633bce714fb89c8d226250",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 250,
+      "textbook_page": 235,
+      "text": "Government’s Gift for Students’ Progress 235 Electromagnetism\nfig-13\nN\nS\nG\nN\n10.5 Electromagnetic induction\nAtivity 9\nThe discovery and understanding of electromagnetic\ninduction are based on a long series of experiments\ncarried out by Faraday and Henry. Let us try to do one of\nthose experiements.\nConnect the terminals of a coil to a sensitive\nammeter or a galvanometer as shown in the fig.-13.\nNormally, we would not expect any deflections of needle\nin the galvanometer because there is no electromotive\nforce in this circuit. Now if we push a bar magnet towards\nthe coil, with its north pole facing the coil, a remarkable thing happens.\nWhile the magnet is moving towards the coil, the needle in galvanometer\ndeflects, showing that a current has been set up in the coil, the galvanometer\ndoes not deflect if the magnet is at rest. If the magnet is moved away from\nthe coil, the needle in the galvanometer again deflects, but in the opposite\ndirection, which means that a current is set up in the coil in the opposite\ndirection.\nIf we use the end of south pole of a magnet instead of north pole in the\nabove activity, the experiment works just as described but the deflections\nare exactly reversed.\nFurther experimentation enables us to understand that the relative\nmotion of the magnet and coil set up a current in the coil. It makes no\ndifference whether the magnet is moved towards the coil or the coil towards\nthe magnet.\n10.5.1 Faraday’s Law\n“Whenever there is a continuous change of magnetic flux linked with a\nclosed coil, a current is generated in the coil.” This is one form of Faraday’s\nlaw.\nDo you know?\n· The relation between direction of induced current, magnetic field and force can\nalso be explained by Flemings left hand rule. Stretch the left hand thumb, middle\nfinger and forefinger in such a way that they are mutually perpendicular to each\nother. The forefinger indicates the direction of magnetic field, the middle finger\nindicates the direction of current and thumb indicates direction of force. By using\nthe Flemings left hand rule we can explain the working of electric motor.",
+      "text_sha256": "e748536054d29f451c77e5fe4440befabd867167ff249eaa11e24a9284a76db2"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Faraday’s law of induction explains how a changing magnetic field can induce an electric current in a coil. To understand this, let’s consider an activity described in the textbook. In this activity, a coil is connected to a sensitive galvanometer, and a bar magnet is moved towards and away from the coil. When the magnet is moved towards the coil, the galvanometer needle deflects, indicating that a current is induced in the coil. This happens because the motion of the magnet changes the magnetic flux through the coil. When the magnet is moved away, the needle deflects in the opposite direction, showing that the induced current is in the opposite direction. This demonstrates that a change in magnetic flux, whether by moving the magnet or the coil, induces a current. Faraday’s law states that whenever there is a continuous change in magnetic flux linked with a closed coil, a current is generated in the coil. This activity helps visualize how relative motion between a magnet and a coil can produce an electric current.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 250,\n      \"textbook_page\": 235\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 7.363890700013144,
+    "latency_seconds": 47.868064600013895,
+    "usage": {
+      "completion_tokens": 278,
+      "prompt_tokens": 666,
+      "total_tokens": 944,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-ieEzTFn6swILtS7VjWa4womiHT183fZk",
+    "peak_rss_bytes": 18383519744
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Faraday’s law of induction explains how a changing magnetic field can induce an electric current in a coil. To understand this, let’s consider an activity described in the textbook. In this activity, a coil is connected to a sensitive galvanometer, and a bar magnet is moved towards and away from the coil. When the magnet is moved towards the coil, the galvanometer needle deflects, indicating that a current is induced in the coil. This happens because the motion of the magnet changes the magnetic flux through the coil. When the magnet is moved away, the needle deflects in the opposite direction, showing that the induced current is in the opposite direction. This demonstrates that a change in magnetic flux, whether by moving the magnet or the coil, induces a current. Faraday’s law states that whenever there is a continuous change in magnetic flux linked with a closed coil, a current is generated in the coil. This activity helps visualize how relative motion between a magnet and a coil can produce an electric current.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 250,
+        "textbook_page": 235
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Connect a coil to a sensitive galvanometer",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Move a bar magnet toward the coil and observe deflection",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "A stationary magnet gives no deflection",
+        "token_recall": 0.2,
+        "matched": false
+      },
+      {
+        "point": "Moving the magnet away reverses deflection",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Infer induced emf/current from a changing magnetic flux and state Faraday’s law",
+        "token_recall": 0.7,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.8,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 173
+  },
+  "completed_at": "2026-07-17T19:13:09+00:00"
+}

@@ -1,0 +1,13 @@
+0.00.007.523 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.007.634 I srv          init: The UI is disabled
+0.00.007.636 I srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.007.749 W srv  llama_server: -----------------
+0.00.007.755 W srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+0.00.007.756 W srv  llama_server: this can be a security risk (cross-origin attacks)
+0.00.007.756 W srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+0.00.007.756 W srv  llama_server: -----------------
+0.00.018.972 I srv    load_model: loading model 'C:\Users\saman\AppData\Local\Temp\ta_v2_backend_probe_b10046\models\Qwen3-8B-Q4_K_M.gguf'
+0.00.597.923 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.05.810.088 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 8192, kv_unified = 'false'
+0.05.819.314 I srv  llama_server: model loaded
+0.05.819.324 I srv  llama_server: listening on http://127.0.0.1:18090

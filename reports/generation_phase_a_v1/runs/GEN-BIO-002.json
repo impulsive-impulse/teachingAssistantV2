@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "question_id": "GEN-BIO-002",
+  "question": "How are fats digested? Where do they get digested?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "question_type": "process_explanation",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "0dc6728e1394513c5e69294aa0281a6e93389b40a2f12bdd639e9b4b7af6520d",
+  "context_sha256": "b2122173d9f1f37920d11d0e8481dd8930b03df29e1dff6a06592224f2cf0bbd",
+  "evidence_references": [
+    {
+      "evidence_id": "E1",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 25,
+      "textbook_page": 16
+    },
+    {
+      "evidence_id": "E2",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 26,
+      "textbook_page": 17
+    }
+  ],
+  "generation": {
+    "raw_text": "{\"claims\":[{\"text\":\"Fats are digested in the small intestine.\",\"citations\":[\"E1\"]},{\"text\":\"The process of digesting fats is called emulsification.\",\"citations\":[\"E1\"]},{\"text\":\"Bile juice secreted from the liver helps in the digestion of fats.\",\"citations\":[\"E1\"]},{\"text\":\"Pancreatic juice contains lipase, which is an enzyme that helps in the digestion of fats.\",\"citations\":[\"E1\"]},{\"text\":\"The end products of fat digestion are fatty acids and glycerol.\",\"citations\":[\"E2\"]}]}",
+    "latency_seconds": 20.728524900012417,
+    "usage": {
+      "completion_tokens": 120,
+      "prompt_tokens": 1026,
+      "total_tokens": 1146,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "response_id": "chatcmpl-0kWm5d15kMwt6m6QQnbPreWxb1OtMfum"
+  },
+  "citation_validation": {
+    "valid": true,
+    "structure_valid": true,
+    "citation_support_valid": true,
+    "errors": [],
+    "claims": [
+      {
+        "text": "Fats are digested in the small intestine.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "The process of digesting fats is called emulsification.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "Bile juice secreted from the liver helps in the digestion of fats.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "Pancreatic juice contains lipase, which is an enzyme that helps in the digestion of fats.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "The end products of fat digestion are fatty acids and glycerol.",
+        "citations": [
+          "E2"
+        ]
+      }
+    ],
+    "answer_text": "Fats are digested in the small intestine. The process of digesting fats is called emulsification. Bile juice secreted from the liver helps in the digestion of fats. Pancreatic juice contains lipase, which is an enzyme that helps in the digestion of fats. The end products of fat digestion are fatty acids and glycerol.",
+    "cited_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citation_support": [
+      {
+        "claim_index": 1,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 1.0,
+        "supported": true
+      },
+      {
+        "claim_index": 2,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 1.0,
+        "supported": true
+      },
+      {
+        "claim_index": 3,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 1.0,
+        "supported": true
+      },
+      {
+        "claim_index": 4,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.875,
+        "supported": true
+      },
+      {
+        "claim_index": 5,
+        "citations": [
+          "E2"
+        ],
+        "claim_token_support": 0.8571,
+        "supported": true
+      }
+    ],
+    "validator": "deterministic_rubric_and_citation_v1_1"
+  },
+  "rubric_evaluation": {
+    "required_points": [
+      {
+        "point": "Bile emulsifies fats into small globules",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Pancreatic lipase acts on fats",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Digestion is completed in the small intestine",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "End products include fatty acids and glycerol",
+        "token_recall": 0.8333,
+        "matched": true
+      }
+    ],
+    "optional_points": [
+      {
+        "point": "The intestinal medium becomes alkaline",
+        "token_recall": 0.0,
+        "matched": false
+      }
+    ],
+    "required_coverage": 1.0,
+    "optional_coverage": 0.0,
+    "possible_unsupported_claims": [],
+    "asserted_unsupported_claims": [],
+    "rubric_score": 1.0,
+    "automatic_pass": true,
+    "manual_review_required": true,
+    "evaluator": "deterministic_rubric_and_citation_v1_1"
+  },
+  "completed_at": "2026-07-16T19:22:06+00:00",
+  "initial_rubric_evaluation": {
+    "required_points": [
+      {
+        "point": "Bile emulsifies fats into small globules",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Pancreatic lipase acts on fats",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Digestion is completed in the small intestine",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "End products include fatty acids and glycerol",
+        "token_recall": 0.8333,
+        "matched": true
+      }
+    ],
+    "optional_points": [
+      {
+        "point": "The intestinal medium becomes alkaline",
+        "token_recall": 0.0,
+        "matched": false
+      }
+    ],
+    "required_coverage": 1.0,
+    "optional_coverage": 0.0,
+    "possible_unsupported_claims": [],
+    "rubric_score": 1.0,
+    "automatic_pass": true,
+    "manual_review_required": true,
+    "evaluator": "deterministic_token_recall_v1"
+  },
+  "reevaluated_at": "2026-07-16T19:39:49+00:00"
+}

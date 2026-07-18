@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6",
+  "question_id": "GEN-PSC-019",
+  "question": "Suggest an experiment to prove that the presence of air and water are essential for corrosion. Explain the procedure.",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "3288d027b476a0749b0b71d4a02ccda77948d81f7e7ae1b310a67e9b22d7746b",
+  "context_sha256": "b042ad81fa5ffd10e218bc41eae220969bef08269b9b3e67d9cdb549b7061667",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 274,
+      "textbook_page": 259,
+      "text": "Government’s Gift for Students’ Progress 259 Principles of Metallurgy\nBoiled\ndistilled water\nAnhydrous\ncalcium chloride\nWater\nRusty\niron\nnails\nAir Air Dry\nair\nLayer\nof oil\nfig-5: Investigating the conditions\nunder which iron rusts\nAnode: Cu g Cu2+ + 2e-\nCathode: Cu2+ + 2e- g Cu\nThe soluble impurities go into the solution, where as insoluble\nimpurities from the blister copper get deposited at the bottom of anode as\nanode mud which contains metals like antimony selenium, tellurium, silver,\ngold and platinum; recovery of these metals may meet the cost of refining.\nZinc may also be refined this way.\n11.3 Corrosion\nThe rusting of iron (iron oxide), tarnishing of silver (silver sulphide),\ndevelopment of green coating on copper (copper carbonate) and bronze\nare some of the examples of corrosion.\n· Do you know why corrosion occurs?\n· In which coses corrosion occurs?\nLet us find\nActivity 2\n· Take three test tubes and place clean iron nails in each of them.\n· Label these test tubes A,B and C.\nPour some water in test tube A and cork it.\n· Pour boiled distilled water in test tube B, add about 1 ml of oil and\ncork it. The oil will float on water and prevent the air from dissolving\nin the water.\n· Put some anhydrous calcium chloride in test tube C and cork it.\nAnhydrous calcium chloride will absorb the moisture, if any, from the\nair. Leave these test tubes for a few days and then observe (see figure).\n· You will observe that iron nails rust in test tube\nA, but they do not rust in test tubes B and C. In\nthe test tube A, the nails are exposed to both air\nand water. In the test tube B, the nails are exposed\nto only water, and the nails in test tube C are\nexposed to dry air.\n· What does this tell us about the conditions under\nwhich iron articles rust?\nIn metallic corrosion, a metal is oxidised by loss\nof electrons generally to oxygen and results in the\nformation of oxides. Corrosion of iron (commonly\nknown as rusting) occurs in presence of water and\nair.",
+      "text_sha256": "188dbded5a5c04f8f6959ad36f8e1a4c9383af54e9fd38a75aa6ba01958d1c6d"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"To prove that the presence of air and water are essential for corrosion, you can perform the following experiment: Take three test tubes and place clean iron nails in each of them. Label these test tubes A, B, and C. Pour some water in test tube A and cork it. Pour boiled distilled water in test tube B, add about 1 ml of oil, and cork it. The oil will float on water and prevent the air from dissolving in the water. Put some anhydrous calcium chloride in test tube C and cork it. Anhydrous calcium chloride will absorb the moisture, if any, from the air. Leave these test tubes for a few days and then observe. You will observe that iron nails rust in test tube A, but they do not rust in test tubes B and C. In test tube A, the nails are exposed to both air and water. In test tube B, the nails are exposed to only water, and the nails in test tube C are exposed to dry air. This experiment shows that both air and water are necessary for corrosion.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 274,\n      \"textbook_page\": 259\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 9.074728500010679,
+    "latency_seconds": 50.186218899994856,
+    "usage": {
+      "completion_tokens": 294,
+      "prompt_tokens": 699,
+      "total_tokens": 993,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-zz4ofXGGYFCmaQhlr25s8zCgvBoQSP3V",
+    "peak_rss_bytes": 15124733952
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "To prove that the presence of air and water are essential for corrosion, you can perform the following experiment: Take three test tubes and place clean iron nails in each of them. Label these test tubes A, B, and C. Pour some water in test tube A and cork it. Pour boiled distilled water in test tube B, add about 1 ml of oil, and cork it. The oil will float on water and prevent the air from dissolving in the water. Put some anhydrous calcium chloride in test tube C and cork it. Anhydrous calcium chloride will absorb the moisture, if any, from the air. Leave these test tubes for a few days and then observe. You will observe that iron nails rust in test tube A, but they do not rust in test tubes B and C. In test tube A, the nails are exposed to both air and water. In test tube B, the nails are exposed to only water, and the nails in test tube C are exposed to dry air. This experiment shows that both air and water are necessary for corrosion.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 274,
+        "textbook_page": 259
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Use three clean nails in labelled test tubes",
+        "token_recall": 0.7143,
+        "matched": true
+      },
+      {
+        "point": "Expose one to both air and water",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Exclude air with boiled water plus an oil layer in another",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Exclude water with anhydrous calcium chloride in the third",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Only the nail with both air and water rusts",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Conclude both are necessary under the experiment’s conditions",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.6667,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 187
+  },
+  "completed_at": "2026-07-17T11:54:31+00:00"
+}

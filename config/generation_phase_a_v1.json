@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "experiment_id": "generation_phase_a_gold_context_smoke_v1",
+  "benchmark_path": "data/benchmarks/generation_benchmark_v1.jsonl",
+  "benchmark_sha256": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+  "model": {
+    "repository": "Qwen/Qwen3-8B-GGUF",
+    "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "filename": "Qwen3-8B-Q4_K_M.gguf",
+    "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "license": "Apache-2.0"
+  },
+  "runtime": {
+    "engine": "llama.cpp",
+    "build_number": 10046,
+    "build_commit": "32e789fdfd598e9a1872da55ac941e4d94f030bd",
+    "architecture": "windows-arm64",
+    "backend": "cpu",
+    "context_size": 8192,
+    "threads": 10,
+    "threads_batch": 10,
+    "batch_size": 512,
+    "ubatch_size": 256,
+    "gpu_layers": 0,
+    "parallel_slots": 1
+  },
+  "generation": {
+    "seed": 42,
+    "temperature": 0.0,
+    "max_output_tokens": 384,
+    "thinking": false
+  },
+  "split": {
+    "development_question_ids": [
+      "GEN-BIO-002",
+      "GEN-BIO-005",
+      "GEN-BIO-012",
+      "GEN-BIO-014",
+      "GEN-PSC-002",
+      "GEN-PSC-006",
+      "GEN-PSC-009",
+      "GEN-PSC-015"
+    ],
+    "held_out_policy": "All other benchmark rows remain held out until the smoke gate passes.",
+    "smoke_subset": "development"
+  },
+  "evaluation": {
+    "required_point_match_threshold": 0.55,
+    "unsupported_claim_match_threshold": 0.8,
+    "question_pass_required_coverage": 0.75,
+    "manual_review_required": true
+  }
+}

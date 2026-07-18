@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__gold__P1__gold_separate_full__d7742c81bc",
+  "question_id": "GEN-BIO-009",
+  "question": "How does phototropism occur in plants?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "6847f53ea12d849918d78c34ca2f49be601929231b2ca472f1309340b69a30c8",
+  "context_sha256": "b7f95fb4a04f95ba5edeeb0833cfd776d7841a0e609dfac20d5cfe96ee56c848",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 127,
+      "textbook_page": 118,
+      "text": "118Government’s Gift for Students’ Progress Coordination\nCharles Darwin and his son Francis Darwin performed some\nexperiments on phototropism. They covered the terminal portion of the\ntip of stem(coleoptile) with a cylinder of metal foil. Exposed the plant to\nlight coming from the side. The characteristic bending of the seedling did\nnot occur. When, light was permitted to penetrate the cylinder, bending of\nthe seedling occurred normally. They stated that when seedlings are freely\nexposed to a lateral light some ‘influence’ is transmitted from upper to\nthe lower part causing the material to bend.\nIn 1926, the Dutch plant physiologist F.W. Went succeeded in\nseparating this ‘influence’ responsible for bending from the plant that\nproduced it. Went cut-off coleoptile tips from oat\nseedlings. He placed the tips on a slice of agar and left\nthem for about an hour. He then cut the agar into small\nblocks and placed a block on one side of stump of the\ndecapitated seedlings. They were kept in the dark during\nthe entire experiment. Within one hour he observed a\ndistinct bending away from the side on which the agar\nblock was placed.\nAgar block that had not been in contact with coleoptile tip produced\neither no bending or only a slight bending toward the side on which the\nblock had been placed.\nWent interpreted these experiments as showing that the coleoptile tip\nexerted its effect by means of chemical stimulus rather than a physical\nstimulus such as an electrical impulse. This chemical stimulus came to be\nknown as auxin. In this way the first plant hormone auxin (greek word\nauxin means to increase) was discovered by Went.\n5.14 Tropic and nastic movements in plants\nThe above experiments show that movement of individual parts of plants\nis possible when they are subjected to external stimuli. This type of\nresponse is called tropism or tropic movement. Sometimes the direction\nof stimuli determines direction of movement, sometimes\nthe direction of movement may not be determined by\ndirection of stimuli. This type of response is called nastic\nmovement.\nLet us observe the growth of a creeper plant near\nwindow. The shoots of creeper bend towards sunlight.\nFig-22: Tendrils\nFig-21: Went experiment\nleaf\n(inside)\ncut tip of\ncoleoptile\ncoleoptile agar block\noat\nseed\ncoleoptile\nbending",
+      "text_sha256": "66de86aa4365fb162209e1361d432388b7688935cac1ab34a89737dbadfaa272"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 128,
+      "textbook_page": 119,
+      "text": "119Government’s Gift for Students’ Progress Coordination\nSuch type of response of a plant to light is called phototropism (photo\nmeans light, tropism means movement).\nWe know that roots always grow downwards. This means that plant\nrespond positively for gravitational force. This is called geotropism.\nIf we observe plant which grow near a rock or wall side. You notice\nthat all roots are growing in one direction, away from the rock or wall\nwhere water is available in the soil. This type of response to water is called\nhydrotropism.\nA very interesting thing in plants is movement of tendrils. All plants\nshow positive response to phototropism. But in creepers like cucumber,\nbitter gourd, the stem is weak and thin. Hence plant cannot grow erect.\nTendrils play a vital role to make the plant erect. Tendrils are thin thread\nlike growths on the leaves or stems of climbing plant. They grow towards\nsupport and wind around them. This type of response to make contact or\ntouch is called \"thigmotropism\".\nIf you taste the carpel of a flower it is sweet. Let us recall butterflies\nfluttering on flowers for the nectar. Ripen stigma secretes sugary substance.\nThis chemical substance stimulates the pollen grain which falls on the\nstigma. Pollen grain responds to this stimulus and germinate to produce\npollen tubes to reach the ovule for fertilization. This type of response to\nchemicals is called \"chemotropism.\" Unequal distribution of auxins affects\nthe root and the stem growth. High concentration of auxin stimulates stem\ngrowth and inhibit root growth.\nx Nervous system and endocrine system are the two systems that control and coordinate various\nfunctions in the body.\nx The responses of the nervous system can be classified as reflex, voluntary and involuntary actions.\nKey words\nResponse, stimuli, neuron, schwann cell, axon, synapse, sensory nerves (afferent), motor\nnerves (efferent), association nerves, central nervous system, brain, spinal cord, cerebrospinal\nfluid, peripheral nervous system, insulin, endocrine glands, hormones, feedback mechanism,\nplant hormones, tropic movements, nastic movements.\nWhat we have learnt?",
+      "text_sha256": "10e11838a538c2231b28d45cbf8b26d6685402859b9ca18d147ee3138d245c12"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Phototropism is the movement of plants in response to light. Charles Darwin and his son Francis Darwin conducted experiments on phototropism using the coleoptile (the tip of the stem of a seedling). They found that when the tip of the coleoptile was covered with a metal cylinder, the seedling did not bend towards the light. However, when light was allowed to pass through the cylinder, the seedling bent normally. This suggested that the tip of the coleoptile was responsible for sensing the light and transmitting an 'influence' to the lower part of the plant, causing it to bend. Later, in 1926, F.W. Went discovered that this 'influence' was a chemical substance called auxin, which is a plant hormone. Auxin is produced in the tip of the coleoptile and moves to the lower part of the plant, causing the plant to bend towards the light. This process is known as phototropism.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 127,\n      \"textbook_page\": 118\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 76.06344240001636,
+    "latency_seconds": 156.98351300001377,
+    "usage": {
+      "completion_tokens": 276,
+      "prompt_tokens": 1223,
+      "total_tokens": 1499,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-9WvdPxlErQIwnaYU6Vs8JmkVErUww3Ip",
+    "peak_rss_bytes": 19468169216
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Phototropism is the movement of plants in response to light. Charles Darwin and his son Francis Darwin conducted experiments on phototropism using the coleoptile (the tip of the stem of a seedling). They found that when the tip of the coleoptile was covered with a metal cylinder, the seedling did not bend towards the light. However, when light was allowed to pass through the cylinder, the seedling bent normally. This suggested that the tip of the coleoptile was responsible for sensing the light and transmitting an 'influence' to the lower part of the plant, causing it to bend. Later, in 1926, F.W. Went discovered that this 'influence' was a chemical substance called auxin, which is a plant hormone. Auxin is produced in the tip of the coleoptile and moves to the lower part of the plant, causing the plant to bend towards the light. This process is known as phototropism.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 127,
+        "textbook_page": 118
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Phototropism is directional growth in response to light",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "The shoot tip perceives lateral light",
+        "token_recall": 0.4,
+        "matched": false
+      },
+      {
+        "point": "Auxin influence is redistributed to the shaded side",
+        "token_recall": 0.4,
+        "matched": false
+      },
+      {
+        "point": "Greater elongation on the shaded side bends the shoot toward light",
+        "token_recall": 0.375,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.25,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 150
+  },
+  "completed_at": "2026-07-17T15:31:02+00:00"
+}

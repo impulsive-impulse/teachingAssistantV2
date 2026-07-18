@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f",
+  "question_id": "GEN-PSC-004",
+  "question": "Why should we balance a chemical equation?",
+  "book_id": "physical_sciences",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "21df41198ad295d8521325aec79a24414e7429377918599155385277b0177eb3",
+  "context_sha256": "d082c13c282d7308e19ba4dc5a60f52eae699a628058cf06555204e1070a4702",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 35,
+      "textbook_page": 25,
+      "text": "Chemical EquationsGovernment’s Gift for Students’ Progress 25\nGenerally, a compound is written by giving its chemical formula,\nwhich lists the symbols of the constituent elements and uses the subscript\nto indicate the number of atoms of each element present in the compound.\nIf no subscript is written the number 1 is understood. Thus we can write\ncalcium oxide as CaO, water as H 2O and the compound formed by the\nreaction of these two compounds is calcium hydroxide Ca (OH) 2.\nNow the reaction of calcium oxide with water can be written as:\nCaO + H2O g Ca (OH)2 ............................ (2)\nIn the above chemical equation, count the number of atoms of each\nelement on left side and right side of arrow.\n· Is the number of atoms of each element are equal on both sides?\nObserve the following reactions and their chemical equations. Zinc\nmetal reacts with dilute HCl to yield ZnCl2 and liberates Hydrogen gas.\nZ n+ HCl g ZnCl2 + H2 ............................ (3)\nSodium sulphate reacts with barium chloride to give white precipitate,\nbarium sulphate and sodium chloride.\nNa2SO4 + BaCl2 g BaSO4 + NaCl ............................. (4)\n· Do the atoms of each element on left side equal to the atoms of the\nelement on the right side of the equation?\n· Do the atoms of all the elements of the reactants also there on the\nproduct side?\nTHINK AND WRITE\nY ou have brushed the wall with an aqueous suspension of Ca(OH)2. After two\ndays the wall turned to white colour.\n· Write the balanced chemical reactions for the above changes using the\nappropriate symbols and formulae?.\n2.1.2 Balancing Chemical Equations\nAccording to the law of conservation of mass, the total mass of the\nproducts formed in chemical reaction must be equal to the total mass of\nreactants consumed. You know that an atom is the smallest particle of an\nelement that takes part in a chemical reaction. It is the atom which accounts\nfor the mass of any substance. As per the law of conservatioin of mass the\nnumber of atoms of each element before and after reaction must be the\nsame.",
+      "text_sha256": "a35a7f23d6716f57222c7f097a4d01c97264439fa13c83fc96f464be079ce6b6"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"We should balance a chemical equation because of the law of conservation of mass. This law states that the total mass of the products formed in a chemical reaction must be equal to the total mass of the reactants consumed. Since atoms are the smallest particles involved in a chemical reaction and account for the mass of any substance, the number of atoms of each element must be the same on both sides of the equation. Balancing ensures that the number of atoms of each element is equal on the reactant and product sides, maintaining the conservation of mass.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 35,\n      \"textbook_page\": 25\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 13.504351699986728,
+    "latency_seconds": 42.83654839999508,
+    "usage": {
+      "completion_tokens": 181,
+      "prompt_tokens": 656,
+      "total_tokens": 837,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-oTtAwGwpKIHYMlunsro65v96WQKYaHbk",
+    "peak_rss_bytes": 15655305216
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "We should balance a chemical equation because of the law of conservation of mass. This law states that the total mass of the products formed in a chemical reaction must be equal to the total mass of the reactants consumed. Since atoms are the smallest particles involved in a chemical reaction and account for the mass of any substance, the number of atoms of each element must be the same on both sides of the equation. Balancing ensures that the number of atoms of each element is equal on the reactant and product sides, maintaining the conservation of mass.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 35,
+        "textbook_page": 25
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Chemical reactions obey conservation of mass",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Atoms are rearranged rather than created or destroyed",
+        "token_recall": 0.1667,
+        "matched": false
+      },
+      {
+        "point": "The count of each element must be equal on both sides",
+        "token_recall": 0.8571,
+        "matched": true
+      },
+      {
+        "point": "Balancing changes coefficients, not chemical formulae",
+        "token_recall": 0.3333,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 99
+  },
+  "completed_at": "2026-07-17T19:00:23+00:00"
+}

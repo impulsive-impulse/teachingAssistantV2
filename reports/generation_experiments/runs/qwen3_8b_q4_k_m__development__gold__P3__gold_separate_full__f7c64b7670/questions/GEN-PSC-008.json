@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P3__gold_separate_full__f7c64b7670",
+  "question_id": "GEN-PSC-008",
+  "question": "Write the lens maker’s formula and explain the terms in it.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "ee9c62c5d20a65abe50cda2473512b7b55fb411b1d0fb58d65b3e6854ff91c72",
+  "context_sha256": "a36612711311495137b004a12b5191a3c48cda1187aa24c4241f9605e6bcbf58",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 90,
+      "textbook_page": 80,
+      "text": "80Government’s Gift for Students’ Progress Refraction of Light at Curved Surfaces\n4.5 Lens maker’s formula\nImagine a point object ‘O’\nplaced on the principal axis of the\nthin lens as shown in fig.- 22. Let\nthis lens be placed in a medium of\nrefractive index na and let refractive\nindex of lens medium be nb.\nConsider a ray, from ‘O’ which is incident on the convex surface of the\nlens with radius of curvature R1 at A as shown in fig.- 22.\nThe incident ray refracts at A.\nLet us assume that, it forms image at Q, if there were no concave\nsurface.\nFrom the fig.-(22), Object distance PO = –u;\nImage distance v = PQ = x\nRadius of curvature R = R1\nn1 = na and n2 = nb\nSubstitute the above values in the equation, 2 1 21n n ( n n)-=v uR\n-\n_ 1\nab abn ( n n)n+=x uR\n-\n...................(1)\nBut the ray that has refracted at A suffers another refraction at B on the\nconcave surface with radius of curvature (R2). At B the ray is refracted and\nreaches I on the principal axis.\nThe image Q of the object due to the convex surface is taken as object\nfor the concave surface. So, we can say that I is the image of Q for concave\nsurface. See fig.- 22.\nObject distance u = PQ = + x\nImage distance PI = v\nRadius of curvature R = –R 2\nFor refraction, the concave surface of the lens is considered as\nmedium-1 and surrounding medium is considered as medium-2. Hence\nthe suffixes of refractive indices interchange. Then we get,\nu xv\nO I\nna na\nnb\nP\nA B\nR1 R2\nfig-22\nQ",
+      "text_sha256": "ab764df25c3e1eb9bf8ee3e039a6109bb15a79d86966ac2c23ae117d35db7dfa"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 91,
+      "textbook_page": 81,
+      "text": "Government’s Gift for Students’ Progress Refraction of Light at Curved Surfaces81\nn1 = nb and n2 = na\nSubstituting the above values in equation 2 1 21n n ( n n)-=v uR\n-\n2\naa bb n ( n n)n =v xR\n-\n- - .............. (2)\nBy adding (1) and (2) we get,\na\n12\naa ab\nnn 11= ( n n)v u RR\næö+ -+ ç÷\nèø\nDividing both sides by na, We get\na\n12\nb\na\nn1 1 11=1v u n RR\næ ö æö+ -+ ç ÷ ç÷\nè ø èø\nWe know b\nbaa\nn nn = called refractive index of lens with respect to\nsurrounding medium.\n( ) 12\nba\n1 1 11= n1v u RR\næö+ -+ ç÷\nèø\nThis is derived for specific case for the convex lens so we need to generalize\nthis relation. For this we use sign convention. Applying sign convention to\nthis specific case we get,\n( ) 12\nba\n1 1 11= n1v u RR\næö- -- ç÷\nèø\nWe know that\n1 11 =v uf-\nSo, we get\n( ) 12\nba\n1 11= n1f RR\næö-- ç÷\nèø .................(3)\nIf the surrounding medium is air, then the relative refractive index could\nbe absolute refractive index of the lens.\n( ) 12\n1 11=n1f RR\næö-- ç÷\nèø .\nThis can be used only when the lens is kept in air.\nWhere n is absolute refractive index and this equation is called lens maker’s\nformula.\nNOTE: Always use sign convention while using any formula derived in\nthis chapter and the above formula can be used for any thin lens.",
+      "text_sha256": "48986be30bc1248facf5c3d2e3658604260595f543b3692a018f20edab3da705"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"The lens maker’s formula is given by: (1/f) = (n - 1)(1/R1 - 1/R2). Here, f is the focal length of the lens, n is the refractive index of the lens material, R1 is the radius of curvature of the first surface, and R2 is the radius of curvature of the second surface. This formula helps in calculating the focal length of a thin lens based on its refractive index and the radii of curvature of its surfaces.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 90,\n      \"textbook_page\": 80\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 91,\n      \"textbook_page\": 81\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 25.117848199995933,
+    "latency_seconds": 52.03539429999364,
+    "usage": {
+      "completion_tokens": 214,
+      "prompt_tokens": 1088,
+      "total_tokens": 1302,
+      "prompt_tokens_details": {
+        "cached_tokens": 127
+      }
+    },
+    "response_id": "chatcmpl-N9TAcFtXiDeccYdcnLB1DMscFE1tcb51",
+    "peak_rss_bytes": 13142085632
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "The lens maker’s formula is given by: (1/f) = (n - 1)(1/R1 - 1/R2). Here, f is the focal length of the lens, n is the refractive index of the lens material, R1 is the radius of curvature of the first surface, and R2 is the radius of curvature of the second surface. This formula helps in calculating the focal length of a thin lens based on its refractive index and the radii of curvature of its surfaces.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 90,
+        "textbook_page": 80
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 91,
+        "textbook_page": 81
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "State 1/f = (n − 1)(1/R₁ − 1/R₂) for a thin lens in air",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Define f, n, R₁ and R₂",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Preserve signs of the radii under the stated convention",
+        "token_recall": 0.1667,
+        "matched": false
+      },
+      {
+        "point": "Note that the surrounding medium changes the relative refractive index in the general form",
+        "token_recall": 0.2222,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.0,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 78
+  },
+  "completed_at": "2026-07-16T21:11:33+00:00"
+}

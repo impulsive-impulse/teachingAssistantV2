@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6",
+  "question_id": "GEN-BIO-020",
+  "question": "Why is it important to recharge the ground water sources?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "32099dc2697744c7692104c4552ccf84654f0860177807b2409de2e340f20d24",
+  "context_sha256": "8023603101067078afb0dd71b043d76a098cc9536ce8e960907703b85d442516",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 239,
+      "textbook_page": 230,
+      "text": "230 Natural ResourcesGovernment’s Gift for Students’ Progress\nx How can wells be recharged?\nx How would recharging of dried up wells help farmers of\nV addicherla?\nx What does the case study tell us about a water resource and its\neffect on farmers?\n10.1.1 Water for all\n97% of the total water on Earth, present in oceans, seas and\nunderground water as salt water. Only 2.5–2.75% is fresh water, including\n1.75–2% frozen in glaciers, ice and snow(nearly two thirds of the available\nfreshwater), 0.7–0.8% as fresh groundwater and soil moisture, and less\nthan 0.01% of it as surface water in lakes, swamps and rivers. Though it is\na meagre portion of the whole, if used judiciously, shall last for a long\ntime.\nx How can we use water judiciously?\nx Why were farmers at Wanaparthy at a better state than those at\nV addicherla?\nx How did farmers of V addicherla and Wanaparthy recharge their\nground water resources?\nIn ancient times, village boundaries were decided on a watershed(land between water\nsources usually of two rivers or streams) basis fixed at the common point of the\ndrainage system in between two villages. This was done by the expert farmers in the\nvillage. Such boundaries were socially acceptable to all the members of the system.\nThe development lies in the efficient usage of water resources. To\nexplain this fact we will observe the given case study.\n10.2 Case II: A Study of Kothapally Village, an example of\nwater management effort\nThis tells us how people in the village through proper guidance could\nmake optimum use of available water in the village.\nDo you know?!",
+      "text_sha256": "d6934b457fb0706ca735aeca77696154daa4ec102d90c4432df34770d0f2d617"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 241,
+      "textbook_page": 232,
+      "text": "232 Natural ResourcesGovernment’s Gift for Students’ Progress\nTwenty-eight dry open wells, were recharged by building dykes or\nbarriers in the nearby canals and retaining rain water in them. Water\ncollected in the storage structures was exclusively used for recharging\nthe groundwater to the dried wells.\n10.2.2 Farmer based interventions\nFarmer-based soil and water conservation measures implemented in\nindividual fields were mainly carried out by constructing canals around\nfields and constricting landforms useful for water conservation. Farmers\nare able to prevent misuse of soil, water and nutrients by using methods\nsuch as broad bed furrows, growing crops that are short in height, contour\nfarming etc. In addition to weeding techniques by building rectangular\nbunds around 38 hectares of farm land and contour bunds against the slope\nof the farm. They are able to preserve rain water. They are growing\nGliricidia (legume plants that grow in dry soil) to increase nitrogen levels\nin the soil) to increase nitrogen levels in the soil. This helps in strengthening\nthe bunds.\n10.2.3 Wasteland development and tree plantation\nDryland areas (waste lands) can be developed by platning the saplings\nof useful species along the roads, field bunds and canals.\nFig-3: Broad bed furrow Fig-4: Plantation of Gliricidia on bunds\nFarmers obtained 250 kg more red gram and 50 kg more maize per\nhectare using techniques like broad bed furrows and microirrigation.\nDrip irrigation can reduce water consumption by 70% but unfortunately\nonly 2% of cultivable land around the world is irrigated in this manner.",
+      "text_sha256": "a452d28884595de772eb5e23495d2a19512e75a6055c23ee6eee3a57dbcd202b"
+    },
+    {
+      "evidence_id": "E3",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 243,
+      "textbook_page": 234,
+      "text": "234 Natural ResourcesGovernment’s Gift for Students’ Progress\nx Why is it important to recharge the ground water sources?\nx Why do the rivers fail to benefit the state to an extent they should\nhave?\nx Since ground water resources are getting depleted at a fast pace\nwhat are the alternatives?\nx How should states and countries work to provide enough irrigation\nfacilities for all?\nIt is comforting to think water is a\nrenewable resource but we must know\nthat limitless exploitation of a\nresource can affect it adversely.\nAccording to United Nations\nDevelopment Programme, “Water\nresource in an area, where annual water\nsupply drops below 1700 m 3 per\nperson, is becoming scarce.” The food\nand Agriculture Organisation of the\nUnited Nations has predicted that by\n2025, 1.8 billion people will be living\nin countries or regions with absolute\nwater scarcity.\nActivity-1\nStudy the different ways in which water is used, misused and recycled\nin the area where you stay. Prepare a questionnaire with the help of your\nfriends and teacher and study water used by at least five households in\nyour locality. Also explore and discuss ways to provide water for all.\n10.3 Natural resources around us\nThe Earth’s natural resources include air, water, soil, minerals, fuels,\nplants, and animals. Conservation is the practice of caring for these\nresources so all living things can benefit from them now and in the future.\nAll the things we need to survive, such as food, water, air, and shelter,\ncome from natural resources. Some of these resources can be replaced\nafter they are used and are called renewable resources. Other resources,\nsuch as fossil fuels, cannot be replaced at all. Once they are used up, they\nare gone forever.\nOther sources\nTanks 15%\nCannals 37%\nGround water\n43%\nFig-6:\nSources vs area under irrigation",
+      "text_sha256": "16fab1f5e2c9341d8ca0f1fc4f06d6fd1c8b4ff2d4ecfa825786b3e7756b3d37"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Recharging groundwater sources is important because it helps maintain a steady supply of fresh water for various uses, including agriculture and daily life. Groundwater is a crucial source of fresh water, making up about 0.7–0.8% of the total freshwater on Earth. If groundwater sources are not recharged, they can become depleted, leading to water scarcity. The textbook explains that recharging dried-up wells helps farmers, as seen in the case study of V addicherla, where farmers were able to restore their groundwater resources by building dykes or barriers in nearby canals to retain rainwater. This practice ensures that water is available for irrigation and other essential needs, supporting agricultural productivity and the livelihoods of farmers.\",\n  \"selected_evidence_ids\": [\"E1\", \"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 239,\n      \"textbook_page\": 230\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 243,\n      \"textbook_page\": 234\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 29.838017200003378,
+    "latency_seconds": 84.05652719998034,
+    "usage": {
+      "completion_tokens": 259,
+      "prompt_tokens": 1409,
+      "total_tokens": 1668,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-5KDL8yCKqQpvymBYiFjljeAEYVnJrkYm",
+    "peak_rss_bytes": 12802478080
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Recharging groundwater sources is important because it helps maintain a steady supply of fresh water for various uses, including agriculture and daily life. Groundwater is a crucial source of fresh water, making up about 0.7–0.8% of the total freshwater on Earth. If groundwater sources are not recharged, they can become depleted, leading to water scarcity. The textbook explains that recharging dried-up wells helps farmers, as seen in the case study of V addicherla, where farmers were able to restore their groundwater resources by building dykes or barriers in nearby canals to retain rainwater. This practice ensures that water is available for irrigation and other essential needs, supporting agricultural productivity and the livelihoods of farmers.",
+    "selected_evidence_ids": [
+      "E1",
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 239,
+        "textbook_page": 230
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 243,
+        "textbook_page": 234
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Groundwater is heavily used and can be depleted by over-extraction",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Recharge stores rainwater underground and revives dried wells",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Recharge supports irrigation and future water availability",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Name textbook measures such as dykes/barriers, percolation/storage structures, or field bunds",
+        "token_recall": 0.2727,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.0,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 114
+  },
+  "completed_at": "2026-07-17T11:43:16+00:00"
+}

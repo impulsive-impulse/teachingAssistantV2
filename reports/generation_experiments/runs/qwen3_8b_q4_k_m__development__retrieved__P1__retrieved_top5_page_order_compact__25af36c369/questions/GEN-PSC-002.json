@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top5_page_order_compact__25af36c369",
+  "question_id": "GEN-PSC-002",
+  "question": "Find the distance of the image, when an object is placed on the principal axis, at a distance of 10 cm in front of a concave mirror whose radius of curvature is 8 cm.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "0603f55cfef8f46e42921461e8454d790a23937d88708e1cbf9f083fb9b2a914",
+  "context_sha256": "71100e744fc1a8964f8d4f8323e94a23664b90711ec07ca119e37c70f03767f7",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 13,
+      "textbook_page": 3,
+      "pdf_pages": [
+        13,
+        14
+      ],
+      "textbook_pages": [
+        3,
+        4
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "A concave mirror will be like the rubber sole bent inwards (fig-1(b)) and\nthe convex mirror will be like the rubber sole bent out wards (fig-1(c)).\nFor a concave mirror, like these pins in fig.-1( b), all normals will\nconverge towards a point.\nThis point is called centre of curvature(C) of\nthe mirror.\nThis gives us a clue about how we can find normal at a point on a\nspherical mirror.\nAll that we have to do is to draw a\nline from the point on the mirror to centre of the\nsphere.\nIt is much easier to imagine this in a two\ndimensional fig. as shown in fig.-2(a).\nThe concave\nmirror is actually a part of a big sphere.\nIn order to\nfind this centre point (centre of curvature) we have to\nthink of the centre of the sphere to which the concave\nmirror belongs.\nThe line drawn from C to any point on\nthe mirror gives the normal at that point.\nFor the ray R, the incident angle is the angle it\nmakes with the normal shown as i and the reflected\nangle is shown as r in fig.-2(b).\nWe know by first law of reflection i = r.\nThe mid point (Geometrical centre) of the mirror is called pole (P)\nof the mirror.\nThe horizontal line shown in the fig.s which passes through\nthe centre of curvature and pole is called principal axis of the mirror.\nThe\ndistance from P to C is radius of curvature (R) of the mirror.\nTry to construct different reflected rays for any array of rays that are\nparallel to the principal axis as shown in fig.\n2(b).\nWhat is your observation?\nRecall a little bit of geometry: while learning about circles\nand tangents, you have learnt that a radius is always perpendicular\nto the tangent to the circle drawn at the point.\nP C\nNormal\n(pole)\nprincipal axis\nfig-2(a)\ni\nr\nP C\nR\nfig-2(b)\nr\nC\n4 Reflection of light at curved surfaces\nfig-3\nCFP\nfig-4\n1.1.1 Verifying your drawing\nwith experiment:\nTo verify this we must first find out\nsome way of obtaining a beam of parallel\nrays.\nHow do we do that?\nFirst we need to know the situation\nin which one gets parallel rays of light.\nIn the fig.-3 we have stuck two pins on a thermocole block.\nThe pins\nare parallel to each other.\nAs we see in the fig., when a source of light is\nkept very near, we see the shadows diverging (from the base of the pins).\nAs we move the source away from the pins, the angle of divergence gets\nreduced.\nIf we move the source far away we will get parallel shadows.\nBut\nas we move the candle away, the light intensity becomes low.\nThat means\nto get a beam of parallel rays the source should be at a long distance and it\nmust be of sufficient intensity.\nWhere do we find one such source?\nYes, we have one easily available source, you probably have guessed\nit: The Sun.\nLet us do an experiment with sun rays and a concave mirror.\nActivity 2\nHold a concave mirror such that sunlight falls on it.\nTake a small paper\nand slowly move it in front of the mirror and find out the point where you\nget the smallest and brightest spot, which will be the image of the sun.\n(See to it that your paper is small so that it does not obstruct the incoming\nsun rays.)\nThe rays coming from the sun",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00001"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 26,
+      "textbook_page": 16,
+      "pdf_pages": [
+        26,
+        27,
+        28,
+        29
+      ],
+      "textbook_pages": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "the nature and the size of the image.\nSolution\nAccordint to sign convention:\nfocal length (f) = –15cm\nq\nq\n))\nI\nII\nO\nOI\nF C\nfig-22\nF C\nOI\nOP\nfig-23\nP\nReflection of light at curved surfaces 17\nobject height (ho) = +4cm\nimage distance (v) = ?\nimage height (hi) = ?\nSubstitute the above values in the equation\n1\nf\næöç÷èø = 11\nuv\næöæö +ç÷ç÷èøèø\n1 11\n15 v 25\næö =+ç÷--èø _\n111\nv 25 15\næö=-ç÷èø\n12\nv 75\n-=\n_ v = –37.5cm\nSo the screen should be placed at 37.5cm from the pole of the mirror.\nThe image is real.\nmagnification m = i\no\nh v\nhu =-\nby substituting the above values ih ( 37.5)\n4 ( 25)\n-=- -\ni\n(37.5 4)\nh (25)\n´=-\nhi = –6cm\nSo, the image is inverted and enlarged.\nWe have learnt the phenomenon of reflection of light by curved mirrors.\nLet us make use of it in our daily life.\n1.7 Making of solar cooker\nYou might have heard the story of Archimedes burning ships using mirrors.\nCan we at least heat up a vessel using a mirror?\nLet us try:\nWe have already learnt that a concave mirror\nfocuses parallel sun rays at the focal point of the\nmirror.\nSo with a small concave mirror we can\nheat up and burn paper as shown in the fig.-23.\n(Try this with convex mirror also.\nWhat do you\nobserve?)\nCP\nF\nfig-23\n18 Reflection of light at curved surfaces\nIn the same way make a big concave mirror to heat up a vessel.\nYou might have observed the TV dish antenna.\nMake\na wooden/ iron frame in the shape of TV dish.\nCut acrylic\nmirror sheets in to 8 or 12 pieces in the shape of\nisosceles triangles with a height equal to the radius of\nyour dish antenna.\nThe bases of 8 or 12 triangles together\nmake the circumference of the dish.\nStick the triangle\nmirrors to the dish as shown in fig.-24.\nYour solar heater/\ncooker is ready.\nArrange it so that concave part faces sun.\nFind its\nfocal point and place a vessel at that point.\nThe vessel\ngets heated enough to cook rice.\nIn practical applications (like in car-headlights),\nconcave mirrors are of parabolic shape (see fig.\n25)\nKey words\ncentre of curvature, radius of curvature, principal axis, pole, focus/focal\npoint, focal length, object distance, image distance, virtual image, real\nimage, magnification\n· Normal to the curved surface at a point on it is the line joining the centre of curvature and that\npoint.\n· Mirror formula:\n1\nf\næöç÷èø =\n1\nv\næöç÷èø +\n1\nu\næöç÷èø\n· Magnification m =\nsize of the image\nsize of the object\næö\nç÷èø = i\no\nh\nh\næö\nç÷èø\n(or)\nm = –\nimage distance\nobject distance\næö\nç÷èø =\nv\nu\næö- ç÷èø\nfig-24\nfig-25\nFP\nWhat we have learnt\nReflection of light at curved surfaces 19\n· The image formed by actual intersection of reflection rays is called real image.\nThis can be\ncaught on screen.\n· The image formed by controlled rays of reflection is called virtual image.\nIt can not be caught\non screen.\nI.\nReflections on concepts\n1.\nWhere will the image be formed when we place an object on the principal\naxis of a concave mirror at a point between focus and centre of\ncurvature?(AS1)\n2.\nState the differences between convex and concave mirrors? (AS1)\n3.\nDistinguish between real and virtual images. (AS1)\n4.\nHow do you get a virtual image using a concave mirror? (AS1)\n5.\nWhat do you know about the terms given below related to spherical mirrors? (AS1)\na) Pole b) Centre of curvature c) Focus\nd) Radius of curvature e) Focal length f) Principal axis\ng) Object distance h) Image distance i) Magnification",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00009"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 29,
+      "textbook_page": 19,
+      "pdf_pages": [
+        29,
+        30
+      ],
+      "textbook_pages": [
+        19,
+        20
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Where will the image be formed when we place an object on the principal\naxis of a concave mirror at a point between focus and centre of\ncurvature?(AS1)\n2.\nState the differences between convex and concave mirrors? (AS1)\n3.\nDistinguish between real and virtual images. (AS1)\n4.\nHow do you get a virtual image using a concave mirror? (AS1)\n5.\nWhat do you know about the terms given below related to spherical mirrors? (AS1)\na) Pole b) Centre of curvature c) Focus\nd) Radius of curvature e) Focal length f) Principal axis\ng) Object distance h) Image distance i) Magnification\n6.\nWhat do you infer from the experiment which you did to measure the object distance and\nimage distance? (AS3)\nII.\nApplication of concepts\n1.\nFind the distance of the image when an object is placed on the principal axis at a distance\nof 10 cm infront of a concave mirror whose radius of curvature is 8 cm. (AS1)\n2.\nThe magnification product by a mirror is +1.\nWhat does it mean?(AS1)\nImprove your learning\nPosition of the\ncandle (object)\nEnlarged?/\ndiminished?\nInverted or\nerect\nPosition of\nthe image\nBetween mirror & F Behind the mirror Enlarged Erect Virtual\nOn focal point At infinity - - -\nBetween F and C Beyond C Enlarged Inverted Real\nOn centre of curvature At C Same size Inverted Real\nBeyond C Between F and C Diminished Inverted Real\nAt infinity At focus point - Real\nReal or\nvirtual\n20 Reflection of light at curved surfaces\nMultiple choice questions\n3.\nIf the spherical mirrors were not known to human beings, guess the consequences.(AS2)\n4.\nDraw suitable rays by which we can guess the position of image formed by a concave\nmirror? (AS5)\n5.\nShow the formation of image with a ray diagram when an object is placed on the principal\naxis of a concave mirror away from the centre of curvature? (AS5)\n6.\nWhy do prefer a convex mirror as a rear-view mirror in the vehicles? (AS7)\nIII.\nHigher Order Thinking Questions\n1.\nA convex mirror with a radius of curvature of 3 m is used as rear view mirror for a vehicle.\nIf a bus is located at 5 m from this mirror, find the position, nature and size of the image?\n(AS7)\n2.\nTo form the image on the object itself, how should we place the object infront of a concave\nmirror?\nExplain with a ray diagram? (AS5)\n1.\nIf an object is placed at C on the principal axis in front of a concave mirror, the position of the\nimage is [ ]\na) at infinity b) between Focus and Centre of curvature\nc) at Centre of curvature d) beyond Centre of curvature\n2.\nW e get a diminished image with a concave mirror when the object is placed [ ]\na) at Focus b) between the pole and Focus\nc) at Centre of curvature d) beyond Centre of curvature\n3.\nWe get a virtual image in a concave mirror when the object is placed [ ]\na) at Focus b) between the pole and Focus\nc) at Centre of curvature d) beyond Centre of curvature\n4.\nWhich of the following represents Magnification ‘m’ for the case of Mirrors\ni) v\nu ii) v\nu\n- iii) 0\nih\nh iv) 0\ni\nh\nh [ ]\na) (i) & (ii) b) (ii) & (iii) c) (iii) & (iv) d) (iv) & (i)\n5.\nRay which seems to be travelling through the focus of a convex mirror, path of the reflected ray\nof an incident [ ]\na) parallel to the axis b) along the same path in opposite direction\nc) through Focus d) through Centre of curvature",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00010"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 30,
+      "textbook_page": 20,
+      "pdf_pages": [
+        30,
+        31
+      ],
+      "textbook_pages": [
+        20,
+        21
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "a) at Focus b) between the pole and Focus\nc) at Centre of curvature d) beyond Centre of curvature\n4.\nWhich of the following represents Magnification ‘m’ for the case of Mirrors\ni) v\nu ii) v\nu\n- iii) 0\nih\nh iv) 0\ni\nh\nh [ ]\na) (i) & (ii) b) (ii) & (iii) c) (iii) & (iv) d) (iv) & (i)\n5.\nRay which seems to be travelling through the focus of a convex mirror, path of the reflected ray\nof an incident [ ]\na) parallel to the axis b) along the same path in opposite direction\nc) through Focus d) through Centre of curvature\nReflection of light at curved surfaces 21\n6.\nSize of image formed by a convex mirror is always [ ]\na) enlarged than object size\nb) diminished than object size\nc) equal to the size of object\nd) depends on position of object\n7.\nAn object is placed at a certain distance on the principal axis of a concave mirror.\nThe image is\nformed at a distance of 30 cm from the mirror.\nFind the object distance if radius of curvature\nR = 15 cm [ ]\na) 15 cm b) 10 cm c) 30 cm d) 7.5 cm\n8.\nAll the distances related to spherical mirrors will be measured from [ ]\na) object b) focus c) pole d) image\n9.\nThe minimum distance froma real object to a real image is a concave mirror [ ]\na) 2f b) f c) 0 d) f/2\nSuggested Experiments\n1.\nConduct an experiment to find the focal length of concave mirror.\n2.\nFind the nature and position of images, when an object is placed at different places on the\nprincipal axis of a concave mirror.\nSuggested Project Works\n1.\nCollect information about the history of spherical mirrors in human civilization, write a report\non it.\n2.\nThink about the objects which acts as concave or convex mirrors in your surroundings?\nMake a table of these objects and display in your classroom.\n3.\nCollect photographs from your daily life where you use convex and concave mirrors and\ndisplay in your class room.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00011"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 86,
+      "textbook_page": 76,
+      "pdf_pages": [
+        86,
+        87
+      ],
+      "textbook_pages": [
+        76,
+        77
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "placed perpendicular to the axis) which is on other side of the lens until you get\nan image on it.\n· Why are we using a screen to view this image?\nWhy don’t we see it directly\nwith our eye?\nMeasure the distance of the image\nfrom the v-stand of lens and also\nmeasure the distance between the\ncandle and stand of lens.\nRecord the values in a table 1.\nNow place the candle at a distance of 60 cm from the lens, such that the\nflame of the candle lies on the principal axis of the lens.\nTry to get an image of\nthe candle flame on the other side on a screen.\nAdjust the screen till you get a\nclear image.\nMeasure the image distance (v) from lens and record the values of\n‘u’ and ‘v’ in table 1.\nRepeat this for various object distances like 50 cm, 40 cm,\n30 cm, etc.\nMeasure image distances in all the cases and note them in table 1.\n· Could you get an image on the screen for every object distance?\n· Why don’t you get an image for certain object distances?\n· Can you find the minimum limiting object distance for obtaining a real\nimage?\n· What do you call this minimum limiting object distance for real images?\nWhen you do not get an image on the screen, try to see the image with your\neye directly from the place of the screen.\n· Could you see the image?\n· What type of image do you see?\nYou will see a magnified image on the same side where we kept the object.\nThis is a virtual image of the object which we cannot capture on the screen.\n· Can you find the image distance of this virtual image?\nIn table-1, you got different values of ‘v’ for various position of object\n(candle) [u].\n· Could you find focal length of the lens from the values recorded in\ntable-1?\nObject\ndistance (u)\nImage\ndistance (v)\nFocal\nlength (f)\nTable 1\nRefraction of Light at Curved Surfaces77\n· Can we establish a relation between ‘u’, ‘v’ and ‘f’?\nLet us find out.\nConsider an object OOI placed on the principal axis in front of a convex\nlens as shown in fig.-(19).\nLet III be the real image formed by the lens on\nthe other side of it.\nObserve the fig.-(19).\n· How is the image formed?\n4.3 Lens formula\nThe ray, starting at OI and moving parallel to the principal axis and\nwhich falls on the lens, should pass through the focal point F1 as shown in\nfig.- (19).\nTo locate the point of image (I I) for the object point (O I),\nconsider another ray that passes through the optic centre P.\nWe know that\nany ray passing through the optic centre P will not deviate.\nThe ray starting from OI and passing through optic centre P , will meet\nthe refracted ray (first ray) at the point II.\nThis point is the image of the\npoint OI of the object.\nSimilarly, the image of the point O on the principal\naxis is formed at point I on the principal axis (see Figure 19).\nWe get the\ninverted image III of object OOI.\nPO, PI and PF1 are the object distance, image distance and focal length\nrespectively.\nFrom fig.- 19, triangle PPIF1\nand triangle F1III are similar triangles,\n_ 1\n1\nPP PF= II FI\n¢\n¢ ...................(1)\nBut from the fig.- 19,\nF1I = PI – PF1\nsubstituting F1I in equation (1) above, we get\n1\n1\nPP PF= II (PI PF )\n¢\n¢ - ...................(2)\nWe have another set of similar triangles OOIP and PIII.",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00043"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"To find the distance of the image formed by a concave mirror, we use the mirror formula: 1/f = 1/v + 1/u. Here, the object is placed at a distance of 10 cm in front of the mirror, so u = -10 cm (negative because the object is on the same side as the incoming light). The radius of curvature (R) is given as 8 cm, so the focal length (f) is half of the radius of curvature, which is f = R/2 = 8/2 = 4 cm. Since it is a concave mirror, the focal length is negative, so f = -4 cm. Substituting these values into the mirror formula: 1/(-4) = 1/v + 1/(-10). Simplifying, -1/4 = 1/v - 1/10. Solving for 1/v, we get 1/v = -1/4 + 1/10 = -5/20 + 2/20 = -3/20. Therefore, v = -20/3 cm ≈ -6.67 cm. The negative sign indicates that the image is formed on the same side as the object, which is the real image.\",\n  \"selected_evidence_ids\": [\"E1\", \"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 13,\n      \"textbook_page\": 3\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 29,\n      \"textbook_page\": 19\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 119.35460340000282,
+    "latency_seconds": 207.37575750000542,
+    "usage": {
+      "completion_tokens": 380,
+      "prompt_tokens": 4199,
+      "total_tokens": 4579,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-lo0fJzCrMX3hjDrzohWtGZfG0vsnGDcl",
+    "peak_rss_bytes": 16414834688
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "To find the distance of the image formed by a concave mirror, we use the mirror formula: 1/f = 1/v + 1/u. Here, the object is placed at a distance of 10 cm in front of the mirror, so u = -10 cm (negative because the object is on the same side as the incoming light). The radius of curvature (R) is given as 8 cm, so the focal length (f) is half of the radius of curvature, which is f = R/2 = 8/2 = 4 cm. Since it is a concave mirror, the focal length is negative, so f = -4 cm. Substituting these values into the mirror formula: 1/(-4) = 1/v + 1/(-10). Simplifying, -1/4 = 1/v - 1/10. Solving for 1/v, we get 1/v = -1/4 + 1/10 = -5/20 + 2/20 = -3/20. Therefore, v = -20/3 cm ≈ -6.67 cm. The negative sign indicates that the image is formed on the same side as the object, which is the real image.",
+    "selected_evidence_ids": [
+      "E1",
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 13,
+        "textbook_page": 3
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 29,
+        "textbook_page": 19
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Use f = R/2 = -4 cm and u = -10 cm under the textbook sign convention",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "Apply 1/f = 1/v + 1/u",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Obtain v = -20/3 cm ≈ -6.67 cm",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Interpret the negative sign as a real image on the object side",
+        "token_recall": 0.8571,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.75,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 167
+  },
+  "completed_at": "2026-07-17T02:01:40+00:00"
+}

@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top3_separate_compact__4afd830383",
+  "question_id": "GEN-BIO-002",
+  "question": "How are fats digested? Where do they get digested?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "346edc21ced64d40befa8be0661bc71d5783ac00438384c454099ae56254b296",
+  "context_sha256": "8380309c14bbde74594a47da6bbd243ef08ed8530485b07f2a94c729bef8d26c",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 32,
+      "textbook_page": 23,
+      "pdf_pages": [
+        32,
+        33,
+        34
+      ],
+      "textbook_pages": [
+        23,
+        24,
+        25
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Explain the structure of chloroplast with a neatly labeled sketch. (AS5)\n10.\nWhat is the role of acid in stomach? (AS1)\n11.\nMention the names of glands and organs which help in digestion? (AS1)\n12.\nHow is the small intestine designed to assimilate the food? explain. (AS1)\nImprove your learning\nNutrition 24\nS.No.\nAge group Protiens Calories Vitamins\nNo. of children with malnutrition\n1.\n2.\n13.\nHow are fats digested?\nWhere do they get digested? (AS1)\n14.\nWhat is the role of saliva in the digestion of food? (AS1)\n15.\nWhat will happen to protein digestion as the medium of intestine is gradually rendered alkaline?\n(AS1)\n16.\nWhat is the role of roughages in the alimentary tract? (AS1)\n17.\nWhat is malnutrition?\nExplain few nutritional deficiency diseases. (AS1)\n18.\nHow do fungi and bacteria obtain their nourishment? (AS2)\n19.\nWhat will happen to the rate of photosynthesis, if we keep on increasing CO2 concentration in\nair? (AS2)\n20.\nWhat happens if the rate of respiration is more than the rate of photosynthesis in a plant?(AS2)\n21.\nHow can you say that the carbohydrates are not completely digested in the stomach? (AS1)\n22.\nWhat process do you follow in the laboratory to study the presence of starch in leaves?(AS3)\n23.\nHow would you demonstrate that green plant releases oxygen when exposed to light?(AS3)\n24.\nVisit a primary health centre and collect the information about the children at diffrent ages suffering\nfrom malnutrition. (AS4)\n25.\nWould the survival of organisums become difficult, if there are no green plants on the earth?\nWhy? (AS1)\n26.\nDraw the labelled diagram of human digestive system?\nList out the parts where peristalsis takes\nplace. (AS5)\n27.\nRaheem prepared a model showing the passage of the food through different parts of the alimentary\ncanal?\nObserve this and label it’s parts. (AS5)\n28.\nObserve the following diagram and write a note on light dependent, light independent reactions.(AS5)\nChloroplast\nCalvin\nCycle\nlight\nphoto chemical reaction thermo chemical reaction\nPhotochemical reaction Thermochemical reaction\nNutrition 25\n1.\nThe food synthesized by the plant is stored as ______________________.\n2. ________________________ are the orgenelles of photosynthesis in plants.\n3.\nThe enzymes in the pancreatic juice help in the digestion of ___________________ and\n________________________.\n4.\nThe finger like projections which increases the surface area in small intestine are\ncalled____________________.\n5.\nThe acid present in gastric juice _________________________ .\n6. ___________________ vitamin is synthesised by bacteria present in intestine.\n1.\nWhich of the following organisms are parasites? ( )\n(i) Yeast (ii) Mushrooms (iii) Cuscuta (iv) Leeches\nA) Both (i) and (ii) B) (iii) only C) Both (iii) and (iv) D) (i) only\n2.\nThe rate of Photosynthesis is not affected by: ( )\nA) Light Intensity B) Humidity C) Temperature D) Carbon dioxide concentration\n3.\nA plant is kept in dark for about 48 hours before conducting any experiment on Photosynthesis in\norder to : ( )\nA) Remove chlorophyll from leaves\nB) Remove water from leaves\nC) Ensure that photosynthesis has occurred\nD) Ensure that leaves are free from the starch\n4.\nThe digestive juice without enzyme is ( )\nA) Bile B) Gastric juice C) Pancreatic juice D) saliva\n5.\nIn a single celled organisms the food is taken by ( )\nA) body surface B) Mouth C) Teeth D) Vacuoles\n6.\nWhich part of the plant takes in carbondioxide from the air for photosynthesis? ( )\nA) Root hairs B) Stomata C) Leaf veins D) Sepals\n29.\nWhat facts about the green plants do you appreciate?(AS6)\n30.\nWhat food habits will you follow after reading this chapter? (AS7)\nFill in the blanks\nChoose the correct answer",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00013"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 25,
+      "textbook_page": 16,
+      "pdf_pages": [
+        25,
+        26,
+        27,
+        28
+      ],
+      "textbook_pages": [
+        16,
+        17,
+        18,
+        19
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "the stomach, resumes now as the medium gradually changes to an alkaline\none and the enzymes become active for complete carbohydrate breakdown.\nFig-13: Peristaltic movement\nbolus\nperistaltic wave oesophagus\nstomach\nActivity-4\nStudying the enzymes chart\nLet us observe the digestive juices, enzymes and their functions shown\nin the table.\nDiscuss about this in the class.\nNutrition 17\nx Name the enzymes which act on carbohydrates.\nx Which digestive juice contains no enzymes?\nx What are the end products formed after the digestion of fats?\nx What are the enzymes that act on proteins?\nTransport of the products of digestion from the intestine into blood\n(through the wall of small intestine) is called absorption.\nInternally,\nintestinal wall has a number of finger like projections called Microvilli.\nThe villi increase the surface area for absorption.\nBlood vessels and lymph\nvessels are present in the form of a network in the villi.\nProducts of digestion are absorbed first into the villi and from\nthere into the blood vessels.\nThis means the digested food absorbed by\nthe walls of the small intestine.\nThus after maximum absorption of food in\nthe small intestine the rest passes into the large intestine which is\nundigested.\nTable-1: Digestive enzymes\nEnzyme/Substance\nPtyalin\n(salivary amylase)\nPepsin\nBile juice\n(No enzymes)\nAmylase\nTrypsin\nLipase\nPeptidases\nSucrase\nS.No.\n1\n2\n3\n4\n5\n6\n7\n8\nSecreted by\nSalivary glands\nGastric glands\nLiver\nPancreas\nPancreas\nPancreas\nIntestinal glands\nIntestinal glands\nSecreted into\nBuccal cavity\nStomach\nDuodenum\nDuodenum\nDuodenum\nDuodenum\nSmall Intestine\nSmall Intestine\nDigestive juice\nSaliva\nGastric juice\nBile juice\nPancreatic juice\nPancreatic juice\nPancreatic juice\nIntestinal juice\nIntestinal juice\nActs on\nCarbohydrates\nProteins\nFats\nCarbohydrates\nProteins\nFats\nPeptides\nSucrose\nProducts\nMaltose\nPeptones\nEmulsification\n(breaking\ndown of fats\ninto small\nglobules)\nMaltose\nPeptones\nFatty acids\nand glycerol\nAmino acids\nGlucose\nNutrition 18\nThis material is then expelled through the anus which is the last part of\nthe alimentary canal.\nThis passage of undigested material from the body\nby the way of anus is called defecation.\nFood that passes out of the anus\nstill contains considerable amount of proteins, fats and carbohydrates,\nroughages or fibres of either carbohydrates or proteins.\nWe will learn\nsome more points about the coordination of digestive system with other\nsystems in the chapter coordination in life processes.\nFlow chart of human digestive system\nx What is the necessity of the process of digestion?\nx What are its major steps involved in the process of digestion?\n1.6 Health aspects of the alimentary canal\nThe human alimentary canal usually functions remarkably well\nconsidering how badly we treat it on occasions!\nSometimes it rebels, and\nwe either feel sick or have indigestion.\nV omiting is the body’s method of ridding itself of unwanted or harmful\nsubstances from the stomach.\nThe peristaltic movements of the stomach\nand oesophagus reverse their normal direction and the food is expelled.\nThere are many causes of vomiting, but one of the most common is\novereating, especially when the food contains a high proportions of fat.\nFood Mouth Buccal cavity Pharynx\nStomach Oesophagus\nSmall intestine Large intestine\nAnus Rectum\nPancreas Liver\nDuodenum\nNutrition 19\nV omiting also occurs when we eat something indigestible or\npoisonous.\nWhen we have a greenish vomit usually called as ‘bilious’ or ‘liverish’,\nwe get a bitter taste and it is often the result of overeating.\nThe liver is\nunable to cope with the excessive fat and we get a feeling of nausea.\nIndigestion is a general term used when there is difficulty in digesting\nfood.\nHealthy people can usually avoid problems related to digestion by:\na) having simple, well balanced meals",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00009"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 24,
+      "textbook_page": 15,
+      "pdf_pages": [
+        24,
+        25,
+        26
+      ],
+      "textbook_pages": [
+        15,
+        16,
+        17
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "We eat various types of food which pass through the same digestive\ntract.\nIt is to be converted to substances small enough to be utilised\nby our body.\nThis needs various processess that can be studied as\nfollows.\n1.5.1 Passage of food through alimentary canal or gut\nFood is cut and crushed by our teeth in the\nmouth and mixed with saliva to make it wet and\nslippery lump called bolus (This process is called\nas mastication).\nThis bolus is suitable to pass\nthrough oesophagus.\nSaliva is secreted by three pairs\nof salivary glands.\nSaliva mainly contains an enzyme\namylase (ptyalin) which help in the breakdown of\ncomplex carbohydrates into simple ones.\nThis\nprocess of breaking down larger complex substances\ninto simple ones with the help of enzymes is called digestion.\nThe\ntongue helps in mixing the food and pushing it into the next part.\nThe\nlower jaw also helps in this process.\nFig-12: Location of some\nsalivary glands\npalate\nsalivary duct\nsalivary\nglands\nepiglottis\ntongue\nuvula\nWe can find out the effect of salivary amylase on carbohydrates in\nmouth.\nTo know the chemical nature of the saliva perform the activity-\n7 of co-ordination in life process of this text book.\nThe soft food mixed with saliva passes through oesophagus or food\npipe by wave like movements called peristaltic movement to the stomach.\nIn the stomach, food gets churned with gastric juice and HCl rendering the\nmedium acidic.\nNow the food is in semisolid condition.\nThe digestion of\nfood goes on as most of the proteins are broken down into smaller\nmolecules with the help of enzyme pepsin.\nNutrition 16\nFood in the form of a soft slimy substance where some proteins and\ncarbohydrates have already been broken down is called chyme.\nNow the\nfood material passes from the stomach to the small intestine.\nHere the\nring like muscles called pyloric sphincters relax to open the passage into\nthe small intestine.\nThe sphincters are responsible for regulating the\nopening of the passage such that only small quantities of the food material\nmay be passed into the small intestine at a time.\nThe small intestine is the longest part of the\nalimentary canal.\nIts proximal part is called duodenum.\nIt is the site of further digestion of carbohydrates,\nproteins and fats.\nIt receives the secretion of liver and\npancreas for this purpose.\nThese juices render the internal\ncondition of the intestine gradually to a basic or alkaline one.\nFats are digested by converting them into small globule\nlike forms by the help of the bile juice secreted from liver.\nThis process is called emulsification.\nPancreatic juice secreted from pancreas contains enzymes like trypsin\nfor carrying on the process of digestion of proteins and lipase for fats.\nWalls of the small intestine secrete intestinal juice (Succusentericus)\nwhich carry this process further that is small molecules of proteins are\nbroken down to further smaller molecules.\nThe same is the condition with\nfats.\nCarbohydrate digestion that started in the mouth and did not occur in\nthe stomach, resumes now as the medium gradually changes to an alkaline\none and the enzymes become active for complete carbohydrate breakdown.\nFig-13: Peristaltic movement\nbolus\nperistaltic wave oesophagus\nstomach\nActivity-4\nStudying the enzymes chart\nLet us observe the digestive juices, enzymes and their functions shown\nin the table.\nDiscuss about this in the class.\nNutrition 17\nx Name the enzymes which act on carbohydrates.\nx Which digestive juice contains no enzymes?\nx What are the end products formed after the digestion of fats?\nx What are the enzymes that act on proteins?\nTransport of the products of digestion from the intestine into blood",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00008"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Fats are digested in the small intestine. The process begins when bile juice, secreted by the liver, converts fats into small globules through a process called emulsification. This increases the surface area for the action of lipase, an enzyme present in pancreatic juice, which breaks down fats into fatty acids and glycerol. The digestion of fats is completed in the small intestine with the help of enzymes from the pancreas and intestinal juice.\",\n  \"selected_evidence_ids\": [\"E1\", \"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 32,\n      \"textbook_page\": 23\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 24,\n      \"textbook_page\": 15\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 74.92441059999692,
+    "latency_seconds": 104.91767589999654,
+    "usage": {
+      "completion_tokens": 201,
+      "prompt_tokens": 2915,
+      "total_tokens": 3116,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-mc8Lgn9hsxFjdyBECDtnY2VkMeKGE05d",
+    "peak_rss_bytes": 11127037952
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Fats are digested in the small intestine. The process begins when bile juice, secreted by the liver, converts fats into small globules through a process called emulsification. This increases the surface area for the action of lipase, an enzyme present in pancreatic juice, which breaks down fats into fatty acids and glycerol. The digestion of fats is completed in the small intestine with the help of enzymes from the pancreas and intestinal juice.",
+    "selected_evidence_ids": [
+      "E1",
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 32,
+        "textbook_page": 23
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 24,
+        "textbook_page": 15
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Bile emulsifies fats into small globules",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Pancreatic lipase acts on fats",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Digestion is completed in the small intestine",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "End products include fatty acids and glycerol",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.75,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 73
+  },
+  "completed_at": "2026-07-16T21:20:08+00:00"
+}

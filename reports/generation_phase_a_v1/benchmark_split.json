@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "benchmark_path": "data/benchmarks/generation_benchmark_v1.jsonl",
+  "benchmark_sha256": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+  "split_policy": "Fixed reviewed development slice; all other rows held out.",
+  "development_question_ids": [
+    "GEN-BIO-002",
+    "GEN-BIO-005",
+    "GEN-BIO-012",
+    "GEN-BIO-014",
+    "GEN-PSC-002",
+    "GEN-PSC-006",
+    "GEN-PSC-009",
+    "GEN-PSC-015"
+  ],
+  "smoke_question_ids": [
+    "GEN-BIO-002",
+    "GEN-BIO-005",
+    "GEN-BIO-012",
+    "GEN-BIO-014",
+    "GEN-PSC-002",
+    "GEN-PSC-006",
+    "GEN-PSC-009",
+    "GEN-PSC-015"
+  ],
+  "held_out_question_ids": [
+    "GEN-BIO-001",
+    "GEN-BIO-003",
+    "GEN-BIO-004",
+    "GEN-BIO-006",
+    "GEN-BIO-007",
+    "GEN-BIO-008",
+    "GEN-BIO-009",
+    "GEN-BIO-010",
+    "GEN-BIO-011",
+    "GEN-BIO-013",
+    "GEN-BIO-015",
+    "GEN-BIO-016",
+    "GEN-BIO-017",
+    "GEN-BIO-018",
+    "GEN-BIO-019",
+    "GEN-BIO-020",
+    "GEN-PSC-001",
+    "GEN-PSC-003",
+    "GEN-PSC-004",
+    "GEN-PSC-005",
+    "GEN-PSC-007",
+    "GEN-PSC-008",
+    "GEN-PSC-010",
+    "GEN-PSC-011",
+    "GEN-PSC-012",
+    "GEN-PSC-013",
+    "GEN-PSC-014",
+    "GEN-PSC-016",
+    "GEN-PSC-017",
+    "GEN-PSC-018",
+    "GEN-PSC-019",
+    "GEN-PSC-020"
+  ],
+  "counts": {
+    "development": 8,
+    "held_out": 32
+  },
+  "smoke_distribution": {
+    "books": {
+      "biology": 4,
+      "physical_sciences": 4
+    },
+    "difficulty": {
+      "easy": 2,
+      "medium": 3,
+      "hard": 3
+    },
+    "formula": 3,
+    "visual": 1,
+    "table": 1,
+    "multiple_passages": 2
+  }
+}

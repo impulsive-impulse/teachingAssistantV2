@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "question_id": "GEN-PSC-009",
+  "question": "How is myopia corrected? Explain with a ray diagram.",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "question_type": "visual_explanation",
+  "dependency_flags": {
+    "formula": true,
+    "visual": true,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "ee3cfafa341e92df35f12e068a725a086403b3b5230334aa3b82074530db5c7a",
+  "context_sha256": "2de9d59494b15e18df4dca00b87268a26fb9ca4c87355db00e16e149c5048f12",
+  "evidence_references": [
+    {
+      "evidence_id": "E1",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 102,
+      "textbook_page": 92
+    },
+    {
+      "evidence_id": "E2",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 103,
+      "textbook_page": 93
+    }
+  ],
+  "generation": {
+    "raw_text": "{\"claims\":[{\"text\":\"Myopia is corrected using a concave lens which forms an image of distant objects at the far point of the eye.\",\"citations\":[\"E1\",\"E2\"]},{\"text\":\"The concave lens is chosen such that the image of an object at infinity is formed at the far point of the person with myopia.\",\"citations\":[\"E2\"]},{\"text\":\"The lens formula is used to calculate the focal length of the concave lens required for correcting myopia.\",\"citations\":[\"E2\"]}]}",
+    "latency_seconds": 32.91228509999928,
+    "usage": {
+      "completion_tokens": 107,
+      "prompt_tokens": 990,
+      "total_tokens": 1097,
+      "prompt_tokens_details": {
+        "cached_tokens": 80
+      }
+    },
+    "response_id": "chatcmpl-hzlLzAWuFBsxjY7giINBpmAa7SZPQUnJ"
+  },
+  "citation_validation": {
+    "valid": true,
+    "structure_valid": true,
+    "citation_support_valid": true,
+    "errors": [],
+    "claims": [
+      {
+        "text": "Myopia is corrected using a concave lens which forms an image of distant objects at the far point of the eye.",
+        "citations": [
+          "E1",
+          "E2"
+        ]
+      },
+      {
+        "text": "The concave lens is chosen such that the image of an object at infinity is formed at the far point of the person with myopia.",
+        "citations": [
+          "E2"
+        ]
+      },
+      {
+        "text": "The lens formula is used to calculate the focal length of the concave lens required for correcting myopia.",
+        "citations": [
+          "E2"
+        ]
+      }
+    ],
+    "answer_text": "Myopia is corrected using a concave lens which forms an image of distant objects at the far point of the eye. The concave lens is chosen such that the image of an object at infinity is formed at the far point of the person with myopia. The lens formula is used to calculate the focal length of the concave lens required for correcting myopia.",
+    "cited_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citation_support": [
+      {
+        "claim_index": 1,
+        "citations": [
+          "E1",
+          "E2"
+        ],
+        "claim_token_support": 1.0,
+        "supported": true
+      },
+      {
+        "claim_index": 2,
+        "citations": [
+          "E2"
+        ],
+        "claim_token_support": 0.8333,
+        "supported": true
+      },
+      {
+        "claim_index": 3,
+        "citations": [
+          "E2"
+        ],
+        "claim_token_support": 0.8,
+        "supported": true
+      }
+    ],
+    "validator": "deterministic_rubric_and_citation_v1_1"
+  },
+  "rubric_evaluation": {
+    "required_points": [
+      {
+        "point": "Myopia means distant objects are not focused clearly on the retina",
+        "token_recall": 0.375,
+        "matched": false
+      },
+      {
+        "point": "The eye’s far point is finite and the uncorrected image forms before the retina",
+        "token_recall": 0.5556,
+        "matched": true
+      },
+      {
+        "point": "Use a concave/diverging lens",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "The lens makes parallel rays appear to come from the far point so the eye focuses them on the retina",
+        "token_recall": 0.3077,
+        "matched": false
+      }
+    ],
+    "optional_points": [
+      {
+        "point": "For far point D, the correcting lens has f = −D for an object at infinity",
+        "token_recall": 1.0,
+        "matched": true
+      }
+    ],
+    "required_coverage": 0.25,
+    "optional_coverage": 1.0,
+    "possible_unsupported_claims": [],
+    "asserted_unsupported_claims": [],
+    "rubric_score": 0.4375,
+    "automatic_pass": false,
+    "manual_review_required": true,
+    "evaluator": "deterministic_rubric_and_citation_v1_1"
+  },
+  "completed_at": "2026-07-16T19:25:39+00:00",
+  "initial_rubric_evaluation": {
+    "required_points": [
+      {
+        "point": "Myopia means distant objects are not focused clearly on the retina",
+        "token_recall": 0.375,
+        "matched": false
+      },
+      {
+        "point": "The eye’s far point is finite and the uncorrected image forms before the retina",
+        "token_recall": 0.5556,
+        "matched": true
+      },
+      {
+        "point": "Use a concave/diverging lens",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "The lens makes parallel rays appear to come from the far point so the eye focuses them on the retina",
+        "token_recall": 0.3077,
+        "matched": false
+      }
+    ],
+    "optional_points": [
+      {
+        "point": "For far point D, the correcting lens has f = −D for an object at infinity",
+        "token_recall": 1.0,
+        "matched": true
+      }
+    ],
+    "required_coverage": 0.25,
+    "optional_coverage": 1.0,
+    "possible_unsupported_claims": [],
+    "rubric_score": 0.4375,
+    "automatic_pass": false,
+    "manual_review_required": true,
+    "evaluator": "deterministic_token_recall_v1"
+  },
+  "reevaluated_at": "2026-07-16T19:39:49+00:00"
+}

@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb",
+  "question_id": "GEN-BIO-020",
+  "question": "Why is it important to recharge the ground water sources?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "b9a9d5bfa9cff21d83ee1ad383148c2ffc507e1a29c61ec349bd15e93ea98125",
+  "context_sha256": "b94a5a04a8417f628904faf33e50a7cfd0e31f25e51674fe11ff559956b6c414",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 239,
+      "textbook_page": 230,
+      "pdf_pages": [
+        239,
+        240,
+        241
+      ],
+      "textbook_pages": [
+        230,
+        231,
+        232
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "freshwater), 0.7–0.8% as fresh groundwater and soil moisture, and less\nthan 0.01% of it as surface water in lakes, swamps and rivers.\nThough it is\na meagre portion of the whole, if used judiciously, shall last for a long\ntime.\nx How can we use water judiciously?\nx Why were farmers at Wanaparthy at a better state than those at\nV addicherla?\nx How did farmers of V addicherla and Wanaparthy recharge their\nground water resources?\nIn ancient times, village boundaries were decided on a watershed(land between water\nsources usually of two rivers or streams) basis fixed at the common point of the\ndrainage system in between two villages.\nThis was done by the expert farmers in the\nvillage.\nSuch boundaries were socially acceptable to all the members of the system.\nThe development lies in the efficient usage of water resources.\nTo\nexplain this fact we will observe the given case study.\n10.2 Case II: A Study of Kothapally Village, an example of\nwater management effort\nThis tells us how people in the village through proper guidance could\nmake optimum use of available water in the village.\nDo you know?!\nReflection of light at curved surfaces231 Natural Resources\nA survey of Kothapally village indicated that initially:\n(i) dry land areas were more extensive than irrigated land; (ii) literacy was\nlow; (iii) labour was scarce; (iv) more fertilizers/pesticides were used on small\nfarms (v) crop yields were low, (vi) there was not even a single water harvesting\nstructure in the village.\nInternational Crops Research Institute for Semi-Arid Tropics\n(ICRISA T) educated villagers in large numbers and provided technical\nsupport for cost-efficient water storage and soil conservation structures.\nThe measures were community as well as individual farmer-based.\nThese\nhelped to restore some resources and conserve others so that they may\nnever be depleted.\nThis is an example of sustainable management.\nx What is ICRISAT? where is it?\nWhat are its functions?\nDiscuss with\nyour teacher and try to prepare a report on it.\n10.2.1 Community based interventions\nFourteen water storage structures (one earthen and 13 masonry dams)\nwith water storage capacity of 300 to 2000 m3 were constructed.\n60 minipercolation pits and field bunding on 38 hectares were completed.\nSri Rama Sagar Project also known as the\nPochampadu Project.\nThis project is a project on\nthe Godavari River.\nIt is a “lifeline for a large part\nof Telangana”.\nIt is mainly an irrigation project to\nserve needs in erstwhile districts of Karimnagar,\nWarangal, Adilabad, Nalgonda, and Khammam\ndistricts.\nBut all is not well with the project as most of the water is retained before\nreaching our state due to the dams built on river Godavari in another State.\nSri ram sagar project\nFig-1: Community based dam Fig-2: Contour field bunding\nDo you know?!\n232 Natural Resources\nTwenty-eight dry open wells, were recharged by building dykes or\nbarriers in the nearby canals and retaining rain water in them.\nWater\ncollected in the storage structures was exclusively used for recharging\nthe groundwater to the dried wells.\n10.2.2 Farmer based interventions\nFarmer-based soil and water conservation measures implemented in\nindividual fields were mainly carried out by constructing canals around\nfields and constricting landforms useful for water conservation.\nFarmers\nare able to prevent misuse of soil, water and nutrients by using methods\nsuch as broad bed furrows, growing crops that are short in height, contour\nfarming etc.\nIn addition to weeding techniques by building rectangular\nbunds around 38 hectares of farm land and contour bunds against the slope\nof the farm.\nThey are able to preserve rain water.\nThey are growing\nGliricidia (legume plants that grow in dry soil) to increase nitrogen levels",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00147"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 241,
+      "textbook_page": 232,
+      "pdf_pages": [
+        241,
+        242,
+        243
+      ],
+      "textbook_pages": [
+        232,
+        233,
+        234
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Farmer-based soil and water conservation measures implemented in\nindividual fields were mainly carried out by constructing canals around\nfields and constricting landforms useful for water conservation.\nFarmers\nare able to prevent misuse of soil, water and nutrients by using methods\nsuch as broad bed furrows, growing crops that are short in height, contour\nfarming etc.\nIn addition to weeding techniques by building rectangular\nbunds around 38 hectares of farm land and contour bunds against the slope\nof the farm.\nThey are able to preserve rain water.\nThey are growing\nGliricidia (legume plants that grow in dry soil) to increase nitrogen levels\nin the soil) to increase nitrogen levels in the soil.\nThis helps in strengthening\nthe bunds.\n10.2.3 Wasteland development and tree plantation\nDryland areas (waste lands) can be developed by platning the saplings\nof useful species along the roads, field bunds and canals.\nFig-3: Broad bed furrow Fig-4: Plantation of Gliricidia on bunds\nFarmers obtained 250 kg more red gram and 50 kg more maize per\nhectare using techniques like broad bed furrows and microirrigation.\nDrip irrigation can reduce water consumption by 70% but unfortunately\nonly 2% of cultivable land around the world is irrigated in this manner.\nReflection of light at curved surfaces233 Natural Resources\nTrenches at 10 m intervals with a 0.3 m height\nof bund were laid out.\nCustard apple plantation along\nwith other useful species in trenches and Gliricidia\n(madri) saplings on bunds was undertaken by the\nfarmers.\n2500 fruit trees and teak plants were\nplanted.\nx What ways of restoration of a resource does\nthe Kothapally case tell us about?\nx What are some common means of restoration and conservation of\nwater resource that we came across in the cases studied so far?\nAccording to a survey conducted in the year 2004 the total amount of\nwater available in Telangana and Andhra Pradesh is - 3814 thousand million\ncubic feet (TMC) of which\nIrrigation - 2268 TMC\nDomestic use - 21 TMC\nIndustries - 10 TMC\nPower generation - 1 TMC\n___________\nTotal amount utilised - 2300 TMC\nAmount required for utilisation by 2025 is 3989TMC.\nx What do you think will happen if we do not take care of the sources\nof water?\nx How do you think we will meet our requirements in future?\nx We would have to depend upon other states or perhaps other\ncountries for water.\nDo you agree?\nWhy/why not?\nx Could the amount of water used for irrigation in our state be\nreduced?\nHow?\nx Does cropping pattern have any role to play in reduction of water\nutilisation? (Hint:Think of the case of V addicherla and Wanaparthy).\nx Do you think one needs laws for distribution of water and its use?\nWhy/Why not?\nx How much percent of area do you think is irrigated by other sources\nof water?\nFig-5: Tree plantation on\nwasteland\n234 Natural Resources\nx Why is it important to recharge the ground water sources?\nx Why do the rivers fail to benefit the state to an extent they should\nhave?\nx Since ground water resources are getting depleted at a fast pace\nwhat are the alternatives?\nx How should states and countries work to provide enough irrigation\nfacilities for all?\nIt is comforting to think water is a\nrenewable resource but we must know\nthat limitless exploitation of a\nresource can affect it adversely.\nAccording to United Nations\nDevelopment Programme, “Water\nresource in an area, where annual water\nsupply drops below 1700 m 3 per\nperson, is becoming scarce.” The food\nand Agriculture Organisation of the\nUnited Nations has predicted that by\n2025, 1.8 billion people will be living",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00148"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 243,
+      "textbook_page": 234,
+      "pdf_pages": [
+        243,
+        244
+      ],
+      "textbook_pages": [
+        234,
+        235
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "have?\nx Since ground water resources are getting depleted at a fast pace\nwhat are the alternatives?\nx How should states and countries work to provide enough irrigation\nfacilities for all?\nIt is comforting to think water is a\nrenewable resource but we must know\nthat limitless exploitation of a\nresource can affect it adversely.\nAccording to United Nations\nDevelopment Programme, “Water\nresource in an area, where annual water\nsupply drops below 1700 m 3 per\nperson, is becoming scarce.” The food\nand Agriculture Organisation of the\nUnited Nations has predicted that by\n2025, 1.8 billion people will be living\nin countries or regions with absolute\nwater scarcity.\nActivity-1\nStudy the different ways in which water is used, misused and recycled\nin the area where you stay.\nPrepare a questionnaire with the help of your\nfriends and teacher and study water used by at least five households in\nyour locality.\nAlso explore and discuss ways to provide water for all.\n10.3 Natural resources around us\nThe Earth’s natural resources include air, water, soil, minerals, fuels,\nplants, and animals.\nConservation is the practice of caring for these\nresources so all living things can benefit from them now and in the future.\nAll the things we need to survive, such as food, water, air, and shelter,\ncome from natural resources.\nSome of these resources can be replaced\nafter they are used and are called renewable resources.\nOther resources,\nsuch as fossil fuels, cannot be replaced at all.\nOnce they are used up, they\nare gone forever.\nOther sources\nTanks 15%\nCannals 37%\nGround water\n43%\nFig-6:\nSources vs area under irrigation\nReflection of light at curved surfaces235 Natural Resources\nThis is because it takes a long time for their formation while their\nconsumption occurs very quickly.\nThese are non renewable resources.\nPeople often waste natural resources.\nAnimals are overhunted.\nForests\nare cleared, exposing land to wind and water damage.\nFertile soil is\nexhausted and lost to erosion because of poor farming practices.\nFuel\nsupplies are depleted.\nWater and air are polluted.\nIf resources are carelessly managed, many will be used up.\nIf used\nwisely and efficiently, however, renewable resources will last much longer.\nThrough conservation, people can reduce waste and manage natural\nresources wisely.\nThe population of human beings has grown enormously in the past\ntwo centuries.\nBillions of people use up resources quickly as they eat\nfood, build houses, produce goods and burn fuel for transportation and\nelectricity.\nThe continuation of life as we know depends on the careful\nuse of natural resources.\nThe need to conserve resources often conflicts with other\nneeds.\nFor some people, a forest area may be a good place to put\na farm.\nA timber company may want to harvest the area’s trees for\nconstruction materials.\nA business company may want to build a\nfactory or shopping mall on the land.\nAll these needs are valid for\nus, but sometimes the plants and animals that live in the area are\nforgotten.\nThe benefits of development need to be weighed against\nthe harm to animals that may be forced to find new habitats, the\ndepletion of resources we may want in the future (such as water\nor timber), or damage to resources we use today.\nx Think of any scarce resource from your surrounding other than water\nand write a short account on its sources, availability and condition.\nRestrictions on water usage are implimented in many regions of the world.\nIn\nAustralia, in response to chronic shortage of water resulting from drought, restrictions\nare imposed on activities like, watering lawns by using sprinkler systems, washing",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00149"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 244,
+      "textbook_page": 235,
+      "pdf_pages": [
+        244,
+        245,
+        246
+      ],
+      "textbook_pages": [
+        235,
+        236,
+        237
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The benefits of development need to be weighed against\nthe harm to animals that may be forced to find new habitats, the\ndepletion of resources we may want in the future (such as water\nor timber), or damage to resources we use today.\nx Think of any scarce resource from your surrounding other than water\nand write a short account on its sources, availability and condition.\nRestrictions on water usage are implimented in many regions of the world.\nIn\nAustralia, in response to chronic shortage of water resulting from drought, restrictions\nare imposed on activities like, watering lawns by using sprinkler systems, washing\nvehicles, using hose pipes to clean paved areas, and refilling swimming pools.\nAs a\nresult, people have become aware of water consumption.\nThey could prevent the wastage\nof water\nFig-7:\nSustainable Development\nDo you know?!\n236 Natural Resources\nDevelopment and conservation can coexist in harmony.\nWhen we use\nthe environment in ways that ensure we have resources for the future, it is\ncalled sustainable development.\nThere are many different resources we\nneed to manage and conserve to live sustainably.\nx What would you do to motivate others to manage an important\nresource in your locality?\nx How did the villagers in Kothapally resort to sustainable\nmanagement?\n10.4 Forest: an important renewable resource\nx Why do you think forests are very important?\nEvery continent except Antarctica has forests.\nForests are habitat for\nflora and fauna.\nForests serve as a lung for the world and a bed of nutrients\nfor new life to prosper.\nThey provide us innumerable products and in an\nurge to extract them we indiscriminately destroy them.\nPeople clear forests to use the wood, or to make way for farming or\ndevelopment.\nEach year, the Earth loses about 36 million acres of forest\nto deforestation.\nDeforestation destroys wildlife habitats and increases soil erosion.\nIt\nresults the release of gases like CO, CO2, SO2 (also called as green house\ngases) into the atmosphere, contributing to global warming.\nSustainable forestry practices are critical for ensuring resources well\ninto the future.\nPerhaps the bishnoi’s of Rajasthan could tell us how.\nAs\nwe recall brave Amrita Devi and her daughters, followed by villagers who\nclung to trees in the forest surrounding their village and laid down their\nlives to save them, we are faced with a realization about how great a\nmovement towards conservation can be.\nThey were protesting against the\nKings’ order to collect wood for the construction of his palace and\ndefending the pledge of peaceful coexistence taken by them as a bishnoi.\nIt is a set of 29 rules to conserve natures’ resources that every bishnoi\nvows to protect.\nReflection of light at curved surfaces237 Natural Resources\nYou have studied about the Chenchu and Gond tribes of our state and\nare aware of how carefully they extract resources from nature and help\nrevive it. (refer lesson of VII class - Forest our life)\nSome sustainable forestry methods include harvesting with natural\nregeneration in mind, and avoiding certain logging techniques, such as\nremoving all the high-value trees or all the large trees from a forest.\nTrees can also be conserved if consumers recycle some forest\nproducts.\nPeople in China and Mexico, for example, reuse much of their\nwastepaper, including writing paper, wrapping paper, and cardboard.\nIf half\nthe world’s paper were recycled, much of the worldwide demand for new\npaper would be fulfilled, saving many trees.\n10.5 Soil\nSoil is vital to food production.\nWe need high-quality soil to grow the\ncrops that we need.\nSoil is also important to plants that grow in the wild.\nMany other types of conservation efforts, such as plant conservation and",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00150"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 252,
+      "textbook_page": 243,
+      "pdf_pages": [
+        252,
+        253,
+        254
+      ],
+      "textbook_pages": [
+        243,
+        244,
+        245
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The sand mining is being taken up to extract rich minerals from the\narea.\nThe villages are located around the forest belt were mining was initiated.\ni) Do you think the villagers are doing a right thing to agitate?\nWhy?\nii) What resources are the villagers trying to save by their agitation?\niii) Will the villagers be benefitted by the rich minerals extracted from sand?\niv) Why does the private company want to carry out mining in the beach area?\nv) What is the role of the government in this aspect?\nvi) How will sand mining in that piece of land affect people of the area?\n3.\nWhat is sustainable development?\nHow is it helpful in natural resource management? (AS1)\n4.\nWrite a detailed note on management of a natural resource. (AS1)\n5.\nSuggest some ways of reusing a resource in your locality? (AS1)\n6.\nWhy should we conserve forests and wild life? (AS1)\n7.\nSuggest some approaches towards the conservation of forests. (AS1)\n8.\nWhat are the consequences if natural resources are depleted more rapidly. (AS2)\n9.\nPrepare a questionnaire to conduct an interview at a petrol filling station personnel about consumption\nof fossil fuels? (AS2)\n10.\nPrepare model for rain water harvesting / energy saving / soil management, reflecting your innovative\nthoughts. (AS3)\nWhat we have learnt ?\nImprove your learning\n244 Natural Resources\n11.\nList out the procedures followed by the farmers in villages for restoration of natural resources in\nyour area and write a report. (AS4)\n12.\nYou might have heard the Natural Gas drillings near Kakinada by ONGC (Oil and Natural Gas\nCorporation).\nCollect information and prepare a note on the status of Gas production at the basin.\n(AS4)\n13.\nDoes your village or nearest city has a recycling unit of waste materials?\nWrite in detail the steps\ninvolved in it. (AS4)\n14.\nCollect any graph that shows oil (petroleum) consumption in India. (AS4)\ni) Does the production meet consumption in India?\nii) During which period of time shows highest increase in consumption rate?\niii) What change have you observed in the production from past ten years, for example 2012-\n2022?\niv) Suggest some ways to bring down consumption of petroleum.\n15.\nProper utilisation of natural resources is the way to show gratitude to our nation.\nCan you support\nthis statement?\nGive your argument. (AS6)\n16.\nCrop selection and cultivation should be based on availability of water.\nPrepare a slogan to bring\nawareness among farmers about this? (AS7)\n1. ................... plants are used for production of biofuel.\n2.\nBiodiversity is important for more than just food and for ................ also.\n3.\nExample for nonrenewable resource is ..........................\n4. ........................ is the alternative method to prevent ground water depletion.\n5.\nCultivation of paddy is suitable for ................ areas.\n1.\nPercolation tanks helps to ( )\n(A) supply water for agriculture (B) increase ground water level\n(C) preserve rain water (D) prevent overflow of water from tanks during rainy season\n2.\nWhich of the following practice is suitable to farmer with less water resources ( )\n(i) select short term crops, (ii) cultivate comercial crops, (iii) adapt drip system, (iv) crop holiday\n(A) i, iii (B) i, ii, iii (C) i, iv (D) iii, iv\n3.\nWhich of the fossil fuel reserves decrease more rapidly in India ( )\n(A) natural gas (B) coal (C) petroleum (D) all\n4.\nHuge amount of toxic chemicals leak into the surrounding eco system because of ( )\n(A) industries (B) mining (C) pesticides (D) modern technology\n5.\nSustainable development means ( )\n(A) prevention of wastage (B) stable growth\n(C) development without damaging (D) high yieldings in less time\nFill in the blanks\nChoose the correct answer\nReflection of light at curved surfaces245 Natural Resources",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00155"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Recharging groundwater sources is important because it helps maintain a steady supply of water for future use. Groundwater is a crucial source of freshwater, and if it is not recharged, it can get depleted quickly. The textbook mentions that in the case of Kothapally village, farmers recharged their groundwater resources by building dykes or barriers in nearby canals and retaining rainwater. This helped restore and conserve groundwater, ensuring it is not depleted. Additionally, the textbook highlights that if we do not take care of water sources, there may not be enough water for future needs, and we might have to depend on other states or countries for water. Therefore, recharging groundwater is essential for sustainable water management and to prevent scarcity.\",\n  \"selected_evidence_ids\": [\"E1\", \"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 239,\n      \"textbook_page\": 230\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 243,\n      \"textbook_page\": 234\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 130.68111629999476,
+    "latency_seconds": 191.07424269997864,
+    "usage": {
+      "completion_tokens": 260,
+      "prompt_tokens": 4460,
+      "total_tokens": 4720,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-MYvKcvqiGJyTp4TWQQMSATm1hPBteVBT",
+    "peak_rss_bytes": 19289477120
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Recharging groundwater sources is important because it helps maintain a steady supply of water for future use. Groundwater is a crucial source of freshwater, and if it is not recharged, it can get depleted quickly. The textbook mentions that in the case of Kothapally village, farmers recharged their groundwater resources by building dykes or barriers in nearby canals and retaining rainwater. This helped restore and conserve groundwater, ensuring it is not depleted. Additionally, the textbook highlights that if we do not take care of water sources, there may not be enough water for future needs, and we might have to depend on other states or countries for water. Therefore, recharging groundwater is essential for sustainable water management and to prevent scarcity.",
+    "selected_evidence_ids": [
+      "E1",
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 239,
+        "textbook_page": 230
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 243,
+        "textbook_page": 234
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Groundwater is heavily used and can be depleted by over-extraction",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Recharge stores rainwater underground and revives dried wells",
+        "token_recall": 0.1429,
+        "matched": false
+      },
+      {
+        "point": "Recharge supports irrigation and future water availability",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Name textbook measures such as dykes/barriers, percolation/storage structures, or field bunds",
+        "token_recall": 0.2727,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.0,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 121
+  },
+  "completed_at": "2026-07-17T20:17:03+00:00"
+}

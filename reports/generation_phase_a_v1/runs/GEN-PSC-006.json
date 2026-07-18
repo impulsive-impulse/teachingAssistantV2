@@ -1,0 +1,192 @@
+{
+  "schema_version": 1,
+  "question_id": "GEN-PSC-006",
+  "question": "Why does tooth decay start when the pH of mouth is lower than 5.5? (or) What value of pH in the mouth leads to tooth decay? Why?",
+  "book_id": "physical_sciences",
+  "difficulty": "easy",
+  "question_type": "cause_effect",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "b83656b20268efd952fe18608cef67c0962418f9ef77388243e36e9310d8722e",
+  "context_sha256": "6b90ff1328ad9424d460491edcc055748995fc62deedb126226854894b256a1a",
+  "evidence_references": [
+    {
+      "evidence_id": "E1",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 60,
+      "textbook_page": 50
+    }
+  ],
+  "generation": {
+    "raw_text": "{\"claims\":[{\"text\":\"Tooth decay starts when the pH of the mouth is lower than 5.5.\",\"citations\":[\"E1\"]},{\"text\":\"The pH value in the mouth that leads to tooth decay is below 5.5.\",\"citations\":[\"E1\"]},{\"text\":\"Tooth enamel, made of calcium phosphate, is corroded when the pH in the mouth is below 5.5.\",\"citations\":[\"E1\"]},{\"text\":\"Bacteria in the mouth produce acids that lower the pH, leading to tooth decay.\",\"citations\":[\"E1\"]},{\"text\":\"Using tooth pastes that are basic can neutralize excess acid and prevent tooth decay.\",\"citations\":[\"E1\"]}]}",
+    "latency_seconds": 26.813693500007503,
+    "usage": {
+      "completion_tokens": 144,
+      "prompt_tokens": 543,
+      "total_tokens": 687,
+      "prompt_tokens_details": {
+        "cached_tokens": 71
+      }
+    },
+    "response_id": "chatcmpl-zKrmli7MYhJSJv7QwqF7bKPgkXcZHT54"
+  },
+  "citation_validation": {
+    "valid": true,
+    "structure_valid": true,
+    "citation_support_valid": true,
+    "errors": [],
+    "claims": [
+      {
+        "text": "Tooth decay starts when the pH of the mouth is lower than 5.5.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "The pH value in the mouth that leads to tooth decay is below 5.5.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "Tooth enamel, made of calcium phosphate, is corroded when the pH in the mouth is below 5.5.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "Bacteria in the mouth produce acids that lower the pH, leading to tooth decay.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "Using tooth pastes that are basic can neutralize excess acid and prevent tooth decay.",
+        "citations": [
+          "E1"
+        ]
+      }
+    ],
+    "answer_text": "Tooth decay starts when the pH of the mouth is lower than 5.5. The pH value in the mouth that leads to tooth decay is below 5.5. Tooth enamel, made of calcium phosphate, is corroded when the pH in the mouth is below 5.5. Bacteria in the mouth produce acids that lower the pH, leading to tooth decay. Using tooth pastes that are basic can neutralize excess acid and prevent tooth decay.",
+    "cited_evidence_ids": [
+      "E1"
+    ],
+    "citation_support": [
+      {
+        "claim_index": 1,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 1.0,
+        "supported": true
+      },
+      {
+        "claim_index": 2,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.8571,
+        "supported": true
+      },
+      {
+        "claim_index": 3,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 1.0,
+        "supported": true
+      },
+      {
+        "claim_index": 4,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.8889,
+        "supported": true
+      },
+      {
+        "claim_index": 5,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 1.0,
+        "supported": true
+      }
+    ],
+    "validator": "deterministic_rubric_and_citation_v1_1"
+  },
+  "rubric_evaluation": {
+    "required_points": [
+      {
+        "point": "Bacteria break down food/sugars and produce acids",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Below about pH 5.5 the acidic medium attacks calcium-phosphate tooth enamel",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Continued demineralisation leads to decay",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "optional_points": [
+      {
+        "point": "Basic toothpaste can help neutralise excess acid",
+        "token_recall": 0.5714,
+        "matched": true
+      }
+    ],
+    "required_coverage": 0.3333,
+    "optional_coverage": 1.0,
+    "possible_unsupported_claims": [],
+    "asserted_unsupported_claims": [],
+    "rubric_score": 0.5,
+    "automatic_pass": false,
+    "manual_review_required": true,
+    "evaluator": "deterministic_rubric_and_citation_v1_1"
+  },
+  "completed_at": "2026-07-16T19:25:06+00:00",
+  "initial_rubric_evaluation": {
+    "required_points": [
+      {
+        "point": "Bacteria break down food/sugars and produce acids",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Below about pH 5.5 the acidic medium attacks calcium-phosphate tooth enamel",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Continued demineralisation leads to decay",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "optional_points": [
+      {
+        "point": "Basic toothpaste can help neutralise excess acid",
+        "token_recall": 0.5714,
+        "matched": true
+      }
+    ],
+    "required_coverage": 0.3333,
+    "optional_coverage": 1.0,
+    "possible_unsupported_claims": [],
+    "rubric_score": 0.5,
+    "automatic_pass": false,
+    "manual_review_required": true,
+    "evaluator": "deterministic_token_recall_v1"
+  },
+  "reevaluated_at": "2026-07-16T19:39:49+00:00"
+}

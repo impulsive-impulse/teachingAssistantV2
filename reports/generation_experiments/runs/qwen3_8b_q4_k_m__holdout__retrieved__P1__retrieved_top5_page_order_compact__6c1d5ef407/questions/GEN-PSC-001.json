@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407",
+  "question_id": "GEN-PSC-001",
+  "question": "Why do we prefer a convex mirror as a rear-view mirror in the vehicles?",
+  "book_id": "physical_sciences",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "ef0f50174c12e6c9c2233f33dcab428136c43f9e5bc4c3d3b8596ca188936df6",
+  "context_sha256": "40908b58b4937533a06e1eb486986bfa30aba5bb3a32be0a2c7fa54373a01e70",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 14,
+      "textbook_page": 4,
+      "pdf_pages": [
+        14,
+        15,
+        16,
+        17
+      ],
+      "textbook_pages": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Where do we find one such source?\nYes, we have one easily available source, you probably have guessed\nit: The Sun.\nLet us do an experiment with sun rays and a concave mirror.\nActivity 2\nHold a concave mirror such that sunlight falls on it.\nTake a small paper\nand slowly move it in front of the mirror and find out the point where you\nget the smallest and brightest spot, which will be the image of the sun.\n(See to it that your paper is small so that it does not obstruct the incoming\nsun rays.)\nThe rays coming from the sun\nparallel to the principal axis of concave\nmirror converge to a point (see fig.-4).\nThis point is called Focus or focal point\n(F) of the concave mirror.\nReflection of light at curved surfaces 5\nMeasure the distance of this spot from the pole of the mirror.\nThis\ndistance is the focal length (f) of the mirror.\nThe radius of curvature will\nbe twice this distance (R=2f).\nDoes the reflected rays converge to a point in the picture you draw\nwith different rays based on fig.\n2(b)?\n· What happens if you hold the paper at a distance shorter than the focal\nlength from the mirror and move it away?\n· Does the image of the sun become smaller or bigger?\nYou will notice that the image of the sun first keeps on becoming small,\nbeyond the focal point it keeps on becoming enlarged.\nNote: while drawing a ray diagram\nsometimes it is not clear which is the\nreflecting side of the mirror.\nHence we follow\na convention of showing lines on the nonreflecting side(coated side).\nCan you draw the same diagram for a convex\nmirror?\nSee fig.-5 The parallel rays appear to\ndiverge after reflection.\nIf we extend the reflected rays backwards they\nmeet at ‘F’ i.e. focus of the convex mirror.\nWhen parallel rays are incident on a concave mirror, on reflection they\nmeet at the focus.\n· Do we get an image with a concave mirror at the focus every time?\nLet\nus find out.\nF PC\nThink and discuss\n· See fig.-5.\nA set of parallel rays are falling on a convex mirror.\nWhat conclusions can you draw from this?\n· Will you get a point image if you place a paper at the focal point?\nfig-5\n6 Reflection of light at curved surfaces\n1\n2\n3\n4\nLab Activity\nfig-6\nAim: Observing the types of images and measuring the object distance\nand image distance from the mirror.\nMaterial required: A candle, paper, concave mirror (known focal\nlength), V-stand, measuring tape or meter scale.\nProcedure: Place the concave mirror on V-stand, arrange a candle\nand meter scale as shown in fig.-6.\nKeep the candle at different distances from the mirror (10cm to 80cm)\nalong the axis and by moving the paper (screen) find the position where\nyou get the sharp image on paper. (Take care that flame is above the axis of\nmirror, paper is below the axis).\nNote down your observations in table-1.\nTable-1\nGroup your observations based on the type of image you see (e.g.\nImage\nis bigger and inverted).\nIt is possible you may not get any image at some\npositions, note down that too!\nSince we know the focal point and centre of curvature, we can reclassify\nour above observations as shown in table-2.\nWhat do you infer from this\ntable?.\nSl.\nNo.\nDistance of candle\nfrom mirror\n(object distance-u)\nDistance of paper\nfrom mirror\n(image distance-v)\nEnlarged/\ndiminished\nInverted or\nerected\nReflection of light at curved surfaces 7",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00002"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 21,
+      "textbook_page": 11,
+      "pdf_pages": [
+        21,
+        22,
+        23
+      ],
+      "textbook_pages": [
+        11,
+        12,
+        13
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "consider a ray that comes from the tip and goes in such a direction that it\nwould go through the centre of curvature if extended backwards.\nThis ray\nis normal to the surface and so will be reflected along the same line in\nopposite direction and will go through centre of curvature.\nWe notice that the two reflected rays (fig.-13) diverge and will not\nmeet.\nWhile doing the experiments for a case such as this we were unable\nto find any place where we get a sharp image on the screen.\nThis ray diagram\ntells us that since the reflected rays are diverging we will not get an image\nanywhere.\nSo even if we had\nmoved the screen much away from\nthe mirror, we would not have\nfound an image.\nIn such situations, however, we\ndo see an image when we look in\nthe mirror.\nIs it possible to explain\nthis image with a ray diagram?\nRemember what we did to find\nthe image in a plane mirror.\nTo\ndecide the position of image we extended the reflected rays backwards till\nthey meet.\nWe will do the same here.\nWhen we look in the mirror we are\nlooking at these diverging reflected rays.\nThey appear to be coming from\none point.\nWe can get this point by extending the rays backwards as shown\nin fig.-14.\nThe image does not really exist the way we see in other cases,\nbut it is visible to us.\nAs seen in the fig.-14, the image will be erect and\nenlarged.\nDoes this match with your observations?\nThis image that we get by extending the rays backwards is called a\nvirtual image.\nWe cannot get this on a screen like a real image.\nR1\nF COP\nR3\nI\nfig-14\n12 Reflection of light at curved surfaces\nThe case in which the object is at the\ncentre of curvature is another interesting\nsituation.\nSee fig.-15.\nFrom the ray diagram (fig.-15) we\nconclude that the image of the object will\nbe formed at the same distance as the\nobject and it will be inverted and of the\nsame size.\nWhat is your observation?\nFrom the ray diagrams and the observations you may have noticed some\npeculiar properties of concave mirrors.\nThey enlarge the image when the\nobject is held close to the mirror (less than the focal length).\nAlso, the\nimage is erect.\nThis property is used at many places and most commonly\nin shaving mirrors and mirrors used by dentists.\nAnother property is the\nway that it can converge the rays to its focal point.\nThis is extensively used\nin many places.\nLook at the shape of TV dish antennas.\nIf you look around you will see many curved\nsurfaces but all surfaces are not concave, many of\nthese are convex.\nHave you observed the rare view mirrors of a car?\nWhat type of surface do they have?\nHave you observed images formed on the rear\nand window glasses of a car?\nWhat type of surfaces\nare these?\nSee fig. -16.\nCan we draw ray diagrams for convex surfaces?\nR1\nR2\nCFP\nfig-15\nfig-16\nThink and discuss\n· Do you get an image when object is placed at F?\n· Draw a ray diagram.\nDo the experiment.\nReflection of light at curved surfaces 13\n1.3 Ray Diagrams: (Image formation by convex mirror)\nOne can draw ray diagrams for a convex mirror too.\nThe ‘easy’ rays\nthat we identified earlier can be used in this case with small modification.\nHere there are three rules which describe these rays.\nThe procedure for\ndrawing the diagram is similar and is not repeated here.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00006"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 22,
+      "textbook_page": 12,
+      "pdf_pages": [
+        22,
+        23,
+        24,
+        25
+      ],
+      "textbook_pages": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "See fig. -16.\nCan we draw ray diagrams for convex surfaces?\nR1\nR2\nCFP\nfig-15\nfig-16\nThink and discuss\n· Do you get an image when object is placed at F?\n· Draw a ray diagram.\nDo the experiment.\nReflection of light at curved surfaces 13\n1.3 Ray Diagrams: (Image formation by convex mirror)\nOne can draw ray diagrams for a convex mirror too.\nThe ‘easy’ rays\nthat we identified earlier can be used in this case with small modification.\nHere there are three rules which describe these rays.\nThe procedure for\ndrawing the diagram is similar and is not repeated here.\nRule 1: A ray parallel to the axis, on meeting the\nconvex mirror will get reflected so as to appear as if it\nis coming from the focal point.\nSee fig.-17.\nRule 2: This is\nconverse of Rule 1.\nA\nray travelling in the\ndirection of the focal point, after\nreflection, will become parallel to the\naxis.\nSee fig.-18.\nRule 3: A ray travelling in the direction of the\ncentre of curvature will, on reflection, travel in the\nopposite direction and appears to be coming from the\ncentre of curvature.\nSee fig.-19.\nNow let us use these rules to show the formation\nof images when the object is placed at different places infront of the convex\nmirror (see fig.-20)\nAB is the object placed at any point\non the principal axis infront of the\nconvex mirror.\nUsing Rule (1) and\nRule (3), we get an erected, diminished,\nand virtual image between P and F on\nthe back side of the mirror.\nThis image\ncan not be caught on screen and visible\nonly in the mirror.\nHence this is a\nvirtual image.\nV erify this with an experiment.\nUsing these rules, draw ray diagrams to show formation of images\nwhen an object is placed at different positions and note down your\nconclusions.\nV erify your results experimentally.\nC F p\nfig-18\nC F\nB\nAF PC AI\nBI\nR1\nR3\np\nfig-20\nfig-19\nC F p\nC F p\nfig-17\n14 Reflection of light at curved surfaces\nfig-21\nB\nAC\nAI\nBI\nY\nX\nPIP F\nYou may get the image at a particular distance when you place the object\nat a certain distance.\nDo you find any relation between the object distance(u)\nand the image distance(v)?\n1.4 Derivation of mirror formula for spherical mirrors\nObserve fig.\n21.\nThe ray from the tip (B) of the\nobject AB is emanating parallel to principle\naxis and striking the mirror at X.\nThis ray\npasses through F after reflection.\nAnother\nray starting from B, passes through centre\nof curvature (C) and strikes the mirror at Y .\nThis ray returns back in the same direction\nafter reflection.\nThere two rays XBI and YBI are meeting at BI .\nSo BI is the image of B.\nHence\nthe image of AB is AIBI .\nFrom the above fig. - 21.\nDABC and DAIBIC are similar triangles\nAB AC\nAB AC=I II ..... (1)\nDraw a line XPI perpendicular to the principle axis.\nSimilar DPI XF and DAIBIF are similar triangles\nPX PF\nAB AF=\nII\nI II ..... (2)\nFrom the fig. - 21, we can say that PI X = AB\nA B PF\nAB AF=\nI\nI II ..... (3)\nfrom the equations (1), (3) we can write\nA C PF\nAC AF=\nI\nII ..... (4)\nIf the paraxial rays (rays which are travelling very near to principal axis) are\nconsidered, we can say that PI coincides with P\nReflection of light at curved surfaces 15\nThen PIF = PF\nAC PF\nAC AF=II ..... (5)",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00007"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 29,
+      "textbook_page": 19,
+      "pdf_pages": [
+        29,
+        30
+      ],
+      "textbook_pages": [
+        19,
+        20
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Where will the image be formed when we place an object on the principal\naxis of a concave mirror at a point between focus and centre of\ncurvature?(AS1)\n2.\nState the differences between convex and concave mirrors? (AS1)\n3.\nDistinguish between real and virtual images. (AS1)\n4.\nHow do you get a virtual image using a concave mirror? (AS1)\n5.\nWhat do you know about the terms given below related to spherical mirrors? (AS1)\na) Pole b) Centre of curvature c) Focus\nd) Radius of curvature e) Focal length f) Principal axis\ng) Object distance h) Image distance i) Magnification\n6.\nWhat do you infer from the experiment which you did to measure the object distance and\nimage distance? (AS3)\nII.\nApplication of concepts\n1.\nFind the distance of the image when an object is placed on the principal axis at a distance\nof 10 cm infront of a concave mirror whose radius of curvature is 8 cm. (AS1)\n2.\nThe magnification product by a mirror is +1.\nWhat does it mean?(AS1)\nImprove your learning\nPosition of the\ncandle (object)\nEnlarged?/\ndiminished?\nInverted or\nerect\nPosition of\nthe image\nBetween mirror & F Behind the mirror Enlarged Erect Virtual\nOn focal point At infinity - - -\nBetween F and C Beyond C Enlarged Inverted Real\nOn centre of curvature At C Same size Inverted Real\nBeyond C Between F and C Diminished Inverted Real\nAt infinity At focus point - Real\nReal or\nvirtual\n20 Reflection of light at curved surfaces\nMultiple choice questions\n3.\nIf the spherical mirrors were not known to human beings, guess the consequences.(AS2)\n4.\nDraw suitable rays by which we can guess the position of image formed by a concave\nmirror? (AS5)\n5.\nShow the formation of image with a ray diagram when an object is placed on the principal\naxis of a concave mirror away from the centre of curvature? (AS5)\n6.\nWhy do prefer a convex mirror as a rear-view mirror in the vehicles? (AS7)\nIII.\nHigher Order Thinking Questions\n1.\nA convex mirror with a radius of curvature of 3 m is used as rear view mirror for a vehicle.\nIf a bus is located at 5 m from this mirror, find the position, nature and size of the image?\n(AS7)\n2.\nTo form the image on the object itself, how should we place the object infront of a concave\nmirror?\nExplain with a ray diagram? (AS5)\n1.\nIf an object is placed at C on the principal axis in front of a concave mirror, the position of the\nimage is [ ]\na) at infinity b) between Focus and Centre of curvature\nc) at Centre of curvature d) beyond Centre of curvature\n2.\nW e get a diminished image with a concave mirror when the object is placed [ ]\na) at Focus b) between the pole and Focus\nc) at Centre of curvature d) beyond Centre of curvature\n3.\nWe get a virtual image in a concave mirror when the object is placed [ ]\na) at Focus b) between the pole and Focus\nc) at Centre of curvature d) beyond Centre of curvature\n4.\nWhich of the following represents Magnification ‘m’ for the case of Mirrors\ni) v\nu ii) v\nu\n- iii) 0\nih\nh iv) 0\ni\nh\nh [ ]\na) (i) & (ii) b) (ii) & (iii) c) (iii) & (iv) d) (iv) & (i)\n5.\nRay which seems to be travelling through the focus of a convex mirror, path of the reflected ray\nof an incident [ ]\na) parallel to the axis b) along the same path in opposite direction\nc) through Focus d) through Centre of curvature",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00010"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 30,
+      "textbook_page": 20,
+      "pdf_pages": [
+        30,
+        31
+      ],
+      "textbook_pages": [
+        20,
+        21
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "a) at Focus b) between the pole and Focus\nc) at Centre of curvature d) beyond Centre of curvature\n4.\nWhich of the following represents Magnification ‘m’ for the case of Mirrors\ni) v\nu ii) v\nu\n- iii) 0\nih\nh iv) 0\ni\nh\nh [ ]\na) (i) & (ii) b) (ii) & (iii) c) (iii) & (iv) d) (iv) & (i)\n5.\nRay which seems to be travelling through the focus of a convex mirror, path of the reflected ray\nof an incident [ ]\na) parallel to the axis b) along the same path in opposite direction\nc) through Focus d) through Centre of curvature\nReflection of light at curved surfaces 21\n6.\nSize of image formed by a convex mirror is always [ ]\na) enlarged than object size\nb) diminished than object size\nc) equal to the size of object\nd) depends on position of object\n7.\nAn object is placed at a certain distance on the principal axis of a concave mirror.\nThe image is\nformed at a distance of 30 cm from the mirror.\nFind the object distance if radius of curvature\nR = 15 cm [ ]\na) 15 cm b) 10 cm c) 30 cm d) 7.5 cm\n8.\nAll the distances related to spherical mirrors will be measured from [ ]\na) object b) focus c) pole d) image\n9.\nThe minimum distance froma real object to a real image is a concave mirror [ ]\na) 2f b) f c) 0 d) f/2\nSuggested Experiments\n1.\nConduct an experiment to find the focal length of concave mirror.\n2.\nFind the nature and position of images, when an object is placed at different places on the\nprincipal axis of a concave mirror.\nSuggested Project Works\n1.\nCollect information about the history of spherical mirrors in human civilization, write a report\non it.\n2.\nThink about the objects which acts as concave or convex mirrors in your surroundings?\nMake a table of these objects and display in your classroom.\n3.\nCollect photographs from your daily life where you use convex and concave mirrors and\ndisplay in your class room.",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00011"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"We prefer a convex mirror as a rear-view mirror in vehicles because it provides a wider field of view compared to a concave mirror. When parallel rays of light fall on a convex mirror, they appear to diverge after reflection. By extending these reflected rays backwards, they seem to meet at a point called the focus. This property of convex mirrors allows them to form virtual, erect, and diminished images of objects behind the mirror. As a result, convex mirrors help drivers see a larger area behind the vehicle, which enhances safety.\",\n  \"selected_evidence_ids\": [\"E1\", \"E3\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 14,\n      \"textbook_page\": 4\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 22,\n      \"textbook_page\": 12\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 29,\n      \"textbook_page\": 19\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 154.52790670000832,
+    "latency_seconds": 237.4318634000083,
+    "usage": {
+      "completion_tokens": 252,
+      "prompt_tokens": 3991,
+      "total_tokens": 4243,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-j3geKNH01nFO2IKKpZefChMVpljTN6Wx",
+    "peak_rss_bytes": 18963222528
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "We prefer a convex mirror as a rear-view mirror in vehicles because it provides a wider field of view compared to a concave mirror. When parallel rays of light fall on a convex mirror, they appear to diverge after reflection. By extending these reflected rays backwards, they seem to meet at a point called the focus. This property of convex mirrors allows them to form virtual, erect, and diminished images of objects behind the mirror. As a result, convex mirrors help drivers see a larger area behind the vehicle, which enhances safety.",
+    "selected_evidence_ids": [
+      "E1",
+      "E3",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 14,
+        "textbook_page": 4
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 22,
+        "textbook_page": 12
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 29,
+        "textbook_page": 19
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 3,
+    "citation_count": 3
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "A convex mirror forms a virtual, erect, diminished image",
+        "token_recall": 0.8571,
+        "matched": true
+      },
+      {
+        "point": "It provides a wider field of view",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Therefore a driver can see a larger region behind the vehicle",
+        "token_recall": 0.625,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 1.0,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 92
+  },
+  "completed_at": "2026-07-17T14:30:11+00:00"
+}

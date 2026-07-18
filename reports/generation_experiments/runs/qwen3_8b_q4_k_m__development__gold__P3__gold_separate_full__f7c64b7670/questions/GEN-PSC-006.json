@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P3__gold_separate_full__f7c64b7670",
+  "question_id": "GEN-PSC-006",
+  "question": "Why does tooth decay start when the pH of mouth is lower than 5.5? (or) What value of pH in the mouth leads to tooth decay? Why?",
+  "book_id": "physical_sciences",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "2e019d026b794f6e2cd8331a6ad227117c5ae21fefec295880cb16628fdd36ff",
+  "context_sha256": "6b90ff1328ad9424d460491edcc055748995fc62deedb126226854894b256a1a",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 60,
+      "textbook_page": 50,
+      "text": "Reflection of light at curved surfaces50 Acids, Bases and SaltsGovernment’s Gift for Students’ Progress\n3.6.2 Importance of pH in everyday life\n1. Are plants and animals pH sensitive?\nLiving organisms can survive only in a narrow range of pH change.\nWhen pH of rain water is less than 5.6, it is called acid rain. When acid\nrain flows in to the rivers, it lowers the pH of the river water, the survival\nof aquatic life in such rivers becomes difficult.\n2. Is pH change cause of tooth decay?\nTooth decay starts when the pH of the mouth is lower than 5.5.\nTooth enamel, made of calcium phosphate is the hardest substance\nin the body. It does not dissolve in water, but is corroded when the\npH in the mouth is below 5.5. Bacteria present in the mouth produce\nacids by degradation of sugar and food particles remaining in the\nmouth. The best way to prevent this is to clean the mouth after\neating food. Using tooth pastes, which are generally basic neutralize\nthe excess acid and prevent tooth decay.\n3. pH in our digestive system:\nIt is very interesting to note that our stomach produces hydrochloric\nacid. It helps in the digestion of food without harming the stomach. During\nindigestion the stomach produces too much acid and this causes pain and\nirritation. To get rid of this pain, people use bases called antacids. These\nantacids neutralize the excess acid in the stomach. Magnesium hydroxide\n(milk of magnesia), a mild base, is often used for this purpose.\nActivity 12\nActivity 12\nThink and discuss\n· What will happen if the pH value in our body increases?\n· Why do living organism have narrow pH range?",
+      "text_sha256": "2d0191d8148352ca025d05ffd05f1a92e38145239ebcafa73d7ff73b08402c52"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Tooth decay starts when the pH of the mouth is lower than 5.5 because tooth enamel, which is made of calcium phosphate, begins to corrode under acidic conditions. The pH of the mouth drops below 5.5 due to the production of acids by bacteria that break down sugar and food particles in the mouth. These acids lower the pH, leading to the dissolution of tooth enamel and the onset of tooth decay. To prevent this, it is important to clean the mouth after eating and use toothpaste that is basic to neutralize the excess acid.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 60,\n      \"textbook_page\": 50\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 13.570982499993988,
+    "latency_seconds": 42.073084399991785,
+    "usage": {
+      "completion_tokens": 186,
+      "prompt_tokens": 590,
+      "total_tokens": 776,
+      "prompt_tokens_details": {
+        "cached_tokens": 55
+      }
+    },
+    "response_id": "chatcmpl-5Nk9gzUYKs0EuFqOdCoImSAp66J056PA",
+    "peak_rss_bytes": 13027332096
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Tooth decay starts when the pH of the mouth is lower than 5.5 because tooth enamel, which is made of calcium phosphate, begins to corrode under acidic conditions. The pH of the mouth drops below 5.5 due to the production of acids by bacteria that break down sugar and food particles in the mouth. These acids lower the pH, leading to the dissolution of tooth enamel and the onset of tooth decay. To prevent this, it is important to clean the mouth after eating and use toothpaste that is basic to neutralize the excess acid.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 60,
+        "textbook_page": 50
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Bacteria break down food/sugars and produce acids",
+        "token_recall": 0.8571,
+        "matched": true
+      },
+      {
+        "point": "Below about pH 5.5 the acidic medium attacks calcium-phosphate tooth enamel",
+        "token_recall": 0.7,
+        "matched": true
+      },
+      {
+        "point": "Continued demineralisation leads to decay",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.6667,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 95
+  },
+  "completed_at": "2026-07-16T21:10:40+00:00"
+}

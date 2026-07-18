@@ -1,0 +1,140 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top3_separate_compact__4afd830383",
+  "question_id": "GEN-BIO-005",
+  "question": "What is double circulation? Why is it important in humans?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "dedce88f3a04742cadeea18f14216cf16cddf3a39885e847b1cc3c33b5384a9b",
+  "context_sha256": "8652460f6242b417cbee280f1eff7f1f804aa242ed280ed31de832f9d469572e",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 67,
+      "textbook_page": 58,
+      "pdf_pages": [
+        67,
+        68,
+        69
+      ],
+      "textbook_pages": [
+        58,
+        59,
+        60
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The blood had a double circulation.\nStarting from the right\nventricle blood left by way of the arteries to the lungs and returned by way\nof veins to the left atrium, this is known as ‘pulmonary circulation’.\nFrom there it flowed into the left ventricle and left by way of aorta to the\nrest of the body and returned by way of the veins to the right atrium.\nFrom\nhere it moved into the right ventricle, this is known as ‘systemic\ncirculation’.\nAs blood reaches the heart two times through pulmonary\ncycle and again through systemic, it is called ‘double circulation’.\nHarvey also prooved the statement wrong which states that the blood\nflowing out of the heart was used up in the body and new blood was formed.\nHe measured how much blood the heart pumped in one contraction and\nalso counted the number of contractions per minute.\nHe found that in one hour, the heart pumped out a quantity of blood\nthat was three times the weight of a man.\nThe body couldn’t use up blood\nand form new blood at such a rate.\nFig-6: William\nHarvey\nCirculation59\nThe same blood had to circulate and be used over and over again.\nHarvey still had some problem.\nThe arteries and veins that could\nbe seen had to be connected by vessels too small to see.\nWere they\nreally there?\nIn the 1650s, scientists had learned to put lenses together in\nsuch a way that objects too small to see with the naked eye could be\nmagnified and made visible.\nMarcello Malpighi (1628-1694), used\nthe microscope to see tiny blood vessels that were invisible with\nnaked eye.\nLater, Malpighi studied the wings of bats.\nHe could see\nblood vessels in their thin membranes under the microscope;\nhe could see that the smallest arteries and veins were connected\nby very fine blood vessels.\nHe called these blood vessels “capillaries” from the Latin\nword for “hair”, because they were as thin as the finest of hairs.\nWith the discovery of capillaries, the idea of the circulation\nFig-8(a): Try like this\nFig-8(b): Harvey’ s\ndemonstration\nof the blood was complete, and it has been accepted\never since.\nNow, we know that blood circulates in the blood\nvessels.\nBut how did the scientists find out that blood\nmoves in blood vessels?\nIs it possible to demonstrate\nthe movement of blood in vessels without damaging\nthe vessels?\nLet us repeat the classical experiment to\ndemonstrate the movement of blood in veins conducted\nby William Harvey in early 17th century, when there\nwas no compound microscope or any other modern\nequipment.\n1.\nTie a tornquit just above the elbow of your friend\nas shown in Fig-8(b) whose blood vessels are\nprominent in the hand.\nFig-7: Marcello\nMalpighi\nCirculation60\n2.\nAsk him/her to hold a firm support as shown in the figure.\nNow the\nblood vessels can be seen more prominently.\n3.\nLocate a prominent bluish blood vessel.\n4.\nAt the end of the vessel farthest from the elbow apply steady pressure,\nso as to close its cavity.\n5.\nNow apply pressure from elbow towards the palm slowly and observe\nthe change in the blood vessel. (Take the help of the figures given\nhere.) Observe changes and discuss in your class.\n6.\nRemove the pressure.\n7.\nApply pressure from palm towards elbow and see what happens.\nAnswer the following:\nx Why do blood vessels (just below our skin) bulge on the side away\nfrom the heart when the hand is tied?\nWhat do you understand from\nit?\n3.4 Arteries and Veins\nArteries carry blood from the heart to body parts.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00035"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 72,
+      "textbook_page": 63,
+      "pdf_pages": [
+        72,
+        73,
+        74
+      ],
+      "textbook_pages": [
+        63,
+        64,
+        65
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "is not the same in all the animals.\nLet us observe the fig-11(a) and (b).\nStart from any point in the fig-11(a)\nand (b).\nMove in the direction of\narrow.\nNote down the parts which\nare in the way in cyclical form.\nTry to identify different parts\nof the body in both figures.\nCompare the two flow charts and answer the following.\nx How many times did your pointer touch body parts in fig-11(a) and (b)?\nx How many times did your pointer touch the heart in fig-11(a) and (b)?\nx How many times did your pointer touch the respiratory organs\n(lungs / gills) in fig-11(a) and (b)?\nFig-11(a):\nSingle circulation\nFig-11(b):\nDouble circulation\nbrain\nliver\nlungs\nother\nparts\ngills\nvein\nkidney\nartery\n!\nDo you know?\nCirculation64\nFrom your observation it is clear that in fig -11(a) blood flows through\nheart only once to complete one circulation.\nThis is single circulation.\nIn\nFig-11 (b) blood flows through the heart twice for completing one\ncirculation.\nThis is called double circulation.\n3.7 Lymphatic system\nHave you ever observed what happened to your feet after\novernight journey, in sitting position without moving?\nWe feel that\nour foot wear is little tight.\nIn elders it will be clear that the lower\npart of the legs will be swollen.\nThis stage is called oedema.\nx Why do our legs swell?\nAs blood flows through tissues and through blood capillaries\nsome amount of fluids and certain solid materials are constantly\nflowing out of them at different junctions.\nSuch materials are\ncollected and sent back into blood circulation.\nWe know that blood circulates in the blood vessels, pushed by\nthe heart.\nFrom the heart it flows into the arteries and finally into the\ncapillaries.\nTo supply nutrients to the cells (tissues), the liquid\nportion of the blood with nutrients flows out of the capillaries.\nThis\nis called tissue fluid.\nThis fluid flows through a system called as lymphatic system.\nThe fluid mainly returns back into the blood stream.\nLymph is the vital link between blood and tissues by which\nessential substances pass from blood to cells and excretory products from\ncells to blood.\nBlood is a substance which contains solid and liquid particles.\nLymph\nis the substance that contains blood without solid particles.\nTissue fluid is\nlymph present in the tissues.\nThe liquid portion after formation of blood\nclot is serum.\nThe muscles which are attached to the skeleton (skeletal muscles) act\nas pumps when they contract the pressure exerted on lympth vessel and\nblood vessel and helps in pushing the lymph flowing in lymphatic vessels\nand the blood flowing in veins towards the heart.\nThe valves that are present in the lymphatic vessels and veins stop the\nreverse flow of blood.\nWe shall read about this as the system of lymph\ncirculation in detail in higher classes.\nFig-12: Lymphatic\nsystem\nCirculation65\n3.8 Evolution of the transport (circulatory) system\nWhen the unicellular organisms separated themselves from the sea\nwith the formation of the limiting membrane, the problem of\ntransportation arose.\nThe nature has found the solution, by creating a\nmicroscopic ocean which has its own currents.\nIn unicellular organisms like Amoeba the protoplasm shows natural\nmovements.\nThese movements are called Brownian movements,\nbecause of which the nutrients and oxygen are distributed throughout\nthe protoplasm equally.\nThis simplest intracellular transportation system, present in\nunicellular animals has been retained in multicellular animals including\nhumans.\nThe protoplasm of any cell in our body is mobile and\nprotoplasmic currents exist even in the nerve cells.\nThe multicellular\nanimals have to develop more complicated system for transportation",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00038"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 83,
+      "textbook_page": 74,
+      "pdf_pages": [
+        83,
+        84
+      ],
+      "textbook_pages": [
+        74,
+        75
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x The arteries carry oxygenated blood except pulmonary artery.\nThe veins carry deoxygenated blood\nexcept pulmonary veins.\nx One contraction and relaxation of heart is called cardiac cycle.\nx If the blood goes to heart only once before it reaches all the body parts.\nIt is called single circulation.\nIf it goes twice it is called double circulation.\nx Vitamin K deficiency leads to delayed coagulation of blood.\nx Plants absorb soil water through roots by the process of osmosis.\nx Water travels through xylem vessels and food material travels through phloem tissues.\nx There is a relation between tranportation and transpiration in plants.\nx Biologists studied about phloem tubes with the help of aphids.\n1.\nWhat is transport system?\nHow does this help the organism? (AS1)\n2.\nWhat is the relationship between blood and plasma? (AS1)\n3.\nWhich type of blood vessels carry blood away from the heart? (AS1)\n4.\nWhat are the three main types of blood vessels in the body? (AS1)\n5.\nWhich is the largest artery in the body?\nWhy is it the largest ? (AS1)\n6.\nWhich blood vessels carry oxygenated blood? (AS1)\n7.\nName the structures that are present in veins and lymph ducts and are absent in arteries. (AS1)\n8.\nWhat is the use of platelets? (AS1)\n9.\nWrite differences between (AS1)\na) systole - diastole b) veins - arteries c) xylem - phloem\n10.\nExplain the way how the plants absorb water from soil ? (AS1)\n11.\nWhat is root pressure?\nHow it is useful to the plant? (AS1)\n12.\nPhloem is a food source for some animals.\nHow can you justify this statement? (AS1)\nImprove your learning\nCirculation75\n13.\nRead the given para and name the parts of the heart. (AS1)\nx The heart is divided into four chambers by muscular structures called septa.\nAny structure\nthat divides two chambers is known as septum.\nNow let us try to name the septa present\nin the heart.\na) The septum that divides the two atria can be named as _____________\nb) The septum that divides the two ventricles can be named as___________.\nc) The septum that divides the atrium and ventricle can be named as________.\nx The holes that connect two chambers are called apertures.\nLet us try to name the apertures\nwhich connect the atria and ventricles.\na) The aperture that connects the right atrium and right ventricle can be named as_______.\nb) The aperture that connects the left atrium and left ventricle can be named ___________.\nx Any structure that closes an aperture, and allows one way movement of materials is\ncalled as valve.\nNow let us name the valves that are present in the chambers of the heart.\na) The valve that is present between left atrium and left ventricle can be named as____________.\nb) The valve that is present between right atrium and right ventricle can be named as ___________.\n14.\nIf the valves in veins of the legs fail to stop the flow of blood what could be the consequences\nof this failure? (AS2)\n15.\nWhat would happen if transpiration doesn’t take place in plants? (AS2)\n16.\nJohn made a stethoscope using a paper cup and plastic tube.\nWrite down the procedure he\nfollowed. (AS3)\n17.\nHow did scientists prove that the food is transported through the phloem? (AS3)\n18.\nWhat is the inference about experiments with aphids? (AS3)\n19.\nCollect information about blood pressure of your school teachers or neighbours.\nPrepare a report\non their health problems due to changes in blood pressure. (AS4)\n20.\nDraw a schematic diagram to explain single and double circulation.\nWrite differences between\nthem. (AS5)\n21.\nPrepare a block diagram showing water absorption by roots to transpiration by leaves. (AS5)",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00045"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Double circulation is a system in which blood passes through the heart twice during one complete cycle. In humans, this process is important because it ensures that oxygenated blood is efficiently delivered to all parts of the body while deoxygenated blood is returned to the lungs for re-oxygenation. The first circulation, called pulmonary circulation, involves the right ventricle sending blood to the lungs via arteries, where it picks up oxygen and returns via veins to the left atrium. The second circulation, called systemic circulation, involves the left ventricle sending oxygenated blood to the rest of the body via the aorta, and then returning deoxygenated blood to the right atrium. This double circulation allows for efficient oxygen and nutrient delivery to tissues and the removal of waste products, which is essential for maintaining life and supporting bodily functions.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 67,\n      \"textbook_page\": 58\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 76.91941169998609,
+    "latency_seconds": 117.57023299999128,
+    "usage": {
+      "completion_tokens": 241,
+      "prompt_tokens": 2728,
+      "total_tokens": 2969,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-cQncfLKrDWPMS480Bf2ycQDDMWORhwA9",
+    "peak_rss_bytes": 11589390336
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Double circulation is a system in which blood passes through the heart twice during one complete cycle. In humans, this process is important because it ensures that oxygenated blood is efficiently delivered to all parts of the body while deoxygenated blood is returned to the lungs for re-oxygenation. The first circulation, called pulmonary circulation, involves the right ventricle sending blood to the lungs via arteries, where it picks up oxygen and returns via veins to the left atrium. The second circulation, called systemic circulation, involves the left ventricle sending oxygenated blood to the rest of the body via the aorta, and then returning deoxygenated blood to the right atrium. This double circulation allows for efficient oxygen and nutrient delivery to tissues and the removal of waste products, which is essential for maintaining life and supporting bodily functions.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 67,
+        "textbook_page": 58
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Blood passes through the heart twice in one complete circulation",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Describe the pulmonary circuit",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Describe the systemic circuit",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Explain efficient separation/delivery of oxygenated and deoxygenated blood",
+        "token_recall": 0.7143,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 137
+  },
+  "completed_at": "2026-07-16T21:22:05+00:00"
+}

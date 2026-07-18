@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb",
+  "question_id": "GEN-PSC-016",
+  "question": "Why should we connect electric appliances in parallel in a household circuit? What happens if they are connected in series?",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "6235f4de61ac2cce70315e7b1a8f0d532f2b2a06fd9ea8369e992e10f6b0fb68",
+  "context_sha256": "fa301aebe7efb37c34c51809191c63a94d41c561b48112bc65d031e3a163232c",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 215,
+      "textbook_page": 205,
+      "pdf_pages": [
+        215,
+        216,
+        217
+      ],
+      "textbook_pages": [
+        205,
+        206,
+        207
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "germanium are 105 to 1010 times more than that\nof metals, but 1015 to 1016 times less than that of\ninsulators.\nSuch materials are called\nsemiconductors.\nSemiconductors are used to\nmake diodes, transistors and integrated Circuits\n(ICs).\nICs are used in all sorts of electronic\ndevices, including computer, TV , mobile phones etc.\n· How are electric devices connected in\ncircuits?\n9.7 Electric Circuits\nA closed path created by the connecting\nwires through a battery along which electrons can\nflow is called a circuit.\nFor a continuous flow of\nelectrons in the circuit it must be a complete circuit with no gaps left in\nbetween.\nUsually a gap is provided in the circuit by an electric switch that\ncan be opened or closed to either cut off or allow current flow through the\ncircuit.\nCircuits may have more than one device (called as component)\nthat receives electric energy from the source.\nThese devices are commonly\nconnected in the circuit either in series or in parallel.\nWhen the components of the circuit are connected in series, there\nwill be a single path for flow of electrons between the terminals of the\nbattery, generator or wall socket (which is simply and extension of these\nterminals).\nWhen these components are connected in parallel, they form\nbranches and each branch provides a separate path for the flow of electrons.\nMaterial r (W-m) at 20 °C\nSilver 1.59 × 10-8\nCopper 1.68 × 10-8\nGold 2.44 × 10-8\nAluminium 2.82 × 10-8\nCalcium 3.36 × 10-8\nTungsten 5.60 × 10-8\nZinc 5.90 × 10-8\nNickel 6.99 × 10-8\nIron 1.00 × 10-7\nLead 2.20 × 10-7\nNichrome 1.10 × 10-6\nCarbon (Graphite) 2.50 × 10-6\nGermanium 4.60 × 10-1\nDrinking water 2.00 × 10-1\nSilicon 6.40 × 102\nWet wood 1.00 × 103\nGlass 10.0 × 1010\nRubber 1.00 × 1013\nAir 1.30 × 1016\nTable 3\nResistivity of various materials\n201 Electric Current\nfig-16\nkeyBattery\nI\nA\nV1\nV3\nfig-17\nfig-18\nI I\nI I\nR1 R2 R3\nReq\nV1 V2\nV\nV3\nV\nBoth the series and parallel connections have their own distinctive\ncharacteristics.\nWe shall briefly study circuits, using these two types of\nconnections.\n9.7.1 Series connection of resistors\nActivity 6\nTake different bulbs.\nMeasure their resistances with a multi meter.\nNote their values in your book as R1, R2, R3.\nConnect them as shown in fig.- 16.\nMeasure the potential difference between terminals of the battery\nconnected to the circuit.\nMeasure the potential\ndifferences between the ends of each bulb and\nnote them as V1, V2 and V3 from voltmeters in\nyour note book.\nCompare the potential\ndifference of the battery and resistors.\n· What do you notice?\nThe sum of the potential differences of\nthe bulbs is equal to potential difference across\nthe combination of the resistors.\nThen we get,\nV = V1 + V2 + V3 ......................... (1)\nMeasure the value of the current flowing in the circuit with help of\nthe ammeter.\nNote its values in your book as I.\n· What do you notice?\nEquivalent resistance of a series connection:\nObserve fig.- 17.\nIn this fig.- the bulbs are shown as resistors with\nsymbols.\nIn series connection of resistors there\nis only one path for the flow of current in\nthe circuit.\nHence, the current in the circuit\nis equal to I.\nAccording to Ohm’s law,\nPotential difference across R1 is , V1 = IR1\nPotential difference across R2 is , V2 = IR2\nPotential difference across R3 is , V3 = IR3\nLet Req is the equivalent resistance of\nthe combination of resistors in series.\nV2\n202 Electric Current\nfig-19keyBattery\nI\nA\nA\nammeter 1\nP\nI2\nI3\nQ\n· What do you mean by equivalent resistance?\nIf the current drawn by a resistor is equal to the current drawn by",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00125"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 216,
+      "textbook_page": 206,
+      "pdf_pages": [
+        216,
+        217,
+        218
+      ],
+      "textbook_pages": [
+        206,
+        207,
+        208
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "In series connection of resistors there\nis only one path for the flow of current in\nthe circuit.\nHence, the current in the circuit\nis equal to I.\nAccording to Ohm’s law,\nPotential difference across R1 is , V1 = IR1\nPotential difference across R2 is , V2 = IR2\nPotential difference across R3 is , V3 = IR3\nLet Req is the equivalent resistance of\nthe combination of resistors in series.\nV2\n202 Electric Current\nfig-19keyBattery\nI\nA\nA\nammeter 1\nP\nI2\nI3\nQ\n· What do you mean by equivalent resistance?\nIf the current drawn by a resistor is equal to the current drawn by\nthe combination of resistors then the resistor is called as equivalent resistor\n(provided the source in the circuit is constant).\nSo, we have V = I Req\nSubstituting the values of V1, V2, V3 and V in the equation (1), we get\nIReq = IR1 + IR2 + IR3\nReq = R1 + R2 + R3\nFrom the above equation you can conclude that the sum of individual\nresistances is equal to their equivalent resistance when the resistors are\nconnected in series.\n· What happens when one of the resistors in series breaks down?\nWhen one of the resistors in series breaks down, the circuit\nbecomes open and flow of current cannot take place in the circuit.\nThis is\nthe reason why household electrical appliances are not connected in series.\n· Can you guess in what way household wiring has been done?\nLet us see\n9.7.2 Parallel Connection of resistors\nActivity 7\nUse the bulbs used in activity 6 and connect\nthese bulbs as shown in fig.- 19.\nMeasure the potential difference across each\nbulb using a voltmeter or multi meter.\nNote these\nvalues in your note book.\nWhat do you notice?\nThe\npotential difference at the ends of each bulb is the\nsame.\nThese bulbs are said to be in parallel conne\nction.\nMeasure electric currents flowing through\neach bulb using ammeters.\nNote these values.\nLet I1,I2 and I3 be the currents flowing through\nR1, R2 and R3 resistors respectively.\n· How much current is drawn from the battery?\n· Is it equal to individual currents drawn by the resistors?\nI1\n203 Electric Current\nMeasure the current (I) drawn from the battery using the ammeter\n1.\nYou will notice that the current drawn from the battery is equal to the\nsum of individual currents drawn by the bulbs.\nHence we can write\nI = I1 + I2 + I3 .................. (1)\nEquivalent resistance of a parallel connection\nThe schematic circuit of fig.- 19 is shown in fig.- 20.\nAccording to the Ohm’s law,\nCurrent through R1 is, I1 = 1\nV\nR\nCurrent through R2 is, I2 =\n2\nV\nR\nCurrent through R3, is, I3 =\n3\nV\nR\nLet Req be the equivalent resistance of\nthe resistors is parallel.\nIt is shown in fig.- 21.\nThen we get; I = eq\nV\nR\nSubstituting the values I, I1, I2 and I3 in equation (1), we get\neq\nV\nR = 1\nV\nR +\n2\nV\nR +\n3\nV\nR\neq\n1\nR = 1\n1\nR +\n2\n1\nR +\n3\n1\nR\nThe two resistors R1 and R2 are connected in parallel,\neq\n1\nR = 1\n1\nR +\n2\n1\nR (or)\nReq = 12\n12\nRR\n( R R)+\nThe equivalent resistance of a parallel combination is less than the\nresistance of each of the resistors.\nYou can use this result to explain why the resistance of a metal wire is\ninversely proportional to its area of cross section.\nLet us imagine a thick\nwire as a parallel combination of several thin wires.\nThen the resistance of\nthe combination is less than that of each thin wire.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00126"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 218,
+      "textbook_page": 208,
+      "pdf_pages": [
+        218,
+        219,
+        220
+      ],
+      "textbook_pages": [
+        208,
+        209,
+        210
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "2\n1\nR +\n3\n1\nR\nThe two resistors R1 and R2 are connected in parallel,\neq\n1\nR = 1\n1\nR +\n2\n1\nR (or)\nReq = 12\n12\nRR\n( R R)+\nThe equivalent resistance of a parallel combination is less than the\nresistance of each of the resistors.\nYou can use this result to explain why the resistance of a metal wire is\ninversely proportional to its area of cross section.\nLet us imagine a thick\nwire as a parallel combination of several thin wires.\nThen the resistance of\nthe combination is less than that of each thin wire.\nIn other words, the\nresistance of a thick wire is less than that of a thin wire.\nfig-21\nI I\nA\nReq\nfig-20\nI I\nA\nA\nAI1\nI2\nI3\nR1\nR2\nR3\nA\n204 Electric Current\nExample 1: Three resisters 10 W, 20 W, 30 W, are connected in\n(a) Series (b) Parallel.\nFind the resultant resistance in the circuit.\nSolution: From the given circuit R1 = 10 W, R2 = 20 W, R3 = 30 W\n(a) Resultant resistance in Series connection: R = R1+ R2+ R3\nR = 10 + 20 + 30 = 60W\n(b) Resultant resistance in parallel connection: 123\n1111\nR RRR=++\n1 1 1 1 11\n10 20 30 60\n5.5\nR\nR\n=++=\n=W\nExample 2: Three resisters R1, 4 W, and 8 W, are connected in series in a\ncircuit.\nIf the resultant resistance in the circuit is 20 W find the value of\nR1.\nSolution: Resultant resistance in Series connection: R = R1+ R2+ R3\n20 = R1 + 4 + 8\n20 = R1 + 12\nR1 = 20 - 12\nR1 = 8 W\nExample 3: Two resisters R1 and 12 W, are connected in parallel in a\ncircuit.\nIf the resultant resistance in the circuit is 3W find the value of R1.\nResultaint resistance in parallel connection: 12\n111\nR RR=+\n1\n1\n1\n1 11\n3 12\n11 1 31\n3 12 12 4\n4\nR\nR\nR\n=+\n= - ==\n=W\nExample 4: Observe the given circuit (fig.\n22)and\ncalculate the resultant resistance.\nSolution: From the given circuit\nR1 = 4 W, R 2 = 12 W, are connected in\nparallel their resultant resistance is\n12\n12\n4 12 48 34 12 16p\nRRR RR\n´= = = =W++\nRp is connected to R3 in series then resultaint resistance is\nR = 3 + 7 = 10 W\nfig-22\n205 Electric Current\nThough the methods discussed in the previous section for replacing\nseries and parallel combination of resistors by their equivalent resistances\nare very useful for simplifying many combinations of resistors, they are\nnot sufficient for the analysis of many simple circuits particularly those\ncontaining more than one battery.\nLet us see.\n9.8 Kirchhoff’s laws\nTwo simple rules called Kirchhoff’s rules are applicable\nto any DC circuit containing batteries and resistors connected\nin any way.\n9.8.1 Junction Law\nSee fig.- 19.\nWe have seen that the current divides at P.\nThe current\ndrawn from the battery is equal to the sum of the currents through\nthe resistors.\nP is called junction.\nThe junction is a point where\nthree or more conducting wires meet.\nAt any junction point in a circuit where the current can divide, the\nsum of the currents into the junction must equal the sum of the currents\nleaving the junction.\nThis means that there is no accumulation of electric\ncharges at any junction in a circuit.\nFrom fig.- 23, we have\nI1 + I4 + I6 = I5 + I2 + I3\nThis law is based on the conservation of charge.\n9.8.2 Loop Law\nThe algebraic sum of the increases and decreases in potential\ndifference across various components of the circuit in a closed circuit",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00127"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 226,
+      "textbook_page": 216,
+      "pdf_pages": [
+        226,
+        227,
+        228
+      ],
+      "textbook_pages": [
+        216,
+        217,
+        218
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "household circuit, to which we connect various appliances such as fan, TV ,\nrefrigerator etc.\nAll the electric devices of our home are connected at different points\nbetween these two wires.\nThis means all the electric appliances are in\nparallel connection.\nHence, potential drop across each device is 240V .\nIf\nwe know the value of resistance of the electric device, we can calculate\nthe current passing through it using the equation I = V/R.\nFor example, the\ncurrent passing through a bulb with resistance 240 W is 1 A.\nBased on the resistance of each electric device, it draws some current\nfrom the supply.\nTotal current drawn from the mains is equal to the sum of\nthe currents passing through each device (Junction law).\nIf we add more devices to the household circuit the current drawn\nfrom the mains also increases.\n· What happens when this current increases greatly?\nTo answer this, observe the values noted on digital meters fixed\nat your home.\nYou will notice the following values on the meter.\nPotential difference: 240 V\nCurrent: 5 – 20A\nThis means the line wires that are entering the meter have a\npotential difference of 240V .\nThe minimum and maximum limit\nof current that can be drawn from the mains is 5 – 20A.\nThus, the\nmaximum current that we can draw from the mains is 20A.\nWhen\nthe current drawn from the mains is more than 20A.\nOverheating\noccurs and may cause a fire.\nThis is called over loading.\nSee fig.-\n32.\nIf we switch on devices, such as heater shown in fig.- 32, the\ncurrent drawn from the mains exceeds the max limit 20A.\n· How can we prevent damage due to overloading?\n240V\nFuse\nTV\nFridge\nBulb\nFan\nHeater\n20A\n6A\n8A\n2A\n4A\nfig-32\n212 Electric Current\n· Electric current is expressed as the amount of charge flowing through a particular cross section\narea in unit time.\n· W ork done by the electric force on unit positive charge to move it through a distance from A to\nB in a conductor is called potential difference between those two points.\n· A multi-meter is an electronic measuring instrument that combines several measuring functions\n(electric potential difference, electric current and electric resistance) in one unit.\n· Ohms law: The current through a conductor element is proportional to the potential difference\napplied between its ends, provided the temperature remains constant.\nMathematically V=IR.\nTo prevent damages due to overloading we connect an electric fuse to the\nhousehold circuit as shown in fig.- 32.\nIn this arrangement, the entire current\nfrom the mains must pass through the fuse.\nThe fuse consists of a thin wire of\nlow melting point.\nWhen the current in the fuse exceeds 20A, the wire will\nheat up and melt.\nThe circuit then becomes open and prevents the flow of\ncurrent into the household circuit.\nSo all the electric devices are saved from\ndamage that could be caused by overload.\nThus we can save the house holding wiring and devices by using fuses.\nNote: The value of overload current varies from the household currents to\nfactories.\nThink and discuss\n· What do you mean by short circuit?\n· Why does a short circuit damage electric wiring and devices\nconnected to it?\nKey words\nCharge, Potential difference, Electric current, Multi-meter, Ohm’s law, Resistance,\nResistivity, Kirchhoff’s laws, Electric power, Electric energy.\nWhat we have learnt\n213 Electric Current\n· Ohm’s law is valid for metal conductors at constant temperature.\nIt is not applicable\nfor gaseous conductors and semiconductors.\n· Resistance is the opposition that a substance offers to the motion of electrons.\n· Resistance of a wire depends on the material of the wire, its length and its area of",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00131"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 227,
+      "textbook_page": 217,
+      "pdf_pages": [
+        227,
+        228
+      ],
+      "textbook_pages": [
+        217,
+        218
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Think and discuss\n· What do you mean by short circuit?\n· Why does a short circuit damage electric wiring and devices\nconnected to it?\nKey words\nCharge, Potential difference, Electric current, Multi-meter, Ohm’s law, Resistance,\nResistivity, Kirchhoff’s laws, Electric power, Electric energy.\nWhat we have learnt\n213 Electric Current\n· Ohm’s law is valid for metal conductors at constant temperature.\nIt is not applicable\nfor gaseous conductors and semiconductors.\n· Resistance is the opposition that a substance offers to the motion of electrons.\n· Resistance of a wire depends on the material of the wire, its length and its area of\ncross section Ra l/A.\n· The resistivity of a material is the resistance per unit length of a unit cross section of\nthe material.\n· Two or more resistors are said to be connected in series if the same current flows\nthrough them.\n· The junction law: At any junction point in a circuit where the current can divide,\nthe sum of the currents into the junction must equal the sum of the currents leaving\nthe junction.\n· The loop law: The algebraic sum of the increases and decreases in potential\ndifference across various components of a closed circuit loop must be zero.\n· Electric power is the product of potential difference and the current.\nSI unit of\npower is watt (W).\n· Electrical energy is the product of power and time.\nUnits of electrical energy W-s\nand KWH.\nI.\nReflections on concepts\n1.\nExplain how electron flow causes electric current with\nLorentz – Drude theory of electrons.(AS1)\n2.\nWrite the difference between potential difference and emf. (AS1)\n3.\nHow can you verify that the resistance of a conductor is temperature dependent?\n(AS1)\n4.\nExplain how electric shock takes place. (AS1)\n5.\nDraw a circuit diagram for a circuit in which two resistors A and B are connected\nin series with a battery and a voltmeter is connected to measure the potential\ndifference across the resistor A.(AS5)\n6.\nIn the figure Q-6 the potential at A is —————\nwhen the potential at B is zero. (AS7)\n5W\ng1A\n2VA B\nV= 0\nfig.\nQ - 6\nImprove your learning",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00132"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Electric appliances are connected in parallel in a household circuit because each appliance receives the full voltage from the power supply. This ensures that each appliance operates at its rated voltage, and if one appliance fails, the others continue to function. In contrast, if appliances are connected in series, the voltage is divided among them, and if one appliance fails, the entire circuit breaks, causing all appliances to stop working. Additionally, in a series connection, the total resistance increases, which reduces the current flowing through the circuit, making it inefficient for household use.\",\n  \"selected_evidence_ids\": [\"E1\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 215,\n      \"textbook_page\": 205\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 226,\n      \"textbook_page\": 216\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 119.83565490000183,
+    "latency_seconds": 172.92083980000461,
+    "usage": {
+      "completion_tokens": 222,
+      "prompt_tokens": 4561,
+      "total_tokens": 4783,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-6qxTNhQtCDBwnsj97tvfnw4qgb1DnIzx",
+    "peak_rss_bytes": 19291516928
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Electric appliances are connected in parallel in a household circuit because each appliance receives the full voltage from the power supply. This ensures that each appliance operates at its rated voltage, and if one appliance fails, the others continue to function. In contrast, if appliances are connected in series, the voltage is divided among them, and if one appliance fails, the entire circuit breaks, causing all appliances to stop working. Additionally, in a series connection, the total resistance increases, which reduces the current flowing through the circuit, making it inefficient for household use.",
+    "selected_evidence_ids": [
+      "E1",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 215,
+        "textbook_page": 205
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 226,
+        "textbook_page": 216
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Parallel branches receive the same supply potential difference",
+        "token_recall": 0.2857,
+        "matched": false
+      },
+      {
+        "point": "Each appliance draws current according to its resistance/power",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Appliances can be switched independently",
+        "token_recall": 0.25,
+        "matched": false
+      },
+      {
+        "point": "Failure/opening of one branch does not stop the others",
+        "token_recall": 0.375,
+        "matched": false
+      },
+      {
+        "point": "In series, voltage is shared, total resistance rises, and all devices carry the same current",
+        "token_recall": 0.5455,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.2,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 93
+  },
+  "completed_at": "2026-07-17T21:07:49+00:00"
+}

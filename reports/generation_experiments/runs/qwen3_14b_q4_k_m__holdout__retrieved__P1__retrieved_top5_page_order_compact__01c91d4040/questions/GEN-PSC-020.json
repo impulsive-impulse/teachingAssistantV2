@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__01c91d4040",
+  "question_id": "GEN-PSC-020",
+  "question": "Explain the cleansing action of soap.",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "925ec1572b42a177560f9eb74cd4922179f2eb41c5786efeb23d9531eb0c0962",
+  "context_sha256": "6349d2e95b028849a31f1d69c5b93e56a8da79a9a838b15cde76e412f3fd2861",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 47,
+      "textbook_page": 37,
+      "pdf_pages": [
+        47,
+        48,
+        49
+      ],
+      "textbook_pages": [
+        37,
+        38,
+        39
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "strips can now be used to test for acid or base.\n- Check the odour of the cloth strips.\n- Keep two strips on a clean surface and put a few drops of dilute HC l\non one strip and a few drops of dilute NaOH on the other.\n- Rinse both the strips separately with distilled water and again check\ntheir odour and note the observation.\n- Take some clove oil and vanilla essence.\n- Take some dilute HC l in one test tube and dilute NaOH in another test\ntube.\n- Add a drop of dilute vanilla essence to both test tubes and stirr well\nwith glass rod.\nCheck the odour and record your observations.\n- Test the change of odour with clove oil using dilute HC l and dilute\nNaOH and record your observations.\nSuggest which of these- onion, vanilla essence and clove oil, can be\nused as olfactory indicators on the basis of your observations.\n· What do you conclude from above activity?\n· Why pickles and sour substances are not stored in brass and copper\nvessels?\nThink and discuss\n· Can you give example for use of olfactory indicators in daily life?\nDiscuss with your teacher.\nReflection of light at curved surfaces38 Acids, Bases and Salts\n3.1.1 Reaction of Acids and Bases with Metals\nAim: To observe the reaction of Acids with Metals.\nMaterials required: test tube, delivery tube, glass trough, candle,\nsoap water, dil.\nHCl, and zinc granules, cork.\nProcedure: Set the apparatus as shown in fig.\n1.\n- Take about 10ml of dilute HC l in a test tube and add a few zinc\ngranules to it.\n- What do you observe on the surface of the zinc granules?\n- Pass the gas being evolved through the soap water.\n- Why are bubbles formed in the soap solution?\n- Bring a burning candle near the gas filled bubble.\n- What do you observe?\nYou will notice the gas evolved burns with a pop sound indicating H2 .\nThe chemical reaction of the above activity is:\nAcid + Metal g Salt + Hydrogen\n2 HCl (aq) + Zn(s) g Zn Cl2 (aq) + H2 (g)\nRepeat the above experiment with some other acids like H2SO4 and\nHNO3.\n· What do you observe in all these cases?\nFrom the above activities you can conclude that generally H2 gas is\nevolved when acid reacts with metal.\nZinc granules\nHCl\nH2 Testing of hydrogen gas\nSoap water\nStand\nTest tube\nCork Delivery tube\nfig-1: Reaction of zinc granules with dil.\nHCl and testing hydrogen gas by a burning candle\nGlass\ntrough\nLab Activity\nAcids, Bases and Salts39\nfig-2: Passing CO 2 gas through\nCa(OH)2 solution\ndil.\nHCl\nacid\nCO2 gas\nCork\nStand\nThistle\nfunnel\nTest tube\nNa2CO3\nCa(OH)2\nsolution\nActivity 3\nPlace a few granules of zinc metal in one of the test tubes and add\n10 ml of sodium hydroxide (NaOH) solution and warm the contents of the\ntest tube.\nRepeat the rest of the steps as in activity-2 and record your observations.\nIn this activity also you will notice that evolved gas is hydrogen\n(H2) and salt formed is sodium zincate.\nThe reaction is written as\nfollows.\n2 NaOH (aq) + Zn(s) g Na2 ZnO2 (aq) + H2 (g)­\n(Sodium zincate)\nFrom the above activity you can conclude that generally H 2 gas is\nevolved when base reacts with metal.\n3.1.2 Reaction of acids with carbonates and metal hydrogen\ncarbonates\nActivity 4\n· Take two test tubes; label them as A and B.\nTake about 0.5 gm of sodium\ncarbonate (Na2CO3) in test tube\nA and about 0.5 gm of sodium\nhydrogen carbonate (NaHCO3)\nin test tube B.\n· Add about 2 ml of dilute HCl to",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00021"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 61,
+      "textbook_page": 51,
+      "pdf_pages": [
+        61,
+        62,
+        63
+      ],
+      "textbook_pages": [
+        51,
+        52,
+        53
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Activity 12\n- Take dil.\nHC l in a beaker and add two to three drops methyl orange\nindicator.\nNote the colour of the solution\n- Mix antacid tablet powder to the above solution in the beaker.\nNow\nobserve the change in colour of solution.\n· What is the reason for the change in colour of solution?\n· Can you write the chemical equation for this reaction?\n4.\nWhat is the pH of the soil in your garden?\nPlants require a specific pH range for their healthy growth.\nTo find\nout the pH required for the healthy growth of a plant, you can collect the\nsoil samples from various places and check the pH in the manner described\nbelow in the following activity.\nAlso you can note down what type of\nplants are growing in the region from which you have collected the soil.\nActivity 13\nPut about 2g soil in a test tube and add 5ml water to it.\nShake the\ncontents of the test tube.\nFilter the contents and collect the filtrate in a\ntest tube.\nCheck the pH of this filtrate with the help of universal indicator paper.\nThink and discuss\n· What can you conclude about the ideal soil pH for the growth of\nplants in your region?\n· Under what soil conditions a farmer would treat the soil of his\nfields with quicklime or calcium carbonate?\nReflection of light at curved surfaces52 Acids, Bases and Salts\nStinging hair of leaves of nettle plant, inject methanoic acid (formic\nacid) causing burning pain.\nA traditional remedy is rubbing the area with\nthe base natured leaf of the dock plant, which often grows besides the\nnettle in the wild.\n3.7 Salts\nIn the previous sections you have studied the formation of salts by the\nneutralization reaction of base with an acid.\nLet us understand more about\nthe preparation, properties and uses of salts.\n3.7.1 Family of salts\nActivity 14\n- Write the formulae of the following salts.\n- Potassium sulphate, sodium sulphate, calcium sulphate, magnesium\nsulphate, copper sulphate, sodium chloride, sodium nitrate, sodium\ncorbonate and ammonium chloride.\n- Identify the acids and bases from which the above salts are obtained.\n- Salts having the same positive or negative radicals belong to a\nfamily.\nFor example, NaCl and Na2SO4 belong to the family of\nsodium salts.\nSimilarly, NaCl, and KCl belong to the family of\nchloride salts.\n· How many families can you identify among the salts given above?\n3.7.2 pH of Salts\nActivity 15\n- Collect the salt samples like, sodium chloride, aluminum chloride,\ncopper sulphate, sodium acetate, ammonium chloride, sodium\nhydrogen carbonate and sodium carbonate.\n- Dissolve them in distilled water.\nCheck the action of these solutions\nwith litmus papers.\n- Find the pH using pH paper (universal indicator).\nAcids, Bases and Salts53\n- Classify them into acidic, basic and neutral salts based on pH.\nRecord your observations in Table-3 given below used to form\nthe above salts.\nSalts of a strong acid and a strong base are neutral and the pH value is\n7.\nThe salts of a strong acid and weak base are acidic and the pH value is\nless than 7.\nThe salts of a strong base and weak acid are basic in nature and\nthe pH value is more than 7.\n· What do you say about salts of both weak acid and weak base?\nIn such cases the pH depends on the relative strengths of acid and\nbase.\n3.7.3 Chemicals from common salt\nSalts are the ionic compounds which are produced by the neutralization\nof acid with base.\nSalts are electrically neutral.\nThere are number of salts\nbut sodium chloride is the most common among them.\nSodium chloride",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00028"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 65,
+      "textbook_page": 55,
+      "pdf_pages": [
+        65,
+        66,
+        67
+      ],
+      "textbook_pages": [
+        55,
+        56,
+        57
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "CaOCl2, though the actual composition is quite complex.\nCa (OH)2 + Cl2 g CaOCl2 + H2O\n3.7.7 Uses of Bleaching Powder:\n1.\nIt is used for bleaching cotton and linen in the textile industry for\nbleaching wood pulp in paper industry and for bleaching washed clothes\nin laundry.\n2.\nUsed as an oxidizing agent in many chemical industries.\n3.\nUsed for disinfecting drinking water to make it free of germs.\n4.\nUsed as a reagent in the preparation of chloroform.\nfig-9: Important product from chloro-alkali process\nat Cathode at Anode\nFuels, margarine,\nammonia for fertilisers\nW ater treatment, swimming pools, PVC,\ndisinfectants, CFC’s, pesticides\nHYDROCHLORIC ACID\nFor: cleaning steel, ammonium chloride, medicines, cosmetics\nBLEACH (CaOC l2)\nFor: household bleahes, bleaching fabric\nDe-greasing metals, soaps and detergents,\npaper making, artificial fibres\nH2 Cl2\nNaOH\nat Cathode\nReflection of light at curved surfaces56 Acids, Bases and Salts\n3.7.8 Baking soda\nBaking soda is sometimes added for faster cooking.\nThe chemical\nname of the compound is sodium hydrogen carbonate (NaHCO 3).\nIt is\nprepared as follows:\nNaCl + H2O + CO2 + NH3 g NH4 Cl + NaHCO3\nCan you find the pH of sodium hydrogen carbonate as you have done in\nactivity-14?\nCan you predict the reason for using NaHCO3 to neutralize an acid?\nBaking soda is a mild non-corrosive base.\nThe following reaction takes place when it is heated during cooking.\nHeat\n2NaHCO3 ––––– g Na2CO3 + H2O+CO2\nUses of sodium hydrogen carbonate\n1 Baking powder mainly contains NaHCO 3 and its other components\nare Ca(H2PO4)2 and starch.\nNaHCO 3 produces CO 2 which rises\nthrough bubling dough into cake or bread.\nThis results cake and\nbread are smooth and spongy.\n2 Sodium hydrogen carbonate is also an ingredient in antacids.\nBeing\nalkaline, it neutralizes excess acid in the stomach and provides\nrelief.\n3 It is also used as soda-acid in fire extinguishers\n4 It acts as mild antiseptic.\n3.7.9 Washing soda (sodium carbonate)\nAnother chemical that can be obtained from sodium chloride is\nNa2CO3.\n10 H2O(washing soda).\nYou have seen above that sodium carbonate can be obtained by heating\nbaking soda.\nRecrystallisation of sodium carbonate gives washing soda.\nIt\nis also a basic salt.\nAcids, Bases and Salts57\nfig-10: Removing water\nof crystallisation\nTest tube holder\nWater droplets\nCopper\nsulphate\nBoiling\ntube\nBunsen\nBurner\nNa2 CO3 + 10 H2O g Na2 CO3·10 H2O\nSodium carbonate and sodium hydrogen carbonate are useful\nchemicals for many industrial processes.\nUses of Washing soda\n1 Sodium carbonate (washing soda) is used in glass, soap and paper\nindustries.\n2 It is used in the manufacture of sodium compounds such as borax.\n3 Sodium carbonate can be used as a cleaning agent for domestic\npurposes.\n4 It is used for removing permanent hardness of water.\nWhat does 10 H2O signify from the above equation?\nDoes it make Na2CO3 wet?\nAre the crystals of salts really dry?\nLet us find\n3.8 Removing water of crystallisation\nActivity 16\n- Take a few crystals of copper\nsulphate in a dry test tube and heat the\ntest tube.\n· What change did you notice in the\ncolour of the copper sulphate after\nheating?\n· Did you notice water droplets on\nsides of the test tube?\nWhere did\nthey come from?\nAdd 2-3 drops of water on the\nsample of copper sulphate obtained\nafter heating.\n· What do you observe?\nIs the blue colour of copper sulphate restored?\nIn the above activity copper sulphate crystals which seem to be dry\ncontain the water of crystallization, when these crystals are heated, water\npresent in crystals is evaporated and the salt turns white.\nWhen the crystals are moistened with water, the blue colour reappears.",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00030"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 314,
+      "textbook_page": 304,
+      "pdf_pages": [
+        314,
+        315,
+        316,
+        317
+      ],
+      "textbook_pages": [
+        304,
+        305,
+        306,
+        307
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Pour the warm contents into a beaker\ncontaining 20-50 ml of water and observe\nthe odour of the resulting mixture.\n· What do you notice?\nYou will notice that the resulting mixture is a sweet odoured substance.\nThis substance is nothing but ethyl acetate, an ester.\nThe reaction in activity\n– 2 is called esterification reaction.\n12.14.3 Esterification\nThe reaction between carboxylic acid and an alcohol in the presence\nof conc.\nH2SO4 to form a sweet odoured substance, ester with the functional\ngroup is called esterification.\nThe esterification reaction is slow and reversible.\nThe equation for the reaction between an acid RCOOH and an alcohol\nR/OH\n(where R and R/ can be the same or different) is:\nFormation of easter\nCarbon and its Compounds 300\nSo, for example, if you want to prepare ethyl ethanoate or ethyl acitate\nfrom ethanoic acid and ethanol, the equation would be:\nEthanoic acid Ethanol ethyl acetate\n(acetic acid) (ethyl alcohol)\n12.15 Soaps – Saponification and Micelles\nDo you know what ‘soap’ is?\nSoap is a sodium or potassium salt of a higher fatty acid like palmitic\nacid (C15H31COOH), stearic acid (C17H35COOH), oleic acid (C17H33COOH)\netc.\nThe formula of a soap in general is RCOONa or RCOOK, where\nR = C15H31 ; C17H35 etc.\nFats are esters of higher fatty acids and the trihydroxy alcohol known\nas glycerol.\nWhen fats are treated with sodium hydroxide, sodium salts the fatty\nacids and glycerol is formed.\nThe sodium salts of these higher fatty acids\nbeing soaps the reaction is the soap formation reaction which is generally\ncalled as ‘saponification reaction’.\n12.15.1 Saponification reaction\nAlkaline hydrolysis of tri esters of higher fatty acids producing soaps\nis called saponification.\nSoaps are good cleansing agents.\nDo you know how they do this?\nFor understanding this you should know about a ‘true solution’ and a\ncolloidal solution.\n· What is a true solution?\nA true solution is that in which the solute particles dispersed in the solvent\nare less than 1nm in diameter.\nA colloidal solution contains the solute known\nas ‘dispersed phase’ with its particles with diameters greater than 1nm but\nO–H\n+ R/OH R – C\nO–R /\n+ H2O\nO O\nR–C\nCH3–C\nO–H\n+ CH3CH2OH\nO\nCH3–C\nO–CH 2CH3\n+ H2O\nOconc.H2SO4\nconc.H2SO4\nCarbon and its Compounds 301\nlesser than 1000 nm in the solvent known as ‘dispersion medium’.\nSoap is an electrolyte.\nWhen soap is put in water in very small amount it\ngives low concentrated solutions.\nIt gives true solution but, above a particular\nconcentration known as critical micelle concentration (CMC), the soap\nparticles get aggregated and these aggregated particles are of colloidal size\nknown as micelles or associated colloids.\n12.15.2 Micelle\nA spherical aggregate of soap molecules in water is called micelle.\nWhen\nsoap is dissolved in water, it forms a colloidal suspension in which the soap\nmolecules cluster together to form spherical micelles.\nActivity 3\nMicelle 3D structure of a micelle\nFormation of micelle\nTake about 10 ml of water each in two test tubes.\nAdd a drop of oil (cooking oil) to both the test tubes and label them as A\nand B.\nAdd a few drops of soap solution to test tube B.\nNow shake both the test tubes vigorously for the same period of time.\nStop shaking them.\nWhat is that you find in them?\nCan you see the oil and water layers\nseparately in both the test tubes immediately after?\n· Leave the test tubes undisturbed for sometime and observe.\nDoes the oil\nlayer separate out?\n· In which test tube does this happen first?\nGive your observations.\nActivity 3\nCarbon and its Compounds 302",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00183"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 316,
+      "textbook_page": 306,
+      "pdf_pages": [
+        316,
+        317,
+        318
+      ],
+      "textbook_pages": [
+        306,
+        307,
+        308
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Add a drop of oil (cooking oil) to both the test tubes and label them as A\nand B.\nAdd a few drops of soap solution to test tube B.\nNow shake both the test tubes vigorously for the same period of time.\nStop shaking them.\nWhat is that you find in them?\nCan you see the oil and water layers\nseparately in both the test tubes immediately after?\n· Leave the test tubes undisturbed for sometime and observe.\nDoes the oil\nlayer separate out?\n· In which test tube does this happen first?\nGive your observations.\nActivity 3\nCarbon and its Compounds 302\nA soap molecule\nHydrophilic\nend\nHydrophobic\nend\nC\nO\nO\n12.15.3 Cleansing action of soap\nSuppose that we put dirty cloth in the soap solution.\nDirt is mainly greasy\nmatter.\nThe soap molecules are arranged radially with hydrocarbon ends\ndirected inwards into the greasy matter and ionic part directed outwards into\nwater.\nWhen a dirty cloth is inserted in the solution then the hydrocarbon part\nsticks to the dirt or oil.\nWith a little agitation the\ndirt particles get entrapped by the soap micelles\nand get dispersed in water due to which the soap\nwater gets dirty and the cloth gets cleaned.\n· What is the action of soap particles on the\ngreasy cloth?\nWe know that soaps and detergents make oil\nand dirt present on the cloth come out into water, thereby making the cloth\nclean.\nSoap has one polar end (the end with carboxy) and one non-polar\nend (the end with hydrocarbon chain) as shown in the figure.\nThe polar end is hydrophilic in nature and this end is attracted towards\nwater.\nThe non-polar end is hydrophobic, in nature and it is attracted towards\ngrease or oil on the cloth, but not attracted towards water.\nWhen soap is dissolved in water, its hydrophobic ends attach themselves\nto dirt and remove it from the cloth, as shown sequentially in the figure that\nfollows.\nDirt\nFigure 1 : The hydrophobic end of the soap\nmolecules move towards the dirt or grease\nparticle.\nFigure 2: The hydrophobic ends attached to\nthe dirt particle and try to pull out.\ncloth\nSoap\nmolecules\nSoap\nsolution\nHydrophobic ends\nattach to the dirt\nparticle\nfigure 1\nfigure 2\nCarbon and its Compounds 303\nclean cloth\nRepresenting the\ncleansing action of\nsoap\nThird, Fourth\nFigure 3 & 4 : The molecules of soap surround\nthe dirt particle at the centre of the cluster\nand form a spherical structure called micelle.\nThese micelles remain suspended in water like\nparticles in a colloidal solution.\nThe various micelles present in water do not come\ntogether to form a precipitate as each micelle repels\nthe other because of the ion-ion repulsion.\nThus, the dust particles remain trapped in micelles\n(which remain suspended) and are easily rinsed away\nwith water.\nHence, soap micelles remove dirt by\ndissolving it in water.\n· Carbon forms a large variety of compounds.\nIts tetravalency and the property of catenation and\nability to form four single bonds, a double bond and two single bonds, a triple bond and a single\nbond or two double bonds makes carbon versatile and brings one special branch in chemistry\nfor carbon compunds.\n· Hydrocarbons are the compounds of carbon and hydrogen.\n· Hydrocarbons are of two types – saturated hydrocarbons (alkanes) and unsaturated\nhydrocarbons (alkenes and alkynes).\n· Carbon forms covalent bonds with its own atoms and atoms of other elements such as hydrogen,\noxygen, sulphur, nitrogen and chlorine.\n· The functional groups such as alcohols, aldehydes, ketones and carboxylic acids bestow\ncharacteristic properties to the carbon compounds that contain them.\nEven C = C,C\nC , give\ncharacteristic properties.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00184"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"The cleansing action of soap is due to its unique molecular structure. A soap molecule has a hydrophobic (water-repelling) end and a hydrophilic (water-attracting) end. When soap is mixed with water, the hydrophobic end of the soap molecules attaches to the dirt or grease on the cloth, while the hydrophilic end remains in the water. This causes the dirt to be surrounded by soap molecules and form structures called micelles. These micelles trap the dirt and keep it suspended in the water, allowing it to be rinsed away. This process makes the cloth clean.\",\n  \"selected_evidence_ids\": [\"E4\", \"E5\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 314,\n      \"textbook_page\": 304\n    },\n    {\n      \"evidence_id\": \"E5\",\n      \"pdf_page\": 316,\n      \"textbook_page\": 306\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 243.71623550000368,
+    "latency_seconds": 345.86648719999357,
+    "usage": {
+      "completion_tokens": 238,
+      "prompt_tokens": 4756,
+      "total_tokens": 4994,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-yEVbL9q2banFOcUEKdBzuyxcp9AYQjIx",
+    "peak_rss_bytes": 26725629952
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "The cleansing action of soap is due to its unique molecular structure. A soap molecule has a hydrophobic (water-repelling) end and a hydrophilic (water-attracting) end. When soap is mixed with water, the hydrophobic end of the soap molecules attaches to the dirt or grease on the cloth, while the hydrophilic end remains in the water. This causes the dirt to be surrounded by soap molecules and form structures called micelles. These micelles trap the dirt and keep it suspended in the water, allowing it to be rinsed away. This process makes the cloth clean.",
+    "selected_evidence_ids": [
+      "E4",
+      "E5"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E4",
+        "pdf_page": 314,
+        "textbook_page": 304
+      },
+      {
+        "evidence_id": "E5",
+        "pdf_page": 316,
+        "textbook_page": 306
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "A soap molecule has a hydrophilic ionic/polar end and hydrophobic hydrocarbon tail",
+        "token_recall": 0.5556,
+        "matched": true
+      },
+      {
+        "point": "Tails embed in grease while heads remain in water",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "Agitation forms micelles around dirt",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Like-charge repulsion keeps droplets suspended",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "The dirt-containing micelles are washed away",
+        "token_recall": 0.6,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.8,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 94
+  },
+  "completed_at": "2026-07-17T18:37:14+00:00"
+}

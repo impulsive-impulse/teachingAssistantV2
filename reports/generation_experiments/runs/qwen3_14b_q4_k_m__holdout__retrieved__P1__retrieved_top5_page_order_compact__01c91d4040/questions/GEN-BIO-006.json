@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__01c91d4040",
+  "question_id": "GEN-BIO-006",
+  "question": "Differentiate between arteries and veins.",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "9402fd575ae7d258b729362992cd4b5aa67996d9a93cad4b02743b9d1f9c2821",
+  "context_sha256": "54160c62bbb012098045e05346b09cce3b9e4ecd70924577ab7273c73f5ee3db",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 64,
+      "textbook_page": 55,
+      "pdf_pages": [
+        64,
+        65,
+        66
+      ],
+      "textbook_pages": [
+        55,
+        56,
+        57
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "This is the ventral side.\nx Now take a sharp blade or scalpel and open the heart in such a way that\nthe chambers are exposed. (Take the help of the Fig-5)\nNow observe the internal structure.\nObserve the wall of the heart.\nx Is the thickness of the wall of the heart uniform throughout?\nx How many chambers are there in the heart?\nx Are all the chambers of the same size?\nx What other differences could you observe between the chambers?\nx Do you find any specific observation in between two chambers?\nx Are all the chambers connected to each other?\nx How are they connected to each other?\nHow are they separated?\nFig-5: Internal structure of heart\narteries to head\nright pulmonary artery\nsuperior vena cava\nright atrium\nright atrio ventricular valve\n(Tricuspid V alve)\ninferior vena cava\nright ventricle\nleft ventricle\nsemi - lunar valve in the\npulmonary artery\nleft atrio ventricular valve\n(Bicuspid V alve)\nleft atrium\nleft pulmonary veins\nleft pulmonary artery\naorta\nartery to left arm\nright pulmonary veins\nCirculation56\nWrite a note on your observations of the heart.\nCompare your notes\nwith the description given below.\nThe heart is a pear shaped structure, triangle in outline, wider at the\nanterior end and narrower at the posterior end.\nThe heart is covered by two layered membrane.\nThis is called\npericardium (pericardial membrane).\nThe space between these two layers\nis filled with pericardial fluid, which protects the heart from shocks.\nThe heart is divided into four chambers.\nTwo upper chambers are called atria (auricles), and the lower ones are\ncalled ventricles.\nThe blood vessels found in the walls of the heart are coronary vessels\nwhich supply blood to the muscles of the heart.\nThe walls of the ventricles are relatively thicker than the atrial walls.\nObserve the presence of blood vessels attached to the heart.\nx How many blood vessels are attached to the heart?\nx Are all the blood vessels rigid?\nHow many of them are rigid?\nx Does the rigidity of blood vessel have anything to do with\ncirculation?\nArteries are the blood vessels which originate from the heart and supply\nblood to various organs in the body.\nThey have thick walls.\nThe largest\nartery is aorta.\nThe relatively small artery is pulmonary artery which carries\nblood from the heart to the lungs.\nThe veins are the blood vessels which bring blood from all body parts\nto the heart.\nVeins have relatively thin walls.\nThe vein which is at the anterior\nend of the right side of the heart is superior venacava, which collects blood\nfrom anterior parts (head and neck) of the body.\nThe vein which brings\nblood from posterior parts of the the body (hands, legs etc.) is inferior\nvenacava.\nThe two atria and the two ventricles are separated from each other by\nmuscular partitions called septa.\nThe openings between atria and ventricles\nare guarded by valves.\nCirculation57\nThe valve present on the Right Auriculo-ventricular septum between\nRight atrium and Right V entricle is referred to as “Tricuspid Valve”.\nThe\nvalve present on the left Auriculo-ventricular septum between left atrium\nand left ventricle is referred as “Bicuspid valve” or “Mitral valve”.\nA\nmajor blood vessel that originates from right ventricle is Pulmonary aorta.\nThe valves present at the region of Pulmonary aorta are called “Pulmonary\nvalves”.\nA major blood vessel that originates from left ventricle is\nsystemic aorta.\nThe valves present at the region of systemic aorta are\ncalled “Systemic valves”.\nIn the right atrium we can observe the openings of superior and inferior\nvenacava.\nThey bring deoxygenated blood from body parts.",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00033"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 66,
+      "textbook_page": 57,
+      "pdf_pages": [
+        66,
+        67
+      ],
+      "textbook_pages": [
+        57,
+        58
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Right atrium and Right V entricle is referred to as “Tricuspid Valve”.\nThe\nvalve present on the left Auriculo-ventricular septum between left atrium\nand left ventricle is referred as “Bicuspid valve” or “Mitral valve”.\nA\nmajor blood vessel that originates from right ventricle is Pulmonary aorta.\nThe valves present at the region of Pulmonary aorta are called “Pulmonary\nvalves”.\nA major blood vessel that originates from left ventricle is\nsystemic aorta.\nThe valves present at the region of systemic aorta are\ncalled “Systemic valves”.\nIn the right atrium we can observe the openings of superior and inferior\nvenacava.\nThey bring deoxygenated blood from body parts.\nIn the left\natrium, we can observe the openings of pulmonary veins, that bring\noxygenated blood from lungs.\nAorta arises from the upper part of the left ventricle.\nIt supplies\noxygenated blood to the body parts.\nFrom the upper part of the right ventricle\npulmonary artery arises that supplies de-oxygenated blood to the lungs.\nAfter careful examination we can observe valves in the pulmonary artery\nand aorta as well.\n3.3 Blood vessels and circulation\nLet us study about the structure and functions of the blood vessels\nalong with their discovery.\nIt was not until 16th century that we really came to know how our blood\nvessels function.\nIn 1574, an Italian doctor, Girolamo Fabrici, was studying\nthe veins in the leg.\nHe noticed that they had small valves in them that\npermited blood to flow towards heart.\nThese were one-way valves that\nchecked backflow of blood.\nMovement of leg muscle helps in movement\nof blood through veins.\nEveryone thought that the blood leaving the left ventricle always moved\naway from the heart for which Fabrici paid no attention.\nHe missed the\nimportance of his own discovery.\nCirculation58\nWilliam Harvey (1578-1657), an English doctor, went to Italy for\nfurther education under Fabrici.\nHarvey dissected the hearts of dead people and studied the valves\nbetween each atrium and its ventricle.\nHe noticed that they were oneway valves.\nThey allowed the blood to flow from the atrium to the\nventricle without any hinderance.\nHowever, when the heart contracts,\nblood in the ventricle could not flow back into the atrium.\nInstead, the\nblood was pushed out into the arteries.\nHarvey began thinking about the valves his teacher, Fabrici, had\ndiscovered in the leg veins.\nThey were one-way, and they forced the blood\nto move toward the heart.\nHe checked that by tying off and blocking different veins in animals.\nHe found that the veins always bulged on the side of the block away from\nthe heart.\nAs though the blood was trying to flow toward the heart.\nThis\nwas true of all veins.\nIn the arteries, the blood bulged on the heart side of any block he put\nin, as though it were trying to flow away from the heart and couldn’t move\nin the other direction.\nHarvey now saw what was happening.\nThe heart pushed blood in to the\narteries and the blood returned by way of the veins.\nIt did this for both\nventricles.\nThe blood had a double circulation.\nStarting from the right\nventricle blood left by way of the arteries to the lungs and returned by way\nof veins to the left atrium, this is known as ‘pulmonary circulation’.\nFrom there it flowed into the left ventricle and left by way of aorta to the\nrest of the body and returned by way of the veins to the right atrium.\nFrom\nhere it moved into the right ventricle, this is known as ‘systemic\ncirculation’.\nAs blood reaches the heart two times through pulmonary\ncycle and again through systemic, it is called ‘double circulation’.",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00034"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 67,
+      "textbook_page": 58,
+      "pdf_pages": [
+        67,
+        68,
+        69
+      ],
+      "textbook_pages": [
+        58,
+        59,
+        60
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The blood had a double circulation.\nStarting from the right\nventricle blood left by way of the arteries to the lungs and returned by way\nof veins to the left atrium, this is known as ‘pulmonary circulation’.\nFrom there it flowed into the left ventricle and left by way of aorta to the\nrest of the body and returned by way of the veins to the right atrium.\nFrom\nhere it moved into the right ventricle, this is known as ‘systemic\ncirculation’.\nAs blood reaches the heart two times through pulmonary\ncycle and again through systemic, it is called ‘double circulation’.\nHarvey also prooved the statement wrong which states that the blood\nflowing out of the heart was used up in the body and new blood was formed.\nHe measured how much blood the heart pumped in one contraction and\nalso counted the number of contractions per minute.\nHe found that in one hour, the heart pumped out a quantity of blood\nthat was three times the weight of a man.\nThe body couldn’t use up blood\nand form new blood at such a rate.\nFig-6: William\nHarvey\nCirculation59\nThe same blood had to circulate and be used over and over again.\nHarvey still had some problem.\nThe arteries and veins that could\nbe seen had to be connected by vessels too small to see.\nWere they\nreally there?\nIn the 1650s, scientists had learned to put lenses together in\nsuch a way that objects too small to see with the naked eye could be\nmagnified and made visible.\nMarcello Malpighi (1628-1694), used\nthe microscope to see tiny blood vessels that were invisible with\nnaked eye.\nLater, Malpighi studied the wings of bats.\nHe could see\nblood vessels in their thin membranes under the microscope;\nhe could see that the smallest arteries and veins were connected\nby very fine blood vessels.\nHe called these blood vessels “capillaries” from the Latin\nword for “hair”, because they were as thin as the finest of hairs.\nWith the discovery of capillaries, the idea of the circulation\nFig-8(a): Try like this\nFig-8(b): Harvey’ s\ndemonstration\nof the blood was complete, and it has been accepted\never since.\nNow, we know that blood circulates in the blood\nvessels.\nBut how did the scientists find out that blood\nmoves in blood vessels?\nIs it possible to demonstrate\nthe movement of blood in vessels without damaging\nthe vessels?\nLet us repeat the classical experiment to\ndemonstrate the movement of blood in veins conducted\nby William Harvey in early 17th century, when there\nwas no compound microscope or any other modern\nequipment.\n1.\nTie a tornquit just above the elbow of your friend\nas shown in Fig-8(b) whose blood vessels are\nprominent in the hand.\nFig-7: Marcello\nMalpighi\nCirculation60\n2.\nAsk him/her to hold a firm support as shown in the figure.\nNow the\nblood vessels can be seen more prominently.\n3.\nLocate a prominent bluish blood vessel.\n4.\nAt the end of the vessel farthest from the elbow apply steady pressure,\nso as to close its cavity.\n5.\nNow apply pressure from elbow towards the palm slowly and observe\nthe change in the blood vessel. (Take the help of the figures given\nhere.) Observe changes and discuss in your class.\n6.\nRemove the pressure.\n7.\nApply pressure from palm towards elbow and see what happens.\nAnswer the following:\nx Why do blood vessels (just below our skin) bulge on the side away\nfrom the heart when the hand is tied?\nWhat do you understand from\nit?\n3.4 Arteries and Veins\nArteries carry blood from the heart to body parts.",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00035"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 69,
+      "textbook_page": 60,
+      "pdf_pages": [
+        69,
+        70,
+        71
+      ],
+      "textbook_pages": [
+        60,
+        61,
+        62
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "At the end of the vessel farthest from the elbow apply steady pressure,\nso as to close its cavity.\n5.\nNow apply pressure from elbow towards the palm slowly and observe\nthe change in the blood vessel. (Take the help of the figures given\nhere.) Observe changes and discuss in your class.\n6.\nRemove the pressure.\n7.\nApply pressure from palm towards elbow and see what happens.\nAnswer the following:\nx Why do blood vessels (just below our skin) bulge on the side away\nfrom the heart when the hand is tied?\nWhat do you understand from\nit?\n3.4 Arteries and Veins\nArteries carry blood from the heart to body parts.\nVeins carry blood\nfrom body organs to heart.\nLet us observe the structural and functional\ndifferences between arteries and veins [see Fig-9(a) and 9(b)].\n3.4.1 Blood capillaries\nBlood capillaries are the microscopic vessels made of single layer of\ncells.\nThey allow diffusion of various substances.\nThe leucocytes (WBC)\ncan squeeze out of the capillary wall.\nThey establish continuity between\narteries and veins.\nelastic\nfibrous coat\nmuscle layer\nendothelium\nlumen\ntough fibrous coat\nFig-9(a): T.S. of ArteryFig-9(a): T.S. of Artery Fig-9(c): T.S.of Blood capillary\nlumen\nendothelium\nFig-9(b): T.S. of V ein\nCirculation61\nx Discuss the differences between pulmonary artery and pulmonary vein.\nLet us perform the following activities to observe arteries and veins\nagain.\nSit on a table with one leg dangling and the other resting on it so that the\nback of one knee rests on the knee of the other.\nAfter a time you feel the leg\nwhich is on top give a series of small movements with each heart beat.\nIf you\ndo it for long you will reduce the blood flow to the leg and so develop ‘pins and\nneedles’.\nDiscuss the reasons for the same with your teacher.\nSwing your arm round several times to fill the veins with blood, hold\nthe arm vertically downwards and gently press your finger along a prominent\nvein-stroking it in the reverse direction to the blood flow, i.e., towards the\nhand.\nCan you see the swellings where you have pushed blood against the\nvalves?\nDiscuss with your teacher about reasons.\nArtery Vein\n1.\nThickness of walls(thick / thin)\n2.\nValves (present / absent)\n3.\nCapacity to retain shape when blood is absent\n(can retain/can’t retain)\n4.\nDirection of blood flow (heart to organs / body\norgans to heart)\n5.\nPressure on the blood vessel (low /high)\n6.\nType of blood transported\n(oxygenated / de-oxygenated)\nTable-3 Fill in the following table\nS.No Structure / Function of blood vessel\nActivity-4\nThink and discuss\nx Artery walls are very strong and elastic.\nWhy?\nx Why do we compare arteries with tree which divides into\nsmaller branches?\nx The lumen size is bigger in vein when compared with\nartery.\nWhy?\nCirculation62\n3.5 The cardiac cycle\nThe human heart starts beating around 21st day during the\nembryonic development (refer reproduction chapter) heart beat\nrhythmically until death.\nIf it stops beating, it results in the death\nof a person.\nOne contraction and one relaxation of atria and ventricles is\ncalled one cardiac cycle.\n1.\nWe start with the imagination that all the four chambers of\nthe heart are in relaxed state (diastole).\n2.\nBlood from venacava and pulmonary veins enters the right\nand left atria respectively.\n3.\nNow the atria contract, forcing the blood to enter into the\nventricles.\n4.\nWhen the ventricles are filled with blood they start\ncontracting and still atria are in contract state.\nThe aperture\n1.\nRelaxation of atria\nand ventricles.\n2.\nBlood flows into atria.\nFig-10(1-2)",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00036"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 83,
+      "textbook_page": 74,
+      "pdf_pages": [
+        83,
+        84
+      ],
+      "textbook_pages": [
+        74,
+        75
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x The arteries carry oxygenated blood except pulmonary artery.\nThe veins carry deoxygenated blood\nexcept pulmonary veins.\nx One contraction and relaxation of heart is called cardiac cycle.\nx If the blood goes to heart only once before it reaches all the body parts.\nIt is called single circulation.\nIf it goes twice it is called double circulation.\nx Vitamin K deficiency leads to delayed coagulation of blood.\nx Plants absorb soil water through roots by the process of osmosis.\nx Water travels through xylem vessels and food material travels through phloem tissues.\nx There is a relation between tranportation and transpiration in plants.\nx Biologists studied about phloem tubes with the help of aphids.\n1.\nWhat is transport system?\nHow does this help the organism? (AS1)\n2.\nWhat is the relationship between blood and plasma? (AS1)\n3.\nWhich type of blood vessels carry blood away from the heart? (AS1)\n4.\nWhat are the three main types of blood vessels in the body? (AS1)\n5.\nWhich is the largest artery in the body?\nWhy is it the largest ? (AS1)\n6.\nWhich blood vessels carry oxygenated blood? (AS1)\n7.\nName the structures that are present in veins and lymph ducts and are absent in arteries. (AS1)\n8.\nWhat is the use of platelets? (AS1)\n9.\nWrite differences between (AS1)\na) systole - diastole b) veins - arteries c) xylem - phloem\n10.\nExplain the way how the plants absorb water from soil ? (AS1)\n11.\nWhat is root pressure?\nHow it is useful to the plant? (AS1)\n12.\nPhloem is a food source for some animals.\nHow can you justify this statement? (AS1)\nImprove your learning\nCirculation75\n13.\nRead the given para and name the parts of the heart. (AS1)\nx The heart is divided into four chambers by muscular structures called septa.\nAny structure\nthat divides two chambers is known as septum.\nNow let us try to name the septa present\nin the heart.\na) The septum that divides the two atria can be named as _____________\nb) The septum that divides the two ventricles can be named as___________.\nc) The septum that divides the atrium and ventricle can be named as________.\nx The holes that connect two chambers are called apertures.\nLet us try to name the apertures\nwhich connect the atria and ventricles.\na) The aperture that connects the right atrium and right ventricle can be named as_______.\nb) The aperture that connects the left atrium and left ventricle can be named ___________.\nx Any structure that closes an aperture, and allows one way movement of materials is\ncalled as valve.\nNow let us name the valves that are present in the chambers of the heart.\na) The valve that is present between left atrium and left ventricle can be named as____________.\nb) The valve that is present between right atrium and right ventricle can be named as ___________.\n14.\nIf the valves in veins of the legs fail to stop the flow of blood what could be the consequences\nof this failure? (AS2)\n15.\nWhat would happen if transpiration doesn’t take place in plants? (AS2)\n16.\nJohn made a stethoscope using a paper cup and plastic tube.\nWrite down the procedure he\nfollowed. (AS3)\n17.\nHow did scientists prove that the food is transported through the phloem? (AS3)\n18.\nWhat is the inference about experiments with aphids? (AS3)\n19.\nCollect information about blood pressure of your school teachers or neighbours.\nPrepare a report\non their health problems due to changes in blood pressure. (AS4)\n20.\nDraw a schematic diagram to explain single and double circulation.\nWrite differences between\nthem. (AS5)\n21.\nPrepare a block diagram showing water absorption by roots to transpiration by leaves. (AS5)",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00045"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Arteries and veins are two types of blood vessels that play different roles in the circulatory system. Arteries carry blood from the heart to the body parts, while veins carry blood from the body parts back to the heart. Arteries have thick walls, which help them withstand the high pressure of blood being pumped from the heart. In contrast, veins have thin walls and are not as strong as arteries. Veins also have valves that prevent the backflow of blood, while arteries do not have valves. Additionally, arteries carry oxygenated blood (except for the pulmonary artery), whereas veins carry deoxygenated blood (except for the pulmonary veins).\",\n  \"selected_evidence_ids\": [\"E1\", \"E3\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 64,\n      \"textbook_page\": 55\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 67,\n      \"textbook_page\": 58\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 69,\n      \"textbook_page\": 60\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 313.798724399996,
+    "latency_seconds": 435.5840414999984,
+    "usage": {
+      "completion_tokens": 281,
+      "prompt_tokens": 4484,
+      "total_tokens": 4765,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-X2OkvclkMWopqUJhvHDs6VxtCLGqNnBr",
+    "peak_rss_bytes": 20076953600
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Arteries and veins are two types of blood vessels that play different roles in the circulatory system. Arteries carry blood from the heart to the body parts, while veins carry blood from the body parts back to the heart. Arteries have thick walls, which help them withstand the high pressure of blood being pumped from the heart. In contrast, veins have thin walls and are not as strong as arteries. Veins also have valves that prevent the backflow of blood, while arteries do not have valves. Additionally, arteries carry oxygenated blood (except for the pulmonary artery), whereas veins carry deoxygenated blood (except for the pulmonary veins).",
+    "selected_evidence_ids": [
+      "E1",
+      "E3",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 64,
+        "textbook_page": 55
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 67,
+        "textbook_page": 58
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 69,
+        "textbook_page": 60
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 3,
+    "citation_count": 3
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Arteries carry blood away from the heart; veins carry it toward the heart",
+        "token_recall": 0.7143,
+        "matched": true
+      },
+      {
+        "point": "Arteries have thicker, more elastic muscular walls",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Veins have thinner walls, wider lumen, and valves",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "State pulmonary-vessel exceptions if oxygenation is discussed",
+        "token_recall": 0.2857,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.25,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 106
+  },
+  "completed_at": "2026-07-17T16:34:54+00:00"
+}

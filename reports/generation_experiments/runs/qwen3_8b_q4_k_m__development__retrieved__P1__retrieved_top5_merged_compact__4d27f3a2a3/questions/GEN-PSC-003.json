@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top5_merged_compact__4d27f3a2a3",
+  "question_id": "GEN-PSC-003",
+  "question": "What information do you get from a balanced chemical equation?",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "0a480e3cf513f99d649d8f54157de3147b48e6f11a59d1b6c7b298002eb872b6",
+  "context_sha256": "51f5fb902eab067cc6b6c108ae1dbf212962a419b499c99943f23faf68ff1fb0",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 35,
+      "textbook_page": 25,
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "without balancing is known as primary or skeleton equation. · The symbols of elements and formulae of the compounds should not be changed but only their coefficient should be altered while balancing the chemical equation. · Co-efficient should be least possible whole numbers. Key words Reactants, products, exothermic reaction, endothermic reaction Physical and chemical changes Primary or skelton Equation unit forumula, Precipitation, Co-efficient, atomic mass, standard temperature and pressure (STP) molar mass, avagadro’s number, gram molar volume. What we have learnt 34 Chemical Equations I. Reflections on concepts 1. What information do you get from a balanced chemical equation? (AS1) 2. Why should we balance a chemical equation? (AS1) 3. Balance the following chemical equations. (AS1) (a) NaOH+ H2SO4 gNa2SO4 +H2O (b) KClO3gKCl + O2 (c) Hg (NO3)2+ KI gHgI2+KNO3 4. Mention the physical states of the reactants and products of the following chemical reactions and balance the equations. (AS 1) (a) C6H12O6 g C2H5OH + CO2 (b) NH3 + Cl2 g N2 + NH4Cl (c) Na + H2O g NaOH + H2 II. Application of Concepts 1. Balance the following chemical equation after writing the symbolic representation. (AS1) (a) Calcium hydroxide (s) + Nitric acid (aq) g Water (l) + Calcium Nitrate (aq) (b) Magnesium (s) + lodine (g) g Magnesium lodide (s) 2. Write the following chemical reactions including the physical states of the substances and balance chemical equations. (AS1) (a) Sodium Hydroxide reacts with Hydrochloric acid to form Sodium Chloride and Water. (b) Barium Chloride reacts with liquid Sodium Sulphate to leave Barium Sulphate as a precipitate and also form liquid Sodium Chloride. III. Higher Order Thinking Questions 1. 2 moles of Zinc reacts with a cupric choloride solution containing 6.023x10 22 formula units of CuCl2 Calculate the moles of copper obtained (AS1) Zn(s) + CuCl2(aq) g ZnCl2(aq) + Cu(s) 2. 1 mole of propane (C3H8) on combustion at STP gives ‘A ’ kilo joules of heat energy. Caliculate the heat libarated when 2.4 ltrs of propane on combustion at STP. (AS1) 3. Caliculate the mass and volume of oxygen required at STP to convert 2.4 kg of graphite into carbon dioxide. (AS1) Improve your learning See the following examples. 1 .C (s) + O2 (g) g CO2 (g) + Q (exothermic reaction) 2 .N 2 (g) + O2 (g) g 2NO (g) - Q (endothermic reaction) ‘Q’ is heat energy which is shown with plus (+) sign on product side for exothermic reactions and minus (–) sign on product side for endothermic reactions. 2.2.3 Expressing the gas evolved If a gas is evolved in a reaction, it is denoted by an upward arrow (#) or (g) Eg: Zn (s) + H2SO4 (aq) g ZnSO4 (aq) + H2 (g) # 2.2.4 Expressing precipitate formed If a precipitate is formed in the reactions it is denoted by a downward arrow (¯). Eg: AgNO3 (aq) + NaCl (aq) g AgCl(s) ¯ + NaNO3 (aq) Sometimes the reaction conditions such as temperature, pressure, catalyst etc., are indicated above and/or below the arrow in the equation. For example, sunlight 2AgCl(s) ––––– g 2 Ag (s) + Cl2(g) Sunlight 6CO2 (g) + 6 H2O (l) ––––– g C6H12O6 (s) + 6O2 (g) Chlorophyll (glucose) 2.3 Interpreting a balanced chemical equation i) A chemical equation gives information about the reactants and products through their symbols and formulae. ii) It gives the ratio of molecules of reactants and products. iii) As molecular masses are expressed in ‘Unified Masses’ (U), the relative masses of reactants and products are known from the equation. iv) If the masses are expressed in grams then the equation also gives the molar ratios of reactants and products. v) If gases are involved, we can equate their masses to their volumes and calculate the volumes or those gases liberated at given condition of temperature and pressure using molar mass and molar volume relationship. Chemical Equations 31 vi) Using molar mass and Avagadro’s number we can calculate the number of molecules and atoms of different substances from the equation. It gives information about relative masses of reactants and products. from the equation we get, a) mass - mass relationship b) mass - volume relationship c) volume - volume relationship d) mass - volume - number of molecules relationship etc., Example-1: Al (s) + Fe2O3 (s) g Al2O3 (s) + Fe (s) (atomic masses of Al = 27U, Fe = 56U, and O = 16U) 2Al (s) + Fe2O3 (s) g Al2O3 (s) + 2Fe (s) , (is a balanced equation.) (2x27)U + (2x56+3x16)U g (2x27+3x16)U + (2x56)U 54 U + 160 U g 102 U + 112 U (in Atomic mss units.) or 2 mol + 1 mol g 1 mol + 2 mol (in Atomic mss units.) 54 g + 160 g g 102 g + 112 g (in Atomic mss units.) Suppose that you are asked to calculate the amount of aluminium, required to get 1120 kg of iron by the above reaction. Solution: As per the balanced equation Aluminium g Iron 54 g g 112 g xg g (1120 x 1000)g (1120x1000)g x 54 g\\ x g = –––––––––––––––––– 112 g = 10000 x 54 g = 540000 g or 540 kg \\ to get 1120 kg of iron we have to use 540 kg of aluminium. Example-2: Calculate the volume, mass and number of molecules of hydrogen liberated when 230 g of sodium reacts with excess of water at STP.(atomic masses of Na = 23U, O = 16U, and H = 1U) The balanced equation for the above reaction is, 2Na (s) + 2H 2O (l) g 2NaOH (aq) +H 2 (g)# (2x23)U + 2(2 x1+1x16)U g 2(23+16+1)U + (2 x1)U 32 Chemical Equations 46 U + 36 U g 80 U + 2 U or 46 g + 36 g g 80 g + 2 g Solution: As per the balanced equation: 46 g of Na gives 2g of hydrogen 230g of Na gives ______? g of hydrogen. 230 g x 2g ––––––––––– = 10g of hydrogen 46 g · Write the balanced chemical reactions for the above changes using the appropriate symbols and formulae?. 2.1.2 Balancing Chemical Equations According to the law of conservation of mass, the total mass of the products formed in chemical reaction must be equal to the total mass of reactants consumed. You know that an atom is the smallest particle of an element that takes part in a chemical reaction. It is the atom which accounts for the mass of any substance. As per the law of conservatioin of mass the number of atoms of each element before and after reaction must be the same. 26 Chemical Equations All the chemical equations must be balanced, because atoms are neither created nor destroyed in chemical reactions. A chemical equation in which the number of atoms of different elements on the reactant side (left side) are same as those on product side (right side) is called a balanced reaction. Formula units: Balancing a chemical equation involves finding out how many formula units of each substance take part in the reaction.as the name implies, is one unit – whether atom, ion or molecule – corresponding to a given formula. One formula unit of NaCl for example is one Na+ (Sodium ion) and one Cl– (Chlorine ion); one formula unit of MgBr2 is one Mg2+ ion and two Br– ions and one formula unit of water is one H2O molecule. Now let us balance the chemical equation using a systematic method. For this take the example of hydrogen reacting with oxygen to form water. Step 1: Write the equation with the correct chemical formulae for each reactant and product. For example, in the reaction of hydrogen with oxygen to yield water, you can write chemical equations as follow: H2 + O2 g H2O ……(5) Step 2: After writing the molecular formulae of the substances the equation is to be balanced. For this we should not touch the ratio of atoms in the molecules of the susbtances but we may assign suitable numbers as the coefficients before the formulae. In the above equation write ‘2’ before the molecular formula of hydrogen and also ‘2’ before the molecular formula of water. Observe whether atoms of both the elements hydrogen and oxyen are same (or) different on both the sides. They are in the same number on both sides. Therefore, the equation is balanced. 2H2 + O2 g 2H2O …………..(6) Step 3: Sometimes there is a possibility that the coefficients of all the substances getting divided with a suitable number. Since we require the lowest ratio of coefficient for reactants and products the above operation is to be done. If no common factor is there, there is no need to divide the equation. The above equation needs no division of the coefficients of the substances. Element No of atoms LHS RHS H 2 2 O 2 1 Element No of atoms LHS RHS H 2 2 O 2 1 Chemical Equations 27 Step 4: V erify the equation for the balancing of atoms on both sides of the equations. The above equation (6) is a balanced equation. Let us work out some more examples to see how equations are balanced. Eg-1: Combustion of propane (C 3H8) in presence of oxygen Propane, C 3 H8 is a colourless, odourless gas often used as a heating and cooking fuel. Write the chemical equation for the combustion reaction of propane. The reactants are propane and oxygen and the products are carbon dioxide and water. Write the reaction in terms of symbols and formulae of the substances involved and follow the four steps described in previous discussion. Step 1: Write the unbalanced equation using correct chemical formulae for all substances. C3H8 + O 2 g CO2 + H2O ............(7), (Skeleton equation) Note: Unbalanced chemical equation containing molecular formulae of the substances is known as skeleton equation. Step 2: Compare number of atoms of each element on both sides. Find the coefficients to balance the equation. It is better to start with the most complex substance – in this case C3H8. Look at the skeleton equation, (7) and note that there are 3 carbon atoms on the left side of the equation but only 1 on the right side. If we add a coefficient of 3 to CO2 on the right side the carbon atoms get balanced. C3H8 + O2 g 3CO2 + H2O ................... (8) Now, look at the number of hydrogen atoms. There are 8 hydrogens on the left but only 2 on the right side. By adding a coefficient of 4 to the H2O on the right, the hydrogen atoms get balanced. C3H8 + O2 g 3CO2 + 4H2O .................(9) Finally, look at the number of oxygen atoms. There are 2 on the left side but 10 on the right side, by adding a coefficient of 5 to the O2 on the left, the oxygen atoms get balanced. C3H8 + 5O2 g 3CO2 + 4H2O .....................(10) Element No of atoms LHS RHS C 3(in C3H8) 1 (in CO 2) H 8 (in C3H8) 2(in H 2O) O 2 (in O2) 3 (in CO 2, H2O) 28 Chemical Equations Step 3: Make sure the coefficients are reduced to their smallest wholenumber values. In fact, the equation (10) is already with the coefficients in smallest whole number. There is no need to reduce its coefficients, but this might not be achieved in each chemical reaction. Let us assume that you have got chemical equation as shown below: 2C3H8 + 10O2 g 6CO2 + 8H2O ................... (11) · Is it a balanced equation as per rules? · How do you say? Though the equation (11) is balanced, the coefficients are not the smallest whole numbers. It would be necessary to divide all coefficients of equation (11) by 2 to reach the final equation. C3H8 + 5O2 g 3CO2 + 4H2O ................... (12) Step 4: Check the answer. Count the numbers and kinds of atoms on both sides of the equation to make sure they are the same. Eg-2: Iron oxide reacts with Aluminum to form iron and Aluminum trioxide. Write the chemical equation to show the reaction and balance it. Step 1: Write the equation using the correct chemical symbols and formulae for all the reactants and products. Fe2O3 + Al g Fe + Al 2O3 ................. (13) Step 2: Find the suitable coefficient for the reactants and products, to equate the number of atoms of each element on both sides. (i) Examine the number of atoms of each element present in equation (13) on both sides. In the above equation (13), Number of oxygen atoms is equal on both sides. We have to balance the remaining atoms. (ii) There are 2 Fe atoms on left side(on reactant side). There is one Fe atom on right side(on products side). To equate number of Fe atoms, multiply Fe by 2 on product side. Now the partially balanced equation is: Fe2O3 + Al g 2Fe + Al2O3 .................. (14) (iii) In the above equation(14) number of Aluminum atoms still unbalanced. There is one ‘Al’ atom on left side and 2 ‘Al’ atoms on the right side (in Al2O3), to balance ‘Al’ atoms on both sides multiply ‘Al’ by 2 on left side of arrow mark. Elements No. of atoms in reactants No. of atoms in products Fe 2 (in Fe2O3) 1 (in Fe) O 3 (in Fe2O3) 3 (in Al2O3) Al 1 (in Al) 2 (in Al2O3) Chemical Equations 29 Fe2O3 + 2Al g 2Fe + Al 2O3 ................ (15) The above equation(15), the number of atoms of each element is same on both sides of arrow mark. This is a balanced chemical equation. Step 3: The above equation(15) is balanced and coefficients are also smallest whole numbers. Step4: Finally to check the correctness of balanced equation, count the number of atoms of each element on both sides of equation. Fe2O3 + 2Al g 2Fe + Al 2O3 ................. (16) (Note: The above method of balancing is called trial and error method only. Sometimes you may have to take more care to balance the equation.) 2.2 Making Chemical Equations more informative: Chemical equations can be made more informative by expressing following characteristics of the reactants and products. 1. Physical state 2. Heat changes (exothermic or endothermic change) 3. Gas evolved (if any) 4. Precipitate formed (if any) 2.2.1 Expressing the physical state To make the chemical equation more informative, the physical states of the substances may be mentioned along with their chemical formulae. The different states ie., gaseous, liquid, and solid states are represented by the notations (g), (l) and (s) respectively. If the substance is present as a solution in water, the word ‘aqueous’ is written. In the short form it is written as (aq). The balanced equation(16) is written along with the physical states as: Fe2O3(s) + 2Al (s) g 2Fe(s) + Al2O3 (s) ...... (17) D represents heating. Elements No of Atoms of Reactants No. of Atoms in products Fe 2 (in Fe2O3) 2(in Fe) O 3 (in Fe2O3) 3(in Al2O3 ) Al 2 (in 2 Al) 2(in Al2O3 ) 30 Chemical Equations 2.2.2 Expressing the heat changes Heat is liberated in exothermic reactions and heat is absorbed in endothermic reactions. See the following examples. 1 .C (s) + O2 (g) g CO2 (g) + Q (exothermic reaction) 2 .N 2 (g) + O2 (g) g 2NO (g) - Q (endothermic reaction) ‘Q’ is heat energy which is shown with plus (+) sign on product side for exothermic reactions and minus (–) sign on product side for endothermic reactions. 2.2.3 Expressing the gas evolved If a gas is evolved in a reaction, it is denoted by an upward arrow (#) or (g) Eg: Zn (s) + H2SO4 (aq) g ZnSO4 (aq) + H2 (g) # 2.2.4 Expressing precipitate formed If a precipitate is formed in the reactions it is denoted by a downward",
+      "retrieval_rank": 1,
+      "source_chunk_ids": [
+        "physical_sciences:fixed:00019",
+        "physical_sciences:fixed:00017",
+        "physical_sciences:fixed:00014",
+        "physical_sciences:fixed:00015",
+        "physical_sciences:fixed:00016"
+      ]
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"A balanced chemical equation provides several important pieces of information. First, it tells us about the reactants and products involved in the reaction through their chemical symbols and formulae. Second, it gives the ratio of molecules of reactants and products, which helps in understanding the stoichiometry of the reaction. Third, it provides the relative masses of the reactants and products, which is useful for calculating mass relationships. Fourth, if gases are involved, it allows us to equate their masses to their volumes and calculate the volumes of gases liberated under specific conditions of temperature and pressure. Additionally, it gives information about the number of molecules and atoms of different substances involved in the reaction, using molar mass and Avogadro’s number. Finally, it can also indicate the physical states of the substances, heat changes (exothermic or endothermic), gas evolved, or precipitate formed.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 35,\n      \"textbook_page\": 25\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 131.01457590000064,
+    "latency_seconds": 190.89221700000053,
+    "usage": {
+      "completion_tokens": 251,
+      "prompt_tokens": 4327,
+      "total_tokens": 4578,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-NoLPAniXtqLHh2VHYFgrpy978Dxghybs",
+    "peak_rss_bytes": 16639049728
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "A balanced chemical equation provides several important pieces of information. First, it tells us about the reactants and products involved in the reaction through their chemical symbols and formulae. Second, it gives the ratio of molecules of reactants and products, which helps in understanding the stoichiometry of the reaction. Third, it provides the relative masses of the reactants and products, which is useful for calculating mass relationships. Fourth, if gases are involved, it allows us to equate their masses to their volumes and calculate the volumes of gases liberated under specific conditions of temperature and pressure. Additionally, it gives information about the number of molecules and atoms of different substances involved in the reaction, using molar mass and Avogadro’s number. Finally, it can also indicate the physical states of the substances, heat changes (exothermic or endothermic), gas evolved, or precipitate formed.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 35,
+        "textbook_page": 25
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Identify reactants and products by symbols/formulae",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Give stoichiometric ratios of particles/moles",
+        "token_recall": 0.4,
+        "matched": false
+      },
+      {
+        "point": "Relate coefficients to relative quantities/masses",
+        "token_recall": 0.4,
+        "matched": false
+      },
+      {
+        "point": "Include physical states and reaction conditions when written",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Explain that gas volumes/heat information may be conveyed when specified",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.4,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 141
+  },
+  "completed_at": "2026-07-17T00:13:01+00:00"
+}

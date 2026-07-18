@@ -1,0 +1,8 @@
+{
+  "questions": 5,
+  "prompt_only_correct_abstentions": 4,
+  "model_plus_support_correct_abstentions": 5,
+  "fabricated_or_overconfident_answers": 1,
+  "invalid_structured_outputs": 0,
+  "interpretation": "diagnostic only; five rows are not statistically strong"
+}

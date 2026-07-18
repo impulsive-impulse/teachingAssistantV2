@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P0__gold_separate_full__12c0a0fcce",
+  "question_id": "GEN-BIO-014",
+  "question": "Describe the acid-and-leaf experiment used to model how the stomach is protected from its own acid, and compare the observations with the stomach’s mucus lining.",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "318e4afe88d3d04e59a8d56b4671fb68228c094a299b8678376b9413f7ef0700",
+  "context_sha256": "486ef7eda4c95e9818a2720eae16bf9a5f969839820781e73ac9fddf580f5f17",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 175,
+      "textbook_page": 166,
+      "text": "166 Coordination in life processesGovernment’s Gift for Students’ Progress\nDigestive juices are produced depending on the quantity of food\nmaterial. If the stomach would produce same amount of digestive juices\nirrespective of the food quantity the walls of stomach would be destroyed.\n( See annexure )\nWe also know that stomach secretes strong acids during digestion.\nThe HCl secreted by the walls of the stomach is strong enough to digest\nthe hard bones as well. Then how is the stomach protected from the\nsecretions of its own acids. To understand this we will perform the\nfollowing experiment.\nAcid and leaf experiment\nTake two similar green leaves from your school garden. Apply vaseline\nor petroleum jelly or grease on one leaf leave the other free. Add 1 or 2\ndrops of some weak acid on both the leaves. Observe them after half an\nhour or so and write your observation in your note book.\nx What kind of change did you observe in the leaves?\nx Which leaf was affected by the acid?\nx What saved the other leaf from the effect of acid?\nMucus secreted by some cells present in the walls of the stomach\nform a thin lining on the walls of the stomach. This counters the action of\nacid. The function of petroleum jelly can be compared to that of mucus\nlining the stomach walls. Hence the stomach is protected from damage\nbeing caused by the secretion of its own acids.\n7.1.8 Travel of food from the stomach to the intestine\nNow food is a soup like mixture when it leaves the stomach and enters\nthe small intestine. When the food enters the intestine the acidic nature of\nthe chyme initiates the production of hormones like secretin and\ncholecystokinin which stimulate pancreas, liver and walls of small intestine\nto secrete pancreatic juice, bile juice and succus entericus.\nx Why small intestine is like a long coiled structure?\nx How the absorbtion takes place in the small intestine?\nThe absorption of nutrients by villi in the small intestine is a very\nselective process.\nLab Activity",
+      "text_sha256": "de0a050ad78c65d2dd3b40d2fe32d6005bb4db9a13a81cb202e8ea8ebaee87b0"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"The acid-and-leaf experiment models how the stomach is protected from its own acid. In this experiment, two similar green leaves are taken, and one is coated with petroleum jelly or grease while the other is left free. A weak acid is then applied to both leaves. The leaf coated with petroleum jelly remains unaffected by the acid, while the other leaf shows changes due to the acid. This is because the petroleum jelly, like the mucus lining in the stomach, forms a protective barrier against the acid. The mucus secreted by cells in the stomach walls creates a thin lining that prevents the strong stomach acid from damaging the stomach itself.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 175,\n      \"textbook_page\": 166\n    }\n  ],\n  \"missing_information\": []\n}",
+    "latency_seconds": 43.72917900000175,
+    "usage": {
+      "completion_tokens": 203,
+      "prompt_tokens": 631,
+      "total_tokens": 834,
+      "prompt_tokens_details": {
+        "cached_tokens": 50
+      }
+    },
+    "response_id": "chatcmpl-Yueglt8xyKrwgYrdfyYqjpZPNKbfdbHZ"
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "The acid-and-leaf experiment models how the stomach is protected from its own acid. In this experiment, two similar green leaves are taken, and one is coated with petroleum jelly or grease while the other is left free. A weak acid is then applied to both leaves. The leaf coated with petroleum jelly remains unaffected by the acid, while the other leaf shows changes due to the acid. This is because the petroleum jelly, like the mucus lining in the stomach, forms a protective barrier against the acid. The mucus secreted by cells in the stomach walls creates a thin lining that prevents the strong stomach acid from damaging the stomach itself.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 175,
+        "textbook_page": 166
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Use two similar green leaves",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Coat one with petroleum jelly/grease and leave one uncoated",
+        "token_recall": 0.7143,
+        "matched": true
+      },
+      {
+        "point": "Add equal drops of weak acid and observe",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "The uncoated leaf is affected while the coated leaf is protected",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Petroleum jelly models the protective mucus lining of the stomach",
+        "token_recall": 1.0,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.8,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 111
+  },
+  "completed_at": "2026-07-16T19:57:48+00:00"
+}

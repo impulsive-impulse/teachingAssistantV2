@@ -1,0 +1,180 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top5_page_order_compact__684f17db77",
+  "question_id": "GEN-BIO-001",
+  "question": "What process do you follow in the laboratory to study the presence of starch in leaves?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "f29e823459397ee2fdf68efd82d41720b0691f6dd05f2a6ec85554d6dedba40e",
+  "context_sha256": "31e8de86ec37b6a141a2303793706e6a5f023cb60eb3648e66adeccad0bc067f",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 11,
+      "textbook_page": 2,
+      "pdf_pages": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "textbook_pages": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "process, along with carbohydrate one molecule each of oxygen and\nwater are produced”.\nFig-1: Photosynthesis\noxygen\nsunlight\nwater\ncarbon dioxide chlorophyll\nNutrition 3\nCO2 + 2H2O CH2O + H2O + O2\nWhat would be the reaction to show that glucose (C6H12O6) is being\nsynthesized?\nWrite down a balanced equation to show this. (Refer the\nlessons Chemical equations, Carbon and its compounds in your textbook\nof physical science class X).\nLight\nChlorophyll\nC.B.\nVan Niel first worked on purple sulphur bacteria and found light\nplays specific role in photosynthesis.\nInstead of H2O, bacteria uses H2S as\na starting material.\nHere no oxygen is liberated during photosynthesis,\ninstead, it is sulphur.\nLater he observed a similar process of photosynthesis,\nin plants.\nWhen glucose was observed to be a product of photosynthesis,\nLight\nChlorophyll\nthe following equation was proposed:\n6CO2 + 12H2O C6H12O6 + 6H2O + 6O2\nIt is known that plants synthesize carbohydrates, the smaller and simpler\nones first and from these, the more complex ones like starch and cellulose.\nPlants are also capable of synthesizing all other compounds like proteins,\nfats etc.\nAnimals are not capable of synthesizing carbohydrates and they\nhave to depend on plants for the same.\nCan we state that photosynthesis is the basic energy source for most\nof the living world?\nWhy, why not?\nLet us study how plants prepare carbohydrates through photosynthesis.\nActivity-1\nPresence of starch (a type of carbohydrate) in leaves\nx Let us take a soft and thin leaf from a plant which is well exposed to\nsunlight.\nx Arrange apparatus as shown in Fig-2(a).\nx Take methylated spirit in a test tube and put the leaf in it.\nx First boil the leaf in water then transfer this leaf into a test tube\ncontaining methylated spirit.\nBoil this tube in a water bath.\nChlorophyll dissolves in spirit while boiling and the leaf becomes\npale, due to the removal of chlorophyll.\nNutrition 4\nbeaker\nwater\nleaf\nmethylated spirit\niron mesh\ntripod stand\ntest tube\nbunsen burner\npetridish\niodine solution\nFig-2(a): boiling the leaf\nin methylated spirit\nFig-2(b): Iodine test\nx Take the leaf carefully from test tube by using a brush.\nx Spread the leaf in a petridish and add a few drops of iodine/ betadine\nsolution on it.\nObserve the leaf.\nWhat changes do you observe?\nThe presence of starch will be indicated by a bluish black colour.\nx Do you think sunlight has a role in formation of starch?\n1.2.1 Factors (Materials) essential for the process of Photosynthesis\nx What are the materials that you think would be essential for the\nsynthesis of carbohydrates in the process of photosynthesis?\n(Hint: see the equation proposed by V an Niel)\nx Do you think that the equation tells us about all the required\nmaterials are involved in photosynthesis?\nLet us study how scientists experimented to find out the materials\nrequired for the process of photosynthesis.\n1.2.2 Water and Photosynthesis\nIn class VII we have already studied how Van Helmont found that the\nwater plays an important role in the increase of the plant mass.\nV on Helmont did not know about photosynthesis then.\nLater, it was\nfound that increase in plant body mass occurred due to the process of\nphotosynthesis.\n1.2.3 Air and Photosynthesis\nLet us discuss an experiment on photosynthesis.\nThis helps us to find\nout about the role of air in the process of photosynthesis.\nNutrition 5\nIt is interesting to learn about the experiment which is one of the\nseveral milestones in the gradual development of our understanding of\nPhotosynthesis.\nJoseph Priestley (1733-1804) in 1770 performed a series of experiments\nthat revealed the essential role of air on the growth of green plants",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00001"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 13,
+      "textbook_page": 4,
+      "pdf_pages": [
+        13,
+        14,
+        15
+      ],
+      "textbook_pages": [
+        4,
+        5,
+        6
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "V on Helmont did not know about photosynthesis then.\nLater, it was\nfound that increase in plant body mass occurred due to the process of\nphotosynthesis.\n1.2.3 Air and Photosynthesis\nLet us discuss an experiment on photosynthesis.\nThis helps us to find\nout about the role of air in the process of photosynthesis.\nNutrition 5\nIt is interesting to learn about the experiment which is one of the\nseveral milestones in the gradual development of our understanding of\nPhotosynthesis.\nJoseph Priestley (1733-1804) in 1770 performed a series of experiments\nthat revealed the essential role of air on the growth of green plants\nphotosynthesis was still not known to scientists at that time.\nYou may recall,\nOxygen was discovered by Priestley in 1774.\nThe name oxygen was coined\nlater by Lavoisier in the year 1775.\nPriestley observed that a candle burning\nin a closed bell jar, soon gets extinguished.\nSimilarly, he observed a mouse\nkept in a closed belljar would soon suffocate.\nHe concluded that a burning\ncandle or a mouse, both somehow, damage the air inside the closed belljar.\nWhen he placed a mint plant in the same bell jar, he found that the mouse\nFig-3: Priestley experiment\n(A) (B)\n(C) (D)\nActivity-2\nCarbondioxide is necessary for Photosynthesis (Mohl’s half\nleaf experiment)\nWe need a destarched plant to start with.\nWe need to keep the plant in\nthe dark for nearly three days to remove the starch (destarch).\nBy placing\nthe plant in dark the starch is removed from the leaves.\nstayed alive and the candle when lighted from\noutside continued burning.\nPriestley hypothesized\nthat plants restore the air that breathing utilised by\nanimals and burning of candle remove.\nDo you identify any relationship between\ncandle, rat, mint plant ?\nPriestley confirmed by his experiment that\ngaseous exchange occurs between them and the gas\nreleased by the plant aids in burning of candle and\nsurvival of organism.\nBut how do plants take in air\nand utilize carbon dioxide for photosynthesis and\noxygen for respiration?\nMassive amounts of\ngaseous exchange occur through the stomata\n(usually present in leaves) as long as they are open.\nPlants also carry on gaseous exchange through\nlenticels in the stems and aerial roots.\nNutrition 6\nArrange the apparatus as shown in the Fig-4.\nx Take a wide mouthed transparent glass bottle.\nx Take potassium hydroxide (KOH) pellets or potassium hydroxide\nsolution in the bottle.\nPotassium hydroxide absorbs carbon dioxide.\nx Insert splitted cork in the mouth of the bottle.\nx Insert one of the leaf of destarched plant through the split cork into\ntransparent bottle containing potassium hydroxide pellets/potassium\nhydroxide solution, in such a way that half of the leaf must be inside\nthe bottle keeping remaining part outside.\nx Keep the plant along with the bottle in sunlight.\nx After a few hours, take this leaf and any other leaf of the plant to test\nthe presence of starch with iodine as mentioned in activity-1.\nThe leaf part which was exposed to the atmospheric air and light becomes\nbluish-black on testing with iodine and one inside the bottle containing\npotassium hydroxide which absorbs carbon dioxide in the bottle do not\nshow any colour change.\nThis proves that the carbon dioxide is necessary\nfor photosynthesis.\nx Why was the plant before the experiment kept in dark and then in\nsun light ?\nx Why did we test two leaves in this experiment?\nWe have so far discussed that water and CO 2 are necessary in the\nprocess of photosynthesis.\nScientist had observed that some other factors\nalso affect the process of photosynthesis.\nFig-4: Mohl’s half leaf experiment",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00002"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 15,
+      "textbook_page": 6,
+      "pdf_pages": [
+        15,
+        16,
+        17
+      ],
+      "textbook_pages": [
+        6,
+        7,
+        8
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The leaf part which was exposed to the atmospheric air and light becomes\nbluish-black on testing with iodine and one inside the bottle containing\npotassium hydroxide which absorbs carbon dioxide in the bottle do not\nshow any colour change.\nThis proves that the carbon dioxide is necessary\nfor photosynthesis.\nx Why was the plant before the experiment kept in dark and then in\nsun light ?\nx Why did we test two leaves in this experiment?\nWe have so far discussed that water and CO 2 are necessary in the\nprocess of photosynthesis.\nScientist had observed that some other factors\nalso affect the process of photosynthesis.\nFig-4: Mohl’s half leaf experiment\nKOH\n(Potassium\nHydroxide)\nwide mouthed\nbottle\nsplit cork\npotted plant\nbluish black (starch\nformed part)\nNo colour change (no starch)\nNutrition 7\n1.2.4 Light and Photosynthesis\nIn Joseph Priestley's time, scientists were not aware about the energy,\nbut later on by performing different experiments much was discovered\nabout it.\nEnergy is released when carbondioxide and water are formed by\ncombining oxygen molecules with carbon and hydrogen.\nx What would happen if these reactions take place in reverse?\nx What happens if the formed oxygen is released back into air?\nx Eventually, scientists analysed, in case of energy, what if the\nreactions are reversed?\nScientists have come to know that energy released during oxygen\nformation is reutilised.\nThis means that plants must be able to absorb\nenergy as they produce oxygen.\nx Where did this energy come from?\nA Dutch scientist, Jan Ingenhousz (1730-1799), found the answer.\nTo\nknow about how the plants release oxygen he studied continuously.\nIn 1779,\nhe noticed that plants form oxygen only in the presence of light.\nIn an experiment with the aquatic plant, Hydrilla (submerged, rootless\nwater plant), he observed that in bright sunlight, small bubbles were formed\naround the green parts while in the dark they did not form.\nHe also found\nthat the gas present in the bubbles was oxygen.\nIt was further confirmed when Engelman in the early 20 th century\ningeniously detected the point of maximum rate of photosynthesis.\nHe\nused a group of algae and exposed it to different colours of light the colours\nthat we see in a rainbow.\nThen he used oxygen sensitive bacteria and found\nthat they crowd around areas illuminated with bright red and blue rays of\nlight.\nThis led to the studies on effect of light on photosynthesis, the role\nof different coloured compounds called pigments in plants and the\nutilization of light energy.\nNutrition 8\nExperiment to observe oxygen is evolved during photosynthesis\nin the presence of light\nMaterials required : Beaker (2), funnel (2), test tubes (2), Hydrilla\n(any other acquatic submerged plant), black paper, bucket-full of water,\nincense stick, match box.\nProcedure\n1.\nArrange the apparatus as shown in the Fig-5 and make two identical\nsets with water plant (like Hydrilla).\n2.\nKeep the whole setup in a bucket filled with water and invert a water\nfilled test tube over the stem of funnel. (This will help to retain the\nwater column in the test tube)\n3.\nTake the set up out of the bucket and keep it under sunlight.\n4.\nArrange the second set in the same way, cover it with black paper/\ncloth.\nKeep it under shade.\nObserve the water lavel in the test tube.\nIn the apparatus kept in sunlight, the\nwater level gradually decreases and in\nplace of water air fills in the test tube.\nIt is actually a gas that will be collected\nin the test-tube.\nObserve the other set\nup kept in dark.\nIs there any difference",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00003"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 17,
+      "textbook_page": 8,
+      "pdf_pages": [
+        17,
+        18,
+        19
+      ],
+      "textbook_pages": [
+        8,
+        9,
+        10
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "filled test tube over the stem of funnel. (This will help to retain the\nwater column in the test tube)\n3.\nTake the set up out of the bucket and keep it under sunlight.\n4.\nArrange the second set in the same way, cover it with black paper/\ncloth.\nKeep it under shade.\nObserve the water lavel in the test tube.\nIn the apparatus kept in sunlight, the\nwater level gradually decreases and in\nplace of water air fills in the test tube.\nIt is actually a gas that will be collected\nin the test-tube.\nObserve the other set\nup kept in dark.\nIs there any difference\nin the amount of gas collected?\nTest the gas in the test-tube by\ninserting a glowing match stick or\nincense stick which would burst into\nflames.\nThis shows that the gas released\nfrom Hydrilla plant is oxygen.\nx What precautions do you need while\nremoving test tube from the beaker?\nDiscuss with your teacher.\nfunnel\ntest tube\nbeaker\nwater\noxygen\nHydrilla plant\nFig-5: Hydrilla experiment\nbubbles\nLab Activity\nActivity-3\nSunlight is necessary to form starch in green plants\nTake a potted plant and destarch the leaves.\nRemember the process of\ndestarching leaves mentioned in activity-2.\nNutrition 9\nFig-6: Black paper experiment\nCover one of its leaf with black paper on which a design is cut.\nFix the\npaper on the leaf in such a manner that light does not enter the dark part as\nshown in the figure-6.\nPlace this potted plant in sun light.\nAfter few hours of exposure to bright sunlight, separate the leaf from\nplant and test the leaf which is covered by black paper for the presence of\nstarch.\nWhich part of the leaf turns bluish-black?\nWhat about the remaining\npart?\nIt will be observed that only the parts of the leaf, which could get light\nthrough the cut out design, turns bluish-black with iodine showing the\npresence of starch.\nCan you tell why it is stained differently?\n1.2.5 Chlorophyll and Photosynthesis\nIngenhousz wanted to find out more about photosynthesis and carried\nout several other experiments.\nHe proposed that only green plant parts\ncould carry out the process of photosynthesis.\nWhat about plants having variously coloured leaves?\nHow is it that\nnew leaves which look dark red in colour in several plants turn green?\nDo\nplants having reddish or yellowish leaves also carry out photosynthesis?\nWhat made plants carry out photosynthesis while even green coloured\nanimals like some birds could not?\nSuch questions remained as challenges\nuntil scientists could isolate the green coloured substance from plant parts\nand study its nature.\nEstablishment of Ingenhousz’s proposition become possible in the\nyear 1817 due to the work of two scientists Pelletier and Caventou.\nThey\nobtained an extract of the green coloured substance and named it\n‘chlorophyll’ meaning green leaf.\nIt was also found that pigments in addition\nto chlorophyll, carotenoids and phycobilins could also aid in the process\nof photosynthesis by passing on the energy of sunlight trapped by them to\nchlorophyll.\nNutrition 10\n1.2.6 Where does Photosynthesis take place?\nx Name the parts of plants where photosynthesis occurs .\nx Where do chlorophyll and other pigments present in the plant?\nx Do you think the newly formed reddish leaves of plants also carry\nout photosynthesis?\nThe exact location of the photosynthetic part or a part containing\nchlorophyll was not known till another six decades after the discovery of\nchlorophyll.\nIn 1883, Julius V on Sachs, observed that chlorophyll is found\nin organelles within the cell.\nSuch organelles were named as ‘chloroplasts’.\nThese are present in large numbers in the cells (around 40 – 100) of parts",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00004"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 57,
+      "textbook_page": 48,
+      "pdf_pages": [
+        57,
+        58
+      ],
+      "textbook_pages": [
+        48,
+        49
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x Photosynthesis and respiration appear to be opposing reactions, but both have very different\nbiochemical pathways and are essential for a plant’s metabolism.\nx Photosynthesis takes place in the chloroplast to produce sugars, starch and other carbohydrates\nfor the plant’s metabolic needs.\nx Cellular respiration occurs in mitochondria where mainly these carbohydrates are “oxidised” to\nproduce chemical energy to do work at the cellular level.\n1.\nDistinguish between (AS1)\na) inspiration and expiration b) aerobic and anaerobic respiration\nc) respiration and combustion d) photosynthesis and respiration\n2.\nWrite two similarities between aerobic and anaerobic respiration. (AS1)\n3.\nFood sometimes enters the wind pipe and causes choking.\nHow does it happen? (AS1)\n4.\nWhy does the rate of breathing increase while walking uphill at a normal pace in the mountains?\nGive two reasons. (AS1)\n5.\nAir leaves the tiny sacs in the lungs to pass into capillaries.\nWhat modification is needed in the\nstatement? (AS1)\n6.\nPlants carryout photosynthesis during daytime and respiration during the night.\nDo you agree to this\nstatement?\nWhy?\nWhy not? (AS1)\n7.\nWhy does a deep sea diver and mountainair carry oxygen cylinder on their back? (AS1)\n8.\nHow are alveoli designed to maximize the exchange of gases? (AS1)\n9.\nWhere will the release of energy from glucose in respiration take place?\nMala writes lungs while\nRaziya writes muscles.\nWho is correct and why? (AS1)\n10.\nWhat is the role of epiglottis and diaphragm in respiration? (AS1)\n11.\nHow does gaseous exchange takes place at blood level (or) cellular level? (AS1)\n12.\nExplain the mechanism of gaseous exchange at branchiole level. (AS1)\n13.\nAfter a vigorous excercise or work we feel pain in muscles.\nWhat is the relationship between pain\nand respiration? (AS1)\n14.\nRaju said stem also respire along with leaves in plants.\nCan you support this statement?\nGive your\nreasons. (AS1)\nImprove your learning\nRespiration49\n15.\nWhat happen if diaphragm is not there in the human body? (AS2)\n16.\nIf you have a chance to meet pulmonologist what questions are you going to ask about pulmonory\nrespiration? (AS2)\n17.\nWhat procedure do you follow to understand anaerobic respiration in your school laboratory?\n(AS3)\n18.\nWhat are your observations in combustion of sugar activity? (AS3)\n19.\nCollect information about cutaneous respiration in frog.\nPrepare a note and display them in your\nclassroom. (AS4)\n20.\nCollect information about respiratory diseases (because of pollution, tobacco) and discuss with\nyour classmates. (AS4)\n21.\nWhat is the pathway taken by air in the respiratory system?\nIllustrate with a labelled diagram.\n(AS5)\n22.\nDraw a block diagram showing events in respiration.\nWrite what you understood about cellular\nrespiration. (AS5)\n23.\nHow do you appreciate the mechanism of respiration in our body? (AS6)\n24.\nPrepare an article on anaerobic respiration to present school symposium. (AS7)\n25.\nPrepare a cartoon on discussion between haemoglobin and chlorophyll about respiration. (AS7)\n1.\nExhaled air contains _________ and _________.\n2.\nA flap like muscular valve controls movement of air and food is ___________.\n3.\nEnergy currency of the cell is called _____________.\n4.\nLenticels are the respiratory organs exists in __________ part of plant.\n5.\nMangroove trees respire with their ____________.\n1.\nW e will find vocal cords in ( )\nA) larynx B) pharynx C) nasal cavity D) trachea\n2.\nCluster of air sacs in lungs are called ( )\nA) alveoli B) bronchi C) bronchioles D) air spaces\n3.\nWhich of the following is correct ( )\ni) the diaphragm contracts - volume of chest cavity increased\nii) the diaphragm contracts - volume of chest cavity decreased\niii) the diaphragm relax - volume of chest cavity increased\niv) the diaphragm relax - volume of chest cavity decreased",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00029"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"To study the presence of starch in leaves, the following process is followed in the laboratory: First, a thin leaf is taken from a plant exposed to sunlight. The leaf is boiled in water to kill the cells and then transferred to methylated spirit to remove chlorophyll, making the leaf pale. After that, the leaf is spread on a petridish and a few drops of iodine solution are added. If starch is present, the leaf turns bluish-black. This indicates the presence of starch, which is a product of photosynthesis.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 11,\n      \"textbook_page\": 2\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 124.38984589999018,
+    "latency_seconds": 166.44253929999832,
+    "usage": {
+      "completion_tokens": 182,
+      "prompt_tokens": 4548,
+      "total_tokens": 4730,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "response_id": "chatcmpl-JtQbEGagMJwA5xeKDTEoh8yBhIiO4aKv",
+    "peak_rss_bytes": 10693840896
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "To study the presence of starch in leaves, the following process is followed in the laboratory: First, a thin leaf is taken from a plant exposed to sunlight. The leaf is boiled in water to kill the cells and then transferred to methylated spirit to remove chlorophyll, making the leaf pale. After that, the leaf is spread on a petridish and a few drops of iodine solution are added. If starch is present, the leaf turns bluish-black. This indicates the presence of starch, which is a product of photosynthesis.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 11,
+        "textbook_page": 2
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Use a sun-exposed leaf and boil it in water",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Remove chlorophyll using alcohol in a water bath",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Add iodine solution",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "A blue-black colour shows starch",
+        "token_recall": 0.4,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 89
+  },
+  "completed_at": "2026-07-16T22:49:44+00:00"
+}

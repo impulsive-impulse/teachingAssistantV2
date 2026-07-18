@@ -49,6 +49,7 @@ def schema_required_fields(schema_path: Path = DEFAULT_SCHEMA) -> set[str]:
 
 
 def _strings(row: dict[str, Any], field: str, *, nonempty: bool = False) -> list[str]:
+    """Validate and return a benchmark field containing clean strings."""
     value = row.get(field)
     if not isinstance(value, list) or any(not isinstance(item, str) or not item.strip()
                                           for item in value):
@@ -59,6 +60,7 @@ def _strings(row: dict[str, Any], field: str, *, nonempty: bool = False) -> list
 
 
 def _positive_pages(row: dict[str, Any], field: str) -> list[int]:
+    """Validate and return a non-empty list of positive page numbers."""
     value = row.get(field)
     if not isinstance(value, list) or not value or any(
             isinstance(item, bool) or not isinstance(item, int) or item < 1 for item in value):
@@ -132,6 +134,7 @@ def validate_row(row: dict[str, Any], required: set[str]) -> None:
 
 
 def _canonical_question(text: str) -> set[str]:
+    """Convert question text to a lowercase token set for duplicate checks."""
     return set(re.findall(r"[a-z0-9]+", text.lower()))
 
 

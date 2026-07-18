@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407",
+  "question_id": "GEN-PSC-019",
+  "question": "Suggest an experiment to prove that the presence of air and water are essential for corrosion. Explain the procedure.",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "bc1670101068bf6f9f5356f642bb07c4e09d961b1afc2df21e3e162193fe448d",
+  "context_sha256": "74230d7e67356cacf66cd4340549b8684f85ff0902562315f897d09abe057768",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 262,
+      "textbook_page": 252,
+      "pdf_pages": [
+        262,
+        263,
+        264
+      ],
+      "textbook_pages": [
+        252,
+        253,
+        254
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Determine the magnetic field induction if the current in the conductor is 40A.\n(Ans: 1tesla) (AS1)\n5.\nAs shown in the fig-Q6, both coil and bar magnet moves in the same direction.\nWhat happens?\n(AS2)\n6.\nGive a few applications of Faraday’s law of induction in daily life. (AS7)\nfig- Q6\nN\nV\nC\nN\nfig- Q2\nxP\nQ\nfig- Q3\nfig- Q5\nB\ni\nL\nfig- Q4\n248 Electromagnetism\n1.\nWhich of the following converts electrical energy into mechanical energy [ ]\na) motor b) battery\nc) generator d) switch\n2.\nWhich of the follwing converts mechanical energy into electrical energy [ ]\na) motor b) battery\nc) generator d) switch\n3.\nThe magnetic force on a current carrying wire placed in uniform magnetic field if the wire is\noriented perpendicular to magnetic field is [ ]\na) 0 b) ILB\nc) 2ILB d) ILB\n2\n4.\nOne Tesla = [ ]\na) Newton/Coloumb b) Newton / ampere - meter\nc) Ampere / meter d) Newton / ampere second\n5.\nUnit of Magnetic flux [ ]\na) dyne b) Oersterd c) Guass d) Weber\n6.\nNo force works on the conductor carrying electric current when kept [ ]\na) parallel to magnetic field b) perpendicular to magnetic field\nc) in the magnetic field d) away from magnetic field\nMultiple choice questions\nSuggested Projects\n1.\nCollect information about generation of current by using Faraday’s law. (AS4)\n2.\nCollect information about material required and procedure of making a simple electric motor\nfrom internet and make a report. (AS4)\n3.\nCollect information of experiments done by Faraday. (AS4)\nSuggested Experiments\n1.\nExplain with the help of two activities that current carrying wire produces magnetic field. (AS3)\n2.\nHow do you verify experimentally that the current carrying conductor experiences a force when\nit is kept in magnetic field? (AS3)\n3.\nExplain Faraday’s law of induction with the help of activity. (AS3)\n4.\nWhat experiment do you suggest to understand Faraday’s law?\nWhat instruments are required?\nWhat suggestions do you give to get good results of the experiment?\nGive precautions also.\n(AS3)\n5.\nHow can you verify that a current carrying wire produces a magnetic field with the help of an\nexperiment? (AS3)\n249 Principles of Metallurgy\nIn class 8 you have studied about certain properties of metals like,\nmalleability, ductility, sonarity etc.\nMetals play an important role in our\ndaily life.\nWe use various metals for various purposes like gold and silver\nas jewellery, copper, iron, aluminium for making conducting wires and\nfor making utensils etc.\nWe use many house hold articles made up of metals\nand their alloys at our home.\n· Can you mention some articles that are made up of metals?\n· Do metals exist in nature in the same form as that we use in our daily\nlife?\n· Have you ever heard the words like ore, mineral and metallurgy?\n· Do you know how these metals are obtained?\nTo understand these questions you need to know about metallurgy.\nIn\nthis chapter we discuss various concepts related to metallurgy and the\nprocess by which we are able to obtain the pure form of metal that we use\nin our daily life.\n“Metallurgy is the process of extraction of metals from their ores”.\nHuman history in terms of materials had the Bronze Age and Iron Age.\nThe bronze is an alloy of copper and tin.\nNow we have more than 75%\nmetals among the elements available.\n11.1 Occurrence of the metals in nature\n· How are the metals present in nature?\nThe earth’s crust is the major source of metals.\nSea water also contains\nsome soluble salts such as sodium chloride and magnesium chloride etc.\nPrinciples of",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00155"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 273,
+      "textbook_page": 263,
+      "pdf_pages": [
+        273,
+        274,
+        275
+      ],
+      "textbook_pages": [
+        263,
+        264,
+        265
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "from the anode to the cathode.\nfig-4: Experimental setup for the electrolytic\nrefining of copper\n259 Principles of Metallurgy\nBoiled\ndistilled water\nAnhydrous\ncalcium chloride\nWater\nRusty\niron\nnails\nAir Air Dry\nair\nLayer\nof oil\nfig-5: Investigating the conditions\nunder which iron rusts\nAnode: Cu g Cu2+ + 2e-\nCathode: Cu2+ + 2e- g Cu\nThe soluble impurities go into the solution, where as insoluble\nimpurities from the blister copper get deposited at the bottom of anode as\nanode mud which contains metals like antimony selenium, tellurium, silver,\ngold and platinum; recovery of these metals may meet the cost of refining.\nZinc may also be refined this way.\n11.3 Corrosion\nThe rusting of iron (iron oxide), tarnishing of silver (silver sulphide),\ndevelopment of green coating on copper (copper carbonate) and bronze\nare some of the examples of corrosion.\n· Do you know why corrosion occurs?\n· In which coses corrosion occurs?\nLet us find\nActivity 2\n· Take three test tubes and place clean iron nails in each of them.\n· Label these test tubes A,B and C.\nPour some water in test tube A and cork it.\n· Pour boiled distilled water in test tube B, add about 1 ml of oil and\ncork it.\nThe oil will float on water and prevent the air from dissolving\nin the water.\n· Put some anhydrous calcium chloride in test tube C and cork it.\nAnhydrous calcium chloride will absorb the moisture, if any, from the\nair.\nLeave these test tubes for a few days and then observe (see figure).\n· You will observe that iron nails rust in test tube\nA, but they do not rust in test tubes B and C.\nIn\nthe test tube A, the nails are exposed to both air\nand water.\nIn the test tube B, the nails are exposed\nto only water, and the nails in test tube C are\nexposed to dry air.\n· What does this tell us about the conditions under\nwhich iron articles rust?\nIn metallic corrosion, a metal is oxidised by loss\nof electrons generally to oxygen and results in the\nformation of oxides.\nCorrosion of iron (commonly\nknown as rusting) occurs in presence of water and\nair.\n260 Principles of Metallurgy\nThe chemistry of corrosion is quite complex but it may be considered\nessentially as an electrochemical phenomenon.\nDuring corrosion at a\nparticular spot on the surface of an object made of iron, oxidation takes\nplace and that spot behaves as anode.\nWe can write the reaction as.\nAnode: 2Fe(s) g 2Fe2+ + 4e–\nElectrons released at this anodic spot move through the metal and go\nto another spot on the metal and reduce oxygen at that spot in presence of\nH+ which is believed to be available from H2CO3 formed due to dissolution\nof carbon dioxide from air into water in moist air condition of atmosphere.\nHydrogen ion in water may also be available due to dissolution of other\nacidic oxides from the atmosphere.\nThis spot behaves as cathode with the\nreaction is.\nCathode: O2(g) + 4H+ (aq) + 4e- g 2H2 O(l)\nThe overall reaction is: 2Fe(s)+O2(g)+4H+\n(aq)g 2Fe2+\n(aq)+2H2O(l)\nThe Ferrous ions (Fe2+) are further oxidised by atmospheric oxygen to\nFerric ions (Fe3+) which come out as rust in the form of hydrated ferric\noxide (Fe2O3.XH2O) and with further production of hydrogen ions.\n11.3.1 Prevention of corrosion\nPrevention of corrosion is of prime importance.\nIt not only saves money\nbut also helps in preventing accidents such as a bridge collapse or failure\nof a key component due to corrosion.\nOne of the simplest methods of preventing corrosion is to prevent the",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00161"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 275,
+      "textbook_page": 265,
+      "pdf_pages": [
+        275
+      ],
+      "textbook_pages": [
+        265
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Cathode: O2(g) + 4H+ (aq) + 4e- g 2H2 O(l)\nThe overall reaction is: 2Fe(s)+O2(g)+4H+\n(aq)g 2Fe2+\n(aq)+2H2O(l)\nThe Ferrous ions (Fe2+) are further oxidised by atmospheric oxygen to\nFerric ions (Fe3+) which come out as rust in the form of hydrated ferric\noxide (Fe2O3.XH2O) and with further production of hydrogen ions.\n11.3.1 Prevention of corrosion\nPrevention of corrosion is of prime importance.\nIt not only saves money\nbut also helps in preventing accidents such as a bridge collapse or failure\nof a key component due to corrosion.\nOne of the simplest methods of preventing corrosion is to prevent the\nsurface of the metallic object to come in contact with atmosphere.\nThis\ncan be done by covering the surface with paint or by some chemicals\n(eg: bisphenol).\nDo you know?\nAlloying is a method of improving the properties of a metal.\nWe can get desired\nproperties by this method.\nFor example, iron is the most widely used metal.\nBut it is\nnever used in its pure state.\nThis is because pure iron is very soft and stretches easily\nwhen hot.\nBut, if it is mixed with a small amount of carbon, it becomes hard and strong.\nWhen iron is mixed with nickel and chromium we get stainless steel which will not\nrust.\nPure gold, known as 24 carat gold, is very soft.\nIt is, therefore, not suitable for\nmaking jewellery.\nIt is alloyed with either silver or copper to make it hard.\nGenerally\nin India 22carat gold is used for making ornaments.\nIt means that 22 parts of pure gold\nis alloyed with 2 parts of either silver or copper.",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00162"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 279,
+      "textbook_page": 269,
+      "pdf_pages": [
+        279,
+        280,
+        281,
+        282
+      ],
+      "textbook_pages": [
+        269,
+        270,
+        271,
+        272
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Where do we use handpicking and washing methods in our daily life?\nGive examples.\nHow do you correlate these examples with enrichment of ore? (AS7)\n1.\nThe impurity present in the ore is called as [ ]\na) Gangue b) flux c) Slag d) Mineral\n2.\nWhich of the following is a carbonate ore? [ ]\na) Magnesite b) Bauxite c) Gypsum d) Galena\nImprove your learning\nMultiple choice questions\n265 Principles of Metallurgy\nSuggested Experiments\n3.\nWhich of the following is the correct formula of Gypsum [ ]\na) CuSO4.\n2H2O b) CaSO4. ½ H2O\nc) CuSO4.\n5H2O d) CaSO4.\n2H2O\n4.\nThe oil used in the froth floatation process is [ ]\na) kerosene oil b) pine oil\nc) coconut oil d) olive oil.\n5.\nFroth floatation is method used for the purification of ______ore. [ ]\na) sulphide b) oxide\nc) carbonate d) nitrate\n6.\nGalena is an ore of [ ]\na) Zn b) Pb c) Hg d) Al\n7.\nThe metal that occurs in the native form is [ ]\na) Pb b) Au c) Fe d) Hg\n8.\nThe most abundant metal in the earth’s crust is [ ]\na) Silver b) Aluminium c) zinc d) iron\n9.\nThe reducing agent in thermite process is [ ]\na) Al b) Mg c) Fe d) Si\n10.\nThe purpose of smelting an ore is [ ]\na) Oxidise b) Reduce\nc) Neutralise d) None of these\n1.\nSuggest an experiment to prove that the presence of air and water are essential\nfor corrosion.\nExplain the procedure. (AS3)\nSuggested Projects\n1.\nCollect information about extraction of metals of low reactivity silver, platinum and gold\nand prepare a report. (AS4)\nCarbon and its Compounds 266\nThe food you eat, the clothes you wear, the cosmetics you use, the\nfuels you use to run automobiles are all the compounds of carbon.\nCarbon was discovered in prehistory and it was known to the ancients.\nThey used to manufacture charcoal by burning organic material.\nCarbon is a non-metal.\nIt belongs to the fourteenth group or IV A\ngroup in the modern periodic table.\nThe elements of this group have four\nelectrons in the valence shell.\nLet us write the electronic configuration of Carbon (6C).\nAtomic number of carbon is 6.\nElectronic configuration of carbon (ground state) 6C: 1s2 2s2 2p2.\nTo\nget the octet in its outer shell it has to gain four more electrons to form\nC4-.\nThe electronegativity of carbon is only 2.5 and its nucleus has only\nsix protons.\nTherefore it would be difficult for a nucleus with six protons\nto hold ten electrons.\nHence, carbon cannot form C4- ions so easily.\n· Can carbon get helium configuration by losing four electrons from\nthe outer shell?\nIf carbon loses four electrons from the outer shell, it has to form C4+\nions.\nThis requires huge amount of energy which is not available normally.\nTherefore C4+ formation also is a remote possibility.\nCarbon has to satisfy\nits tetravalency by sharing electrons with other atoms.\nIt has to form four\ncovalent bonds either with its own atoms or atoms of other elements.\nCarbon and its\nCompounds12\nCHAPTER\nCarbon and its Compounds 267\nThe possibility of bonds formation by a carbon atom is as follows:\na) i.\nFour single covalent bonds, with atoms of same element like\nhydrogen, Chlorine\nExample: CH4, CCl4 or ,\nii.\nFour single covalent bonds with atoms of different elements\nExample:\nb) Carbon atoms may form one double bond and two single bonds\nExample: ;\nc) Carbon atom may form one single bond and a triple bond\nEg: H–C\nC–H or CH 3 –C\nN or carbon atoms may also\nform two double bonds as in CH2 = C = CH2.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00165"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 320,
+      "textbook_page": 310,
+      "pdf_pages": [
+        320,
+        321,
+        322
+      ],
+      "textbook_pages": [
+        310,
+        311,
+        312
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Allotropy is a property shown by which class of substances : elements, compounds or\nmixtures?\nExplain allotropy with suitable examples. (AS1)\n4.\nTwo carbon compounds A and B have molecular formulae C3H8 and C3H6 respectively.\nWhich one of the two is most likely to undergo addition reactions?\nJustify your answer.\n(AS2)\n5 .1 ml of glacial acetic acid and 1ml of ethanol are mixed together in a test tube.\nFew drops of\nconcentrated sulphuric acid is added to the mixture and warmed in a water bath for 5 min.\nAnswer the following:\na.\nName the resultant compound formed. (AS2)\nb.\nRepresent the above change by a chemical equation. (AS1)\nc.\nWhat name is given to such a reactions? (AS1)\nd.\nWhat are the special characteristics of the compound formed? (AS1)\n1.\nWhich of the following solution of acetic acid in water can be used as preservative? [ ]\na) 5-10% b) 10-15%\nc) 15-20% d) 100%\n2.\nThe suffix used for naming an aldehyde is [ ]\na) -ol b) -al c) -one d) -ene\n3.\nAcetic acid, when dissolved in water, it dissociates into ions reversibly because it is a:[ ]\na) Weak acid b) strong acid\nc) weak base d) strong base\n4.\nWhich one of the following hydrocarbons can show isomerism? [ ]\na) C2H4 b) C2H6 c) C3H8 d.\nC4H10\n5.\nCombustion of hydrocarbon is generally accompanied by the evolution of\na) Heat b) Light\nc) both heat and light d) Electric current.\nMultiple choice questions\nCarbon and its Compounds 306\nSuggested Experiments\n6.\n2ml of ethanoic acid was taken in each of the three test tubes A, B and C and 2ml, 4ml and 8ml\nof water was added to them, respectively.\nA clear solution is obtained in: [ ]\na) Test tube A only b) Test tubes A & B only.\nc) Test tubes B and C only d) All the test tubes.\n7.\nIf 2 ml of acetic acid was added slowly in drops to 5ml of water then we will notice[ ]\na) The acid forms a separate layer on the top of water.\nb) Water forms a separate layer on the top of the acid.\nc) Formation of a clear and homogenous solution.\nd) Formation of a pink and clear solution.\n8.\nA few drops of ethanoic acid were added to solid sodium carbonate.\nThe possible results of the\nreactions are: [ ]\na) A hissing sound was evolved b) Brown fumes evolved.\nc) Brisk effervescence occurred. d) A pungent smelling gas evolved.\n9.\nWhen acetic acid reacts with ethyl alcohol, we add conc.\nH2SO4, which acts as……….and\nthe process is called………………….. [ ]\na) Oxidizing agent, saponification b) Dehydrating agent, esterification\nc) Reducing agent, Esterification d) Acid & esterification\n1.\nSuggest a test to find the hardness of water and explain the procedure. (AS3)\n2.\nSuggest a chemical test to distinguish between ethanol and ethanoic acid and explain the\nprocedure.(AS3)\n3.\nAn organic compound ‘X’ with a molecular formula C2H6O undergoes oxidation with alkaline\nKMnO4 and forms the compound ‘Y’ that has molecular formula C2H4O2. (AS3)\na.\nIdentify ‘X’ and ‘Y’\nb.\nWrite your observation regarding the product when the compound ‘X’ is made to\nreact with compound ‘Y’ which is used as a preservative for pickles.\n1.\nPrepare models of methane, ethane, ethene and ethyne molecules using clay balls and match\nsticks. (AS4)\n2.\nCollect information about artificial ripening of fruits by ethylene. (AS4)\n3.\nHow do you condemn the use of alcohol as a social practice. (AS7)\nSuggestive Projects\nCarbon and its Compounds 307\nWhat is pKa?\npKa is the negative value of logarithm of dissociation constant of an acid.\npKa is a measure of how much an acid dissociates in a solution.",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00186"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"To prove that the presence of air and water are essential for corrosion, you can perform the following experiment: Take three test tubes and place clean iron nails in each of them. Label these test tubes A, B, and C. Pour some water in test tube A and cork it. Pour boiled distilled water in test tube B, add about 1 ml of oil and cork it. The oil will float on water and prevent the air from dissolving in the water. Put some anhydrous calcium chloride in test tube C and cork it. Anhydrous calcium chloride will absorb the moisture, if any, from the air. Leave these test tubes for a few days and then observe. You will observe that iron nails rust in test tube A, but they do not rust in test tubes B and C. This experiment shows that both air and water are necessary for corrosion.\",\n  \"selected_evidence_ids\": [\"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 273,\n      \"textbook_page\": 263\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 174.96313620000728,
+    "latency_seconds": 246.5676977999974,
+    "usage": {
+      "completion_tokens": 252,
+      "prompt_tokens": 4291,
+      "total_tokens": 4543,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-aciaiZ9sxuJ9nxUM38qlbvmTtVkgjDTX",
+    "peak_rss_bytes": 19040403456
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "To prove that the presence of air and water are essential for corrosion, you can perform the following experiment: Take three test tubes and place clean iron nails in each of them. Label these test tubes A, B, and C. Pour some water in test tube A and cork it. Pour boiled distilled water in test tube B, add about 1 ml of oil and cork it. The oil will float on water and prevent the air from dissolving in the water. Put some anhydrous calcium chloride in test tube C and cork it. Anhydrous calcium chloride will absorb the moisture, if any, from the air. Leave these test tubes for a few days and then observe. You will observe that iron nails rust in test tube A, but they do not rust in test tubes B and C. This experiment shows that both air and water are necessary for corrosion.",
+    "selected_evidence_ids": [
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E2",
+        "pdf_page": 273,
+        "textbook_page": 263
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Use three clean nails in labelled test tubes",
+        "token_recall": 0.7143,
+        "matched": true
+      },
+      {
+        "point": "Expose one to both air and water",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Exclude air with boiled water plus an oil layer in another",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Exclude water with anhydrous calcium chloride in the third",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Only the nail with both air and water rusts",
+        "token_recall": 0.8333,
+        "matched": true
+      },
+      {
+        "point": "Conclude both are necessary under the experiment’s conditions",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.6667,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 151
+  },
+  "completed_at": "2026-07-17T15:15:11+00:00"
+}

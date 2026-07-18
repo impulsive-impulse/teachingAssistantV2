@@ -1,0 +1,182 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407",
+  "question_id": "GEN-PSC-011",
+  "question": "What is an orbital? How is it different from Bohr’s orbit?",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "6e18e934fcfd9eff6a21424cc0bc8eeb35d7eccf77eaa68400aba490ea8dc688",
+  "context_sha256": "d4d2387fe96fda95b35719dad249d15c81f5c0c7a9210937283b080c5e1cd4a1",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 125,
+      "textbook_page": 115,
+      "pdf_pages": [
+        125,
+        126,
+        127
+      ],
+      "textbook_pages": [
+        115,
+        116,
+        117
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Take a pinch of cupric chloride in a watch glass and make a paste with\nconcentrated hydrochloric acid.\nTake this paste on a platinum loop and\nintroduce it into a non-luminous flame.\n· What colour do you observe?\nCarry out similar activity with strontium chloride.\nCupric chloride produces a green colour flame while strontium\nchloride produces a crimson red flame.\n· Do you observe yellow light in street lamps?\n116 Structure of Atom\nSodium vapours produce yellow light in street lamps.\n· Why do different elements emit different flame colours when heated by\nthe same non-luminous flame?\nScientists found that each element emits its own characteristic colour.\nThese colours correspond to certain discrete wavelengths of light and are\ncalled line spectra.\nThe lines in atomic spectra can be used to identify unknown atoms,\njust like fingerprints are used to identify people.\n6.2 Bohr’s model of hydrogen atom and its limitations\nNiels Bhor proposed an atomic model based on hydrogen atomic\nspectrum.\n· What does a line spectrum of\nhydrogen atom tell us about the\nstructure of an atom?\nPostulates of Niels Bohr\nElectrons in an atom occupy\n‘stationary’ orbits (states) of fixed\nenergy at different distances from\nthe nucleus.\nWhen an electron ‘jumps’ from\na lower energy state (ground state) to higher energy state (excited state) it\nabsorbs energy or emits energy when such a jump occurs from a higher\nenergy state to a lower energy state.\nThe energies of an electron in an atom can have only certain values\nE1, E2, E3 ……; that is, the energy is quantized.\nThe states corresponding\nto these energies are called stationary states and the possible values of\nthe energy are called energy levels.\nfig-3: Hydrogen Spectrum\nNiels Henrik David Bohr was a Danish physicist\nwho made foundational contributions to understanding\natomic structure and quantum theory, for which he\nreceived the Nobel Prize in Physics in 1922.\nBohr was\nalso a philosopher and a promoter.\n117 Structure of Atom\nThe lowest energy state of the electron is known as ground state.\nThe electron moves to a higher energy level i.e. to the excited state by\ngaining energy.\n· Does the electron retain the absorved energy forever?\nThe electron does not stay in the excited level for long.\nThe electron loses the energy and comes back to its ground state.\nThe\nenergy emitted by the electron is seen in the form of electromagnetic\nenergy of specific warelength and when the wavelength is in the visible\nregion it is visible as an emission line.\nBohr’s model explains all the line spectra observed in the case of\nhydrogen atom.\nIt is a successful model as far as line spectra of hydrogen\natom is concerned.\nBut the line spectrum of hydrogen atom when observed through a high\nresolution spectroscope appears as groups of finer lines.\n· Did Bohr’s model account for the splitting of line spectra of a hydrogen\natom into finer lines?\nBohr’s model failed to account for splitting of line spectra.\n6.3 Bohr-Sommerfeld model of an atom\nIn an attempt to account for the structure (splitting) of line spectra\nknown as fine spectra, Sommerfeld modified Bohr’s atomic model by\nadding elliptical orbits.\nWhile retaining the first of Bohr’s circular orbit\nas such, he added one elliptical orbit to Bohr’s second orbit, two elliptical\norbits to Bohr’s third orbit, etc., such that the nucleus of the atom lies at\none of the principal foci of these elliptical orbits.\nHe was guided by the\nfact that, in general, periodic motion under the influence of a central force\nwill lead to elliptical orbits with the nucleus situated at one of the foci.",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00069"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 127,
+      "textbook_page": 117,
+      "pdf_pages": [
+        127,
+        128,
+        129
+      ],
+      "textbook_pages": [
+        117,
+        118,
+        119
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "In an attempt to account for the structure (splitting) of line spectra\nknown as fine spectra, Sommerfeld modified Bohr’s atomic model by\nadding elliptical orbits.\nWhile retaining the first of Bohr’s circular orbit\nas such, he added one elliptical orbit to Bohr’s second orbit, two elliptical\norbits to Bohr’s third orbit, etc., such that the nucleus of the atom lies at\none of the principal foci of these elliptical orbits.\nHe was guided by the\nfact that, in general, periodic motion under the influence of a central force\nwill lead to elliptical orbits with the nucleus situated at one of the foci.\nfig-4: The allowed electronic orbits for the main Quantum numbers by Bohr - Sommerfeld model\nl=0 l=1\nl=0\nl=2\nl=1\nl=0\nl=3\nl=2\nl=1\nl=0\nn=1 n=2 n=3 n=4\n118 Structure of Atom\nBohr-Sommerfeld model, though successful in accounting for the fine\nline structure of hydrogen atomic spectra, does not provide a satisfactory\npicture of the structure of atom in general.\nThis model failed to account\nfor the atomic spectra of atoms of more than one electron.\n· Why is the electron in an atom restricted to revolve around the nucleus\nin stationary orbits located at certain fixed distances?\n6.4 Quantum mechanical model of an atom\n· Do the electrons follow defined paths around the nucleus?\nIf the electron revolves around the nucleus in defined paths or orbits,\nthe exact position of the electron at various times will be known.\nFor that\nwe have to answer two questions:\n· What is the velocity of the electron?\n· Is it possible to find the exact position of the electron?\nElectrons are invisible to naked eye.\nThen, how do you find the position\nand velocity of an electron?\nTo find articles during dark nights we take the help of torchlight.\nSimilarly, we can take the help of suitable light to find the position and\nvelocity of electron.\nAs the electrons are very small, light of very short\nwavelength is required for this task.\nThis short wavelength light interacts with the electron and disturbs the\nmotion of the electron.\nHence, simultaneously the position and velocity\nof electron cannot be measured accurately.\nFrom the above discussion, it is clear that electrons do not follow\ndefinite paths in an atom.\nDo atoms have a definite boundary, as suggested by Bohr’s model?\nIf the electrons are not distributed in orbits around the nucleus this\nMax Karl Ernst Ludwig Planck was a German\ntheoretical physicist who originated quantum theory, which\nwon him the Nobel Prize in Physics in 1918.\nPlanck made\nmany contributions to theoretical physics, but his fame rests\nprimarily on his role as originator of the quantum theory.\nThis theory revolutionized human understanding of atomic\nand subatomic processes.\n119 Structure of Atom\nmeans that an atom does not have a definite boundary.) As a result, it is not\npossible to pinpoint an electron in an atom.\nUnder these circumstances in order to understand the properties of\nelectrons in an atom, a quantum mechanical model of atom was developed\nby Erwin Schrodinger.\nAccording to this model of an atom, instead of orbits of Bohr’s model,\nthe electrons are thought to exist in a particular region of space around\nthe nucleus at a given instant of time\n· What do we call the region of space where the electron might be, at a\ngiven time?\nThe region of space around the nucleus where the probability of finding\nthe electron is maximum is called an orbital.\nIn a given space around the nucleus, only certain orbitals can exist.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00070"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 129,
+      "textbook_page": 119,
+      "pdf_pages": [
+        129,
+        130
+      ],
+      "textbook_pages": [
+        119,
+        120
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Under these circumstances in order to understand the properties of\nelectrons in an atom, a quantum mechanical model of atom was developed\nby Erwin Schrodinger.\nAccording to this model of an atom, instead of orbits of Bohr’s model,\nthe electrons are thought to exist in a particular region of space around\nthe nucleus at a given instant of time\n· What do we call the region of space where the electron might be, at a\ngiven time?\nThe region of space around the nucleus where the probability of finding\nthe electron is maximum is called an orbital.\nIn a given space around the nucleus, only certain orbitals can exist.\nEach orbital of a stable energy state for the electron is described by a\nparticular set of quantum numbers.\n6.5 Quantum numbers\nEach electron in an atom is described by a set of three numbers n, l,\nand ml .These numbers are called quantum numbers.\nThese numbers\nindicate the probability of finding the electron in the space around the\nnucleus.\n· What information do the quantum numbers provide?\nThe quantum numbers describe the space around the nucleus where\nthe electrons are found and also their energies.\n· What does each quantum number signify?\n6.5.1 Principal Quantum Number (n)\nThe principal quantum number is related to the size and energy of the\nmain shell.\n‘n’ has positive integer values of 1, 2, 3,…\nAs ‘n’ increases, the shells become larger and the electrons in those\nshells are farther from the nucleus.\nAn increase in ‘n’ also means higher energy. n = 1, 2, 3, ... are often\nrepresented by the letters K, L, M… For each ‘n’ value there is one main shell.\nShell K L M N\nn 1 2 3 4\n6.5.2 The angular - momentum quantum number (l)\nThis quantum number is represented by a letter ‘l’.\n‘l’ has integer values from 0 to n-1 for each value of ‘n’.\nEach ‘l’ value\nrepresents one sub-shell.\n120 Structure of Atom\nTable-1\nl Sub- Number of\nshell degenerated\norbitals\n0 s\n1 p\n2 d\n3 f\nEach value of ‘l’ is related to the shape of a particular sub-shell in the\nspace around the nucleus.\nThe value of ‘l’ for a particular sub-shell is generally designated by the\nletters s, p, d . . . as follows:\nl 0 1 2 3\nName of the sub-shell s p d f\nWhen n = 1, there is only one sub-shell with l = 0.\nThis is designated\nas ‘1s’ orbital.\nWhen n = 2, there are two sub-shells, with l = 0, the ‘2s’ sub-shell and\nwith l = 1, the ‘2p’ sub-shell.\n· What is the maximum value of ‘l’ for n=3?\n· How many values can ‘l’ have for n = 4? and what are sub shells.\n6.5.3 The magnetic quantum number (m l)\nThe magnetic quantum number (ml) has integer values between -l and\nl, including zero.\nThus for a certain value of l, there are (2l +1) integer\nvalues of ml as follows:\n-l, (-l+1) . . ., –1, 0, 1, . . . (+l - 1), +l\nThese values describe the spatial orientation of the orbital in space\nrelative to the other orbitals in the atom.\nWhen l = 0, (2l+ 1) = 1 and there is only one\nvalue of ml, thus we have only one orbital i.e., 1s.\nWhen l= 1, (2 l+ 1) = 3, that means m l has\nthree values, namely, -1, 0, and 1 or three p\norbitals, with different orientations along x, y, z\naxes.\nThese are labelled as px, py, and pz.\n· Do these three p-orbitals have the same\nenergy?\nThe number of ‘ml’ values indicates the number of orbitals in a subshell with a particular l value.",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00071"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 136,
+      "textbook_page": 126,
+      "pdf_pages": [
+        136,
+        137,
+        138
+      ],
+      "textbook_pages": [
+        126,
+        127,
+        128
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "energy state by emitting energy in the form of electromagnetic energy of appropriate frequency.\n· Atomic line spectra arise because of absorption /emission of certain frequencies of light energy.\n· It is not possible to measure accurately the position and velocity of an electron simultaneously .\n· The space around the nucleus where the probability of finding the electron is maximum is called\norbital.\n· The three quantum numbers n, l, ml describe the energy, shape and orientation respectively, of\nan atomic orbital.\nSpin is an intrinsic property of an atom.\n· Spin is an intrinsic property of an electron.\n· The arrangement of electrons in shells, sub-shells and orbitals in an atom is called the electron\nconfiguration.\n· According to Pauli Exclusion Principle no two electrons of the same atom can have all the four\nquantum numbers same.\n· Aufbau principle: The lowest-energy orbitals are filled first.\n· Hund’s rule: The orbitals of equal energy (degenerate) are occupied with one electron each\nbefore pairing of electrons starts.\nI.\nReflections of concepts\n1.\nWhat information does the electronic configuration of an atom\nprovide? (AS1)\n2.\nRainbow is an example for continuous spectrum – explain. (AS1)\n3.\nHow orbital is different from Bohr’s orbit?(AS1)\n4.\nExplain the significance of three Quantum numbers in predicting the positions of an electron\nin an atom.(AS1)\n5.\nH ow w e are using the nl x method in writing electronic configuration? (AS1)\n6.\nWhich electronic shell is a higher energy level K or L? (AS2)\nImprove your learning\nWhat we have learnt\n127 Structure of Atom\nII.\nApplication of concepts\n1.\nAnswer the following questions.\na.\nHow many maximum number of electrons can be accommodated in a principal energy level? (AS1)\nb.\nHow many maximum number of electrons can be accommodated in a sub shell?\nc.\nHow many maximum number of electrons can be accommodated in an orbital?\nd.\nHow many sub shells are present in a principal energy level?\ne.\nHow many spin orientations are possible for an electron in an orbital? (AS1)\n2.\nIn an atom the number electrons in M-shell is equal to the number of electrons in the K and L\nShell.\nAnswer the following questions. (AS4)\na.\nWhich is the outer most shell?\nb.\nHow many electrons are there in its outermost shell?\nc.\nWhat is the atomic number of element?\nd.\nWrite the electronic configuration of the element.\n3.\nFollowing orbital diagram shows the electron configuration of nitrogen atom.\nWhich rule does\nnot support this?\nN (Z = 7) (AS1)\n4.\nWrite the four quantum numbers for the differentiating electron of sodium (Na) atom? (AS1)\n5. (i) An electron in an atom has the following set of four quantum numbers to which orbital does\nit belong\n(ii) Write the four quantum numbers for 1s1 electron.(AS4)\n6.\nThe wave length of a radio wave is 1.0m.\nFind its frequency.(AS7)\n1) An emission spectrum consists of bright spectral lines on a dark back ground.\nWhich one of the\nfollowing does not correspond to the bright spectral lines? [ ]\nA) Frequency of emitted radiation B) Wave length of emitted radiation\nC) Energy of emitted radiation C) Velocity of light\n# # # ### #\n1s2 2s2 2p3\nn l ml ms\n2 0 0 + ½\nMultiple choice questions\n128 Structure of Atom\n2) The maximum number of electrons that can be accommodated in the L – shell of an atom is\nA) 2 B) 4 C) 8 D) 16 [ ]\n3) If l = 1 for an atom then the number of orbitals in its sub-shell is [ ]\nA) 1 B) 2 C) 3 D) 0\n4) The quantum number which explains about size and energy of the orbit or shell is: [ ]",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00075"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 193,
+      "textbook_page": 183,
+      "pdf_pages": [
+        193,
+        194
+      ],
+      "textbook_pages": [
+        183,
+        184
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Hund’s rule each orbital gets one electron.\nThe new orbitals based on the\ntypes of orbitals that have undergone hybridisation are called sp orbitals.\nThe two sp orbitals of Be get separated by 1800.\nNow, each chlorine atom\ncomes with its 3pz\n1 orbital and overlaps it the sp orbitals of Be forming\ntwo identical Be-Cl bonds (ssp-p bonds) .\nClBeCl = 1800.\nBoth the bonds are of same strength.\n8.8.2 Formation of BF 3 molecule\n5B has electronic configuration 1s 2 2s2 2px\n1.\nAs it has one unpaired\nelectron (2px\n1) it should form only one covalent bond to give B-F molecule.\nBut we get practically BF3 molecule.\nCan you guess what could be the reason for this?\ni.\nBoron (B) first undergoes excitation to get electronic configuration\n1s2 2s1 2px\n1 2py\n1.\nii.\nAs it forms three identical B-F bonds in BF3, it is suggested that\nexcited ‘B’ atom undergoes hybridisation.\nThere is an intermixing of 2s,\n2px, 2py orbitals and their redistribution into three identical orbitals called\nsp2 hybrid orbitals.\nFor three sp2 orbitals to get separated to have minimum\nrepulsion the angle between any two orbitals is 1200 at the central atom\nand each sp2 orbital gets one electron.\nBeryllium Chloride\n179 Chemical Bonding\nNow three fluorine atoms overlap their 2p z\norbitals containing unpaired electrons (F9 1s2 2s2\n2px\n2 2p y\n2 2p z\n1) the three sp 2 orbitals of ‘B’ that\ncontain unpaired electrons to form three ssp2-p\nbonds.\n8.8.3 Formation of NH 3 molecule\nOne nitrogen atom and three hydrogen atoms are present in one\nammonia molecule.\nAll the three N-H bonds are of same strength and\nHNH = 107048/\n7N has electronic configuration 1s2 2s2 2px\n1 2py\n1 2pz\n1.\nIf three hydrogen atoms overlap their 1s orbitals on the three ‘p’\norbitals of nitrogen atom, they give identical s p-s bonds but, then\nthe HNH should be equal to 900 where as 107048/ .\nTo explain the\ndiscrepancy in the bond angle ‘N’ atom is said to undergo sp 3\nhybridisation.\nIn this process ‘2s’ and 2p x, 2py, 2pz orbitals of\nnitrogen intermix and redistribute into four identical sp3 orbitals.\nOne of\nthe four sp3 orbitals get a pair of electrons and the other three sp3 orbitals\nget one electron each.\nNow hydrogen atoms overlap their 1s orbitals\ncontaining unpaired electrons the sp 3 orbitals of ‘N’ atom containing\nunpaired electrons to give three ss-sp3 bonds.\nHNH should be 1090 28/\nfor sp3 hybridisation.\nAs there is a lone pair in one of the sp3 orbitals, there\nis a greater lone pair – bond pair repulsion which decreases the bond angle\nHNH to 107048/.\n8.8.4 Shape of water molecule\nIt is found that HOH is 104031/ .\nThe electronic configuration of 8O is\n1s2 2s2 2px\n2 2py\n1 2pz\n1 and 1H is 1s1.\nTherefore, there should be two s s-p bonds due to the overlap of ‘s’\norbitals of two hydrogen atoms, the ‘p’ orbitals of oxygen atom which\ncontain unpaired electrons.\nHOH should be 900.\nAmnonia\n107048/\nBoran trifluoride",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00110"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"An orbital is a region in an atom where there is a high probability of finding an electron. It is a concept from the quantum mechanical model of the atom, which describes the probability distribution of an electron around the nucleus. In contrast, Bohr’s orbit refers to the fixed circular paths that electrons are thought to follow around the nucleus in his model. Bohr’s model suggested that electrons revolve in specific, quantized orbits at fixed distances from the nucleus, and they emit or absorb energy when transitioning between these orbits. However, the quantum mechanical model, developed by Schrödinger, replaced the idea of fixed orbits with orbitals, which are not defined paths but regions of space where electrons are likely to be found. This model better explains the behavior of electrons and accounts for phenomena like the splitting of spectral lines that Bohr’s model could not.\",\n  \"selected_evidence_ids\": [\"E1\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 125,\n      \"textbook_page\": 115\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 136,\n      \"textbook_page\": 126\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 184.7476333999948,
+    "latency_seconds": 283.5804302000033,
+    "usage": {
+      "completion_tokens": 285,
+      "prompt_tokens": 4451,
+      "total_tokens": 4736,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-1GrHZMfjmGtmeZIGXWIGIv8iouysKpMd",
+    "peak_rss_bytes": 19040403456
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "An orbital is a region in an atom where there is a high probability of finding an electron. It is a concept from the quantum mechanical model of the atom, which describes the probability distribution of an electron around the nucleus. In contrast, Bohr’s orbit refers to the fixed circular paths that electrons are thought to follow around the nucleus in his model. Bohr’s model suggested that electrons revolve in specific, quantized orbits at fixed distances from the nucleus, and they emit or absorb energy when transitioning between these orbits. However, the quantum mechanical model, developed by Schrödinger, replaced the idea of fixed orbits with orbitals, which are not defined paths but regions of space where electrons are likely to be found. This model better explains the behavior of electrons and accounts for phenomena like the splitting of spectral lines that Bohr’s model could not.",
+    "selected_evidence_ids": [
+      "E1",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 125,
+        "textbook_page": 115
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 136,
+        "textbook_page": 126
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "An orbital is a region of high probability of finding an electron",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "A Bohr orbit is a fixed path/energy shell with a defined radius",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Orbitals do not have sharp classical paths and have characteristic shapes",
+        "token_recall": 0.375,
+        "matched": false
+      },
+      {
+        "point": "A shell can contain 2n² electrons while one orbital holds at most two with opposite spins",
+        "token_recall": 0.1538,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 145
+  },
+  "completed_at": "2026-07-17T14:52:07+00:00"
+}

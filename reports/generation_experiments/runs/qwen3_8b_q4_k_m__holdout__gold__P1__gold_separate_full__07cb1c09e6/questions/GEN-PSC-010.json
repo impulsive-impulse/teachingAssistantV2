@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6",
+  "question_id": "GEN-PSC-010",
+  "question": "Explain briefly the reason for the blue colour of the sky.",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "a86bbd505970c1e9f8f91dff5c4dfa084de6783568ef46c17b0aa9fbdc950fb0",
+  "context_sha256": "7b3ab5bb0fd2b66199b889fa83e75ac0327b840265d4b26b01c7f605f7165c52",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 115,
+      "textbook_page": 105,
+      "text": "Government’s Gift for Students’ Progress 105 Human Eye and Colourful World\nAll the drops that disperse the light towards you lie in the shape of the\ncone – a cone of different layers. The drops that disperse red colour to\nyour eye are on the outer most layer of the cone, similarly the drops that\ndisperse orange colour to your eye are on the layer of the cone beneath\nthe red colour cone. In this way the cone responsible for yellow lies beneath\norange and so on it till the violet colour cone becomes the innermost\ncone.(see in fig.- 15).\nIt is our common experience that the sky appears blue in colour on a\nbright dry day.\n· Why is the sky blue?\nTo answer this question, you need to understand another phenomenon\nof light called scattering.\n· What is scattering?\nLet us see\n5.4.4 Scattering of Light\nScattering of light is a complex phenomenon. Let us try to understand\nthe idea of scattering.\n· Do you know what happens to the free atom or molecule when it is\nexposed to certain frequency of light?\nAtoms or molecules which are exposed to light absorb light energy\nand emit some part of the light energy in different directions. This is the\nbasic process happens in scattering of light.\nThe effect of light on a molecule or an atom depends on the size of\natom or molecule. If the size of the particle (atom or molecule) is small, it\nwill be affected by higher frequency (lower wave length) light and vice versa.\nThink and discuss\n· Can you imagine the shape of rainbow when observed during travel\nin an airplane? Discuss with your friends and collect information.",
+      "text_sha256": "05b0b726ea5a28fc411e7132e4cea00ca6b81555fb5db4dbc36f4ee6ce52cc92"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 116,
+      "textbook_page": 106,
+      "text": "Government’s Gift for Students’ Progress 106 Human Eye and Colourful World\nLet us consider that a certain frequency of light is incident on an atom.\nThen the atom comes into vibration due to this light. This in turn releases\nor re-emits light in all directions with different intensity.\nThe intensity of light is the energy of light passing through unit area of\nplane, taken normal to the direction of propagation of light, in one second.\nLet us consider that the free atom or free molecule\nis somewhere in space as shown in fig.- 16.\nLight of certain frequency falls on that atom or\nmolecule. This atom or molecule responds to the light\nwhenever the size of the atom or molecule is\ncomparable to the wave length of light. If this condition\nis satisfied, the atom absorbs light and vibrates. Due to\nthese vibrations, the atom re-emits a certain fraction\nof absorbed energy in all directions with different\nintensities. The re-emitted light is called scattered light and the process\nof re-emission of light in all directions with different intensity is called\nscattering of light. The atoms or molecules are called scattering centre.\nLet us take the angle ‘q’ between the incident light and a direction in which\nthe intensity of scattered light is observed, we call this angle as angle of\nscattering. It is experimentally observed that the intensity of scattered light\nvaries with angle of scattering. The intensity is maximum at 900 angle of\nscattering.\nThis is the reason for the appearance of clear blue colour when look at\nthe sky in a direction perpendicular to the direction of the sun rays. If our\nangle of view is changed, the intensity of blue colour also changes.\nNow you might have got a doubt why scattering of light gives blue\ncolour only. Why can’t it give other colours?\nLet us find out whether the scattering centres are responsible for the\nblue colour of the sky?\nWe know that our atmosphere contains different types of molecules\nand atoms. The reason for blue sky is due to the molecules N2 and O2. The\nsizes of these molecules are comparable to the wavelength of blue light.\nThese molecules act as scattering centres for scattering of blue light.\n· Why is that the sky appears white sometimes when you view it in certain\ndirection on hot days?\nfig-16\nSun light\nScattered light\nAtom\nfig-16",
+      "text_sha256": "d7b25a20a5fd44b00ebfd31501dca4a67420c310a1656d267a569a19196cd097"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"The blue colour of the sky is due to a phenomenon called scattering of light. When sunlight enters Earth's atmosphere, it interacts with molecules like nitrogen (N2) and oxygen (O2). These molecules are small and their size is comparable to the wavelength of blue light. As a result, blue light is scattered more effectively in all directions compared to other colours. This scattered blue light reaches our eyes from all directions, making the sky appear blue. However, when the sun is low on the horizon, the light passes through more of the atmosphere, scattering more blue light and allowing other colours like red and orange to dominate, resulting in a reddish sky during sunrise or sunset.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 115,\n      \"textbook_page\": 105\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 116,\n      \"textbook_page\": 106\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 26.77565689999028,
+    "latency_seconds": 66.98760630001198,
+    "usage": {
+      "completion_tokens": 250,
+      "prompt_tokens": 1062,
+      "total_tokens": 1312,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-962excDergGMKh4k540Uw1ScBqwoGLjS",
+    "peak_rss_bytes": 13698973696
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "The blue colour of the sky is due to a phenomenon called scattering of light. When sunlight enters Earth's atmosphere, it interacts with molecules like nitrogen (N2) and oxygen (O2). These molecules are small and their size is comparable to the wavelength of blue light. As a result, blue light is scattered more effectively in all directions compared to other colours. This scattered blue light reaches our eyes from all directions, making the sky appear blue. However, when the sun is low on the horizon, the light passes through more of the atmosphere, scattering more blue light and allowing other colours like red and orange to dominate, resulting in a reddish sky during sunrise or sunset.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 115,
+        "textbook_page": 105
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 116,
+        "textbook_page": 106
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Sunlight is scattered by atmospheric molecules",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Scattering depends on wavelength/frequency and scatterer size",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Nitrogen and oxygen molecules preferentially scatter blue light toward observers",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Without the atmosphere the sky would appear dark",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 116
+  },
+  "completed_at": "2026-07-17T11:47:26+00:00"
+}

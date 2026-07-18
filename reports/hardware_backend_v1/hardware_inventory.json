@@ -1,0 +1,52 @@
+{
+  "cpu": {
+    "Name": "Snapdragon(R) X 12-core X1E80100 @ 3.40 GHz",
+    "Manufacturer": "Qualcomm Technologies Inc",
+    "Architecture": 12,
+    "NumberOfCores": 12,
+    "NumberOfLogicalProcessors": 12,
+    "MaxClockSpeed": 3417
+  },
+  "system": {
+    "Manufacturer": "Microsoft Corporation",
+    "Model": "Microsoft Surface Laptop, 7th Edition",
+    "TotalPhysicalMemory": 68171038720,
+    "SystemType": "ARM64-based PC"
+  },
+  "os": {
+    "Caption": "Microsoft Windows 11 Enterprise",
+    "Version": "10.0.26200",
+    "BuildNumber": "26200",
+    "OSArchitecture": "ARM 64-bit Processor"
+  },
+  "gpu": {
+    "Name": "Qualcomm(R) Adreno(TM) X1-85 GPU",
+    "DriverVersion": "31.0.133.1",
+    "DriverDate": "/Date(1762646400000)/",
+    "PNPDeviceID": "ACPI\\VEN_QCOM&DEV_0C36&SUBSYS_IDP08380&REV_0088\\0"
+  },
+  "npu": {
+    "Class": "ComputeAccelerator",
+    "FriendlyName": "Snapdragon(R) X Elite - X1E80100 - Qualcomm(R) Hexagon(TM) NPU",
+    "InstanceId": "ACPI\\QCOM0D0A\\2&DABA3FF&0",
+    "Status": "OK"
+  },
+  "drivers": [
+    {
+      "DeviceName": "Snapdragon(R) X Elite - X1E80100 - Qualcomm(R) Hexagon(TM) NPU",
+      "DriverVersion": "30.0.220.3000",
+      "DriverDate": "/Date(1785542400000)/",
+      "Manufacturer": "Qualcomm Technologies, Inc.",
+      "InfName": "oem13.inf"
+    },
+    {
+      "DeviceName": "Qualcomm(R) Adreno(TM) X1-85 GPU",
+      "DriverVersion": "31.0.133.1",
+      "DriverDate": "/Date(1757548800000)/",
+      "Manufacturer": "Qualcomm Incorporated",
+      "InfName": "oem12.inf"
+    }
+  ],
+  "runtime_architecture": "ARM64",
+  "ram_bytes_psutil": 68171038720
+}

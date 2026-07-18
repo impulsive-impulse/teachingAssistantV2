@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top5_page_order_compact__684f17db77",
+  "question_id": "GEN-BIO-015",
+  "question": "Explain Mendel’s monohybrid experiment with an example. Which law of inheritance does it demonstrate?",
+  "book_id": "biology",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "a9e6e7e2ca6d4d5c525f39b3edd9a67bc4b0da13a7d8e210e5b29c113d099dc0",
+  "context_sha256": "daf765d88107a7582f67b2ed167de072a39688c0b1556e0ad823f3b96bac33df",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 186,
+      "textbook_page": 177,
+      "pdf_pages": [
+        186,
+        187,
+        188
+      ],
+      "textbook_pages": [
+        177,
+        178,
+        179
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x Compare your characters to that of any one of your friend.\nHow many\ncharacters did you find were similar among you and your friend?\n178 Heredity and Evolution\nx Do you share more similar characters with your parents or with\nyour friends?\nx Do you think that your differences from parents are more or less\nthan the differences from friends?\nWhy /why not?\nDifferences in characters within very closely related groups of\norganisms are referred to as variations.\nOften a new character in a group\nmay lead to variations which also get inherited.\nFig-1: V ariations in iris colour and ear lobes\nx Is variation all about apparent differences?\nIs it about some subtle differences as well that we most often overlook?\n(Remember looking for two similar neem / grass plants (Garika) in the\nchapter on diversity and classification in class IX)\nActivity-3\nObserve seeds in a pea or bean pod.\nYou may observe several parts to\narrive at a generalisation.\nx Can you find two similar seeds there?\nx What makes them vary? (Hint: You have learnt that seeds are formed\nfrom ovules)\nx Why variations are important?\nHow are variations useful for an\norganism or a population?\n8.2 Mendel and his experiments\nOver centuries variations and their role in nature have been studied by\nnaturalists.\nDuring early 19th century, a lot of work was done by several\nscientists.\nSome of these studies will help us to understand how variations\noccur and are transferred from one generation to the next.\nWe shall study\na detailed account of experimental evidences provided by Gregor Johann\nMendel in the early 19th century who is known as ‘Father of genetics’.\nReflection of light at curved surfaces179 Heredity and Evolution\nIn 1857 Gregor Johann Mendel started working on the problem of\nhow variations were passed from one generation to the other.\nMendel\ndid not do his experimental work either in a University or in a\nLaboratory.\nAs he was an Austrian monk in a monastery he simply did\nFig-2: Gregor\nJohann Mendel\nhis experiments in the monastery garden.\nHe worked for over seven\nyears after which he presented the conclusions from his experimental\ndata in the form of a detailed research paper.\n8.2.1 Reasons for selecting Pea plant\nMendel made many careful observations of plants and found that\npea plants would be most suitable to carry on further experimentation\nbecause it has the following advantages:\n1.\nWell defined characters 2.\nBisexual flowers\n3.\nPredominently self pollinating\n4.\nSuitable for cross pollination\n5.\nIt is an annual plant\nThen he planned and designed experiments to find out the answers to\nquestions that came to his mind.\nHe had worked on nearly 10,000 pea\nplants of 34 different varieties.\nObserving pea plants carefully, Mendel noted that they differ from\none another in many ways.\nTable - 3 : Seven contrasting characters of pea plants studied by Mendel\nS.\nNo.\nCharacter Description\n1.\nColour of the flower Purple or white colour flowers\n2.\nPosition of the flower Either in axial or terminal in position. (If they\nare axial they are arranged in axial position\nthroughout the length of the stem).\n3.\nColour of the seed The seeds are either yellow or green colour.\n4.\nShape of the seed The seeds are either round (smooth surface) or\nwrinkled.\n5.\nShape of the pod The completely developed pod is either smooth,\ninflated or constricted.\n6.\nColour of the pod All the ripe pods are yellow in colour.\nUnripe\nparts are either yellow or green in colour.\n7.\nLength of the stem When the plants are grown in the same\nenvironment some stems are tall (6 to 7 feet) and",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00113"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 191,
+      "textbook_page": 182,
+      "pdf_pages": [
+        191,
+        192,
+        193
+      ],
+      "textbook_pages": [
+        182,
+        183,
+        184
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "xBy the process of repeated self-pollination, Mendel produced seeds of\nvarieties he called ‘pure’.\nxHe would often start experimentation with such pure variety and allowed\nthe plant to grow and start flowering, then he would cross-pollinate\nthem as shown in the figure.\n8.2.3 Monohybrid Cross\nA cross-pollination between a pure breed of yellow seed\nbearing plant and green seed bearing plant gave the following\nresults :\nFirst Filial / F1-generation : (Filial means progeny)\nAll pea seeds were Yellow.\nOn self-pollination of these pea\nplants the following results were obtained :\nAll pea seeds were yellow\nSecond Filial / F2-generation : The F2 generation had about\n75% of yellow seeded pea plants and 25% of green seeded\npea plants, i.e. they appear in 3 : 1 ratio.\nAdding to above results, Mendel made following\nobseravtions :\n1.\nA set of peas (about 25%) obtained in F2 generation are\nyellow seeded plants (Homozygous dominant).\n2.\nA Set of peas (about 50%) obtained in F2 generation are\nheterozygous yellow and give yellow and green seeds in\n3:1 on self pollination.\n3.\nA set of peas (about 25%) obtained in F2 generation are\ngreen seeded.\nOn self-pollination they keep producing\ngreen seeded plants (Homozygous recessive).\n1 2 3\nParents\nF1 generation\nF2 generation\nPhenotype\n(3:1)\nMendel made some assumptions by which he could explain his\nobservations.\nAssumption 1: Every pea plant has two ‘factors’ which are responsible\nfor producing a particular character or trait.\nThe determining agent\nresponsible for each trait is called a factor.\nMendel carefully choose the plants which did not produce a mixed\nresult (pure).\nIn our example of yellow and green peas, a pure breed\n(parental stage) will have both the ‘factors’ of the same type.\nA pure breed (parental) yellow seed producing pea will have both the\n‘factors’ of the same type.\nLet us denote them by ‘YY’.\n25%\nYY\n50%\nYy\n25%\nyy\nGenotype\n(1:2:1)\nReflection of light at curved surfaces183 Heredity and Evolution\nA pure breed (parental) green seed producing pea will also have both\nthe ‘factors’ of the same type.\nLet us denote them by ‘yy’.\nYY and yy are called homozygous as the factors in them are same.\nIf\nthe combination is Yy then it is called heterozygous.\nAssumption-2 : During reproduction one ‘factor’ from each parent is\ntaken to form a new pair in the progeny.\nAssumption-3 : One of these will always dominate the other if mixed\ntogether.\nThe trait expressed in F1 generation is called dominant.\nWhile\nthe other which did not express in F1 is called recessive.Assume that ‘Y’\n(the one causing yellow colour) is a dominating ‘factor’.\nThat means if ‘Y’\nand ‘y’ come together ‘Y’ will dominate.\nThen the pea seeds will be always\nyellow in colour.\nParental\ngeneration -\nCross pollination\nYy ............... (yellow)\nYy ............... (Yellow)\nYy ............... (yellow)\nYy ............... (Yellow)\nFrom assumption-2, the breed after cross pollination will have one\nfactor from pure breed yellow (Y) and one from the pure breed green (y).\nThat is, all the peas will have the paired factor ‘Yy’ and by assumption-3 all\nthe peas will be Yellow as ‘Y’ factor is dominant.\nAll the pea plants are yellow (F1-Generation).\nThe trait expressed in\nF1 is dominant, not expressed is recessive.\nThis is the law of dominance.\n8.2.4 Self pollination in F1-Generation\nOn self pollinating these peas (ones with Yy factor), the new breed\nhave any combinations of ‘Y’ and ‘y’.\nIt can be YY , Yy, yY or yy.\nAll of them are in equal ratio.\nyY\nYy\nyy\nYyYyY\nY Yy Yy\n184 Heredity and Evolution\n8.2.5 F2-Generation\nSo in this heap we will get approximately equal number of YY, Yy, yY",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00115"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 194,
+      "textbook_page": 185,
+      "pdf_pages": [
+        194,
+        195,
+        196
+      ],
+      "textbook_pages": [
+        185,
+        186,
+        187
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "symbolically indicated as ‘Y’, ‘y’.\n2.\nShape of peas-Round and wrinkled\nsymbolically indicated as ‘R’, ‘r’.\nThe plants with yellow and round seeds\n(pure) were crossed with those having green\nand wrinkled seeds (pure).\nAll pea seeds that were yellow and round.\nEach pea will have factors ‘YyRr’.\nSince Yellow colour (Y factor) and round\n(R factor) are dominant traits.\nAll the pea seeds\nwill be yellow and round (F1 generation).\nWhen these plants are self pollinated.\nHe got\nin F2 generation some seeds were yellow and\nround (YyRr or YYRR), some seeds were\ngreen and round (yyRR or yyRr), some seeds\nwere yellow and wrinkled Yyrr and some seeds\nwere green and wrinkled (yyrr).\nOn cross pollination\nYYRR yyrr\nSelf pollination\nYyRr (F1)\n(F2)\n(P)\n1 2 3\nYY\nYYYYY\nY YY YY\nYy\nYyYYY\ny yY yy\nyy\nyyyyy\ny yy yy\n186 Heredity and Evolution\n8.2.9 Mendel’s Laws\nMendel propounded that, among a pair of closely related ‘alleles’ or\nfactors for a character, only one expresses itself in the first generation as\none of the allele is dominant over the other.\nThis is so evident that it came\nto be called as Mendel’s Law of Dominance.\nFor expression of each character a pair of factors or alleles are\nresponsible.\nEach one of these alleles is received from each parent.\nWhen\nthis generation forms gametes, these alleles get separate and each one\nenters into a separate gamete randomly.\nThis separation of alleles at the\ntime of formation of gametes is called law of Segregation.\nMendel also explained the process of inheritance of more than one\ncharacter.\nFor this, he proposed law of Independent Assortment.\nWe\nwill learn more about this in further classes, for the basic understanding\nrefer in annexure.\nTraits that may be passed on from one generation to the next are called\nas heritable traits.\nWe have studied some of them for the pea plant, in the\nexperiments conducted by Mendel.\nActivity-4\nLet us do the following activity to understand the Mendelian principles\nof Heredity.\nMaterials required :\na) 3 cm length and 1cm breadth of chart strips- 4\nb) 2 cm length and 1cm breadth of chart strips- 4\nc) Red buttons - 4\nd) White buttons - 4\ne) Chart, scale, sketch pen, pencil, 2 bags.\nMethod: Prepare a chart with 2¯2 boxes along\nwith number and Symbol as shown in the figure\nGame 1: Monohybrid cross (starting with hybrid parents)\nTake 4 pairs each of long and short strips and put them in two separate\nbags.\nBAG ‘A’\nBAG ‘B’\n1 2\n3 4\nReflection of light at curved surfaces187 Heredity and Evolution\nNow each bag contains 4 strips (2 long and 2 short).One bag say ‘A ’\nrepresents male and the bag ‘B’ represents female.\nNow randomly pick one strip each from bag A and B and put them\ntogether in the 1 on the chart.\nKeep picking out the strips and arrange\nthem in the same manner till your bags are empty.\nSametime your boxes in\nthe chart are filled with pairs of strips.\nYou might have got the following\ncombinations, two long strips, one long and one short strip, two short\nstrips.\nConduct this activity several times and answer the following questions.\nx What is the number of long strip pairs?\nx What is the number of one long and one short pairs?\nx What is the number of short strips pairs?\nx What is the percentage of each type? also find their ratios?\nx What can you conclude from this game?\nYou may play this game by taking buttons instead.",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00117"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 210,
+      "textbook_page": 201,
+      "pdf_pages": [
+        210,
+        211
+      ],
+      "textbook_pages": [
+        201,
+        202
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "25% seeds were with recessive character (Eg: Green seeds).\nThis is called phenotype and the ratio\nis 3:1.\nx In F2 generation out of 75%, 25% were pure yellow seeds 50% were yellow seeds but green as\na recessive factor.\nRemaining 25% were pure green.\nThis is called genotype and the ratio 1:2:1.\nx Every pea plant has two ‘factors’ which are responsible for producing a particular property or trait\ncalled allele.\nx The factors for each pair of characters assorts independently of the other pairs.\nThis is known as\n“Law of independent assortment”.\nx Crossing yellow and green seeds produced all yellow seeds.\nBecause yellow is dominant factor.\nx Each parent passes randomly selected copy (allele) of only one of these to its offspring.\nx The process of acquiring characters or traits from parents is called ‘Heredity’.\nx Each human cell contains 23 pairs of chromosomes.\nOut of these 22 pairs are called autosomes\nand one pair is called allosomes.\nx Lamarck proposed that the acquired characters are passed to the offspring in the next generation.\nThis theory is called ‘inheritence of acquired characters’.\nx Each species tend to produce large number of offsprings, but only the fittest can survive.\nx Homologous, analogous organs and embryological evidences explain evolutionary relationships.\nx Some traits in different organisms would be similar because they are inherited from a common\nancestor.\nx Fossils are evidences of ancient life forms or ancient habitats which have been preserved by natural\nprocesses.\n1.\nWhat are variations?\nHow do they help organisms? (AS1)\n2.\nOne student (researcher) wants to cross pure tall plant (TT) with pure dwarf\n(tt) plant, what would be the F1 and F2 generations?\nExplain. (AS1)\n3.\nOne experimenter cut the tails of parent rats , what could be the the traits in offsprings?\nDo the\ndaughter rats contain tails or not?\nExplain your argument. (AS1)\nImprove your learning\n202 Heredity and Evolution\n4.\nIn a mango garden a farmer saw one mango tree with full of mango fruits but with a lot of pests. he\nalso saw another mango tree without pests but with few mangoes.\nBut the farmer wants the mango\ntree with full of mango fruits and pest free.\nIs it possible to create new mango tree which the farmer\nwants?\nCan you explain how it is possible? (AS1)\n5.\nExplain monohybrid experiment with an example, which law of inheritance can we understand?\nExplain. (AS1)\n6.\nWhat is the law of independent assortment?\nExplain with an example? (AS1)\n7.\nExplain the Darwin’s theory of evolution ‘Natural selection’ with an example? (AS1)\n8.\nWhat are variations?\nExplain with a suitable example. (AS1)\n9.What variations generally have you observed in the species of cow? (AS1)\n10.\nWhat are the characters Mendel selected for his experiments on pea plant? (AS1)\n11.\nIn what way Mendel used the word ‘Traits’- explain with an example. (AS1)\n12.\nWhat differences Mendel identified between parent and F2 generation. (AS1)\n13.\nMale is responsible for sex determination of baby – do you agree?\nIf so write your answer with a\nflow chart. (AS1)\n14.\nWrite a brief note on analogous organs. (AS1)\n15.\nHow do scientists utilise the information about fossils? (AS1)\n16.\nMendel selected a pea plant for his experiments.\nMention the reasons in your point of view. (AS2)\n17.\nIf the theory of inheritance of acquired characters proposed by Lamarck was true how will the\nworld be? (AS2)\n18.\nCollect information on the inherited traits in your family members and write a note on it. (AS4)\n19.\nObserve flowering plants in your surroundings?\nWrite similarties and differences between them?",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00127"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 211,
+      "textbook_page": 202,
+      "pdf_pages": [
+        211,
+        212,
+        213
+      ],
+      "textbook_pages": [
+        202,
+        203,
+        204
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Male is responsible for sex determination of baby – do you agree?\nIf so write your answer with a\nflow chart. (AS1)\n14.\nWrite a brief note on analogous organs. (AS1)\n15.\nHow do scientists utilise the information about fossils? (AS1)\n16.\nMendel selected a pea plant for his experiments.\nMention the reasons in your point of view. (AS2)\n17.\nIf the theory of inheritance of acquired characters proposed by Lamarck was true how will the\nworld be? (AS2)\n18.\nCollect information on the inherited traits in your family members and write a note on it. (AS4)\n19.\nObserve flowering plants in your surroundings?\nWrite similarties and differences between them?\n20.\nWith the help of given information write your comment on evidences of evolution. (AS4)\nMammals have four limbs as do birds, reptiles and amphibians.\nThe basic structure of the limbs is\nsimilar, though it has been modified to perform different functions.\n21.\nCollect information about carbon dating method.\nDiscuss with your physical science teacher. (AS4)\n22.\nDraw a checker board show the law of independent assortment with a flow chart and explain the\nratio. (AS5)\n23.\nExplain the process to understand monohybrid cross of Mendel experiment with a checker board.\n(AS5)\n24.\nPrepare a flow chart showing evolution of man through ages. (AS5)\nReflection of light at curved surfaces203 Heredity and Evolution\n25.\nPrepare a cartoon on ‘Nature selects the organisms with desirable characters’. (AS6)\n26.\nWhat is your understanding about survival of the fittest.\nGive some situations or examples that you\nobserve in your surroundings? (AS7)\n27.\nWrite a monologue on evolution of a man. (AS7)\n1.\nThe process of acquiring character or traits is called ______________.\n2.\nMendel’s experiment explains about ______________.\n3.\nThe characters observed in the experiments on law of independent assossment are __________.\n4.\nIn pea plant if we cross pollinate purple flower plant with white flower we will get ________\npercent of recessive trait plants.\n5.\nTT or YY , Tt or Yy are responsible for a _________________ character.\n6.\nHumans have __________ pairs of autosomes and _______ pair of sex chromosomes.\n7.\nThe population grows in ________________ progression where as food sources grow in\n_______________ progression.\n8.\nA goat which can’t walk properly can’t live for a long time.\nAccording to Darwin this represents\n_______________.\n9.\nForelimb of whale is for swimming where as in horse it is used for _______________.\n10.\nThe study of fossils is called _______________.\n1.\nWhich of the following is not a variation in rose plant. ( )\nA) Coloured petals B) Spines C) Tendrils D) Leaf margin\n2.\nAccording to Mendel alleles have the following character. ( )\nA) Pair of genes B) Responsible for character\nC) production of Gametes D) Recessive factors\n3.\nNatural selection means ( )\nA) Nature selects desirable characters B) Nature rejects undesirable characters\nC) Nature reacts with an organism D) A, B\n4.\nPalaeontologists deals with ( )\nA) Embryological evidences B) Fossil evidences\nC) Vestigial organ evidences D) all\nChoose the correct answer\nFill in the blanks\n204 Heredity and Evolution\nMendel’s law of independent assortment\nTill now we have discussed about the Mendel’s\nhypothesis with monohybrid cross.\nMendel also\ntried to understand the inheritance of two pairs of\ncharacters together.\nIn this dihybrid cross, parent\npea plants produce offspring containing the factors\nfor Characters (traits) of Round (RR), Yellow (YY),\nand wrinkled (rr), green (yy).\nThese characters\nappeared independently without mixing with each\nother in F2 generation, which were produced by self\npollination in F1 generation.\nObserve the checker board given here carefully\nand note down different combinations of characters\nresulted from dihybrid cross.\n(1) RRYY , (2) RRYy, (3) RrYY, (4) RrYy,\n(5) RRYy, (6) RrYY , (7) RrYy, (8) RrYy,",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00128"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Mendel’s monohybrid experiment involved studying the inheritance of a single trait, such as seed color in pea plants. He selected two purebred pea plants—one with yellow seeds and one with green seeds. When he crossed these plants, all the offspring in the first generation (F1) had yellow seeds. This demonstrated that the yellow seed color was dominant over the green seed color. When these F1 plants were allowed to self-pollinate, the second generation (F2) showed a 3:1 ratio of yellow to green seeds. This ratio indicated that the recessive trait (green seeds) reappeared in the F2 generation. This experiment demonstrated Mendel’s Law of Dominance, which states that in a pair of alleles, the dominant trait is expressed in the presence of the recessive trait.\",\n  \"selected_evidence_ids\": [\"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 191,\n      \"textbook_page\": 182\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 164.55859279999277,
+    "latency_seconds": 227.49280709998857,
+    "usage": {
+      "completion_tokens": 240,
+      "prompt_tokens": 4713,
+      "total_tokens": 4953,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-TG5IleaLU64fkJ0Jcr66LMa3CHc2edzn",
+    "peak_rss_bytes": 15654187008
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Mendel’s monohybrid experiment involved studying the inheritance of a single trait, such as seed color in pea plants. He selected two purebred pea plants—one with yellow seeds and one with green seeds. When he crossed these plants, all the offspring in the first generation (F1) had yellow seeds. This demonstrated that the yellow seed color was dominant over the green seed color. When these F1 plants were allowed to self-pollinate, the second generation (F2) showed a 3:1 ratio of yellow to green seeds. This ratio indicated that the recessive trait (green seeds) reappeared in the F2 generation. This experiment demonstrated Mendel’s Law of Dominance, which states that in a pair of alleles, the dominant trait is expressed in the presence of the recessive trait.",
+    "selected_evidence_ids": [
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E2",
+        "pdf_page": 191,
+        "textbook_page": 182
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Cross pure parents differing in one trait",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "F₁ shows only the dominant trait",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Self the F₁ heterozygotes",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "F₂ phenotype ratio is about 3:1 and genotype ratio 1:2:1",
+        "token_recall": 0.25,
+        "matched": false
+      },
+      {
+        "point": "Relate results to dominance and segregation",
+        "token_recall": 0.25,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.2,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 124
+  },
+  "completed_at": "2026-07-16T23:13:34+00:00"
+}

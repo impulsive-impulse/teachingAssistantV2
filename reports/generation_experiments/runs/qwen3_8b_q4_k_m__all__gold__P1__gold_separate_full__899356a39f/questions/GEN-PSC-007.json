@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f",
+  "question_id": "GEN-PSC-007",
+  "question": "How do you verify experimentally that the focal length of a convex lens is increased when it is kept in water?",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "89bae23de239d9b30c1ccb548c41950a3e00c0e53a0c8c0eb816e143a74070e7",
+  "context_sha256": "09fbfbb21f327b8da8d0c9dcf85c555934cdcb1703a70d8bed0ca8723c0fe138",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 89,
+      "textbook_page": 79,
+      "text": "Government’s Gift for Students’ Progress Refraction of Light at Curved Surfaces79\nfig-21\nLens Circular\nlens\nholderStone\nfig-E(6)\nd-x\nd\nx\nScreen\nLamp\nSolution\nThe distance between the lamp and screen is 100cm and ‘x’ be the distance\nbetween lamp and lens. From fig.- E-6, we have u = - x and\nv = 100-x, f = 21\nBy substituting these in lens formula,\nWe get\n1 11\n21 (100 )=+ - xx\nAfter solving thisequation, we get\nx2 – 100x + 2100 = 0\nIt is a quadratic equation. Hence we get two solutions. The solutions\nof the above equation are\nx2-70x-30x+2100=0 _ x (x-70)-30(x-70) = 0 _ (x-70)(x-30) = 0\n\\ x =70cm and x = 30cm.\nWe can place the lens at a distance of 70cm or 30cm from the bulb,\nwe get sharp image.\n· On what factors does the focal length of the lens depend?\nLet us find out.\nActivity 2\nTake the same lens that was used in lab activity. Note the average focal\nlength of the lens that was calculated in the lab activity. Take a cylindrical\nvessel such as glass tumbler. Its height must be much greater than the focal\nlength of the lens. (We require the vessel which has a length (depth) nearly\nequal to four times of the focal length of lens). Keep a black stone inside the\nvessel at its bottom. Now pour water into the vessel up to a height such that\nthe height of the water level from the top of the stone is greater than focal\nlength of lens. Now dip the lens horizontally using a circular lens holder as\nshown in the fig.- (21) above the stone. Set the distance between stone and\nlens that is equal to or less than focal length of lens measured in activity 2.\nNow look at the stone through the lens. (Do this in open ground)\n· Can you see the image of the stone?\n· If Yes / Not, why? Give your reasons.\nYou can see the image of the stone if the distance between lens and stone is less than\nthe focal length of the lens (in air). Now increase the distance between lens and stone\nuntil you cannot see the image of the stone.\n· What do you conclude from this activity?\n· Does the focal length of the lens depend on surrounding medium?\nYou have dipped the lens to a certain height which is greater than the\nfocal length of lens in air. But you can see the image (when lens is raised\nfurther, you could not see the image). This shows that the focal length of\nlens has increased in water. Thus we conclude that the focal length of lens\ndepends upon the surrounding medium in which it is kept.",
+      "text_sha256": "1e42a3c70786b675ddc6a725300d9f73e1eec4dbe9b3531e86cca8048dc15f65"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 90,
+      "textbook_page": 80,
+      "text": "80Government’s Gift for Students’ Progress Refraction of Light at Curved Surfaces\n4.5 Lens maker’s formula\nImagine a point object ‘O’\nplaced on the principal axis of the\nthin lens as shown in fig.- 22. Let\nthis lens be placed in a medium of\nrefractive index na and let refractive\nindex of lens medium be nb.\nConsider a ray, from ‘O’ which is incident on the convex surface of the\nlens with radius of curvature R1 at A as shown in fig.- 22.\nThe incident ray refracts at A.\nLet us assume that, it forms image at Q, if there were no concave\nsurface.\nFrom the fig.-(22), Object distance PO = –u;\nImage distance v = PQ = x\nRadius of curvature R = R1\nn1 = na and n2 = nb\nSubstitute the above values in the equation, 2 1 21n n ( n n)-=v uR\n-\n_ 1\nab abn ( n n)n+=x uR\n-\n...................(1)\nBut the ray that has refracted at A suffers another refraction at B on the\nconcave surface with radius of curvature (R2). At B the ray is refracted and\nreaches I on the principal axis.\nThe image Q of the object due to the convex surface is taken as object\nfor the concave surface. So, we can say that I is the image of Q for concave\nsurface. See fig.- 22.\nObject distance u = PQ = + x\nImage distance PI = v\nRadius of curvature R = –R 2\nFor refraction, the concave surface of the lens is considered as\nmedium-1 and surrounding medium is considered as medium-2. Hence\nthe suffixes of refractive indices interchange. Then we get,\nu xv\nO I\nna na\nnb\nP\nA B\nR1 R2\nfig-22\nQ",
+      "text_sha256": "ab764df25c3e1eb9bf8ee3e039a6109bb15a79d86966ac2c23ae117d35db7dfa"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"To verify experimentally that the focal length of a convex lens is increased when it is kept in water, you can perform an activity as described in the textbook. First, take a convex lens and determine its focal length in air using the lens formula. Then, place the lens in water and repeat the experiment. The focal length of the lens in water will be greater than its focal length in air. This is because the refractive index of water is higher than that of air, which affects the bending of light rays passing through the lens. When the lens is immersed in water, the change in the surrounding medium causes the focal length to increase.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 89,\n      \"textbook_page\": 79\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 29.34851880001952,
+    "latency_seconds": 68.84125029999996,
+    "usage": {
+      "completion_tokens": 202,
+      "prompt_tokens": 1308,
+      "total_tokens": 1510,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-uaUpQ0PZTzYgVQZwyog71UoWiEwa034g",
+    "peak_rss_bytes": 15991693312
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "To verify experimentally that the focal length of a convex lens is increased when it is kept in water, you can perform an activity as described in the textbook. First, take a convex lens and determine its focal length in air using the lens formula. Then, place the lens in water and repeat the experiment. The focal length of the lens in water will be greater than its focal length in air. This is because the refractive index of water is higher than that of air, which affects the bending of light rays passing through the lens. When the lens is immersed in water, the change in the surrounding medium causes the focal length to increase.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 89,
+        "textbook_page": 79
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Measure/locate image or focal position for the lens in air",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Immerse the lens in water without changing its shape",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Repeat the observation and compare focal positions",
+        "token_recall": 0.4,
+        "matched": false
+      },
+      {
+        "point": "Observe a larger focal length in water",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Explain using the smaller relative refractive-index contrast in water",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.2,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 116
+  },
+  "completed_at": "2026-07-17T19:02:36+00:00"
+}

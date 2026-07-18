@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6",
+  "question_id": "GEN-BIO-003",
+  "question": "How are alveoli designed to maximise the exchange of gases?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "93825cad777987488247b6da7dd37b00f5bf4d5576198883a1daf40c5c065977",
+  "context_sha256": "dcbe0e3c4bfb4eae1b166032ab77feb0255ed5de5f40104580ee67d0bc4b4d6b",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 39,
+      "textbook_page": 30,
+      "text": "Respiration30Government’s Gift for Students’ Progress\n2.3 Pathway of air\nLet us observe the pathway of air from nostril to alveolus.\nnostril\nnasal cavity\nepiglottispharynx\ntrachea larynx\nlung\nbronchi\nalveoli\nbronchioles\ncapillaries in which O2\nand\nCO2 exchanges occur\nFig-4: Human Respiratory system\nNostrils Air usually enters the body through the nostrils\nNasal cavity Air is filtered. The moist surface of the lining of the nasal cavity, and the\nhairs growing from its sides, remove some of the tiny particles of dirt in\nthe air. In addition, as theinhaled air passes through the nasal cavity, its\ntemperature is brought close to that of the body, and it takes up water\nvapour so that it becomes more moist than before.\nPharynx Warming and moistening goes on in this common passage of digestive\nand respiratory system. Epiglottis, a flap like muscular valve controls\nmovement of food and air towards their respective passages.\nLarynx The stiff box contains our vocal cords is Larynx. When air passes out of\nthe lungs and over the vocal cords, it causes them to vibrate. This produces\nsounds. Based on this vibrations we are able to speak, sing songs etc.\nTrachea Wind pipe channels air into lungs. Touch your throat to feel the tube like\nstructure.\nBronchus In thoracic region trachea divides into two bronchi, one leading to each\nlung.\nBronchioles Each bronchi is further divided into smaller and smaller branches called\nbronchioles.\nAlveolus These finally terminate in clusters of air sacs called alveoli in the lungs\nwhich are very small and numerous. Gaseous exchange takes place here as\nblood capillaries take up oxygen and expel carbon dioxide.\nBlood Blood carries oxygen to each and every cell of the body and collects CO2\nfrom them.\nThe whole passage from nostrils to alveolus is moist and warm.",
+      "text_sha256": "1de042489d81db5cc59425e6f3576a04622f3e69dfc0debe8061030ad2fe740d"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 40,
+      "textbook_page": 31,
+      "text": "Respiration31Government’s Gift for Students’ Progress\n2.3.1 Epiglottis and passage of air\nFrom the nasal cavity, the inhaled\nair goes into the pharynx. There is a\ntricky problem here. From the pharynx\nthere are two passages, beginning with\nnearly same opening and ending into\nseparate ones, one to the lungs and one\nto the stomach. It is important that air\ngoes into one and food into the other. It\nis also important that food does not\nenter the tube through which air goes\ninto the lungs. The movement of food and air is channeled properly by a\nflap like valve, the epiglottis that prohibits the entry of food into the lungs.\nObserve the Fig-5(a), Fig-5(b) and discuss in your class how epiglottis\nworks while breathing or swallowing.\nThis valve is partly closed when we swallow food; it deflects food\ndown to the stomach and keeps it out of the trachea or wind pipe which is\nthe route to the lungs.\nThe epiglottis opens more widely when we take a breath, and air enters\nthe lungs. Nervous regulation is important in guiding the function of\nepiglottis and passage of food and air.\nEpiglottis diverts air to\nlungs\nEpiglottis diverts mass of\nfood away from opening of\nlarynx\nFig-5(a): Breathing Fig-5(b): Swallowing\n! Do you know?\nThe interior of lung is divided into millions of small chambers, thus tremendously\nincreasing the moist surface available for transfer of gases between air and blood.\nThe linings of the lungs are much folded and so their total surface is enormous. If all\nalveoli of our lungs are spread out they will cover an area of nearly 160 m2. Which is\nequivalent to tennis court.\nThink and discuss\nx What will happen if the respiratory tract is not moist?\nx Are both lungs similar in size?\nx Why are alveoli so small and uncountable in number?",
+      "text_sha256": "b39e424c626cbbcd3e0e29d09d8622b309833d8404c2c18e215c18933f52fe74"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Alveoli are designed to maximise the exchange of gases due to their unique structure. They are small, numerous air sacs located at the end of the bronchioles in the lungs. The large number of alveoli increases the total surface area available for gas exchange, allowing more oxygen to be absorbed into the blood and more carbon dioxide to be expelled. Additionally, the walls of the alveoli are very thin, which facilitates the diffusion of gases between the air in the alveoli and the blood in the surrounding capillaries. The moist environment inside the alveoli also helps in the efficient exchange of gases.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 39,\n      \"textbook_page\": 30\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 40,\n      \"textbook_page\": 31\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 13.59560450000572,
+    "latency_seconds": 41.04762159998063,
+    "usage": {
+      "completion_tokens": 237,
+      "prompt_tokens": 1110,
+      "total_tokens": 1347,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "response_id": "chatcmpl-8fICKDZogrchevMpQYafHG2DpZpK8VfY",
+    "peak_rss_bytes": 10689658880
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Alveoli are designed to maximise the exchange of gases due to their unique structure. They are small, numerous air sacs located at the end of the bronchioles in the lungs. The large number of alveoli increases the total surface area available for gas exchange, allowing more oxygen to be absorbed into the blood and more carbon dioxide to be expelled. Additionally, the walls of the alveoli are very thin, which facilitates the diffusion of gases between the air in the alveoli and the blood in the surrounding capillaries. The moist environment inside the alveoli also helps in the efficient exchange of gases.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 39,
+        "textbook_page": 30
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 40,
+        "textbook_page": 31
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Alveoli are extremely numerous microscopic air sacs",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Their folding/number gives an enormous moist surface area",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "They are closely associated with blood capillaries",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "These features support rapid gas exchange by diffusion",
+        "token_recall": 0.4286,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.75,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 102
+  },
+  "completed_at": "2026-07-17T11:32:47+00:00"
+}

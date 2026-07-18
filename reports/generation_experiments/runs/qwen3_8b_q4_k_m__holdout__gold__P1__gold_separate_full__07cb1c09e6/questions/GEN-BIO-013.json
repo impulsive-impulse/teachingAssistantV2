@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6",
+  "question_id": "GEN-BIO-013",
+  "question": "How does mucus help in passage of food?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "f5f056dbe1d7b0e0cda53d4cacd22bbd1727bc674b8ad8ab01e6dbcf322b9309",
+  "context_sha256": "47804b3a42be69a0827ea61f9b0ecdbada87556231619b8244551a407ccbcf94",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 171,
+      "textbook_page": 162,
+      "text": "162 Coordination in life processesGovernment’s Gift for Students’ Progress\nx Why do we salivate when you sleep during the day?\nYou have heard about Nocturnal animals, which are active during nights, but we\nare active during daytime and take rest at night. All the systems of our body are active\nin function during the time of our activity. Hence, man is a diurnal animal. Our\ndigestive system is also active in day time and ready to receive the food for digestion.\nIf we sleep during daytime saliva oozes out of our mouth and wets the pillows. This\nwill not happen during night time. We secrete 1-1.5 liters of saliva per day.\n7.1.5 Travel of food through oesophagus\nThe oesophagus receives the food pushed by the swallowing action of\nthe mouth.\nx What are the systems that come into play for swallowing food?\nThe following schematic representation shows some functional and\nstuctural attributes of oesophagus. Observe it and answer the following\nquestions.\nWalls secrete mucus passes food to stomach\nby wave like movement of\nwalls (peristalsis)\nLong tube upper end\nconnects to pharynx walls of oesophagus are\nmuscular and elastic\nwalls carry on wave like\nmovement by contraction\nand relaxation\nlower end connects to the\nstomach\nx What does the schematic diagram tell us about the oesophagus?\nx What kind of the tube is oesophagus?\nx How does mucus help in passage of food?\nMaking a model of oesophagus to observe how bolus moves\nforward\nTake a piece of waste cycle tube. Lubricate the inner side of the tube\nwith oil. Insert one or two oil coated potatoes in the tube.\nFig-5: Potato in\ncycle tube\nOesophagus\nDo you know?!",
+      "text_sha256": "f0a463450f6d9fcf872a75ec1168dc2cd828f30fa11b383a86db71935693912e"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 172,
+      "textbook_page": 163,
+      "text": "Reflection of light at curved surfaces163 Coordination in life processesGovernment’s Gift for Students’ Progress\nNow try to push the potatos by squeezing the tube. Observe the moving\npotatoes carefully.\nx How do you squeeze the tube to make the potatoes pass through?\nHow did the oil work?\nx Do you think that the muscles in the wall of the oesophagus have to\ndo something like this?\nx How did oil help you in pushing the potatoes through the pipe?\n7.1.6 Peristaltic movement in oesophagus\nLook at the fig-6, which shows wave like movement of wall of\noesophagus and observe the position of the food bolus.\nx How did the position of the bolus change?\nx What is the similarity of movement of food\nillustrated in the diagram and the activity\nperformed by you?\nThe walls of the food pipe secrete a slippery\nsubstance called mucus. Mucus lubricates and\nprotects the oesophageal walls from damage. This\nhelps the food bolus to slide down easily just as\nthe oiled potatoes that move in the tube. Besides\nthis, the saliva in the bolus also aids in easy\nmovement of food, which moves into the stomach.Fig-6: Peristaltic movement of bolus in\noesophagus\nepiglottis\noesophageal sphincter\ncontracted\ncontracted muscles\nsphincter relaxed\nrelaxed muscles\nstomach\nbolus\nThe wall of the oesophagus is made up of two kinds of smooth muscles.\nThe inner layer consists of circular muscles and the outer layer of\nlongitudinal muscles. Contraction of the circular muscles results in\nnarrowing of the oesophagus just behind the bolus. So the food is squeezed\ndownwards.\nContraction of the longitudinal muscles infront of the bolus widen\nthe tube, this results in shortening of that particular part of the oesophagus.\nContraction and relaxation of these muscles bring in a wave like motion\nthat propels the food bolus into the stomach by the action called as\n“peristalsis” (you have studied about this in the chapter on nutrition). This\nis involuntary and under the control of autonomous nervous system.\nx What makes the movement of the food bolus in the oesophagus easy?\nThink why people are advised not to swallow food without chewing\nproperly or do not eat in hurry.",
+      "text_sha256": "62f3cd60acf03445b7d7c5ffe43f0ef044c5790c29197248d823821a7ed1ca5f"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Mucus helps in the passage of food through the oesophagus by lubricating the walls of the oesophagus. This lubrication makes it easier for the food bolus to slide down smoothly. The mucus also protects the oesophageal walls from damage, ensuring that the passage of food is efficient and safe. Additionally, the saliva in the bolus further aids in the easy movement of food into the stomach.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 171,\n      \"textbook_page\": 162\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 172,\n      \"textbook_page\": 163\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 19.913420900003985,
+    "latency_seconds": 54.321957500011194,
+    "usage": {
+      "completion_tokens": 201,
+      "prompt_tokens": 1130,
+      "total_tokens": 1331,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-HSoBGyR2pa8EQphZvtGqoNFomFInlNrF",
+    "peak_rss_bytes": 11859828736
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Mucus helps in the passage of food through the oesophagus by lubricating the walls of the oesophagus. This lubrication makes it easier for the food bolus to slide down smoothly. The mucus also protects the oesophageal walls from damage, ensuring that the passage of food is efficient and safe. Additionally, the saliva in the bolus further aids in the easy movement of food into the stomach.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 171,
+        "textbook_page": 162
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 172,
+        "textbook_page": 163
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Oesophageal walls secrete mucus",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Mucus lubricates and protects the wall",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "The bolus slides down more easily during peristalsis",
+        "token_recall": 0.2857,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.6667,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 66
+  },
+  "completed_at": "2026-07-17T11:38:31+00:00"
+}

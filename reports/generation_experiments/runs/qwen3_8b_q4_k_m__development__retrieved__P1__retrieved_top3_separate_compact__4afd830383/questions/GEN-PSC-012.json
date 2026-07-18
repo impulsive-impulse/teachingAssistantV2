@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top3_separate_compact__4afd830383",
+  "question_id": "GEN-PSC-012",
+  "question": "What are the limitations of Mendeleev’s periodic table, and how does the modern periodic table address them?",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "13709ea13af2adea7efa8465a85fe4eb9aaf7165e0473106b1736744ef7a1ddd",
+  "context_sha256": "2dfcc734dae637663ad6d872ae83661dfa5c492f6866752730eca8502cb4a8ec",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 152,
+      "textbook_page": 142,
+      "pdf_pages": [
+        152,
+        153,
+        154
+      ],
+      "textbook_pages": [
+        142,
+        143,
+        144
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "weights of ‘Indium’ and ‘Gold’ in this manner.\n5.\nAnomalous series: Some anomalous series of elements like telurium\n(Te) and iodine (I) were observed in the table.\nThe anomalous series\ncontained elements with more atomic weights like ‘Te’ (127.6 U) placed\nbefore the elements with less atomic weights like ‘I’ (126.9 U).\nMendeleeff accepted minor inversions in the order of increasing\natomic weights as these inversions resulted in elements being placed\nin the correct groups.\nIt was the extraordinary thinking of Mendeleeff that made the chemists\nto accept the periodic table and recognise Mendeleeff more than anyone\nelse as the originator of the periodic law.\n7.4.3 Limitations of Mendeleeff’s periodic table\n1.\nAnomalous pair of elements:\nCertain elements of higher atomic weights precede those with lower\natomic weights.\nFor example, tellurium - Te (atomic weight 127.6) precedes iodine\n- I(atomic weight 126.9).\nCo, Ni, K, Ar are also arranged difficulty\nto the subject of assending atomic masses.\n2.\nDissimilar elements placed together:\nElements with dissimilar properties were placed in same group as\nsub-group A and sub-groupB.\nDo you know?\nAt the time when Mendeleeff introduced his periodic table, even, electrons were\nnot discovered.\nEven then the periodic table was able to provide a scientific base\nfor the study of chemistry of elements.\nIn his honour the 101th element was named\nMendelevium.\n138 Classification of Elements - The Periodic Table\nFor example, alkali metal like Li, Na, K etc., of IA group have little\nresemblance with coinage metals like Cu, Ag, Au of IB group.Cl is of\nVII A group and ‘Mn’ is of VII B, but chlorine is a non metal, where as\nmanganese is a metal.\n7.5 Modern Periodic Table\nH.J.\nMoseley (1913) found that each element emits a characteristic\npattern of X-rays when subjected to bombardment with high energy\nelectrons.\nBy analyzing the X-ray patterns, Moseley was able\nto calculate the number of positive charges in the atoms of\nrespective elements.\nThe number of positive charges (protons)\nin the atom of an element is called the atomic number of the\nelement.\nWith this analysis Moseley realised that the atomic\nnumber(Z) is more fundamental characteristic of an element\nthan its atomic weight.\nAfter knowing the atomic numbers of elements, it was\nrecognized that a better way of arranging the elements in the\nperiodic table is according to the increasing atomic number.\nThis arrangement eliminated the problem of anomalous series.\nFor example, though tellurium (Te) has more atomic weight\nthan iodine (I), it has atomic number less by one unit compared to iodine.\nThis atomic number concept forced the periodic law to be changed.\nThe periodic law is changed from atomic weight concept to atomic\nnumber concept and now it is called the modern periodic law.\nWe know that Mendeleeff’s periodic law is stated as “The properties\nof elements are the periodic functions of their atomic weights”.\nNow, let\nus try to understand modern periodic law.\nThe modern periodic law may be stated as “the properties of the\nelements are periodic functions of their atomic numbers.”\nH.J.\nMoseley\nThink and discuss\n· Why Mendeleeff had to leave certain blank spaces in his periodic table?\n· What is your understanding about Ea2O3, EsO2 present in the table?\n· All alkali metals are solids but hydrogen is a gas with diatomic molecules.\nDo\nyou justify the inclusion of hydrogen in first group with alkali metals?\nWhy?\n139 Classification of Elements - The Periodic Table\nBased on the modern periodic law, the modern periodic table which is\ngiven here (page 23) is proposed.\nIt is the extension of the original\nMendeleeff’s periodic table known as short form of the table and this",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00085"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 149,
+      "textbook_page": 139,
+      "pdf_pages": [
+        149,
+        150,
+        151,
+        152
+      ],
+      "textbook_pages": [
+        139,
+        140,
+        141,
+        142
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "present in a given vertical column (group) have similar properties.\nEach group is\ndivided into two sub-groups ‘A ’ and ‘B’.\nThe elements within any sub-group resemble\none another to a greater extent.\nFor example, sub-group IA elements called ‘alkali\nmetals’ (Li, Na, K, Rb, Cs) resemble each other very much in their properties.\n2.\nPeriods: The horizontal rows in Mendeleeff’s periodic table are called periods.\nThere are seven periods in the table, which are denoted by Arabic numerals 1 to 7.\nElements in a period differ in their properties from one another.\nA period comprises\nthe entire range of elements after which properties repeat themselves.\n135 Classification of Elements - The Periodic Table\nTable-2(b):\n136 Classification of Elements - The Periodic Table\n3.\nPredicting the properties of missing elements: Based on the\narrangement of the elements in the table Mendeleeff predicted that\nsome elements were missing and left blank spaces for them at the\nappropriate places in the table.\nMendeleeff believed that some new elements would be discovered\ndefinitely.\nHe predicted the properties of these new elements in advance\nentierly depending on his table.\nHis predicted properties were almost the\nsame as the observed properties of those elements when studied after their\ndiscovery.\nHe named those predicted elements tentatively by adding the prefix\n‘eka’ (eka is a Sanskrit word for numeral one) to the name of the element\nimmediately above each empty space.\nThe predicted properties of elements\nnamely eka-boron, eka-aluminium and eka-silicon were almost same as\nthose of scandium, gallium and germanium respectively which were\ndiscovered later.\n4.\nCorrection of atomic weights: The placement of elements in\nMendeleeff’s periodic table helped in correcting the atomic masses\nof some elements like beryllium, indium and gold.\nFor example, at the time of Mendeleeff, beryllium (Be) was given\natomic weight 13.5.\nAtomic weight = equivalent weight × valency\nS.\nNo.\nProperty Predicted property by\nMendeleeff\nObserved property\nEka-Aluminium Eka-Silicon Gallium (1875) Germanium (1886)\n1 Atomic weight 68 72 69.72 72.59\n2 Density 5.9 5..5 5.94 5.47\n3 Formula of oxide Ea2O3 EsO2 Ga2O3 GeO2\n4 Formula of chloride EaCl3 EsCl4 GaCl3 GeCl4\nTable-3\nDo you know what Mendeleeff said about the melting point of\neka aluminium?\n‘If I hold it in my hand, it will melt’.\nThe melting point of Ga is\n30.2oC and our body temprature 37oC.\nDo you know?\n137 Classification of Elements - The Periodic Table\nThe equivalent weight of Be was found experimentally as 4.5 and its\nvalency was thought as 3.\nTherefore, the atomic weight of beryllium\nwas given at that time as 4.5 × 3 = 13.5.\nWith this atomic weight it had\nto be placed in a wrong group in the table.\nHe said that its valency\nshould be only 2.\nThen its atomic weight would be 4.5 × 2 = 9.\nIf\natomic weight of ‘Be’ is 9 it would be fit in the second group and its\nproperties practically are similar to Mg, Ca etc., of the second group\nelements.\nHe also helped in the calculation of the correct atomic\nweights of ‘Indium’ and ‘Gold’ in this manner.\n5.\nAnomalous series: Some anomalous series of elements like telurium\n(Te) and iodine (I) were observed in the table.\nThe anomalous series\ncontained elements with more atomic weights like ‘Te’ (127.6 U) placed\nbefore the elements with less atomic weights like ‘I’ (126.9 U).\nMendeleeff accepted minor inversions in the order of increasing\natomic weights as these inversions resulted in elements being placed\nin the correct groups.\nIt was the extraordinary thinking of Mendeleeff that made the chemists\nto accept the periodic table and recognise Mendeleeff more than anyone\nelse as the originator of the periodic law.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00084"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 153,
+      "textbook_page": 143,
+      "pdf_pages": [
+        153,
+        154,
+        155,
+        156
+      ],
+      "textbook_pages": [
+        143,
+        144,
+        145,
+        146
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "H.J.\nMoseley\nThink and discuss\n· Why Mendeleeff had to leave certain blank spaces in his periodic table?\n· What is your understanding about Ea2O3, EsO2 present in the table?\n· All alkali metals are solids but hydrogen is a gas with diatomic molecules.\nDo\nyou justify the inclusion of hydrogen in first group with alkali metals?\nWhy?\n139 Classification of Elements - The Periodic Table\nBased on the modern periodic law, the modern periodic table which is\ngiven here (page 23) is proposed.\nIt is the extension of the original\nMendeleeff’s periodic table known as short form of the table and this\nmodern table is called the long form of the periodic table.\nAtomic number\nof an element (Z) indicates not only the positive charges i.e., the protons\nin the nucleus of the atom of the element but also the number of electrons\nin the neutral atom of that element.\nSo The physical and chemical\nproperties of atoms of the elements depend not on the number of protons\nbut on the number of electrons and their arrangements (electronic\nconfigurations) in atoms.\nTherefore, the modern periodic law may be stated as\n“The physical and chemical properties of elements are the periodic\nfunctions of the electronic configurations of their atoms.”\n7.5.1 Positions of elements in the Modern Periodic Table\nThe modern periodic table has eighteen vertical columns known as\ngroups and seven horizontal rows known as periods.\nLet us see what decides the position of an element in modern periodic\ntable.\nWe can explain the classification of the elements in the modern\nperiodic table in terms of certain electron arrangements which are\nperiodically repeated.\nThe elements with similar outer shell (valence shell)\nelectronic configurations in their atoms are in the same column called\ngroup.\nElements listed in a group down to it are in the order of their\nincreasing principal quantum numbers.\nIn the chapter ‘Structure of atom’ you have learnt that ‘s’ sub-shell\nwith one orbital contains a maximum of two electrons.\nEach ‘p’ sub-shell\ncontains 3 orbitals and accommodates a maximum of six electrons.\nThe‘d’\nsub-shell contains 5 orbitals and accommodates a maximum of 10 electrons\nand ‘f’ sub-shell contains 7 orbitals with 14 electrons maximum.\nDepending\nupon to which sub-shell the differentiating electron. i.e., the last coming\nelectron enters in the atom of the given element, the elements are classified\nas ‘s’ ‘p’, ‘d’ and ‘f’ block elements.\nFor example, sodium (Na) gets its new coming electron (differentiating\nelectron) into 3s level.\nTherefore ‘Na’ is an s-block element.\nAluminium (Al) gets its differentiating electron into ‘p’ subshell and it is\na p-block element.\nScandium (Sc) gets its differentiating electron into\n‘d’ subshell.\nTherefore it is a d-block element.\nCerium (Ce) gets its new\ncoming electron into ‘f’ subshell, hence,it is an f-block element.\nLet us observe the electronic configurations of the following elements.\nThe last coming electron is underlined.\n11Na 1s2 2s2 2p6 3s1\n13Al 1s2 2s2 2p6 3s2 3p1\n21Sc 1s2 2s2 2p6 3s2 3p6 4s2 3d1\n58Ce 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 5d1 4f2\n140 Classification of Elements - The Periodic Table\n141 Classification of Elements - The Periodic Table\nZ n 1 2 3 4 5 6\nl 0 0 1 0120 1 2 3 0 1 2 30\nSub 1s 2s 2p 3s 3p 3d 4s 4p 4d 4f 5s 5p 5d 5f 6s\nShell\n11 Na 2 2 6 1\n13 Al 2 2 6 21\n21 Sc 2 2 6 261 2\n58 Ce 2 2 6 2 6 1 02 6 1 01 2 6 1 2",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00086"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Mendeleev’s periodic table had several limitations. One major limitation was the presence of anomalous pairs of elements, where elements with higher atomic weights were placed before those with lower atomic weights. For example, tellurium (Te) with an atomic weight of 127.6 was placed before iodine (I) with an atomic weight of 126.9. Mendeleev accepted these minor inversions because they resulted in elements being placed in the correct groups. Another limitation was the placement of dissimilar elements in the same group, such as alkali metals (like Li, Na, K) being grouped with coinage metals (like Cu, Ag, Au), which have different properties. Additionally, the table could not accurately predict the properties of undiscovered elements, although Mendeleev successfully predicted the properties of elements like gallium, germanium, and scandium. The modern periodic table addresses these limitations by arranging elements based on their atomic numbers rather than atomic weights. This change eliminates the problem of anomalous series and ensures that elements with similar properties are grouped together. The modern periodic table also provides a more accurate representation of the electronic configurations of elements, which explains their chemical and physical properties more effectively.\",\n  \"selected_evidence_ids\": [\"E1\", \"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 152,\n      \"textbook_page\": 142\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 153,\n      \"textbook_page\": 143\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 87.05423750000773,
+    "latency_seconds": 153.2796546000027,
+    "usage": {
+      "completion_tokens": 362,
+      "prompt_tokens": 3043,
+      "total_tokens": 3405,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-DWazPcrptZId41IOB1Vv3XMGUE3RZlkH",
+    "peak_rss_bytes": 16605712384
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Mendeleev’s periodic table had several limitations. One major limitation was the presence of anomalous pairs of elements, where elements with higher atomic weights were placed before those with lower atomic weights. For example, tellurium (Te) with an atomic weight of 127.6 was placed before iodine (I) with an atomic weight of 126.9. Mendeleev accepted these minor inversions because they resulted in elements being placed in the correct groups. Another limitation was the placement of dissimilar elements in the same group, such as alkali metals (like Li, Na, K) being grouped with coinage metals (like Cu, Ag, Au), which have different properties. Additionally, the table could not accurately predict the properties of undiscovered elements, although Mendeleev successfully predicted the properties of elements like gallium, germanium, and scandium. The modern periodic table addresses these limitations by arranging elements based on their atomic numbers rather than atomic weights. This change eliminates the problem of anomalous series and ensures that elements with similar properties are grouped together. The modern periodic table also provides a more accurate representation of the electronic configurations of elements, which explains their chemical and physical properties more effectively.",
+    "selected_evidence_ids": [
+      "E1",
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 152,
+        "textbook_page": 142
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 153,
+        "textbook_page": 143
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "State the uncertain position of hydrogen",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Explain anomalous atomic-mass ordering",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Explain difficulty placing isotopes and separation/grouping anomalies",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Modern classification uses atomic number rather than atomic mass",
+        "token_recall": 0.625,
+        "matched": true
+      },
+      {
+        "point": "Atomic number/electronic configuration resolves isotope and ordering problems",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.4,
+    "citation_validity": 1.0,
+    "unsupported_claims": [
+      "Mendeleev originally arranged elements by atomic number"
+    ],
+    "unsupported_claim_rate": 1.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 188
+  },
+  "completed_at": "2026-07-16T21:45:39+00:00"
+}

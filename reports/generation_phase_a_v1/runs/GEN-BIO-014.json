@@ -1,0 +1,214 @@
+{
+  "schema_version": 1,
+  "question_id": "GEN-BIO-014",
+  "question": "Describe the acid-and-leaf experiment used to model how the stomach is protected from its own acid, and compare the observations with the stomach’s mucus lining.",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "question_type": "experiment_based",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "9cf7e2a7396b91fe0623e20d008147cda7e0aa3c685eec0d6373d6e3ef0f1b3e",
+  "context_sha256": "486ef7eda4c95e9818a2720eae16bf9a5f969839820781e73ac9fddf580f5f17",
+  "evidence_references": [
+    {
+      "evidence_id": "E1",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 175,
+      "textbook_page": 166
+    }
+  ],
+  "generation": {
+    "raw_text": "{\"claims\":[{\"text\":\"The acid-and-leaf experiment involves applying a weak acid to two green leaves, one coated with petroleum jelly and the other left untreated, to demonstrate how the stomach is protected from its own acid.\",\"citations\":[\"E1\"]},{\"text\":\"The leaf coated with petroleum jelly remains unaffected by the acid, similar to how the mucus lining in the stomach protects its walls from digestive acids.\",\"citations\":[\"E1\"]},{\"text\":\"The mucus lining in the stomach forms a thin protective layer that counteracts the action of acid, just as petroleum jelly protects the coated leaf.\",\"citations\":[\"E1\"]},{\"text\":\"The experiment shows that the presence of a protective layer, like mucus in the stomach, prevents damage from acidic substances.\",\"citations\":[\"E1\"]},{\"text\":\"The stomach secretes strong acids, such as HCl, which can digest hard materials, but the mucus lining prevents these acids from damaging the stomach walls.\",\"citations\":[\"E1\"]}]}",
+    "latency_seconds": 32.808946899996954,
+    "usage": {
+      "completion_tokens": 202,
+      "prompt_tokens": 589,
+      "total_tokens": 791,
+      "prompt_tokens_details": {
+        "cached_tokens": 71
+      }
+    },
+    "response_id": "chatcmpl-G3aGzLe9GBtfFTEYAnhDneJ0woAir2Jj"
+  },
+  "citation_validation": {
+    "valid": false,
+    "structure_valid": true,
+    "citation_support_valid": false,
+    "errors": [
+      "claim 4 citation support 0.5000 is below 0.55"
+    ],
+    "claims": [
+      {
+        "text": "The acid-and-leaf experiment involves applying a weak acid to two green leaves, one coated with petroleum jelly and the other left untreated, to demonstrate how the stomach is protected from its own acid.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "The leaf coated with petroleum jelly remains unaffected by the acid, similar to how the mucus lining in the stomach protects its walls from digestive acids.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "The mucus lining in the stomach forms a thin protective layer that counteracts the action of acid, just as petroleum jelly protects the coated leaf.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "The experiment shows that the presence of a protective layer, like mucus in the stomach, prevents damage from acidic substances.",
+        "citations": [
+          "E1"
+        ]
+      },
+      {
+        "text": "The stomach secretes strong acids, such as HCl, which can digest hard materials, but the mucus lining prevents these acids from damaging the stomach walls.",
+        "citations": [
+          "E1"
+        ]
+      }
+    ],
+    "answer_text": "The acid-and-leaf experiment involves applying a weak acid to two green leaves, one coated with petroleum jelly and the other left untreated, to demonstrate how the stomach is protected from its own acid. The leaf coated with petroleum jelly remains unaffected by the acid, similar to how the mucus lining in the stomach protects its walls from digestive acids. The mucus lining in the stomach forms a thin protective layer that counteracts the action of acid, just as petroleum jelly protects the coated leaf. The experiment shows that the presence of a protective layer, like mucus in the stomach, prevents damage from acidic substances. The stomach secretes strong acids, such as HCl, which can digest hard materials, but the mucus lining prevents these acids from damaging the stomach walls.",
+    "cited_evidence_ids": [
+      "E1"
+    ],
+    "citation_support": [
+      {
+        "claim_index": 1,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.7727,
+        "supported": true
+      },
+      {
+        "claim_index": 2,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.8125,
+        "supported": true
+      },
+      {
+        "claim_index": 3,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.6875,
+        "supported": true
+      },
+      {
+        "claim_index": 4,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.5,
+        "supported": false
+      },
+      {
+        "claim_index": 5,
+        "citations": [
+          "E1"
+        ],
+        "claim_token_support": 0.7059,
+        "supported": true
+      }
+    ],
+    "validator": "deterministic_rubric_and_citation_v1_1"
+  },
+  "rubric_evaluation": {
+    "required_points": [
+      {
+        "point": "Use two similar green leaves",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Coat one with petroleum jelly/grease and leave one uncoated",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "Add equal drops of weak acid and observe",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "The uncoated leaf is affected while the coated leaf is protected",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Petroleum jelly models the protective mucus lining of the stomach",
+        "token_recall": 0.8571,
+        "matched": true
+      }
+    ],
+    "optional_points": [
+      {
+        "point": "Observe after about half an hour",
+        "token_recall": 0.0,
+        "matched": false
+      }
+    ],
+    "required_coverage": 0.6,
+    "optional_coverage": 0.0,
+    "possible_unsupported_claims": [],
+    "asserted_unsupported_claims": [],
+    "rubric_score": 0.45,
+    "automatic_pass": false,
+    "manual_review_required": true,
+    "evaluator": "deterministic_rubric_and_citation_v1_1"
+  },
+  "completed_at": "2026-07-16T19:24:04+00:00",
+  "initial_rubric_evaluation": {
+    "required_points": [
+      {
+        "point": "Use two similar green leaves",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Coat one with petroleum jelly/grease and leave one uncoated",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "Add equal drops of weak acid and observe",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "The uncoated leaf is affected while the coated leaf is protected",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Petroleum jelly models the protective mucus lining of the stomach",
+        "token_recall": 0.8571,
+        "matched": true
+      }
+    ],
+    "optional_points": [
+      {
+        "point": "Observe after about half an hour",
+        "token_recall": 0.0,
+        "matched": false
+      }
+    ],
+    "required_coverage": 0.6,
+    "optional_coverage": 0.0,
+    "possible_unsupported_claims": [],
+    "rubric_score": 0.7,
+    "automatic_pass": false,
+    "manual_review_required": true,
+    "evaluator": "deterministic_token_recall_v1"
+  },
+  "reevaluated_at": "2026-07-16T19:39:49+00:00"
+}

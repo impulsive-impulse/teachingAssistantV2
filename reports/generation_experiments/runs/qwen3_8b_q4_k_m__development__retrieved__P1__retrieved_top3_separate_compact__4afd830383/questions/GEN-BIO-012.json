@@ -1,0 +1,155 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top3_separate_compact__4afd830383",
+  "question_id": "GEN-BIO-012",
+  "question": "Write the differences between mitosis and meiosis?",
+  "book_id": "biology",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "67d708fb0f42746d27aaca83348d4e231eccbae714446790fa8f9bf802ea4a87",
+  "context_sha256": "7f1f0d461de9ebe8a4bd5b0eee8e1348c563059eba34f70760b2aec686641b5f",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 151,
+      "textbook_page": 142,
+      "pdf_pages": [
+        151,
+        152,
+        153,
+        154
+      ],
+      "textbook_pages": [
+        142,
+        143,
+        144,
+        145
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Cell organelles divide and\nprepare chromosome for mitosis.\nG1 (10.5 hrs)\nS (10.5 hrs)\nG1\nS\nG2\nM\nG2 (3.5 hrs)\nM (1 hr)\nFig-28: Cell cycle\nReflection of light at curved surfacesReproduction143\nM phase: This is cell division phase.\nIt includes prophase, metaphase,\nanaphase, telophase and cytokinesis.\nTo understand the functional relationship between these phases, Potu\nNarasimha Rao and Johnson (see annexure) conducted some experiments\nusing the cell fusion technique.\nThat is combining two cells in experimental\nconditions.\nWith this cell fusion technique they revealed for the first time\nthe structure of interphase (G1, S and G2) chromosomes that are not\nordinarily visible under the microscope.\nThey provided evidence on\nprogression of cells through the cell cycle in sequential unidirectional\nand controlled way by a series of chemical signals that can diffuse freely\nbetween nucleus and cytoplasm.\nThese experiments are considered to be\na ‘mile stone’ in the cell cycle studies.\nProphase Metaphase Anaphase Telophase\nFig-29: Mitosis - Stages of Karyokinesis\nActivity-4\nObserve different stages of mitotic cell division\nTake permanent slides which shows different stages of mitotic cell\ndivision from your lab kit.\nObserve carefully under microscope.\nDraw\ndiagrams what you observe, and compare your observations with the\nfollowing figures. (Fig-29)\nThe division of nucleus (Karyokinesis) followed by the division of\nCytoplasm (Cytokinesis) finally brings about formation of two daughter\ncells.\nWhile observing cells in tissues undergoing division, it is not easy\nto differentiate different stages of division. see table-1.\n144 Reproduction\nTable-1: Mitosis\n6.14.1 Meiosis\nUnlike mitosis which is a continuous process for division in most of\nthe cells.\nMeiosis occurs only during the formation of gametes in sexual\nreproduction.\nMeiosis has two phases.\nDuring the first phase of meiosis\nthe parent cell containing two sets of chromosomes (diploid) divides and\ndaughter cells containg one set of chromosomes (haploid) are formed.\nThe second phase of meiosis is similar to normal mitosis.\nThus the four\ndaughter cells have just half the number of chromosomes of the parent cell.\nStage Description\n1.\nProphase 1.\nChromosomes condense and get coiled.\nThey become visible even in\nlight microscope and nucleoli become smaller.\n2.\nChromosomes split lengthwise to form chromatids, connected by\ncentromeres.\n3.\nNuclear membrane disappears.\n4.\nCentrosome, containing rod-like centrioles, divide and form ends\nof spindle (probably animal cells only).\n(Note: No pairing of chromosomes as in meiosis).\n2.\nMetaphase 1.\nChromosomes move to cell equator, spindle fibres attached to\ncentromeres.\n3.\nAnaphase 1.\nCentromeres split, separating the chromatids.\n2.\nSpindle fibres attached to centromeres contract, pulling chromatids\ntowards poles\n4.\nTelophase 1.\nChromatids elongate, become invisible, replication at this stage to\nbecome chromosomes.\n2.\nNuclear membranes form round daughter nuclei.\n3.\nNecleolus is resynthesized in each daughter nucleus.\nCytokinesis 1.\nNucleus divides into two and division of cytoplasm starts Two cells\nare formed.\n2.\nCell membrane pinches to form daughter cells (animals) or new cell\nwall material becomes laid down across spindle equator (plants)\nReflection of light at curved surfacesReproduction145\nHence meiosis is also called as Reduction Division.\nThe daughter\ncells are haploid in condition.\nYou will learn more about this in further\nclasses.\nx What differences do you find in mitosis and meiosis?\nWrite in a\ntabular form.\nx What would happen if the gamets do not have half the chromosome\nnumber as to their parental cell?\nx How would it affect the progeny formed by sexual reproduction?\n6.15 Reproductive health\nx Why did the government of India fixed the legal marriage age of\nboys (21 years) and girls (18 years)?\nx Do you feel that it is a social responsibility to control birth after\nhaving one or two children?",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00089"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 154,
+      "textbook_page": 145,
+      "pdf_pages": [
+        154,
+        155,
+        156
+      ],
+      "textbook_pages": [
+        145,
+        146,
+        147
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "cells are haploid in condition.\nYou will learn more about this in further\nclasses.\nx What differences do you find in mitosis and meiosis?\nWrite in a\ntabular form.\nx What would happen if the gamets do not have half the chromosome\nnumber as to their parental cell?\nx How would it affect the progeny formed by sexual reproduction?\n6.15 Reproductive health\nx Why did the government of India fixed the legal marriage age of\nboys (21 years) and girls (18 years)?\nx Do you feel that it is a social responsibility to control birth after\nhaving one or two children?\nx What do you understand by the term ‘Healthy Society’?\nx Will you encourage child marriage?\nWhy?\nAs we have seen, the process of sexual maturation is gradual, and\ntakes place while general body growth is still going on.\nTherefore,\nsome degree of sexual maturation does not necessarily mean that the body\nor the mind is ready for sexual acts.\nFurther, it is not fit for having and\nbringing up children.\nHow do we decide if the body or the mind is ready\nfor this major responsibility?\nAll of us are under many different kinds of\npressures about these issues.\nThere can be pressure from our friends for\nparticipating in many activities, whether we really want or not.\nThere\ncan be pressure from families to get married and start having children.\nFig-30: Meiosis\nMetaphase 1 Anaphase 1 Telophase 1\nProphase 1\nDaughter cells\nMeiosis-II\n146 Reproduction\nThere can be pressure from government and voluntary organisations to\nprotect child rights and prevent child marriages.\nIn these situations, right\nchoices are important.\nIn the lesson 8th class “why do we fall ill”, we learnt that the diseases\ncan be transmitted from person to person in a variety of ways.\nSince the\nsexual act is a very intimate connection of bodies, it is not surprising\nthat many diseases can be sexually transmitted.\nThese include bacterial\ninfections such as Gonorrhea and syphilis, and viral infections such as\nAIDS (Acquired Immuno Deficiency Syndrome).\nThese diseases spread by unsafe sexual contacts, using infected\ndevices, infected blood transfusion, from an infected mother to child.\nUnfortunetely, Telangana state has high incidents of HIV positive\ncases.\nIlliteracy, poor health, unemployment, migration, non-traditional\nsex practise, unethical contacts and trafficking are some of the factors\ncontributing to the spread of HIV in the state, according to experts.\nThe government established Anti Retroviral Therapy (ART\ncentres) to supply medicine to HIV patients.\nMedical and health,\nfamily health departments AIDS control projects implementing\nvarious programmes like ASHA (Accredited Social Health Activist),\nRed Ribbon Express, etc., to create awareness in society on the risks\nand symptoms of AIDS.\nx Invite local health worker to your school and discuss about HIV\nand its impact on society.\nx Social discrimination against AIDS patients is also a social evil.\nCan you support this?\nWhy?\nIf we follow the simple life styles as cited below one could avoid\nmany sexually transmitted diseases.\nx Avoid sex with multiple partners.\nx Even though contraceptives are available it is better follow ethical\nand healthy life practices.\nFig-31:\nRed ribbon\n1st December\nAIDS Day\nReflection of light at curved surfacesReproduction147\nx In case of doubt, that you may be pregnant go to a qualified doctor for\nearly detection and get complete treatment if diagnosed with disease.\n6.16 Birth control methods\nThe sexual act always has potential to lead to pregnancy.\nPregnancy\nwill make major demands on the body and the mind of the woman, and if\nshe is not ready for it, her health will be adversely affected.\nTherefore,\nmany ways have been devised to avoid pregnancy.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00090"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 150,
+      "textbook_page": 141,
+      "pdf_pages": [
+        150,
+        151,
+        152
+      ],
+      "textbook_pages": [
+        141,
+        142,
+        143
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The chemical nature of the genetic material was\ndetermined after a series of experiments over the next 50 years, culminating\nin the determination of its structure the deoxy ribonucleic acid (DNA) in\n1953 by James Watson(DNA) and Francis Crick.\nScientists proved that mitosis takes place in all body cells which retains\nsame number of chromosomes.\nMeiotic division takes place in sex cells\nwhere the chromosome number is halved.\nObserve the Fig-27.\n6.13 Cell division in Human beings\nWe know that cell is the structural and functional unit of life in all\norganisms.\nCell division is a life process.\nThe process of cell division is\nsame in unicellular organisms and highly evolved multicellular organisms\nlike human being.\nIn all organisms the cell divide and form new cells.\nCell\ndivision is the process that transforms a human fertilized egg into a baby\nin 9 months and into an adult in the next 20 years.\nCell division and function\nin a multicellular organism is highly regulated.\nIt occurs only when there\nis a need for it.\nFig-27: Cell division showing mitosis and meiosis\nbone\nmuscle\nskin\nnerve\ngland\nblood\nother cells\nsperm\negg Zygote\n(fertilised egg)\nsperm\negg\nimmature\nreproductive cell\nTwo kinds of cell divisions in the life\nof an individual.\nThe chromosome\nnumbers 2n and n are respectively the\nnumber of chromosomes following\nmitosis (2n) and half the number (n)\nfollowing meiosis - the type of\ndivision predicted by Weismann.\nmeiosis\nmitosis\n142 Reproduction\nCells in some organs, such as heart and brain of an individual may\ndivide slowly.\nOn the other hand bone marrow cells may actively divide to\nproduce red blood cells, which have a short life span nearly 120 days in\nthe body.\nFor example, if you cut your finger and bleed, soon a blood clot\nforms to stop the bleeding.\nThis brings in various chemicals to the site\nthat stimulate skin cells to divide and heal the wound.\nCell division ceases\nas the wound is completely healed.\nIn contrast, cancer cells do not respond\nto such growth regulating factors and continuously divide at the expense\nof normal cells, thus ultimately killing the host.\nSo it becomes important\nto understand the processes involved in cell division.\nThe cell cycle will\nhelp us understand this better.\n6.14 Cell cycle\nThe process of cell division is a\nvery small part of the cell cycle.\nIt\ncompletes in 40-60 minutes.\nThe\nperiod between two cell divisions is\ncalled ‘Interphase’.\nThis is actually the\nperiod when the genetic material\n(DNA) makes its copy so that it is\nequally distributed to the daughter cells\nduring mitosis.\nInterphase can be\ndivided into three phases.\n1) G1 phase: This is the linking\nperiod between the completion of\nmitosis and the beginning of DNA replication (Gap 1 phase).\nThe\ncell size increases during this period.\n2) S phase: This is the period of DNA synthesis (Synthesis phase)\nleading duplication of chromosomes.\n3) G2 phase: This is the time between the end of DNA replication and\nthe beginning of mitosis.(Gap 2 phase).\nCell organelles divide and\nprepare chromosome for mitosis.\nG1 (10.5 hrs)\nS (10.5 hrs)\nG1\nS\nG2\nM\nG2 (3.5 hrs)\nM (1 hr)\nFig-28: Cell cycle\nReflection of light at curved surfacesReproduction143\nM phase: This is cell division phase.\nIt includes prophase, metaphase,\nanaphase, telophase and cytokinesis.\nTo understand the functional relationship between these phases, Potu\nNarasimha Rao and Johnson (see annexure) conducted some experiments\nusing the cell fusion technique.\nThat is combining two cells in experimental\nconditions.\nWith this cell fusion technique they revealed for the first time\nthe structure of interphase (G1, S and G2) chromosomes that are not",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00088"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Mitosis and meiosis are both types of cell division, but they differ in several key aspects. Mitosis is a process where a single cell divides into two identical daughter cells, and it occurs in most body cells. It maintains the same number of chromosomes in the daughter cells as the parent cell. Meiosis, on the other hand, is a specialized type of cell division that occurs only in the formation of gametes (sperm and eggs) during sexual reproduction. It results in four daughter cells, each with half the number of chromosomes of the parent cell. This is why meiosis is also called reduction division. Additionally, meiosis involves two stages (meiosis I and meiosis II), while mitosis involves only one stage. In mitosis, the chromosomes are not paired, whereas in meiosis, homologous chromosomes pair up and exchange genetic material during prophase I. These differences ensure genetic diversity in offspring during sexual reproduction.\",\n  \"selected_evidence_ids\": [\"E1\", \"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 151,\n      \"textbook_page\": 142\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 150,\n      \"textbook_page\": 141\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 75.50026439999056,
+    "latency_seconds": 132.78009400000155,
+    "usage": {
+      "completion_tokens": 303,
+      "prompt_tokens": 2847,
+      "total_tokens": 3150,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-TpKNWsa659cojvwb8FEivGRCNcMRykC0",
+    "peak_rss_bytes": 12987715584
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Mitosis and meiosis are both types of cell division, but they differ in several key aspects. Mitosis is a process where a single cell divides into two identical daughter cells, and it occurs in most body cells. It maintains the same number of chromosomes in the daughter cells as the parent cell. Meiosis, on the other hand, is a specialized type of cell division that occurs only in the formation of gametes (sperm and eggs) during sexual reproduction. It results in four daughter cells, each with half the number of chromosomes of the parent cell. This is why meiosis is also called reduction division. Additionally, meiosis involves two stages (meiosis I and meiosis II), while mitosis involves only one stage. In mitosis, the chromosomes are not paired, whereas in meiosis, homologous chromosomes pair up and exchange genetic material during prophase I. These differences ensure genetic diversity in offspring during sexual reproduction.",
+    "selected_evidence_ids": [
+      "E1",
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 151,
+        "textbook_page": 142
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 150,
+        "textbook_page": 141
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Mitosis has one division; meiosis has two",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Mitosis forms two daughter cells; meiosis forms four",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Mitosis preserves chromosome number; meiosis halves it",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Mitosis supports growth/repair; meiosis forms gametes",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "Meiosis creates variation through recombination/segregation",
+        "token_recall": 0.1667,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.6,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 151
+  },
+  "completed_at": "2026-07-16T21:28:52+00:00"
+}

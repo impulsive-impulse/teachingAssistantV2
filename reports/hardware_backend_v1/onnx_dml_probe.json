@@ -1,0 +1,28 @@
+{
+  "provider_requested": "dml",
+  "session_providers": [
+    "DmlExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "provider_options": {
+    "DmlExecutionProvider": {},
+    "CPUExecutionProvider": {}
+  },
+  "profile_provider_node_counts": {
+    "DmlExecutionProvider": 510
+  },
+  "runtime_version": "1.24.4",
+  "python_architecture": "AMD64",
+  "model_path": "X:\\teachingAssistantV2\\temp\\backend_probe_matmul_qdq.onnx",
+  "iterations": 500,
+  "load_seconds": 0.3294574999890756,
+  "mean_latency_ms": 0.3847341997898184,
+  "p50_latency_ms": 0.3420000139158219,
+  "p95_latency_ms": 0.6708999862894416,
+  "max_absolute_error_vs_cpu": 0.08312356472015381,
+  "max_relative_error_vs_cpu": 0.05517242852653138,
+  "output_valid": false,
+  "accelerated_without_cpu_nodes": true,
+  "cpu_fallback_disabled": true,
+  "power_information": "not exposed by this runtime"
+}

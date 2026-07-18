@@ -1,0 +1,184 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__development__retrieved__P1__retrieved_top5_page_order_compact__57946003e1",
+  "question_id": "GEN-PSC-008",
+  "question": "Write the lens maker’s formula and explain the terms in it.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "8a750ccc29cb4b5f713eae233df6d8840cf86bc09dbaa714cbad0548bce2f1ee",
+  "context_sha256": "5427c86d5ef838a0003abd541260d0d8c1acec9050b15f62032974c4ccf44d1b",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 87,
+      "textbook_page": 77,
+      "pdf_pages": [
+        87,
+        88,
+        89
+      ],
+      "textbook_pages": [
+        77,
+        78,
+        79
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "point OI of the object.\nSimilarly, the image of the point O on the principal\naxis is formed at point I on the principal axis (see Figure 19).\nWe get the\ninverted image III of object OOI.\nPO, PI and PF1 are the object distance, image distance and focal length\nrespectively.\nFrom fig.- 19, triangle PPIF1\nand triangle F1III are similar triangles,\n_ 1\n1\nPP PF= II FI\n¢\n¢ ...................(1)\nBut from the fig.- 19,\nF1I = PI – PF1\nsubstituting F1I in equation (1) above, we get\n1\n1\nPP PF= II (PI PF )\n¢\n¢ - ...................(2)\nWe have another set of similar triangles OOIP and PIII.\nFrom these triangles we get, OOI/III = PO/PI\nbut from fig.- (19), OO PO= II PI\n¢\n¢ , hence we have\nPP PO= II PI\n¢\n¢ ...................(3)\nFrom (2) and (3), we get\n1\n1\nPO PF= PI (PI PF )- _ 1\n1\n( P I P F)PI = PO PF\n-\n_ 1\nPO PI\n= 1\nPI PF -\nOn dividing the equation by PI, we get\nfig-19\nF1\nF2O P\nII\nI\nPI\nOI\n78 Refraction of Light at Curved Surfaces\n1\n1 11\n= PO PF PI - _ 1\n1 11+ = PO PI PF\nThe above equation is derived for a particular case of the object while\nusing a convex lens.\nTo convert this into a general equation, we need to use\nthe sign convention.\nAccording to the sign convention\nPO = -u ; PI = v ; PF1 = f\nSubstituting these values in equation 4, we get\n1 11 = v uf-\nThis equation is called lens formula.\nIt can be used for any lens.\nBut\nremember to use the sign convention while using this equation.\nWe have ‘u’ and ‘v’ values in table – 1 that were measured during\nactivity – 2.\nFind focal length of the lens from the values of the table for\neach set of values of ‘u’ and ‘v’.\n4.4 Magnification\nLet us discuss the size of the image formed\nby a lens.\nObserve object OOI , image III in fig-20.\nD OOI P, D III P are similar.\n\\ II OO II PI\nPI PO OO PO\n¢ ¢¢= Þ= ¢\nSubstituting the values as per sign convention in the above equation, we get\ni\no\nhv\nhu\n--\n=\n\\ Magnification i\no\nhv\nm hu==\n· Is the focal length same for each set of values?\nYou might have noticed that irrespective of object distance and image\ndistance, you will get same focal length.\nIf you do not get the same value\nof focal length, there may be some experimental error while doing the\nexperiment.\nIn such a case, find the average of all the values.\nThis will be\nequal to the focal length of the lens.\nLet us see an example\nE x a m p l e 6\nAn electric lamp and a screen are placed on the table, in a line at a\ndistance of 1m.\nIn what positions of convex lens of focal length of f = 21\ncm will the image of lamp be sharp?\nF1\nF2O P\nII\nI\nOI\nPI\nho\nhi\nu v\nfig-20\nRefraction of Light at Curved Surfaces79\nfig-21\nLens Circular\nlens\nholderStone\nfig-E(6)\nd-x\nd\nx\nScreen\nLamp\nSolution\nThe distance between the lamp and screen is 100cm and ‘x’ be the distance\nbetween lamp and lens.\nFrom fig.- E-6, we have u = - x and\nv = 100-x, f = 21\nBy substituting these in lens formula,\nWe get\n1 11\n21 (100 )=+ - xx\nAfter solving thisequation, we get\nx2 – 100 x + 2100 = 0\nIt is a quadratic equation.\nHence we get two solutions.\nThe solutions\nof the above equation are\nx2-70x-30x+2100=0 _ x (x-70)-30(x-70) = 0 _ (x-70)(x-30) = 0",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00044"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 89,
+      "textbook_page": 79,
+      "pdf_pages": [
+        89,
+        90
+      ],
+      "textbook_pages": [
+        79,
+        80
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Refraction of Light at Curved Surfaces79\nfig-21\nLens Circular\nlens\nholderStone\nfig-E(6)\nd-x\nd\nx\nScreen\nLamp\nSolution\nThe distance between the lamp and screen is 100cm and ‘x’ be the distance\nbetween lamp and lens.\nFrom fig.- E-6, we have u = - x and\nv = 100-x, f = 21\nBy substituting these in lens formula,\nWe get\n1 11\n21 (100 )=+ - xx\nAfter solving thisequation, we get\nx2 – 100 x + 2100 = 0\nIt is a quadratic equation.\nHence we get two solutions.\nThe solutions\nof the above equation are\nx2-70x-30x+2100=0 _ x (x-70)-30(x-70) = 0 _ (x-70)(x-30) = 0\n\\ x =70cm and x = 30cm.\nWe can place the lens at a distance of 70cm or 30cm from the bulb,\nwe get sharp image.\n· On what factors does the focal length of the lens depend?\nLet us find out.\nActivity 2\nTake the same lens that was used in lab activity.\nNote the average focal\nlength of the lens that was calculated in the lab activity.\nTake a cylindrical\nvessel such as glass tumbler.\nIts height must be much greater than the focal\nlength of the lens. (We require the vessel which has a length (depth) nearly\nequal to four times of the focal length of lens).\nKeep a black stone inside the\nvessel at its bottom.\nNow pour water into the vessel up to a height such that\nthe height of the water level from the top of the stone is greater than focal\nlength of lens.\nNow dip the lens horizontally using a circular lens holder as\nshown in the fig.- (21) above the stone.\nSet the distance between stone and\nlens that is equal to or less than focal length of lens measured in activity 2.\nNow look at the stone through the lens. (Do this in open ground)\n· Can you see the image of the stone?\n· If Yes / Not, why?\nGive your reasons.\nYou can see the image of the stone if the distance between lens and stone is less than\nthe focal length of the lens (in air).\nNow increase the distance between lens and stone\nuntil you cannot see the image of the stone.\n· What do you conclude from this activity?\n· Does the focal length of the lens depend on surrounding medium?\nYou have dipped the lens to a certain height which is greater than the\nfocal length of lens in air.\nBut you can see the image (when lens is raised\nfurther, you could not see the image).\nThis shows that the focal length of\nlens has increased in water.\nThus we conclude that the focal length of lens\ndepends upon the surrounding medium in which it is kept.\n80 Refraction of Light at Curved Surfaces\n4.5 Lens maker’s formula\nImagine a point object ‘O’\nplaced on the principal axis of the\nthin lens as shown in fig.- 22.\nLet\nthis lens be placed in a medium of\nrefractive index na and let refractive\nindex of lens medium be nb.\nConsider a ray, from ‘O’ which is incident on the convex surface of the\nlens with radius of curvature R1 at A as shown in fig.- 22.\nThe incident ray refracts at A.\nLet us assume that, it forms image at Q, if there were no concave\nsurface.\nFrom the fig.-(22), Object distance PO = –u;\nImage distance v = PQ = x\nRadius of curvature R = R1\nn1 = na and n2 = nb\nSubstitute the above values in the equation, 2 1 21n n ( n n)-=v uR\n-\n_ 1\nab abn ( n n)n+=x uR\n-\n...................(1)\nBut the ray that has refracted at A suffers another refraction at B on the",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00045"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 90,
+      "textbook_page": 80,
+      "pdf_pages": [
+        90,
+        91,
+        92
+      ],
+      "textbook_pages": [
+        80,
+        81,
+        82
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Consider a ray, from ‘O’ which is incident on the convex surface of the\nlens with radius of curvature R1 at A as shown in fig.- 22.\nThe incident ray refracts at A.\nLet us assume that, it forms image at Q, if there were no concave\nsurface.\nFrom the fig.-(22), Object distance PO = –u;\nImage distance v = PQ = x\nRadius of curvature R = R1\nn1 = na and n2 = nb\nSubstitute the above values in the equation, 2 1 21n n ( n n)-=v uR\n-\n_ 1\nab abn ( n n)n+=x uR\n-\n...................(1)\nBut the ray that has refracted at A suffers another refraction at B on the\nconcave surface with radius of curvature (R2).\nAt B the ray is refracted and\nreaches I on the principal axis.\nThe image Q of the object due to the convex surface is taken as object\nfor the concave surface.\nSo, we can say that I is the image of Q for concave\nsurface.\nSee fig.- 22.\nObject distance u = PQ = + x\nImage distance PI = v\nRadius of curvature R = –R 2\nFor refraction, the concave surface of the lens is considered as\nmedium-1 and surrounding medium is considered as medium-2.\nHence\nthe suffixes of refractive indices interchange.\nThen we get,\nu xv\nO I\nna na\nnb\nP\nA B\nR1 R2\nfig-22\nQ\nRefraction of Light at Curved Surfaces81\nn1 = nb and n2 = na\nSubstituting the above values in equation 2 1 21n n ( n n)-=v uR\n-\n2\naa bb n ( n n)n =v xR\n-\n- - .............. (2)\nBy adding (1) and (2) we get,\na\n12\naa ab\nnn 11= ( n n)v u RR\næö+ -+ ç÷\nèø\nDividing both sides by na, We get\na\n12\nb\na\nn1 1 11=1v u n RR\næ ö æö+ -+ ç ÷ ç÷\nè ø èø\nWe know b\nbaa\nn nn = called refractive index of lens with respect to\nsurrounding medium.\n( ) 12\nba\n1 1 11= n1v u RR\næö+ -+ ç÷\nèø\nThis is derived for specific case for the convex lens so we need to generalize\nthis relation.\nFor this we use sign convention.\nApplying sign convention to\nthis specific case we get,\n( ) 12\nba\n1 1 11= n1v u RR\næö- -- ç÷\nèø\nWe know that\n1 11 =v uf-\nSo, we get\n( ) 12\nba\n1 11= n1f RR\næö-- ç÷\nèø .................(3)\nIf the surrounding medium is air, then the relative refractive index could\nbe absolute refractive index of the lens.\n( ) 12\n1 11=n1f RR\næö-- ç÷\nèø .\nThis can be used only when the lens is kept in air.\nWhere n is absolute refractive index and this equation is called lens maker’s\nformula.\nNOTE: Always use sign convention while using any formula derived in\nthis chapter and the above formula can be used for any thin lens.\n82 Refraction of Light at Curved Surfaces\n· The formula used when a light ray enters a medium with refractive index n2 from a\nmedium with refractive index n1 at curved interface with a radius of curvature R is\nn2/v –n 1/u = (n2- n1)/R\n· A lens is formed when one medium is separated from another medium by two\nsurfaces, one of which is curved.\n· Lens formula is 111=fvu -\nwhere f is the focal length of lens, u is the object distance and v is the image\ndistance.\nThe convex lens behaves as a converging lens, if it is kept in a medium\nwith refractive index less than the refractive index of the lens.\nIt behaves like\na diverging lens when it is kept in a transparent medium with greater refractive\nindex than that of the lens.\nFor example an air bubble in water behaves like a diverging lens.",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00046"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 92,
+      "textbook_page": 82,
+      "pdf_pages": [
+        92,
+        93,
+        94
+      ],
+      "textbook_pages": [
+        82,
+        83,
+        84
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "· A lens is formed when one medium is separated from another medium by two\nsurfaces, one of which is curved.\n· Lens formula is 111=fvu -\nwhere f is the focal length of lens, u is the object distance and v is the image\ndistance.\nThe convex lens behaves as a converging lens, if it is kept in a medium\nwith refractive index less than the refractive index of the lens.\nIt behaves like\na diverging lens when it is kept in a transparent medium with greater refractive\nindex than that of the lens.\nFor example an air bubble in water behaves like a diverging lens.\nLet us see an example for lens maker formula.\nE x a m p l e 7\nWhat is the focal length of double concave lens kept in air with two\nspherical surfaces of radii R1 = 30cm and R2 =60cm.\nTake refractive index of\nlens as n = 1.5.\nSolution:\nFrom the fig.- E(7) using sign convention we get\nR1 = -30cm, R2 = 60cm and also given that\nn = 1.5\nusing ( ) 12\n1 11=n1f RR\næö-- ç÷\nèø\n( )1 11= 1 .\n51f 30 60\næö-- ç÷-èø\nSolving this, we get\nf = -40cm\nHere minus indicates that the lens is divergent.\nC2\nfig-E(7)\nC1 Light rays\nKey words\nLens, Focal length, Focus, Optic centre, Principal axis, Radius of curvature,\nCentre of curvature, Focal plane, Convergence, Divergence.\nWhat we have learnt\nRefraction of Light at Curved Surfaces83\nI.\nReflections on concepts\n1.\nHow do you verify experimentally that the focal length of a convex lens\nis increased when it is kept in water? (AS1)\n2.\nHow do you find the focal length of a lens experimentally? (AS1)\n3.\nDraw ray diagrams for the following positions and explain the nature and\nposition of image.\ni.\nObject is placed at C2\nii.\nObject is placed between F2 and optic centre P. (AS5)\nII.\nApplication of concepts\n1.\nTwo converging lenses are to be placed in the path of parallel rays so that\nthe rays remain parallel after passing through both lenses.\nHow should the\nlenses be arranged?\nExplain with a neat ray diagram. (AS1)\n2.\nThe focal length of a converging lens is 20cm.\nAn object of 2cm height is at a\ndistance of 60cm from the lens.\nWhere will the image be formed and what\nkind of image is it?\nAnd also find the height of the image (AS1) (Ans: A real,\ndiminished, inverted image formed at 30cm from the lens)\n3.\nA double convex lens has two surfaces of equal radii ‘R’ and refractive index\nn = 1.5, find the focal length ‘f’. (AS1)\n4.\nFind the refractive index of the glass which is a symmetrical convergent lens\nif its focal length is equal to the radius of curvature of its surface. (AS7)\n(Ans:1.5)\n1.\nAt infinity Focal Point (F1) Point Image\n2.\nBeyond C2 Between F1 & C1 Inverted, Diminished & Real\n3.\nAt C2 On C1 Inverted, Same size & Real\n4.\nBetween F2 & C2 Beyond C1 Inverted, Magnified & Real\n5.\nAt F2 Infinity -\n6.\nBetween F2 & P Beyond F2 Erect, Magnified & Virtual\nImprove your learning\n· Lens maker’s formula is\n( ) 12\n1 11=n1f RR\næö-- ç÷\nèø\nwhere R1 and R2 are radii of curvature , n is the refractive index and f is the\nfocal length.\n· Characteristics of the image formed due to convex lens\nSl.\nNo.\nPosition of the object Position of the ImagePosition of the Image Characteristics of the image\n84 Refraction of Light at Curved Surfaces\nIII.\nHigher Order Thinking Questions\n1) A convex lens is made up of three different materials as shown in the fig-\nQ(1).\nHow many of images does it form? (AS2)",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00047"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 93,
+      "textbook_page": 83,
+      "pdf_pages": [
+        93,
+        94,
+        95
+      ],
+      "textbook_pages": [
+        83,
+        84,
+        85
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Between F2 & P Beyond F2 Erect, Magnified & Virtual\nImprove your learning\n· Lens maker’s formula is\n( ) 12\n1 11=n1f RR\næö-- ç÷\nèø\nwhere R1 and R2 are radii of curvature , n is the refractive index and f is the\nfocal length.\n· Characteristics of the image formed due to convex lens\nSl.\nNo.\nPosition of the object Position of the ImagePosition of the Image Characteristics of the image\n84 Refraction of Light at Curved Surfaces\nIII.\nHigher Order Thinking Questions\n1) A convex lens is made up of three different materials as shown in the fig-\nQ(1).\nHow many of images does it form? (AS2)\n2) Y ou have a lens.\nSuggest an experiment to find out the\nfocal length of the lens.(AS3)\n3) Fig.-Q(3) shows ray AB that has passed through a\ndivergent lens.\nConstruct the path of the ray up to the lens if\nthe position of its foci is known. (AS5)\n4) Fig. -Q(4) shows a point light source and its image\nproduced by a lens with an optical axis N1N2.\nFind the\nposition of the lens and its foci using a ray diagram. (AS5)\n5) Find the focus by drawing a ray diagram using the position\nof source S and the image S/ given in the fig.-Q(5). (AS5)\n6) A parallel beam of rays is incident on a convergent lens\nwith a focal length of 40cm.\nWhere a divergent lens with a focal length of 15\ncm should be placed for the beam of rays to remain parallel after passing\nthrough the two lenses?\nDraw a ray diagram. (AS5)\n7) Suppose you are inside the water in a swimming pool near an edge.\nA friend\nis standing on the edge.\nDo you find your friend taller or shorter than his usual\nheight?\nWhy?(AS7)\n1) Which one of the following materials cannot be used to make a lens? [ ]\na) water b) glass\nc) acrylic d) clay\nfig-Q(1)\nfig-Q(4)\nfig- Q(5)\nF\nF/\nA B\nN1 N2\nN1 N2\nS/\nS\nfig- Q(3)\nfig-Q(5)\nMultiple choice questions\nRefraction of Light at Curved Surfaces85\n2) Which of the following is true? [ ]\na) the distance of virtual image is always greater than the object distance for\nconvex lens\nb) the distance of virtual image is not greater than the object distance for\nconvex lens\nc) convex lens always forms a real image\nd) convex lens always forms a virtual image\n3) Focal length of the plano-convex lens is ............. when its radius of curvature of\nthe surface is R and n is the refractive index of the lens. [ ]\na) f = R b) Rf= 2\nc) Rf= (n 1)-\nd) (n 1)f= R\n-\nSuggested Experiments\n1) Conduct an experiment to find out the focal length of the lens.\n2) Let us assume a system that consists of two lenses with focal length f1 and f2\nrespectively.\nHow do you find the focal length of the system experimentally,\nwhen\ni) two lenses are touching each other\nii) they are separated by a distance ‘d’ with common principal axis.\nSuggested Projects\n1.\nCollect the information about the lenses available in an optical shop.\nFind out\nhow the focal length of a lens may be determined by the given ‘power’ of the\nlens.\n2.\nTake two watch glasses and affix them.\nPour two different liquids ( Ex.\nWater, Navaratan oil) and now it will acts like a lens with two different\nmaterials .Put a light source (object) in front of this lens and note the\nobservations and write a report on it.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00048"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"The lens maker’s formula is given by: 1/f = (n - 1) * [1/R1 - 1/R2]. Here, f is the focal length of the lens, n is the refractive index of the lens material, R1 is the radius of curvature of the first surface, and R2 is the radius of curvature of the second surface. This formula is used to calculate the focal length of a thin lens based on its refractive index and the radii of curvature of its two surfaces.\",\n  \"selected_evidence_ids\": [\"E3\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 90,\n      \"textbook_page\": 80\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 92,\n      \"textbook_page\": 82\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 266.76197220000904,
+    "latency_seconds": 361.32121840000036,
+    "usage": {
+      "completion_tokens": 217,
+      "prompt_tokens": 4961,
+      "total_tokens": 5178,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-Tbnb6uS4fufqknzVf6oIMvCd9HAwXZiz",
+    "peak_rss_bytes": 23545040896
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "The lens maker’s formula is given by: 1/f = (n - 1) * [1/R1 - 1/R2]. Here, f is the focal length of the lens, n is the refractive index of the lens material, R1 is the radius of curvature of the first surface, and R2 is the radius of curvature of the second surface. This formula is used to calculate the focal length of a thin lens based on its refractive index and the radii of curvature of its two surfaces.",
+    "selected_evidence_ids": [
+      "E3",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E3",
+        "pdf_page": 90,
+        "textbook_page": 80
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 92,
+        "textbook_page": 82
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "State 1/f = (n − 1)(1/R₁ − 1/R₂) for a thin lens in air",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Define f, n, R₁ and R₂",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Preserve signs of the radii under the stated convention",
+        "token_recall": 0.1667,
+        "matched": false
+      },
+      {
+        "point": "Note that the surrounding medium changes the relative refractive index in the general form",
+        "token_recall": 0.2222,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.0,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 82
+  },
+  "completed_at": "2026-07-17T07:38:40+00:00"
+}

@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f",
+  "question_id": "GEN-PSC-003",
+  "question": "What information do you get from a balanced chemical equation?",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "28a6d93dbbe17e446f4a4b0901533670594697be1eae5faa33bc83b35a475d4f",
+  "context_sha256": "e2d46cb77296b2c6161f331020577301c6e02cd4abd4b0f53ea62ff39316db9c",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 35,
+      "textbook_page": 25,
+      "text": "Chemical EquationsGovernment’s Gift for Students’ Progress 25\nGenerally, a compound is written by giving its chemical formula,\nwhich lists the symbols of the constituent elements and uses the subscript\nto indicate the number of atoms of each element present in the compound.\nIf no subscript is written the number 1 is understood. Thus we can write\ncalcium oxide as CaO, water as H 2O and the compound formed by the\nreaction of these two compounds is calcium hydroxide Ca (OH) 2.\nNow the reaction of calcium oxide with water can be written as:\nCaO + H2O g Ca (OH)2 ............................ (2)\nIn the above chemical equation, count the number of atoms of each\nelement on left side and right side of arrow.\n· Is the number of atoms of each element are equal on both sides?\nObserve the following reactions and their chemical equations. Zinc\nmetal reacts with dilute HCl to yield ZnCl2 and liberates Hydrogen gas.\nZ n+ HCl g ZnCl2 + H2 ............................ (3)\nSodium sulphate reacts with barium chloride to give white precipitate,\nbarium sulphate and sodium chloride.\nNa2SO4 + BaCl2 g BaSO4 + NaCl ............................. (4)\n· Do the atoms of each element on left side equal to the atoms of the\nelement on the right side of the equation?\n· Do the atoms of all the elements of the reactants also there on the\nproduct side?\nTHINK AND WRITE\nY ou have brushed the wall with an aqueous suspension of Ca(OH)2. After two\ndays the wall turned to white colour.\n· Write the balanced chemical reactions for the above changes using the\nappropriate symbols and formulae?.\n2.1.2 Balancing Chemical Equations\nAccording to the law of conservation of mass, the total mass of the\nproducts formed in chemical reaction must be equal to the total mass of\nreactants consumed. You know that an atom is the smallest particle of an\nelement that takes part in a chemical reaction. It is the atom which accounts\nfor the mass of any substance. As per the law of conservatioin of mass the\nnumber of atoms of each element before and after reaction must be the\nsame.",
+      "text_sha256": "a35a7f23d6716f57222c7f097a4d01c97264439fa13c83fc96f464be079ce6b6"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 39,
+      "textbook_page": 29,
+      "text": "Chemical EquationsGovernment’s Gift for Students’ Progress 29\nFe2O3 + 2Al g 2Fe + Al 2O3 ................ (15)\nThe above equation(15), the number of atoms of each element is same\non both sides of arrow mark. This is a balanced chemical equation.\nStep 3: The above equation(15) is balanced and coefficients are also\nsmallest whole numbers.\nStep4: Finally to check the correctness of balanced equation, count\nthe number of atoms of each element on both sides of equation.\nFe2O3 + 2Al g 2Fe + Al 2O3 ................. (16)\n(Note: The above method of balancing is called trial and error method\nonly. Sometimes you may have to take more care to balance the equation.)\n2.2 Making Chemical Equations more informative:\nChemical equations can be made more informative by expressing\nfollowing characteristics of the reactants and products.\n1. Physical state\n2. Heat changes (exothermic or endothermic change)\n3. Gas evolved (if any)\n4. Precipitate formed (if any)\n2.2.1 Expressing the physical state\nTo make the chemical equation more informative, the physical states\nof the substances may be mentioned along with their chemical formulae.\nThe different states ie., gaseous, liquid, and solid states are represented\nby the notations (g), (l) and (s) respectively. If the substance is present as\na solution in water, the word ‘aqueous’ is written. In the short form it is\nwritten as (aq).\nThe balanced equation(16) is written along with the physical states as:\nFe2O3(s) + 2Al (s) g 2Fe(s) + Al2O3 (s) ...... (17)\nD represents heating.\nElements No of Atoms of Reactants No. of Atoms in products\nFe 2 (in Fe2O3) 2(in Fe)\nO 3 (in Fe2O3) 3(in Al2O3 )\nAl 2 (in 2 Al) 2(in Al2O3 )",
+      "text_sha256": "ea85f9bf0cda84aaf0d2fad6b7693d718c51f68e29aa9a15d0849f8e6c5f2f28"
+    },
+    {
+      "evidence_id": "E3",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 44,
+      "textbook_page": 34,
+      "text": "34 Chemical EquationsGovernment’s Gift for Students’ Progress\nI. Reflections on concepts\n1. What information do you get from a balanced chemical equation? (AS1)\n2. Why should we balance a chemical equation? (AS1)\n3. Balance the following chemical equations. (AS1)\n(a) NaOH+ H2SO4 gNa2SO4 +H2O\n(b) KClO3gKCl + O2\n(c) Hg (NO3)2+ KI gHgI2+KNO3\n4. Mention the physical states of the reactants and products of the following chemical reactions and\nbalance the equations. (AS 1)\n(a) C6H12O6 g C2H5OH + CO2\n(b) NH3 + Cl2 g N2 + NH4Cl\n(c) Na + H2O g NaOH + H2\nII. Application of Concepts\n1. Balance the following chemical equation after writing the symbolic representation. (AS1)\n(a) Calcium hydroxide (s) + Nitric acid (aq) g Water (l) + Calcium Nitrate (aq)\n(b) Magnesium (s) + lodine (g) g Magnesium lodide (s)\n2. Write the following chemical reactions including the physical states of the substances and balance\nchemical equations. (AS1)\n(a) Sodium Hydroxide reacts with Hydrochloric acid to form Sodium Chloride and Water.\n(b) Barium Chloride reacts with liquid Sodium Sulphate to leave Barium Sulphate as a precipitate\nand also form liquid Sodium Chloride.\nIII. Higher Order Thinking Questions\n1. 2 moles of Zinc reacts with a cupric choloride solution containing 6.023x10 22\nformula units of CuCl2 Calculate the moles of copper obtained (AS1)\nZn(s) + CuCl2(aq)\ng ZnCl2(aq)\n+ Cu(s)\n2. 1 mole of propane (C3H8) on combustion at STP gives ‘A ’ kilo joules of heat energy.\nCaliculate the heat libarated when 2.4 ltrs of propane on combustion at STP. (AS1)\n3. Caliculate the mass and volume of oxygen required at STP to convert 2.4 kg of graphite\ninto carbon dioxide. (AS1)\nImprove your learning",
+      "text_sha256": "e55669ec557cbc715f6446b8602803dfbe1f9e58dab2026de00de72f10df9036"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"A balanced chemical equation provides several important pieces of information. First, it shows the reactants and products involved in a chemical reaction. Second, it indicates the number of atoms of each element on both sides of the equation, ensuring that the number of atoms of each element is the same on both sides, which is based on the law of conservation of mass. Third, it can also show the physical states of the substances (solid, liquid, gas, or aqueous solution) involved in the reaction. Additionally, it may include information about heat changes (exothermic or endothermic), gas evolved, or precipitate formed. A balanced equation ensures that the total mass of the products equals the total mass of the reactants.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 35,\n      \"textbook_page\": 25\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 39,\n      \"textbook_page\": 29\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 44,\n      \"textbook_page\": 34\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 35.169669499999145,
+    "latency_seconds": 76.23871810000855,
+    "usage": {
+      "completion_tokens": 293,
+      "prompt_tokens": 1687,
+      "total_tokens": 1980,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-yXCfsP7Xs3W28OISyhnwxETYW2XYhU0l",
+    "peak_rss_bytes": 15362924544
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "A balanced chemical equation provides several important pieces of information. First, it shows the reactants and products involved in a chemical reaction. Second, it indicates the number of atoms of each element on both sides of the equation, ensuring that the number of atoms of each element is the same on both sides, which is based on the law of conservation of mass. Third, it can also show the physical states of the substances (solid, liquid, gas, or aqueous solution) involved in the reaction. Additionally, it may include information about heat changes (exothermic or endothermic), gas evolved, or precipitate formed. A balanced equation ensures that the total mass of the products equals the total mass of the reactants.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 35,
+        "textbook_page": 25
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 39,
+        "textbook_page": 29
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 44,
+        "textbook_page": 34
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 3,
+    "citation_count": 3
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Identify reactants and products by symbols/formulae",
+        "token_recall": 0.4,
+        "matched": false
+      },
+      {
+        "point": "Give stoichiometric ratios of particles/moles",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Relate coefficients to relative quantities/masses",
+        "token_recall": 0.2,
+        "matched": false
+      },
+      {
+        "point": "Include physical states and reaction conditions when written",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Explain that gas volumes/heat information may be conveyed when specified",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.2,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 118
+  },
+  "completed_at": "2026-07-17T18:59:40+00:00"
+}

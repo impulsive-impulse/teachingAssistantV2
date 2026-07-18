@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__smoke__retrieved__P1__retrieved_top5_page_order_compact__80aeeb36e7",
+  "created_at": "2026-07-17T06:17:46+00:00",
+  "model_key": "qwen3_14b_q4_k_m",
+  "model": {
+    "repository": "Qwen/Qwen3-14B-GGUF",
+    "revision": "530227a7d994db8eca5ab5ced2fb692b614357fd",
+    "filename": "Qwen3-14B-Q4_K_M.gguf",
+    "sha256": "500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0",
+    "quantization": "Q4_K_M",
+    "thinking": false
+  },
+  "model_path": "X:\\models\\TeachingAssistantV2\\Qwen3-14B\\Qwen3-14B-Q4_K_M.gguf",
+  "model_sha256": "500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0",
+  "runtime": {
+    "engine": "llama.cpp",
+    "build_number": 10046,
+    "build_commit": "32e789fdfd598e9a1872da55ac941e4d94f030bd",
+    "architecture": "windows-arm64",
+    "backend": "cpu",
+    "context_size": 8192,
+    "threads": 10,
+    "threads_batch": 10,
+    "batch_size": 512,
+    "ubatch_size": 256,
+    "gpu_layers": 0,
+    "parallel_slots": 1
+  },
+  "settings": {
+    "seed": 42,
+    "temperature": 0.0,
+    "max_output_tokens": 384,
+    "thinking": false
+  },
+  "split": "smoke",
+  "question_ids": [
+    "GEN-BIO-002",
+    "GEN-BIO-005",
+    "GEN-BIO-012",
+    "GEN-BIO-014",
+    "GEN-PSC-002",
+    "GEN-PSC-006",
+    "GEN-PSC-009",
+    "GEN-PSC-015"
+  ],
+  "evaluation_mode": "retrieved",
+  "prompt_strategy": "P1",
+  "context_strategy": "retrieved_top5_page_order_compact",
+  "specialist_instruction": null,
+  "frozen_input_hashes": {
+    "generation_benchmark": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+    "retrieval_config": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6"
+  },
+  "metrics": {
+    "questions": 8,
+    "completed": 8,
+    "required_point_coverage": 0.6771,
+    "citation_validity": 1.0,
+    "unsupported_claim_rate": 0.25,
+    "structured_output_rate": 1.0,
+    "false_insufficient_count": 0,
+    "formula_accuracy": 0.3333,
+    "model_load_seconds": 11.3741,
+    "p50_latency_seconds": 346.7502,
+    "p95_latency_seconds": 404.5955,
+    "p50_time_to_first_token_seconds": 243.3136,
+    "p95_time_to_first_token_seconds": 278.2832,
+    "mean_tokens_per_second": 0.7489,
+    "peak_rss_bytes": 24006299648
+  }
+}

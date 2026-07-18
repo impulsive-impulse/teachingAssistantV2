@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__development__retrieved__P1__retrieved_top5_page_order_compact__79418da494",
+  "question_id": "GEN-BIO-010",
+  "question": "What is a synapse, and how does it transfer information?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "49040bb15f3b5d8d7678d12df0ae8859cd2839410f209cf4c345360cbb9d823d",
+  "context_sha256": "e1f2b61d1bf058f8c5ea2bdb476ea10d500753616374e0035f3c0e340adf9160",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 109,
+      "textbook_page": 100,
+      "pdf_pages": [
+        109,
+        110,
+        111
+      ],
+      "textbook_pages": [
+        100,
+        101,
+        102
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "100 Coordination\nEveryday we do many activities such as sharpening of a pencil, grasping\na door knob, walking or running, driving, and a few physical actions.\nAll\nthese actions involve well coordinated movements made with well balanced\npostures.\nIn fact, whenever we move some basic functions such as\nmovement, balance and coordination work together in performing motions\nof body parts.\nEven standing upright is a challenge of balancing on just two feet with\na narrow base.\nYet, it is common for us not only to stand upright easily and\napparently, effortlessly, but also while keeping our balance to perform\nmany functions like walking, running etc.\nx What other functions do you think are needed in coordination and\nbalance?\nAll our functions are carried out by an effort of several systems\nworking together.\nFor example, while movement, we hardly ever use just\nthe skeletal system or muscular system alone, several other systems also\nhave their own roles to play.\nEven within the muscular system, several\nmuscles work in a systamatic manner.\nx What triggers the movement of the muscles?\nAll our body parts, mainly the tissues and cells in them work by picking\nup signals of change (also called as stimuli) from their surroundings.\nThey\nthen respond to them.\nThis process triggers different functions in our body.\nFor example, it is natural to move to a side of the road when we hear or see\na car approaching.\n\u0018Chapter\nCoordination\n101 Coordination\nx How do we respond so fast to a situation?\n5.1 Responding to stimuli\nx What helps us to respond to such signals of change?\nx Why does the living body respond to such signals?\nAll living organisms respond to stimuli.\nChanges in the surroundings\nor signals of changes or stimulus are reasons for responses by living\norganisms.\nThe cat may be running because it saw a mouse.\nPlants grow\ntowards the sunlight.\nWe start sweating when the surroundings are hot and\nhumid.\nThe ability to react to particular stimulus in a particular situation\nmust be of great importance in ensuring the survival of the organism.\nThere is a sequence of events that brings about responses.\nThey start\nfrom detecting a change in outer or inner environment of the body or\nstimuli, then transmission of the information is the second stage, processing\nof the same is the third stage and execution of the appropriate action is\nlast stage.\nLet us do the following activity to find more about response to stimuli.\nActivity-1\nHolding a falling stick\nTake a long scale or stick at least around ½ meter.\nKeep your\nfingers in holding position as shown in fig-1 .\nAsk your friend to\nhold the stick / scale near the end and let the other end be\nsuspended between your fingers.\nPut a marking on the scale with\na pencil equal to the position of your fingers.\nLet there be a very\nsmall gap around a centimeter between your thumb and stick/\nscale and fore finger.\nNow let your friend allow it to fall.\nTry to\nhold it.\nx Could you hold it exactly at the point where it was suspended\nbetween your fingers?\nx Put a mark with pencil on the scale where you hold it?\nx How much higher is the point of holding of scale by you than the\ninitial marking?\nFig-1: Holding stick\n102 Coordination\nObserve the permanent slide of nerve cell or neuron under the\nmicroscope.\nDraw and label its parts, compare with Fig.-3.\nFig-2: Galen\nx Why did this happen?\nx How fast do you think the process was?\nResponses are brought about by rapid changes in some muscles and",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00061"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 112,
+      "textbook_page": 103,
+      "pdf_pages": [
+        112,
+        113,
+        114
+      ],
+      "textbook_pages": [
+        103,
+        104,
+        105
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Fig-3: Nerve cell\nadjacent axons.\nThe nerve cell body lies in the brain, spinal cord or dorsal\nor ventral root ganglion of spinal cord.\nIn the brain or spinal cord, it is\ndifficult to make out the difference between dendrites and axons on the\nbasis of their length.\nThe presence of the sheath helps us to find out the\ndifference.\nBut most of them are non-myelinated cells.\nWe know that the nerve cell is the structural and functional unit of\nnervous system.\nOur nervous system consists of more than100 billion of\nthem, which communicate with each other in a specific manner.\nDendrites\nof one nerve cell connect to the axons of the other nerve cell through\nconnections called as a ‘synapse’.\nFig-4: Synapse\nSynapse\nSynapse is the functional region of contact\nbetween two neurons, where information from one\nneuron is transmitted or relayed to another neuron.\nThough these are regions of minute gaps and\nessentially neurons do not have any protoplasmic\nconnection between them yet information is passed\nfrom one nerve cell to the other through these gaps\neither in the form of chemical or electrical signals\nor both.\nThese synapses are mainly found usually in\nthe brain, spinal cord and around the spinal cord.\nBeyond these areas the axon carries the signals\nfrom brain and spinal cord to respective parts of\nour body.\n104 Coordination\n5.4 Pathways: From stimulus to response\nIn the holding stick activity you observed that there is coordination\nbetween eye and fingers.\nDifferent pathways are taken by nerves to bring\nabout this coordinated activity.\nOn the basis of pathways followed, nerves are classified mainly into\nthree different types.\nThey are as follows.\n(A) Afferent nerves or Sensory nerves :\nThe nerves which carry messages towards the central nervous system\n(spinal cord or brain) from nerve endings on the muscles of different sense\norgans are called afferent or sensory nerves.\n(B) Efferent nerves or motor nerves :\nThe nerves which carry messages from the central nervous system to\nbody parts that shall carry out the response to effector muscles are called\nefferent or motor nerves.\n(C) Association nerves (Interneurons) :\nThese nerves link together the afferent and efferent nerves in central\nnervous system (brain and spinal cord).\nx Which organs of your body were the detector and effector in\nActivity-1?\nx How do you think are the\ninformation carried on the\nafferent and efferent nerves\n(Give answer with respect to\nactivity-1)?\nIn activity-1 you showed a\nresponse on which you had some\ncontrol or it was involuntary (recall\nthe use of the voluntary and\ninvoluntary muscles that you studied\nin class 9th.).\nFig-6: motor neuron\nFig-5: Sensory neuron\nEfferent\nnerves\nBrain or spinal\ncord`\nAfferent\nnerves\nVisceral\nMuscles\n(effector organ)\nAssociation nerves/\nInterneurons\nFig-7: Different nerve pathways\nSense organs\n(receptor)\n105 Coordination\nWe know that our body would also need to respond to certain situations\non which we may not have a control.\nSuch responses are called reflexes.A\nsimple activity shall help us to understand this better.\nActivity-3\nFig-8: Knee jerk\nKnee jerk reflex\nCross the legs, in a seated position, so that the lower\nhalf of the uppermost leg hangs freely over the other.\nStrike\nthe area below the knee cap sharply with a rubber hammer,\nwhile firmly grasping the front part of the thigh with the other\nhand.\nNote the changes in shape of the thigh muscles.\nNote that although we are fully conscious, we\ncannot prevent the thigh muscles from contracting.\nSuch a response is said to be involuntary reflexes.\nNow\nthe same thigh muscle can operate in a voluntary manner,\nas when we kick a football.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00063"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 128,
+      "textbook_page": 119,
+      "pdf_pages": [
+        128,
+        129
+      ],
+      "textbook_pages": [
+        119,
+        120
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Tendrils play a vital role to make the plant erect.\nTendrils are thin thread\nlike growths on the leaves or stems of climbing plant.\nThey grow towards\nsupport and wind around them.\nThis type of response to make contact or\ntouch is called \"thigmotropism\".\nIf you taste the carpel of a flower it is sweet.\nLet us recall butterflies\nfluttering on flowers for the nectar.\nRipen stigma secretes sugary substance.\nThis chemical substance stimulates the pollen grain which falls on the\nstigma.\nPollen grain responds to this stimulus and germinate to produce\npollen tubes to reach the ovule for fertilization.\nThis type of response to\nchemicals is called \"chemotropism.\" Unequal distribution of auxins affects\nthe root and the stem growth.\nHigh concentration of auxin stimulates stem\ngrowth and inhibit root growth.\nx Nervous system and endocrine system are the two systems that control and coordinate various\nfunctions in the body.\nx The responses of the nervous system can be classified as reflex, voluntary and involuntary actions.\nKey words\nResponse, stimuli, neuron, schwann cell, axon, synapse, sensory nerves (afferent), motor\nnerves (efferent), association nerves, central nervous system, brain, spinal cord, cerebrospinal\nfluid, peripheral nervous system, insulin, endocrine glands, hormones, feedback mechanism,\nplant hormones, tropic movements, nastic movements.\nWhat we have learnt?\n120 Coordination\nx The human nervous system is studied under two divisions: The central nervous system and the\nperipheral nervous system.\nx The central nervous system consists of brain and the spinal cord while the peripheral nervous\nsystem is further divided into somatic nervous system and autonomous nervous system.\nx The autonomus nervous system has two parts – sympathetic and parasympathetic, which cause\nphysical reactions opposite to each other.\nx Nerve cell is the structural and functional unit of nervous system.\nx Synapse is a gap across where signals are transmitted from one neuron to the other.\nx Hormones produced in one part of the body would move to another part to achieve the desired\neffect.\nx A feedback mechanism regulates the action of the hormones.\nx Directional movements in plants in response to specific stimuli like light, chemicals etc. are called\ntropic movements.\nx Plant hormones are usually growth promoters or inhibitors.\nSome growth promoters are auxins,\ncytokinins and gibberellins, while growth inhibitors are abscisic acid and ethylene.\nStep on a sharp\nedged object\nSpinal cord analyse\ninformation and\nsend commands\n1.\nFill in the missing sections in the following flow chart.(AS1)\n2.\nDo you think body’s team work maintains functioning of our body?\nJustify your answer with an\nexample.(AS1)\n3.\nGive an example of coordination in your body where both hormonal and nervous controls function\ntogether.(AS1)\n4.\nConsider that you are passing by a garbage disposal area and you immediately cover your nose.\nArrange the events below in a logical order by marking them from 1 to 5 to trace the events that\nhappen in the nervous system from detection of foul smell (stimulus generation) to covering your\nnose (response).(AS1)\n(i) At the end of the axon, electrical impulse releases chemicals.\n(ii) Stimulus received by the dendrites of a neuron sets off chemical reaction that creates an\nelectrical impulse.\n(iii) Electrical impulse transmitted through cell body and axon.\n(iv) The chemicals cross the synapse and reach the next neuron.\nSimilarly, the electrical impulse\ncrosses several neurons.\n(v) Finally, the impulse is delivered from neuron to the gland that helps in recognition of the foul\nsmell and muscle cells that help in covering the nose.\n5.\nWhat is a synapse?\nHow is it useful in transfer of information?(AS1)\n6.\nDistinguish between(AS1)\na) Stimulus and Response b) Afferent and Efferent nerves",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00073"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 129,
+      "textbook_page": 120,
+      "pdf_pages": [
+        129,
+        130
+      ],
+      "textbook_pages": [
+        120,
+        121
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "(ii) Stimulus received by the dendrites of a neuron sets off chemical reaction that creates an\nelectrical impulse.\n(iii) Electrical impulse transmitted through cell body and axon.\n(iv) The chemicals cross the synapse and reach the next neuron.\nSimilarly, the electrical impulse\ncrosses several neurons.\n(v) Finally, the impulse is delivered from neuron to the gland that helps in recognition of the foul\nsmell and muscle cells that help in covering the nose.\n5.\nWhat is a synapse?\nHow is it useful in transfer of information?(AS1)\n6.\nDistinguish between(AS1)\na) Stimulus and Response b) Afferent and Efferent nerves\nc) Central nervous system and peripheral nervous system d) Receptor and effector organ\nImprove your learning\n121 Coordination\n7.\nHow does Phototropism occur in plants? (AS1)\n8.\nExplain with an example how plants may respond to a stimulus. (AS1)\n9.\nSuggest an experiment to show how roots grow away from light in most plants. (AS1)\n10.\nGive an example to show how hormones can influence visible changes in your body. (AS1)\n11.\nHow does a neuron differ from an ordinary cell in structure?\nExplain. (AS1)\n12.\nIs the structure of neuron suitable for transmission of impulses?\nAnalyse. (AS1)\n13.\nMan is the most intelligent animal.\nWhat could be the reason that helped us to reach to such a\nconclusion? (AS1)\n14.\nThe axon of nerve cell in hand is shorter than the axon of nerve cell in leg.\nDo you support this\nstatement?\nWhy? (AS1)\n15.\nOrgans respond to the external stimulus by a fraction of second.\nHow do you feel about such\ncontrolling mechanism of human body? (AS1)\n16.\nState whether the following actions are voluntary action, reflex action or conditioned reflex.(AS1)\ni) Blinking of eyes ii) Cleaning the table iii) Playing on the key board\niv) Salivating when food is put into the mouth. v) We close our ears when we hear unbearble sound\n17.\nWhat will happen to the potted plant kept near window in the room? (AS2)\n18.\nWhat happens if all functions of the human body is controlled only by brain? (AS2)\n19.\nIf you visit a doctor what doubts you would like to clarify about pancreas? (AS2)\n20.\nTake a small potted plant.\nCover base portion of the plant tightly and hang the part upside down.\nObserve the plant for a week.\nBased on your observation how can you support phototropism.(AS3)\n21.\nTake a cock feather touch smoothly at different parts of your body .\nFindout which portion of the\nbody has high sensation.\nIs this similar during sleeping?\nPrepare a report on it. (AS3)\n22.\nWhat procedure do you follow to understand the effect of plant growth hormones (in agar medium)\nin the terminal portion of the tip of stem (coleoptile)? (AS3)\n23.\nCollect information on the actions controlled by spinal cord by using reference books from your\nschool library. (AS4)\n24.\nRead the following sentences and compare with the functions of endocrine glands. (AS4)\n(a) Pheromones are chemical substances secreted by organisms. (b) They act as chemical signals\nto produce secretions by exocrine glands. (c) Pheromones are used as signals by the members of\nsame species. (d) Honey bee secretes pheromones that attract other bees to the location of food.\n25.\nCollect the information about cranial nerves and spinal nerves from internet or your school library .\n(AS4)\n26.\nDraw a picture representing connection between axon-dendrite.\nWhy do they connect like that?\n(AS5)\n27.\nDraw a neatly labelled diagram of brain and write few points how it is protected. (AS5)\n28.\nY ou are walking in the traffic.\nSuddenly you heard a loud sound.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00074"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 158,
+      "textbook_page": 149,
+      "pdf_pages": [
+        158,
+        159,
+        160
+      ],
+      "textbook_pages": [
+        149,
+        150,
+        151
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x Division of cytoplasm is called as Cytokinesis.\nx During meiosis the parent cell divides twice and four daughter cells are formed.\nx Reproductive health is important to possess sound mind in a sound body .\nx One should be aware of the facts related to transmission of sexually transmitted diseases.\nWhat we have learnt ?\n150 Reproduction\nx There is no cure for AIDS.\nPrevention is the only way to avoid it.\nLeading moral life is the right way\nto avoid AIDS.\nx Now a days various methods of contraception are available to control child birth.\nx It is our responsibility to build a healthy society.\nx Determination of sex before birth is illegal.\nx Stop female foeticide.\n1.\nWhy do fish and frog produce a huge number of eggs each year?(AS1)\n2.\nGive examples and explain what is meant by external fertilisation?(AS1)\n3.\nWrite differences between.(AS1)\na) Androecium - Gynoecium b) Mitosis - Meiosis c) Grafting - Layering\n4.\nExplain the process of fertilisation in plants. (AS1)\n5.\nWhat are the different modes of asexual reproduction?\nCite them with examples. (AS1)\n6.\nIn what ways does sexual reproduction differs from asexual one?\nState at least three reasons.(AS1)\n7.\nHow are sperm cells adapted for their function? (AS1)\n8.\nThe menstrual cycle prepares the uterus for a fertilised egg.\nHow long is an average menstrual\ncycle from start to finish? (AS1)\n9.\nWhen the foetus is growing inside the uterus it needs nutrients.\nWhat provides these nutrients? (AS1)\n10.\nWhich type of substances are obsorbed by foetus from the mother ? (AS1)\n11.\nWhat is the job of the amniotic sac? (AS1)\n12.\nWhat are the advantages of sexual reproduction? (AS1)\n13.\nHow does reproduction help in providing stability to population of species? (AS1)\n14.\nWrite the differences between mitosis and meiosis. (AS1)\n15.\nWhat happens to the wall of the uterus during menstruation? (AS1)\n16. “All unicellular organisms undergo only mitotic cell division during favourable conditions”- Do you\nsupport this statement?\nWhy? (AS2)\n17.\nVicky’s father wants to grow a single plant having two desirable characters colourful flowers and\nbig fruits What method will you suggest him and why? (AS3)\n18.\nUproot an onion plant and take a thin section of its root tip.\nStain it and observe under microscope.\nDraw as you see and identify the stages of the cell division. (AS3)\n19.\nVisit a nearby village and collect information how farmers grow sugarcane, flowering plants like\nchrysanthemum and vegetables like potatoes, plump gourd (dondakaya) etc.\nMake a report and\npresent in class. (AS4)\nImprove your learning\nReflection of light at curved surfacesReproduction151\n20.\nCollect information from school library or using internet what vegetative methods are followed in\nyour district as well as in your state to propagate various plants of economic importance.\nRepresent\nit in a graph. (AS5)\n21.\nMake a flow chart to show the cell cycle and explain cell division describing different stages of\nmitosis. (AS5)\n22.\nDraw neat labelled diagrams of male and female reproductive system\nof plant. (AS5)\n23.\nObserve the following part of a flowering plant prepare a note. (AS5)\n24.\nPrepare a flow chart to explain the process of sexual reproduction\nin plants. (AS5)\n25.\nDraw a neatly labled diagram to explain plant fertilisation.\nWrite few\npoints on pollen grain. (AS5)\n26.\nWhat would be the consequences if there is no meiosis in organisms\nthat reproduce sexually? (AS2)\n27.\nHow will you appreciate cell division that helps in perpetuation of life? (AS6)\n28.\nWhat precautions will you take to keep away from various sexually transmitted diseases? (AS7)\n29.\nConduct a seminar on child marriages and female foeticide. (AS7)",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00093"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"A synapse is the functional region of contact between two neurons, where information from one neuron is transmitted or relayed to another neuron. The transfer of information across a synapse occurs through either chemical or electrical signals, or both. When an electrical impulse reaches the end of an axon, it triggers the release of chemical messengers called neurotransmitters. These neurotransmitters cross the synapse and bind to receptors on the dendrites of the next neuron, thereby transmitting the signal.\",\n  \"selected_evidence_ids\": [\"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 112,\n      \"textbook_page\": 103\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 234.11178949999157,
+    "latency_seconds": 321.156066800002,
+    "usage": {
+      "completion_tokens": 170,
+      "prompt_tokens": 4432,
+      "total_tokens": 4602,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-7J547QDmpSTovDqgnv80By0o8XeXQzCH",
+    "peak_rss_bytes": 21844987904
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "A synapse is the functional region of contact between two neurons, where information from one neuron is transmitted or relayed to another neuron. The transfer of information across a synapse occurs through either chemical or electrical signals, or both. When an electrical impulse reaches the end of an axon, it triggers the release of chemical messengers called neurotransmitters. These neurotransmitters cross the synapse and bind to receptors on the dendrites of the next neuron, thereby transmitting the signal.",
+    "selected_evidence_ids": [
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E2",
+        "pdf_page": 112,
+        "textbook_page": 103
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "A synapse is the functional contact region between two neurons",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "The neurons are separated by a minute gap without protoplasmic continuity",
+        "token_recall": 0.1429,
+        "matched": false
+      },
+      {
+        "point": "Signals cross chemically, electrically, or both",
+        "token_recall": 0.6,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.6667,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 78
+  },
+  "completed_at": "2026-07-17T08:33:17+00:00"
+}

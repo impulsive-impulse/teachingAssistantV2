@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6",
+  "question_id": "GEN-BIO-019",
+  "question": "What is sustainable development? How is it useful in natural resource management?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "7067971269d0aa79f5b259cdfeef56248fced51b5cc289f7829cf54f767c71fa",
+  "context_sha256": "430a58b64d94759afd761dc2adee7c34ef939c86161dff4995554ae32263418a",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 245,
+      "textbook_page": 236,
+      "text": "236 Natural ResourcesGovernment’s Gift for Students’ Progress\nDevelopment and conservation can coexist in harmony. When we use\nthe environment in ways that ensure we have resources for the future, it is\ncalled sustainable development. There are many different resources we\nneed to manage and conserve to live sustainably.\nx What would you do to motivate others to manage an important\nresource in your locality?\nx How did the villagers in Kothapally resort to sustainable\nmanagement?\n10.4 Forest: an important renewable resource\nx Why do you think forests are very important?\nEvery continent except Antarctica has forests. Forests are habitat for\nflora and fauna. Forests serve as a lung for the world and a bed of nutrients\nfor new life to prosper. They provide us innumerable products and in an\nurge to extract them we indiscriminately destroy them.\nPeople clear forests to use the wood, or to make way for farming or\ndevelopment. Each year, the Earth loses about 36 million acres of forest\nto deforestation.\nDeforestation destroys wildlife habitats and increases soil erosion. It\nresults the release of gases like CO, CO2, SO2 (also called as green house\ngases) into the atmosphere, contributing to global warming.\nSustainable forestry practices are critical for ensuring resources well\ninto the future. Perhaps the bishnoi’s of Rajasthan could tell us how. As\nwe recall brave Amrita Devi and her daughters, followed by villagers who\nclung to trees in the forest surrounding their village and laid down their\nlives to save them, we are faced with a realization about how great a\nmovement towards conservation can be. They were protesting against the\nKings’ order to collect wood for the construction of his palace and\ndefending the pledge of peaceful coexistence taken by them as a bishnoi.\nIt is a set of 29 rules to conserve natures’ resources that every bishnoi\nvows to protect.",
+      "text_sha256": "d40fc0e4d25a092427e732ec52e4ef07176269a20855fcf30e018367a6d00cc3"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Sustainable development refers to using the environment in ways that ensure we have resources for the future. It is useful in natural resource management because it helps us manage and conserve resources in a way that meets our current needs without compromising the ability of future generations to meet theirs. Sustainable development ensures that resources like forests are preserved for long-term use, preventing their destruction due to overexploitation. For example, sustainable forestry practices help maintain forests as renewable resources, supporting biodiversity, reducing soil erosion, and mitigating climate change by preventing the release of greenhouse gases.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 245,\n      \"textbook_page\": 236\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 8.577950699982466,
+    "latency_seconds": 33.33890929998597,
+    "usage": {
+      "completion_tokens": 184,
+      "prompt_tokens": 595,
+      "total_tokens": 779,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-5GSvWiU5PPnvNKUXJM4M4xyS3Tl5eaaA",
+    "peak_rss_bytes": 12686327808
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Sustainable development refers to using the environment in ways that ensure we have resources for the future. It is useful in natural resource management because it helps us manage and conserve resources in a way that meets our current needs without compromising the ability of future generations to meet theirs. Sustainable development ensures that resources like forests are preserved for long-term use, preventing their destruction due to overexploitation. For example, sustainable forestry practices help maintain forests as renewable resources, supporting biodiversity, reducing soil erosion, and mitigating climate change by preventing the release of greenhouse gases.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 245,
+        "textbook_page": 236
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Define sustainable development as using the environment while retaining resources for the future",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Connect development with conservation",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Explain management/conservation of renewable and non-renewable resources",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.3333,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 95
+  },
+  "completed_at": "2026-07-17T11:41:52+00:00"
+}

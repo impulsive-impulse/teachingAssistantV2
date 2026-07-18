@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top3_separate_compact__4afd830383",
+  "question_id": "GEN-BIO-014",
+  "question": "Describe the acid-and-leaf experiment used to model how the stomach is protected from its own acid, and compare the observations with the stomach’s mucus lining.",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "e2b506475876d70ba88a5058bcf66f237428a90a132416322c6f399469c62754",
+  "context_sha256": "561a599317cb2402b6c6435e463503246aaa2b40b42912330502ff0d171914d3",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 175,
+      "textbook_page": 166,
+      "pdf_pages": [
+        175,
+        176,
+        177
+      ],
+      "textbook_pages": [
+        166,
+        167,
+        168
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The function of petroleum jelly can be compared to that of mucus\nlining the stomach walls.\nHence the stomach is protected from damage\nbeing caused by the secretion of its own acids.\n7.1.8 Travel of food from the stomach to the intestine\nNow food is a soup like mixture when it leaves the stomach and enters\nthe small intestine.\nWhen the food enters the intestine the acidic nature of\nthe chyme initiates the production of hormones like secretin and\ncholecystokinin which stimulate pancreas, liver and walls of small intestine\nto secrete pancreatic juice, bile juice and succus entericus.\nx Why small intestine is like a long coiled structure?\nx How the absorbtion takes place in the small intestine?\nThe absorption of nutrients by villi in the small intestine is a very\nselective process.\nLab Activity\nReflection of light at curved surfaces167 Coordination in life processes\nThe walls of the intestine allows only tiny nutrient particles to pass\nthrough. (Refer Movement of substances through plasma membrane in\nclass IX)\nActivity-9\nFig-8:\nPaper tube\nPaper tube and folded papers\nTake 10¯20cm size chart paper fold the chart paper and join both\nends with gum to make a tube.\nNow take 20¯20cm chart paper and make\na tube as mentioned the same above try to insert the big tube in small one.\nCan you?\nIt is not possible.\nNow take another 20¯20cm chart paper fold\nthe paper as many folds as possible.\nNow join both ends to make a folded\npaper tube.\nTry to insert folded tube in first tube.\nCan you?\nHow is it\npossible?\nx Compare the area of the folded papers with that of the roll.\nDo you\nfind any increase in the area ?If so try to find out the reasons?\nThe inner surface of the small intestine contains thousands of finger\nlike projections called villi.\nx What is the relation between finger like structures and paper folds\nThese villi increase the surface area so that the food retained in the\nfolds can remain longer thereby enhancing absorption.\nx What systems do you think are working together here?\nx Do you think those systems work together in the whole length of\nthe digestive canal?\nWhy/ Why not?\nThe digestive tract is unique among internal\norgans because it is exposed to a large variety of\nphysiochemical stimuli from the external world in\nthe form of ingested food.\nAs a consequence, the\nintestine has developed a rich store of co ordinated\nmovements of its muscular apparatus along with\nneural apparatus to ensure the appropriate mixing and\npropulsion of contents during digestion, absorption,\nand excretion.Fig-9: Schematic\ndiagram of a villus\nepithelium\nnetwork of blood\ncapillaries\nmucus membrane\nmucus glands\n168 Coordination in life processes\nThe neural apparatus of our digestive tract comprises of such a vast\nand complicated network of neurons that it has been nicknamed by scientists\nas the second brain!\nResearch in this area is currently investigating how\nthe second brain mediates the body’s immune response; after all, at least\n70 percent of our immune system is aimed at the gut to expel and kill\nforeign invaders.\nScientists are also working to find out how trillions of bacteria in the\ngut communicate with the cells of gut nervous system.\nA deeper\nunderstanding of this mass of neural tissue, filled with important\n'neurotransmitters', is revealing that it does much more than merely handle\ndigestion or inflict the occasional nervous pang of hunger.\nThe little brain\nin our inner yards, in connection with the big one in our skull, partly\ndetermines our mental state and plays key roles in certain diseases",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00104"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 174,
+      "textbook_page": 165,
+      "pdf_pages": [
+        174,
+        175
+      ],
+      "textbook_pages": [
+        165,
+        166
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x What is involved in bringing about peristalsis?\nx What is the direction of peristalsis (which end of the gut does it begin)?\nx What happens if the direction of peristalsis is reversed?\nYou might have observed during peristalsis digested food is in the form\nof chyme gets reversed back in the oesophagus.\nIdentify for the reverse\nperistalsis in fig.7.\nHave you observed a ruminating cow/ buffalo under a tree or somewhere\nelse?\nCarefully observe its neck and throat.\nDo you see something moving\nfrom its throat to mouth?\nAfter that, the cow or buffalo starts chewing.\nThis is\ncalled as rumination.\nIt is the bolus moving from a part near the stomach of\nthe animal to its mouth.\nIt is reverse peristalsis.\nThough it is a common process\nin ruminants such as the cow, buffalo etc. that have an extra pouch in the\nstomach to store quickly swallowed food, in human beings it is mainly a\nprotective mechanism to expell unwanted substances from the food canal.\nWe observe that digestion of food starts from the mouth.\nWhile the\nfood passes through the gut the food settles for some time for digestion\nat certain locations.\nSo food does not move uniformly through the digestive\nsystem.\nLet us observe the time period.\n(These are only averages.\nThe movement of materials varies among\nindividuals and time after different meals.)\nOur stomach is not like a bag with specific volume.\nIt is like a pouch\nwhich is elastic in nature.\nThe size of the stomach increases based on the\nfood that we intake.\nEmptying of stomach Emptying of small intestinePercentage\n4 to 5 hours 30 to 40 hours\n(Transit through colon)Total 100%\n12 2 to 3 hours 2½ hours50%\nTable-3\n166 Coordination in life processes\nDigestive juices are produced depending on the quantity of food\nmaterial.\nIf the stomach would produce same amount of digestive juices\nirrespective of the food quantity the walls of stomach would be destroyed.\n( See annexure )\nWe also know that stomach secretes strong acids during digestion.\nThe HCl secreted by the walls of the stomach is strong enough to digest\nthe hard bones as well.\nThen how is the stomach protected from the\nsecretions of its own acids.\nTo understand this we will perform the\nfollowing experiment.\nAcid and leaf experiment\nTake two similar green leaves from your school garden.\nApply vaseline\nor petroleum jelly or grease on one leaf leave the other free.\nAdd 1 or 2\ndrops of some weak acid on both the leaves.\nObserve them after half an\nhour or so and write your observation in your note book.\nx What kind of change did you observe in the leaves?\nx Which leaf was affected by the acid?\nx What saved the other leaf from the effect of acid?\nMucus secreted by some cells present in the walls of the stomach\nform a thin lining on the walls of the stomach.\nThis counters the action of\nacid.\nThe function of petroleum jelly can be compared to that of mucus\nlining the stomach walls.\nHence the stomach is protected from damage\nbeing caused by the secretion of its own acids.\n7.1.8 Travel of food from the stomach to the intestine\nNow food is a soup like mixture when it leaves the stomach and enters\nthe small intestine.\nWhen the food enters the intestine the acidic nature of\nthe chyme initiates the production of hormones like secretin and\ncholecystokinin which stimulate pancreas, liver and walls of small intestine\nto secrete pancreatic juice, bile juice and succus entericus.\nx Why small intestine is like a long coiled structure?",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00103"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 181,
+      "textbook_page": 172,
+      "pdf_pages": [
+        181,
+        182
+      ],
+      "textbook_pages": [
+        172,
+        173
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "d) Small intestine is similar to a coiled pipe.\n7.\nWrite difference between the following. (AS1)\na) bolus - chyme b) small intestine - large intestine\nc) mastication - rumination d) Brain - Second brain\n8.\nHow can you say that mouth is a munching machine? (AS1)\n9.\nWhat is mastication?\nExplain the role of different sets of teeth in this process. (AS1)\n10.\nDuring the journey of food from mouth to stomach through oesophagus.\nHow does muscular\nsystem coordinate in this process? (AS1)\n11.\nIs there any reason for the intestine to be coiled with many folds.In what way it is helpful during the\nprocess of digestion? (AS1)\n12.\nWhat is the function of peristalsis in these parts? (AS1)\na) oesophagus b) stomach c) small intestine d) large intestine\n13.\nHow can you justify the enteric nervous system as the second brain of the gut? (AS1)\n14.\nRajesh feels hungry upon seeing food.Sheela says no to food as she is not hungry.What makes\nRajesh hungry and what suppresses Sheelas hunger? (AS1)\n15.\nHow are taste and smell related? (AS1)\n16.\nList out the sphincter muscles of the food canal you have observed and give a brief description. (AS1)\n17.\nWhat happens if salivary ducts are closed? (AS2)\n18.\nPrepare a questionnaire to understand nervous coordination in digestion process. (AS2)\n19.\nIf size and shape of small intestine is like oesophagus what will happen? (AS2)\n20.\nWhat experiment should you perform to understand action of saliva on flour?\nExplain it’s procedure\nand apparatus that you followed. (AS3)\n21.\nSuggest a simple experiment to prove the role of palate in recognizing taste. (AS3)\n22.\nCollect information related to feeling hunger from your school library and prepare a note on it. (AS4)\n23.\nDraw the block diagram showing sensation of taste from food material to brain. (AS5)\n24.\nDraw a neatly labled diagram showing a peristaltic movement in oesophagus.\nExplain the importance\nof mucus on the walls of food pipe. (AS5)\nQ.No: 5\nReflection of light at curved surfaces173 Coordination in life processes\n25.\nDraw a schematic diagram of villus in small intestine.\nExplain how digestive\nsystem coordinate with circulatory system. (AS5)\n26.\nThe mere smell or sight of food stimulates hunger .Describe the process through\na neat diagram. (AS5)\n27.\nWith the help of a diagram show the movement of food from mouth to the\nstomach.What muscles and nerves are involved in the movement of food and\nwhat is this action called as? (AS5)\n28.\nPrepare a cartoon on Pavlov’s experiment with a suitable caption. (AS6)\n29.\nHow do you appreciate stomach as a churning machine?\nHow does this\ncoordination go on? (AS6)\n30.\nThere is a great variety in diversified life processes, express your feelings in the\nform of a poem. (AS7)\n31.\nSuggest any two important habitual actions to your friend while eating food,\nkeeping in view of this chapter. (AS7)\n1.\n2 : 1 : 2 : 3 is the ratio of our dentition.\nHere 1 represents ____________\n2.\nLarge protein molecules are broken down in _________ of digestive track.\n3. __________ is the strong acid which is secreated during digestion.\n4.\nOlfactory receptors present in ___________ trigger signals to brain.\n5. pH of saliva is _________ in nature.\n6.\nFill in the blanks with suitable words given below.\nFluctuation s of hormone (1)_____________ levels results in sensation of hunger and motivation\nof consuming food.\nWhen you feel your stomach is full and there is no need of food any more.\nAnother hormone (2)_____________ that gets secreted suppresses hunger.\nWhen we take food\ninto the mouth it has to be chewed thoroughly .\nFor this purpose the (3)_____________ muscles",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00108"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"The acid-and-leaf experiment is used to model how the stomach is protected from its own acid. In this experiment, two similar green leaves are taken. One leaf is coated with petroleum jelly or vaseline, while the other is left untreated. A weak acid is then applied to both leaves. After some time, it is observed that the leaf without petroleum jelly is damaged by the acid, while the leaf coated with petroleum jelly remains unaffected. This is because the petroleum jelly acts like the mucus lining of the stomach, which protects the stomach walls from the corrosive effects of stomach acid. The mucus lining in the stomach serves a similar function, forming a protective barrier that prevents the acid from damaging the stomach walls.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 175,\n      \"textbook_page\": 166\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 174,\n      \"textbook_page\": 165\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 72.91978860000381,
+    "latency_seconds": 116.08602819999214,
+    "usage": {
+      "completion_tokens": 258,
+      "prompt_tokens": 2708,
+      "total_tokens": 2966,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-0osEEbN0xcqDZpKFajy5fSBXnQTLe2eB",
+    "peak_rss_bytes": 13453541376
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "The acid-and-leaf experiment is used to model how the stomach is protected from its own acid. In this experiment, two similar green leaves are taken. One leaf is coated with petroleum jelly or vaseline, while the other is left untreated. A weak acid is then applied to both leaves. After some time, it is observed that the leaf without petroleum jelly is damaged by the acid, while the leaf coated with petroleum jelly remains unaffected. This is because the petroleum jelly acts like the mucus lining of the stomach, which protects the stomach walls from the corrosive effects of stomach acid. The mucus lining in the stomach serves a similar function, forming a protective barrier that prevents the acid from damaging the stomach walls.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 175,
+        "textbook_page": 166
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 174,
+        "textbook_page": 165
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Use two similar green leaves",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Coat one with petroleum jelly/grease and leave one uncoated",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "Add equal drops of weak acid and observe",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "The uncoated leaf is affected while the coated leaf is protected",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Petroleum jelly models the protective mucus lining of the stomach",
+        "token_recall": 1.0,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.8,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 124
+  },
+  "completed_at": "2026-07-16T21:30:48+00:00"
+}

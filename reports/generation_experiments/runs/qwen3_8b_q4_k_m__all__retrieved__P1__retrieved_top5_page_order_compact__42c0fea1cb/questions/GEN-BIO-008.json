@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb",
+  "question_id": "GEN-BIO-008",
+  "question": "Why do some people need to use a dialysis machine? Explain the principle involved in it",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "7ddf3db9cfaa768605203758660c6e281f7153fb3762b835ddf3584189694d1a",
+  "context_sha256": "9f8383d3d41144ca77113f92d2da944ef1ee77e5452504148d7206a8be78114d",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 84,
+      "textbook_page": 75,
+      "pdf_pages": [
+        84,
+        85
+      ],
+      "textbook_pages": [
+        75,
+        76
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "16.\nJohn made a stethoscope using a paper cup and plastic tube.\nWrite down the procedure he\nfollowed. (AS3)\n17.\nHow did scientists prove that the food is transported through the phloem? (AS3)\n18.\nWhat is the inference about experiments with aphids? (AS3)\n19.\nCollect information about blood pressure of your school teachers or neighbours.\nPrepare a report\non their health problems due to changes in blood pressure. (AS4)\n20.\nDraw a schematic diagram to explain single and double circulation.\nWrite differences between\nthem. (AS5)\n21.\nPrepare a block diagram showing water absorption by roots to transpiration by leaves. (AS5)\n22.\nWhat can circulatory system in human be compared with? (AS6)\n23.\nWhat is Haemophilia? (AS1)\n24.\nPrepare a cartoon on heart beat. (AS7)\n25.\nAfter reading this lesson what precautions would you suggest to your elders about edima. (AS7)\nFill in the blanks\nCirculation76\n1.\nThe term ‘cardiac’ refers to which organ in the body? ( )\nA) heart B) vein C) lymph D) capillary\n2.\nIn which chamber of the human heart the blood is low in oxygen? ( )\nA) right atrium B) right ventricle C) left atrium D) A and B\n3.\nWhich structures of the heart control the flow of the blood? ( )\nA) arteries B) veins C) valves D) capillaries\n4.\nWhich of the following statement is incorrect? ( )\nA) Serum is the liquid portion formed after blood clotting.\nB) Lymph is the link between blood and tissues.\nC) In plants the xylem and phloem transport water and food respectively .\nD) In insects closed type of circulatory system is present.\n5.\nAn aphid pierces its proboscis into the ……… to get sap from plants ( )\nA) Xylem B) Phloem C) Pith D) Cortex\nThe rhesus factor\nThere is another antigen of red blood cells which is present in 85% of the people of\nBritain, this is known as the Rhesus factor, as it was first discovered in Rhesus monkeys.\nPeople who have this are said to be Rhesus positive (Rh+).\nThose who do not have this\nfactor are termed Rhesus negative (Rh-).\nNormally they do not carry an antibody to this\nfactor in their plasma.\nHowever, if Rh+ blood is transfused into the blood of a Rh- person,\nagainst Rh-factors will be formed and these are capable of destroying Rh+ red cells.\nUnder\ncertain circumstances this is a potential hazard for babies.\nIf a Rh+ man marries a Rh- woman, some of the children are likely to be Rh+.\nAt birth\nthere is always some mixing of blood between the circulation of mother and baby and this\nmay occasionally happen during pregnancy.\nSo, if a child is Rh+ some of its blood will leak\ninto its mother’s circulation and cause antibodies to form in her blood.\nIf the mother has\nmore children, not all will necessarily be Rh+, but if they are, the amount of antibodies in\nher blood often increases with each pregnancy, and in some instances the antibodies in her\nblood may pass into the baby’s blood in sufficient quantities to produce very serious anaemia\nand even death.\nFortunately these cases are not frequent, and when they do occur, the baby\nis given a complete transfusion soon after birth so that the baby’s blood is replaced by\nblood containing no antibodies to the rhesus factor.\nIt is now possible for this transfusion\nto be carrried out before birth.\nAnother recently developed technique is for the mother to\nbe given an injection shortly after the birth of her first child which prevents the Rh+ cells\nfrom stimulating the production of the harmful antibody.\nChoose the correct answer\nAnnexure-I",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00046"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 96,
+      "textbook_page": 87,
+      "pdf_pages": [
+        96,
+        97,
+        98,
+        99
+      ],
+      "textbook_pages": [
+        87,
+        88,
+        89,
+        90
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Hands and feet may swell.\nYou feel tired and weak because blood is not\npurified properly.\nIs there any solution to this problem?\nLet us know about artificial kidneys.\nThink and discuss\nxDo all cells need excretion?\nxWhy are we advised to take sufficient water?\nxWhy do some children pass urine during sleep at night until 15\nor 16 years of age?\nExcretion88\n4.6 Dialysis Machine (Artificial kidney)\nKidneys are vital organs for survival.\nSeveral factors like infections, injury, very\nhigh blood pressure, very high blood sugar\nor restricted blood flow to kidneys leads to\naccumulation of poisonous wastes in the\nbody and leads to death.\nDialysis machine is used to filter the\nblood of a person when both kidneys are\ndamaged.\nThe process is called\n‘haemodialysis’.\nIn this process, blood is taken out from the main artery,\nmixed with an anticoagulant, such as heparin, and then pumped into the\napparatus called dialyzer.\nIn this apparatus blood flows through channels\nor tubes which are madeup of cellophane.\nThese tubes are embedded in\nthe dialyzing fluid.\nA thin membrane separates the blood flowing inside\nthe tube and dialyzing fluid (dialysis), which has the same composition as\nthat of plasma, except the nitrogenous wastes.\nAs nitrogenous wastes are absent in dialyzing fluids, these substances\nfrom the blood move out freely, there by cleaning the blood of its wastes.\nThis process is called \"dialysis\".\nThis is similar to the function of the\nkidney, but is different as there is no reabsorption involved .The cleaned\nblood is pumped back to the body through a vein after adding anti-coagulant\n(heparin).\nEach dialysis session lasts for 3 to 6 hours.\nThis method has\nbeen using for thousands of uremic / kidney failure patients all over the\nworld.\nx Is there any long term solution for kidney failure patients?\nFig-7: Dialysis\nExcretion89\n4.7 Kidney transplantation\nThe best long term solution for kidney failure (acute renal failure) is\nKidney transplantation.\nA functioning kidney is used in transplantation from\na donor preferably a close relative.\nThe kidney that is received by a recipient\nmust be a good match to his body, to minimize the chances of rejection of\ntransplanted kidney by the immune system of the recipient.\nModern clinical\nprocedures have increased the success rate of such complicated technique.\nx Where is the transplanted kidney fixed in the\nbody of a kidney failure patient?\nx What do they do to failed kidneys?\nx Can donor lead normal life with single kidney\nwithout any complications?\nNow a days the process of organ donation helps\na lot for kidney failure patients.\nOrgans are collected\nfrom brain dead patients, then transplanted to the\nrecepient.\nThis is called organ donation.\nTo know\nmore about organ donation see in annexure.\n4.8 Other pathways of excretion (accessory excretory organs)\nYou have learnt about kidney, chief excretory organ of our body.\nx What are the other excretory organs of human body?\nLungs, skin, liver and large intestine have their own specific functions\nbut carry out excretion as a secondary function.\nLungs: In respiratory process lungs remove carbon dioxide and water\nvapour.\nSkin: It consists of large number of sweat glands richly supplied with\nblood capillaries, from which they extract sweat and some metabolic\nwastes from blood.\nSince the skin sends out plenty of water and small\namount of salts in the form of sweat.\nIt serves as an accessory excretory\norgan.\nFig-8: Kidney transplantation\nExcretion90\nSebaceous glands in skin secrete sebum, which contains waxes, sterols,\nhydrocarbons and fatty acids.\nx Collect information on sebum from library books and prepare a news\nbulletin, display it on bulletin board.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00053"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 104,
+      "textbook_page": 95,
+      "pdf_pages": [
+        104,
+        105,
+        106
+      ],
+      "textbook_pages": [
+        95,
+        96,
+        97
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "tubules or nephrons, which are structural and functional units of kidney.\nx A nephron comprises bowman’s capsule, glomerulus, proximal convoluted tubule\n(PCT), Henle’s loop, distal convoluted tubule (DCT) and collecting tubule.\nx Formation of urine involves four stages.\n1) Glomerular filteration, 2) Tubular\nReabsorption, 3) Tubular Secretion, 4) Formation of concentrated Urine.\nx Kidneys remove nitrogenous waste from our body, maintains water balance\n(osmoregulation), salt concentration, pH, and blood pressure in human body.\nx Dialysis machine is an artificial kidney which filters the blood to remove the\nmetabolic wastes from the body .\nx Kidney transplantation is a permanent solution to renal failure patients.\nKey words\nCreatinine, peritubular network, podocyte, afferent arteriole, efferent arteriole,\nglomerulus, Proximal Convoluted Tubule (PCT), Distal Convoluted Tubule (DCT), loop of\nHenle, calyces, micturition, urochrome, dialyser, heamodialysis, anticoagulant, alkaloids,\nbiodiesel.\nWhat we have learnt?\nExcretion96\nx Different animals have different excretory organs eg: Amoeba-contractile vacuole\nplatyhelminthes- flame cells, annelida-nephridia, arthropoda-malpighian tubule,\nreptiles, birds and mammals-kidneys.\nx There are no special organs for excretion in plants.\nPlants store different waste\nmaterials in leaves, bark, roots, seeds which fall off from the plants after\nripening.\nx Plant metabolites are of two types i) primary metabolites eg: proteins,\ncarbohydrates and fats. ii) secondary metabolites eg: alkaloids, gums, tannins, latex\nand resins.\nThey have economical importance.\nx Excretion is the removal of material from living beings where as secretion is\nmovement of materials from one point to other.\n1.\nWhat is meant by excretion?\nExplain the process of formation of urine. (AS1)\n2.\nHow does excretion takes place in amoeba?(AS1)\n3.\nWhat are the different excretory organs in human body?\nWhat are the excretory\nmaterial generated by them?(AS1)\n4.\nDeepak said that ‘Nephrons are functional and structural units of kidneys’ How\nwill you support him?(AS1)\n5.\nHow plants manage the waste materials?(AS1)\n6.\nWhy do some people need dialysis?\nExplain the principle involved in it.(AS1)\n7.\nWhat is meant by osmoregulation?\nHow is it maintained in human body?(AS1)\n8.\nDo you find any relationship between circulatory system and excretory system?\nWhat are they?(AS1)\n9.\nGive reasons(AS1)\nA.\nAlways vasopressin is not secreted.\nB.\nUrine in beginning is acidic in nature later it become alkaline.\nC.\nDiameter of efferent arteriole is smaller than afferent arteriole.\nD.\nUrine is slightly thicker in summer than in winter.\n10.\nWrite differences(AS1)\nA.\nPCT and DCT B.\nKidney and artificial kidney\nC.\nExcretion and secretion D.\nPrimary metabolites and\nsecondary metabolites\n11.\nThere is a pair of bean-shaped organs ‘P’ in the human body towards the back,\njust above the waist.\nA waste product ‘Q’ formed by the decomposition of\nunused proteins in liver is brought into organ ‘P’ through blood by an artery ‘R’.\nThe numerous tiny filters ‘S’ present in organ ‘P’ filter the blood and sent it into\ncirculatory system through a vein ‘T’.\nThe waste substance ‘Q’ and other waste\nsalts and excess water form a yellowish liquid ‘U’ which goes from organ ‘P’\ninto a bag like structure ‘V’ through two tubes ‘W’.\nImprove your learning\nExcretion97\nThis liquid is then thrown out of the body through a opening ‘X’. (AS1)\n(a) What is organ P? (b) What is wastage 'Q'?.\n(c) Name artery R? (d) What is the name of vein 'T'?\n(e) What are tiny filters 'S' known as? (f) What is the name of the liquid 'U'?\n(g) What is the name of structure 'V'? (h) What is the name of the tubules 'W'?\n(i) What is the name of opening 'X'?\n12.\nThe organ ‘A ’ of a person has been damaged completely due to a poisonous waste material ‘B’ has",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00057"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 105,
+      "textbook_page": 96,
+      "pdf_pages": [
+        105,
+        106,
+        107
+      ],
+      "textbook_pages": [
+        96,
+        97,
+        98
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Improve your learning\nExcretion97\nThis liquid is then thrown out of the body through a opening ‘X’. (AS1)\n(a) What is organ P? (b) What is wastage 'Q'?.\n(c) Name artery R? (d) What is the name of vein 'T'?\n(e) What are tiny filters 'S' known as? (f) What is the name of the liquid 'U'?\n(g) What is the name of structure 'V'? (h) What is the name of the tubules 'W'?\n(i) What is the name of opening 'X'?\n12.\nThe organ ‘A ’ of a person has been damaged completely due to a poisonous waste material ‘B’ has\nstarted accumulated in his blood, making it dirty .\nIn order to save this person’s life, the blood from\nan artery of person’s arm is made to flow into long tubes made of substance ‘E’ which are kept in\ncoiled form in a tank containing solution ‘F’.\nThis solution contains three materials ‘G’, ‘H’ and ‘I’\nsimilar proportions to those in normal blood.\nAs the blood passes through long tubes of substance\n‘E’, most of the wastes present in it go into solution ‘F’.\nThe clean blood is then sent into circulatory\nsystem of the perosn through a vein (AS1)\n(a) What is organ 'A'? (b) Name the wastes substance B.\n(c) What are the names E and F? (d) What are G , H and I present in the solution?\n(e) What is the process described above known as?\n13.\nImagine what happens if waste materials are not sent out of the body from time to time?(AS2)\n14.\nTo keep your kidneys healthy for long period, what questions will you ask a nephrologist/urologist?\n(AS2)\n15.\nWhat are the gum yielding plants in your surroundings?\nWhat procedure you should follow to\ncollect gum from plants? (AS3)\n16.\nCollect the information about uses of different kinds of alkaloids, take help of library or internet.(AS4)\n17.\nDraw a neat labelled diagram of L.S of kidney. (AS5)\n18.\nDescribe the structure of nephron with the help of a daigram. (AS5)\n19.\nDraw a block diagram showing the path way of excretory system in human beings. (AS5)\n20.\nIf you want to explain the process of excretion in kidney, draw the diagram needed for it. (AS5)\n21.\nList out the things that makes you amazing in excretory system of human being. (AS6)\n22.\nY ou read about ‘Brain dead’ people in this chapter.\nWhat discussions would you like to have why\nyou think so? (AS6)\n23.\nWe people have very less awareness about organ donation, to motivate people write slogans\nabout organ donation? (AS7)\n24.\nAfter learning this chapter what habits you would like to change or follow for proper functioning of\nkidneys? (AS7)\n1.\nExcretory organs of earthworm ______________.\n2.\nThe dark brown coloured outer zone in T.S. of kidney is called _____________.\n3.\nThe process of maintenance of water balance and ion concentration with in the organism is\ncalled________.\n4.\nReabsorption of useful product takes place in ____________ part of nephron.\nFill in the blanks\nExcretion98\n5.\nGums and resins are the __________ products of the plants.\n6.\nBowman’s capsule and glomerulus together make ___________.\n7.\nThe alkaloid used for malaria treatment is ________________.\n8.\nThe principle involved in dialysis is __________________.\n9.\nRubber is produced from ______________ of Heavea braziliensis of rubber plants.\n10. ________________ performed first Kidney Transplantation.\n1.\nThe structural and functional unit of human kidney is called ( )\n(A) Neuron (B) nephron (C) nephridia (D) flame cell\n2.\nThe excretory organ in cockroach ( )\n(A) malpighian tubules (B) renette cells (C) flame cells (D) nephridia\n3.\nWhich of the following is the correct path taken by urine in our body? ( )",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00058"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 107,
+      "textbook_page": 98,
+      "pdf_pages": [
+        107,
+        108
+      ],
+      "textbook_pages": [
+        98,
+        99
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Gums and resins are the __________ products of the plants.\n6.\nBowman’s capsule and glomerulus together make ___________.\n7.\nThe alkaloid used for malaria treatment is ________________.\n8.\nThe principle involved in dialysis is __________________.\n9.\nRubber is produced from ______________ of Heavea braziliensis of rubber plants.\n10. ________________ performed first Kidney Transplantation.\n1.\nThe structural and functional unit of human kidney is called ( )\n(A) Neuron (B) nephron (C) nephridia (D) flame cell\n2.\nThe excretory organ in cockroach ( )\n(A) malpighian tubules (B) renette cells (C) flame cells (D) nephridia\n3.\nWhich of the following is the correct path taken by urine in our body? ( )\n(i) Kidneys (ii) Ureters (iii) Urethra (iv) Urinary bladder\n(A) i, ii, iv, iii (B) i, ii, iii, iv\n(c) iv, iii, i, ii (D) ii, iii, i, iv\n4.\nNephridia are excretory organs in ( )\n(A) earth worm (B) house fly (C) flat worm (D) hen\n5.\nMajor component of human urine is ( )\n(A) urea (B) sodium (C) water (D) creatinine\n6.\nSpecial excretory organs are absent in ( )\n(A) birds (B) amoeba (C) fish (D) snail\n7.\nWhich of the following hormone has direct impact on urination? ( )\n(A) adrenalin (B) vasopressin (C) testosterone (D) Oestrogen\n8.\nAmber colour of urine is due to ( )\n(A) urochrome ( B) bilirubin (C) biliverdin (D) chlorides\n9.\nCorrect sequence of urine formation in nephron is ( )\n(A) Glomerular filtration o Tubular reabsorption o Tubular secretion\n(B)Tubular reabsorption o Tubular secretion o Glomerular filtration\n(C)Tubular secretion o Glomerular filtration o Tubular reabsorption\n(D)Tubular reabsorption o concentration of urine o Tubular secretion\n10.\nPart of the nephron that exists in outer zone of kidney . ( )\nA) Loop of henle B) PCT C) DCT D) Bowman’s capsule\n11.\nAfter having lunch or dinner one can feel to pass urine, because of a ( )\nA) Pressure on urinary bladder B) Solids become liquids\nC) Water content in food material D) Spincter relaxation\nChoose the correct answer\nExcretion99\nOrgan donation - A gift for life\nThere is very less awareness among people about organ donation.\nSociety needs much\nawareness on organ donation, so that we can save many lives who are in need of different\norgans from donars for their survival.\nInstead of living in their memories, let us give them\na chance to live in others for one more life.\nBecause we are human beings.\nKind hearted\nhuman beings.\nSo many patients are waiting for suitable organ due to failure of vital organs.\nIn\nHyderabad where there are kidney transplantation facilities minimum 25 patients per\nhospital are waiting for kidney donors.\nDaily 10 - 100 people met with accident in our\nState.\nOut of them some people get brain dead.\nIf we collect organs from brain dead patients\nin time, we can save minimum 5 peoples’ life.\nBut lack of awareness on organ donation\nthose who are willing to donate organs and those who need organs do not get proper\ninformation even facilities are there.\nMedical personnels from government and private\nhospitals are not informing about brain dead patients.\nIf they inform in appropriate time it\nwill be very useful to patients those who are waiting for organ donation.\nIn Hyderabad,\norgan Transplantation facility is available only in two government hospitals (NIMS and\nOsmania) and in more than 10 corporate hospitals.\nOther organs like cornea, kidney, liver,\nheart, lungs, skin, bone, intestines and pancreas can be transplanted from brain dead\npatients.The process of transplantation of organs from brain dead patients to another is\ncalled cadaver transplantation.\nIf any person is willing to donate organs or in needy get\norgans.\nThey must register their names in transplantation facility hospitals.\nCollect information about a voluntary organisation working on organ donation and make",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00059"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Some people need to use a dialysis machine because their kidneys are damaged and cannot properly filter waste products from their blood. The kidneys play a vital role in removing toxins, excess water, and other harmful substances from the body. When the kidneys fail to function, these wastes accumulate in the blood, leading to serious health issues and even death. Dialysis is a medical treatment that mimics the function of healthy kidneys by filtering the blood. The principle involved in dialysis is called 'haemodialysis'. In this process, blood is taken from the patient's artery, mixed with an anticoagulant to prevent clotting, and then passed through a dialyzer. The dialyzer contains a thin membrane that separates the blood from a dialyzing fluid. This fluid has a composition similar to plasma but lacks nitrogenous wastes. As a result, waste substances from the blood move into the dialyzing fluid, cleaning the blood. The cleaned blood is then returned to the patient's body through a vein. This process helps remove toxins and maintain the balance of water and electrolytes in the body.\",\n  \"selected_evidence_ids\": [\"E2\", \"E3\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 96,\n      \"textbook_page\": 87\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 104,\n      \"textbook_page\": 95\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 105,\n      \"textbook_page\": 96\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 133.05588909998187,
+    "latency_seconds": 229.40364599999157,
+    "usage": {
+      "completion_tokens": 371,
+      "prompt_tokens": 4818,
+      "total_tokens": 5189,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-mHiuJ5i1OHyecutrRun1sdql8mNUaOU4",
+    "peak_rss_bytes": 15606816768
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Some people need to use a dialysis machine because their kidneys are damaged and cannot properly filter waste products from their blood. The kidneys play a vital role in removing toxins, excess water, and other harmful substances from the body. When the kidneys fail to function, these wastes accumulate in the blood, leading to serious health issues and even death. Dialysis is a medical treatment that mimics the function of healthy kidneys by filtering the blood. The principle involved in dialysis is called 'haemodialysis'. In this process, blood is taken from the patient's artery, mixed with an anticoagulant to prevent clotting, and then passed through a dialyzer. The dialyzer contains a thin membrane that separates the blood from a dialyzing fluid. This fluid has a composition similar to plasma but lacks nitrogenous wastes. As a result, waste substances from the blood move into the dialyzing fluid, cleaning the blood. The cleaned blood is then returned to the patient's body through a vein. This process helps remove toxins and maintain the balance of water and electrolytes in the body.",
+    "selected_evidence_ids": [
+      "E2",
+      "E3",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E2",
+        "pdf_page": 96,
+        "textbook_page": 87
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 104,
+        "textbook_page": 95
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 105,
+        "textbook_page": 96
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 3,
+    "citation_count": 3
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Dialysis is needed when both kidneys cannot adequately filter wastes",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Blood is withdrawn and mixed with anticoagulant",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Blood flows through a semipermeable membrane against dialysis fluid",
+        "token_recall": 0.625,
+        "matched": true
+      },
+      {
+        "point": "Nitrogenous wastes diffuse out while cells/proteins are retained",
+        "token_recall": 0.25,
+        "matched": false
+      },
+      {
+        "point": "Cleaned blood is returned",
+        "token_recall": 1.0,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.8,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 178
+  },
+  "completed_at": "2026-07-17T19:41:28+00:00"
+}

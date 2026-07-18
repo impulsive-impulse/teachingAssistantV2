@@ -1,0 +1,55 @@
+{
+  "backend": "vulkan_x64",
+  "command": [
+    "C:\\Users\\saman\\AppData\\Local\\Temp\\ta_v2_backend_probe_b10046\\llama-b10046-bin-win-vulkan-x64\\llama-server.exe",
+    "--model",
+    "C:\\Users\\saman\\AppData\\Local\\Temp\\ta_v2_backend_probe_b10046\\models\\Qwen3-8B-Q4_K_M.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18082",
+    "--ctx-size",
+    "8192",
+    "--threads",
+    "10",
+    "--threads-batch",
+    "10",
+    "--batch-size",
+    "512",
+    "--ubatch-size",
+    "256",
+    "--seed",
+    "42",
+    "--parallel",
+    "1",
+    "--n-gpu-layers",
+    "99",
+    "--metrics",
+    "--no-webui"
+  ],
+  "prompt": "Answer in one concise sentence. Why does a pencil look bent when partly submerged in water? /no_think",
+  "load_seconds": 8.870931099998415,
+  "ttft_seconds": 21.986074400003417,
+  "latency_seconds": 30.376419100008206,
+  "probe_wall_seconds": 43.045264799991855,
+  "peak_memory": {
+    "working_set_bytes": 10312699904,
+    "private_bytes": 5702549504
+  },
+  "energy_joules": {
+    "gpu": 40.238091575,
+    "_total": 759.924892227
+  },
+  "output": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+  "output_valid": false,
+  "server_perf": {
+    "prompt_tokens": 34,
+    "prompt_tokens_per_second": 1.55,
+    "generated_tokens": 128,
+    "generation_tokens_per_second": 15.26
+  },
+  "logs": {
+    "stdout": "C:\\Users\\saman\\AppData\\Local\\Temp\\ta_v2_backend_probe_b10046\\results\\vulkan_x64_server_stdout.log",
+    "stderr": "C:\\Users\\saman\\AppData\\Local\\Temp\\ta_v2_backend_probe_b10046\\results\\vulkan_x64_server_stderr.log"
+  }
+}

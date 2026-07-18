@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__01c91d4040",
+  "question_id": "GEN-PSC-014",
+  "question": "Predict the reasons for low melting points for covalent compounds when compared with ionic compounds.",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "6656b3b7764c27270c1cdefddb6c1f86e6ae96c73faefd03f3c7b01f8d640aff",
+  "context_sha256": "9e391cf10903c750916298caa28cccc81e27fabce9ece13f39527e18aaad9163",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 170,
+      "textbook_page": 160,
+      "pdf_pages": [
+        170,
+        171,
+        172,
+        173
+      ],
+      "textbook_pages": [
+        160,
+        161,
+        162,
+        163
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Using the periodic table, predict the formula of compound formed between an element X of\ngroup 13 an another element Y of group 16. (AS2)\n10.\nAn element has atomic number 19.\nWhere would you expect this element be in the periodic\ntable and why? (AS2)\nElements G / P / N\nLi,C,O\nMg, Ca, Ba\nBr, Cl, F\nC,S, Br\nAl, Si, Cl\nLi, Na, k\nC,N,O\nK, Ca, Br.\nb) State whether the following elements\nbelong to a Group (G), Period (P) or\nNeither Group nor Period (N)\nindicating the letters G or P or N.\n(AS1)\n156 Classification of Elements - The Periodic Table\nIII.\nHigher Order Thinking Questions\n1.\nHow does the positions of elements in the periodic table help you to predict its chemical\nproperties?\nExplain with an example. (AS7)\n2.\nIn period 2, element X is to the right of element Y .\nThen, find which of the elements have\nthese properties:\ni) Low nuclear charge (ii) Low atomic size (iii) High ionization energy\n(iv)High electro negativity (v) More metallic character (AS1)\n1.\nNumber of elements present in period – 2 of the long form of periodic table [ ]\na) 2 b) 8 c) 18 d) 32\n2.\nNitrogen (Z = 7) is the element of group VA of the periodic table.\nWhich of the following is the\natomic number of the next element in the same group? [ ]\na) 9 b) 14 c) 15 d) 17\n3.\nElectron configuration of an atom is 2, 8, 7.\nTo which of the following elements would it be\nchemically similar? [ ]\na) nitrogen(Z=7) b) fluorine(Z=9) c) phosphorous(Z=15) d) argon(Z=18)\n4.\nWhich of the following is the most active metal? [ ]\na) lithium b) sodium c) potassium d) rubidium\nSuggested Experiments\n1.\nAluminium does not react with water at room temperature but reacts with both dil.\nHCl and\nNaOH solutions.\nVerify these statements experimentally.\nWrite your observations with\nchemical equations.\nFrom these observations, can we conclude that Al is a metalloid?\nSuggested Projects\n1.\nCollect the information about reactivity of VIII A group elements (noble gases) from your\nschool library and prepare a report on their special character when compared to other\nelements of periodic table.\n2.\nCollect information regarding metallic character of elements of IA group and prepare report\nto support the idea of metallic character increases in a group as we move from top to\nbottom.\nMultiple choice questions\n157 Chemical Bonding\nYou have learnt about electron configuration of elements and periodic\ntable in previous lessons.\nIt was learnt that there are over 118 elements.\n· How do they usually exist?\n· Do they exist as a single atom or as a group of atoms?\nIn Class IX, we saw that several elements like oxygen, nitrogen and\nhydrogen exist as diatomic molecules.\nWhat is the force that is holding\nthese constituent atoms together in molecules?\n· Are there any elements which exist as atoms?\n· Why do some elements exist as molecules and some as atoms?\nIn lower classes you have also learnt about the different laws of\nchemical combinations.\nSince the formation of chemical compounds takes\nplace as a result of combination of atoms of various elements in different\nways, it raises many questions.\n· Why do some elements and compounds react vigorously while others\nare inert?\n· Why the chemical formula for water is H2O and for sodium chloride\nNaCl, why not HO2 and NaCl2?\n· Why do some atoms combine while others do not?\nWe will try to answer such questions in this chapter.\nChemical Bonding8\nCHAPTER\n158 Chemical Bonding\n· Are elements and compounds simply made up of separate atoms",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00097"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 182,
+      "textbook_page": 172,
+      "pdf_pages": [
+        182,
+        183,
+        184
+      ],
+      "textbook_pages": [
+        172,
+        173,
+        174
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "by one Cl– and vice-versa.\nDepending upon the size and charge of a particular\nion, number of oppositely charged ions get attracted by it, but, in a definite\nnumber.\nIn sodium chloride crystal each Na+ is surrounded by 6 Cl- and\neach Cl– by six Na+ ions.\nIonic compounds in the crystalline state consist\nof orderly arranged cations and anions held together by electrostatic forces\nof attractions in three dimensions.\nThe crystal structure of sodium chloride\nis given below:\nNaCl is said to possess face centered cubic lattice\ncrystal structure (see figure-1).\nThe number of ions of opposite charge that surround\na given ion of given charge is known as the coordination\nnumber of that given ion.\nFor example, in sodium chloride crystal, the\ncoordination number of Na+ is 6 and that of Cl- is also 6.\nfig-1Cl–\nNa+\n168 Chemical Bonding\nFactors affecting the formation of cation and anion:\nIn previous lesson you have learnt about variation of metallic and non\nmetallic character of elements in a group or period of the periodic table.\nRecall the facts about metallic and non metallic character of elements.\nGenerally elements of metals have tendency of losing electron to attain\nthe octet in their valence shell.\nThis property is called as the metallic\ncharacter or electropositivity .\nElements with more electropositive\ncharacter form cations.\nSimilarly non metals like oxygen (8O), fluorine\n(9F) and chlorine (17Cl) acquire electron configuration of elements of inert\ngases by gaining electrons this property is called the non-metallic\ncharacter or electronegativity of the element .\nElements with more\nelectronegative character form anions.\n· Can you explain the reasons for all these?\nIonic bond is formed between atoms of elements with electronegativity\ndifference equal to or greater than 1.9.\nIn ionic bond formation, you have noticed that atoms either lose\nelectrons or gain electrons to attain octet in valence shell. i.e., in an ionic\nbond, transfer of electrons takes place between combining atoms.\nThe tendency of losing electrons to form cations (or) gaining electron\nto form anions depends on the following factors:\ni) Atomic size\nii) Ionisation potential\niii) Electron affinity\niv) Electronegativity\nThe atoms of elements with low ionisation energy, low electron affinity\nhigh atomic size and low electronegativity form cations.\nThe atoms of elements with high ionisation potential, high electron\naffinity, small atomic size and high electronegativity form anions.\n8.4.2 Covalent bond\nG.N.\nLewis (1916) proposed that atoms of some elements could\nachieve an octet in their valence shells without transfer of electrons\nbetween them.\nThey can attain octet configuration in their valence shells\nby sharing the valence electrons with one or more atoms.\nThe electrons shared between two atoms belong to both the atoms and\nthe sharing of electrons between them leads to the formation of a chemical\nbond known as covalent bond.\n169 Chemical Bonding\nFor example, take two fluorine atoms which form a stable molecule.\nEach fluorine atom contributes one electron for bonding and the electron\npair that is formed in this way is mutually shared by both the fluorine atoms.\nEach atom in the F2 molecule has an octet of valence electrons.\nThe dots around fluorine atom shows the valence electrons of\nrespective atoms.\nThe chemical bond formed between two atoms by mutual sharing of a\npair of valence shell electrons so that both of them can attain octet or\nduplet in their valence shell is called the covalent bond.\nThe prefix co – is used to indicate when things are equal or joined.\n(for example, co exist, cooperate etc).\nHere each atom contributes one\nelectron from the valence shell for the bonding.\nTherefore, the name\ncovalent is given (equal valence electrons contribution) for this bond.",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00104"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 195,
+      "textbook_page": 185,
+      "pdf_pages": [
+        195,
+        196
+      ],
+      "textbook_pages": [
+        185,
+        186
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "180 Chemical Bonding\nBut HOH observed is 104 031/ .\nTo explain this, sp 3\nhybridisation is suggested for the valence orbitals of ‘O’ atom.\nOne s-orbital (2s) and three ‘p’ orbitals (2px, 2py, 2pz) intermix\nand redistribute into four identical sp3 orbitals.\nAs there are six\nelectrons and two sp3 orbitals get pairs and two sp3 orbitals get\none electron each.\nNow, the two sp3 orbitals of ‘O’ atom overlap\nthe ‘s’ orbitals of two hydrogen atoms to give ssp3-s bonds.\nDue\nto the lone pair – lone pair repulsions and lone pair – bond pair repulsions\nHOH decreases from 109028/ (expected for sp3 – tetrahedral hybridisation)\nto 104031/.\nCH4, C2H4 and C2H2 molecules and their structures will be explained\nin carbon and its compounds chapter later in this class.\nTo explain the covalent bond, lines poling in 1954 proposed a quantum\nmechanial theory called \"Valance Bond Theory\".\nYou wll learn about this in\nhigher classes.\n8.9 Properties of ionic and covalent compounds\nTable -4\nWater\nS.No Property NaCl (ionic) HCl (polar covalent) C 2H6 (covalent)\n1.\nFormula mass 58.5 36.5 30.0\n2.\nPhysical appearance White crystalline solid Colourless gas Colourless gas\n3.\nType of bond Ionic Polar covalent Covalent\n4.\nMelting point 801 0C -115 0C -183 0C\n5.\nBoiling point 1413 0C -84.9 0C -88.63 0C\n6.\nSolubility Soluble in polar Soluble in polar solvents Soluble in non-polar\nsolvents like water like water and to some solvents but insoluble\nand insoluble in non extent in non-polar in polar solvents like\n-polar solvents solvents water\n7.\nChemical activity Highly reactive in polar Moderately Slow or very slow at\nsolvents and reactions reactive room temperature\nare instantaneous\n181 Chemical Bonding\nFrom the above table we understand that ionic compounds like NaCl are\nsolids at room temperature.\nPolar compounds like HCl possess properties like melting point, boiling\npoint, reactivity, solubility etc, between those of ionic compounds and\ncovalent compounds.\nIf the covalent bond is between atoms of two different\nelements, the shared electron pair shift more towards the atom of more\nelectronegative element.\nThus within the molecule the more electronegative\natom bears a partial negative charge and the less electronegative atom bears\na partial positive charge.\nA molecule of this type which is neutral but possesses\npartial charges on the atoms within the molecule is called a polar molecule\nand the bond is called a polar covalent bond or partial ionic and partial covalent\nbond.\nEg: H+Cl g +δ -δ\nH - Cl\nIn ionic compounds there exist stronger electrostatic forces of attractions\nbetween the oppositely charged ions of these compounds.\nTherefore, they\nare solids with high melting points and boiling points.\nBased on the principle\n“like dissolves in like”, they being highly polar, soluble in polar solvents.\nIn\nchemical reaction of solution of ionic compounds simply rearrangement of\nions take place in the solutions, the reactions are instantaneous or very fast.\nThe forces of attractions among covalent molecules are weak.\nTherefore,\nthe covalent compounds are gases or liquid at room temperature.\nThey have\nlow melting points and low boiling points.\nBased on the principle that “like\ndissolve in like” these covalent compounds are soluble in non-polar solvents\nbecause of non-polar nature of solvent molecules.\nIn chemical reactions of\ncovalent compounds there exist bond breaking and bond forming to get\nproducts.\nThere fore, these reactions are moderate or very slow.\n‘Like dissolves in like’ means what type of chemical bonds are there in\nthe solute particles that solute could be soluble in that solvent which has the\nsimilar type of chemical bonds in its molecules.\nKey words\nElectrons, noble gases, Lewis dot structures, Octet rule, chemical bond, Ionic",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00111"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 196,
+      "textbook_page": 186,
+      "pdf_pages": [
+        196,
+        197,
+        198
+      ],
+      "textbook_pages": [
+        186,
+        187,
+        188
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "low melting points and low boiling points.\nBased on the principle that “like\ndissolve in like” these covalent compounds are soluble in non-polar solvents\nbecause of non-polar nature of solvent molecules.\nIn chemical reactions of\ncovalent compounds there exist bond breaking and bond forming to get\nproducts.\nThere fore, these reactions are moderate or very slow.\n‘Like dissolves in like’ means what type of chemical bonds are there in\nthe solute particles that solute could be soluble in that solvent which has the\nsimilar type of chemical bonds in its molecules.\nKey words\nElectrons, noble gases, Lewis dot structures, Octet rule, chemical bond, Ionic\nbond, covalent bond, cation, anion, electrostatic force, electrovalent, polar solvent,\nnon-polar solvent, formation of molecules, ionic compounds, covalent compounds,\nelectro positive character, electro negative character, polar bonds, bonded pair of\nelectrons, lone pairs, bond length, bond energy, shape of the molecule, linear,\ntetrahedral, properties of ionic and covalent compounds.\n182 Chemical Bonding\nFig-Q2\n..\n....\n· Location of elements in the periodic table helps in predicting the\ntype of bonding that will take place between atoms of the elements.\n· Ions are positively or negatively charged particles formed by the\nloss or gain of electrons respectively.\n· The force between any two atoms or a group of atoms that results in the formation of a stable\nentity is called chemical bond.\n· The outer most shell of an atom is called valence shell and electrons in this shell are called\nvalence electrons.\n· The gases belonging to ‘O’ group are called noble gases because they are reluctant to combine\nwith other atoms.\nExcept helium all other noble gases have an octet of electron configuration in\ntheir valence shells.\n· Chemically active elements have an incomplete octet in the valence shells of their atoms.\n· The number of valence electrons available in the atoms of elements decides the type of bond\nformed by the atom of the element.\n· Elements which have a tendency to gain electrons for attaining octet in their valence shell are\ncalled with more electro negative character.\nThey form anions.\n· In the formation of ionic bond the atoms of electro positive elements lose their valence electrons\nto atoms of electro negative elements so that both of them can attain octet in their valence\nshells.\n· The electrostatic attractive force that keeps cation and anion together to form a new electrically\nneutral entity is called an ionic bond.\n· Ionic compounds are often crystalline solids with high melting points.\n· A chemical bond that formed by sharing of valence-shell electrons between the atoms so that\nboth of them can attain octet or duplet in their valence shells is called covalent bond.\n· A single covalent bond is formed when two atoms share a pair of electrons\n· Each shared pair of electrons is equivalent to one covalent bond.\n· Electrons are not always shared equally between the atoms in a covalent bond.\nThis leads to\nbo nd po larit y.\n· To explain the bond angles in molecular VSEPRT theory is dicussed.\nI.\nReflections on concepts\n1.\nExplain the difference between the valence\nelectrons and the co-valency of an element. (AS1)\n2.\nWhich chemical compound has the following Lewis notation:\n(AS1)\na) How many valence electrons does element Y have?\nb) What is the valency of element Y?\nImprove your learning\nWhat we have learnt\n183 Chemical Bonding\nc) What is the valency of element X?\nd) How many covalent bonds are there in the molecule?\ne) To which groups the elements X and Y belong? (AS2)\n3.\nHow bond energies and bond lengths of molecule help us in predicting their chemical properties?\nExplain with examples. (AS1)\n4.\nDraw simple diagrams to show the arrangement of valence electrons in the following compounds:",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00112"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 197,
+      "textbook_page": 187,
+      "pdf_pages": [
+        197,
+        198,
+        199,
+        200
+      ],
+      "textbook_pages": [
+        187,
+        188,
+        189,
+        190
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Which chemical compound has the following Lewis notation:\n(AS1)\na) How many valence electrons does element Y have?\nb) What is the valency of element Y?\nImprove your learning\nWhat we have learnt\n183 Chemical Bonding\nc) What is the valency of element X?\nd) How many covalent bonds are there in the molecule?\ne) To which groups the elements X and Y belong? (AS2)\n3.\nHow bond energies and bond lengths of molecule help us in predicting their chemical properties?\nExplain with examples. (AS1)\n4.\nDraw simple diagrams to show the arrangement of valence electrons in the following compounds:\n(AS5)\na) Calcium oxide (CaO) (b) Water (H2O) (c) Chlorine (Cl2)\n5.\nRepresent each of the following atoms using Lewis notation: (AS5)\n(a) beryllium (b) calcium (c) lithium d) bromine (Br2)\n(e) calcium chloride (CaCl2) (f) carbon dioxide (CO2)\nII.\nApplication of Concepts\n1.\nExplain the formation of sodium chloride and calcium oxide on the basis of the concept of electron\ntransfer from one atom to another atom. (AS1)\n2.\nA, B, and C are three elements with atomic numbers 6, 11 and 17 respectively.\ni) Which of these cannot form ionic bond?\nWhy? (AS1)\nii) Which of these cannot form covalent bond?\nWhy? (AS1)\niii) Which of these can form ionic as well as covalent bonds? (AS1)\n3.\nHow does Lewis dot structure helps in understanding bond formation between atoms? (AS1)\n4.\nExplain the formation of the following molecules using valence bond theory\na) N2 molecule b) O2 molecule\nIII.\nHigher Order Thinking questions\n1.\nTwo chemical reactions are described below. (AS5)\n· Nitrogen and hydrogen react to form ammonia (NH3)\n· Carbon and hydrogen bond together to form a molecule of methane (CH4).\nFor each reaction, give:\na) The valence of each of the atoms involved in the reaction. (AS1)\nb) The Lewis structure of the product that is formed. (AS5)\n184 Chemical Bonding\nMultiple choice questions\n1) Which one of the following four elements is more electronegative? [ ]\na) Sodium b) Oxygen c) Magnesium d) Calcium\n2) An element 11X23 forms an ionic compound with another element ‘Y’.\nThen the charge on the ion\nformed by X is [ ]\na) +1 b) +2 c) -1 d) -2\n3) An element ‘A ’ forms a chloride ACl4.\nThe number electrons in the valence shell of ‘A’ is\na) 1 b) 2 c) 3 d) 4 [ ]\n4) The inert gas element which does not have octet electronic configuration in its\noutermost orbit is [ ]\na) Helium b) Argon c) Krepton d) Radon\n5) Number of covalent bonds in methane molecule [ ]\na) 1 b) 2 c) 3 d) 4\n6) The concept hybridisation of orbitals of an atoms was introdused by [ ]\na) Lives pouling b) Mosley c) Lewis d) Kossel\n7) The value of bond angle in Berileum chloride molecule is [ ]\na) 1800 b) 1200 c) 1100 d) 1040.31|\nSuggested Projects\n1.\nCollect the information about properties and uses of covalent compounds and prepare a\nreport? (AS4)\n185 Electric Current\nElectric Current9\nCHAPTER\nIn previous classes, you had learnt about electric current, battery, electric\ncircuit and its components.\n· What do you mean by electric current?\n· Which type of charge (positive or negative) flows through an electric\nwire when it is connected in an electric circuit?\n· Is there any evidence for the motion of charge in daily life situations?\nIn class VIII you learned about lightning.\nLightning is an electric discharge\nbetween two clouds or between cloud and Earth.\nThis electric discharge\nthrough air appears to us as an electric spark or lightning.\nLightning is a live example which provides evidence for the motion of\ncharge in the atmosphere.",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00113"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Covalent compounds have low melting points compared to ionic compounds because the forces of attraction between covalent molecules are weak. In covalent compounds, atoms are held together by sharing electrons, and the molecules are not arranged in a crystalline structure like ionic compounds. As a result, covalent compounds are usually gases or liquids at room temperature and have low melting and boiling points. In contrast, ionic compounds have strong electrostatic forces of attraction between oppositely charged ions, which require more energy to break, leading to high melting and boiling points.\",\n  \"selected_evidence_ids\": [\"E3\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 195,\n      \"textbook_page\": 185\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 196,\n      \"textbook_page\": 186\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 255.88606610000716,
+    "latency_seconds": 337.14890620001825,
+    "usage": {
+      "completion_tokens": 229,
+      "prompt_tokens": 4723,
+      "total_tokens": 4952,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-nggEBzfpWbVUo5PqLt1NlRId7JnmWT2C",
+    "peak_rss_bytes": 26582736896
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Covalent compounds have low melting points compared to ionic compounds because the forces of attraction between covalent molecules are weak. In covalent compounds, atoms are held together by sharing electrons, and the molecules are not arranged in a crystalline structure like ionic compounds. As a result, covalent compounds are usually gases or liquids at room temperature and have low melting and boiling points. In contrast, ionic compounds have strong electrostatic forces of attraction between oppositely charged ions, which require more energy to break, leading to high melting and boiling points.",
+    "selected_evidence_ids": [
+      "E3",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E3",
+        "pdf_page": 195,
+        "textbook_page": 185
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 196,
+        "textbook_page": 186
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Most covalent substances consist of neutral molecules",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Intermolecular attractions are weaker than ionic lattice forces",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Less heat is required to separate the molecules",
+        "token_recall": 0.2,
+        "matched": false
+      },
+      {
+        "point": "Therefore many covalent compounds have lower melting/boiling points than ionic compounds",
+        "token_recall": 0.6,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.25,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 90
+  },
+  "completed_at": "2026-07-17T18:14:21+00:00"
+}

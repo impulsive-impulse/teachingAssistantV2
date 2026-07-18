@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top5_page_order_compact__684f17db77",
+  "question_id": "GEN-PSC-015",
+  "question": "State Ohm’s law. Suggest an experiment to verify it and explain the procedure.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": true,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "da64399737dfa883e7606a6ca0ff69cb54c5cbc9400ee5b820a502162e3181b1",
+  "context_sha256": "4d30a32c4e4e28ba69512f01f46225483972d24fe959990ff6c09c2c612a388d",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 208,
+      "textbook_page": 198,
+      "pdf_pages": [
+        208,
+        209
+      ],
+      "textbook_pages": [
+        198,
+        199
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Now connect two cells (in series) instead of one cell in the circuit.\nNote the respective readings of the ammeter and volt meter and record the\nvalues in table 1.\nRepeat the same for three cells, four cells and five cells\nrespectively.\nRecord the values of potential difference (V) and current (I)\ncorresponding to each case in the table 1.\nFind V\nI for each set of values.\nWhat do you notice?\nThe ratio V\nI is a constant.\nWe can write this\nmathematically as\nV µ I\nFrom this experiment we can conclude that the potential difference\nbetween the ends of the iron spoke (conductor) is directly proportional to\nthe current passing through it (assuming the temperature of the iron spoke\nis constant during the flow of current through it).\nDraw a graph between V and I taking the current (I) along y-axis and potential\ndifference (V) along x-axis with appropriate scale.\nYou will get\na straight line graph passing through the origin as shown in fig.- 11.\nRepeat the process by using a LED instead of iron spoke.\nThe long terminal of the LED is connected to the positive\nterminal of the battery and short terminal of the LED is\nconnected to negative terminal of the battery.\nNote the values\nof current ‘I’ and potential difference ‘V’ in each case and record\nthe values in table 1 (draw this table in your notebook).\nSI.No.\nPotential difference (V) Current (I) V\nI\nfig-10\nA\nV\nIron spoke\nkeyBattery\nI\nI\n(in Ampere)\nfig-11\nV\n(in volt)\n194 Electric Current\nFind V\nI for each set of values I and V .\nYou will notice that the\nratio V\nI is not a constant.\nDraw a graph between V and I for\nLED.\nYou will get a curved graph as shown in fig.- 12.\nFrom the above lab activity we can conclude that the ratio\nbetween V and I is constant for some materials at constant\ntemperature.\nThis fact was established by German Physicist,\nGeorge Simon Ohm and it is popularly known as Ohm’s law.\nWe can define Ohm’s law as follow.\nThe potential difference between the ends of a conductor is directly\nproportional to the electric current passing through it at constant\ntemperature.\nLet V be the potential difference between the ends of the conductor and I\nbe the current passing through it.\nV µ I (temperature is constant)\nV\nI = Constant\nThis constant is called resistance of the conductor.\nIt is denoted by ‘R’.\nThen we get V\nI = R.\nV = IR\nThe SI unit of resistance is Ohm.\nThe symbol of ohm is W.\n1 Ohm = 1 V olt/1 Ampere\n1 W = 1V/A\n· Can you guess the reason why the ratio of V and I in case of LED is not\nconstant?\n· Do all materials obey Ohm’s law?\n· Can we classify the materials based on Ohm’s law?\nBased on Ohm’s law materials are classified into two categories.\nThose\nwhich obey Ohm’s law are called ohmic materials.\nFor example, metals\nare ohmic materials.\nThose which do not obey Ohm’s law are called non\nohmic materials.\nFor example, LEDs are non ohmic materials.\n9.4.1 Limitations of Ohm’s Law\nOhm’s law is valid for metal conductors provided the temperature and other\nphysical conditions remain constant.\nThe resistance of the material changes\nwith temperature.\nHence for changing temperature the V-I graph for a\nconductor will be non-linear.\nOhm’s law is not applicable to gaseous\nconductors.\nIt is also not applicable to semiconductors such as germanium\nand silicon.\nfig-12\nV\n(in volt)\nI",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00120"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 209,
+      "textbook_page": 199,
+      "pdf_pages": [
+        209,
+        210,
+        211
+      ],
+      "textbook_pages": [
+        199,
+        200,
+        201
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "which obey Ohm’s law are called ohmic materials.\nFor example, metals\nare ohmic materials.\nThose which do not obey Ohm’s law are called non\nohmic materials.\nFor example, LEDs are non ohmic materials.\n9.4.1 Limitations of Ohm’s Law\nOhm’s law is valid for metal conductors provided the temperature and other\nphysical conditions remain constant.\nThe resistance of the material changes\nwith temperature.\nHence for changing temperature the V-I graph for a\nconductor will be non-linear.\nOhm’s law is not applicable to gaseous\nconductors.\nIt is also not applicable to semiconductors such as germanium\nand silicon.\nfig-12\nV\n(in volt)\nI\n(in ampere)\n195 Electric Current\n· What is resistance?\n· Is the value of resistance the same for all materials?\nWhen a conductor is connected to a battery the free electrons start moving\nwith a drift speed in a specified direction.\nDuring the motion, the electrons\ncollide with positive ions (fixed) of the lattice and come to halt.\nThis means\nthat they lose mechanical energy in the form of heat.\nDue to the electric\nfield that was set up by the battery throughout the conductor, these electrons\nregain the energy from the field and proceed to move.\nThe motion of\nelectrons is obstructed by the lattice ions.\nThe obstruction offered to the\nflow of electrons in a conductor by lattice ions depends upon the nature of\nthe material.\nTherefore, the resistance of a conductor is defined as the obstruction to\nthe motion of the electrons in a conductor.\nThe material which offers\nresistance to the motion of electrons is called resistor.\n· Is there any application of Ohm’s law in daily life?\n· What causes electric shock in the human body – current or voltage?\nLet us see.\n9.5 Electric shock\nLet us assume that human body is a resistor.\nThe resistance of the human\nbody generally varies from 100 W (if body is wet with salt water) to\n5,00,000 W (if the skin is very dry).\nLet us calculate the amount of current\nthat flows through the human body.\nLet us assume you have touched the\ntwo electrodes of a battery of 24V with dry fingers in such a way that the\ncircuit is complete.\nLet your body resistance be 1,00,000 W.\nThen the\ncurrent flowing through your body is given by I = 24/100000 = 0.00024A.\nThis current is very small.\nWhen such small current passes through the\nhuman body, it does not affect the functioning of various organs inside the\nbody.\n· Do you know the voltage of mains that we use in our household\ncircuits?\n· What happens to our body if we touch live wire of 240V?\nThe current passing through our body when we touch a live wire of 240V\nis given by I = 240/100000 = 0.0024A.\nWhen this quantities of current\nflows through the body the functioning of organs inside the body gets\ndisturbed.\nThis disturbance inside the body is felt as electric shock.\nIf the\ncurrent flow continues further, it damages the tissues of the body which\nleads to decrease in resistance of the body.\nWhen this current flows for a\nlonger time, damage to the tissues increases and thereby the resistance of\nhuman body decreases further.\nHence, the current through the human body\nwill further increase.\nIf this current reaches 0.07A, it effects the functioning\nof the heart and if this much current passes through the heart for more\nthan one second it could be fatal.\nIf this current flows for a longer time,\n196 Electric Current\nthe person in electric shock is being killed.\nSee the table 2 that describes",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00121"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 227,
+      "textbook_page": 217,
+      "pdf_pages": [
+        227,
+        228
+      ],
+      "textbook_pages": [
+        217,
+        218
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Think and discuss\n· What do you mean by short circuit?\n· Why does a short circuit damage electric wiring and devices\nconnected to it?\nKey words\nCharge, Potential difference, Electric current, Multi-meter, Ohm’s law, Resistance,\nResistivity, Kirchhoff’s laws, Electric power, Electric energy.\nWhat we have learnt\n213 Electric Current\n· Ohm’s law is valid for metal conductors at constant temperature.\nIt is not applicable\nfor gaseous conductors and semiconductors.\n· Resistance is the opposition that a substance offers to the motion of electrons.\n· Resistance of a wire depends on the material of the wire, its length and its area of\ncross section Ra l/A.\n· The resistivity of a material is the resistance per unit length of a unit cross section of\nthe material.\n· Two or more resistors are said to be connected in series if the same current flows\nthrough them.\n· The junction law: At any junction point in a circuit where the current can divide,\nthe sum of the currents into the junction must equal the sum of the currents leaving\nthe junction.\n· The loop law: The algebraic sum of the increases and decreases in potential\ndifference across various components of a closed circuit loop must be zero.\n· Electric power is the product of potential difference and the current.\nSI unit of\npower is watt (W).\n· Electrical energy is the product of power and time.\nUnits of electrical energy W-s\nand KWH.\nI.\nReflections on concepts\n1.\nExplain how electron flow causes electric current with\nLorentz – Drude theory of electrons.(AS1)\n2.\nWrite the difference between potential difference and emf. (AS1)\n3.\nHow can you verify that the resistance of a conductor is temperature dependent?\n(AS1)\n4.\nExplain how electric shock takes place. (AS1)\n5.\nDraw a circuit diagram for a circuit in which two resistors A and B are connected\nin series with a battery and a voltmeter is connected to measure the potential\ndifference across the resistor A.(AS5)\n6.\nIn the figure Q-6 the potential at A is —————\nwhen the potential at B is zero. (AS7)\n5W\ng1A\n2VA B\nV= 0\nfig.\nQ - 6\nImprove your learning",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00132"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 231,
+      "textbook_page": 221,
+      "pdf_pages": [
+        231,
+        232,
+        233
+      ],
+      "textbook_pages": [
+        221,
+        222,
+        223
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "difference when the battery is connected in the circuit.\nIs there any difference in potential difference\nof battery? (AS4)\n(b) Measure the resistance of a bulb (filament) in open circuit with a multi-meter.\nMake a circuit\nwith elements such as bulb, battery of 12V and key in series.\nClose the key.\nThen again measure\nthe resistance of the same bulb (filament) for every 30 seconds.\nRecord the Observations in a\nproper table.\nWhat can you conclude from the above results? (AS4)\n2.\nCalculate the resistance of verious bulbs that you use at your home and find which one is having\nhigher / lower resistance value.\nWrite the report on your observations.\n3.\nCollect the information and prepare a report on power consumption in your home / school.\nSuggested Experiments\n1.\nState Ohm’s law.\nSuggest an experiment to verify it and explain the procedure. (AS3)\n2.\nHow do you verify that resistance of a conductor is proportional to the length of the conductor\nfor constant cross section area and temperature? (AS3)\n217 Electric Current\nCan w e apply New to n law ’ s to th e mo tio n o f electr o n s?\nNote: In this explanation, the random motion of electrons is neglected.\nLet us consider a conductor of length l and cross sectional area A.\nLet\nn be the density of electrons of a conductor.\nThe current passing through the conductor when the ends of the\nconductor is maintained at a constant potential difference V is given by\nI = nAevd ....................... (a)\nWhere e is the charge of electron and v d is the drift velocity of\nelectrons.\nWork done by the source to move electron between the ends (along\nthe conductor) is given by,\nW = Ve ....................... (b)\nWe know that the work done by the electric force,\nW =Fl ....................... (c)\nWhere F is the force applied by the electric field.\nFrom equations (b) and (c), We get\nFl = Ve a F = V e/l\nFrom Newton’s second law, we know that F = ma is applicable to any\nparticle.\nHence we have,\nma = Ve/l a a = V e/lm ......................(d)\nAssuming that the initial velocity (u) of electron is zero.\nLet v velocity\nacquired by the electron in a time interval t (interval between successive\ncollisions).\nThen u = 0 and t = t\nFrom equation v = u+at\nv = at = Vet/lm (from equation d)\nDue to collisions with lattice ions, the motion of electrons is restricted.\nHence the average velocity of electron in time t becomes its drift velocity.\nAverage velocity of electron vd = (v+u)/2 = v/2\nSubstituting the value of v in above equation, we get\nAnnexure\n218 Electric Current\nAverage velocity = Drift velocity, vd = Vet/2lm\nSubstituting the value of vd in equation (a) we get,\nI = nAe(Vet/2lm)\nI = V(ne2t/2m)(A/l)\nI (2m/ne2t)(l/A) = V ......................(e)\nIn the above equation, mass of the electron (m) and charge of the\nelectron (e) are constants because these values are characteristics of\nthe electron.\nThe electron density (n) of a metal conductor depends on its nature\nso it is also constant for a particular conductor.\nFor a given conductor, the length (l) and cross section area (A) are\nalso constants.\nThe value of t depends on temperature of the conductor.\nWhen the temperature increases the random motion of electrons\nincreases hence the value of t decreases.\nFor a constant temperature of a conductor the value of t becomes\nconstant.\nHence (2m/ne 2t) ( l/A) becomes a constant for a particular\nconductor at constant temperature.\nLet this value be R (called resistance",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00134"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 262,
+      "textbook_page": 252,
+      "pdf_pages": [
+        262,
+        263,
+        264
+      ],
+      "textbook_pages": [
+        252,
+        253,
+        254
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Determine the magnetic field induction if the current in the conductor is 40A.\n(Ans: 1tesla) (AS1)\n5.\nAs shown in the fig-Q6, both coil and bar magnet moves in the same direction.\nWhat happens?\n(AS2)\n6.\nGive a few applications of Faraday’s law of induction in daily life. (AS7)\nfig- Q6\nN\nV\nC\nN\nfig- Q2\nxP\nQ\nfig- Q3\nfig- Q5\nB\ni\nL\nfig- Q4\n248 Electromagnetism\n1.\nWhich of the following converts electrical energy into mechanical energy [ ]\na) motor b) battery\nc) generator d) switch\n2.\nWhich of the follwing converts mechanical energy into electrical energy [ ]\na) motor b) battery\nc) generator d) switch\n3.\nThe magnetic force on a current carrying wire placed in uniform magnetic field if the wire is\noriented perpendicular to magnetic field is [ ]\na) 0 b) ILB\nc) 2ILB d) ILB\n2\n4.\nOne Tesla = [ ]\na) Newton/Coloumb b) Newton / ampere - meter\nc) Ampere / meter d) Newton / ampere second\n5.\nUnit of Magnetic flux [ ]\na) dyne b) Oersterd c) Guass d) Weber\n6.\nNo force works on the conductor carrying electric current when kept [ ]\na) parallel to magnetic field b) perpendicular to magnetic field\nc) in the magnetic field d) away from magnetic field\nMultiple choice questions\nSuggested Projects\n1.\nCollect information about generation of current by using Faraday’s law. (AS4)\n2.\nCollect information about material required and procedure of making a simple electric motor\nfrom internet and make a report. (AS4)\n3.\nCollect information of experiments done by Faraday. (AS4)\nSuggested Experiments\n1.\nExplain with the help of two activities that current carrying wire produces magnetic field. (AS3)\n2.\nHow do you verify experimentally that the current carrying conductor experiences a force when\nit is kept in magnetic field? (AS3)\n3.\nExplain Faraday’s law of induction with the help of activity. (AS3)\n4.\nWhat experiment do you suggest to understand Faraday’s law?\nWhat instruments are required?\nWhat suggestions do you give to get good results of the experiment?\nGive precautions also.\n(AS3)\n5.\nHow can you verify that a current carrying wire produces a magnetic field with the help of an\nexperiment? (AS3)\n249 Principles of Metallurgy\nIn class 8 you have studied about certain properties of metals like,\nmalleability, ductility, sonarity etc.\nMetals play an important role in our\ndaily life.\nWe use various metals for various purposes like gold and silver\nas jewellery, copper, iron, aluminium for making conducting wires and\nfor making utensils etc.\nWe use many house hold articles made up of metals\nand their alloys at our home.\n· Can you mention some articles that are made up of metals?\n· Do metals exist in nature in the same form as that we use in our daily\nlife?\n· Have you ever heard the words like ore, mineral and metallurgy?\n· Do you know how these metals are obtained?\nTo understand these questions you need to know about metallurgy.\nIn\nthis chapter we discuss various concepts related to metallurgy and the\nprocess by which we are able to obtain the pure form of metal that we use\nin our daily life.\n“Metallurgy is the process of extraction of metals from their ores”.\nHuman history in terms of materials had the Bronze Age and Iron Age.\nThe bronze is an alloy of copper and tin.\nNow we have more than 75%\nmetals among the elements available.\n11.1 Occurrence of the metals in nature\n· How are the metals present in nature?\nThe earth’s crust is the major source of metals.\nSea water also contains\nsome soluble salts such as sodium chloride and magnesium chloride etc.\nPrinciples of",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00155"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Ohm’s law states that the potential difference (V) across a conductor is directly proportional to the current (I) passing through it, provided the temperature remains constant. Mathematically, this is expressed as V = IR, where R is the resistance of the conductor. To verify Ohm’s law, an experiment can be conducted using a circuit with a battery, ammeter, voltmeter, and a conductor (like an iron spoke). The procedure involves connecting the conductor to the battery and measuring the current and potential difference for different numbers of cells (from 1 to 5). For each case, the ratio V/I is calculated. If the ratio remains constant, it confirms Ohm’s law. A graph of V vs. I should be a straight line passing through the origin. This experiment also shows that materials like LEDs do not obey Ohm’s law, as their V/I ratio is not constant, resulting in a curved graph.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 208,\n      \"textbook_page\": 198\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 113.87598100000469,
+    "latency_seconds": 179.19759180000983,
+    "usage": {
+      "completion_tokens": 266,
+      "prompt_tokens": 4077,
+      "total_tokens": 4343,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-qLM3IEl5fC0JJAixWUA6AarBAAGTeGHi",
+    "peak_rss_bytes": 19271217152
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Ohm’s law states that the potential difference (V) across a conductor is directly proportional to the current (I) passing through it, provided the temperature remains constant. Mathematically, this is expressed as V = IR, where R is the resistance of the conductor. To verify Ohm’s law, an experiment can be conducted using a circuit with a battery, ammeter, voltmeter, and a conductor (like an iron spoke). The procedure involves connecting the conductor to the battery and measuring the current and potential difference for different numbers of cells (from 1 to 5). For each case, the ratio V/I is calculated. If the ratio remains constant, it confirms Ohm’s law. A graph of V vs. I should be a straight line passing through the origin. This experiment also shows that materials like LEDs do not obey Ohm’s law, as their V/I ratio is not constant, resulting in a curved graph.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 208,
+        "textbook_page": 198
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "State V ∝ I at constant temperature, so V/I = R",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Connect ammeter in series and voltmeter across the conductor",
+        "token_recall": 0.8333,
+        "matched": true
+      },
+      {
+        "point": "Vary the number of cells/potential difference",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Record paired V and I values in a table",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Show V/I is constant or a straight-line V–I graph",
+        "token_recall": 1.0,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.6,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 148
+  },
+  "completed_at": "2026-07-16T23:39:05+00:00"
+}

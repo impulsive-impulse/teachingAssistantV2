@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f",
+  "question_id": "GEN-PSC-009",
+  "question": "How is myopia corrected? Explain with a ray diagram.",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": true,
+    "visual": true,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "46d1ade00f241f28b11d963451577d9b18356727ba54a56e2abaf3744a7cf32b",
+  "context_sha256": "2de9d59494b15e18df4dca00b87268a26fb9ca4c87355db00e16e149c5048f12",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 102,
+      "textbook_page": 92,
+      "text": "Government’s Gift for Students’ Progress 92 Human Eye and Colourful World\nIn such conditions the person cannot see an object clearly and\ncomfortably. The vision becomes blurred due to accommodation defects\nof the eye lens. There are mainly three common defects of vision.\nThey are:\ni. Myopia\nii. Hypermetropia\niii. Presbyopia.\n5.3.1 Myopia\nSome people cannot see objects at long distances but can see nearby\nobjects clearly. This type of defect in vision is called ‘Myopia’. It is also\ncalled ‘near sightedness’. For these people the maximum focal length is\nless than 2.5 cm. In such cases the rays coming from distant objects, after\nrefraction through the eye lens, form an image before the retina as shown\nin figures-5(a) and (b).\nA healthy person can see objects at all distances more than 25 cm\nclearly but a person with myopia\ncan see objects clearly up to a\ncertain distance. Let the\nextreme point from where an\nobject appears clearly to a\nperson with myopia be ‘M’\n(shown in fig.-5(c)).\nIf the object is at M or in\nbetween M and point of least\ndistance of distinct vision\n(L),the eye lens can form an\nimage on the retina (see fig.-\n5(c) and 5(d)). This point M is\ncalled ‘far point’.\nThe point of maximum\ndistance at which the eye lens\ncan form an image on the retina\nis called ‘far point’.\nThe defect, in which people cannot see objects beyond far point is\ncalled ‘Myopia’.\nfig-5(a)\nfig-5(b)\nfig-5(c)\nfig-5(d)\nM\nM\nM\nM\nL\nL\nL\nLO",
+      "text_sha256": "ce847be3a477a5ffc531c39aab5f306b722788b7b6ee2f67cd53c9f2532093b3"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 103,
+      "textbook_page": 93,
+      "text": "Government’s Gift for Students’ Progress 93 Human Eye and Colourful World\n· What can we do to correct myopia?\nThe eye lens can form\nclear image on the retina,\nwhen an object is placed\nbetween far point and\npoint of least distance of\ndistinct vision. If we are able to bring the image of the object kept beyond\nfar point , between the far point and the point of least distance of distinct\nvision using a lens, this image acts as an object for the eye lens.\nThis can be made possible only when a concave lens is used (recollect\nimage formation by refraction through a concave lens).\n· How can you decide the focal length of the lens to be used to correct\nmyopia?\nTo correct one’s Myopia, we need to select a lens which forms an\nimage at the far point for an object at infinity. We need to select bi-concave\nlens to achieve this.\nThis image acts like an object for the eye lens. Hence the final image\nis formed on the retina.\nLet us find the focal length of this bi-concave lens.\nHere object distance (u) is infinity and image distance (v) is equal to\ndistance of far point.\nu = - ¥ ; v = distance of far point = -D\nlet ‘f’ be the focal length of bi-concave lens.\nUsing lens formula,\n1\nf = 11\nvu-\n1\nf = 1\nD Þ- f = –D\nHere ‘f’ is negative showing that it is a concave lens.\n· What happens when the eye has a minimum focal length greater than\n2.27 cm?\nLet us find out.\n5.3.2 Hypermetropia\nHypermetropia is also known as “far sightedness”. A person with\nhypermetropia can see distant objects clearly but cannot see objects at\nnear distances, because the minimum focal length of eye lens for the person\nof hypermetropia is greater than 2.27 cm.\nfig-5(e)\nM\nL",
+      "text_sha256": "358ad453a4e8fede8b5833720c4acf53815fefdbaa0ca65ccea4f34443bf8da9"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Myopia, or near-sightedness, is a condition where a person can see nearby objects clearly but cannot see distant objects clearly. This happens because the image of distant objects is formed in front of the retina instead of on it. To correct myopia, a concave lens is used. This lens diverges the incoming light rays, allowing the image of distant objects to form on the retina. The concave lens is chosen such that it forms an image of an object at infinity at the far point of the person with myopia. This image then acts as an object for the eye lens, which can focus it on the retina. The focal length of the lens is determined using the lens formula, where the object distance is at infinity and the image distance is equal to the far point of the person.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 102,\n      \"textbook_page\": 92\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 103,\n      \"textbook_page\": 93\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 19.395633600011934,
+    "latency_seconds": 55.099965400004294,
+    "usage": {
+      "completion_tokens": 274,
+      "prompt_tokens": 1035,
+      "total_tokens": 1309,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-tRwTPnStjV74SHeXq0hnmYWoGnYQgrZc",
+    "peak_rss_bytes": 16407973888
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Myopia, or near-sightedness, is a condition where a person can see nearby objects clearly but cannot see distant objects clearly. This happens because the image of distant objects is formed in front of the retina instead of on it. To correct myopia, a concave lens is used. This lens diverges the incoming light rays, allowing the image of distant objects to form on the retina. The concave lens is chosen such that it forms an image of an object at infinity at the far point of the person with myopia. This image then acts as an object for the eye lens, which can focus it on the retina. The focal length of the lens is determined using the lens formula, where the object distance is at infinity and the image distance is equal to the far point of the person.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 102,
+        "textbook_page": 92
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 103,
+        "textbook_page": 93
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Myopia means distant objects are not focused clearly on the retina",
+        "token_recall": 0.625,
+        "matched": true
+      },
+      {
+        "point": "The eye’s far point is finite and the uncorrected image forms before the retina",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Use a concave/diverging lens",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "The lens makes parallel rays appear to come from the far point so the eye focuses them on the retina",
+        "token_recall": 0.4615,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.75,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 140
+  },
+  "completed_at": "2026-07-17T19:04:21+00:00"
+}

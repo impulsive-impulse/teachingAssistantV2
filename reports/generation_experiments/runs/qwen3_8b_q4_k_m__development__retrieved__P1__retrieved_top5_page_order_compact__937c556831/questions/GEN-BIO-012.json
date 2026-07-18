@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top5_page_order_compact__937c556831",
+  "question_id": "GEN-BIO-012",
+  "question": "Write the differences between mitosis and meiosis?",
+  "book_id": "biology",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "8a54272855f2e343ecf4fc9b92833a0710c290531801ab8a7f22756ac54ffe4d",
+  "context_sha256": "f7970fc13302cbcd95dab5a006aa05cdc7d1fc5cffe5ba3f3052ae1d4a8dd48f",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 150,
+      "textbook_page": 141,
+      "pdf_pages": [
+        150,
+        151,
+        152
+      ],
+      "textbook_pages": [
+        141,
+        142,
+        143
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The chemical nature of the genetic material was\ndetermined after a series of experiments over the next 50 years, culminating\nin the determination of its structure the deoxy ribonucleic acid (DNA) in\n1953 by James Watson(DNA) and Francis Crick.\nScientists proved that mitosis takes place in all body cells which retains\nsame number of chromosomes.\nMeiotic division takes place in sex cells\nwhere the chromosome number is halved.\nObserve the Fig-27.\n6.13 Cell division in Human beings\nWe know that cell is the structural and functional unit of life in all\norganisms.\nCell division is a life process.\nThe process of cell division is\nsame in unicellular organisms and highly evolved multicellular organisms\nlike human being.\nIn all organisms the cell divide and form new cells.\nCell\ndivision is the process that transforms a human fertilized egg into a baby\nin 9 months and into an adult in the next 20 years.\nCell division and function\nin a multicellular organism is highly regulated.\nIt occurs only when there\nis a need for it.\nFig-27: Cell division showing mitosis and meiosis\nbone\nmuscle\nskin\nnerve\ngland\nblood\nother cells\nsperm\negg Zygote\n(fertilised egg)\nsperm\negg\nimmature\nreproductive cell\nTwo kinds of cell divisions in the life\nof an individual.\nThe chromosome\nnumbers 2n and n are respectively the\nnumber of chromosomes following\nmitosis (2n) and half the number (n)\nfollowing meiosis - the type of\ndivision predicted by Weismann.\nmeiosis\nmitosis\n142 Reproduction\nCells in some organs, such as heart and brain of an individual may\ndivide slowly.\nOn the other hand bone marrow cells may actively divide to\nproduce red blood cells, which have a short life span nearly 120 days in\nthe body.\nFor example, if you cut your finger and bleed, soon a blood clot\nforms to stop the bleeding.\nThis brings in various chemicals to the site\nthat stimulate skin cells to divide and heal the wound.\nCell division ceases\nas the wound is completely healed.\nIn contrast, cancer cells do not respond\nto such growth regulating factors and continuously divide at the expense\nof normal cells, thus ultimately killing the host.\nSo it becomes important\nto understand the processes involved in cell division.\nThe cell cycle will\nhelp us understand this better.\n6.14 Cell cycle\nThe process of cell division is a\nvery small part of the cell cycle.\nIt\ncompletes in 40-60 minutes.\nThe\nperiod between two cell divisions is\ncalled ‘Interphase’.\nThis is actually the\nperiod when the genetic material\n(DNA) makes its copy so that it is\nequally distributed to the daughter cells\nduring mitosis.\nInterphase can be\ndivided into three phases.\n1) G1 phase: This is the linking\nperiod between the completion of\nmitosis and the beginning of DNA replication (Gap 1 phase).\nThe\ncell size increases during this period.\n2) S phase: This is the period of DNA synthesis (Synthesis phase)\nleading duplication of chromosomes.\n3) G2 phase: This is the time between the end of DNA replication and\nthe beginning of mitosis.(Gap 2 phase).\nCell organelles divide and\nprepare chromosome for mitosis.\nG1 (10.5 hrs)\nS (10.5 hrs)\nG1\nS\nG2\nM\nG2 (3.5 hrs)\nM (1 hr)\nFig-28: Cell cycle\nReflection of light at curved surfacesReproduction143\nM phase: This is cell division phase.\nIt includes prophase, metaphase,\nanaphase, telophase and cytokinesis.\nTo understand the functional relationship between these phases, Potu\nNarasimha Rao and Johnson (see annexure) conducted some experiments\nusing the cell fusion technique.\nThat is combining two cells in experimental\nconditions.\nWith this cell fusion technique they revealed for the first time\nthe structure of interphase (G1, S and G2) chromosomes that are not",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00088"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 151,
+      "textbook_page": 142,
+      "pdf_pages": [
+        151,
+        152,
+        153,
+        154
+      ],
+      "textbook_pages": [
+        142,
+        143,
+        144,
+        145
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Cell organelles divide and\nprepare chromosome for mitosis.\nG1 (10.5 hrs)\nS (10.5 hrs)\nG1\nS\nG2\nM\nG2 (3.5 hrs)\nM (1 hr)\nFig-28: Cell cycle\nReflection of light at curved surfacesReproduction143\nM phase: This is cell division phase.\nIt includes prophase, metaphase,\nanaphase, telophase and cytokinesis.\nTo understand the functional relationship between these phases, Potu\nNarasimha Rao and Johnson (see annexure) conducted some experiments\nusing the cell fusion technique.\nThat is combining two cells in experimental\nconditions.\nWith this cell fusion technique they revealed for the first time\nthe structure of interphase (G1, S and G2) chromosomes that are not\nordinarily visible under the microscope.\nThey provided evidence on\nprogression of cells through the cell cycle in sequential unidirectional\nand controlled way by a series of chemical signals that can diffuse freely\nbetween nucleus and cytoplasm.\nThese experiments are considered to be\na ‘mile stone’ in the cell cycle studies.\nProphase Metaphase Anaphase Telophase\nFig-29: Mitosis - Stages of Karyokinesis\nActivity-4\nObserve different stages of mitotic cell division\nTake permanent slides which shows different stages of mitotic cell\ndivision from your lab kit.\nObserve carefully under microscope.\nDraw\ndiagrams what you observe, and compare your observations with the\nfollowing figures. (Fig-29)\nThe division of nucleus (Karyokinesis) followed by the division of\nCytoplasm (Cytokinesis) finally brings about formation of two daughter\ncells.\nWhile observing cells in tissues undergoing division, it is not easy\nto differentiate different stages of division. see table-1.\n144 Reproduction\nTable-1: Mitosis\n6.14.1 Meiosis\nUnlike mitosis which is a continuous process for division in most of\nthe cells.\nMeiosis occurs only during the formation of gametes in sexual\nreproduction.\nMeiosis has two phases.\nDuring the first phase of meiosis\nthe parent cell containing two sets of chromosomes (diploid) divides and\ndaughter cells containg one set of chromosomes (haploid) are formed.\nThe second phase of meiosis is similar to normal mitosis.\nThus the four\ndaughter cells have just half the number of chromosomes of the parent cell.\nStage Description\n1.\nProphase 1.\nChromosomes condense and get coiled.\nThey become visible even in\nlight microscope and nucleoli become smaller.\n2.\nChromosomes split lengthwise to form chromatids, connected by\ncentromeres.\n3.\nNuclear membrane disappears.\n4.\nCentrosome, containing rod-like centrioles, divide and form ends\nof spindle (probably animal cells only).\n(Note: No pairing of chromosomes as in meiosis).\n2.\nMetaphase 1.\nChromosomes move to cell equator, spindle fibres attached to\ncentromeres.\n3.\nAnaphase 1.\nCentromeres split, separating the chromatids.\n2.\nSpindle fibres attached to centromeres contract, pulling chromatids\ntowards poles\n4.\nTelophase 1.\nChromatids elongate, become invisible, replication at this stage to\nbecome chromosomes.\n2.\nNuclear membranes form round daughter nuclei.\n3.\nNecleolus is resynthesized in each daughter nucleus.\nCytokinesis 1.\nNucleus divides into two and division of cytoplasm starts Two cells\nare formed.\n2.\nCell membrane pinches to form daughter cells (animals) or new cell\nwall material becomes laid down across spindle equator (plants)\nReflection of light at curved surfacesReproduction145\nHence meiosis is also called as Reduction Division.\nThe daughter\ncells are haploid in condition.\nYou will learn more about this in further\nclasses.\nx What differences do you find in mitosis and meiosis?\nWrite in a\ntabular form.\nx What would happen if the gamets do not have half the chromosome\nnumber as to their parental cell?\nx How would it affect the progeny formed by sexual reproduction?\n6.15 Reproductive health\nx Why did the government of India fixed the legal marriage age of\nboys (21 years) and girls (18 years)?\nx Do you feel that it is a social responsibility to control birth after\nhaving one or two children?",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00089"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 154,
+      "textbook_page": 145,
+      "pdf_pages": [
+        154,
+        155,
+        156
+      ],
+      "textbook_pages": [
+        145,
+        146,
+        147
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "cells are haploid in condition.\nYou will learn more about this in further\nclasses.\nx What differences do you find in mitosis and meiosis?\nWrite in a\ntabular form.\nx What would happen if the gamets do not have half the chromosome\nnumber as to their parental cell?\nx How would it affect the progeny formed by sexual reproduction?\n6.15 Reproductive health\nx Why did the government of India fixed the legal marriage age of\nboys (21 years) and girls (18 years)?\nx Do you feel that it is a social responsibility to control birth after\nhaving one or two children?\nx What do you understand by the term ‘Healthy Society’?\nx Will you encourage child marriage?\nWhy?\nAs we have seen, the process of sexual maturation is gradual, and\ntakes place while general body growth is still going on.\nTherefore,\nsome degree of sexual maturation does not necessarily mean that the body\nor the mind is ready for sexual acts.\nFurther, it is not fit for having and\nbringing up children.\nHow do we decide if the body or the mind is ready\nfor this major responsibility?\nAll of us are under many different kinds of\npressures about these issues.\nThere can be pressure from our friends for\nparticipating in many activities, whether we really want or not.\nThere\ncan be pressure from families to get married and start having children.\nFig-30: Meiosis\nMetaphase 1 Anaphase 1 Telophase 1\nProphase 1\nDaughter cells\nMeiosis-II\n146 Reproduction\nThere can be pressure from government and voluntary organisations to\nprotect child rights and prevent child marriages.\nIn these situations, right\nchoices are important.\nIn the lesson 8th class “why do we fall ill”, we learnt that the diseases\ncan be transmitted from person to person in a variety of ways.\nSince the\nsexual act is a very intimate connection of bodies, it is not surprising\nthat many diseases can be sexually transmitted.\nThese include bacterial\ninfections such as Gonorrhea and syphilis, and viral infections such as\nAIDS (Acquired Immuno Deficiency Syndrome).\nThese diseases spread by unsafe sexual contacts, using infected\ndevices, infected blood transfusion, from an infected mother to child.\nUnfortunetely, Telangana state has high incidents of HIV positive\ncases.\nIlliteracy, poor health, unemployment, migration, non-traditional\nsex practise, unethical contacts and trafficking are some of the factors\ncontributing to the spread of HIV in the state, according to experts.\nThe government established Anti Retroviral Therapy (ART\ncentres) to supply medicine to HIV patients.\nMedical and health,\nfamily health departments AIDS control projects implementing\nvarious programmes like ASHA (Accredited Social Health Activist),\nRed Ribbon Express, etc., to create awareness in society on the risks\nand symptoms of AIDS.\nx Invite local health worker to your school and discuss about HIV\nand its impact on society.\nx Social discrimination against AIDS patients is also a social evil.\nCan you support this?\nWhy?\nIf we follow the simple life styles as cited below one could avoid\nmany sexually transmitted diseases.\nx Avoid sex with multiple partners.\nx Even though contraceptives are available it is better follow ethical\nand healthy life practices.\nFig-31:\nRed ribbon\n1st December\nAIDS Day\nReflection of light at curved surfacesReproduction147\nx In case of doubt, that you may be pregnant go to a qualified doctor for\nearly detection and get complete treatment if diagnosed with disease.\n6.16 Birth control methods\nThe sexual act always has potential to lead to pregnancy.\nPregnancy\nwill make major demands on the body and the mind of the woman, and if\nshe is not ready for it, her health will be adversely affected.\nTherefore,\nmany ways have been devised to avoid pregnancy.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00090"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 185,
+      "textbook_page": 176,
+      "pdf_pages": [
+        185,
+        186,
+        187
+      ],
+      "textbook_pages": [
+        176,
+        177,
+        178
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "176 Heredity and Evolution\nWhen we observe our world and its myriad forms of life, we are struck\nby two seemingly opposite observations, the fantastic variety of life and\nthe similarity between them.\nAs we shall see, we would need to understand\nthese two characteristics of life in order to comprehend how life evolves.\nWhen we say that something evolves, we mean not only that it changes,\nbut that there is also some component of direction in that change.\nBut, how does evolution take place?\nDoes it occur in a slow and steady\nmanner or in quick jumps?\nIs it just about change and producing something\nnew and different?\nIn the chapter on reproduction we have studied that reproductive\nprocesses usually give rise to individuals that have some new characters\nin spite of the similarity that they share with their parents.\nOften such new\ncharacters give rise to observable changes in life forms.\nx How are new characters produced?\nx Are they inherited?\nx Do they have any role in the process of evolution?\nIn this chapter we shall discuss all of the above.\n8.1 New characters and variations\nThink of your own family, what similarities do you share with your father\nand your mother?\nDraw a table to represent the similarities of some\ncharacters like colour of eye(cornea), colour of hair, type of hair, shape of\nnose, shape of face, type of ear lobe(attached or free), inner thumb markings\netc.\nWrite your characters and that of your parents in two separate columns.\nChapter\nHeredity - Evolution\u001b\nReflection of light at curved surfaces177 Heredity and Evolution\nx How many similar characteristics do you find among you and your\nparents?\nx Is there any character in you that is neither like your father nor\nlike your mother?\nWhat are they?\nx Where do you think you got such a character from?\nLet us do an activity to find out more about this.\nActivity-1\nCompare your traits with the traits of your parents, brother, sister and\ngrand parents by drawing a table as given below in your notebook.\nx Is there any character in you similar to that of your mother as well\nas your grandma?\nx Is there any character in you similar only to that of your grandma?\nx How do you think these characters may have inherited by you from\ngrandma?\nx Is there any character that is not present in grandma but present in\nyour mother and you?\nx Think where from your mother got that character?\nActivity-2\nObserve some of your friends and note their characters in the following\ntable.\nFill in yours as well.\nTable-2\nName of\nyour friend\nColour\nof skin\nEar lobes\nfree/\nattached\nMarking on\ninner side of\nthumb\nLength of\nfore head\nColour of\neyes\n(iris)\nAny other\nfeatures\nTable-1\nCharacters In me In my Mother In my Father In my brother In my sister In my grandparents\n1.\nCurly hair D \u0003\u0003\u0003U \u0003D U \u0003\u0003\u0003U U\n2.\nColour of\neye (iris)\nx Compare your characters to that of any one of your friend.\nHow many\ncharacters did you find were similar among you and your friend?\n178 Heredity and Evolution\nx Do you share more similar characters with your parents or with\nyour friends?\nx Do you think that your differences from parents are more or less\nthan the differences from friends?\nWhy /why not?\nDifferences in characters within very closely related groups of\norganisms are referred to as variations.\nOften a new character in a group\nmay lead to variations which also get inherited.\nFig-1: V ariations in iris colour and ear lobes",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00112"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 186,
+      "textbook_page": 177,
+      "pdf_pages": [
+        186,
+        187,
+        188
+      ],
+      "textbook_pages": [
+        177,
+        178,
+        179
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x Compare your characters to that of any one of your friend.\nHow many\ncharacters did you find were similar among you and your friend?\n178 Heredity and Evolution\nx Do you share more similar characters with your parents or with\nyour friends?\nx Do you think that your differences from parents are more or less\nthan the differences from friends?\nWhy /why not?\nDifferences in characters within very closely related groups of\norganisms are referred to as variations.\nOften a new character in a group\nmay lead to variations which also get inherited.\nFig-1: V ariations in iris colour and ear lobes\nx Is variation all about apparent differences?\nIs it about some subtle differences as well that we most often overlook?\n(Remember looking for two similar neem / grass plants (Garika) in the\nchapter on diversity and classification in class IX)\nActivity-3\nObserve seeds in a pea or bean pod.\nYou may observe several parts to\narrive at a generalisation.\nx Can you find two similar seeds there?\nx What makes them vary? (Hint: You have learnt that seeds are formed\nfrom ovules)\nx Why variations are important?\nHow are variations useful for an\norganism or a population?\n8.2 Mendel and his experiments\nOver centuries variations and their role in nature have been studied by\nnaturalists.\nDuring early 19th century, a lot of work was done by several\nscientists.\nSome of these studies will help us to understand how variations\noccur and are transferred from one generation to the next.\nWe shall study\na detailed account of experimental evidences provided by Gregor Johann\nMendel in the early 19th century who is known as ‘Father of genetics’.\nReflection of light at curved surfaces179 Heredity and Evolution\nIn 1857 Gregor Johann Mendel started working on the problem of\nhow variations were passed from one generation to the other.\nMendel\ndid not do his experimental work either in a University or in a\nLaboratory.\nAs he was an Austrian monk in a monastery he simply did\nFig-2: Gregor\nJohann Mendel\nhis experiments in the monastery garden.\nHe worked for over seven\nyears after which he presented the conclusions from his experimental\ndata in the form of a detailed research paper.\n8.2.1 Reasons for selecting Pea plant\nMendel made many careful observations of plants and found that\npea plants would be most suitable to carry on further experimentation\nbecause it has the following advantages:\n1.\nWell defined characters 2.\nBisexual flowers\n3.\nPredominently self pollinating\n4.\nSuitable for cross pollination\n5.\nIt is an annual plant\nThen he planned and designed experiments to find out the answers to\nquestions that came to his mind.\nHe had worked on nearly 10,000 pea\nplants of 34 different varieties.\nObserving pea plants carefully, Mendel noted that they differ from\none another in many ways.\nTable - 3 : Seven contrasting characters of pea plants studied by Mendel\nS.\nNo.\nCharacter Description\n1.\nColour of the flower Purple or white colour flowers\n2.\nPosition of the flower Either in axial or terminal in position. (If they\nare axial they are arranged in axial position\nthroughout the length of the stem).\n3.\nColour of the seed The seeds are either yellow or green colour.\n4.\nShape of the seed The seeds are either round (smooth surface) or\nwrinkled.\n5.\nShape of the pod The completely developed pod is either smooth,\ninflated or constricted.\n6.\nColour of the pod All the ripe pods are yellow in colour.\nUnripe\nparts are either yellow or green in colour.\n7.\nLength of the stem When the plants are grown in the same\nenvironment some stems are tall (6 to 7 feet) and",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00113"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Mitosis and meiosis are two types of cell division, but they have several key differences. Mitosis occurs in all body cells and results in two daughter cells that are genetically identical to the parent cell. It retains the same number of chromosomes (2n). Meiosis, on the other hand, occurs only in sex cells (gametes) and results in four daughter cells that have half the number of chromosomes (n). This is called reduction division. Mitosis is a single process, while meiosis consists of two phases. Additionally, meiosis involves the pairing and exchange of genetic material between homologous chromosomes, which does not occur in mitosis. These differences are important for understanding how organisms grow, repair, and reproduce.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 150,\n      \"textbook_page\": 141\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 151,\n      \"textbook_page\": 142\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 152.46516199999314,
+    "latency_seconds": 222.8564148000005,
+    "usage": {
+      "completion_tokens": 261,
+      "prompt_tokens": 4465,
+      "total_tokens": 4726,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-ssEIZO5SFC8ZN2iNg9dWstJ1E419ZiT0",
+    "peak_rss_bytes": 14268563456
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Mitosis and meiosis are two types of cell division, but they have several key differences. Mitosis occurs in all body cells and results in two daughter cells that are genetically identical to the parent cell. It retains the same number of chromosomes (2n). Meiosis, on the other hand, occurs only in sex cells (gametes) and results in four daughter cells that have half the number of chromosomes (n). This is called reduction division. Mitosis is a single process, while meiosis consists of two phases. Additionally, meiosis involves the pairing and exchange of genetic material between homologous chromosomes, which does not occur in mitosis. These differences are important for understanding how organisms grow, repair, and reproduce.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 150,
+        "textbook_page": 141
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 151,
+        "textbook_page": 142
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Mitosis has one division; meiosis has two",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Mitosis forms two daughter cells; meiosis forms four",
+        "token_recall": 0.8571,
+        "matched": true
+      },
+      {
+        "point": "Mitosis preserves chromosome number; meiosis halves it",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Mitosis supports growth/repair; meiosis forms gametes",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "Meiosis creates variation through recombination/segregation",
+        "token_recall": 0.1667,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.6,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 115
+  },
+  "completed_at": "2026-07-17T04:11:22+00:00"
+}

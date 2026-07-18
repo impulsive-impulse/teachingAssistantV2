@@ -1,0 +1,148 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top3_separate_compact__4afd830383",
+  "question_id": "GEN-PSC-018",
+  "question": "Explain the working of an electric motor with a neat diagram.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": true,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "1f38745f6a75bec0b36ca066d33e9047164a7314bc8aafa1ab86dc02f60bad50",
+  "context_sha256": "d1750fc3e6d847402ceb095ba4a25c45929f846d3ceef042156cc7205a0dd43b",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 260,
+      "textbook_page": 250,
+      "pdf_pages": [
+        260,
+        261,
+        262,
+        263
+      ],
+      "textbook_pages": [
+        250,
+        251,
+        252,
+        253
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "We are greatful to those scientists for inventing a method of generating\nelectrical energy from a generator in this way.\n11\n4\n1\n2\n3\n4\n11\n4\nemf generated coil\nZero emf Maximum\nemf\nZero\nemf\nMaximum\nemf\nZero\nemf\nNo. of\nrevolutions\n0\nfig-17(d)\nPosition of coil in one rotation.\nB\nA\nAB\nB\nA\nA\nB\nA\nAB\nB\nB\n246 Electromagnetism\n· A measure of strength of magnetic flux by taking account of number of field lines is\ncalled magnetic flux.\n· Magnetic flux density (B) is defined as the ratio of flux passing through a plane perpendicular to\nfield and the area of the plane.\n· Current carrying wire produces magnetic field.\n· F = qvB sinθ and F = ILB sinθ\n· In electric motor, electrical energy is converted into mechanical energy.\n· The production of electric current due to relative motion between a coil and a magnetic field is\ncalled electromagnetic induction.\n· Faraday’s law: The induced EMF generated in a closed loop is equal to the rate of change of\nmagnetic flux passing through it.\n· Lenz’s law: the induced current set up in the coil is in such a direction that it opposes the changes\nin the flux.\n· When a conductor of length ‘l’ moves perpendicular to field B with a speed v then potential\ndifference (voltage) developed between the ends of conductor is Blv.\nThis EMF is called motional\nEMF.\n· In generators, mechanical energy is converted into electrical energy.\nI.\nReflections on Concepts\n1.\nAre the magnetic field lines closed?\nExplain. (AS1)\n2.\nSee fig-Q1, magnetic lines are shown.\nWhat is the\ndirection of the current flowing through the wire?(AS1)\nKey words\nMagnetic flux, Magnetic flux density, Electric motor, Slip rings, Induced current, Induced\nEMF , Electric generator, DC and AC currents, rms values\nWhat we have learnt\nImprove your learning\nfig- Q1\n247 Electromagnetism\n3.\nA bar magnet with North Pole facing towards a coil moves as shown in\nfig-Q2.\nWhat happens to the magnetic flux passing through the coil? (AS1)\n4.\nA coil is kept perpendicular to the page.\nAt P, current flows into the page and\nat Q it comes out of the page as shown in fig-Q3.\nWhat is the direction of\nmagnetic field due to the coil? (AS1)\nII.\nApplication of Concepts\n1.\nThe direction of current flowing in a coil is shown in fig-Q4.\nWhat type of magnetic\npole is formed at the face that has flow of current as shown in fig-Q? (AS1)\n2.\nWhy does the picture appear distorted when a bar magnet is brought close to\nthe screen of a television?\nExplain (AS1)\n3.\nSymbol ‘X’ in fig.Q5 indicates the direction of a magnetic field into the page.\nA straight long wire carrying current along its length is kept perpendicular to\nthe magnetic field.\nWhat is the magnitude of force experienced by the wire?\nIn\nwhat direction does it act? (AS1)\n4.\nAn 8N force acts on a rectangular conductor 20cm long placed perpendicular\nto a magnetic field.\nDetermine the magnetic field induction if the current in the conductor is 40A.\n(Ans: 1tesla) (AS1)\n5.\nAs shown in the fig-Q6, both coil and bar magnet moves in the same direction.\nWhat happens?\n(AS2)\n6.\nGive a few applications of Faraday’s law of induction in daily life. (AS7)\nfig- Q6\nN\nV\nC\nN\nfig- Q2\nxP\nQ\nfig- Q3\nfig- Q5\nB\ni\nL\nfig- Q4\n248 Electromagnetism\n1.\nWhich of the following converts electrical energy into mechanical energy [ ]\na) motor b) battery\nc) generator d) switch\n2.\nWhich of the follwing converts mechanical energy into electrical energy [ ]",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00154"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 227,
+      "textbook_page": 217,
+      "pdf_pages": [
+        227,
+        228
+      ],
+      "textbook_pages": [
+        217,
+        218
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Think and discuss\n· What do you mean by short circuit?\n· Why does a short circuit damage electric wiring and devices\nconnected to it?\nKey words\nCharge, Potential difference, Electric current, Multi-meter, Ohm’s law, Resistance,\nResistivity, Kirchhoff’s laws, Electric power, Electric energy.\nWhat we have learnt\n213 Electric Current\n· Ohm’s law is valid for metal conductors at constant temperature.\nIt is not applicable\nfor gaseous conductors and semiconductors.\n· Resistance is the opposition that a substance offers to the motion of electrons.\n· Resistance of a wire depends on the material of the wire, its length and its area of\ncross section Ra l/A.\n· The resistivity of a material is the resistance per unit length of a unit cross section of\nthe material.\n· Two or more resistors are said to be connected in series if the same current flows\nthrough them.\n· The junction law: At any junction point in a circuit where the current can divide,\nthe sum of the currents into the junction must equal the sum of the currents leaving\nthe junction.\n· The loop law: The algebraic sum of the increases and decreases in potential\ndifference across various components of a closed circuit loop must be zero.\n· Electric power is the product of potential difference and the current.\nSI unit of\npower is watt (W).\n· Electrical energy is the product of power and time.\nUnits of electrical energy W-s\nand KWH.\nI.\nReflections on concepts\n1.\nExplain how electron flow causes electric current with\nLorentz – Drude theory of electrons.(AS1)\n2.\nWrite the difference between potential difference and emf. (AS1)\n3.\nHow can you verify that the resistance of a conductor is temperature dependent?\n(AS1)\n4.\nExplain how electric shock takes place. (AS1)\n5.\nDraw a circuit diagram for a circuit in which two resistors A and B are connected\nin series with a battery and a voltmeter is connected to measure the potential\ndifference across the resistor A.(AS5)\n6.\nIn the figure Q-6 the potential at A is —————\nwhen the potential at B is zero. (AS7)\n5W\ng1A\n2VA B\nV= 0\nfig.\nQ - 6\nImprove your learning",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00132"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 200,
+      "textbook_page": 190,
+      "pdf_pages": [
+        200,
+        201
+      ],
+      "textbook_pages": [
+        190,
+        191
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "In previous classes, you had learnt about electric current, battery, electric\ncircuit and its components.\n· What do you mean by electric current?\n· Which type of charge (positive or negative) flows through an electric\nwire when it is connected in an electric circuit?\n· Is there any evidence for the motion of charge in daily life situations?\nIn class VIII you learned about lightning.\nLightning is an electric discharge\nbetween two clouds or between cloud and Earth.\nThis electric discharge\nthrough air appears to us as an electric spark or lightning.\nLightning is a live example which provides evidence for the motion of\ncharge in the atmosphere.\n· Does motion of charge always lead to electric current?\nLet us see.\nActivity 1\nSituation 1: Take a bulb, a battery, a switch and few insulated copper wires.\nConnect the ends of the copper wires to the terminals of the battery through\nthe bulb and switch.\nNow switch on the circuit and observe the bulb.\n· What do you notice?\nSituation 2: Remove the battery from the circuit and connect the remaining\ncomponents to make a complete circuit.\nAgain switch on the circuit and\nobserve the bulb.\nDoes the bulb glow?\n186 Electric Current\nSituation 3: Replace the copper wires with nylon wires and connect the\nnylon wires to the terminals of the battery through a bulb and switch.\nNow\nswitch on the circuit and observe the bulb.\nDoes the bulb glow?\nAfter doing these activities you will notice that the bulb glows only in\nsituation 1.\n· Can you predict the reason for the bulb not glowing in situations 2 and\n3?\nIn class VII, you have learnt that the battery stores chemical energy and\nthis energy converts into electric energy and makes the bulb to glow as\nyou observed in situation 1 i.e. the battery supplies the required energy to\nmake the bulb glow.\nBut in situation 3, though there is a battery in the\ncircuit, the bulb does not glow because the connecting wires (nylon wires)\nare not able to carry the energy from source (battery) to bulb.\nHence, the nature of the substance plays an important role in the transfer\nof energy from battery to bulb.\nThe material which transfers energy from\nbattery (source) to the bulb is called a conductor and the material which\ncannot transfer energy from battery (source) to the bulb is called a non\nconductor.\n• Why do all materials not act as conductors?\n• How does a conductor transfer energy from source to bulb?\nDrude and Lorentz, at the beginning of the 20 th century, proposed that\nconductors like metals contain a large number of free electrons while the\npositive ions are fixed in their locations.\nLet us understand the behaviour of these free electrons.\nAssume that a\nconductor is an open circuit.\nThe free electrons move randomly in the\nconductor as shown in fig.- 1.\nWhen the electrons are in random motion,\nthey can move in any direction.\nHence, if you imagine any cross section\nas shown in fig.- 1, the number of electrons, crossing the cross section of\na conductor from left to right in one second is equal to that of electrons\npassing the cross section from right to left in one second.\nIt means that\nnet charge moving along a conductor through any cross section is zero\nwhen the conductor is in open circuit.\n· What happens to the motion of electrons\nwhen the ends of the conductor are connected to\nthe battery?\nWhen the ends of the conductor are connected to\nthe battery through a bulb, the bulb glows because\nenergy transfer takes place from battery to the bulb.",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00114"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"insufficient_evidence\",\n  \"answer\": \"The textbook evidence provided does not include a detailed explanation of the working of an electric motor with a diagram. While it mentions that an electric motor converts electrical energy into mechanical energy, it does not describe the components or the process in detail. Additionally, there is no mention of a diagram or a visual representation of the motor's operation.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 260,\n      \"textbook_page\": 250\n    }\n  ],\n  \"missing_information\": [\n    \"Detailed explanation of the working of an electric motor\",\n    \"Diagram of an electric motor\"\n  ]\n}",
+    "time_to_first_token_seconds": 56.089354199997615,
+    "latency_seconds": 84.02062870000373,
+    "usage": {
+      "completion_tokens": 166,
+      "prompt_tokens": 2338,
+      "total_tokens": 2504,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-JZHiwRTxiPpfQGGWVQ7oMNY4F7AcO5Qd",
+    "peak_rss_bytes": 17497493504
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "insufficient_evidence",
+    "answer": "The textbook evidence provided does not include a detailed explanation of the working of an electric motor with a diagram. While it mentions that an electric motor converts electrical energy into mechanical energy, it does not describe the components or the process in detail. Additionally, there is no mention of a diagram or a visual representation of the motor's operation.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 260,
+        "textbook_page": 250
+      }
+    ],
+    "missing_information": [
+      "Detailed explanation of the working of an electric motor",
+      "Diagram of an electric motor"
+    ],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Place a current-carrying rectangular coil in a magnetic field",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Opposite magnetic forces on the coil sides produce torque",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Use the appropriate hand rule to give force directions",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "A split-ring commutator reverses current each half turn",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Electrical energy is converted to mechanical rotation",
+        "token_recall": 0.8,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.2,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": true,
+    "answer_word_count": 60
+  },
+  "completed_at": "2026-07-16T21:48:47+00:00"
+}

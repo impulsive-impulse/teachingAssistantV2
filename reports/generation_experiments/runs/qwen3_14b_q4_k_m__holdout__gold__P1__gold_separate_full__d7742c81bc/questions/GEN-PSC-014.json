@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__gold__P1__gold_separate_full__d7742c81bc",
+  "question_id": "GEN-PSC-014",
+  "question": "Predict the reasons for low melting points for covalent compounds when compared with ionic compounds.",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "e4b76554a34897e1133b42310c45f51f2baab76a2f86dfdfe6bdb8f75ce23ca7",
+  "context_sha256": "382d046451a7486920caf476b59160996772993ce1642251e588b870b599b99b",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 195,
+      "textbook_page": 180,
+      "text": "Government’s Gift for Students’ Progress 180 Chemical Bonding\nBut HOH observed is 104 031/ . To explain this, sp 3\nhybridisation is suggested for the valence orbitals of ‘O’ atom.\nOne s-orbital (2s) and three ‘p’ orbitals (2px, 2py, 2pz) intermix\nand redistribute into four identical sp3 orbitals. As there are six\nelectrons and two sp3 orbitals get pairs and two sp3 orbitals get\none electron each. Now, the two sp3 orbitals of ‘O’ atom overlap\nthe ‘s’ orbitals of two hydrogen atoms to give ssp3-s bonds. Due\nto the lone pair – lone pair repulsions and lone pair – bond pair repulsions\nHOH decreases from 109028/ (expected for sp3 – tetrahedral hybridisation)\nto 104031/.\nCH4, C2H4 and C2H2 molecules and their structures will be explained\nin carbon and its compounds chapter later in this class.\nTo explain the covalent bond, lines poling in 1954 proposed a quantum\nmechanial theory called \"Valance Bond Theory\". You wll learn about this in\nhigher classes.\n8.9 Properties of ionic and covalent compounds\nTable -4\nWater\nS.No Property NaCl (ionic) HCl (polar covalent) C 2H6 (covalent)\n1. Formula mass 58.5 36.5 30.0\n2. Physical appearance White crystalline solid Colourless gas Colourless gas\n3. Type of bond Ionic Polar covalent Covalent\n4. Melting point 801 0C -115 0C -183 0C\n5. Boiling point 1413 0C -84.9 0C -88.63 0C\n6. Solubility Soluble in polar Soluble in polar solvents Soluble in non-polar\nsolvents like water like water and to some solvents but insoluble\nand insoluble in non extent in non-polar in polar solvents like\n-polar solvents solvents water\n7. Chemical activity Highly reactive in polar Moderately Slow or very slow at\nsolvents and reactions reactive room temperature\nare instantaneous",
+      "text_sha256": "804de0806c22f50b0de0d18e14722e4e6daf12355e44f1ee646e3b47fc3d6389"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 196,
+      "textbook_page": 181,
+      "text": "Government’s Gift for Students’ Progress 181 Chemical Bonding\nFrom the above table we understand that ionic compounds like NaCl are\nsolids at room temperature.\nPolar compounds like HCl possess properties like melting point, boiling\npoint, reactivity, solubility etc, between those of ionic compounds and\ncovalent compounds. If the covalent bond is between atoms of two different\nelements, the shared electron pair shift more towards the atom of more\nelectronegative element. Thus within the molecule the more electronegative\natom bears a partial negative charge and the less electronegative atom bears\na partial positive charge. A molecule of this type which is neutral but possesses\npartial charges on the atoms within the molecule is called a polar molecule\nand the bond is called a polar covalent bond or partial ionic and partial covalent\nbond.\nEg: H+Cl g +δ -δ\nH - Cl\nIn ionic compounds there exist stronger electrostatic forces of attractions\nbetween the oppositely charged ions of these compounds. Therefore, they\nare solids with high melting points and boiling points. Based on the principle\n“like dissolves in like”, they being highly polar, soluble in polar solvents. In\nchemical reaction of solution of ionic compounds simply rearrangement of\nions take place in the solutions, the reactions are instantaneous or very fast.\nThe forces of attractions among covalent molecules are weak. Therefore,\nthe covalent compounds are gases or liquid at room temperature. They have\nlow melting points and low boiling points. Based on the principle that “like\ndissolve in like” these covalent compounds are soluble in non-polar solvents\nbecause of non-polar nature of solvent molecules. In chemical reactions of\ncovalent compounds there exist bond breaking and bond forming to get\nproducts. There fore, these reactions are moderate or very slow.\n‘Like dissolves in like’ means what type of chemical bonds are there in\nthe solute particles that solute could be soluble in that solvent which has the\nsimilar type of chemical bonds in its molecules.\nKey words\nElectrons, noble gases, Lewis dot structures, Octet rule, chemical bond, Ionic\nbond, covalent bond, cation, anion, electrostatic force, electrovalent, polar solvent,\nnon-polar solvent, formation of molecules, ionic compounds, covalent compounds,\nelectro positive character, electro negative character, polar bonds, bonded pair of\nelectrons, lone pairs, bond length, bond energy, shape of the molecule, linear,\ntetrahedral, properties of ionic and covalent compounds.",
+      "text_sha256": "1d6fa212fb12ac21ec4cf63037bf07a87f76328447e66672a64f2497735facf0"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Covalent compounds have low melting points compared to ionic compounds because the forces of attraction between covalent molecules are weak. In ionic compounds, there are strong electrostatic forces of attraction between oppositely charged ions, which require a lot of energy to break. This is why ionic compounds have high melting points. On the other hand, covalent compounds are usually gases or liquids at room temperature, and their molecules are held together by weak intermolecular forces. As a result, they have low melting points and low boiling points.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\"evidence_id\": \"E1\", \"pdf_page\": 195, \"textbook_page\": 180},\n    {\"evidence_id\": \"E2\", \"pdf_page\": 196, \"textbook_page\": 181}\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 75.40873260001536,
+    "latency_seconds": 135.1156644000148,
+    "usage": {
+      "completion_tokens": 213,
+      "prompt_tokens": 1302,
+      "total_tokens": 1515,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-yuDsCDHVpqOu1GnJSh4B4GYsCZwcP9vN",
+    "peak_rss_bytes": 22514941952
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Covalent compounds have low melting points compared to ionic compounds because the forces of attraction between covalent molecules are weak. In ionic compounds, there are strong electrostatic forces of attraction between oppositely charged ions, which require a lot of energy to break. This is why ionic compounds have high melting points. On the other hand, covalent compounds are usually gases or liquids at room temperature, and their molecules are held together by weak intermolecular forces. As a result, they have low melting points and low boiling points.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 195,
+        "textbook_page": 180
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 196,
+        "textbook_page": 181
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Most covalent substances consist of neutral molecules",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Intermolecular attractions are weaker than ionic lattice forces",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "Less heat is required to separate the molecules",
+        "token_recall": 0.2,
+        "matched": false
+      },
+      {
+        "point": "Therefore many covalent compounds have lower melting/boiling points than ionic compounds",
+        "token_recall": 0.6,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 87
+  },
+  "completed_at": "2026-07-17T16:04:17+00:00"
+}

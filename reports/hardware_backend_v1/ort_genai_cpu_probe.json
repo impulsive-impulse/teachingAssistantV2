@@ -1,0 +1,19 @@
+{
+  "provider": "cpu",
+  "runtime": "onnxruntime-genai-directml",
+  "runtime_version": "0.13.1",
+  "architecture": "AMD64",
+  "model_path": "X:\\models\\TeachingAssistantV2\\Gemma3-4B-ONNX-DML\\gemma-3-4b-it\\gpu\\gpu-fp16-io-int4-rtn-block-32",
+  "model_tree_sha256": "a220aa805f64a7bce34e8c6aeb1b037a0027943bdb3d9d3604bef5ef1c11e648",
+  "prompt": "Why does a pencil look bent when partly submerged in water?",
+  "load_seconds": 8.77531729999464,
+  "time_to_first_token_seconds": 7.48000165913254e-05,
+  "latency_seconds": 762.7831524000212,
+  "prompt_tokens": 21,
+  "generated_tokens": 235,
+  "tokens_per_second": 0.3080823157414999,
+  "peak_rss_bytes": 3801780224,
+  "output": "That's a really fascinating optical illusion! Here's a breakdown of why a pencil appears bent when partially submerged in water:\n\n**It's an Optical Illusion \u2013 Specifically, a \"Curvature Illusion\"**\n\n* **Light Bending:** Water bends light. This is a well-known property of water \u2013 it\u2019s why rainbows form. When light travels from the pencil through the water and then back into the air, it changes direction.\n* **The Brain's Interpretation:** Our brains are incredibly good at interpreting visual information to make sense of the world. However, they sometimes make mistakes! In this case, the brain assumes that the pencil is straight. But because the light rays are bent, the brain *perceives* the pencil as being bent.\n\n**Here's how it works in detail:**\n\n1. **Light Rays:** Light travels in straight lines.\n2. **Entering the Water:** When light from the pencil's tip hits the water's surface, it slows down and bends *towards* the normal (a line perpendicular to the surface).\n3. **Bending Through the Water:** As the",
+  "output_valid": false,
+  "power_information": "not exposed by ORT GenAI"
+}

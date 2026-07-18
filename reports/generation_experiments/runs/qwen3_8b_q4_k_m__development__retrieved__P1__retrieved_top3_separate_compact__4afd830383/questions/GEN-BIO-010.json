@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top3_separate_compact__4afd830383",
+  "question_id": "GEN-BIO-010",
+  "question": "What is a synapse, and how does it transfer information?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "05714557971c1fa9fe19c6b5725c6a4288a64b8949b8d2dce65fbfaa07f7c76e",
+  "context_sha256": "6383d8be9ec74a48f37ba1f218eaa11f41b09b03962a375c420cecd7952dee28",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 129,
+      "textbook_page": 120,
+      "pdf_pages": [
+        129,
+        130
+      ],
+      "textbook_pages": [
+        120,
+        121
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "(ii) Stimulus received by the dendrites of a neuron sets off chemical reaction that creates an\nelectrical impulse.\n(iii) Electrical impulse transmitted through cell body and axon.\n(iv) The chemicals cross the synapse and reach the next neuron.\nSimilarly, the electrical impulse\ncrosses several neurons.\n(v) Finally, the impulse is delivered from neuron to the gland that helps in recognition of the foul\nsmell and muscle cells that help in covering the nose.\n5.\nWhat is a synapse?\nHow is it useful in transfer of information?(AS1)\n6.\nDistinguish between(AS1)\na) Stimulus and Response b) Afferent and Efferent nerves\nc) Central nervous system and peripheral nervous system d) Receptor and effector organ\nImprove your learning\n121 Coordination\n7.\nHow does Phototropism occur in plants? (AS1)\n8.\nExplain with an example how plants may respond to a stimulus. (AS1)\n9.\nSuggest an experiment to show how roots grow away from light in most plants. (AS1)\n10.\nGive an example to show how hormones can influence visible changes in your body. (AS1)\n11.\nHow does a neuron differ from an ordinary cell in structure?\nExplain. (AS1)\n12.\nIs the structure of neuron suitable for transmission of impulses?\nAnalyse. (AS1)\n13.\nMan is the most intelligent animal.\nWhat could be the reason that helped us to reach to such a\nconclusion? (AS1)\n14.\nThe axon of nerve cell in hand is shorter than the axon of nerve cell in leg.\nDo you support this\nstatement?\nWhy? (AS1)\n15.\nOrgans respond to the external stimulus by a fraction of second.\nHow do you feel about such\ncontrolling mechanism of human body? (AS1)\n16.\nState whether the following actions are voluntary action, reflex action or conditioned reflex.(AS1)\ni) Blinking of eyes ii) Cleaning the table iii) Playing on the key board\niv) Salivating when food is put into the mouth. v) We close our ears when we hear unbearble sound\n17.\nWhat will happen to the potted plant kept near window in the room? (AS2)\n18.\nWhat happens if all functions of the human body is controlled only by brain? (AS2)\n19.\nIf you visit a doctor what doubts you would like to clarify about pancreas? (AS2)\n20.\nTake a small potted plant.\nCover base portion of the plant tightly and hang the part upside down.\nObserve the plant for a week.\nBased on your observation how can you support phototropism.(AS3)\n21.\nTake a cock feather touch smoothly at different parts of your body .\nFindout which portion of the\nbody has high sensation.\nIs this similar during sleeping?\nPrepare a report on it. (AS3)\n22.\nWhat procedure do you follow to understand the effect of plant growth hormones (in agar medium)\nin the terminal portion of the tip of stem (coleoptile)? (AS3)\n23.\nCollect information on the actions controlled by spinal cord by using reference books from your\nschool library. (AS4)\n24.\nRead the following sentences and compare with the functions of endocrine glands. (AS4)\n(a) Pheromones are chemical substances secreted by organisms. (b) They act as chemical signals\nto produce secretions by exocrine glands. (c) Pheromones are used as signals by the members of\nsame species. (d) Honey bee secretes pheromones that attract other bees to the location of food.\n25.\nCollect the information about cranial nerves and spinal nerves from internet or your school library .\n(AS4)\n26.\nDraw a picture representing connection between axon-dendrite.\nWhy do they connect like that?\n(AS5)\n27.\nDraw a neatly labelled diagram of brain and write few points how it is protected. (AS5)\n28.\nY ou are walking in the traffic.\nSuddenly you heard a loud sound.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00074"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 112,
+      "textbook_page": 103,
+      "pdf_pages": [
+        112,
+        113,
+        114
+      ],
+      "textbook_pages": [
+        103,
+        104,
+        105
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Fig-3: Nerve cell\nadjacent axons.\nThe nerve cell body lies in the brain, spinal cord or dorsal\nor ventral root ganglion of spinal cord.\nIn the brain or spinal cord, it is\ndifficult to make out the difference between dendrites and axons on the\nbasis of their length.\nThe presence of the sheath helps us to find out the\ndifference.\nBut most of them are non-myelinated cells.\nWe know that the nerve cell is the structural and functional unit of\nnervous system.\nOur nervous system consists of more than100 billion of\nthem, which communicate with each other in a specific manner.\nDendrites\nof one nerve cell connect to the axons of the other nerve cell through\nconnections called as a ‘synapse’.\nFig-4: Synapse\nSynapse\nSynapse is the functional region of contact\nbetween two neurons, where information from one\nneuron is transmitted or relayed to another neuron.\nThough these are regions of minute gaps and\nessentially neurons do not have any protoplasmic\nconnection between them yet information is passed\nfrom one nerve cell to the other through these gaps\neither in the form of chemical or electrical signals\nor both.\nThese synapses are mainly found usually in\nthe brain, spinal cord and around the spinal cord.\nBeyond these areas the axon carries the signals\nfrom brain and spinal cord to respective parts of\nour body.\n104 Coordination\n5.4 Pathways: From stimulus to response\nIn the holding stick activity you observed that there is coordination\nbetween eye and fingers.\nDifferent pathways are taken by nerves to bring\nabout this coordinated activity.\nOn the basis of pathways followed, nerves are classified mainly into\nthree different types.\nThey are as follows.\n(A) Afferent nerves or Sensory nerves :\nThe nerves which carry messages towards the central nervous system\n(spinal cord or brain) from nerve endings on the muscles of different sense\norgans are called afferent or sensory nerves.\n(B) Efferent nerves or motor nerves :\nThe nerves which carry messages from the central nervous system to\nbody parts that shall carry out the response to effector muscles are called\nefferent or motor nerves.\n(C) Association nerves (Interneurons) :\nThese nerves link together the afferent and efferent nerves in central\nnervous system (brain and spinal cord).\nx Which organs of your body were the detector and effector in\nActivity-1?\nx How do you think are the\ninformation carried on the\nafferent and efferent nerves\n(Give answer with respect to\nactivity-1)?\nIn activity-1 you showed a\nresponse on which you had some\ncontrol or it was involuntary (recall\nthe use of the voluntary and\ninvoluntary muscles that you studied\nin class 9th.).\nFig-6: motor neuron\nFig-5: Sensory neuron\nEfferent\nnerves\nBrain or spinal\ncord`\nAfferent\nnerves\nVisceral\nMuscles\n(effector organ)\nAssociation nerves/\nInterneurons\nFig-7: Different nerve pathways\nSense organs\n(receptor)\n105 Coordination\nWe know that our body would also need to respond to certain situations\non which we may not have a control.\nSuch responses are called reflexes.A\nsimple activity shall help us to understand this better.\nActivity-3\nFig-8: Knee jerk\nKnee jerk reflex\nCross the legs, in a seated position, so that the lower\nhalf of the uppermost leg hangs freely over the other.\nStrike\nthe area below the knee cap sharply with a rubber hammer,\nwhile firmly grasping the front part of the thigh with the other\nhand.\nNote the changes in shape of the thigh muscles.\nNote that although we are fully conscious, we\ncannot prevent the thigh muscles from contracting.\nSuch a response is said to be involuntary reflexes.\nNow\nthe same thigh muscle can operate in a voluntary manner,\nas when we kick a football.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00063"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 128,
+      "textbook_page": 119,
+      "pdf_pages": [
+        128,
+        129
+      ],
+      "textbook_pages": [
+        119,
+        120
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Tendrils play a vital role to make the plant erect.\nTendrils are thin thread\nlike growths on the leaves or stems of climbing plant.\nThey grow towards\nsupport and wind around them.\nThis type of response to make contact or\ntouch is called \"thigmotropism\".\nIf you taste the carpel of a flower it is sweet.\nLet us recall butterflies\nfluttering on flowers for the nectar.\nRipen stigma secretes sugary substance.\nThis chemical substance stimulates the pollen grain which falls on the\nstigma.\nPollen grain responds to this stimulus and germinate to produce\npollen tubes to reach the ovule for fertilization.\nThis type of response to\nchemicals is called \"chemotropism.\" Unequal distribution of auxins affects\nthe root and the stem growth.\nHigh concentration of auxin stimulates stem\ngrowth and inhibit root growth.\nx Nervous system and endocrine system are the two systems that control and coordinate various\nfunctions in the body.\nx The responses of the nervous system can be classified as reflex, voluntary and involuntary actions.\nKey words\nResponse, stimuli, neuron, schwann cell, axon, synapse, sensory nerves (afferent), motor\nnerves (efferent), association nerves, central nervous system, brain, spinal cord, cerebrospinal\nfluid, peripheral nervous system, insulin, endocrine glands, hormones, feedback mechanism,\nplant hormones, tropic movements, nastic movements.\nWhat we have learnt?\n120 Coordination\nx The human nervous system is studied under two divisions: The central nervous system and the\nperipheral nervous system.\nx The central nervous system consists of brain and the spinal cord while the peripheral nervous\nsystem is further divided into somatic nervous system and autonomous nervous system.\nx The autonomus nervous system has two parts – sympathetic and parasympathetic, which cause\nphysical reactions opposite to each other.\nx Nerve cell is the structural and functional unit of nervous system.\nx Synapse is a gap across where signals are transmitted from one neuron to the other.\nx Hormones produced in one part of the body would move to another part to achieve the desired\neffect.\nx A feedback mechanism regulates the action of the hormones.\nx Directional movements in plants in response to specific stimuli like light, chemicals etc. are called\ntropic movements.\nx Plant hormones are usually growth promoters or inhibitors.\nSome growth promoters are auxins,\ncytokinins and gibberellins, while growth inhibitors are abscisic acid and ethylene.\nStep on a sharp\nedged object\nSpinal cord analyse\ninformation and\nsend commands\n1.\nFill in the missing sections in the following flow chart.(AS1)\n2.\nDo you think body’s team work maintains functioning of our body?\nJustify your answer with an\nexample.(AS1)\n3.\nGive an example of coordination in your body where both hormonal and nervous controls function\ntogether.(AS1)\n4.\nConsider that you are passing by a garbage disposal area and you immediately cover your nose.\nArrange the events below in a logical order by marking them from 1 to 5 to trace the events that\nhappen in the nervous system from detection of foul smell (stimulus generation) to covering your\nnose (response).(AS1)\n(i) At the end of the axon, electrical impulse releases chemicals.\n(ii) Stimulus received by the dendrites of a neuron sets off chemical reaction that creates an\nelectrical impulse.\n(iii) Electrical impulse transmitted through cell body and axon.\n(iv) The chemicals cross the synapse and reach the next neuron.\nSimilarly, the electrical impulse\ncrosses several neurons.\n(v) Finally, the impulse is delivered from neuron to the gland that helps in recognition of the foul\nsmell and muscle cells that help in covering the nose.\n5.\nWhat is a synapse?\nHow is it useful in transfer of information?(AS1)\n6.\nDistinguish between(AS1)\na) Stimulus and Response b) Afferent and Efferent nerves",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00073"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"A synapse is the functional region where information is transferred between two neurons. When a stimulus is received by the dendrites of a neuron, it triggers a chemical reaction that creates an electrical impulse. This impulse travels through the cell body and axon of the neuron. At the synapse, chemicals (neurotransmitters) are released from the end of the axon and cross the gap to reach the next neuron, allowing the transfer of information. This process is essential for communication within the nervous system.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 129,\n      \"textbook_page\": 120\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 112,\n      \"textbook_page\": 103\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 82.02200070000254,
+    "latency_seconds": 124.32030050001049,
+    "usage": {
+      "completion_tokens": 215,
+      "prompt_tokens": 2747,
+      "total_tokens": 2962,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-aAnrvn9ZO59WcbeJMKuHqMdc3WNzBJsh",
+    "peak_rss_bytes": 12548505600
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "A synapse is the functional region where information is transferred between two neurons. When a stimulus is received by the dendrites of a neuron, it triggers a chemical reaction that creates an electrical impulse. This impulse travels through the cell body and axon of the neuron. At the synapse, chemicals (neurotransmitters) are released from the end of the axon and cross the gap to reach the next neuron, allowing the transfer of information. This process is essential for communication within the nervous system.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 129,
+        "textbook_page": 120
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 112,
+        "textbook_page": 103
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "A synapse is the functional contact region between two neurons",
+        "token_recall": 0.8571,
+        "matched": true
+      },
+      {
+        "point": "The neurons are separated by a minute gap without protoplasmic continuity",
+        "token_recall": 0.2857,
+        "matched": false
+      },
+      {
+        "point": "Signals cross chemically, electrically, or both",
+        "token_recall": 0.2,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.3333,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 83
+  },
+  "completed_at": "2026-07-16T21:26:39+00:00"
+}

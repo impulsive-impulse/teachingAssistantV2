@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb",
+  "question_id": "GEN-BIO-013",
+  "question": "How does mucus help in passage of food?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "e4faa4a0d67ef949f9ceed989d168856c03e7f5ef39a6fb501560c8fc5b45992",
+  "context_sha256": "d7a722e208211105c18f25afa9ee48bd1717adb624d9df3c0d23723f68e88315",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 24,
+      "textbook_page": 15,
+      "pdf_pages": [
+        24,
+        25,
+        26
+      ],
+      "textbook_pages": [
+        15,
+        16,
+        17
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "We eat various types of food which pass through the same digestive\ntract.\nIt is to be converted to substances small enough to be utilised\nby our body.\nThis needs various processess that can be studied as\nfollows.\n1.5.1 Passage of food through alimentary canal or gut\nFood is cut and crushed by our teeth in the\nmouth and mixed with saliva to make it wet and\nslippery lump called bolus (This process is called\nas mastication).\nThis bolus is suitable to pass\nthrough oesophagus.\nSaliva is secreted by three pairs\nof salivary glands.\nSaliva mainly contains an enzyme\namylase (ptyalin) which help in the breakdown of\ncomplex carbohydrates into simple ones.\nThis\nprocess of breaking down larger complex substances\ninto simple ones with the help of enzymes is called digestion.\nThe\ntongue helps in mixing the food and pushing it into the next part.\nThe\nlower jaw also helps in this process.\nFig-12: Location of some\nsalivary glands\npalate\nsalivary duct\nsalivary\nglands\nepiglottis\ntongue\nuvula\nWe can find out the effect of salivary amylase on carbohydrates in\nmouth.\nTo know the chemical nature of the saliva perform the activity-\n7 of co-ordination in life process of this text book.\nThe soft food mixed with saliva passes through oesophagus or food\npipe by wave like movements called peristaltic movement to the stomach.\nIn the stomach, food gets churned with gastric juice and HCl rendering the\nmedium acidic.\nNow the food is in semisolid condition.\nThe digestion of\nfood goes on as most of the proteins are broken down into smaller\nmolecules with the help of enzyme pepsin.\nNutrition 16\nFood in the form of a soft slimy substance where some proteins and\ncarbohydrates have already been broken down is called chyme.\nNow the\nfood material passes from the stomach to the small intestine.\nHere the\nring like muscles called pyloric sphincters relax to open the passage into\nthe small intestine.\nThe sphincters are responsible for regulating the\nopening of the passage such that only small quantities of the food material\nmay be passed into the small intestine at a time.\nThe small intestine is the longest part of the\nalimentary canal.\nIts proximal part is called duodenum.\nIt is the site of further digestion of carbohydrates,\nproteins and fats.\nIt receives the secretion of liver and\npancreas for this purpose.\nThese juices render the internal\ncondition of the intestine gradually to a basic or alkaline one.\nFats are digested by converting them into small globule\nlike forms by the help of the bile juice secreted from liver.\nThis process is called emulsification.\nPancreatic juice secreted from pancreas contains enzymes like trypsin\nfor carrying on the process of digestion of proteins and lipase for fats.\nWalls of the small intestine secrete intestinal juice (Succusentericus)\nwhich carry this process further that is small molecules of proteins are\nbroken down to further smaller molecules.\nThe same is the condition with\nfats.\nCarbohydrate digestion that started in the mouth and did not occur in\nthe stomach, resumes now as the medium gradually changes to an alkaline\none and the enzymes become active for complete carbohydrate breakdown.\nFig-13: Peristaltic movement\nbolus\nperistaltic wave oesophagus\nstomach\nActivity-4\nStudying the enzymes chart\nLet us observe the digestive juices, enzymes and their functions shown\nin the table.\nDiscuss about this in the class.\nNutrition 17\nx Name the enzymes which act on carbohydrates.\nx Which digestive juice contains no enzymes?\nx What are the end products formed after the digestion of fats?\nx What are the enzymes that act on proteins?\nTransport of the products of digestion from the intestine into blood",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00008"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 165,
+      "textbook_page": 156,
+      "pdf_pages": [
+        165,
+        166,
+        167
+      ],
+      "textbook_pages": [
+        156,
+        157,
+        158
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Let us recall them, observe the figure.\nOnly\nafter the dissolved food enters into the cup like taste\nbuds, the sense of taste is carried to the brain for\nanalysis.\nThen only we will know the taste of the food\nmaterial.\nx Could you feel the taste of both or did they taste\nthe same?\nWhy?\nWhen we smell, the air borne substances get dissolved in the watery\nfilm of nasal mucus.\nThe chemoreceptors in nose are other wise called\nolfactory receptors which trigger signals in the form of nerve impulses to\nthe brain where smell is detected.\nSimilarly as we take food into our mouth\nthe taste buds sends signals to the brain.\nPicking up the slight differences\nin smell the food tastes are identified in our brain.\nx What happens when we put a food material in our mouth?\nx Name the parts in the mouth that help us to taste food.\nLet’s find out more about the role of these parts.\nActivity-3\nTake a pinch of asafoetida powder or garlic and rub it on hand kerchief\nor tissue paper.\nClose your eyes and smell it.\nThen try to identify taste of\ndifferent types of food materials with the help of your friend.\nFig-1: Papillae on tongue\ncircumvallate papillae\nfoliate papillae\nfiliform papillae fungiform papillae\nReflection of light at curved surfaces157 Coordination in life processes\nx Does garlic have a stronger / intense smell than apple?\nHow do you\nthink the stronger smell affect your sensation of taste?\nx How many food materials you have identified correctly?\nx Write a few lines on relation between smell and taste.\nx Have you ever felt that a particular food is tasty just by looking at it?\nSometimes mouth starts watering just by hearing the name like tamarind,\nlime , mango etc.,\nIn general, we prefer the food material, which is attractive to our eyes,\nand flavour to nose, then we taste it.\nTherefore, when we eat, without our\nknowledge, we use our sight, nose and tongue for selecting food for ingestion.\nRussian scientist, Ivan Pavlov has conducted experiments and found that\neven the thought of food will water your mouth (conditioned stimuli reflexes).\nYou have discussed about Pavlov experiment in the chapter animal behavior\nin class 9th.\nx Are there any other sensation that affect taste?\nx What happens to your taste sensation while sipping hot milk or tea?\nYou may also find something more tastey when they are hot.\nWhile some\nothers are relished cool.\nx What do you think could be the range of temperature for us to relish\nfood items?\n7.1.3 Taste is something connected to the tongue and the palate\nLet us do a simple activity to see the role of different parts of the mouth\nin helping us to taste.\nActivity-4\nSugar crystals over the tongue\nPlace some sugar crystals on your tongue keep your mouth opened and\nsee that your tongue doesn’t touch the palate.\nRecord the time from the\nmoment you placed the crystals on your tongue till you got the taste by\nusing stop watch.\nNow repeat the test by placing the sugar crystals on the tongue and\npressing it against the palate.\nRecord the time from placing sugar crystals to\ngetting the taste .Or put a drop of sugar solution on your tongue using a\ndropper.\nx Can we taste on dry tongue?\nx Which way helped you taste faster ?\nWhy?\n158 Coordination in life processes\nBased on the above activity we know that taste can be identified easily\nwhen the tongue is pressed against the palate.\nAs we know the tongue is",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00097"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 171,
+      "textbook_page": 162,
+      "pdf_pages": [
+        171,
+        172,
+        173
+      ],
+      "textbook_pages": [
+        162,
+        163,
+        164
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "All the systems of our body are active\nin function during the time of our activity.\nHence, man is a diurnal animal.\nOur\ndigestive system is also active in day time and ready to receive the food for digestion.\nIf we sleep during daytime saliva oozes out of our mouth and wets the pillows.\nThis\nwill not happen during night time.\nWe secrete 1-1.5 liters of saliva per day.\n7.1.5 Travel of food through oesophagus\nThe oesophagus receives the food pushed by the swallowing action of\nthe mouth.\nx What are the systems that come into play for swallowing food?\nThe following schematic representation shows some functional and\nstuctural attributes of oesophagus.\nObserve it and answer the following\nquestions.\nWalls secrete mucus passes food to stomach\nby wave like movement of\nwalls (peristalsis)\nLong tube upper end\nconnects to pharynx walls of oesophagus are\nmuscular and elastic\nwalls carry on wave like\nmovement by contraction\nand relaxation\nlower end connects to the\nstomach\nx What does the schematic diagram tell us about the oesophagus?\nx What kind of the tube is oesophagus?\nx How does mucus help in passage of food?\nMaking a model of oesophagus to observe how bolus moves\nforward\nTake a piece of waste cycle tube.\nLubricate the inner side of the tube\nwith oil.\nInsert one or two oil coated potatoes in the tube.\nFig-5: Potato in\ncycle tube\nOesophagus\nDo you know?!\nReflection of light at curved surfaces163 Coordination in life processes\nNow try to push the potatos by squeezing the tube.\nObserve the moving\npotatoes carefully.\nx How do you squeeze the tube to make the potatoes pass through?\nHow did the oil work?\nx Do you think that the muscles in the wall of the oesophagus have to\ndo something like this?\nx How did oil help you in pushing the potatoes through the pipe?\n7.1.6 Peristaltic movement in oesophagus\nLook at the fig-6, which shows wave like movement of wall of\noesophagus and observe the position of the food bolus.\nx How did the position of the bolus change?\nx What is the similarity of movement of food\nillustrated in the diagram and the activity\nperformed by you?\nThe walls of the food pipe secrete a slippery\nsubstance called mucus.\nMucus lubricates and\nprotects the oesophageal walls from damage.\nThis\nhelps the food bolus to slide down easily just as\nthe oiled potatoes that move in the tube.\nBesides\nthis, the saliva in the bolus also aids in easy\nmovement of food, which moves into the stomach.Fig-6: Peristaltic movement of bolus in\noesophagus\nepiglottis\noesophageal sphincter\ncontracted\ncontracted muscles\nsphincter relaxed\nrelaxed muscles\nstomach\nbolus\nThe wall of the oesophagus is made up of two kinds of smooth muscles.\nThe inner layer consists of circular muscles and the outer layer of\nlongitudinal muscles.\nContraction of the circular muscles results in\nnarrowing of the oesophagus just behind the bolus.\nSo the food is squeezed\ndownwards.\nContraction of the longitudinal muscles infront of the bolus widen\nthe tube, this results in shortening of that particular part of the oesophagus.\nContraction and relaxation of these muscles bring in a wave like motion\nthat propels the food bolus into the stomach by the action called as\n“peristalsis” (you have studied about this in the chapter on nutrition).\nThis\nis involuntary and under the control of autonomous nervous system.\nx What makes the movement of the food bolus in the oesophagus easy?\nThink why people are advised not to swallow food without chewing\nproperly or do not eat in hurry.\n164 Coordination in life processes\n7.1.7 Stomach the mixer and digester",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00101"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 175,
+      "textbook_page": 166,
+      "pdf_pages": [
+        175,
+        176,
+        177
+      ],
+      "textbook_pages": [
+        166,
+        167,
+        168
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The function of petroleum jelly can be compared to that of mucus\nlining the stomach walls.\nHence the stomach is protected from damage\nbeing caused by the secretion of its own acids.\n7.1.8 Travel of food from the stomach to the intestine\nNow food is a soup like mixture when it leaves the stomach and enters\nthe small intestine.\nWhen the food enters the intestine the acidic nature of\nthe chyme initiates the production of hormones like secretin and\ncholecystokinin which stimulate pancreas, liver and walls of small intestine\nto secrete pancreatic juice, bile juice and succus entericus.\nx Why small intestine is like a long coiled structure?\nx How the absorbtion takes place in the small intestine?\nThe absorption of nutrients by villi in the small intestine is a very\nselective process.\nLab Activity\nReflection of light at curved surfaces167 Coordination in life processes\nThe walls of the intestine allows only tiny nutrient particles to pass\nthrough. (Refer Movement of substances through plasma membrane in\nclass IX)\nActivity-9\nFig-8:\nPaper tube\nPaper tube and folded papers\nTake 10¯20cm size chart paper fold the chart paper and join both\nends with gum to make a tube.\nNow take 20¯20cm chart paper and make\na tube as mentioned the same above try to insert the big tube in small one.\nCan you?\nIt is not possible.\nNow take another 20¯20cm chart paper fold\nthe paper as many folds as possible.\nNow join both ends to make a folded\npaper tube.\nTry to insert folded tube in first tube.\nCan you?\nHow is it\npossible?\nx Compare the area of the folded papers with that of the roll.\nDo you\nfind any increase in the area ?If so try to find out the reasons?\nThe inner surface of the small intestine contains thousands of finger\nlike projections called villi.\nx What is the relation between finger like structures and paper folds\nThese villi increase the surface area so that the food retained in the\nfolds can remain longer thereby enhancing absorption.\nx What systems do you think are working together here?\nx Do you think those systems work together in the whole length of\nthe digestive canal?\nWhy/ Why not?\nThe digestive tract is unique among internal\norgans because it is exposed to a large variety of\nphysiochemical stimuli from the external world in\nthe form of ingested food.\nAs a consequence, the\nintestine has developed a rich store of co ordinated\nmovements of its muscular apparatus along with\nneural apparatus to ensure the appropriate mixing and\npropulsion of contents during digestion, absorption,\nand excretion.Fig-9: Schematic\ndiagram of a villus\nepithelium\nnetwork of blood\ncapillaries\nmucus membrane\nmucus glands\n168 Coordination in life processes\nThe neural apparatus of our digestive tract comprises of such a vast\nand complicated network of neurons that it has been nicknamed by scientists\nas the second brain!\nResearch in this area is currently investigating how\nthe second brain mediates the body’s immune response; after all, at least\n70 percent of our immune system is aimed at the gut to expel and kill\nforeign invaders.\nScientists are also working to find out how trillions of bacteria in the\ngut communicate with the cells of gut nervous system.\nA deeper\nunderstanding of this mass of neural tissue, filled with important\n'neurotransmitters', is revealing that it does much more than merely handle\ndigestion or inflict the occasional nervous pang of hunger.\nThe little brain\nin our inner yards, in connection with the big one in our skull, partly\ndetermines our mental state and plays key roles in certain diseases",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00104"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 181,
+      "textbook_page": 172,
+      "pdf_pages": [
+        181,
+        182
+      ],
+      "textbook_pages": [
+        172,
+        173
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "d) Small intestine is similar to a coiled pipe.\n7.\nWrite difference between the following. (AS1)\na) bolus - chyme b) small intestine - large intestine\nc) mastication - rumination d) Brain - Second brain\n8.\nHow can you say that mouth is a munching machine? (AS1)\n9.\nWhat is mastication?\nExplain the role of different sets of teeth in this process. (AS1)\n10.\nDuring the journey of food from mouth to stomach through oesophagus.\nHow does muscular\nsystem coordinate in this process? (AS1)\n11.\nIs there any reason for the intestine to be coiled with many folds.In what way it is helpful during the\nprocess of digestion? (AS1)\n12.\nWhat is the function of peristalsis in these parts? (AS1)\na) oesophagus b) stomach c) small intestine d) large intestine\n13.\nHow can you justify the enteric nervous system as the second brain of the gut? (AS1)\n14.\nRajesh feels hungry upon seeing food.Sheela says no to food as she is not hungry.What makes\nRajesh hungry and what suppresses Sheelas hunger? (AS1)\n15.\nHow are taste and smell related? (AS1)\n16.\nList out the sphincter muscles of the food canal you have observed and give a brief description. (AS1)\n17.\nWhat happens if salivary ducts are closed? (AS2)\n18.\nPrepare a questionnaire to understand nervous coordination in digestion process. (AS2)\n19.\nIf size and shape of small intestine is like oesophagus what will happen? (AS2)\n20.\nWhat experiment should you perform to understand action of saliva on flour?\nExplain it’s procedure\nand apparatus that you followed. (AS3)\n21.\nSuggest a simple experiment to prove the role of palate in recognizing taste. (AS3)\n22.\nCollect information related to feeling hunger from your school library and prepare a note on it. (AS4)\n23.\nDraw the block diagram showing sensation of taste from food material to brain. (AS5)\n24.\nDraw a neatly labled diagram showing a peristaltic movement in oesophagus.\nExplain the importance\nof mucus on the walls of food pipe. (AS5)\nQ.No: 5\nReflection of light at curved surfaces173 Coordination in life processes\n25.\nDraw a schematic diagram of villus in small intestine.\nExplain how digestive\nsystem coordinate with circulatory system. (AS5)\n26.\nThe mere smell or sight of food stimulates hunger .Describe the process through\na neat diagram. (AS5)\n27.\nWith the help of a diagram show the movement of food from mouth to the\nstomach.What muscles and nerves are involved in the movement of food and\nwhat is this action called as? (AS5)\n28.\nPrepare a cartoon on Pavlov’s experiment with a suitable caption. (AS6)\n29.\nHow do you appreciate stomach as a churning machine?\nHow does this\ncoordination go on? (AS6)\n30.\nThere is a great variety in diversified life processes, express your feelings in the\nform of a poem. (AS7)\n31.\nSuggest any two important habitual actions to your friend while eating food,\nkeeping in view of this chapter. (AS7)\n1.\n2 : 1 : 2 : 3 is the ratio of our dentition.\nHere 1 represents ____________\n2.\nLarge protein molecules are broken down in _________ of digestive track.\n3. __________ is the strong acid which is secreated during digestion.\n4.\nOlfactory receptors present in ___________ trigger signals to brain.\n5. pH of saliva is _________ in nature.\n6.\nFill in the blanks with suitable words given below.\nFluctuation s of hormone (1)_____________ levels results in sensation of hunger and motivation\nof consuming food.\nWhen you feel your stomach is full and there is no need of food any more.\nAnother hormone (2)_____________ that gets secreted suppresses hunger.\nWhen we take food\ninto the mouth it has to be chewed thoroughly .\nFor this purpose the (3)_____________ muscles",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00108"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Mucus helps in the passage of food through the oesophagus by lubricating the walls of the oesophagus. This lubrication makes it easier for the food bolus to slide down into the stomach. The mucus also protects the oesophageal walls from damage caused by the movement of food and the acidic environment of the stomach.\",\n  \"selected_evidence_ids\": [\"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 171,\n      \"textbook_page\": 162\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 124.56655019999016,
+    "latency_seconds": 158.43982859997777,
+    "usage": {
+      "completion_tokens": 146,
+      "prompt_tokens": 4400,
+      "total_tokens": 4546,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-KwZyYhs8ghpWWvOSwFykVd8Imms5KNDa",
+    "peak_rss_bytes": 19209134080
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Mucus helps in the passage of food through the oesophagus by lubricating the walls of the oesophagus. This lubrication makes it easier for the food bolus to slide down into the stomach. The mucus also protects the oesophageal walls from damage caused by the movement of food and the acidic environment of the stomach.",
+    "selected_evidence_ids": [
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E3",
+        "pdf_page": 171,
+        "textbook_page": 162
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Oesophageal walls secrete mucus",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Mucus lubricates and protects the wall",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "The bolus slides down more easily during peristalsis",
+        "token_recall": 0.2857,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.6667,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 54
+  },
+  "completed_at": "2026-07-17T19:56:30+00:00"
+}

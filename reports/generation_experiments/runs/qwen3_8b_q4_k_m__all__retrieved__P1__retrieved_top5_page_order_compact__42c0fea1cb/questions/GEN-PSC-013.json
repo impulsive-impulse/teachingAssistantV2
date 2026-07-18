@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb",
+  "question_id": "GEN-PSC-013",
+  "question": "Explain the formation of sodium chloride and calcium oxide on the basis of the concept of electron transfer from one atom to another atom.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "6e720c61c34c029197ba62077ddc242bdff910cc25b2dbbbff13742446914049",
+  "context_sha256": "22dc109494776c321aa91238367339fc92eb18fbda37e3416323d74981f5d50f",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 34,
+      "textbook_page": 24,
+      "pdf_pages": [
+        34,
+        35
+      ],
+      "textbook_pages": [
+        24,
+        25
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "They may form an insoluble substance known as precipitate.\n4.\nGas may be evolved\nIn our daily life we observe variety of changes taking place around us.\nIn this chapter we study various types of chemical reactions and their\nsymbolic representation.\n2.1 Chemical Equations\nIn activity 1, when calcium oxide reacts with water a new substance is\nformed which is unlike to either calcium oxide or water.\nThe description\nof chemical reactions in a sentence in activity-1 is quite long.\nIt can be\nwritten in shorter form as a word equation.\nThe word equation of the above reaction is,\ncalcium oxide + water g calcium hydroxide ......................... (1)\n(Re ac t an t s ) (Product)\nThe substances which undergo chemical change in the reaction are\ncalled reactants and the new substances formed are called products.\nA chemical reaction written in the form of word equation shows the\nchange of reactants to products by an arrow placed between them.\nThe\nreactants, are written on the left side of the arrow and the final substances,\nor products are written on the right side of the arrow.\nThe arrow head\npoint faces the products showing the direction of the reaction.\nIf there is more than one reactant or product involved in the reaction,\nthey are indicated with a plus (+) sign between them.\n2.1.1 Writing a Chemical Equation\n· Can you write a chemical reaction in any other shorter way other than\nthe way we discussed above?\nChemical equations can be made more precise and useful if we use\nchemical formulae instead of words.\nChemical Equations 25\nGenerally, a compound is written by giving its chemical formula,\nwhich lists the symbols of the constituent elements and uses the subscript\nto indicate the number of atoms of each element present in the compound.\nIf no subscript is written the number 1 is understood.\nThus we can write\ncalcium oxide as CaO, water as H 2O and the compound formed by the\nreaction of these two compounds is calcium hydroxide Ca (OH) 2.\nNow the reaction of calcium oxide with water can be written as:\nCaO + H2O g Ca (OH)2 ............................ (2)\nIn the above chemical equation, count the number of atoms of each\nelement on left side and right side of arrow.\n· Is the number of atoms of each element are equal on both sides?\nObserve the following reactions and their chemical equations.\nZinc\nmetal reacts with dilute HCl to yield ZnCl2 and liberates Hydrogen gas.\nZ n+ HCl g ZnCl2 + H2 ............................ (3)\nSodium sulphate reacts with barium chloride to give white precipitate,\nbarium sulphate and sodium chloride.\nNa2SO4 + BaCl2 g BaSO4 + NaCl ............................. (4)\n· Do the atoms of each element on left side equal to the atoms of the\nelement on the right side of the equation?\n· Do the atoms of all the elements of the reactants also there on the\nproduct side?\nTHINK AND WRITE\nY ou have brushed the wall with an aqueous suspension of Ca(OH)2.\nAfter two\ndays the wall turned to white colour.\n· Write the balanced chemical reactions for the above changes using the\nappropriate symbols and formulae?.\n2.1.2 Balancing Chemical Equations\nAccording to the law of conservation of mass, the total mass of the\nproducts formed in chemical reaction must be equal to the total mass of\nreactants consumed.\nYou know that an atom is the smallest particle of an\nelement that takes part in a chemical reaction.\nIt is the atom which accounts\nfor the mass of any substance.\nAs per the law of conservatioin of mass the\nnumber of atoms of each element before and after reaction must be the",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00013"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 179,
+      "textbook_page": 169,
+      "pdf_pages": [
+        179,
+        180
+      ],
+      "textbook_pages": [
+        169,
+        170
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "reactive non-metals like halogens (VIIA) on the left side and right\nside of the periodic table respectively.\n(iii) Noble gases except helium have eight electrons in the valence shells\nof their atoms.\nThey are chemically inactive and stable.\n(iv) To attain eight electrons in the outermost shell similar to noble gases\nmetal atoms that have one two or three electrons in the valence shells\ngenerally lose those electrons and form stable positive ions called\ncations.\nExample: 11Na ® 2, 8, 1 ; Na+ ® 2, 8\n12Mg ® 2, 8, 2 ; Mg2+ ® 2, 8\n13Al ® 2, 8, 3 ; Al3+ ® 2, 8\n(v) To attain eight electrons in the outermost shell, non-metal atoms that\nhave 5,6 or 7 valence electrons gain 3,2 or 1 electron respectively and\nform negative ions known as anions.\nExample: 15P ® 2, 8, 5 ; P3- ® 2, 8, 8\n16S ® 2, 8, 6 ; S2- ® 2, 8, 8\n17Cl ® 2, 8, 7 ; Cl- ® 2, 8, 8\nFormation of ionic bond\nThe positive ions (cations) and negative ions (anions) that are formed\ndue to the transfer of electrons from the metal atoms to the non-metal\natoms experience the electrostatic forces and get attracted to form\nchemical bond.\nDo you know?\nThe number of electrons lost from a metal atom is the valence of its element\nwhich is equal to its group number.\nEx.\nNa and Mg have valence 1 and 2 respectively.\nThis is equal to theis group\nnumber.\nDo you know?\nThe number of electrons gained by a non-metal element for its atom is its valency,\nwhich is equal to (8 - its group number).\nEx.\nThe valency of chlorine is (8 – 7) = 1.\n165 Chemical Bonding\nAs this bond is between charged particles known as ions, it is called ionic\nbond.\nSometimes based on the forces being electrostatic, the bond is also\ncalled the electrostatic bond.\nAs the valence concept has been explained\nin terms of electrons, it is also called the electrovalent bond.\nThus, we can define ionic bond as follows:\nThe electrostatic attractive force that keeps cation and anion (which\nare formed from metal atoms and non-metal atoms due to transfer of\nelectrons) together to form a new electrically neutral compounds is called\n‘ionic bond’ .\nNow let us know the formation of ionic compounds NaCl, MgCl2, Na2O\nand AlCl3.\nExample 1.\nFormation of sodium chloride (NaCl):\nSodium chloride is formed from the elements sodium and chlorine.\nIt\ncan be explained as follows:\nNa(s) + 1\n2 Cl2(g) g NaCl(s)\nCation formation\nWhen sodium (Na) atom loses one electron to get octet electron\nconfiguration it forms a cation (Na+) and gets electron configuration that\nof Neon (Ne) atom.\n11Na (g) g 11Na+ (g) + e-\nElectronic Configuration 2, 8, 1 2, 8\nor [Ne] 3s1 [Ne]\nAnion formation\nChlorine has shortage of one electron to get octet in its valence shell.\nSo it gains the electron from Na atom to form anion and gets electron\nconfiguration as that of argon (Ar).\n17Cl (g) + e- g Cl– (g)\nElectronic configuration 2, 8, 7 2, 8, 8\nor [Ne] 3s2 3p5 [Ne] 3s2 3p6 or [Ar]\nFormation of the compound NaCl from its ions:\nTransfer of electrons between ‘Na’ and ‘C l’ atoms, results in the\nformation of ‘Na +’ and ‘C l– ’ ions.\nThese oppositely charged ions get\nattracted towards each other due to electrostatic forces and form the\ncompound sodium chloride (NaCl).\nNa+\n(g) + Cl–\n(g) g Na+Cl– (s) or NaCl\nEg-2.\nFormation of magnesium chloride (MgCl2):\nMagnesium chloride is formed from the elements magnesium and\nchlorine.\nThe bond formation MgCl2 in brief using chemical equation is as\nfollows:",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00102"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 180,
+      "textbook_page": 170,
+      "pdf_pages": [
+        180,
+        181,
+        182
+      ],
+      "textbook_pages": [
+        170,
+        171,
+        172
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Electronic configuration 2, 8, 7 2, 8, 8\nor [Ne] 3s2 3p5 [Ne] 3s2 3p6 or [Ar]\nFormation of the compound NaCl from its ions:\nTransfer of electrons between ‘Na’ and ‘C l’ atoms, results in the\nformation of ‘Na +’ and ‘C l– ’ ions.\nThese oppositely charged ions get\nattracted towards each other due to electrostatic forces and form the\ncompound sodium chloride (NaCl).\nNa+\n(g) + Cl–\n(g) g Na+Cl– (s) or NaCl\nEg-2.\nFormation of magnesium chloride (MgCl2):\nMagnesium chloride is formed from the elements magnesium and\nchlorine.\nThe bond formation MgCl2 in brief using chemical equation is as\nfollows:\n166 Chemical Bonding\nMg(s) + Cl2(g) g Mg Cl2(s)\nCation formation\n12Mg (g) g 12Mg2+ (g) + 2e–\nElectronic configuration 2, 8, 2 2, 8\nor [Ne] 3s2 [Ne]\nAnion formation\n2Cl (g) + 2e– g 2Cl– (g)\nElectronic configuration 2, 8, 7 2, 8, 8\nor [Ne] 3s2 3p5 [Ne] 3s2 3p6 or [Ar]\nFormation of the compound MgCl2 from its ions:\nMg2+ gets ‘Ne’ configuration and Each Cl– gets ‘Ar’ configuration\nMg2+ (g) + 2Cl–\n(g) g MgCl2 (s)\nOne ‘Mg’ atom transfers two electrons one each to two ‘Cl’ atoms and\nso formed Mg2+ and 2Cl– attract to form MgCl2.\nExample 3.\nFormation of di sodium monoxide(Na2O):\nDi sodium monoxide formation can be explained as follows:\nCation formation (Na+ formation):\n2Na (g) g 2Na+ (g) + 2e-\nElectronic configuration 2, 8, 1 2, 8\nor [Ne] 3s1 [Ne]\nAnion formation (O2– , the oxide formation):\nO (g) + 2e- g O2- (g)\nElectronic configuration 2, 6 2, 8\nor [He] 2s2 2p4 [He] 2s2 2p6 or [Ne]\nThe compound Na2O formation from Sodiam (Na+), Oxide (O-2).\nTwo ‘Na’ atoms transfer one electron each to one oxygen atom to\nform 2Na+ and O2- , Each Na+ gets ‘Ne’ configuration and O2- gets ‘Ne’\nconfiguration.\nThese ions (2Na+ and O2-) attract to form Na2O.\n2Na+ (g) + O2-\n(g) g Na2O(s)\nEg-4.\nFormation of aluminium chloride (AlCl3):\nAluminium chloride formation can be explained as follows:\n167 Chemical Bonding\nFormation of cation: aluminium ion (Al3+):\n13Al(g) g Al3+ (g) + 3e-\nElectronic configuration 2, 8, 3 2, 8\nor [Ne] 3s23p1 [Ne]\nFormation of anion: chloride ion (C l-):\n3Cl(g) + 3e- g 3Cl–\n(g)\nElectronic configuration 2, 8, 7 2, 8,8\nor [Ne] 3s2 3p5 [Ne] 3s2 3p6 or [Ar]\nEach aluminium atom loses three electrons and three chlorine atoms\ngain them, one electron each.\nThe compound AlCl3 is formed from its component ions Al3+and 3Cl–\nby the electrostatic forces of attractions.\nAl3+ (g) + 3Cl–\n(g) g AlCl3 (s)\nThe arrangement of ions in ionic compounds\n· How do cations and anions of an ionic compound exist in its solid\nstate?\n· Let us explain this with sodium chloride as our example:\n· Do you think that pairs of Na+ Cl- as units would be present in the solid\ncrystal?\nIf you think so, it is not correct.\nRemember that electrostatic forces\nare non directional.\nTherefore, it is not possible for one Na+ to be attracted\nby one Cl– and vice-versa.\nDepending upon the size and charge of a particular\nion, number of oppositely charged ions get attracted by it, but, in a definite\nnumber.\nIn sodium chloride crystal each Na+ is surrounded by 6 Cl- and\neach Cl– by six Na+ ions.\nIonic compounds in the crystalline state consist\nof orderly arranged cations and anions held together by electrostatic forces\nof attractions in three dimensions.\nThe crystal structure of sodium chloride\nis given below:\nNaCl is said to possess face centered cubic lattice\ncrystal structure (see figure-1).\nThe number of ions of opposite charge that surround",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00103"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 182,
+      "textbook_page": 172,
+      "pdf_pages": [
+        182,
+        183,
+        184
+      ],
+      "textbook_pages": [
+        172,
+        173,
+        174
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "by one Cl– and vice-versa.\nDepending upon the size and charge of a particular\nion, number of oppositely charged ions get attracted by it, but, in a definite\nnumber.\nIn sodium chloride crystal each Na+ is surrounded by 6 Cl- and\neach Cl– by six Na+ ions.\nIonic compounds in the crystalline state consist\nof orderly arranged cations and anions held together by electrostatic forces\nof attractions in three dimensions.\nThe crystal structure of sodium chloride\nis given below:\nNaCl is said to possess face centered cubic lattice\ncrystal structure (see figure-1).\nThe number of ions of opposite charge that surround\na given ion of given charge is known as the coordination\nnumber of that given ion.\nFor example, in sodium chloride crystal, the\ncoordination number of Na+ is 6 and that of Cl- is also 6.\nfig-1Cl–\nNa+\n168 Chemical Bonding\nFactors affecting the formation of cation and anion:\nIn previous lesson you have learnt about variation of metallic and non\nmetallic character of elements in a group or period of the periodic table.\nRecall the facts about metallic and non metallic character of elements.\nGenerally elements of metals have tendency of losing electron to attain\nthe octet in their valence shell.\nThis property is called as the metallic\ncharacter or electropositivity .\nElements with more electropositive\ncharacter form cations.\nSimilarly non metals like oxygen (8O), fluorine\n(9F) and chlorine (17Cl) acquire electron configuration of elements of inert\ngases by gaining electrons this property is called the non-metallic\ncharacter or electronegativity of the element .\nElements with more\nelectronegative character form anions.\n· Can you explain the reasons for all these?\nIonic bond is formed between atoms of elements with electronegativity\ndifference equal to or greater than 1.9.\nIn ionic bond formation, you have noticed that atoms either lose\nelectrons or gain electrons to attain octet in valence shell. i.e., in an ionic\nbond, transfer of electrons takes place between combining atoms.\nThe tendency of losing electrons to form cations (or) gaining electron\nto form anions depends on the following factors:\ni) Atomic size\nii) Ionisation potential\niii) Electron affinity\niv) Electronegativity\nThe atoms of elements with low ionisation energy, low electron affinity\nhigh atomic size and low electronegativity form cations.\nThe atoms of elements with high ionisation potential, high electron\naffinity, small atomic size and high electronegativity form anions.\n8.4.2 Covalent bond\nG.N.\nLewis (1916) proposed that atoms of some elements could\nachieve an octet in their valence shells without transfer of electrons\nbetween them.\nThey can attain octet configuration in their valence shells\nby sharing the valence electrons with one or more atoms.\nThe electrons shared between two atoms belong to both the atoms and\nthe sharing of electrons between them leads to the formation of a chemical\nbond known as covalent bond.\n169 Chemical Bonding\nFor example, take two fluorine atoms which form a stable molecule.\nEach fluorine atom contributes one electron for bonding and the electron\npair that is formed in this way is mutually shared by both the fluorine atoms.\nEach atom in the F2 molecule has an octet of valence electrons.\nThe dots around fluorine atom shows the valence electrons of\nrespective atoms.\nThe chemical bond formed between two atoms by mutual sharing of a\npair of valence shell electrons so that both of them can attain octet or\nduplet in their valence shell is called the covalent bond.\nThe prefix co – is used to indicate when things are equal or joined.\n(for example, co exist, cooperate etc).\nHere each atom contributes one\nelectron from the valence shell for the bonding.\nTherefore, the name\ncovalent is given (equal valence electrons contribution) for this bond.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00104"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 197,
+      "textbook_page": 187,
+      "pdf_pages": [
+        197,
+        198,
+        199,
+        200
+      ],
+      "textbook_pages": [
+        187,
+        188,
+        189,
+        190
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Which chemical compound has the following Lewis notation:\n(AS1)\na) How many valence electrons does element Y have?\nb) What is the valency of element Y?\nImprove your learning\nWhat we have learnt\n183 Chemical Bonding\nc) What is the valency of element X?\nd) How many covalent bonds are there in the molecule?\ne) To which groups the elements X and Y belong? (AS2)\n3.\nHow bond energies and bond lengths of molecule help us in predicting their chemical properties?\nExplain with examples. (AS1)\n4.\nDraw simple diagrams to show the arrangement of valence electrons in the following compounds:\n(AS5)\na) Calcium oxide (CaO) (b) Water (H2O) (c) Chlorine (Cl2)\n5.\nRepresent each of the following atoms using Lewis notation: (AS5)\n(a) beryllium (b) calcium (c) lithium d) bromine (Br2)\n(e) calcium chloride (CaCl2) (f) carbon dioxide (CO2)\nII.\nApplication of Concepts\n1.\nExplain the formation of sodium chloride and calcium oxide on the basis of the concept of electron\ntransfer from one atom to another atom. (AS1)\n2.\nA, B, and C are three elements with atomic numbers 6, 11 and 17 respectively.\ni) Which of these cannot form ionic bond?\nWhy? (AS1)\nii) Which of these cannot form covalent bond?\nWhy? (AS1)\niii) Which of these can form ionic as well as covalent bonds? (AS1)\n3.\nHow does Lewis dot structure helps in understanding bond formation between atoms? (AS1)\n4.\nExplain the formation of the following molecules using valence bond theory\na) N2 molecule b) O2 molecule\nIII.\nHigher Order Thinking questions\n1.\nTwo chemical reactions are described below. (AS5)\n· Nitrogen and hydrogen react to form ammonia (NH3)\n· Carbon and hydrogen bond together to form a molecule of methane (CH4).\nFor each reaction, give:\na) The valence of each of the atoms involved in the reaction. (AS1)\nb) The Lewis structure of the product that is formed. (AS5)\n184 Chemical Bonding\nMultiple choice questions\n1) Which one of the following four elements is more electronegative? [ ]\na) Sodium b) Oxygen c) Magnesium d) Calcium\n2) An element 11X23 forms an ionic compound with another element ‘Y’.\nThen the charge on the ion\nformed by X is [ ]\na) +1 b) +2 c) -1 d) -2\n3) An element ‘A ’ forms a chloride ACl4.\nThe number electrons in the valence shell of ‘A’ is\na) 1 b) 2 c) 3 d) 4 [ ]\n4) The inert gas element which does not have octet electronic configuration in its\noutermost orbit is [ ]\na) Helium b) Argon c) Krepton d) Radon\n5) Number of covalent bonds in methane molecule [ ]\na) 1 b) 2 c) 3 d) 4\n6) The concept hybridisation of orbitals of an atoms was introdused by [ ]\na) Lives pouling b) Mosley c) Lewis d) Kossel\n7) The value of bond angle in Berileum chloride molecule is [ ]\na) 1800 b) 1200 c) 1100 d) 1040.31|\nSuggested Projects\n1.\nCollect the information about properties and uses of covalent compounds and prepare a\nreport? (AS4)\n185 Electric Current\nElectric Current9\nCHAPTER\nIn previous classes, you had learnt about electric current, battery, electric\ncircuit and its components.\n· What do you mean by electric current?\n· Which type of charge (positive or negative) flows through an electric\nwire when it is connected in an electric circuit?\n· Is there any evidence for the motion of charge in daily life situations?\nIn class VIII you learned about lightning.\nLightning is an electric discharge\nbetween two clouds or between cloud and Earth.\nThis electric discharge\nthrough air appears to us as an electric spark or lightning.\nLightning is a live example which provides evidence for the motion of\ncharge in the atmosphere.",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00113"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Sodium chloride (NaCl) and calcium oxide (CaO) are formed through the concept of electron transfer from one atom to another. In the case of sodium chloride, sodium (Na) is a metal with one electron in its valence shell, while chlorine (Cl) is a non-metal with seven electrons in its valence shell. Sodium loses one electron to achieve a stable octet configuration, forming a sodium ion (Na⁺). Chlorine gains this electron to complete its octet, forming a chloride ion (Cl⁻). The electrostatic attraction between these oppositely charged ions forms an ionic bond, resulting in the compound sodium chloride (NaCl). Similarly, calcium (Ca) is a metal with two electrons in its valence shell, and oxygen (O) is a non-metal with six electrons in its valence shell. Calcium loses two electrons to form a calcium ion (Ca²⁺), while oxygen gains these two electrons to form an oxide ion (O²⁻). The electrostatic attraction between these ions forms calcium oxide (CaO). This process of electron transfer from metal atoms to non-metal atoms is the basis of the formation of these ionic compounds.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\", \"E3\", \"E5\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 34,\n      \"textbook_page\": 24\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 179,\n      \"textbook_page\": 169\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 180,\n      \"textbook_page\": 170\n    },\n",
+    "time_to_first_token_seconds": 145.23183390000486,
+    "latency_seconds": 239.3761616999982,
+    "usage": {
+      "completion_tokens": 384,
+      "prompt_tokens": 4959,
+      "total_tokens": 5343,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-HsLdTwyKWIc5CU9N9ArlZh2SBBYrr9Q2",
+    "peak_rss_bytes": 19291516928
+  },
+  "parsed_output": {
+    "valid": false,
+    "errors": [
+      "invalid JSON: Expecting value: line 20 column 7 (char 1464)"
+    ],
+    "answer": ""
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Show Na losing one electron and Cl gaining one to form Na⁺ and Cl⁻",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Show Ca losing two electrons and O gaining two to form Ca²⁺ and O²⁻",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Connect transfer to stable outer-shell configurations",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Explain electrostatic attraction and the formulae NaCl and CaO",
+        "token_recall": 0.0,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.0,
+    "citation_validity": 0.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": false,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 0
+  },
+  "completed_at": "2026-07-17T20:58:35+00:00"
+}

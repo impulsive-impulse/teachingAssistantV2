@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f",
+  "question_id": "GEN-PSC-011",
+  "question": "What is an orbital? How is it different from Bohr’s orbit?",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "232189731d74447751a7766d6fb6567305195c59c3b6aa27bb3d7c6f61a7d95d",
+  "context_sha256": "a05d263cc1e71b2cc1d20a65f5ff114d32a2beffc6add60c288171b5d61b7180",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 128,
+      "textbook_page": 118,
+      "text": "Government’s Gift for Students’ Progress 118 Structure of Atom\nBohr-Sommerfeld model, though successful in accounting for the fine\nline structure of hydrogen atomic spectra, does not provide a satisfactory\npicture of the structure of atom in general. This model failed to account\nfor the atomic spectra of atoms of more than one electron.\n· Why is the electron in an atom restricted to revolve around the nucleus\nin stationary orbits located at certain fixed distances?\n6.4 Quantum mechanical model of an atom\n· Do the electrons follow defined paths around the nucleus?\nIf the electron revolves around the nucleus in defined paths or orbits,\nthe exact position of the electron at various times will be known. For that\nwe have to answer two questions:\n· What is the velocity of the electron?\n· Is it possible to find the exact position of the electron?\nElectrons are invisible to naked eye. Then, how do you find the position\nand velocity of an electron?\nTo find articles during dark nights we take the help of torchlight.\nSimilarly, we can take the help of suitable light to find the position and\nvelocity of electron. As the electrons are very small, light of very short\nwavelength is required for this task.\nThis short wavelength light interacts with the electron and disturbs the\nmotion of the electron. Hence, simultaneously the position and velocity\nof electron cannot be measured accurately.\nFrom the above discussion, it is clear that electrons do not follow\ndefinite paths in an atom.\nDo atoms have a definite boundary, as suggested by Bohr’s model?\nIf the electrons are not distributed in orbits around the nucleus this\nMax Karl Ernst Ludwig Planck was a German\ntheoretical physicist who originated quantum theory, which\nwon him the Nobel Prize in Physics in 1918. Planck made\nmany contributions to theoretical physics, but his fame rests\nprimarily on his role as originator of the quantum theory.\nThis theory revolutionized human understanding of atomic\nand subatomic processes.",
+      "text_sha256": "58bedf866c80adcdf9c4fe8b6756860d45b6c1f2aaaa22897cf95f28088a9940"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 129,
+      "textbook_page": 119,
+      "text": "Government’s Gift for Students’ Progress 119 Structure of Atom\nmeans that an atom does not have a definite boundary.) As a result, it is not\npossible to pinpoint an electron in an atom.\nUnder these circumstances in order to understand the properties of\nelectrons in an atom, a quantum mechanical model of atom was developed\nby Erwin Schrodinger.\nAccording to this model of an atom, instead of orbits of Bohr’s model,\nthe electrons are thought to exist in a particular region of space around\nthe nucleus at a given instant of time\n· What do we call the region of space where the electron might be, at a\ngiven time?\nThe region of space around the nucleus where the probability of finding\nthe electron is maximum is called an orbital.\nIn a given space around the nucleus, only certain orbitals can exist.\nEach orbital of a stable energy state for the electron is described by a\nparticular set of quantum numbers.\n6.5 Quantum numbers\nEach electron in an atom is described by a set of three numbers n, l,\nand ml .These numbers are called quantum numbers. These numbers\nindicate the probability of finding the electron in the space around the\nnucleus.\n· What information do the quantum numbers provide?\nThe quantum numbers describe the space around the nucleus where\nthe electrons are found and also their energies.\n· What does each quantum number signify?\n6.5.1 Principal Quantum Number (n)\nThe principal quantum number is related to the size and energy of the\nmain shell.\n‘n’ has positive integer values of 1, 2, 3,…\nAs ‘n’ increases, the shells become larger and the electrons in those\nshells are farther from the nucleus.\nAn increase in ‘n’ also means higher energy. n = 1, 2, 3, ... are often\nrepresented by the letters K, L, M… For each ‘n’ value there is one main shell.\nShell K L M N\nn 1 2 3 4\n6.5.2 The angular - momentum quantum number (l)\nThis quantum number is represented by a letter ‘l’.\n‘l’ has integer values from 0 to n-1 for each value of ‘n’. Each ‘l’ value\nrepresents one sub-shell.",
+      "text_sha256": "23803f61c900c46bba3d8074f8f84f88ef74339bdac20e566316101946d45f06"
+    },
+    {
+      "evidence_id": "E3",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 136,
+      "textbook_page": 126,
+      "text": "Government’s Gift for Students’ Progress 126 Structure of Atom\n· Ligth can be characterized by its wavelength (l ), frequency (J ) and these quantities are\nrelated to speed of light as C Jl= .\n· Spectrum is a group of wavelengths.\n· Electromagnetic energy (Light) can have only certain discrete energy values which is given by\nthe equation E=hu\n· Electrons in an atom can gain energy by absorbing a particular frequency of light and can lose\nenergy by emitting a particular frequency.\n· Bohr’s model of atom: Electrons are present in stationary states. The electron moves to higher\nenergy level if it absorbs energy in the form of electromagnetic energy or moves to a lower\nenergy state by emitting energy in the form of electromagnetic energy of appropriate frequency.\n· Atomic line spectra arise because of absorption /emission of certain frequencies of light energy.\n· It is not possible to measure accurately the position and velocity of an electron simultaneously .\n· The space around the nucleus where the probability of finding the electron is maximum is called\norbital.\n· The three quantum numbers n, l, ml describe the energy, shape and orientation respectively, of\nan atomic orbital. Spin is an intrinsic property of an atom.\n· Spin is an intrinsic property of an electron.\n· The arrangement of electrons in shells, sub-shells and orbitals in an atom is called the electron\nconfiguration.\n· According to Pauli Exclusion Principle no two electrons of the same atom can have all the four\nquantum numbers same.\n· Aufbau principle: The lowest-energy orbitals are filled first.\n· Hund’s rule: The orbitals of equal energy (degenerate) are occupied with one electron each\nbefore pairing of electrons starts.\nI. Reflections of concepts\n1. What information does the electronic configuration of an atom\nprovide? (AS1)\n2. Rainbow is an example for continuous spectrum – explain. (AS1)\n3. How orbital is different from Bohr’s orbit?(AS1)\n4. Explain the significance of three Quantum numbers in predicting the positions of an electron\nin an atom.(AS1)\n5. H ow w e are using the nl x method in writing electronic configuration? (AS1)\n6. Which electronic shell is a higher energy level K or L? (AS2)\nImprove your learning\nWhat we have learnt",
+      "text_sha256": "1c20a4c6449cdd38419c387c2686767864c7b7874b79ee19b35c1c70bef34122"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"An orbital is a region of space around the nucleus where the probability of finding an electron is maximum. It is a concept from the quantum mechanical model of the atom, which describes the behavior of electrons in terms of probability rather than fixed paths. In contrast, Bohr’s orbit refers to the fixed circular paths that electrons are assumed to follow around the nucleus in his model. Bohr’s model suggested that electrons revolve in specific orbits at fixed distances from the nucleus, and these orbits were considered to be stationary. However, the quantum mechanical model, developed by Schrödinger, replaced Bohr’s orbits with orbitals, as it was found that electrons do not follow defined paths but exist in regions of probability. This model also explains the behavior of electrons more accurately, especially for atoms with more than one electron.\",\n  \"selected_evidence_ids\": [\"E1\", \"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 128,\n      \"textbook_page\": 118\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 136,\n      \"textbook_page\": 126\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 34.07940630000667,
+    "latency_seconds": 82.67942950001452,
+    "usage": {
+      "completion_tokens": 277,
+      "prompt_tokens": 1617,
+      "total_tokens": 1894,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-XksimgczMFk3xRjY7nS1BBsyxHHW7CBO",
+    "peak_rss_bytes": 16795262976
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "An orbital is a region of space around the nucleus where the probability of finding an electron is maximum. It is a concept from the quantum mechanical model of the atom, which describes the behavior of electrons in terms of probability rather than fixed paths. In contrast, Bohr’s orbit refers to the fixed circular paths that electrons are assumed to follow around the nucleus in his model. Bohr’s model suggested that electrons revolve in specific orbits at fixed distances from the nucleus, and these orbits were considered to be stationary. However, the quantum mechanical model, developed by Schrödinger, replaced Bohr’s orbits with orbitals, as it was found that electrons do not follow defined paths but exist in regions of probability. This model also explains the behavior of electrons more accurately, especially for atoms with more than one electron.",
+    "selected_evidence_ids": [
+      "E1",
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 128,
+        "textbook_page": 118
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 136,
+        "textbook_page": 126
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "An orbital is a region of high probability of finding an electron",
+        "token_recall": 0.8333,
+        "matched": true
+      },
+      {
+        "point": "A Bohr orbit is a fixed path/energy shell with a defined radius",
+        "token_recall": 0.625,
+        "matched": true
+      },
+      {
+        "point": "Orbitals do not have sharp classical paths and have characteristic shapes",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "A shell can contain 2n² electrons while one orbital holds at most two with opposite spins",
+        "token_recall": 0.2308,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 138
+  },
+  "completed_at": "2026-07-17T19:06:35+00:00"
+}

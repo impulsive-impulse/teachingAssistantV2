@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__01c91d4040",
+  "question_id": "GEN-PSC-004",
+  "question": "Why should we balance a chemical equation?",
+  "book_id": "physical_sciences",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "169fdf85238dac630026a6dcdb453ebf31fcda8587aea1246e4590e2a2b2f550",
+  "context_sha256": "3a181aef579361c0cbd6d98cf0be291d58bc21aaa9761f2e3cc5d432df171e6e",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 35,
+      "textbook_page": 25,
+      "pdf_pages": [
+        35,
+        36,
+        37
+      ],
+      "textbook_pages": [
+        25,
+        26,
+        27
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "· Write the balanced chemical reactions for the above changes using the\nappropriate symbols and formulae?.\n2.1.2 Balancing Chemical Equations\nAccording to the law of conservation of mass, the total mass of the\nproducts formed in chemical reaction must be equal to the total mass of\nreactants consumed.\nYou know that an atom is the smallest particle of an\nelement that takes part in a chemical reaction.\nIt is the atom which accounts\nfor the mass of any substance.\nAs per the law of conservatioin of mass the\nnumber of atoms of each element before and after reaction must be the\nsame.\n26 Chemical Equations\nAll the chemical equations must be balanced, because atoms are neither\ncreated nor destroyed in chemical reactions.\nA chemical equation in which\nthe number of atoms of different elements on the reactant side (left side)\nare same as those on product side (right side) is called a balanced reaction.\nFormula units:\nBalancing a chemical equation involves finding out how many\nformula units of each substance take part in the reaction.as the name\nimplies, is one unit – whether atom, ion or molecule – corresponding to a\ngiven formula.\nOne formula unit of NaCl for example is one Na+ (Sodium\nion) and one Cl– (Chlorine ion); one formula unit of MgBr2 is one Mg2+\nion and two Br– ions and one formula unit of water is one H2O molecule.\nNow let us balance the chemical equation using a systematic method.\nFor this take the example of hydrogen reacting with oxygen to form water.\nStep 1: Write the equation with the correct chemical formulae for\neach reactant and product.\nFor example, in the reaction of hydrogen with oxygen to yield water,\nyou can write chemical equations as follow:\nH2 + O2 g H2O ……(5)\nStep 2: After writing the molecular formulae\nof the substances the equation is to be balanced.\nFor this we should not touch the ratio of atoms in\nthe molecules of the susbtances but we may assign\nsuitable numbers as the coefficients before the formulae.\nIn the above equation write ‘2’ before the molecular formula of\nhydrogen and also ‘2’ before the molecular formula of water.\nObserve\nwhether atoms of both the elements hydrogen and oxyen are same (or)\ndifferent on both the sides.\nThey are in the same number on both sides.\nTherefore, the equation is balanced.\n2H2 + O2 g 2H2O …………..(6)\nStep 3: Sometimes there is a possibility that the coefficients of all\nthe substances getting divided with a suitable number.\nSince we require\nthe lowest ratio of coefficient for reactants and products the above\noperation is to be done.\nIf no common factor is there, there is no need to\ndivide the equation.\nThe above equation needs no division of the\ncoefficients of the substances.\nElement No of atoms\nLHS RHS\nH 2 2\nO 2 1\nElement No of atoms\nLHS RHS\nH 2 2\nO 2 1\nChemical Equations 27\nStep 4: V erify the equation for the balancing of atoms on both sides of\nthe equations.\nThe above equation (6) is a balanced equation.\nLet us work out some more examples to see how equations are\nbalanced.\nEg-1: Combustion of propane (C 3H8) in presence of oxygen\nPropane, C 3 H8 is a colourless, odourless gas often used as a heating\nand cooking fuel.\nWrite the chemical equation for the combustion reaction\nof propane.\nThe reactants are propane and oxygen and the products are\ncarbon dioxide and water.\nWrite the reaction in terms of symbols and\nformulae of the substances involved and follow the four steps described\nin previous discussion.\nStep 1: Write the unbalanced equation using correct chemical formulae",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00014"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 37,
+      "textbook_page": 27,
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "textbook_pages": [
+        27,
+        28
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "The above equation (6) is a balanced equation.\nLet us work out some more examples to see how equations are\nbalanced.\nEg-1: Combustion of propane (C 3H8) in presence of oxygen\nPropane, C 3 H8 is a colourless, odourless gas often used as a heating\nand cooking fuel.\nWrite the chemical equation for the combustion reaction\nof propane.\nThe reactants are propane and oxygen and the products are\ncarbon dioxide and water.\nWrite the reaction in terms of symbols and\nformulae of the substances involved and follow the four steps described\nin previous discussion.\nStep 1: Write the unbalanced equation using correct chemical formulae\nfor all substances.\nC3H8 + O 2 g CO2 + H2O ............(7), (Skeleton equation)\nNote: Unbalanced chemical equation containing molecular formulae\nof the substances is known as skeleton equation.\nStep 2: Compare number of atoms\nof each element on both sides.\nFind the\ncoefficients to balance the equation.\nIt\nis better to start with the most complex\nsubstance – in this case C3H8.\nLook at\nthe skeleton equation, (7) and note that\nthere are 3 carbon atoms on the left\nside of the equation but only 1 on the right side.\nIf we add a coefficient of\n3 to CO2 on the right side the carbon atoms get balanced.\nC3H8 + O2 g 3CO2 + H2O ................... (8)\nNow, look at the number of hydrogen atoms.\nThere are 8 hydrogens\non the left but only 2 on the right side.\nBy adding a coefficient of 4 to the\nH2O on the right, the hydrogen atoms get balanced.\nC3H8 + O2 g 3CO2 + 4H2O .................(9)\nFinally, look at the number of oxygen atoms.\nThere are 2 on the left\nside but 10 on the right side, by adding a coefficient of 5 to the O2 on the\nleft, the oxygen atoms get balanced.\nC3H8 + 5O2 g 3CO2 + 4H2O .....................(10)\nElement No of atoms\nLHS RHS\nC 3(in C3H8) 1 (in CO 2)\nH 8 (in C3H8) 2(in H 2O)\nO 2 (in O2) 3 (in CO 2, H2O)\n28 Chemical Equations\nStep 3: Make sure the coefficients are reduced to their smallest wholenumber values.\nIn fact, the equation (10) is already with the coefficients\nin smallest whole number.\nThere is no need to reduce its coefficients, but\nthis might not be achieved in each chemical reaction.\nLet us assume that you have got chemical equation as shown below:\n2C3H8 + 10O2 g 6CO2 + 8H2O ................... (11)\n· Is it a balanced equation as per rules?\n· How do you say?\nThough the equation (11) is balanced, the coefficients are not the\nsmallest whole numbers.\nIt would be necessary to divide all coefficients\nof equation (11) by 2 to reach the final equation.\nC3H8 + 5O2 g 3CO2 + 4H2O ................... (12)\nStep 4: Check the answer.\nCount the numbers and kinds of atoms on\nboth sides of the equation to make sure they are the same.\nEg-2: Iron oxide reacts with Aluminum to form iron and Aluminum\ntrioxide.\nWrite the chemical equation to show the reaction and balance it.\nStep 1: Write the equation using the correct chemical symbols and\nformulae for all the reactants and products.\nFe2O3 + Al g Fe + Al 2O3 ................. (13)\nStep 2: Find the suitable coefficient for the reactants and products, to\nequate the number of atoms of each element on both sides.\n(i) Examine the number of atoms of each element present in\nequation (13) on both sides.\nIn the above equation (13), Number of oxygen atoms is equal on both\nsides.\nWe have to balance the remaining atoms.\n(ii) There are 2 Fe atoms on left side(on reactant side).\nThere is one",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00015"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 38,
+      "textbook_page": 28,
+      "pdf_pages": [
+        38,
+        39,
+        40
+      ],
+      "textbook_pages": [
+        28,
+        29,
+        30
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Step 1: Write the equation using the correct chemical symbols and\nformulae for all the reactants and products.\nFe2O3 + Al g Fe + Al 2O3 ................. (13)\nStep 2: Find the suitable coefficient for the reactants and products, to\nequate the number of atoms of each element on both sides.\n(i) Examine the number of atoms of each element present in\nequation (13) on both sides.\nIn the above equation (13), Number of oxygen atoms is equal on both\nsides.\nWe have to balance the remaining atoms.\n(ii) There are 2 Fe atoms on left side(on reactant side).\nThere is one\nFe atom on right side(on products side).\nTo equate number of Fe atoms,\nmultiply Fe by 2 on product side.\nNow the partially balanced equation is:\nFe2O3 + Al g 2Fe + Al2O3 .................. (14)\n(iii) In the above equation(14) number of Aluminum atoms still\nunbalanced.\nThere is one ‘Al’ atom on left side and 2 ‘Al’ atoms on the right side\n(in Al2O3), to balance ‘Al’ atoms on both sides multiply ‘Al’ by 2 on left\nside of arrow mark.\nElements No. of atoms in reactants No. of atoms in products\nFe 2 (in Fe2O3) 1 (in Fe)\nO 3 (in Fe2O3) 3 (in Al2O3)\nAl 1 (in Al) 2 (in Al2O3)\nChemical Equations 29\nFe2O3 + 2Al g 2Fe + Al 2O3 ................ (15)\nThe above equation(15), the number of atoms of each element is same\non both sides of arrow mark.\nThis is a balanced chemical equation.\nStep 3: The above equation(15) is balanced and coefficients are also\nsmallest whole numbers.\nStep4: Finally to check the correctness of balanced equation, count\nthe number of atoms of each element on both sides of equation.\nFe2O3 + 2Al g 2Fe + Al 2O3 ................. (16)\n(Note: The above method of balancing is called trial and error method\nonly.\nSometimes you may have to take more care to balance the equation.)\n2.2 Making Chemical Equations more informative:\nChemical equations can be made more informative by expressing\nfollowing characteristics of the reactants and products.\n1.\nPhysical state\n2.\nHeat changes (exothermic or endothermic change)\n3.\nGas evolved (if any)\n4.\nPrecipitate formed (if any)\n2.2.1 Expressing the physical state\nTo make the chemical equation more informative, the physical states\nof the substances may be mentioned along with their chemical formulae.\nThe different states ie., gaseous, liquid, and solid states are represented\nby the notations (g), (l) and (s) respectively.\nIf the substance is present as\na solution in water, the word ‘aqueous’ is written.\nIn the short form it is\nwritten as (aq).\nThe balanced equation(16) is written along with the physical states as:\nFe2O3(s) + 2Al (s) g 2Fe(s) + Al2O3 (s) ...... (17)\nD represents heating.\nElements No of Atoms of Reactants No. of Atoms in products\nFe 2 (in Fe2O3) 2(in Fe)\nO 3 (in Fe2O3) 3(in Al2O3 )\nAl 2 (in 2 Al) 2(in Al2O3 )\n30 Chemical Equations\n2.2.2 Expressing the heat changes\nHeat is liberated in exothermic reactions and heat is absorbed in\nendothermic reactions.\nSee the following examples.\n1 .C (s) + O2 (g) g CO2 (g) + Q (exothermic reaction)\n2 .N 2 (g) + O2 (g) g 2NO (g) - Q (endothermic reaction)\n‘Q’ is heat energy which is shown with plus (+) sign on product side\nfor exothermic reactions and minus (–) sign on product side for\nendothermic reactions.\n2.2.3 Expressing the gas evolved\nIf a gas is evolved in a reaction, it is denoted by an upward arrow (#)\nor (g)\nEg: Zn (s) + H2SO4 (aq) g ZnSO4 (aq) + H2 (g) #\n2.2.4 Expressing precipitate formed\nIf a precipitate is formed in the reactions it is denoted by a downward",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00016"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 41,
+      "textbook_page": 31,
+      "pdf_pages": [
+        41,
+        42,
+        43,
+        44
+      ],
+      "textbook_pages": [
+        31,
+        32,
+        33,
+        34
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "hydrogen liberated when 230 g of sodium reacts with excess of water at\nSTP.(atomic masses of Na = 23U, O = 16U, and H = 1U)\nThe balanced equation for the above reaction is,\n2Na (s) + 2H 2O (l) g 2NaOH (aq) +H 2 (g)#\n(2x23)U + 2(2 x1+1x16)U g 2(23+16+1)U + (2 x1)U\n32 Chemical Equations\n46 U + 36 U g 80 U + 2 U\nor 46 g + 36 g g 80 g + 2 g\nSolution: As per the balanced equation:\n46 g of Na gives 2g of hydrogen\n230g of Na gives ______? g of hydrogen.\n230 g x 2g ––––––––––– = 10g of hydrogen 46 g\n1 gram molar mass of any gas at STP i.e, standard temperature 273K\nand standard pressure 1 bar (760 mm of Hg) occupies 22.4 litres known\nas gram molar volume.\n\\ 2.0g of hydrogen occupies 22.4 litres at STP .\n10.0g of hydrogen occupies ........? litres at STP.\n10.0g x 22.4 litres––––––––––––––––– = 112 litres\n2.0g\n2 g of hydrogen i.e, 1 mole of H2 contains 6.02x1023 (NA) molecules\n10 g of hydrogen contain ....................?\n10.0g x 6.02x1023 molecules–––––––––––––––––––––––––\n2.0g\n= 30.10 x 1023 molecules\n= 3.01 x 1024 molecules\nExample 3 : Calculate the volume and No. of molecules of CO2 liberated\nat STP.\nIf 50 g. of CaCO3 is treated with dilute hydrochloric acid which\ncontains 7.3 g of dissolved HCl gas.\nThe Chemical equation for the above the reaction is\nCaCO3(S)\n+ 2HCl(aq) g CaCl2(aq)\n+ H2O (l) + CO2(g)\nAs per the metric staichio equation 100g of CaCO3 reacts with 73g\nof HCl to liberate 44 g of CO2\nIn the above problem the amount of CaCO3 taken is 50g and HCl\navailble is 7.3g.\n100g of CaCO3 require 73g of HCl and 50g of CaCO3 required\n36.5g of HCl but, only 7.3g of HCl is available.\nHence the product CO2 formed depends only on the amount of HCl\nwhich is in the least amount but not on the amount of CaCO3 which is an\nexcess.\nThe reactant available in less amount is called limiting reagent as\nit limits the amount of product formed.\nChemical Equations 33\n73 g of HCl g release 44 g of CO2\n7.3 g of HCl - ?\n7.3g x 44g ––––––––––– = 4.4 g\n73g\n44 g of CO2 occupies 22.4 L volume at STP\nHow much valume does 4.4 g of CO2 occupies - ?\n4.4g x 22.4 litres\n––––––––––– = 2.24 litres44g\n44 g of CO2 contain 6.022x1023 molecules of CO2\n4.4 g Contains - ?\n4.4g x 6.022 x 1023\n––––––––––––––– = 6.022 x 10 22 molecules44 g\n· A Chemical equation is the symbolic representation of a chemical change.\n· A balanced chemical equation explains about reactants, products and their physical states during\nthe reaction.\n· A chemical equation should always be balanced according to the Law of conservation of mass.\n· The chemical reaction in which heat is absorbed are called endothermic reactions and in which heat\nis evolved are exothermic reactions.\n· A chemical equation containing simply symbols of elements and molecular formulae of the substances\nwithout balancing is known as primary or skeleton equation.\n· The symbols of elements and formulae of the compounds should not be changed but only their coefficient should be altered while balancing the chemical equation.\n· Co-efficient should be least possible whole numbers.\nKey words\nReactants, products, exothermic reaction, endothermic reaction Physical and chemical\nchanges Primary or skelton Equation unit forumula, Precipitation, Co-efficient,\natomic mass, standard temperature and pressure (STP) molar mass, avagadro’s number,\ngram molar volume.\nWhat we have learnt\n34 Chemical Equations\nI.\nReflections on concepts\n1.\nWhat information do you get from a balanced chemical equation? (AS1)\n2.\nWhy should we balance a chemical equation? (AS1)",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00018"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 43,
+      "textbook_page": 33,
+      "pdf_pages": [
+        43,
+        44
+      ],
+      "textbook_pages": [
+        33,
+        34
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "without balancing is known as primary or skeleton equation.\n· The symbols of elements and formulae of the compounds should not be changed but only their coefficient should be altered while balancing the chemical equation.\n· Co-efficient should be least possible whole numbers.\nKey words\nReactants, products, exothermic reaction, endothermic reaction Physical and chemical\nchanges Primary or skelton Equation unit forumula, Precipitation, Co-efficient,\natomic mass, standard temperature and pressure (STP) molar mass, avagadro’s number,\ngram molar volume.\nWhat we have learnt\n34 Chemical Equations\nI.\nReflections on concepts\n1.\nWhat information do you get from a balanced chemical equation? (AS1)\n2.\nWhy should we balance a chemical equation? (AS1)\n3.\nBalance the following chemical equations. (AS1)\n(a) NaOH+ H2SO4 gNa2SO4 +H2O\n(b) KClO3gKCl + O2\n(c) Hg (NO3)2+ KI gHgI2+KNO3\n4.\nMention the physical states of the reactants and products of the following chemical reactions and\nbalance the equations. (AS 1)\n(a) C6H12O6 g C2H5OH + CO2\n(b) NH3 + Cl2 g N2 + NH4Cl\n(c) Na + H2O g NaOH + H2\nII.\nApplication of Concepts\n1.\nBalance the following chemical equation after writing the symbolic representation. (AS1)\n(a) Calcium hydroxide (s) + Nitric acid (aq) g Water (l) + Calcium Nitrate (aq)\n(b) Magnesium (s) + lodine (g) g Magnesium lodide (s)\n2.\nWrite the following chemical reactions including the physical states of the substances and balance\nchemical equations. (AS1)\n(a) Sodium Hydroxide reacts with Hydrochloric acid to form Sodium Chloride and Water.\n(b) Barium Chloride reacts with liquid Sodium Sulphate to leave Barium Sulphate as a precipitate\nand also form liquid Sodium Chloride.\nIII.\nHigher Order Thinking Questions\n1.\n2 moles of Zinc reacts with a cupric choloride solution containing 6.023x10 22\nformula units of CuCl2 Calculate the moles of copper obtained (AS1)\nZn(s) + CuCl2(aq)\ng ZnCl2(aq)\n+ Cu(s)\n2.\n1 mole of propane (C3H8) on combustion at STP gives ‘A ’ kilo joules of heat energy.\nCaliculate the heat libarated when 2.4 ltrs of propane on combustion at STP. (AS1)\n3.\nCaliculate the mass and volume of oxygen required at STP to convert 2.4 kg of graphite\ninto carbon dioxide. (AS1)\nImprove your learning",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00019"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"We should balance a chemical equation because of the law of conservation of mass, which states that the total mass of the products formed in a chemical reaction must be equal to the total mass of the reactants consumed. This means that the number of atoms of each element before and after the reaction must be the same. Atoms are neither created nor destroyed in chemical reactions, so balancing ensures that the equation accurately represents the chemical process. A balanced chemical equation is one in which the number of atoms of each element on the reactant side (left side) is the same as those on the product side (right side).\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 35,\n      \"textbook_page\": 25\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 245.6048904999916,
+    "latency_seconds": 341.8654067000025,
+    "usage": {
+      "completion_tokens": 196,
+      "prompt_tokens": 4790,
+      "total_tokens": 4986,
+      "prompt_tokens_details": {
+        "cached_tokens": 126
+      }
+    },
+    "response_id": "chatcmpl-0K4PAbl8pd3kCI5qsPjLXZ5wlYxUuYIQ",
+    "peak_rss_bytes": 25687404544
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "We should balance a chemical equation because of the law of conservation of mass, which states that the total mass of the products formed in a chemical reaction must be equal to the total mass of the reactants consumed. This means that the number of atoms of each element before and after the reaction must be the same. Atoms are neither created nor destroyed in chemical reactions, so balancing ensures that the equation accurately represents the chemical process. A balanced chemical equation is one in which the number of atoms of each element on the reactant side (left side) is the same as those on the product side (right side).",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 35,
+        "textbook_page": 25
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Chemical reactions obey conservation of mass",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Atoms are rearranged rather than created or destroyed",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "The count of each element must be equal on both sides",
+        "token_recall": 0.7143,
+        "matched": true
+      },
+      {
+        "point": "Balancing changes coefficients, not chemical formulae",
+        "token_recall": 0.3333,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 110
+  },
+  "completed_at": "2026-07-17T17:37:31+00:00"
+}

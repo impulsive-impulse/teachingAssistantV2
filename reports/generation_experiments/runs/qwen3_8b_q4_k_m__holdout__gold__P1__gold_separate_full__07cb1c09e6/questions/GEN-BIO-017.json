@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6",
+  "question_id": "GEN-BIO-017",
+  "question": "What happens to the amount of energy transferred from one step to the next in a food chain?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "ad36489266e77840c2847df0582c5ff22fffa6dcdab51f95941eebc5641da81c",
+  "context_sha256": "b44ce340e69df4003013329148704874ed9d3a20d606b1a1dd73cb63a3444945",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 220,
+      "textbook_page": 211,
+      "text": "Reflection of light at curved surfaces211 Our EnvironmentGovernment’s Gift for Students’ Progress\nThe biomass in a trophic level may be more or less than the other\ntrophic levels. Biomass is a measure of the amount of food available. When\nanimals eat, only a small proportion of their food is converted into new\ntissue, which inturn forms the food for the next trophic level. Part of\nbiomass that animals eat is used to provide energy needed for staying alive,\nrest passes out of its body.\nThe biomass pyramid shows that animals are relatively inefficient in\nconverting food into body tissues, the remaining part of the food being\nundigested is passed out as waste, or broken down in respiration to supply\nenergy for activities such as feeding. Many animals convert not more than\n10% of their food into their body tissues, in some herbivores, it is even\nless. Let us take an example of a food chain which has been worked out in\nsome detail- one in which we are involved when we eat fish. In this chain\nthe phytoplankton on the surface water of sea are food producers. They\ntrap energy from sunlight. The zooplankton feed on the microscopic plants\nand the fish in turn feed on the zooplankton; we are at the end of the chain\nwhen we eat the fish.\n9.3.3 Pyramid of Energy\nFood is the source of energy for organisms\nthat are used in the growth and rebuilding the\nparts of the body; that are constantly wearing out.\nThe food by its nature is the chemical energy\nand as in stored form, it is potential energy. There\nare several mechanisms in organisms for\ncontinuous absorption of materials for the\nproduction of organic material, and for the\nrelease and conversion of organic material into\ninorganic form. Plants absorb the minerals from the soil. They are absorbed\ninto the plant through roots.\nPhotosynthesis is an essential process for the life. The energy in\nsunlight, carbon dioxide and the water which are needed by all living things\nbelong to nonliving things. As a result of photosynthesis, these can be\nmade available in a suitable form of energy the food to the world of living\nthings the animals or consumers, only by the green plants the producers.\nThe food chains and food webs help in the transfer of the food and energy\nfrom the producers to different consumers.\nFig-7: Pyramid of Energy\neagle\nsnake\nfrog\ngrass\nhopper\ngrass",
+      "text_sha256": "d0ec5ac71e5392a8accd64612587806b7eb3ef884e81ff4b70882d3000f5f831"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 221,
+      "textbook_page": 212,
+      "text": "212 Our EnvironmentGovernment’s Gift for Students’ Progress\nAnimals obtain the minerals from the plant or animal food or both.\nThus the mineral matter is constantly being removed from the earth to\nbecome a part of the plant, which may become a part of animal body.\nTry to identify the basic sources of various foods we eat. For example\ncurd that we eat is processed from milk, which comes from a cow, which\nin turn eats grass. The grass carries out photosynthesis and prepares food.\nIn every case, the origin of food materials can be traced back to green\nplants.\nOnce the food is eaten, its energy follows a variety of pattern through\nthe organisms. Not all the food can be fully digested and assimilated. Hair,\nfeathers, insect exoskeletons, cartilage and bone in animal foods, cellulose\nand lignin in plant foods cannot be digested by the most animals. These\nmaterials are either ejected by defecation or regurgitated as indigested\nremains.\nAssimilated energy (that is not lost through respiration or excretion)\nis available for the synthesis of new biomass through growth and\nreproduction. Organisms lose some biomass by death, disease or annual\nleaf-drop, where they enter the detritus pathways of the food chain i.e.,\nafter the death and decomposition of organisms the materials flow back\ninto the environment(soil, water, air). The remaining biomass is eventually\nconsumed by herbivores or predators and its energy there by enters the\nnext higher trophic level in the ecosystem.\nThe materials keep on cycling i.e. entering the living beings and through\ndeath and decay returning to the soil and atmosphere Such a flow of\nmaterials between organisms and their environment is called Cycling of\nmaterials or mineral circulation or Biogeochemical cycles (You have\nlearnt in class IX ).\nEnergy enters the producers in the ecosystem from the sun in\nthe form of solar energy or solar radiation. No other organisms\nexcept green plants and Photosynthetic bacteria due to due to the\npresence of chlorophyll are capable of absorbing solar energy and\nconverting it into chemical energy (food).\nSolar energy Producers (Chemical energy) Consumers (Chemical energy)\nHeat Heat",
+      "text_sha256": "ddf8e619447a6e94504c959152fc51f74f34bcbb2dac635e0cd98b4f6e5025a8"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"In a food chain, the amount of energy transferred from one step to the next decreases. This is because only a small proportion of the energy from one trophic level is passed on to the next. For example, when animals eat, only a small part of their food is converted into new tissue, which forms the food for the next trophic level. The rest of the energy is used for the animal's life processes, such as staying alive, or is lost as heat or waste. Typically, only about 10% of the energy from one level is transferred to the next, with the majority being lost as heat or through metabolic processes.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 220,\n      \"textbook_page\": 211\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 25.025904500012984,
+    "latency_seconds": 55.53295310001704,
+    "usage": {
+      "completion_tokens": 207,
+      "prompt_tokens": 1211,
+      "total_tokens": 1418,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-E1DHVTAvEaDf8JjvRYMnmKQM8nT3sNT7",
+    "peak_rss_bytes": 12273557504
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "In a food chain, the amount of energy transferred from one step to the next decreases. This is because only a small proportion of the energy from one trophic level is passed on to the next. For example, when animals eat, only a small part of their food is converted into new tissue, which forms the food for the next trophic level. The rest of the energy is used for the animal's life processes, such as staying alive, or is lost as heat or waste. Typically, only about 10% of the energy from one level is transferred to the next, with the majority being lost as heat or through metabolic processes.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 220,
+        "textbook_page": 211
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Available energy decreases at each trophic transfer",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Only a small fraction becomes new biomass",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Energy is lost through respiration, activity, heat, and undigested material",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "This limits food-chain length",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.0,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 111
+  },
+  "completed_at": "2026-07-17T11:40:27+00:00"
+}

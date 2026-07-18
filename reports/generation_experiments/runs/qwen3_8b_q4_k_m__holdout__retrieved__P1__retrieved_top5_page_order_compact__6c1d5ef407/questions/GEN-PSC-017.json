@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407",
+  "question_id": "GEN-PSC-017",
+  "question": "Explain Faraday’s law of induction with the help of activity.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "c4a7327f4ee5e2192c0af48426d787ad1595f2d8fd0e0a73f90d0e668ea88830",
+  "context_sha256": "b206d5da24ecc8e155e538e9b9bc7e1d46a254575a38ef60eb78f23ce936803e",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 250,
+      "textbook_page": 240,
+      "pdf_pages": [
+        250,
+        251
+      ],
+      "textbook_pages": [
+        240,
+        241
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "in the galvanometer because there is no electromotive\nforce in this circuit.\nNow if we push a bar magnet towards\nthe coil, with its north pole facing the coil, a remarkable thing happens.\nWhile the magnet is moving towards the coil, the needle in galvanometer\ndeflects, showing that a current has been set up in the coil, the galvanometer\ndoes not deflect if the magnet is at rest.\nIf the magnet is moved away from\nthe coil, the needle in the galvanometer again deflects, but in the opposite\ndirection, which means that a current is set up in the coil in the opposite\ndirection.\nIf we use the end of south pole of a magnet instead of north pole in the\nabove activity, the experiment works just as described but the deflections\nare exactly reversed.\nFurther experimentation enables us to understand that the relative\nmotion of the magnet and coil set up a current in the coil.\nIt makes no\ndifference whether the magnet is moved towards the coil or the coil towards\nthe magnet.\n10.5.1 Faraday’s Law\n“Whenever there is a continuous change of magnetic flux linked with a\nclosed coil, a current is generated in the coil.” This is one form of Faraday’s\nlaw.\nDo you know?\n· The relation between direction of induced current, magnetic field and force can\nalso be explained by Flemings left hand rule.\nStretch the left hand thumb, middle\nfinger and forefinger in such a way that they are mutually perpendicular to each\nother.\nThe forefinger indicates the direction of magnetic field, the middle finger\nindicates the direction of current and thumb indicates direction of force.\nBy using\nthe Flemings left hand rule we can explain the working of electric motor.\n236 Electromagnetism\nThe current generated is called induced current and is set up by an\ninduced electromotive force (induced EMF).\nThis phenomenon of getting\ninduced current is called electromagnetic induction.\nFaraday observed that the changes in the magnetic flux through the\ncoil are responsible for the generation of current in the coil.\nHe also\nobserved that the rapid changes in flux through coil generate greater induced\ncurrent or induced EMF.\nAfter observing this important factor, he proposed\na law of electromagnetic induction, which is as follow,\n“The induced EMF generated in a closed loop is equal to the rate of\nchange of magnetic flux passing through it.”\nIn mathematical form, we can write this as\nInduced EMF = change in flux\ntime\ne = t\nDF\nD .....................(6)\nThe equation is called Faraday’s law of induction where F (phi) is the\nflux linked with coil.\nLet F0 be the flux linked with single turn.\nIf there are\nN turns in the coil, the flux linked with the coil is N F0.\nF = N F0 ......................(7)\nSo far we have not specified the direction of the induced EMF or\ninduced current.\nIn the previous example, we have observed that an induced\ncurrent is set up in the loop.\n· What is its direction?\n· Can you apply conservation of energy for electromagnetic\ninduction?\n10.5.2 Lenz Law\nWhen we push the bar magnet towards the coils, current is generated,\nin other word electromagnetic induction takes place and mechanical energy\nis converted into electrical energy.\nLet us discuss it in detail.\nWe know that when a bar magnet is pushed\ntowards a coil with its north pole facing the coil an\ninduced current is set up in the coil.\nLet the\ndirection of current in the coil be in clockwise\ndirection with respect to north pole of the bar\nmagnet.\nThen this current carrying loop behaves\nfig - 14",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00147"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 251,
+      "textbook_page": 241,
+      "pdf_pages": [
+        251,
+        252,
+        253
+      ],
+      "textbook_pages": [
+        241,
+        242,
+        243
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "· Can you apply conservation of energy for electromagnetic\ninduction?\n10.5.2 Lenz Law\nWhen we push the bar magnet towards the coils, current is generated,\nin other word electromagnetic induction takes place and mechanical energy\nis converted into electrical energy.\nLet us discuss it in detail.\nWe know that when a bar magnet is pushed\ntowards a coil with its north pole facing the coil an\ninduced current is set up in the coil.\nLet the\ndirection of current in the coil be in clockwise\ndirection with respect to north pole of the bar\nmagnet.\nThen this current carrying loop behaves\nfig - 14\nN\nN\nN\nN\nN\nS\nS\nS\nS\nS\nN S\n237 Electromagnetism\nlike a magnet, with its south pole facing the north pole of bar magnet.\nIn\nsuch a case, the bar magnet attracts the coil.\nThen it gains kinetic energy.\nThis is contradictory to conservation of energy.\nSo our assumed clockwise\ndirection of induced current is wrong.\nHence the correct direction of induced\ncurrent has to be in anticlockwise direction with respect to north pole of\nthe bar magnet.\nIn such a case, the north pole of the coil faces the north pole\nof the bar magnet as shown in figure 14.\nThen north pole of bar magnet is\nrepelled by the north pole of the coil.\nHence we need to do work to overcome\nthis force.\nThis work done on the magnet is converted into electrical energy\nin the coil.\nIn this way conservation of energy takes place in electromagnetic\ninduction.\nLet us see a case where the bar magnet is pulled away from the coil, with\nnorth pole facing the coil.\nIn such case, the coil opposes the motion of bar\nmagnet to balance the conversion of mechanical energy into electric energy.\nThis happens only when the north pole of the magnet faces the south pole of\nthe coil.\n· Can you guess what could be the direction of induced current in the coil\nin such case?\nInvariably the direction of induced current in the coil must be in anti\nclock wise direction.\nIn simple terms, when flux increases through coil, the\ncoil opposes the increase in the flux and when flux decreases through coil,\nit opposes the decrease in the flux.\nThis is discovered by a Russian Physicist\nHeinrich Lenz.\nLenz’s law states that “the induced current will appear in such a direction\nthat it opposes the changes in the flux in the coil.”\n· Could we get Faraday’s law of induction from conservation of energy?\n10.5.3 Derivation of Faraday’s Law\nLet us arrange an apparatus as shown in figure 15.\nIt consists of a\npair of parallel bare conductors which are spaced l meters apart in\nuniform magnetic field of ‘B’.\nWe can hold another bare conductor in\nsuch a way that it is in contact with the two parallel wires(see figure-\n15).\n238 Electromagnetism\nA galvano meter is connected\nto the ends of parallel\nconductors to complete an\nelectric circuit.\nNow if the cross\nwire (cross conductor) placed\nacross parallel conductors is\nmoved to the left, galvanometer\nneedle will deflect in one\ndirection.\nIf this cross wire is moved\nto the right, its needle deflects in a direction opposite to the previous\ndeflection.\nSuppose that the crosswire is moved to the left to a distance\nof ‘s’ meters in a time of ‘D t’.\nThen the reading of galvanometer gives us\nthe amount of current that flows in the circuit.\nA current will be set up in\nthe circuit only when there is an EMF in the circuit.",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00148"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 254,
+      "textbook_page": 244,
+      "pdf_pages": [
+        254,
+        255,
+        256
+      ],
+      "textbook_pages": [
+        244,
+        245,
+        246
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "tD gives the speed of the cross wire, let it be taken as v.\nThen we\nget, Electric power P = W\ntD = Fv = BIlv ......(14)\nPower is also given as force times velocity.\nFrom equations (12) and\n(14), we get\nW\ntD = eI Þ eI = BIlv\nWe get,\ne = Blv This is called motional EMF.\n240 Electromagnetism\nThe above equation is not Faraday’s law of induction because it is not\nrelated to the loop.\nIt is useful when a conductor moves in a uniform\nmagnetic field.\nLet us see a few examples on induced emf.\nE x a m p l e 1\nThe magnetic flux inside a coil of 400 turns changes\nfor each single turn with time as shown in figure\nDetermine the maximum induced emf generated in the\ncoil.\nIs there any change in induced EMF from t = 0.1\nsecond to 0.3 second?\nSolution: From the given graph, the increase in\nmagnetic flux through one turn of coil in 0.1 second is 0.001 Wb.\nAccording\nto Faraday’s law, the maximum induced emf generated in the coil is given\nby,\ne = N t\nDF\nD\nSubstituting the values, we get\ne = 400 0.001\n0.1\n´ = 4V\nFrom graph, there is no change in magnetic flux through coil from\nt = 0.1s to 0.3s hence no emf is generated.\nE x a m p l e 2\nFind the length of the conductor which is moving with a speed of 10\nm/s in the direction perpendicular to the direction of magnetic field of\ninduction 0.8T, if it induces an emf of 8V between the ends of the\nconductor.\nSolution: Given that B = 0.8T, v = 10 m/s and e = 8 V.\nUsing e = Blv\n8 = 0.8(l)(10)\nl (length of the conductor) = 1m\n10.5.4 Applications of Faraday’s law of electromagnetic induction\nElectromagnetic induction is all around us.\n· You might have seen that, during security check, people are made to\nwalk through a large upright coil of wire which produces a weak AC\n(alternating) magnetic field.\nIf we are carrying any significant quantities\nfig-E-1\n241 Electromagnetism\nof iron, the magnetic flux linked with the large coil changes and the\ninduced current generated in coil triggers an alarm.\n· The tape recorder which we use to listen to songs (or) record voices\nworks on the principle of electromagnetic induction.\nIt consists of a\npiece of plastic tape coated with iron oxide and is magnetised more in\nsome parts than in others.\nWhen the tape is moved past as a small coil\nof wire (head of the tape recorder), the magnetic field produced by the\ntape changes, which leads to generation of current in the small coil of\nwire.\n· How could we use the principle of electromagnetic induction in the\ncase of using A TM card when its magnetic strip is swiped through a\nscanner?\nDiscuss with your friends and your teacher.\n· An induction stove works on the principle of electromagnetic\ninduction.\nA metal coil is kept just beneath the cooling surface.\nIt carries\nalternating current (AC) so that AC produces an alternating magnetic\nfield.\nWhen you keep a metal pan with water on it, the varying magnetic\nfield beneath it crosses the bottom surface of the pan and an EMF is\ninduced in it.\nBecause the pan is metal the induced EMF generates an\ninduced current in it.\nSince the pan has a finite resistance, the flow\ninduced current in it produces heat in it and this heat is conducted to\nthe water.\nThat’s why we call this stove as induction stove.\nHave you ever thought, from where do we get electrical energy?",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00150"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 260,
+      "textbook_page": 250,
+      "pdf_pages": [
+        260,
+        261,
+        262,
+        263
+      ],
+      "textbook_pages": [
+        250,
+        251,
+        252,
+        253
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "We are greatful to those scientists for inventing a method of generating\nelectrical energy from a generator in this way.\n11\n4\n1\n2\n3\n4\n11\n4\nemf generated coil\nZero emf Maximum\nemf\nZero\nemf\nMaximum\nemf\nZero\nemf\nNo. of\nrevolutions\n0\nfig-17(d)\nPosition of coil in one rotation.\nB\nA\nAB\nB\nA\nA\nB\nA\nAB\nB\nB\n246 Electromagnetism\n· A measure of strength of magnetic flux by taking account of number of field lines is\ncalled magnetic flux.\n· Magnetic flux density (B) is defined as the ratio of flux passing through a plane perpendicular to\nfield and the area of the plane.\n· Current carrying wire produces magnetic field.\n· F = qvB sinθ and F = ILB sinθ\n· In electric motor, electrical energy is converted into mechanical energy.\n· The production of electric current due to relative motion between a coil and a magnetic field is\ncalled electromagnetic induction.\n· Faraday’s law: The induced EMF generated in a closed loop is equal to the rate of change of\nmagnetic flux passing through it.\n· Lenz’s law: the induced current set up in the coil is in such a direction that it opposes the changes\nin the flux.\n· When a conductor of length ‘l’ moves perpendicular to field B with a speed v then potential\ndifference (voltage) developed between the ends of conductor is Blv.\nThis EMF is called motional\nEMF.\n· In generators, mechanical energy is converted into electrical energy.\nI.\nReflections on Concepts\n1.\nAre the magnetic field lines closed?\nExplain. (AS1)\n2.\nSee fig-Q1, magnetic lines are shown.\nWhat is the\ndirection of the current flowing through the wire?(AS1)\nKey words\nMagnetic flux, Magnetic flux density, Electric motor, Slip rings, Induced current, Induced\nEMF , Electric generator, DC and AC currents, rms values\nWhat we have learnt\nImprove your learning\nfig- Q1\n247 Electromagnetism\n3.\nA bar magnet with North Pole facing towards a coil moves as shown in\nfig-Q2.\nWhat happens to the magnetic flux passing through the coil? (AS1)\n4.\nA coil is kept perpendicular to the page.\nAt P, current flows into the page and\nat Q it comes out of the page as shown in fig-Q3.\nWhat is the direction of\nmagnetic field due to the coil? (AS1)\nII.\nApplication of Concepts\n1.\nThe direction of current flowing in a coil is shown in fig-Q4.\nWhat type of magnetic\npole is formed at the face that has flow of current as shown in fig-Q? (AS1)\n2.\nWhy does the picture appear distorted when a bar magnet is brought close to\nthe screen of a television?\nExplain (AS1)\n3.\nSymbol ‘X’ in fig.Q5 indicates the direction of a magnetic field into the page.\nA straight long wire carrying current along its length is kept perpendicular to\nthe magnetic field.\nWhat is the magnitude of force experienced by the wire?\nIn\nwhat direction does it act? (AS1)\n4.\nAn 8N force acts on a rectangular conductor 20cm long placed perpendicular\nto a magnetic field.\nDetermine the magnetic field induction if the current in the conductor is 40A.\n(Ans: 1tesla) (AS1)\n5.\nAs shown in the fig-Q6, both coil and bar magnet moves in the same direction.\nWhat happens?\n(AS2)\n6.\nGive a few applications of Faraday’s law of induction in daily life. (AS7)\nfig- Q6\nN\nV\nC\nN\nfig- Q2\nxP\nQ\nfig- Q3\nfig- Q5\nB\ni\nL\nfig- Q4\n248 Electromagnetism\n1.\nWhich of the following converts electrical energy into mechanical energy [ ]\na) motor b) battery\nc) generator d) switch\n2.\nWhich of the follwing converts mechanical energy into electrical energy [ ]",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00154"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 262,
+      "textbook_page": 252,
+      "pdf_pages": [
+        262,
+        263,
+        264
+      ],
+      "textbook_pages": [
+        252,
+        253,
+        254
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Determine the magnetic field induction if the current in the conductor is 40A.\n(Ans: 1tesla) (AS1)\n5.\nAs shown in the fig-Q6, both coil and bar magnet moves in the same direction.\nWhat happens?\n(AS2)\n6.\nGive a few applications of Faraday’s law of induction in daily life. (AS7)\nfig- Q6\nN\nV\nC\nN\nfig- Q2\nxP\nQ\nfig- Q3\nfig- Q5\nB\ni\nL\nfig- Q4\n248 Electromagnetism\n1.\nWhich of the following converts electrical energy into mechanical energy [ ]\na) motor b) battery\nc) generator d) switch\n2.\nWhich of the follwing converts mechanical energy into electrical energy [ ]\na) motor b) battery\nc) generator d) switch\n3.\nThe magnetic force on a current carrying wire placed in uniform magnetic field if the wire is\noriented perpendicular to magnetic field is [ ]\na) 0 b) ILB\nc) 2ILB d) ILB\n2\n4.\nOne Tesla = [ ]\na) Newton/Coloumb b) Newton / ampere - meter\nc) Ampere / meter d) Newton / ampere second\n5.\nUnit of Magnetic flux [ ]\na) dyne b) Oersterd c) Guass d) Weber\n6.\nNo force works on the conductor carrying electric current when kept [ ]\na) parallel to magnetic field b) perpendicular to magnetic field\nc) in the magnetic field d) away from magnetic field\nMultiple choice questions\nSuggested Projects\n1.\nCollect information about generation of current by using Faraday’s law. (AS4)\n2.\nCollect information about material required and procedure of making a simple electric motor\nfrom internet and make a report. (AS4)\n3.\nCollect information of experiments done by Faraday. (AS4)\nSuggested Experiments\n1.\nExplain with the help of two activities that current carrying wire produces magnetic field. (AS3)\n2.\nHow do you verify experimentally that the current carrying conductor experiences a force when\nit is kept in magnetic field? (AS3)\n3.\nExplain Faraday’s law of induction with the help of activity. (AS3)\n4.\nWhat experiment do you suggest to understand Faraday’s law?\nWhat instruments are required?\nWhat suggestions do you give to get good results of the experiment?\nGive precautions also.\n(AS3)\n5.\nHow can you verify that a current carrying wire produces a magnetic field with the help of an\nexperiment? (AS3)\n249 Principles of Metallurgy\nIn class 8 you have studied about certain properties of metals like,\nmalleability, ductility, sonarity etc.\nMetals play an important role in our\ndaily life.\nWe use various metals for various purposes like gold and silver\nas jewellery, copper, iron, aluminium for making conducting wires and\nfor making utensils etc.\nWe use many house hold articles made up of metals\nand their alloys at our home.\n· Can you mention some articles that are made up of metals?\n· Do metals exist in nature in the same form as that we use in our daily\nlife?\n· Have you ever heard the words like ore, mineral and metallurgy?\n· Do you know how these metals are obtained?\nTo understand these questions you need to know about metallurgy.\nIn\nthis chapter we discuss various concepts related to metallurgy and the\nprocess by which we are able to obtain the pure form of metal that we use\nin our daily life.\n“Metallurgy is the process of extraction of metals from their ores”.\nHuman history in terms of materials had the Bronze Age and Iron Age.\nThe bronze is an alloy of copper and tin.\nNow we have more than 75%\nmetals among the elements available.\n11.1 Occurrence of the metals in nature\n· How are the metals present in nature?\nThe earth’s crust is the major source of metals.\nSea water also contains\nsome soluble salts such as sodium chloride and magnesium chloride etc.\nPrinciples of",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00155"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Faraday’s law of induction explains that a changing magnetic field can induce an electromotive force (EMF) in a conductor. This can be demonstrated through an activity involving a coil, a bar magnet, and a galvanometer. When a bar magnet is moved towards or away from a coil, the galvanometer needle deflects, indicating the presence of an induced current. This happens because the relative motion between the magnet and the coil changes the magnetic flux through the coil. The induced current is in a direction that opposes the change in magnetic flux, as described by Lenz’s law. The activity shows that the induced EMF is proportional to the rate of change of magnetic flux, which is the essence of Faraday’s law of induction.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 250,\n      \"textbook_page\": 240\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 154.16939940000884,
+    "latency_seconds": 223.58790080001927,
+    "usage": {
+      "completion_tokens": 225,
+      "prompt_tokens": 4420,
+      "total_tokens": 4645,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-G7bzikXhDAgUpZcpY9hBpaWeEnm5huea",
+    "peak_rss_bytes": 19040403456
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Faraday’s law of induction explains that a changing magnetic field can induce an electromotive force (EMF) in a conductor. This can be demonstrated through an activity involving a coil, a bar magnet, and a galvanometer. When a bar magnet is moved towards or away from a coil, the galvanometer needle deflects, indicating the presence of an induced current. This happens because the relative motion between the magnet and the coil changes the magnetic flux through the coil. The induced current is in a direction that opposes the change in magnetic flux, as described by Lenz’s law. The activity shows that the induced EMF is proportional to the rate of change of magnetic flux, which is the essence of Faraday’s law of induction.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 250,
+        "textbook_page": 240
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Connect a coil to a sensitive galvanometer",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Move a bar magnet toward the coil and observe deflection",
+        "token_recall": 0.5714,
+        "matched": true
+      },
+      {
+        "point": "A stationary magnet gives no deflection",
+        "token_recall": 0.2,
+        "matched": false
+      },
+      {
+        "point": "Moving the magnet away reverses deflection",
+        "token_recall": 0.4,
+        "matched": false
+      },
+      {
+        "point": "Infer induced emf/current from a changing magnetic flux and state Faraday’s law",
+        "token_recall": 0.8,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.4,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 122
+  },
+  "completed_at": "2026-07-17T15:11:04+00:00"
+}

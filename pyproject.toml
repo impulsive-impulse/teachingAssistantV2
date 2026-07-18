@@ -50,6 +50,8 @@ query-final-pipeline = "textbook_audit.retrieval_baseline:main"
 retrieval-baseline-v1 = "textbook_audit.retrieval_baseline:main"
 manage-retrieval-baseline-v1 = "textbook_audit.baseline_freeze:main"
 finalize-experiments = "textbook_audit.finalize_experiments:main"
+generation-phase-a = "textbook_audit.generation_phase_a:main"
+generation-experiment = "textbook_audit.generation_experiments:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

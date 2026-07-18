@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P2__gold_separate_full__14a86d960a",
+  "question_id": "GEN-PSC-015",
+  "question": "State Ohm’s law. Suggest an experiment to verify it and explain the procedure.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": true,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "353c4a7f11ee5f5ad5f009817c2b014586b1df7bb33a77c6bf512d8e1f87bfe9",
+  "context_sha256": "37ac7a76cd5fff78b0ca36a9c59364b6b5499a57f180c1eea23d4f80ec606ba2",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 208,
+      "textbook_page": 193,
+      "text": "Government’s Gift for Students’ Progress 193 Electric Current\nProcedure: Connect a circuit as shown in\nfig.- 10. Solder the conducting wires to the\nends of the iron spoke. Close the key. Note\nthe readings of current from ammeter and\npotential difference from volt meter in\ntable 1.\nTable:1\nNow connect two cells (in series) instead of one cell in the circuit.\nNote the respective readings of the ammeter and volt meter and record the\nvalues in table 1. Repeat the same for three cells, four cells and five cells\nrespectively. Record the values of potential difference (V) and current (I)\ncorresponding to each case in the table 1. Find V\nI for each set of values.\nWhat do you notice? The ratio V\nI is a constant. We can write this\nmathematically as\nV µ I\nFrom this experiment we can conclude that the potential difference\nbetween the ends of the iron spoke (conductor) is directly proportional to\nthe current passing through it (assuming the temperature of the iron spoke\nis constant during the flow of current through it).\nDraw a graph between V and I taking the current (I) along y-axis and potential\ndifference (V) along x-axis with appropriate scale. You will get\na straight line graph passing through the origin as shown in fig.- 11.\nRepeat the process by using a LED instead of iron spoke.\nThe long terminal of the LED is connected to the positive\nterminal of the battery and short terminal of the LED is\nconnected to negative terminal of the battery. Note the values\nof current ‘I’ and potential difference ‘V’ in each case and record\nthe values in table 1 (draw this table in your notebook).\nSI.No. Potential difference (V) Current (I) V\nI\nfig-10\nA\nV\nIron spoke\nkeyBattery\nI\nI\n(in Ampere)\nfig-11\nV\n(in volt)",
+      "text_sha256": "1b0a04bfeb57a220733c5f272f3ab2f4ecc16c6ce7dcf59b4e71936a2d49b8e8"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 209,
+      "textbook_page": 194,
+      "text": "Government’s Gift for Students’ Progress 194 Electric Current\nFind V\nI for each set of values I and V . You will notice that the\nratio V\nI is not a constant. Draw a graph between V and I for\nLED. You will get a curved graph as shown in fig.- 12.\nFrom the above lab activity we can conclude that the ratio\nbetween V and I is constant for some materials at constant\ntemperature. This fact was established by German Physicist,\nGeorge Simon Ohm and it is popularly known as Ohm’s law.\nWe can define Ohm’s law as follow.\nThe potential difference between the ends of a conductor is directly\nproportional to the electric current passing through it at constant\ntemperature.\nLet V be the potential difference between the ends of the conductor and I\nbe the current passing through it.\nV µ I (temperature is constant)\nV\nI = Constant\nThis constant is called resistance of the conductor. It is denoted by ‘R’.\nThen we get V\nI = R.\nV = IR\nThe SI unit of resistance is Ohm. The symbol of ohm is W.\n1 Ohm = 1 V olt/1 Ampere\n1 W = 1V/A\n· Can you guess the reason why the ratio of V and I in case of LED is not\nconstant?\n· Do all materials obey Ohm’s law?\n· Can we classify the materials based on Ohm’s law?\nBased on Ohm’s law materials are classified into two categories. Those\nwhich obey Ohm’s law are called ohmic materials. For example, metals\nare ohmic materials. Those which do not obey Ohm’s law are called non\nohmic materials. For example, LEDs are non ohmic materials.\n9.4.1 Limitations of Ohm’s Law\nOhm’s law is valid for metal conductors provided the temperature and other\nphysical conditions remain constant. The resistance of the material changes\nwith temperature. Hence for changing temperature the V-I graph for a\nconductor will be non-linear. Ohm’s law is not applicable to gaseous\nconductors. It is also not applicable to semiconductors such as germanium\nand silicon.\nfig-12\nV\n(in volt)\nI\n(in ampere)",
+      "text_sha256": "94928ee280a3993135c345d414d33976e19a4f51c037557ade2df9ecae907a3d"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Ohm’s law states that the potential difference between the ends of a conductor is directly proportional to the electric current passing through it, provided the temperature remains constant. Mathematically, it is expressed as V = IR, where V is the potential difference, I is the current, and R is the resistance of the conductor.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 208,\n      \"textbook_page\": 193\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 209,\n      \"textbook_page\": 194\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 29.208711100000073,
+    "latency_seconds": 59.38229890000366,
+    "usage": {
+      "completion_tokens": 179,
+      "prompt_tokens": 1120,
+      "total_tokens": 1299,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-yVibYwRSC3Qfihu1CtiPN7bczRsiI4oi",
+    "peak_rss_bytes": 13846016000
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Ohm’s law states that the potential difference between the ends of a conductor is directly proportional to the electric current passing through it, provided the temperature remains constant. Mathematically, it is expressed as V = IR, where V is the potential difference, I is the current, and R is the resistance of the conductor.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 208,
+        "textbook_page": 193
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 209,
+        "textbook_page": 194
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "State V ∝ I at constant temperature, so V/I = R",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Connect ammeter in series and voltmeter across the conductor",
+        "token_recall": 0.1667,
+        "matched": false
+      },
+      {
+        "point": "Vary the number of cells/potential difference",
+        "token_recall": 0.4,
+        "matched": false
+      },
+      {
+        "point": "Record paired V and I values in a table",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Show V/I is constant or a straight-line V–I graph",
+        "token_recall": 0.2,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.0,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 54
+  },
+  "completed_at": "2026-07-16T20:57:17+00:00"
+}

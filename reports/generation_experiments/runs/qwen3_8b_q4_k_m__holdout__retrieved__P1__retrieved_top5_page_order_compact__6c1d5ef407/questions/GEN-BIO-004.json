@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407",
+  "question_id": "GEN-BIO-004",
+  "question": "What procedure do you follow to understand anaerobic respiration in your school laboratory?",
+  "book_id": "biology",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "8da745da28f3943e1971cdf751a7083a6d6d897a2fba179375dfa4694701a294",
+  "context_sha256": "fef5e5534ef379bd8de403809fc14f1940609d3223f8562e7ec6caab41288418",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 45,
+      "textbook_page": 36,
+      "pdf_pages": [
+        45,
+        46
+      ],
+      "textbook_pages": [
+        36,
+        37
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "2.3.5 Gaseous exchange (capillaries to cells and cells to capillaries)\nIn the capillaries over the tissues, haemoglobin meets a very different\nenvironment.\nThe tissue are continuously using oxygen, hence, the\nconcentration of oxygen is quite low in them.\nIt might be only one third of\nthat in the lungs.\nAs the concentration of oxygen is so low, oxyhaemoglobin releases\nthe oxygen molecule that enters the cells.\nIn the reactions that occur within\ncells in our bodies, carbon dioxide and water are produced and energy is\nreleased to be used up for different purposes.\nThe carbondioxide released\nby cells enters into the blood capillaries\n2.4 Cellular respiration\nThe term cellular respiration refers to the pathway or a chain of\nchemical reactions by which cells release energy by breaking the chemical\nbonds of glucose molecules.\nWhich is essential for carrying out metabolic\nactivities in the body.\nAll the living cells carry out cellular respiration.\nIt can be in the\npresence of oxygen that is ‘aerobic respiration’, or in the absence of it,\nthe respiration is called ‘anaerobic respiration’.\nIn Animals the anaerobic\nrespiration leads to formation of lactic acid from glucose.\nIn anaerobic\nrepiration few A TP molecules are produced.\nCellular respiration in prokaryotic cells like bacteria occurs within\nthe cytoplasm.\nIn eukaryotic cells cytoplasm and mitochondria are the\nsites of the reactions.\nThe produced energy is stored in mitochondria in\nthe form of A TP.\nThat is why mitochondria are called “power houses of the\ncell”.\nHow does this affect the energy release?\nAs the change in the chemical\nnature of the molecule from one stage to the next is meagre, small amount\nof energy is released.\nThe complete breakdown of a sugar molecule with\nthe release of all its available energy involves a series of different chemical\nreactions.\nUnder these conditions only about half as many molecules of oxygen combine\nwith haemoglobin to form oxyhaemoglobin.\nThis is important, because blood cannot\ncarry enough oxygen to the tissues if haemoglobin is combined with few oxygen\nmolecules.\nIn fact, human life is impossible at such an altitude without a supplementary\nsupply of oxygen.\nProvision for such a supply is built into modern aircraft, which\nhave pressurized cabins that maintain an enriched air supply.\nWe would face other\ntype of problems when we go deep into the sea.\nRespiration37\nFrom the breakdown of glucose, the energy is\nreleased and stored up in a special compound, known\nas A TP (adenosine tri phosphate).\nWhich is a small\namount of chemical energy and it is also called as\nenergy currency of the cell.\nA TP is an energy rich compound that is capable of\nsupplying energy wherever needed within the cell.\nEach\nA TP molecule gives 7200 calories of energy.\nThis\nenergy is stored in the form of phosphate bonds.\nIf the\nbond is broken the stored energy is released.\nx Do cells of alveoli or lungs also require oxygen\nto carry out cellular respiration?\nWhy?\nGlucose is the most commonly used sugar for deriving energy in plants,\nanimals and in microorganisms.\nIn all these organisms the glucose is\noxidized in two stages.\nIn the first stage it is converted into two molecules\nof pyruvic acid.\nIn the second stage if oxygen is available pyruvic acid is\noxidized to CO2, water and large amount of energy is released.\nIf oxygen is inadequate or not utilised, pyruvic acid is converted into\nethanol.\nThis process is called fermentation.\nIn some bacteria lactic acid\nis formed and very little amount of energy (nearly one tenth of that is\nproduced with adequate amount of oxygen) is released.\n2.4.1 Can energy be released without oxygen?",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00020"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 49,
+      "textbook_page": 40,
+      "pdf_pages": [
+        49,
+        50
+      ],
+      "textbook_pages": [
+        40,
+        41
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "If human muscles can go on releasing\nenergy when they are short of oxygen, what can the cells of other living\norganisms do?\nLet us find out by doing some experiments.\nExperiments with yeast\nTo test this idea we can see whether it is possible to detect any rise in\ntemperature and the production of carbon dioxide, when living organisms\nare kept away from a supply of oxygen.\nYeast\ngrows rapidly if it is supplied with glucose in\nsolution.\nIndeed, wild yeasts are normally found\ngrowing on the skins of fruits like grapes and\napples, from which they derive their food\nsupplies.\nOur immediate problem is to remove\nthe oxygen from the glucose solution and yeast.\nArrange the apparatus as shown in fig.\n12\n1.\nYou can remove dissolved oxygen from\nglucose solution by heating it for a minute,\nand then cooling it without shaking.\nNow\nput in some yeast; the supply of oxygen\nfrom the air can be cut off by pouring one centimetre layer of liquid\nparaffin on to the mixture.\n2.\nIf you wish to check that the oxygen has been removed from the\nmixture, add a few drops of diazine green (Janus Green B) solution to\nthe yeast suspension before you pour the liquid paraffin (wax) over it.\nThis blue dye turns pink when oxygen is in short supply around it.\n3.\nAnother bottle containing bicarbonate/indicator solution (or lime\nwater) is attached as in the Fig-12.\nDuring the process of anaerobic\nrespiration some amount of carbondioxide is released.\nFig-12: Testing for production of heat and\nCO2 under anaerobic respiration\nliquid paraffin\nyeast in boiled\nand cooled\nglucose solution\nlime water\nthermometer\nLab Activity\nRespiration41\nThe released carbondioxide passes through the tube and turns lime\nwater milky.\nWe can observe the change in the temperature also during\nthis process.\nYou may prefer to carry out the ‘carbon dioxide production’\npart of the experiment on a smaller scale, using test tubes.\nIf you do, then\nwarm them to about 37o C in order to speed up the test.\nx What happens when a baker prepares a dough by mixing yeast in it?\n2.6 Fermentation\nLet us recall maida dough and yeast powder activity that you performed\nin class VIII in the chapter ‘The story of microorganisms’.\nWhy volume of\nthe dough has increased?\nWhich gas released in that reaction?\nIf yeast and sugar solution are left to stand without oxygen for some\ndays, they develop a characteristic smell, caused by production of new\ncompound called ethanol, which has been manufactured by the yeast from\nthe sugar.\nThe same type of smell you can notice from preserved idly,\ndosa dough at your home, but not in refrigirator.\nThe ethanol can be separated\nfrom the yeast-glucose mixture by the process of fractional distillation\nsince ethanol boils at a lower temperature (70°C) than the sugar solution.\nCollect information about fractional distillation with the help your teacher.\nQuite like aerobic respiration this is a process of producing energy\nwhen there is no supply of oxygen.\nx Respiration is an energy releasing process, do you agree?\nJustify\nyour answer.\n2.7 Respiration versus combustion\nLavoisier around the late 18 thcentury, through a series of carefully\nperformed experiments, came to the opinion that respiration was a process\nlike combustion.\nHe wrote in a compilation in 1783, “respiration is a\ncombustion process.\nIt is a very slow process and here oxygen is not only\ncombines with carbon but also with hydrogen.” Robinson also stated that\nrespiration is a type of combustion and combustion is the source of heat\nin animals.\nActivity-2\nObserving changes during combustion of glucose",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00023"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 57,
+      "textbook_page": 48,
+      "pdf_pages": [
+        57,
+        58
+      ],
+      "textbook_pages": [
+        48,
+        49
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x Photosynthesis and respiration appear to be opposing reactions, but both have very different\nbiochemical pathways and are essential for a plant’s metabolism.\nx Photosynthesis takes place in the chloroplast to produce sugars, starch and other carbohydrates\nfor the plant’s metabolic needs.\nx Cellular respiration occurs in mitochondria where mainly these carbohydrates are “oxidised” to\nproduce chemical energy to do work at the cellular level.\n1.\nDistinguish between (AS1)\na) inspiration and expiration b) aerobic and anaerobic respiration\nc) respiration and combustion d) photosynthesis and respiration\n2.\nWrite two similarities between aerobic and anaerobic respiration. (AS1)\n3.\nFood sometimes enters the wind pipe and causes choking.\nHow does it happen? (AS1)\n4.\nWhy does the rate of breathing increase while walking uphill at a normal pace in the mountains?\nGive two reasons. (AS1)\n5.\nAir leaves the tiny sacs in the lungs to pass into capillaries.\nWhat modification is needed in the\nstatement? (AS1)\n6.\nPlants carryout photosynthesis during daytime and respiration during the night.\nDo you agree to this\nstatement?\nWhy?\nWhy not? (AS1)\n7.\nWhy does a deep sea diver and mountainair carry oxygen cylinder on their back? (AS1)\n8.\nHow are alveoli designed to maximize the exchange of gases? (AS1)\n9.\nWhere will the release of energy from glucose in respiration take place?\nMala writes lungs while\nRaziya writes muscles.\nWho is correct and why? (AS1)\n10.\nWhat is the role of epiglottis and diaphragm in respiration? (AS1)\n11.\nHow does gaseous exchange takes place at blood level (or) cellular level? (AS1)\n12.\nExplain the mechanism of gaseous exchange at branchiole level. (AS1)\n13.\nAfter a vigorous excercise or work we feel pain in muscles.\nWhat is the relationship between pain\nand respiration? (AS1)\n14.\nRaju said stem also respire along with leaves in plants.\nCan you support this statement?\nGive your\nreasons. (AS1)\nImprove your learning\nRespiration49\n15.\nWhat happen if diaphragm is not there in the human body? (AS2)\n16.\nIf you have a chance to meet pulmonologist what questions are you going to ask about pulmonory\nrespiration? (AS2)\n17.\nWhat procedure do you follow to understand anaerobic respiration in your school laboratory?\n(AS3)\n18.\nWhat are your observations in combustion of sugar activity? (AS3)\n19.\nCollect information about cutaneous respiration in frog.\nPrepare a note and display them in your\nclassroom. (AS4)\n20.\nCollect information about respiratory diseases (because of pollution, tobacco) and discuss with\nyour classmates. (AS4)\n21.\nWhat is the pathway taken by air in the respiratory system?\nIllustrate with a labelled diagram.\n(AS5)\n22.\nDraw a block diagram showing events in respiration.\nWrite what you understood about cellular\nrespiration. (AS5)\n23.\nHow do you appreciate the mechanism of respiration in our body? (AS6)\n24.\nPrepare an article on anaerobic respiration to present school symposium. (AS7)\n25.\nPrepare a cartoon on discussion between haemoglobin and chlorophyll about respiration. (AS7)\n1.\nExhaled air contains _________ and _________.\n2.\nA flap like muscular valve controls movement of air and food is ___________.\n3.\nEnergy currency of the cell is called _____________.\n4.\nLenticels are the respiratory organs exists in __________ part of plant.\n5.\nMangroove trees respire with their ____________.\n1.\nW e will find vocal cords in ( )\nA) larynx B) pharynx C) nasal cavity D) trachea\n2.\nCluster of air sacs in lungs are called ( )\nA) alveoli B) bronchi C) bronchioles D) air spaces\n3.\nWhich of the following is correct ( )\ni) the diaphragm contracts - volume of chest cavity increased\nii) the diaphragm contracts - volume of chest cavity decreased\niii) the diaphragm relax - volume of chest cavity increased\niv) the diaphragm relax - volume of chest cavity decreased",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00029"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 256,
+      "textbook_page": 247,
+      "pdf_pages": [
+        256,
+        257
+      ],
+      "textbook_pages": [
+        247,
+        248
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "as the laboratory performance.\nLab activities are part and parcel of a lesson.\nSo, teachers\nmust make the children conduct all such activities during the lesson itself, but not separately.\n Teachers are advised to follow the following teaching steps while transacting lessons-mind\nmapping, reading lesson and identifyng new words by children, performing activities,\ndemonstration and discussion, conclusion and evaluation.\n In the text, some special activities are presented as box items: ‘think and discuss, let us do,\nconduct interview, prepare report, display in wall magazine, participate in Theatre Day, do\nfield observation, organize special days’.\nTo perform all of them is compulsory.\n The abbreviation (A.S.) given at the end of each question in the section “Improve your\nlearning” indicates academic standard.\n Collect information of relevant website addresses and pass on to students so that they can\nutilize internet services for learning science on their own.\n Plan and execute activities like science club, elocution, drawing, writing poetry on science,\nmaking models etc.to develop positive attitude among children about environment,\nbiodiversity, ecological balance etc.\n As a part of continuous comprehensive evaluation, observe and record children’s\nlearning abilities during various activities conducted in classroom, laboratory and field.\n Teaching learning strategies and the expected learning outcomes, have been developed\nclass wise and subject-wise based on the syllabus and compiled in the form of a Hand\nbook to guide the teachers and were supplied to all the schools.\nWith the help of this Hand\nbook the teachers are expected to conduct effective teaching learning processes and ensure\nthat all the students attain the expected learning outcomes.\nWe believe, you must have realized that the learning of science and scientific thinking are\nnot mere drilling of the lessons but, in fact, a valuable exercise in motivating the children to\nexplore for solutions to the problems systematically and preparing them to meet life’s challenges\nproperly.\n248 Natural Resources\nDear Students...\nLearning science does not mean scoring good marks in the subject.\nCompetencies like\nthinking logically and working systematically, learned through it,have to be practiced in daily\nlife.\nTo achieve this, instead of memorizing the scientific theories by rote, one must be able to\nstudy them analytically.\nThat means, in order to understand the concepts of science, you need\nto proceed by discussing, describing, conducting experiments to verify, making observations,\nconfirming with your own ideas and drawing conclusions.\nThis textbook helps you to learn in\nthat way .\nWhat you need to do to achieve such things:\n In 10th class the range of concepts is wide.\nSo go through each lesson thoroughly before\nthe teacher actually deals with it.\n Note down the points you came across so that you can grasp the lesson better.\n Think of the principles in the lesson.\nIdentify the concepts you need to know further, to\nunderstand the lesson in depth.\n Do not hesitate to discuss analytically about the questions given under the sub-heading\n‘Think and Discuss’ with your friends or teachers.\n You may get some doubts while conducting an experiment or discussing about a lesson.\nExpress them freely and clearly.\n Plan to implement experiment/lab periods together with teachers, to understand the\nconcepts clearly.\nWhile learning through the experiments you may come to know many\nmore things.\n Create alternative to experiments with your own ideas.\n Analyse how each teaching point has relation with daily life and discuss the things you\nlearned in your science class with farmers, artisans etc.\n Observe how each lesson is helpful to conserve nature.\nPut what you learnt into practice.\n Work as a group during interviews and field trips.\nPreparing reports and displaying them\nis a must.\nDiscuss on the report prepared.",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00158"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 257,
+      "textbook_page": 248,
+      "pdf_pages": [
+        257
+      ],
+      "textbook_pages": [
+        248
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Express them freely and clearly.\n Plan to implement experiment/lab periods together with teachers, to understand the\nconcepts clearly.\nWhile learning through the experiments you may come to know many\nmore things.\n Create alternative to experiments with your own ideas.\n Analyse how each teaching point has relation with daily life and discuss the things you\nlearned in your science class with farmers, artisans etc.\n Observe how each lesson is helpful to conserve nature.\nPut what you learnt into practice.\n Work as a group during interviews and field trips.\nPreparing reports and displaying them\nis a must.\nDiscuss on the report prepared.\n List out the observations regarding each lesson to be carried through internet, school\nlibrary and laboratory.\n Whether in note book or exams, write analytically , expressing your own opinions.\nA void\nguides, question books etc.\n Read books related to your text book, as many as you can.\n Y ou organize yourself the Science Club programs in your school.\n Observe problems faced by the people in your locality and find out what solutions you\ncan suggest through your science classroom.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00159"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"To understand anaerobic respiration in the school laboratory, you can follow a procedure that involves testing for the production of carbon dioxide and heat. First, you need to prepare a glucose solution and remove the dissolved oxygen from it by heating and cooling the solution without shaking. Then, add yeast to the solution. To prevent oxygen from entering, pour a layer of liquid paraffin on top of the mixture. This creates an anaerobic environment. Next, attach a tube to the mixture leading to a bicarbonate/indicator solution (like lime water) to detect the release of carbon dioxide, which will turn the lime water milky. Additionally, use a thermometer to observe any change in temperature, indicating the release of heat during the process. This experiment helps demonstrate how anaerobic respiration produces carbon dioxide and heat without the presence of oxygen.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 45,\n      \"textbook_page\": 36\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 49,\n      \"textbook_page\": 40\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 57,\n      \"textbook_page\": 48\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 100.28186570000253,
+    "latency_seconds": 186.04181289998814,
+    "usage": {
+      "completion_tokens": 317,
+      "prompt_tokens": 3808,
+      "total_tokens": 4125,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-WPrsYVvqbBUceAM8vwdmWioU9p2pKC5f",
+    "peak_rss_bytes": 11398361088
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "To understand anaerobic respiration in the school laboratory, you can follow a procedure that involves testing for the production of carbon dioxide and heat. First, you need to prepare a glucose solution and remove the dissolved oxygen from it by heating and cooling the solution without shaking. Then, add yeast to the solution. To prevent oxygen from entering, pour a layer of liquid paraffin on top of the mixture. This creates an anaerobic environment. Next, attach a tube to the mixture leading to a bicarbonate/indicator solution (like lime water) to detect the release of carbon dioxide, which will turn the lime water milky. Additionally, use a thermometer to observe any change in temperature, indicating the release of heat during the process. This experiment helps demonstrate how anaerobic respiration produces carbon dioxide and heat without the presence of oxygen.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 45,
+        "textbook_page": 36
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 49,
+        "textbook_page": 40
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 57,
+        "textbook_page": 48
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 3,
+    "citation_count": 3
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Use yeast supplied with glucose solution",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Remove/exclude oxygen and prevent its re-entry",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Maintain an experimental setup and an appropriate comparison",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Detect carbon dioxide and/or a temperature rise",
+        "token_recall": 0.8,
+        "matched": true
+      },
+      {
+        "point": "Infer that yeast releases energy and CO₂ without oxygen",
+        "token_recall": 0.4286,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.4,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 138
+  },
+  "completed_at": "2026-07-17T12:02:02+00:00"
+}

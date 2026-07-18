@@ -1,0 +1,55 @@
+{
+  "backend": "cpu_arm64",
+  "command": [
+    "C:\\Users\\saman\\AppData\\Local\\Temp\\ta_v2_backend_probe_b10046\\llama-b10046-bin-win-cpu-arm64\\llama-server.exe",
+    "--model",
+    "C:\\Users\\saman\\AppData\\Local\\Temp\\ta_v2_backend_probe_b10046\\models\\Qwen3-8B-Q4_K_M.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18081",
+    "--ctx-size",
+    "8192",
+    "--threads",
+    "10",
+    "--threads-batch",
+    "10",
+    "--batch-size",
+    "512",
+    "--ubatch-size",
+    "256",
+    "--seed",
+    "42",
+    "--parallel",
+    "1",
+    "--n-gpu-layers",
+    "0",
+    "--metrics",
+    "--no-webui"
+  ],
+  "prompt": "Answer in one concise sentence. Why does a pencil look bent when partly submerged in water? /no_think",
+  "load_seconds": 5.983620500002871,
+  "ttft_seconds": 0.43391980000888,
+  "latency_seconds": 1.883261599999969,
+  "probe_wall_seconds": 11.698261300000013,
+  "peak_memory": {
+    "working_set_bytes": 10640814080,
+    "private_bytes": 6093660160
+  },
+  "energy_joules": {
+    "_total": 213.712128995,
+    "gpu": 0.067207047
+  },
+  "output": "A pencil looks bent when partly submerged in water due to the refraction of light as it passes from water to air.",
+  "output_valid": true,
+  "server_perf": {
+    "prompt_tokens": null,
+    "prompt_tokens_per_second": null,
+    "generated_tokens": null,
+    "generation_tokens_per_second": null
+  },
+  "logs": {
+    "stdout": "C:\\Users\\saman\\AppData\\Local\\Temp\\ta_v2_backend_probe_b10046\\results\\cpu_arm64_server_stdout.log",
+    "stderr": "C:\\Users\\saman\\AppData\\Local\\Temp\\ta_v2_backend_probe_b10046\\results\\cpu_arm64_server_stderr.log"
+  }
+}

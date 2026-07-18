@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P3__gold_separate_full__f7c64b7670",
+  "question_id": "GEN-PSC-002",
+  "question": "Find the distance of the image, when an object is placed on the principal axis, at a distance of 10 cm in front of a concave mirror whose radius of curvature is 8 cm.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "a25ce274c2a3b75fc31213de2b7cd64e40389cff448953603ebeff822dc884f8",
+  "context_sha256": "ffe8062445619df1313212e18bb1c51238f52325fde679e7ab8b67b25f0c3126",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 28,
+      "textbook_page": 18,
+      "text": "18 Reflection of light at curved surfacesGovernment’s Gift for Students’ Progress\nIn the same way make a big concave mirror to heat up a vessel.\nYou might have observed the TV dish antenna. Make\na wooden/ iron frame in the shape of TV dish. Cut acrylic\nmirror sheets in to 8 or 12 pieces in the shape of\nisosceles triangles with a height equal to the radius of\nyour dish antenna. The bases of 8 or 12 triangles together\nmake the circumference of the dish. Stick the triangle\nmirrors to the dish as shown in fig.-24. Your solar heater/\ncooker is ready.\nArrange it so that concave part faces sun. Find its\nfocal point and place a vessel at that point. The vessel\ngets heated enough to cook rice.\nIn practical applications (like in car-headlights),\nconcave mirrors are of parabolic shape (see fig. 25)\nKey words\ncentre of curvature, radius of curvature, principal axis, pole, focus/focal\npoint, focal length, object distance, image distance, virtual image, real\nimage, magnification\n· Normal to the curved surface at a point on it is the line joining the centre of curvature and that\npoint.\n· Mirror formula:\n1\nf\næöç÷èø =\n1\nv\næöç÷èø +\n1\nu\næöç÷èø\n· Magnification m =\nsize of the image\nsize of the object\næö\nç÷èø = i\no\nh\nh\næö\nç÷èø\n(or)\nm = –\nimage distance\nobject distance\næö\nç÷èø =\nv\nu\næö-ç÷èø\nfig-24\nfig-25\nFP\nWhat we have learnt",
+      "text_sha256": "b526da7343dad939f68c3c3c51d48f1d965793c1dfa26acb2220bd019cddf611"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 29,
+      "textbook_page": 19,
+      "text": "Reflection of light at curved surfacesGovernment’s Gift for Students’ Progress 19\n· The image formed by actual intersection of reflection rays is called real image. This can be\ncaught on screen.\n· The image formed by controlled rays of reflection is called virtual image. It can not be caught\non screen.\nI. Reflections on concepts\n1. Where will the image be formed when we place an object on the principal\naxis of a concave mirror at a point between focus and centre of\ncurvature?(AS1)\n2. State the differences between convex and concave mirrors? (AS1)\n3. Distinguish between real and virtual images. (AS1)\n4. How do you get a virtual image using a concave mirror? (AS1)\n5. What do you know about the terms given below related to spherical mirrors? (AS1)\na) Pole b) Centre of curvature c) Focus\nd) Radius of curvature e) Focal length f) Principal axis\ng) Object distance h) Image distance i) Magnification\n6. What do you infer from the experiment which you did to measure the object distance and\nimage distance? (AS3)\nII. Application of concepts\n1. Find the distance of the image when an object is placed on the principal axis at a distance\nof 10 cm infront of a concave mirror whose radius of curvature is 8 cm. (AS1)\n2. The magnification product by a mirror is +1. What does it mean?(AS1)\nImprove your learning\nPosition of the\ncandle (object)\nEnlarged?/\ndiminished?\nInverted or\nerect\nPosition of\nthe image\nBetween mirror & F Behind the mirror Enlarged Erect Virtual\nOn focal point At infinity - - -\nBetween F and C Beyond C Enlarged Inverted Real\nOn centre of curvature At C Same size Inverted Real\nBeyond C Between F and C Diminished Inverted Real\nAt infinity At focus point - Real\nReal or\nvirtual",
+      "text_sha256": "99b1d5d40a4782845912fe4ed2b69685556562415eebe0887dc4c4226a955820"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"To find the distance of the image formed by a concave mirror, we use the mirror formula: 1/f = 1/v + 1/u. First, we need to find the focal length (f) of the mirror. The radius of curvature (R) is given as 8 cm, and the focal length of a concave mirror is half of the radius of curvature. So, f = R/2 = 8 cm / 2 = 4 cm. The object distance (u) is given as -10 cm (negative because the object is placed in front of the mirror). Substituting these values into the mirror formula: 1/4 = 1/v + 1/(-10). Solving for 1/v gives 1/v = 1/4 - 1/10 = 5/20 - 2/20 = 3/20. Therefore, v = 20/3 cm ≈ 6.67 cm. The image is formed at a distance of approximately 6.67 cm in front of the mirror.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 28,\n      \"textbook_page\": 18\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 20.969627099999343,
+    "latency_seconds": 72.61420050000015,
+    "usage": {
+      "completion_tokens": 303,
+      "prompt_tokens": 1045,
+      "total_tokens": 1348,
+      "prompt_tokens_details": {
+        "cached_tokens": 126
+      }
+    },
+    "response_id": "chatcmpl-0inJfx8TaVzBiGfo4lHPJjDBRsQ61f9k",
+    "peak_rss_bytes": 12545470464
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "To find the distance of the image formed by a concave mirror, we use the mirror formula: 1/f = 1/v + 1/u. First, we need to find the focal length (f) of the mirror. The radius of curvature (R) is given as 8 cm, and the focal length of a concave mirror is half of the radius of curvature. So, f = R/2 = 8 cm / 2 = 4 cm. The object distance (u) is given as -10 cm (negative because the object is placed in front of the mirror). Substituting these values into the mirror formula: 1/4 = 1/v + 1/(-10). Solving for 1/v gives 1/v = 1/4 - 1/10 = 5/20 - 2/20 = 3/20. Therefore, v = 20/3 cm ≈ 6.67 cm. The image is formed at a distance of approximately 6.67 cm in front of the mirror.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 28,
+        "textbook_page": 18
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Use f = R/2 = -4 cm and u = -10 cm under the textbook sign convention",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Apply 1/f = 1/v + 1/u",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Obtain v = -20/3 cm ≈ -6.67 cm",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Interpret the negative sign as a real image on the object side",
+        "token_recall": 0.4286,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.25,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 142
+  },
+  "completed_at": "2026-07-16T21:08:39+00:00"
+}

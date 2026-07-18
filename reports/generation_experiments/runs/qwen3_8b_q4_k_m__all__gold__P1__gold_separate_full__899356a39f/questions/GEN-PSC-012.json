@@ -1,0 +1,131 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f",
+  "question_id": "GEN-PSC-012",
+  "question": "What are the limitations of Mendeleev’s periodic table, and how does the modern periodic table address them?",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "73ff6f63ff7dac8ab39d992b697205b9bfcb0c780d2503e065a40ad9c9e30218",
+  "context_sha256": "4890fab4f2923c37a1b8c0c2b15505749f6c1f82452e4932fc25e3f060aa591e",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 146,
+      "textbook_page": 136,
+      "text": "Government’s Gift for Students’ Progress 131 Classification of Elements - The Periodic Table\nIn the first row you will find that atomic weight of sodium\n(Na) is equal to the average of atomic weights of lithium (Li) and\npotassium (K).\n· Can you establish the same relationship with the set of\nelements given in the remaining rows?\n· Find average atomic weights of the first and third elements\nin each row and compare it with the atomic weight of the\nmiddle element.\n· What do you observe?\nDöbereiner’s attempts gave a clue that atomic weights could be\ncorrelated with properties of elements. It made chemists look\nat elements in terms of groups of elements with similar chemical and\nphysical properties. This eventually led to rigorous classification\nof elements and to develop periodic table of elements.\n7.2.1 Limitations\ni. All the known elements at that time could not be arranged in the form of triads.\nii. The law failed for very low mass or for very high mass elements.\nIn case of F, C l, Br, the atomic weight of C l is not exactly\nan arithmetic mean of atomic weights of F and Br.\niii. As the techniques improved for measuring atomic masses accurately,\nthe law was unable to remain strictly valid.\n7.3 Newlands’ law of Octaves\nJohn Newlands was a British chemist. Newlands (1865)\nfound that when elements were arranged in the ascending order\nof their atomic weights they appeared to fall into 7 groups. Each\ngroup contained elements with similar chemical properties.\nBased on these observations, Newlands proposed the law of\noctaves.\nThe law of octaves states that when elements are arranged in\nthe ascending order of their atomic weights they fall into a pattern\nin which their properties repeat at regular intervals.\nDöbereiner\nNewlands\nThink and discuss\n· What relation about elements did Döbereiner want to establish?\n· The densities of calcium (Ca) and barium (Ba) are 1.55 and 3.51\ngcm-3 respectively. Based on Dobereiner’s law of triads can you\ngive the approximate density of strontium (Sr)?",
+      "text_sha256": "10a92cb37c626790c292b837c03fdc288514d6d9577858387655a948a1cf1deb"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 152,
+      "textbook_page": 142,
+      "text": "Government’s Gift for Students’ Progress 137 Classification of Elements - The Periodic Table\nThe equivalent weight of Be was found experimentally as 4.5 and its\nvalency was thought as 3. Therefore, the atomic weight of beryllium\nwas given at that time as 4.5 × 3 = 13.5. With this atomic weight it had\nto be placed in a wrong group in the table. He said that its valency\nshould be only 2. Then its atomic weight would be 4.5 × 2 = 9. If\natomic weight of ‘Be’ is 9 it would be fit in the second group and its\nproperties practically are similar to Mg, Ca etc., of the second group\nelements. He also helped in the calculation of the correct atomic\nweights of ‘Indium’ and ‘Gold’ in this manner.\n5. Anomalous series: Some anomalous series of elements like telurium\n(Te) and iodine (I) were observed in the table. The anomalous series\ncontained elements with more atomic weights like ‘Te’ (127.6 U) placed\nbefore the elements with less atomic weights like ‘I’ (126.9 U).\nMendeleeff accepted minor inversions in the order of increasing\natomic weights as these inversions resulted in elements being placed\nin the correct groups.\nIt was the extraordinary thinking of Mendeleeff that made the chemists\nto accept the periodic table and recognise Mendeleeff more than anyone\nelse as the originator of the periodic law.\n7.4.3 Limitations of Mendeleeff’s periodic table\n1. Anomalous pair of elements:\nCertain elements of higher atomic weights precede those with lower\natomic weights.\nFor example, tellurium - Te (atomic weight 127.6) precedes iodine\n- I(atomic weight 126.9). Co, Ni, K, Ar are also arranged difficulty\nto the subject of assending atomic masses.\n2. Dissimilar elements placed together:\nElements with dissimilar properties were placed in same group as\nsub-group A and sub-groupB.\nDo you know?\nAt the time when Mendeleeff introduced his periodic table, even, electrons were\nnot discovered. Even then the periodic table was able to provide a scientific base\nfor the study of chemistry of elements. In his honour the 101th element was named\nMendelevium.",
+      "text_sha256": "0881e457af322c107ae13e99249d7ab2f03acf7b37dca77071f30ac4cdacc51a"
+    },
+    {
+      "evidence_id": "E3",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 153,
+      "textbook_page": 143,
+      "text": "Government’s Gift for Students’ Progress 138 Classification of Elements - The Periodic Table\nFor example, alkali metal like Li, Na, K etc., of IA group have little\nresemblance with coinage metals like Cu, Ag, Au of IB group.Cl is of\nVII A group and ‘Mn’ is of VII B, but chlorine is a non metal, where as\nmanganese is a metal.\n7.5 Modern Periodic Table\nH.J. Moseley (1913) found that each element emits a characteristic\npattern of X-rays when subjected to bombardment with high energy\nelectrons. By analyzing the X-ray patterns, Moseley was able\nto calculate the number of positive charges in the atoms of\nrespective elements. The number of positive charges (protons)\nin the atom of an element is called the atomic number of the\nelement. With this analysis Moseley realised that the atomic\nnumber(Z) is more fundamental characteristic of an element\nthan its atomic weight.\nAfter knowing the atomic numbers of elements, it was\nrecognized that a better way of arranging the elements in the\nperiodic table is according to the increasing atomic number.\nThis arrangement eliminated the problem of anomalous series.\nFor example, though tellurium (Te) has more atomic weight\nthan iodine (I), it has atomic number less by one unit compared to iodine.\nThis atomic number concept forced the periodic law to be changed.\nThe periodic law is changed from atomic weight concept to atomic\nnumber concept and now it is called the modern periodic law.\nWe know that Mendeleeff’s periodic law is stated as “The properties\nof elements are the periodic functions of their atomic weights”. Now, let\nus try to understand modern periodic law.\nThe modern periodic law may be stated as “the properties of the\nelements are periodic functions of their atomic numbers.”\nH.J. Moseley\nThink and discuss\n· Why Mendeleeff had to leave certain blank spaces in his periodic table?\n· What is your understanding about Ea2O3, EsO2 present in the table?\n· All alkali metals are solids but hydrogen is a gas with diatomic molecules. Do\nyou justify the inclusion of hydrogen in first group with alkali metals? Why?",
+      "text_sha256": "08f5a3184fcf49fe02f2b4ad7ae3437f34816437d337fc5906f96684d3c11128"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Mendeleev’s periodic table had several limitations. One major limitation was the presence of anomalous pairs of elements, where elements with higher atomic weights were placed before those with lower atomic weights. For example, tellurium (Te) with an atomic weight of 127.6 was placed before iodine (I) with an atomic weight of 126.9. This caused confusion in the arrangement. Additionally, dissimilar elements were sometimes placed together in the same group, which did not reflect their chemical and physical properties accurately. Another limitation was that the periodic table was based on atomic weights, which led to inaccuracies when atomic weights were not precisely measured. The modern periodic table addresses these limitations by arranging elements based on their atomic numbers instead of atomic weights. This change resolved the issue of anomalous pairs and ensured that elements with similar properties are grouped together. The modern periodic table, introduced by H.J. Moseley, is based on the atomic number, which is a more fundamental property of an element than atomic weight.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\", \"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 146,\n      \"textbook_page\": 136\n    },\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 152,\n      \"textbook_page\": 142\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 153,\n      \"textbook_page\": 143\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 32.35213010001462,
+    "latency_seconds": 83.89760560001014,
+    "usage": {
+      "completion_tokens": 364,
+      "prompt_tokens": 1705,
+      "total_tokens": 2069,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-EbUngV9VhFn2HfXobYuNiIrELo1Fqpqx",
+    "peak_rss_bytes": 17075228672
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Mendeleev’s periodic table had several limitations. One major limitation was the presence of anomalous pairs of elements, where elements with higher atomic weights were placed before those with lower atomic weights. For example, tellurium (Te) with an atomic weight of 127.6 was placed before iodine (I) with an atomic weight of 126.9. This caused confusion in the arrangement. Additionally, dissimilar elements were sometimes placed together in the same group, which did not reflect their chemical and physical properties accurately. Another limitation was that the periodic table was based on atomic weights, which led to inaccuracies when atomic weights were not precisely measured. The modern periodic table addresses these limitations by arranging elements based on their atomic numbers instead of atomic weights. This change resolved the issue of anomalous pairs and ensured that elements with similar properties are grouped together. The modern periodic table, introduced by H.J. Moseley, is based on the atomic number, which is a more fundamental property of an element than atomic weight.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2",
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 146,
+        "textbook_page": 136
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 152,
+        "textbook_page": 142
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 153,
+        "textbook_page": 143
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 3,
+    "citation_count": 3
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "State the uncertain position of hydrogen",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Explain anomalous atomic-mass ordering",
+        "token_recall": 0.4,
+        "matched": false
+      },
+      {
+        "point": "Explain difficulty placing isotopes and separation/grouping anomalies",
+        "token_recall": 0.2857,
+        "matched": false
+      },
+      {
+        "point": "Modern classification uses atomic number rather than atomic mass",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Atomic number/electronic configuration resolves isotope and ordering problems",
+        "token_recall": 0.375,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.0,
+    "citation_validity": 1.0,
+    "unsupported_claims": [
+      "Mendeleev originally arranged elements by atomic number"
+    ],
+    "unsupported_claim_rate": 1.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 165
+  },
+  "completed_at": "2026-07-17T19:07:59+00:00"
+}

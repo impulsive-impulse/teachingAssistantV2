@@ -1,0 +1,6 @@
+{
+  "qwen3_14b_q4_k_m__holdout__gold__P1__gold_separate_full__d7742c81bc": "Answer A",
+  "qwen3_14b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__01c91d4040": "Answer B",
+  "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6": "Answer C",
+  "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407": "Answer D"
+}

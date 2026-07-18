@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__gold__P1__gold_separate_full__d7742c81bc",
+  "question_id": "GEN-PSC-001",
+  "question": "Why do we prefer a convex mirror as a rear-view mirror in the vehicles?",
+  "book_id": "physical_sciences",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "311d62ed4f7bbb953324b9b2007cb1a8bbdda84994839a0375ab602b8d631c72",
+  "context_sha256": "2a0c6b0d172effe445bcfd59b042a7fcd9453ef5fbe230fa8f8978c1e03af1cf",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 23,
+      "textbook_page": 13,
+      "text": "Reflection of light at curved surfacesGovernment’s Gift for Students’ Progress 13\n1.3 Ray Diagrams: (Image formation by convex mirror)\nOne can draw ray diagrams for a convex mirror too. The ‘easy’ rays\nthat we identified earlier can be used in this case with small modification.\nHere there are three rules which describe these rays. The procedure for\ndrawing the diagram is similar and is not repeated here.\nRule 1: A ray parallel to the axis, on meeting the\nconvex mirror will get reflected so as to appear as if it\nis coming from the focal point. See fig.-17.\nRule 2: This is\nconverse of Rule 1. A\nray travelling in the\ndirection of the focal point, after\nreflection, will become parallel to the\naxis. See fig.-18.\nRule 3: A ray travelling in the direction of the\ncentre of curvature will, on reflection, travel in the\nopposite direction and appears to be coming from the\ncentre of curvature. See fig.-19.\nNow let us use these rules to show the formation\nof images when the object is placed at different places infront of the convex\nmirror (see fig.-20)\nAB is the object placed at any point\non the principal axis infront of the\nconvex mirror. Using Rule (1) and\nRule (3), we get an erected, diminished,\nand virtual image between P and F on\nthe back side of the mirror. This image\ncan not be caught on screen and visible\nonly in the mirror. Hence this is a\nvirtual image. V erify this with an experiment.\nUsing these rules, draw ray diagrams to show formation of images\nwhen an object is placed at different positions and note down your\nconclusions. V erify your results experimentally.\nC F p\nfig-18\nC F\nB\nAF PC AI\nBI\nR1\nR3\np\nfig-20\nfig-19\nC F p\nC F p\nfig-17",
+      "text_sha256": "33bfaee7c9078c1d4ac6de602d46fc3e20ad56a43dc7380291d73d1c2ec1f6a5"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 30,
+      "textbook_page": 20,
+      "text": "20 Reflection of light at curved surfacesGovernment’s Gift for Students’ Progress\nMultiple choice questions\n3. If the spherical mirrors were not known to human beings, guess the consequences.(AS2)\n4. Draw suitable rays by which we can guess the position of image formed by a concave\nmirror? (AS5)\n5. Show the formation of image with a ray diagram when an object is placed on the principal\naxis of a concave mirror away from the centre of curvature? (AS5)\n6. Why do prefer a convex mirror as a rear-view mirror in the vehicles? (AS7)\nIII. Higher Order Thinking Questions\n1. A convex mirror with a radius of curvature of 3 m is used as rear view mirror for a vehicle.\nIf a bus is located at 5 m from this mirror, find the position, nature and size of the image?\n(AS7)\n2. To form the image on the object itself, how should we place the object infront of a concave\nmirror? Explain with a ray diagram? (AS5)\n1. If an object is placed at C on the principal axis in front of a concave mirror, the position of the\nimage is [ ]\na) at infinity b) between Focus and Centre of curvature\nc) at Centre of curvature d) beyond Centre of curvature\n2. W e get a diminished image with a concave mirror when the object is placed [ ]\na) at Focus b) between the pole and Focus\nc) at Centre of curvature d) beyond Centre of curvature\n3. We get a virtual image in a concave mirror when the object is placed [ ]\na) at Focus b) between the pole and Focus\nc) at Centre of curvature d) beyond Centre of curvature\n4. Which of the following represents Magnification ‘m’ for the case of Mirrors\ni) v\nu ii) v\nu\n- iii) 0\nih\nh iv) 0\ni\nh\nh [ ]\na) (i) & (ii) b) (ii) & (iii) c) (iii) & (iv) d) (iv) & (i)\n5. Ray which seems to be travelling through the focus of a convex mirror, path of the reflected ray\nof an incident [ ]\na) parallel to the axis b) along the same path in opposite direction\nc) through Focus d) through Centre of curvature",
+      "text_sha256": "b1f174ba0abe3ec5fa888562809e7b1190237f70bf5d41865ef8600ee6dc2290"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"insufficient_evidence\",\n  \"answer\": \"The question asks why we prefer a convex mirror as a rear-view mirror in vehicles, but the provided textbook evidence does not directly address this. While the textbook discusses the properties of convex mirrors and ray diagrams, it does not explicitly mention the reasons for using convex mirrors in vehicles. Therefore, there is insufficient evidence to answer the question directly.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\"evidence_id\": \"E1\", \"pdf_page\": 23, \"textbook_page\": 13},\n    {\"evidence_id\": \"E2\", \"pdf_page\": 30, \"textbook_page\": 20}\n  ],\n  \"missing_information\": [\"Reasons for using convex mirrors in vehicles\"]\n}",
+    "time_to_first_token_seconds": 66.55854920001002,
+    "latency_seconds": 118.6055567000003,
+    "usage": {
+      "completion_tokens": 177,
+      "prompt_tokens": 1148,
+      "total_tokens": 1325,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-Z2UFAegXaUuYZLvPJtaAmFrsIODU3rD1",
+    "peak_rss_bytes": 21290393600
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "insufficient_evidence",
+    "answer": "The question asks why we prefer a convex mirror as a rear-view mirror in vehicles, but the provided textbook evidence does not directly address this. While the textbook discusses the properties of convex mirrors and ray diagrams, it does not explicitly mention the reasons for using convex mirrors in vehicles. Therefore, there is insufficient evidence to answer the question directly.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 23,
+        "textbook_page": 13
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 30,
+        "textbook_page": 20
+      }
+    ],
+    "missing_information": [
+      "Reasons for using convex mirrors in vehicles"
+    ],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "A convex mirror forms a virtual, erect, diminished image",
+        "token_recall": 0.2857,
+        "matched": false
+      },
+      {
+        "point": "It provides a wider field of view",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Therefore a driver can see a larger region behind the vehicle",
+        "token_recall": 0.125,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.0,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": true,
+    "answer_word_count": 60
+  },
+  "completed_at": "2026-07-17T15:48:04+00:00"
+}

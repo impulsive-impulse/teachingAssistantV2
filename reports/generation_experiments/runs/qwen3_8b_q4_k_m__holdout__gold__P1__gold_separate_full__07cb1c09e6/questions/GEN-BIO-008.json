@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6",
+  "question_id": "GEN-BIO-008",
+  "question": "Why do some people need to use a dialysis machine? Explain the principle involved in it",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "97cb9daeac0d58acff959f83b5f4ac51dcabe30e2140b6d004011d6bee0ff7c3",
+  "context_sha256": "8f4dd0609b075c73141d5e8387e45939918dd7015df965064c16697f0604fb86",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 97,
+      "textbook_page": 88,
+      "text": "Excretion88Government’s Gift for Students’ Progress\n4.6 Dialysis Machine (Artificial kidney)\nKidneys are vital organs for survival.\nSeveral factors like infections, injury, very\nhigh blood pressure, very high blood sugar\nor restricted blood flow to kidneys leads to\naccumulation of poisonous wastes in the\nbody and leads to death.\nDialysis machine is used to filter the\nblood of a person when both kidneys are\ndamaged. The process is called\n‘haemodialysis’. In this process, blood is taken out from the main artery,\nmixed with an anticoagulant, such as heparin, and then pumped into the\napparatus called dialyzer. In this apparatus blood flows through channels\nor tubes which are madeup of cellophane. These tubes are embedded in\nthe dialyzing fluid. A thin membrane separates the blood flowing inside\nthe tube and dialyzing fluid (dialysis), which has the same composition as\nthat of plasma, except the nitrogenous wastes.\nAs nitrogenous wastes are absent in dialyzing fluids, these substances\nfrom the blood move out freely, there by cleaning the blood of its wastes.\nThis process is called \"dialysis\". This is similar to the function of the\nkidney, but is different as there is no reabsorption involved .The cleaned\nblood is pumped back to the body through a vein after adding anti-coagulant\n(heparin). Each dialysis session lasts for 3 to 6 hours. This method has\nbeen using for thousands of uremic / kidney failure patients all over the\nworld.\nx Is there any long term solution for kidney failure patients?\nFig-7: Dialysis",
+      "text_sha256": "af8865896f4693992801ca1d9662e249c460221d0897e2c0b95be1aadc3b6d20"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 98,
+      "textbook_page": 89,
+      "text": "Excretion89Government’s Gift for Students’ Progress\n4.7 Kidney transplantation\nThe best long term solution for kidney failure (acute renal failure) is\nKidney transplantation. A functioning kidney is used in transplantation from\na donor preferably a close relative. The kidney that is received by a recipient\nmust be a good match to his body, to minimize the chances of rejection of\ntransplanted kidney by the immune system of the recipient. Modern clinical\nprocedures have increased the success rate of such complicated technique.\nx Where is the transplanted kidney fixed in the\nbody of a kidney failure patient?\nx What do they do to failed kidneys?\nx Can donor lead normal life with single kidney\nwithout any complications?\nNow a days the process of organ donation helps\na lot for kidney failure patients. Organs are collected\nfrom brain dead patients, then transplanted to the\nrecepient. This is called organ donation. To know\nmore about organ donation see in annexure.\n4.8 Other pathways of excretion (accessory excretory organs)\nYou have learnt about kidney, chief excretory organ of our body.\nx What are the other excretory organs of human body?\nLungs, skin, liver and large intestine have their own specific functions\nbut carry out excretion as a secondary function.\nLungs: In respiratory process lungs remove carbon dioxide and water\nvapour.\nSkin: It consists of large number of sweat glands richly supplied with\nblood capillaries, from which they extract sweat and some metabolic\nwastes from blood. Since the skin sends out plenty of water and small\namount of salts in the form of sweat. It serves as an accessory excretory\norgan.\nFig-8: Kidney transplantation",
+      "text_sha256": "a640f85a9c4e8e961767c0bcf54b8a2d0c41f61a7a0c5ecf8800dd08b8eadb17"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Some people need to use a dialysis machine because their kidneys are damaged or not functioning properly. The kidneys play a vital role in filtering waste products and excess fluids from the blood. When the kidneys are damaged, they cannot perform this function effectively, leading to the accumulation of poisonous wastes in the body, which can be life-threatening. Dialysis is a medical treatment that helps replace the function of the kidneys by filtering the blood.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 97,\n      \"textbook_page\": 88\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 17.860551599995233,
+    "latency_seconds": 42.012151900009485,
+    "usage": {
+      "completion_tokens": 158,
+      "prompt_tokens": 935,
+      "total_tokens": 1093,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-580mBamY93ptWYUVGX1vLXxnZCf1hdXX",
+    "peak_rss_bytes": 11270414336
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Some people need to use a dialysis machine because their kidneys are damaged or not functioning properly. The kidneys play a vital role in filtering waste products and excess fluids from the blood. When the kidneys are damaged, they cannot perform this function effectively, leading to the accumulation of poisonous wastes in the body, which can be life-threatening. Dialysis is a medical treatment that helps replace the function of the kidneys by filtering the blood.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 97,
+        "textbook_page": 88
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Dialysis is needed when both kidneys cannot adequately filter wastes",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Blood is withdrawn and mixed with anticoagulant",
+        "token_recall": 0.25,
+        "matched": false
+      },
+      {
+        "point": "Blood flows through a semipermeable membrane against dialysis fluid",
+        "token_recall": 0.375,
+        "matched": false
+      },
+      {
+        "point": "Nitrogenous wastes diffuse out while cells/proteins are retained",
+        "token_recall": 0.125,
+        "matched": false
+      },
+      {
+        "point": "Cleaned blood is returned",
+        "token_recall": 0.3333,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.2,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 75
+  },
+  "completed_at": "2026-07-17T11:35:36+00:00"
+}

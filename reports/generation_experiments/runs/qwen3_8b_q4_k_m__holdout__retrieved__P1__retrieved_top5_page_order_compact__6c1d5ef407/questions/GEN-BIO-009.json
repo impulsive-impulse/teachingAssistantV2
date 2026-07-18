@@ -1,0 +1,190 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407",
+  "question_id": "GEN-BIO-009",
+  "question": "How does phototropism occur in plants?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "4aa549fa0c08e71770a70c4ab1f0ac9a862b5e5c7c912ee6d33b7f396fb041b1",
+  "context_sha256": "614326c3ae72e765b0e3521be06dc3d6a04cc16490813e326105986d16c44e6f",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 19,
+      "textbook_page": 10,
+      "pdf_pages": [
+        19,
+        20,
+        21
+      ],
+      "textbook_pages": [
+        10,
+        11,
+        12
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "1.2.6 Where does Photosynthesis take place?\nx Name the parts of plants where photosynthesis occurs .\nx Where do chlorophyll and other pigments present in the plant?\nx Do you think the newly formed reddish leaves of plants also carry\nout photosynthesis?\nThe exact location of the photosynthetic part or a part containing\nchlorophyll was not known till another six decades after the discovery of\nchlorophyll.\nIn 1883, Julius V on Sachs, observed that chlorophyll is found\nin organelles within the cell.\nSuch organelles were named as ‘chloroplasts’.\nThese are present in large numbers in the cells (around 40 – 100) of parts\nlike the stomatal guard cells and ground tissues of green parts of the plant.\nYou have studied about Chloroplast in Class IX.\nLet us observe the figure\nof TS of leaf showing Chloroplast in Palisade and Spongy Parenchyma\n(ground tissue).\nFig-7: Transverse Section (T.S) of leaf\ncuticle layer\nupper epidermis\npalisade parenchyma\nxylem\nphloem\nair spaces\nguard cell\nlower epidermis\nstomata\nspongy parenchyma\ncuticle layer\nV ascular bundle}\nchloroplasts\n!\nDo you know?\nIf a cell is broken up, the chloroplasts also break into pieces, so it becomes a very\ndifficult task to isolate them to study the different steps of photosynthesis.It was not\nuntil 1954, that Daniel I.\nArnon was able to break up plant cells so gently that whole\nchloroplasts could be obtained for study in the lab.\n}Mesophyll\nNutrition 11\nIt has been found that the chloroplast is\na membranous structure, consisting of 3\nmembranes.\nThe inner most layer forms\nstacked sac like structures called as grana.\nIt is believed to be a site for trapping of\nsolar energy.\nThe intermediary fluid filled\nportion is called as stroma.\nIt is believed to\nbe responsible for enzymatic reactions\nleading to the synthesis of glucose, which\nin turn join together to form starch.\nSubstances found in chloroplast which capture sunlight are called\nphotosynthetic pigments.\nThere are several types of photosynthetic\npigments involved in the process to produce organic molecules like\nglucose in plants.\nChlorophyll is such a pigment which contain one atom of magnesium.\nIt is similar in structure to the haem of haemoglobin (The iron containing\nred pigment that transports oxygen in blood.).\nTwo major kinds of chlorophylls are associated with thylakoid\nmembranes.\nChlorophyll ‘a’ is bluish-green in colour and chlorophyll ‘b’\nis yellowish-green colour.\nAround 250 to 400 pigment molecules are\ngrouped as light harvesting complex or photosynthetic unit in each\nthylakoid.\nSuch innumerable units function together in chloroplasts of\ngreen plants in the process of photosynthesis.\nDuring photosynthesis\nseveral events occur in the chloroplast some of them are:\n1.\nConversion of light energy to chemical energy\n2.\nSplitting of water molecule (photolysis of water)\n3.\nReduction of carbondioxide molecule to carbohydrate\nLight is required to initiate several events.\nWhile some events may\ncontinue even in the absence of it.\nThat would mean, once light energy has\nbeen captured it can help reactions to continue even in the dark.\nLight\ndependent events or reactions are called light reactions and it has been\nfound to take place in grana, while the rest are called light independent or\ndark reactions and they occur in the stroma.\nFig-8: T-S of chloroplast\nmembrane\nstroma\ngranum\ngrana thylakoid\nstroma thylakoid\nNutrition 12\n1.3 Mechanism of Photosynthesis\n1.3.1 Light dependent reaction (Light phase)\nIn this reaction light plays a key role.\nA series of chemical reactions\noccur in a very quick succession initiated by light and therefore the phase\nis technically called the photochemical phase or light dependent reaction.\nThe light reaction takes place in chlorophyll containing thylakoids called\ngrana of chloroplasts.\nSeveral steps occur in the light dependent reaction.",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00005"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 20,
+      "textbook_page": 11,
+      "pdf_pages": [
+        20,
+        21,
+        22
+      ],
+      "textbook_pages": [
+        11,
+        12,
+        13
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "found to take place in grana, while the rest are called light independent or\ndark reactions and they occur in the stroma.\nFig-8: T-S of chloroplast\nmembrane\nstroma\ngranum\ngrana thylakoid\nstroma thylakoid\nNutrition 12\n1.3 Mechanism of Photosynthesis\n1.3.1 Light dependent reaction (Light phase)\nIn this reaction light plays a key role.\nA series of chemical reactions\noccur in a very quick succession initiated by light and therefore the phase\nis technically called the photochemical phase or light dependent reaction.\nThe light reaction takes place in chlorophyll containing thylakoids called\ngrana of chloroplasts.\nSeveral steps occur in the light dependent reaction.\nStep-I : The chlorophyll on exposure to light energy becomes activated\nby absorbing photons. (Photon is a unit of light energy)\nStep-II: This energy is used in splitting water molecule to release O2.\nThis reaction is known as photolysis (photo means light, lysis\nmeans breaking).\nThis was discovered by Robert Hill.\nHence it\nis also called Hill’s reaction.\nHydrogen produced in photolysis is immediately picked up by special\ncompound NADP (Nicotinamide Adenine Dinucleotide Phosphate) to form\nNADPH (Reduced NADP).\nAnother energy rich compound A TP\n(Adenosine triphosphate) is also formed at the end of the light reaction.\n1.3.2 Light independent reaction (Dark phase)\nThis reaction does not require the presence of light and extension of\nthe phases after day time may occur in some plants.\nThis is also called\ndark reaction.\nBut the term dark reaction does not mean that it occurs\nwhen it is dark at night.\nIt only means that these reactions do not depend\non light.\nIt takes place in stroma of chloroplast.\nIn the dark phase the\nhydrogen combines with CO2 by utilizing A TP energy and produces glucose\n(C6H12O6).\nThis synthesis occurs in a number of steps using certain special\nintermediate compounds and enzymes.\nFinally glucose may be converted\ninto storage product starch.\nPlants are capable of surviving under a range of situations, from very\nhot, dry and bright light conditions to wet, humid and dim light condition.\nThe requirement of light and other factors varies from one plant to another.\nNutrition 13\n1.4 Nutrition in Heterotrophs (Heterotrophic Nutrition)\nIn the living world all organisms are capable of surviving under different\nconditions and acquring their food in different ways.\nWe have studied about\norganisms that can capture light to produce their food.\nThese are called\nautotrophs.\nWhile those that can not prepare their own food are\nheterotrophs.\n1.4.1 How do organisms obtain their nutrition?\nDepending on the type and availability of food organisms\ncan adapt to a range of strategies of food intake and use.\nSome organisms like bread mold, yeast, mushrooms etc.\nbreak down the food materials outside the body and then absorb\nit.\nThey are called as saprophytes.\nSome other organisms\nderive nutrition from plants or animals without killing them.\nThis type of parasitic nutritive strategy is used by a wide variety\nof organisms like Cuscuta, lice, leeches and tape worms.\nOthers\ntake in whole material and break it down inside their bodies.\nIntake and braking down of food depends on the bodys’ structure\nand it’s function.\nSince the food and the way it is obtained differs, the\ndigestive system is also different in various organisms.\nIn single\ncelled organisms, like Amoeba the food may be taken in by\nthe entire surface but as the complexity of the organism\nincreases, different parts become specialized to perform\ndifferent functions.\nFor example Amoeba as shown in Fig-9(a)\nit takes in food using temporary finger like extensions\n(pseudopodia) of the cell surface which fuse over the food\nparticle forming food vacuole.\nInside the food vacuole, complex",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00006"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 125,
+      "textbook_page": 116,
+      "pdf_pages": [
+        125,
+        126,
+        127
+      ],
+      "textbook_pages": [
+        116,
+        117,
+        118
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "system and an endocrine system.\nPlants do not have a well-defined nervous\nor endocrine system.\nThey do have some mechanism of control by means\nof some chemicals or hormones.\nPlants can sense the presence of stimuli like light, heat, water, touch,\npressure, chemicals, gravity etc.\nThe hormones present in the plants\ncalled phytohormones (phyto means plant) control responses towards\nthe stimuli mentioned above.\nPhytohormones coordinate the activities\nof the plant usually by controlling one or the other aspect of the growth\nof the plant.\nSo plant hormones are also called growth regulating\nsubstances.\nSome major plant hormones and their action are given in the\nfollowing table.\n!\nDo you know?\nMimosa pudica leaves have pad like swellings at the base.\nThey are called pulvini.\nHere cells contain lot of water and large intercellular spaces.\nDue to water pressure\npulvinous leaf base hold the leaf erect.\nTouch me not plant shows nastic movement by\ntouch.\nThis is called thigmonasty.\nWhen we touch the leaves, an electrical impulse is\ngenerated.\nThis impulse acts on plant hormone.\nBecause of this hormone water in the\npulvini cells which are closer to the leaf vein migrate to other side of the cells.Then\npulvini loss its firmness hence leaves get folded.\nAfter 20 to 30 minutes water comes\nback, pulvini attains firmness and leaves become erect.\n117 Coordination\nFig-19: Bending\ntowards sun\nHormones Uses\nAuxins cell elongation and differentiation of shoots and roots\nCytokinins promote cell division, promotion of sprouting of lateral buds, delaying\nthe ageing in leaves, opening of stomata.\nGibberellins germination of seeds and sprouting of buds; elongation of stems;\nstimulation of flowering; development of seedless fruits, breaking the\ndormancy in seeds and buds.\nAbscisic acid closing of stomata; seed dormancy, promoting ageing of leaves.\nEthylene ripening of fruit\nTable-3: Major plant hormones and their action\nLight Shaded side\nPart exposed\nto sun light\nFig-20: Elongation of cells\nTake a glass jar and fill with soil.\nSow a bean seed\nnear the wall of the jar.\nThis helps you to observe how\nroot and shoot are growing.\nAfter 4 - 5 days you will\nnotice seed germination.\nKeep the jar under the sun.\nObserve how root and shoot grows.\nThen tilt the glass\njar and keep the plant horizontally.\nObserve the direction\nof root and shoot growth for more than a week.\nx Does the shoot take a horizontal tilt after a week?\nx Which side of the shoot may have grown more and\nwhich side less to bring about this effect?\nObserve the plant growing towards light think how\nauxins act on bending of stem to show a response to the\nsunlight.\nMore auxin collects on the shaded side of the stem.\nSo cells on that side grow faster.\nOn opposite side cells\ngrow slow to make the stem bend.\nCollect bending and straight portions of tender stem.\nTake transverse sections of both stems, observe them\nunder microscope.\nx Do you find any difference in the shape of\nepidermal cells?\nDiscuss with your teacher about seed dormancy.\nActivity-5\n118 Coordination\nCharles Darwin and his son Francis Darwin performed some\nexperiments on phototropism.\nThey covered the terminal portion of the\ntip of stem(coleoptile) with a cylinder of metal foil.\nExposed the plant to\nlight coming from the side.\nThe characteristic bending of the seedling did\nnot occur.\nWhen, light was permitted to penetrate the cylinder, bending of\nthe seedling occurred normally.\nThey stated that when seedlings are freely\nexposed to a lateral light some ‘influence’ is transmitted from upper to\nthe lower part causing the material to bend.\nIn 1926, the Dutch plant physiologist F.W.",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00071"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 126,
+      "textbook_page": 117,
+      "pdf_pages": [
+        126,
+        127,
+        128
+      ],
+      "textbook_pages": [
+        117,
+        118,
+        119
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Discuss with your teacher about seed dormancy.\nActivity-5\n118 Coordination\nCharles Darwin and his son Francis Darwin performed some\nexperiments on phototropism.\nThey covered the terminal portion of the\ntip of stem(coleoptile) with a cylinder of metal foil.\nExposed the plant to\nlight coming from the side.\nThe characteristic bending of the seedling did\nnot occur.\nWhen, light was permitted to penetrate the cylinder, bending of\nthe seedling occurred normally.\nThey stated that when seedlings are freely\nexposed to a lateral light some ‘influence’ is transmitted from upper to\nthe lower part causing the material to bend.\nIn 1926, the Dutch plant physiologist F.W.\nWent succeeded in\nseparating this ‘influence’ responsible for bending from the plant that\nproduced it.\nWent cut-off coleoptile tips from oat\nseedlings.\nHe placed the tips on a slice of agar and left\nthem for about an hour.\nHe then cut the agar into small\nblocks and placed a block on one side of stump of the\ndecapitated seedlings.\nThey were kept in the dark during\nthe entire experiment.\nWithin one hour he observed a\ndistinct bending away from the side on which the agar\nblock was placed.\nAgar block that had not been in contact with coleoptile tip produced\neither no bending or only a slight bending toward the side on which the\nblock had been placed.\nWent interpreted these experiments as showing that the coleoptile tip\nexerted its effect by means of chemical stimulus rather than a physical\nstimulus such as an electrical impulse.\nThis chemical stimulus came to be\nknown as auxin.\nIn this way the first plant hormone auxin (greek word\nauxin means to increase) was discovered by Went.\n5.14 Tropic and nastic movements in plants\nThe above experiments show that movement of individual parts of plants\nis possible when they are subjected to external stimuli.\nThis type of\nresponse is called tropism or tropic movement.\nSometimes the direction\nof stimuli determines direction of movement, sometimes\nthe direction of movement may not be determined by\ndirection of stimuli.\nThis type of response is called nastic\nmovement.\nLet us observe the growth of a creeper plant near\nwindow.\nThe shoots of creeper bend towards sunlight.\nFig-22: Tendrils\nFig-21: Went experiment\nleaf\n(inside)\ncut tip of\ncoleoptile\ncoleoptile agar block\noat\nseed\ncoleoptile\nbending\n119 Coordination\nSuch type of response of a plant to light is called phototropism (photo\nmeans light, tropism means movement).\nWe know that roots always grow downwards.\nThis means that plant\nrespond positively for gravitational force.\nThis is called geotropism.\nIf we observe plant which grow near a rock or wall side.\nYou notice\nthat all roots are growing in one direction, away from the rock or wall\nwhere water is available in the soil.\nThis type of response to water is called\nhydrotropism.\nA very interesting thing in plants is movement of tendrils.\nAll plants\nshow positive response to phototropism.\nBut in creepers like cucumber,\nbitter gourd, the stem is weak and thin.\nHence plant cannot grow erect.\nTendrils play a vital role to make the plant erect.\nTendrils are thin thread\nlike growths on the leaves or stems of climbing plant.\nThey grow towards\nsupport and wind around them.\nThis type of response to make contact or\ntouch is called \"thigmotropism\".\nIf you taste the carpel of a flower it is sweet.\nLet us recall butterflies\nfluttering on flowers for the nectar.\nRipen stigma secretes sugary substance.\nThis chemical substance stimulates the pollen grain which falls on the\nstigma.\nPollen grain responds to this stimulus and germinate to produce\npollen tubes to reach the ovule for fertilization.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00072"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 129,
+      "textbook_page": 120,
+      "pdf_pages": [
+        129,
+        130
+      ],
+      "textbook_pages": [
+        120,
+        121
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "(ii) Stimulus received by the dendrites of a neuron sets off chemical reaction that creates an\nelectrical impulse.\n(iii) Electrical impulse transmitted through cell body and axon.\n(iv) The chemicals cross the synapse and reach the next neuron.\nSimilarly, the electrical impulse\ncrosses several neurons.\n(v) Finally, the impulse is delivered from neuron to the gland that helps in recognition of the foul\nsmell and muscle cells that help in covering the nose.\n5.\nWhat is a synapse?\nHow is it useful in transfer of information?(AS1)\n6.\nDistinguish between(AS1)\na) Stimulus and Response b) Afferent and Efferent nerves\nc) Central nervous system and peripheral nervous system d) Receptor and effector organ\nImprove your learning\n121 Coordination\n7.\nHow does Phototropism occur in plants? (AS1)\n8.\nExplain with an example how plants may respond to a stimulus. (AS1)\n9.\nSuggest an experiment to show how roots grow away from light in most plants. (AS1)\n10.\nGive an example to show how hormones can influence visible changes in your body. (AS1)\n11.\nHow does a neuron differ from an ordinary cell in structure?\nExplain. (AS1)\n12.\nIs the structure of neuron suitable for transmission of impulses?\nAnalyse. (AS1)\n13.\nMan is the most intelligent animal.\nWhat could be the reason that helped us to reach to such a\nconclusion? (AS1)\n14.\nThe axon of nerve cell in hand is shorter than the axon of nerve cell in leg.\nDo you support this\nstatement?\nWhy? (AS1)\n15.\nOrgans respond to the external stimulus by a fraction of second.\nHow do you feel about such\ncontrolling mechanism of human body? (AS1)\n16.\nState whether the following actions are voluntary action, reflex action or conditioned reflex.(AS1)\ni) Blinking of eyes ii) Cleaning the table iii) Playing on the key board\niv) Salivating when food is put into the mouth. v) We close our ears when we hear unbearble sound\n17.\nWhat will happen to the potted plant kept near window in the room? (AS2)\n18.\nWhat happens if all functions of the human body is controlled only by brain? (AS2)\n19.\nIf you visit a doctor what doubts you would like to clarify about pancreas? (AS2)\n20.\nTake a small potted plant.\nCover base portion of the plant tightly and hang the part upside down.\nObserve the plant for a week.\nBased on your observation how can you support phototropism.(AS3)\n21.\nTake a cock feather touch smoothly at different parts of your body .\nFindout which portion of the\nbody has high sensation.\nIs this similar during sleeping?\nPrepare a report on it. (AS3)\n22.\nWhat procedure do you follow to understand the effect of plant growth hormones (in agar medium)\nin the terminal portion of the tip of stem (coleoptile)? (AS3)\n23.\nCollect information on the actions controlled by spinal cord by using reference books from your\nschool library. (AS4)\n24.\nRead the following sentences and compare with the functions of endocrine glands. (AS4)\n(a) Pheromones are chemical substances secreted by organisms. (b) They act as chemical signals\nto produce secretions by exocrine glands. (c) Pheromones are used as signals by the members of\nsame species. (d) Honey bee secretes pheromones that attract other bees to the location of food.\n25.\nCollect the information about cranial nerves and spinal nerves from internet or your school library .\n(AS4)\n26.\nDraw a picture representing connection between axon-dendrite.\nWhy do they connect like that?\n(AS5)\n27.\nDraw a neatly labelled diagram of brain and write few points how it is protected. (AS5)\n28.\nY ou are walking in the traffic.\nSuddenly you heard a loud sound.",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00074"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Phototropism in plants occurs when the plant bends towards a light source. This response is due to the plant's ability to sense light and the distribution of a chemical called auxin. When light hits one side of the plant, more auxin accumulates on the shaded side. Auxin causes the cells on the shaded side to grow faster, making the plant bend towards the light. This was demonstrated by Charles Darwin and his son Francis Darwin, who found that the tip of the plant (coleoptile) is responsible for sensing light. Further experiments by F.W. Went showed that the bending is caused by a chemical stimulus, which is now known as auxin. The auxin is produced in the tip of the plant and moves down to the stem, causing the cells on the shaded side to elongate more, leading to the bending of the stem towards the light.\",\n  \"selected_evidence_ids\": [\"E3\", \"E4\", \"E5\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 125,\n      \"textbook_page\": 116\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 126,\n      \"textbook_page\": 117\n    },\n    {\n      \"evidence_id\": \"E5\",\n      \"pdf_page\": 129,\n      \"textbook_page\": 120\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 142.92780580002,
+    "latency_seconds": 246.8922250000178,
+    "usage": {
+      "completion_tokens": 329,
+      "prompt_tokens": 4579,
+      "total_tokens": 4908,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-77c9IKAx6tUjSMOWJ8jjcGFqWJyXPrXF",
+    "peak_rss_bytes": 13477654528
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Phototropism in plants occurs when the plant bends towards a light source. This response is due to the plant's ability to sense light and the distribution of a chemical called auxin. When light hits one side of the plant, more auxin accumulates on the shaded side. Auxin causes the cells on the shaded side to grow faster, making the plant bend towards the light. This was demonstrated by Charles Darwin and his son Francis Darwin, who found that the tip of the plant (coleoptile) is responsible for sensing light. Further experiments by F.W. Went showed that the bending is caused by a chemical stimulus, which is now known as auxin. The auxin is produced in the tip of the plant and moves down to the stem, causing the cells on the shaded side to elongate more, leading to the bending of the stem towards the light.",
+    "selected_evidence_ids": [
+      "E3",
+      "E4",
+      "E5"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E3",
+        "pdf_page": 125,
+        "textbook_page": 116
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 126,
+        "textbook_page": 117
+      },
+      {
+        "evidence_id": "E5",
+        "pdf_page": 129,
+        "textbook_page": 120
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 3,
+    "citation_count": 3
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Phototropism is directional growth in response to light",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "The shoot tip perceives lateral light",
+        "token_recall": 0.4,
+        "matched": false
+      },
+      {
+        "point": "Auxin influence is redistributed to the shaded side",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Greater elongation on the shaded side bends the shoot toward light",
+        "token_recall": 0.625,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.75,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 146
+  },
+  "completed_at": "2026-07-17T14:03:46+00:00"
+}

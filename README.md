@@ -616,10 +616,117 @@ Windows emulation because official PyTorch Windows wheels target x86-64.
 Keep brief validation history in `reports/test_runs.md`. After a meaningful
 change, append one row describing what was tested, the command, and the result.
 
-## Recommended next research step
+## Generation Phase A — gold-context smoke gate
 
-Create and review a generation benchmark before Phase J. It must label answer
-correctness, faithfulness to supplied context, citation support, and abstention
-for the five negative questions. Answer generation remains blocked until that
-benchmark exists; neither the separately gated Gemma rewrite nor a multimodal
-encoder was downloaded or run.
+The reviewed 40-row Generation Benchmark v1 now has a separate, derived Phase A
+runner. It does not edit the canonical generation or retrieval benchmarks. The
+fixed development/smoke slice contains eight questions (four per book); the
+remaining 32 questions stay held out until this gate has been reviewed.
+
+Prepare the deterministic split and extract accepted PDF-page contexts without
+loading a model:
+
+```powershell
+$env:PYTHONPATH = "src"
+temp\python-x64\python.exe scripts\run_generation_phase_a.py --prepare-only
+```
+
+Run or resume the approved native ARM64 Qwen3-8B Q4_K_M smoke test:
+
+```powershell
+$env:PYTHONPATH = "src"
+temp\python-x64\python.exe scripts\run_generation_phase_a.py `
+  --llama-server <path-to-native-arm64-llama-server.exe> `
+  --model <path-to-Qwen3-8B-Q4_K_M.gguf>
+```
+
+The runner verifies benchmark and model hashes before inference, starts one
+local CPU-only llama.cpp server, requests claim-level JSON answers, validates
+every evidence ID, scores required/optional/unsupported rubric points, and
+writes an atomic per-question checkpoint. Re-running the same command skips
+completed questions; changed benchmark, config, model, or server command bytes
+are rejected rather than mixed into an existing run.
+
+Recompute citation-support and rubric fields from the saved raw outputs without
+calling the model again:
+
+```powershell
+$env:PYTHONPATH = "src"
+temp\python-x64\python.exe scripts\run_generation_phase_a.py --reevaluate-only
+```
+
+Artifacts live under `reports/generation_phase_a_v1/`, including the split,
+smoke subset, gold contexts, runtime logs, per-question records, aggregate
+metrics, state, and Markdown report. Prompt comparisons and every other model
+download remain gated until the eight outputs receive manual review.
+
+## Local generation experiment matrix
+
+After the reviewed Phase A checkpoint, the bounded v1 matrix compares prompts,
+frozen-retrieval context representations, approved Qwen model sizes, and two
+output-token limits. It uses a fixed eight-question smoke subset inside a
+16-question development split and keeps the remaining 24 questions untouched
+until finalist evaluation. Every question is checkpointed under
+`reports/generation_experiments/runs/`, so repeating a command resumes instead
+of regenerating completed answers.
+
+Run or resume one controlled configuration:
+
+```powershell
+temp\python-x64\python.exe scripts\run_generation_experiment.py `
+  --llama-server <path-to-native-arm64-llama-server.exe> `
+  --model <path-to-approved-gguf> `
+  --model-key qwen3_8b_q4_k_m `
+  --split development --evaluation-mode gold `
+  --prompt P0 --context gold_separate_full
+```
+
+Run or resume the approved successive matrix:
+
+```powershell
+temp\python-x64\python.exe scripts\run_generation_experiment_matrix.py `
+  --llama-server <path-to-native-arm64-llama-server.exe> `
+  --qwen8 <path-to-Qwen3-8B-Q4_K_M.gguf> `
+  --qwen14 <path-to-Qwen3-14B-Q4_K_M.gguf>
+```
+
+The matrix verifies both frozen checksums before every configuration and never
+places rubric fields in prompts. Its automatic winner is provisional until the
+generated blinded review packet is reviewed. Google Gemma repositories require
+the signed-in Hugging Face account to receive their separate gated-model access;
+task approval alone cannot grant that repository license.
+
+Completed v1 result: the preferred balanced configuration is Qwen3-8B
+Q4_K_M, P1 evidence-selection-first prompting, frozen top-five evidence in
+textbook-page order with compact metadata, 384 output tokens, deterministic
+non-thinking inference, and native ARM64 llama.cpp CPU. On all 40 questions it
+scored 0.4704 retrieved required-point coverage, 0.9500 citation validity and
+0.0250 unsupported-claim rate. These results do not meet the coverage or
+formula targets, so the configuration remains an experiment winner—not a
+frozen production generation baseline—until the blinded packet is reviewed.
+See `reports/generation_experiments/generation_experiments_report.md` and
+`reports/generation_experiments/blinded_human_review_packet.jsonl`.
+
+### Hardware-backend verification
+
+Backend claims are kept separate from model-quality experiments. The following
+controlled probes compare matching CPU and accelerated executions, save the raw
+measurements under `reports/hardware_backend_v1/`, and reject a backend when it
+loads but produces invalid output. Replace the model path with the locally
+cached official Gemma 3 ONNX DirectML export.
+
+```powershell
+$env:PYTHONPATH = "temp\ort-qnn-2.4.0"
+C:\Users\saman\AppData\Local\Programs\Python\Python312-arm64\python.exe scripts\probe_onnx_backend.py --provider cpu --model temp\backend_probe_matmul_qdq.onnx --output reports\hardware_backend_v1\onnx_cpu_probe.json --iterations 500
+C:\Users\saman\AppData\Local\Programs\Python\Python312-arm64\python.exe scripts\probe_onnx_backend.py --provider qnn --model temp\backend_probe_matmul_qdq.onnx --output reports\hardware_backend_v1\onnx_qnn_probe.json --iterations 500
+
+$env:PYTHONPATH = "temp\ortgenai-dml-0.13.1"
+temp\python-x64\python.exe scripts\probe_onnx_backend.py --provider dml --model temp\backend_probe_matmul_qdq.onnx --output reports\hardware_backend_v1\onnx_dml_probe.json --iterations 500
+temp\python-x64\python.exe scripts\probe_ort_genai_backend.py --provider cpu --model <path-to-official-gemma-3-onnx-export> --output reports\hardware_backend_v1\ort_genai_cpu_probe.json
+temp\python-x64\python.exe scripts\probe_ort_genai_backend.py --provider dml --model <path-to-official-gemma-3-onnx-export> --output reports\hardware_backend_v1\ort_genai_dml_probe.json
+
+temp\python-x64\python.exe scripts\build_hardware_backend_report.py --cpu-probe <cpu-arm64-probe.json> --vulkan-probe <vulkan-x64-probe.json> --dml-cpu-probe reports\hardware_backend_v1\ort_genai_cpu_probe.json --dml-probe reports\hardware_backend_v1\ort_genai_dml_probe.json --dml-micro-probe reports\hardware_backend_v1\onnx_dml_probe.json --qnn-cpu-probe reports\hardware_backend_v1\onnx_cpu_probe.json --qnn-probe reports\hardware_backend_v1\onnx_qnn_probe.json
+```
+
+The microbenchmarks establish that a provider executed a compatible ONNX graph;
+they do not prove that an arbitrary decoder model can run on that provider.

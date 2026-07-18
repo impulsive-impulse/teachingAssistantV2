@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407",
+  "question_id": "GEN-BIO-016",
+  "question": "How does sex determination take place in humans?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "7914320e81acf95d1f56d9facc94cac4d5bb3ed20bb949613a56e8bbb58c9c88",
+  "context_sha256": "781a773fe4ed2c3ac250b898a0c38bb107469a155f1dc8291f9142f2fa1cdc57",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 144,
+      "textbook_page": 135,
+      "pdf_pages": [
+        144,
+        145
+      ],
+      "textbook_pages": [
+        135,
+        136
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "are located in the flower.\nYou have already studied\nthe different parts of the flower- sepals, petals,\nstamens and carpels.\nThe reproductive parts of\nthe flower which possess the sex cells called\nstamens and carpels.\nx What function do you think is served by\npetals and sepals?\nx Label parts of flower given in Fig-18.\nx Draw the diagram of the flower that you\ncollect label the parts and write their\nfunctions.\nImportance of sexual reproduction\nAsexual reproduction as we have studied produce organisms which are normally copies\nof the single parent.\nSexual reproduction would require two parents and organism thus\nproduced would have a combination of characters of both parents.\nAsexual reproduction\nappears to be more efficient as only a single parent is required and no time or energy is\nspent in finding a mate.\nBut sexual reproduction helps organisms to develop characters\nthat would be of help to them to adapt better to their surroundings.\nThink of the paramoecium\nasexual and sexual reproductions mentioned in the begining of the chapter.\nWhen compared with animals, sexual reproduction is less complex in\nflowering plants.\nLet us study how does it happen in plants.\n6.9 Sexual reproduction in flowering plants\nSo far we know about nearly 3,50,000 species of flowering plants.\nWith a few exceptions, several of them give rise to seeds enclosed in\nfruits.\nMost of the plants you are familiar with are flowering plants.\nThere\nare many types of them.\nTheir characters are quite remarkable.\nThe plant\nsize range from trees weighing many tons to tiny water plants about the\nsize of a rice grain.\nA sal tree growing in the Himalayan mountains, a giant\ncactus in the Sahara desert, an orchid plant on the branch of a jungle treeall are flowering plants.\nNow let us learn the sexual reproduction in\nflowering plants.\nFig-18: Longitudinal section\nlabel the parts\nDo you know?!\n136 Reproduction\nSome flowers have either stamens or carpels.\nThese are called\nunisexual flowers.\nExample bottle gourd and papaya.\nThe flowers having\nboth the stamen and carpel are bisexual like Datura.\nStamens are the\nmale parts called androecium produces male sex cells in the pollen\ngrain.\nGynoecium produces female sex cells in ovules inside ovaries.\nCarpels have three main parts, one to receive the pollen called as stigma,\none for passage of compatible male sex cells called the style and the\nother part where fusion of male and female sex cells occur to form\nzygote, is the ovary.\nThese are all play a key role in fertilisation process.\nTransfer of pollen grains from anther to stigma of the same flower\nis called self-pollination.\nEx: Pea plant.\nTry to find out some other plants that are self-pollinating types.\nAre there any observable characters that help you to find out whether\na plant is self-pollinating type or not?\nThe illustrations given here will\nhelp you.\nIf anthers are present below the stigma of the carpel the\nprocess of self-pollination may not occur.\nx How does the male reproductive cells reach the female\nreproductive cells in flowers of such plants?\nYou have studied in earlier classes that how birds and insects help\nplants as agents of pollination.\nWhat happens in plants that carry the female reproductive structure\nor the male reproductive structure borne in separate flowers?\nRemember the flowers of bottle gourd you studied in earlier classes.\nPollen grains of a flower are transferred to the stigma of another flower\nof the same plant (or) another plant of the same species is called cross\npollination .\nLet us now observe the reproductive parts of flowering plants more\nclosely.\nThe male reproductive part or the stamen consists of some sac",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00084"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 157,
+      "textbook_page": 148,
+      "pdf_pages": [
+        157,
+        158,
+        159
+      ],
+      "textbook_pages": [
+        148,
+        149,
+        150
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "one of the reason for it.\nSo girls below 18 years of age should not be\nmarried off.\n6.17.2 Stop female foeticide\nWho knows today’s girl child may become a great scientist, a famous\ndoctor, a top class engineer, a dedicated administrative officer, a world\nrenowned economist, a wonderful teacher of an unmatched world leader\nof tomorrow.\nStop female foeticide!\nSave the girl child.\nDue to reckless female foeticide the male female child sex ratio is\ndeclining at an alarming rate in some sections of our society.\nOur\ngovernment has already enacted laws to ban on determination of sex of\nfoetus.\nIn spite of laws it’s a social responsibility of us to prevent female\nfoeticide.\nx Why doctors are prohibited to do sex determination through\nultrasound scanning for pregnant women?\nWe know that if health is lost, everything is lost.\nIt’s our responsibility\nto be healthy and to make others realise the importance of health.\nSound\nbody is to sound mind.\nTo be an ideal citizen of India we should have\nknowledge of reproductive health not only to control high population\ngrowth but to create a healthy society.\nReflection of light at curved surfacesReproduction149\nKey words\nProgeny, cyst, fragmentation, regeneration, vegetative propagation, artificial\npropagation, Parthenocarpy, parthenogenesis, stem cuttings, layering, grafting,\nstock, scion, desirable characters, tissue culture, amniotic fluid, placenta, umbilical\ncord, mitosis, meiosis, chromatids, chromosomes, foeticide, HIV-AIDS,\nvasectomy, tubectomy.\nx Reproduction is necessary for perpetuation and continuation of life.\nx Reproduction is of two types - Sexual and Asexual.\nx In sexual reproduction only half of each parent’s chromosomes are passed to the next generation.\nx Fission, budding, fragmentation, regeneration, spore formation are the ways of asexual reproduction.\nx Several plants may be grown from vegetative parts like stems, roots, leaves etc and is called\nvegetative propagation.\nx V egetative propagation may be natural or man made.\nIt has got some economic importance.\nx In grafting we can acquire desirable characters of plants.\nx Tissue culture is a modern technique of growing plants.\nIt helps to grow more plants in less time and\nplace.\nx Sexual reproduction in higher animals is through specialised organs, distinctively male and female\nreproductive systems.\nx Cells divide for growth of the individual to repair and replace the worn out cells and also for the\nformation of gametes.\nx Cell division is of two types-a) Mitosis-or somatic cell division B) meiosis-or reproductive cell division.\nx The cell of the body may either be somatic cells that constitute the general body of the organism or\ngerm cells that take part in formation of gametes.\nx G-1, G-2, S and M are the stages in a cell cyclic which occur in a manner.\nx The longest phase is the synthesis phase in cell cycle where duplication of genetic material takes place.\nx At the end of mitosis two daughter cells are formed with the number of chromosomes same as that\nof their parents.\nIt runs through Prophase, Metaphase, Anaphase and Telophase.\nx Division of cytoplasm is called as Cytokinesis.\nx During meiosis the parent cell divides twice and four daughter cells are formed.\nx Reproductive health is important to possess sound mind in a sound body .\nx One should be aware of the facts related to transmission of sexually transmitted diseases.\nWhat we have learnt ?\n150 Reproduction\nx There is no cure for AIDS.\nPrevention is the only way to avoid it.\nLeading moral life is the right way\nto avoid AIDS.\nx Now a days various methods of contraception are available to control child birth.\nx It is our responsibility to build a healthy society.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00092"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 158,
+      "textbook_page": 149,
+      "pdf_pages": [
+        158,
+        159,
+        160
+      ],
+      "textbook_pages": [
+        149,
+        150,
+        151
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "x Division of cytoplasm is called as Cytokinesis.\nx During meiosis the parent cell divides twice and four daughter cells are formed.\nx Reproductive health is important to possess sound mind in a sound body .\nx One should be aware of the facts related to transmission of sexually transmitted diseases.\nWhat we have learnt ?\n150 Reproduction\nx There is no cure for AIDS.\nPrevention is the only way to avoid it.\nLeading moral life is the right way\nto avoid AIDS.\nx Now a days various methods of contraception are available to control child birth.\nx It is our responsibility to build a healthy society.\nx Determination of sex before birth is illegal.\nx Stop female foeticide.\n1.\nWhy do fish and frog produce a huge number of eggs each year?(AS1)\n2.\nGive examples and explain what is meant by external fertilisation?(AS1)\n3.\nWrite differences between.(AS1)\na) Androecium - Gynoecium b) Mitosis - Meiosis c) Grafting - Layering\n4.\nExplain the process of fertilisation in plants. (AS1)\n5.\nWhat are the different modes of asexual reproduction?\nCite them with examples. (AS1)\n6.\nIn what ways does sexual reproduction differs from asexual one?\nState at least three reasons.(AS1)\n7.\nHow are sperm cells adapted for their function? (AS1)\n8.\nThe menstrual cycle prepares the uterus for a fertilised egg.\nHow long is an average menstrual\ncycle from start to finish? (AS1)\n9.\nWhen the foetus is growing inside the uterus it needs nutrients.\nWhat provides these nutrients? (AS1)\n10.\nWhich type of substances are obsorbed by foetus from the mother ? (AS1)\n11.\nWhat is the job of the amniotic sac? (AS1)\n12.\nWhat are the advantages of sexual reproduction? (AS1)\n13.\nHow does reproduction help in providing stability to population of species? (AS1)\n14.\nWrite the differences between mitosis and meiosis. (AS1)\n15.\nWhat happens to the wall of the uterus during menstruation? (AS1)\n16. “All unicellular organisms undergo only mitotic cell division during favourable conditions”- Do you\nsupport this statement?\nWhy? (AS2)\n17.\nVicky’s father wants to grow a single plant having two desirable characters colourful flowers and\nbig fruits What method will you suggest him and why? (AS3)\n18.\nUproot an onion plant and take a thin section of its root tip.\nStain it and observe under microscope.\nDraw as you see and identify the stages of the cell division. (AS3)\n19.\nVisit a nearby village and collect information how farmers grow sugarcane, flowering plants like\nchrysanthemum and vegetables like potatoes, plump gourd (dondakaya) etc.\nMake a report and\npresent in class. (AS4)\nImprove your learning\nReflection of light at curved surfacesReproduction151\n20.\nCollect information from school library or using internet what vegetative methods are followed in\nyour district as well as in your state to propagate various plants of economic importance.\nRepresent\nit in a graph. (AS5)\n21.\nMake a flow chart to show the cell cycle and explain cell division describing different stages of\nmitosis. (AS5)\n22.\nDraw neat labelled diagrams of male and female reproductive system\nof plant. (AS5)\n23.\nObserve the following part of a flowering plant prepare a note. (AS5)\n24.\nPrepare a flow chart to explain the process of sexual reproduction\nin plants. (AS5)\n25.\nDraw a neatly labled diagram to explain plant fertilisation.\nWrite few\npoints on pollen grain. (AS5)\n26.\nWhat would be the consequences if there is no meiosis in organisms\nthat reproduce sexually? (AS2)\n27.\nHow will you appreciate cell division that helps in perpetuation of life? (AS6)\n28.\nWhat precautions will you take to keep away from various sexually transmitted diseases? (AS7)\n29.\nConduct a seminar on child marriages and female foeticide. (AS7)",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00093"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 197,
+      "textbook_page": 188,
+      "pdf_pages": [
+        197,
+        198,
+        199
+      ],
+      "textbook_pages": [
+        188,
+        189,
+        190
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Chromosomes whose number and morphology do not differ between\nmales and females of a species are called autosomes.\nThe remaining pair\nis called allosomes or sex chromosomes.\nThese are of two types, one is\n‘X’ and the other is ‘Y’.\nThese two chromosomes determine the sex of an\nindividual.\nFemales have two ‘X’ chromosomes in their cells (XX).\nMales\nhave one ‘X’ and one ‘Y’ chromosomes in their cells (XY).\nAll the gametes\n(ova) produced by a woman have only X chromosomes.\nThe gametes\n(sperm) produced by a man are of two types one with X chromosome and\nthe other one with Y chromosome.\nIf the sperm carries Y chromosome\nand fertilizes the ovum (X chromosome) then the baby will have XY\ncondition.\nSo the baby will be a boy.\n8.4 Sex determination in human beings\nReflection of light at curved surfaces189 Heredity and Evolution\nx What will happen if the sperm containing X\nchromosomes fertilizes the ovum?\nx Who decides the sex of the baby – mother or\nfather?\nx Is it right to blame a women that girl baby is\nborn?\nx Is the sex also a character or trait?\nDoes it\nfollow Mendels’ law of dominance?\nx Were all your traits similar to that of your\nparents?\nDo you know?\nDiscovery of the sex chromosomes\nWalter Sutton and Thomas Hunt\nMorgan in the year 1956 studied on a\nsmall fruit fly ( Drosophila\nmelanogaster ) at Columbia\nUniversity.\nThe discovery of sex linked\ntraits in Drosophila indicated that\ngenes are on chromosomes.\nThey\nworked out the details of inheritance\nin Drosophila.\nFather Mother\nBaby girl Baby boy Baby girl Baby boy\n22\n+X\n22\n+Y 22+X 22+X\n(44+XX) (44+XY) (44+XX) (44+XY)\nParents\nGametes\nOffspings\n44+XY 44+XX\nGyno\nSperm\nAndro\nSperm\nEggs\nFig-3\nmother’s sex\nchromosomes\nfather’s sex\nchromosomes\nmale\nchild\nfemale\nchild\n8.5 Evolution\nVariations develop during reproduction in organisms.\nSexual\nreproduction and errors in DNA copying leads to variations in offsprings\nin a population.\nThe same are also passed on to their offspring.\nLet us try to study the consequences of variations in the population of\nan insect in an environment.\nActivity-5\nVariations in beetle population\nObserve the below diagram showing variation in beetle population and\nits impact.\nThis is only an assumption.\nLet us consider a group of twelve beetles as shown in 1st figure.\nThey\nlive in bushes on green leaves.\nTheir population will grow by sexual\nreproduction.\nSo they were able to generate variations in population.\nSex determination in human beings\n!\n190 Heredity and Evolution\nLet us assume crows eat these red beetles.\nIf the crows eat more Red\nbeetles their population slowly reduced.\nFig-4: Variation in Beetle population in three different situations\nLet us discuss the above in three different situations in detail.\nSituation-1:\nIn this situation a colour variation arises during reproduction.\nSo that\nthere appears one beetle that is green in colour instead of red.\nFig-5: Red and green beetles\nMore over this green coloured beetle passes its colour to its off spring\n(Progeny).\nSo that all its progeny are green.\nCrows cannot see the green\ncoloured beetles on green leaves of the bushes and therefore crows cannot\neat them.\nBut crows can see the red beetles and eat them.\nAs a result there\nare more and more green beetles than red ones which decrease in their\nnumber.\nThe variation of colour in beetle ‘green’ gave a survival advantage to\n‘green beetles’ than red beetles.\nIn other words it was naturally selected.\nWe can see that the ‘natural selection’ was exerted by the crows.",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00119"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 211,
+      "textbook_page": 202,
+      "pdf_pages": [
+        211,
+        212,
+        213
+      ],
+      "textbook_pages": [
+        202,
+        203,
+        204
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "Male is responsible for sex determination of baby – do you agree?\nIf so write your answer with a\nflow chart. (AS1)\n14.\nWrite a brief note on analogous organs. (AS1)\n15.\nHow do scientists utilise the information about fossils? (AS1)\n16.\nMendel selected a pea plant for his experiments.\nMention the reasons in your point of view. (AS2)\n17.\nIf the theory of inheritance of acquired characters proposed by Lamarck was true how will the\nworld be? (AS2)\n18.\nCollect information on the inherited traits in your family members and write a note on it. (AS4)\n19.\nObserve flowering plants in your surroundings?\nWrite similarties and differences between them?\n20.\nWith the help of given information write your comment on evidences of evolution. (AS4)\nMammals have four limbs as do birds, reptiles and amphibians.\nThe basic structure of the limbs is\nsimilar, though it has been modified to perform different functions.\n21.\nCollect information about carbon dating method.\nDiscuss with your physical science teacher. (AS4)\n22.\nDraw a checker board show the law of independent assortment with a flow chart and explain the\nratio. (AS5)\n23.\nExplain the process to understand monohybrid cross of Mendel experiment with a checker board.\n(AS5)\n24.\nPrepare a flow chart showing evolution of man through ages. (AS5)\nReflection of light at curved surfaces203 Heredity and Evolution\n25.\nPrepare a cartoon on ‘Nature selects the organisms with desirable characters’. (AS6)\n26.\nWhat is your understanding about survival of the fittest.\nGive some situations or examples that you\nobserve in your surroundings? (AS7)\n27.\nWrite a monologue on evolution of a man. (AS7)\n1.\nThe process of acquiring character or traits is called ______________.\n2.\nMendel’s experiment explains about ______________.\n3.\nThe characters observed in the experiments on law of independent assossment are __________.\n4.\nIn pea plant if we cross pollinate purple flower plant with white flower we will get ________\npercent of recessive trait plants.\n5.\nTT or YY , Tt or Yy are responsible for a _________________ character.\n6.\nHumans have __________ pairs of autosomes and _______ pair of sex chromosomes.\n7.\nThe population grows in ________________ progression where as food sources grow in\n_______________ progression.\n8.\nA goat which can’t walk properly can’t live for a long time.\nAccording to Darwin this represents\n_______________.\n9.\nForelimb of whale is for swimming where as in horse it is used for _______________.\n10.\nThe study of fossils is called _______________.\n1.\nWhich of the following is not a variation in rose plant. ( )\nA) Coloured petals B) Spines C) Tendrils D) Leaf margin\n2.\nAccording to Mendel alleles have the following character. ( )\nA) Pair of genes B) Responsible for character\nC) production of Gametes D) Recessive factors\n3.\nNatural selection means ( )\nA) Nature selects desirable characters B) Nature rejects undesirable characters\nC) Nature reacts with an organism D) A, B\n4.\nPalaeontologists deals with ( )\nA) Embryological evidences B) Fossil evidences\nC) Vestigial organ evidences D) all\nChoose the correct answer\nFill in the blanks\n204 Heredity and Evolution\nMendel’s law of independent assortment\nTill now we have discussed about the Mendel’s\nhypothesis with monohybrid cross.\nMendel also\ntried to understand the inheritance of two pairs of\ncharacters together.\nIn this dihybrid cross, parent\npea plants produce offspring containing the factors\nfor Characters (traits) of Round (RR), Yellow (YY),\nand wrinkled (rr), green (yy).\nThese characters\nappeared independently without mixing with each\nother in F2 generation, which were produced by self\npollination in F1 generation.\nObserve the checker board given here carefully\nand note down different combinations of characters\nresulted from dihybrid cross.\n(1) RRYY , (2) RRYy, (3) RrYY, (4) RrYy,\n(5) RRYy, (6) RrYY , (7) RrYy, (8) RrYy,",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00128"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"In humans, sex determination occurs through the combination of sex chromosomes inherited from the parents. The mother contributes an X chromosome, while the father can contribute either an X or a Y chromosome. If the father's sperm carries an X chromosome, the resulting zygote will have XX chromosomes and develop into a female. If the sperm carries a Y chromosome, the zygote will have XY chromosomes and develop into a male. This process is explained in the textbook, which states that females have two X chromosomes (XX) and males have one X and one Y chromosome (XY). The sex of the baby is determined at the moment of fertilization when the sperm from the father combines with the egg from the mother.\",\n  \"selected_evidence_ids\": [\"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 197,\n      \"textbook_page\": 188\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 126.83397800000967,
+    "latency_seconds": 191.51329450000776,
+    "usage": {
+      "completion_tokens": 217,
+      "prompt_tokens": 4573,
+      "total_tokens": 4790,
+      "prompt_tokens_details": {
+        "cached_tokens": 127
+      }
+    },
+    "response_id": "chatcmpl-t1TW4ykAq9uTPlWVtHskPxfYJTXkD1gW",
+    "peak_rss_bytes": 15601905664
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "In humans, sex determination occurs through the combination of sex chromosomes inherited from the parents. The mother contributes an X chromosome, while the father can contribute either an X or a Y chromosome. If the father's sperm carries an X chromosome, the resulting zygote will have XX chromosomes and develop into a female. If the sperm carries a Y chromosome, the zygote will have XY chromosomes and develop into a male. This process is explained in the textbook, which states that females have two X chromosomes (XX) and males have one X and one Y chromosome (XY). The sex of the baby is determined at the moment of fertilization when the sperm from the father combines with the egg from the mother.",
+    "selected_evidence_ids": [
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E4",
+        "pdf_page": 197,
+        "textbook_page": 188
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Females are XX and males are XY",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Ova carry only X",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Sperm carry either X or Y",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "X-bearing sperm plus X ovum gives XX; Y-bearing sperm plus X ovum gives XY",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "The fertilising sperm determines chromosomal sex",
+        "token_recall": 0.6,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.6,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 122
+  },
+  "completed_at": "2026-07-17T14:12:53+00:00"
+}

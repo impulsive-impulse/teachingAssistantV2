@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P0__gold_separate_full__12c0a0fcce",
+  "question_id": "GEN-BIO-005",
+  "question": "What is double circulation? Why is it important in humans?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "6f035eefda92e8a86c1b6c296c148484aee29c183741c67cf5499420e4c8e921",
+  "context_sha256": "d92f93dcd0911cf36e0cc097cbd246f9b1911ee004ef4df9f84e6512a0db8d87",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 67,
+      "textbook_page": 58,
+      "text": "Circulation58Government’s Gift for Students’ Progress\nWilliam Harvey (1578-1657), an English doctor, went to Italy for\nfurther education under Fabrici.\nHarvey dissected the hearts of dead people and studied the valves\nbetween each atrium and its ventricle. He noticed that they were one-\nway valves. They allowed the blood to flow from the atrium to the\nventricle without any hinderance. However, when the heart contracts,\nblood in the ventricle could not flow back into the atrium. Instead, the\nblood was pushed out into the arteries.\nHarvey began thinking about the valves his teacher, Fabrici, had\ndiscovered in the leg veins. They were one-way, and they forced the blood\nto move toward the heart.\nHe checked that by tying off and blocking different veins in animals.\nHe found that the veins always bulged on the side of the block away from\nthe heart. As though the blood was trying to flow toward the heart. This\nwas true of all veins.\nIn the arteries, the blood bulged on the heart side of any block he put\nin, as though it were trying to flow away from the heart and couldn’t move\nin the other direction.\nHarvey now saw what was happening. The heart pushed blood in to the\narteries and the blood returned by way of the veins. It did this for both\nventricles. The blood had a double circulation. Starting from the right\nventricle blood left by way of the arteries to the lungs and returned by way\nof veins to the left atrium, this is known as ‘pulmonary circulation’.\nFrom there it flowed into the left ventricle and left by way of aorta to the\nrest of the body and returned by way of the veins to the right atrium. From\nhere it moved into the right ventricle, this is known as ‘systemic\ncirculation’. As blood reaches the heart two times through pulmonary\ncycle and again through systemic, it is called ‘double circulation’.\nHarvey also prooved the statement wrong which states that the blood\nflowing out of the heart was used up in the body and new blood was formed.\nHe measured how much blood the heart pumped in one contraction and\nalso counted the number of contractions per minute.\nHe found that in one hour, the heart pumped out a quantity of blood\nthat was three times the weight of a man. The body couldn’t use up blood\nand form new blood at such a rate.\nFig-6: William\nHarvey",
+      "text_sha256": "d1ea81a2d9b4dce5da7665ba3504d287378e883e03b4ac0c870c09967d14c783"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 72,
+      "textbook_page": 63,
+      "text": "Circulation63Government’s Gift for Students’ Progress\nName of the\nanimal\nNo. of\nbeats/minWeight of the body Weight of the heart\nBlue whale\nElephant\nHuman being\nCoaltit (Bird)\n7\n46\n76\n1200\n1,50,000 kg\n3000 kg\n60-70kg\n8 gm\n750 kg\n12 - 21 kg\n300 gm\n0.15 gm\nBlood is pumped into the blood vessels at regular intervals. The tissues\ndo not receive the blood continuously, but in the form of spurts. When we\nkeep our finger at the wrist, where the artery is passing into the hand we\nfeel the pressure of blood moving in it. This is the ‘pulse’. The rate of the\npulse will be equal to the number of heartbeats.\n3.6 Single and double circulation\nWe know that blood flows in\nthe blood vessels. To keep the blood\nmoving the heart pumps it\ncontinuously. The blood that is\npumped by the heart reaches the\nbody parts and comes back to the\nheart. But course taken by the blood\nis not the same in all the animals.\nLet us observe the fig-11(a) and (b).\nStart from any point in the fig-11(a)\nand (b). Move in the direction of\narrow. Note down the parts which\nare in the way in cyclical form.\nTry to identify different parts\nof the body in both figures.\nCompare the two flow charts and answer the following.\nx How many times did your pointer touch body parts in fig-11(a) and (b)?\nx How many times did your pointer touch the heart in fig-11(a) and (b)?\nx How many times did your pointer touch the respiratory organs\n(lungs / gills) in fig-11(a) and (b)?\nFig-11(a):\nSingle circulation\nFig-11(b):\nDouble circulation\nbrain\nliver\nlungs\nother\nparts\ngills\nvein\nkidney\nartery\n! Do you know?",
+      "text_sha256": "b0d8dea97a844b4b9dc7eeec0511c6650796450accf961342c917844bfb1f030"
+    },
+    {
+      "evidence_id": "E3",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 73,
+      "textbook_page": 64,
+      "text": "Circulation64Government’s Gift for Students’ Progress\nFrom your observation it is clear that in fig -11(a) blood flows through\nheart only once to complete one circulation. This is single circulation. In\nFig-11 (b) blood flows through the heart twice for completing one\ncirculation. This is called double circulation.\n3.7 Lymphatic system\nHave you ever observed what happened to your feet after\novernight journey, in sitting position without moving? We feel that\nour foot wear is little tight. In elders it will be clear that the lower\npart of the legs will be swollen. This stage is called oedema.\nx Why do our legs swell?\nAs blood flows through tissues and through blood capillaries\nsome amount of fluids and certain solid materials are constantly\nflowing out of them at different junctions. Such materials are\ncollected and sent back into blood circulation.\nWe know that blood circulates in the blood vessels, pushed by\nthe heart. From the heart it flows into the arteries and finally into the\ncapillaries. To supply nutrients to the cells (tissues), the liquid\nportion of the blood with nutrients flows out of the capillaries. This\nis called tissue fluid.\nThis fluid flows through a system called as lymphatic system.\nThe fluid mainly returns back into the blood stream.\nLymph is the vital link between blood and tissues by which\nessential substances pass from blood to cells and excretory products from\ncells to blood.\nBlood is a substance which contains solid and liquid particles. Lymph\nis the substance that contains blood without solid particles. Tissue fluid is\nlymph present in the tissues. The liquid portion after formation of blood\nclot is serum.\nThe muscles which are attached to the skeleton (skeletal muscles) act\nas pumps when they contract the pressure exerted on lympth vessel and\nblood vessel and helps in pushing the lymph flowing in lymphatic vessels\nand the blood flowing in veins towards the heart.\nThe valves that are present in the lymphatic vessels and veins stop the\nreverse flow of blood. We shall read about this as the system of lymph\ncirculation in detail in higher classes.\nFig-12: Lymphatic\nsystem",
+      "text_sha256": "944f3a5a872522dd5ca1b15d19a273b71e28b868c45c2658bdbfba6b1d38207d"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Double circulation is a process in which blood passes through the heart twice during one complete cycle. In humans, it is important because it ensures that blood is efficiently circulated to all parts of the body and also to the lungs for oxygenation. The double circulation consists of two parts: pulmonary circulation, where blood is sent to the lungs to pick up oxygen and return to the heart, and systemic circulation, where blood is pumped to the rest of the body and returns to the heart. This system allows for efficient oxygen and nutrient delivery while removing waste products.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 67,\n      \"textbook_page\": 58\n    }\n  ],\n  \"missing_information\": []\n}",
+    "latency_seconds": 43.04510119999759,
+    "usage": {
+      "completion_tokens": 182,
+      "prompt_tokens": 1699,
+      "total_tokens": 1881,
+      "prompt_tokens_details": {
+        "cached_tokens": 50
+      }
+    },
+    "response_id": "chatcmpl-pLblJ6FbSKmChjestCeUopvyi3HjGW2t"
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Double circulation is a process in which blood passes through the heart twice during one complete cycle. In humans, it is important because it ensures that blood is efficiently circulated to all parts of the body and also to the lungs for oxygenation. The double circulation consists of two parts: pulmonary circulation, where blood is sent to the lungs to pick up oxygen and return to the heart, and systemic circulation, where blood is pumped to the rest of the body and returns to the heart. This system allows for efficient oxygen and nutrient delivery while removing waste products.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 67,
+        "textbook_page": 58
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Blood passes through the heart twice in one complete circulation",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Describe the pulmonary circuit",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Describe the systemic circuit",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Explain efficient separation/delivery of oxygenated and deoxygenated blood",
+        "token_recall": 0.4286,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.25,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 99
+  },
+  "completed_at": "2026-07-16T19:54:10+00:00"
+}

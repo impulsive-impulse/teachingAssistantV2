@@ -1,0 +1,178 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__development__retrieved__P1__retrieved_top5_page_order_compact__79418da494",
+  "question_id": "GEN-PSC-018",
+  "question": "Explain the working of an electric motor with a neat diagram.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": true,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "a8ec448835aeef1d812d17a94966b258651aa7f60e6e0a2330e92ab0890bb338",
+  "context_sha256": "f2fef010956789c8c4fd22b68c3a1cd1c5ef2525c8db117a043f23a3101162f0",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 200,
+      "textbook_page": 190,
+      "pdf_pages": [
+        200,
+        201
+      ],
+      "textbook_pages": [
+        190,
+        191
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "In previous classes, you had learnt about electric current, battery, electric\ncircuit and its components.\n· What do you mean by electric current?\n· Which type of charge (positive or negative) flows through an electric\nwire when it is connected in an electric circuit?\n· Is there any evidence for the motion of charge in daily life situations?\nIn class VIII you learned about lightning.\nLightning is an electric discharge\nbetween two clouds or between cloud and Earth.\nThis electric discharge\nthrough air appears to us as an electric spark or lightning.\nLightning is a live example which provides evidence for the motion of\ncharge in the atmosphere.\n· Does motion of charge always lead to electric current?\nLet us see.\nActivity 1\nSituation 1: Take a bulb, a battery, a switch and few insulated copper wires.\nConnect the ends of the copper wires to the terminals of the battery through\nthe bulb and switch.\nNow switch on the circuit and observe the bulb.\n· What do you notice?\nSituation 2: Remove the battery from the circuit and connect the remaining\ncomponents to make a complete circuit.\nAgain switch on the circuit and\nobserve the bulb.\nDoes the bulb glow?\n186 Electric Current\nSituation 3: Replace the copper wires with nylon wires and connect the\nnylon wires to the terminals of the battery through a bulb and switch.\nNow\nswitch on the circuit and observe the bulb.\nDoes the bulb glow?\nAfter doing these activities you will notice that the bulb glows only in\nsituation 1.\n· Can you predict the reason for the bulb not glowing in situations 2 and\n3?\nIn class VII, you have learnt that the battery stores chemical energy and\nthis energy converts into electric energy and makes the bulb to glow as\nyou observed in situation 1 i.e. the battery supplies the required energy to\nmake the bulb glow.\nBut in situation 3, though there is a battery in the\ncircuit, the bulb does not glow because the connecting wires (nylon wires)\nare not able to carry the energy from source (battery) to bulb.\nHence, the nature of the substance plays an important role in the transfer\nof energy from battery to bulb.\nThe material which transfers energy from\nbattery (source) to the bulb is called a conductor and the material which\ncannot transfer energy from battery (source) to the bulb is called a non\nconductor.\n• Why do all materials not act as conductors?\n• How does a conductor transfer energy from source to bulb?\nDrude and Lorentz, at the beginning of the 20 th century, proposed that\nconductors like metals contain a large number of free electrons while the\npositive ions are fixed in their locations.\nLet us understand the behaviour of these free electrons.\nAssume that a\nconductor is an open circuit.\nThe free electrons move randomly in the\nconductor as shown in fig.- 1.\nWhen the electrons are in random motion,\nthey can move in any direction.\nHence, if you imagine any cross section\nas shown in fig.- 1, the number of electrons, crossing the cross section of\na conductor from left to right in one second is equal to that of electrons\npassing the cross section from right to left in one second.\nIt means that\nnet charge moving along a conductor through any cross section is zero\nwhen the conductor is in open circuit.\n· What happens to the motion of electrons\nwhen the ends of the conductor are connected to\nthe battery?\nWhen the ends of the conductor are connected to\nthe battery through a bulb, the bulb glows because\nenergy transfer takes place from battery to the bulb.",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00114"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 226,
+      "textbook_page": 216,
+      "pdf_pages": [
+        226,
+        227,
+        228
+      ],
+      "textbook_pages": [
+        216,
+        217,
+        218
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "household circuit, to which we connect various appliances such as fan, TV ,\nrefrigerator etc.\nAll the electric devices of our home are connected at different points\nbetween these two wires.\nThis means all the electric appliances are in\nparallel connection.\nHence, potential drop across each device is 240V .\nIf\nwe know the value of resistance of the electric device, we can calculate\nthe current passing through it using the equation I = V/R.\nFor example, the\ncurrent passing through a bulb with resistance 240 W is 1 A.\nBased on the resistance of each electric device, it draws some current\nfrom the supply.\nTotal current drawn from the mains is equal to the sum of\nthe currents passing through each device (Junction law).\nIf we add more devices to the household circuit the current drawn\nfrom the mains also increases.\n· What happens when this current increases greatly?\nTo answer this, observe the values noted on digital meters fixed\nat your home.\nYou will notice the following values on the meter.\nPotential difference: 240 V\nCurrent: 5 – 20A\nThis means the line wires that are entering the meter have a\npotential difference of 240V .\nThe minimum and maximum limit\nof current that can be drawn from the mains is 5 – 20A.\nThus, the\nmaximum current that we can draw from the mains is 20A.\nWhen\nthe current drawn from the mains is more than 20A.\nOverheating\noccurs and may cause a fire.\nThis is called over loading.\nSee fig.-\n32.\nIf we switch on devices, such as heater shown in fig.- 32, the\ncurrent drawn from the mains exceeds the max limit 20A.\n· How can we prevent damage due to overloading?\n240V\nFuse\nTV\nFridge\nBulb\nFan\nHeater\n20A\n6A\n8A\n2A\n4A\nfig-32\n212 Electric Current\n· Electric current is expressed as the amount of charge flowing through a particular cross section\narea in unit time.\n· W ork done by the electric force on unit positive charge to move it through a distance from A to\nB in a conductor is called potential difference between those two points.\n· A multi-meter is an electronic measuring instrument that combines several measuring functions\n(electric potential difference, electric current and electric resistance) in one unit.\n· Ohms law: The current through a conductor element is proportional to the potential difference\napplied between its ends, provided the temperature remains constant.\nMathematically V=IR.\nTo prevent damages due to overloading we connect an electric fuse to the\nhousehold circuit as shown in fig.- 32.\nIn this arrangement, the entire current\nfrom the mains must pass through the fuse.\nThe fuse consists of a thin wire of\nlow melting point.\nWhen the current in the fuse exceeds 20A, the wire will\nheat up and melt.\nThe circuit then becomes open and prevents the flow of\ncurrent into the household circuit.\nSo all the electric devices are saved from\ndamage that could be caused by overload.\nThus we can save the house holding wiring and devices by using fuses.\nNote: The value of overload current varies from the household currents to\nfactories.\nThink and discuss\n· What do you mean by short circuit?\n· Why does a short circuit damage electric wiring and devices\nconnected to it?\nKey words\nCharge, Potential difference, Electric current, Multi-meter, Ohm’s law, Resistance,\nResistivity, Kirchhoff’s laws, Electric power, Electric energy.\nWhat we have learnt\n213 Electric Current\n· Ohm’s law is valid for metal conductors at constant temperature.\nIt is not applicable\nfor gaseous conductors and semiconductors.\n· Resistance is the opposition that a substance offers to the motion of electrons.\n· Resistance of a wire depends on the material of the wire, its length and its area of",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00131"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 227,
+      "textbook_page": 217,
+      "pdf_pages": [
+        227,
+        228
+      ],
+      "textbook_pages": [
+        217,
+        218
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Think and discuss\n· What do you mean by short circuit?\n· Why does a short circuit damage electric wiring and devices\nconnected to it?\nKey words\nCharge, Potential difference, Electric current, Multi-meter, Ohm’s law, Resistance,\nResistivity, Kirchhoff’s laws, Electric power, Electric energy.\nWhat we have learnt\n213 Electric Current\n· Ohm’s law is valid for metal conductors at constant temperature.\nIt is not applicable\nfor gaseous conductors and semiconductors.\n· Resistance is the opposition that a substance offers to the motion of electrons.\n· Resistance of a wire depends on the material of the wire, its length and its area of\ncross section Ra l/A.\n· The resistivity of a material is the resistance per unit length of a unit cross section of\nthe material.\n· Two or more resistors are said to be connected in series if the same current flows\nthrough them.\n· The junction law: At any junction point in a circuit where the current can divide,\nthe sum of the currents into the junction must equal the sum of the currents leaving\nthe junction.\n· The loop law: The algebraic sum of the increases and decreases in potential\ndifference across various components of a closed circuit loop must be zero.\n· Electric power is the product of potential difference and the current.\nSI unit of\npower is watt (W).\n· Electrical energy is the product of power and time.\nUnits of electrical energy W-s\nand KWH.\nI.\nReflections on concepts\n1.\nExplain how electron flow causes electric current with\nLorentz – Drude theory of electrons.(AS1)\n2.\nWrite the difference between potential difference and emf. (AS1)\n3.\nHow can you verify that the resistance of a conductor is temperature dependent?\n(AS1)\n4.\nExplain how electric shock takes place. (AS1)\n5.\nDraw a circuit diagram for a circuit in which two resistors A and B are connected\nin series with a battery and a voltmeter is connected to measure the potential\ndifference across the resistor A.(AS5)\n6.\nIn the figure Q-6 the potential at A is —————\nwhen the potential at B is zero. (AS7)\n5W\ng1A\n2VA B\nV= 0\nfig.\nQ - 6\nImprove your learning",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00132"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 233,
+      "textbook_page": 223,
+      "pdf_pages": [
+        233,
+        234,
+        235
+      ],
+      "textbook_pages": [
+        223,
+        224,
+        225
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "the electron.\nThe electron density (n) of a metal conductor depends on its nature\nso it is also constant for a particular conductor.\nFor a given conductor, the length (l) and cross section area (A) are\nalso constants.\nThe value of t depends on temperature of the conductor.\nWhen the temperature increases the random motion of electrons\nincreases hence the value of t decreases.\nFor a constant temperature of a conductor the value of t becomes\nconstant.\nHence (2m/ne 2t) ( l/A) becomes a constant for a particular\nconductor at constant temperature.\nLet this value be R (called resistance\nof a conductor).\nThe we get\nIR = V (from equation e) ...................(f)\nThis is what we call Ohm’s law.\nWhere R = (2m/ne2t) (l/A) ..................(g)\nIn the above equation 2m/ne 2t is the characteristic value of a\nconductor.\nThe value of resistance R is different for different\ngeomentrical values for a particular conductor (material).\nHence 2m/\nne2t is taken as a constant independent of geomentrical values.\nLet it\nbe r.\nIt is called specific resistance.\nr = 2m/ne2t\nFrom equation (g) we get\nR = rl/A ..................(h)\nNote: Drift velocity and Drift speed are synonoum\n219 Electromagnetism\nIn the previous chapter on ‘Electricity’ you have learnt about the heating\neffects of electric current.\nWe use many electric appliances in our daily\nlife such as electric motor, electric generators, electric calling bells,\nelectric cranes etc.,\n· How do electric appliances work?\n· How do electromagnets work?\nDo you know?\n· Is there any relation between electricity and magnetism?\n· Can we produce magnetism from electricity?\nIn this chapter we will study electromagnetic effects.\nWe also study electric\nmotors which involve magnetic effects of electric current and electric\ngenerator which involves electric effects of moving magnets.\nHans Christian Oersted (1777 - 1851) was one of the leading\nscientists of the 19 th century, played a crucial role in\nunderstanding electromagnetism.\nHe gave lectures which were\nquite popular among the public and also learnt a lot during the\ntours.\nDuring one such lecture in April 1820, Oersted carried\nout an experiment that was never performed before.\nHe placed\na compass needle underneath a wire and then turned on electric\ncurrent.\nThe needle of compass showed deflection.\nOersted recognized the significance of what he had just done.\nElectromagnetism10\nCHAPTER\n220 Electromagnetism\nEarlier, it was believed that electricity and magnetism were two different unconnected\nsciences.\nOersted had demonstrated that they were interconnected.\nThrough this\nobservation he showed that electricity and magnetism were related phenomena.\nSome\nscientists, influenced by this experiment, continued to work in the modern field of\n“electromagnetism”.\nTheir research resulted in several new scientific theories and\nvarious vital inventions like the dynamo and the electric motor, with this a new\ntechnology prospered, leading to inventions such as radio, television and fiber optics.\nThe unit of magnetic field strength is named Oersted in his honour.\nOersted was made a foreign member of the Royal Swedish Academy of Sciences in 1822.\nfig-1\nActivity 1\n10.1 Oersted experiment\nTake a thermocole sheet and fix two thin wooden sticks of height 1cm\nwhich have small slit at the top of their ends as shown in fig-1.\nArrange a\ncopper wire of 24 gauge so that it passes through these slits and make a\ncircuit.\nThe circuit consists of a 3 (or 9) volt battery, key and copper wire\nwhich are connected in series as shown in figure 1.\nNow, keep a magnetic\ncompass below the wire.\nBring a bar magnet close to the compass.\n· Does the needle get deflected by the bar\nmagnet?\n· Why does the needle get deflected by the",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00135"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 260,
+      "textbook_page": 250,
+      "pdf_pages": [
+        260,
+        261,
+        262,
+        263
+      ],
+      "textbook_pages": [
+        250,
+        251,
+        252,
+        253
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "We are greatful to those scientists for inventing a method of generating\nelectrical energy from a generator in this way.\n11\n4\n1\n2\n3\n4\n11\n4\nemf generated coil\nZero emf Maximum\nemf\nZero\nemf\nMaximum\nemf\nZero\nemf\nNo. of\nrevolutions\n0\nfig-17(d)\nPosition of coil in one rotation.\nB\nA\nAB\nB\nA\nA\nB\nA\nAB\nB\nB\n246 Electromagnetism\n· A measure of strength of magnetic flux by taking account of number of field lines is\ncalled magnetic flux.\n· Magnetic flux density (B) is defined as the ratio of flux passing through a plane perpendicular to\nfield and the area of the plane.\n· Current carrying wire produces magnetic field.\n· F = qvB sinθ and F = ILB sinθ\n· In electric motor, electrical energy is converted into mechanical energy.\n· The production of electric current due to relative motion between a coil and a magnetic field is\ncalled electromagnetic induction.\n· Faraday’s law: The induced EMF generated in a closed loop is equal to the rate of change of\nmagnetic flux passing through it.\n· Lenz’s law: the induced current set up in the coil is in such a direction that it opposes the changes\nin the flux.\n· When a conductor of length ‘l’ moves perpendicular to field B with a speed v then potential\ndifference (voltage) developed between the ends of conductor is Blv.\nThis EMF is called motional\nEMF.\n· In generators, mechanical energy is converted into electrical energy.\nI.\nReflections on Concepts\n1.\nAre the magnetic field lines closed?\nExplain. (AS1)\n2.\nSee fig-Q1, magnetic lines are shown.\nWhat is the\ndirection of the current flowing through the wire?(AS1)\nKey words\nMagnetic flux, Magnetic flux density, Electric motor, Slip rings, Induced current, Induced\nEMF , Electric generator, DC and AC currents, rms values\nWhat we have learnt\nImprove your learning\nfig- Q1\n247 Electromagnetism\n3.\nA bar magnet with North Pole facing towards a coil moves as shown in\nfig-Q2.\nWhat happens to the magnetic flux passing through the coil? (AS1)\n4.\nA coil is kept perpendicular to the page.\nAt P, current flows into the page and\nat Q it comes out of the page as shown in fig-Q3.\nWhat is the direction of\nmagnetic field due to the coil? (AS1)\nII.\nApplication of Concepts\n1.\nThe direction of current flowing in a coil is shown in fig-Q4.\nWhat type of magnetic\npole is formed at the face that has flow of current as shown in fig-Q? (AS1)\n2.\nWhy does the picture appear distorted when a bar magnet is brought close to\nthe screen of a television?\nExplain (AS1)\n3.\nSymbol ‘X’ in fig.Q5 indicates the direction of a magnetic field into the page.\nA straight long wire carrying current along its length is kept perpendicular to\nthe magnetic field.\nWhat is the magnitude of force experienced by the wire?\nIn\nwhat direction does it act? (AS1)\n4.\nAn 8N force acts on a rectangular conductor 20cm long placed perpendicular\nto a magnetic field.\nDetermine the magnetic field induction if the current in the conductor is 40A.\n(Ans: 1tesla) (AS1)\n5.\nAs shown in the fig-Q6, both coil and bar magnet moves in the same direction.\nWhat happens?\n(AS2)\n6.\nGive a few applications of Faraday’s law of induction in daily life. (AS7)\nfig- Q6\nN\nV\nC\nN\nfig- Q2\nxP\nQ\nfig- Q3\nfig- Q5\nB\ni\nL\nfig- Q4\n248 Electromagnetism\n1.\nWhich of the following converts electrical energy into mechanical energy [ ]\na) motor b) battery\nc) generator d) switch\n2.\nWhich of the follwing converts mechanical energy into electrical energy [ ]",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00154"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"insufficient_evidence\",\n  \"answer\": \"The provided textbook evidence does not contain a detailed explanation of the working of an electric motor, nor does it include a diagram. Therefore, it is not possible to explain the working of an electric motor with a neat diagram based on the given evidence.\",\n  \"selected_evidence_ids\": [],\n  \"citations\": [],\n  \"missing_information\": [\"Explanation of the working of an electric motor\", \"Diagram of an electric motor\"]\n}",
+    "time_to_first_token_seconds": 293.5770823000057,
+    "latency_seconds": 351.55543040001066,
+    "usage": {
+      "completion_tokens": 103,
+      "prompt_tokens": 4094,
+      "total_tokens": 4197,
+      "prompt_tokens_details": {
+        "cached_tokens": 124
+      }
+    },
+    "response_id": "chatcmpl-I1cEOzSxgbHYD8YY7Hi0ETUPAvUuS1L8",
+    "peak_rss_bytes": 26486546432
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "insufficient_evidence",
+    "answer": "The provided textbook evidence does not contain a detailed explanation of the working of an electric motor, nor does it include a diagram. Therefore, it is not possible to explain the working of an electric motor with a neat diagram based on the given evidence.",
+    "selected_evidence_ids": [],
+    "citations": [],
+    "missing_information": [
+      "Explanation of the working of an electric motor",
+      "Diagram of an electric motor"
+    ],
+    "valid_citation_count": 0,
+    "citation_count": 0
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Place a current-carrying rectangular coil in a magnetic field",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Opposite magnetic forces on the coil sides produce torque",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Use the appropriate hand rule to give force directions",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "A split-ring commutator reverses current each half turn",
+        "token_recall": 0.0,
+        "matched": false
+      },
+      {
+        "point": "Electrical energy is converted to mechanical rotation",
+        "token_recall": 0.0,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.0,
+    "citation_validity": 0.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": true,
+    "answer_word_count": 45
+  },
+  "completed_at": "2026-07-17T09:51:57+00:00"
+}

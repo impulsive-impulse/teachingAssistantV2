@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__gold__P1__gold_separate_full__d7742c81bc",
+  "question_id": "GEN-BIO-004",
+  "question": "What procedure do you follow to understand anaerobic respiration in your school laboratory?",
+  "book_id": "biology",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "16547b1137c31f834958a11cb22e3b18bf18777f3e3bc00eadecbb748ee2ff69",
+  "context_sha256": "070e90a434b79d12fcdaa0b63d0cddcbe2059c92063e34c0d7d26d7778b9a649",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 49,
+      "textbook_page": 40,
+      "text": "Respiration40Government’s Gift for Students’ Progress\n2.5 Anaerobic respiration\nWe have found that living things produce carbon dioxide and give out\nenergy. If these processes are caused by an oxidation process, what happens\nif the oxygen supply is cut off? If human muscles can go on releasing\nenergy when they are short of oxygen, what can the cells of other living\norganisms do?\nLet us find out by doing some experiments.\nExperiments with yeast\nTo test this idea we can see whether it is possible to detect any rise in\ntemperature and the production of carbon dioxide, when living organisms\nare kept away from a supply of oxygen. Yeast\ngrows rapidly if it is supplied with glucose in\nsolution. Indeed, wild yeasts are normally found\ngrowing on the skins of fruits like grapes and\napples, from which they derive their food\nsupplies. Our immediate problem is to remove\nthe oxygen from the glucose solution and yeast.\nArrange the apparatus as shown in fig. 12\n1. You can remove dissolved oxygen from\nglucose solution by heating it for a minute,\nand then cooling it without shaking. Now\nput in some yeast; the supply of oxygen\nfrom the air can be cut off by pouring one centimetre layer of liquid\nparaffin on to the mixture.\n2. If you wish to check that the oxygen has been removed from the\nmixture, add a few drops of diazine green (Janus Green B) solution to\nthe yeast suspension before you pour the liquid paraffin (wax) over it.\nThis blue dye turns pink when oxygen is in short supply around it.\n3. Another bottle containing bicarbonate/indicator solution (or lime\nwater) is attached as in the Fig-12. During the process of anaerobic\nrespiration some amount of carbondioxide is released.\nFig-12: Testing for production of heat and\nCO2 under anaerobic respiration\nliquid paraffin\nyeast in boiled\nand cooled\nglucose solution\nlime water\nthermometer\nLab Activity",
+      "text_sha256": "157a04ef5af9b11d6de1829d8dfc81487fde8e7825a7f59ba989b1b073eb1224"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 50,
+      "textbook_page": 41,
+      "text": "Respiration41Government’s Gift for Students’ Progress\nThe released carbondioxide passes through the tube and turns lime\nwater milky. We can observe the change in the temperature also during\nthis process. You may prefer to carry out the ‘carbon dioxide production’\npart of the experiment on a smaller scale, using test tubes. If you do, then\nwarm them to about 37o C in order to speed up the test.\nx What happens when a baker prepares a dough by mixing yeast in it?\n2.6 Fermentation\nLet us recall maida dough and yeast powder activity that you performed\nin class VIII in the chapter ‘The story of microorganisms’. Why volume of\nthe dough has increased? Which gas released in that reaction?\nIf yeast and sugar solution are left to stand without oxygen for some\ndays, they develop a characteristic smell, caused by production of new\ncompound called ethanol, which has been manufactured by the yeast from\nthe sugar. The same type of smell you can notice from preserved idly,\ndosa dough at your home, but not in refrigirator. The ethanol can be separated\nfrom the yeast-glucose mixture by the process of fractional distillation\nsince ethanol boils at a lower temperature (70°C) than the sugar solution.\nCollect information about fractional distillation with the help your teacher.\nQuite like aerobic respiration this is a process of producing energy\nwhen there is no supply of oxygen.\nx Respiration is an energy releasing process, do you agree? Justify\nyour answer.\n2.7 Respiration versus combustion\nLavoisier around the late 18 thcentury, through a series of carefully\nperformed experiments, came to the opinion that respiration was a process\nlike combustion. He wrote in a compilation in 1783, “respiration is a\ncombustion process. It is a very slow process and here oxygen is not only\ncombines with carbon but also with hydrogen.” Robinson also stated that\nrespiration is a type of combustion and combustion is the source of heat\nin animals.\nActivity-2\nObserving changes during combustion of glucose\nArrange apparatus as shown in the Fig-13 and heat the test tube over a\nflame. Does the glucose in the test tube melt?\nWhat happens if you heat for some more time?",
+      "text_sha256": "34b6b1f90b7e3b36c07613e266704cfb8e3b34f8c85a9057abf0d050b7212d86"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"To understand anaerobic respiration in the school laboratory, you can follow the procedure outlined in the textbook. First, you need to prepare a glucose solution and remove the dissolved oxygen from it by heating and cooling it without shaking. Then, add yeast to the solution and cover it with a layer of liquid paraffin to prevent oxygen from entering. This setup ensures that the yeast undergoes anaerobic respiration. To check if oxygen has been removed, you can add a few drops of diazine green (Janus Green B) solution, which turns pink in the absence of oxygen. Next, connect a tube to the setup that leads to a bottle containing lime water. As the yeast undergoes anaerobic respiration, it produces carbon dioxide, which will pass through the tube and turn the lime water milky. Additionally, you can observe the temperature change using a thermometer. This experiment helps you understand how organisms produce energy without oxygen, similar to how yeast is used in baking and fermentation processes.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 49,\n      \"textbook_page\": 40\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 63.80812010000227,
+    "latency_seconds": 128.56417339999462,
+    "usage": {
+      "completion_tokens": 276,
+      "prompt_tokens": 1133,
+      "total_tokens": 1409,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-Zn8MLKmnAehbzDOQqyTVkV4YpL5Ee6DK",
+    "peak_rss_bytes": 18833678336
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "To understand anaerobic respiration in the school laboratory, you can follow the procedure outlined in the textbook. First, you need to prepare a glucose solution and remove the dissolved oxygen from it by heating and cooling it without shaking. Then, add yeast to the solution and cover it with a layer of liquid paraffin to prevent oxygen from entering. This setup ensures that the yeast undergoes anaerobic respiration. To check if oxygen has been removed, you can add a few drops of diazine green (Janus Green B) solution, which turns pink in the absence of oxygen. Next, connect a tube to the setup that leads to a bottle containing lime water. As the yeast undergoes anaerobic respiration, it produces carbon dioxide, which will pass through the tube and turn the lime water milky. Additionally, you can observe the temperature change using a thermometer. This experiment helps you understand how organisms produce energy without oxygen, similar to how yeast is used in baking and fermentation processes.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 49,
+        "textbook_page": 40
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Use yeast supplied with glucose solution",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Remove/exclude oxygen and prevent its re-entry",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "Maintain an experimental setup and an appropriate comparison",
+        "token_recall": 0.2,
+        "matched": false
+      },
+      {
+        "point": "Detect carbon dioxide and/or a temperature rise",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "Infer that yeast releases energy and CO₂ without oxygen",
+        "token_recall": 0.5714,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.6,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 165
+  },
+  "completed_at": "2026-07-17T15:23:50+00:00"
+}

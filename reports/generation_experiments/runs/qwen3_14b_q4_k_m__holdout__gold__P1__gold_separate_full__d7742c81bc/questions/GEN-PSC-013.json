@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__gold__P1__gold_separate_full__d7742c81bc",
+  "question_id": "GEN-PSC-013",
+  "question": "Explain the formation of sodium chloride and calcium oxide on the basis of the concept of electron transfer from one atom to another atom.",
+  "book_id": "physical_sciences",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": true,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "c1f3b32dd2c70621f57dfd77769ea0919983043ede5573cfb55f7478170372c6",
+  "context_sha256": "b3fba348636b2dabebae0167cb2641d728ca584c162c1110d704e49934a4a6ee",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 180,
+      "textbook_page": 165,
+      "text": "Government’s Gift for Students’ Progress 165 Chemical Bonding\nAs this bond is between charged particles known as ions, it is called ionic\nbond. Sometimes based on the forces being electrostatic, the bond is also\ncalled the electrostatic bond. As the valence concept has been explained\nin terms of electrons, it is also called the electrovalent bond.\nThus, we can define ionic bond as follows:\nThe electrostatic attractive force that keeps cation and anion (which\nare formed from metal atoms and non-metal atoms due to transfer of\nelectrons) together to form a new electrically neutral compounds is called\n‘ionic bond’.\nNow let us know the formation of ionic compounds NaCl, MgCl2, Na2O\nand AlCl3.\nExample 1. Formation of sodium chloride (NaCl):\nSodium chloride is formed from the elements sodium and chlorine. It\ncan be explained as follows:\nNa(s) + 1\n2 Cl2(g) g NaCl(s)\nCation formation\nWhen sodium (Na) atom loses one electron to get octet electron\nconfiguration it forms a cation (Na+) and gets electron configuration that\nof Neon (Ne) atom.\n11Na (g) g 11Na+ (g) + e-\nElectronic Configuration 2, 8, 1 2, 8\nor [Ne] 3s1 [Ne]\nAnion formation\nChlorine has shortage of one electron to get octet in its valence shell.\nSo it gains the electron from Na atom to form anion and gets electron\nconfiguration as that of argon (Ar).\n17Cl (g) + e- g Cl– (g)\nElectronic configuration 2, 8, 7 2, 8, 8\nor [Ne] 3s2 3p5 [Ne] 3s2 3p6 or [Ar]\nFormation of the compound NaCl from its ions:\nTransfer of electrons between ‘Na’ and ‘C l’ atoms, results in the\nformation of ‘Na +’ and ‘C l–’ ions. These oppositely charged ions get\nattracted towards each other due to electrostatic forces and form the\ncompound sodium chloride (NaCl).\nNa+\n(g) + Cl–\n(g) g Na+Cl– (s) or NaCl\nEg-2. Formation of magnesium chloride (MgCl2):\nMagnesium chloride is formed from the elements magnesium and\nchlorine. The bond formation MgCl2 in brief using chemical equation is as\nfollows:",
+      "text_sha256": "2a272ccf1181c6349d091229aea5d37aea8fee1ae819ace455e7a53b847e5ab3"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 181,
+      "textbook_page": 166,
+      "text": "Government’s Gift for Students’ Progress 166 Chemical Bonding\nMg(s) + Cl2(g) g Mg Cl2(s)\nCation formation\n12Mg (g) g 12Mg2+ (g) + 2e–\nElectronic configuration 2, 8, 2 2, 8\nor [Ne] 3s2 [Ne]\nAnion formation\n2Cl (g) + 2e– g 2Cl– (g)\nElectronic configuration 2, 8, 7 2, 8, 8\nor [Ne] 3s2 3p5 [Ne] 3s2 3p6 or [Ar]\nFormation of the compound MgCl2 from its ions:\nMg2+ gets ‘Ne’ configuration and Each Cl– gets ‘Ar’ configuration\nMg2+ (g) + 2Cl–\n(g) g MgCl2 (s)\nOne ‘Mg’ atom transfers two electrons one each to two ‘Cl’ atoms and\nso formed Mg2+ and 2Cl– attract to form MgCl2.\nExample 3. Formation of di sodium monoxide(Na2O):\nDi sodium monoxide formation can be explained as follows:\nCation formation (Na+ formation):\n2Na (g) g 2Na+ (g) + 2e-\nElectronic configuration 2, 8, 1 2, 8\nor [Ne] 3s1 [Ne]\nAnion formation (O2–, the oxide formation):\nO (g) + 2e- g O2- (g)\nElectronic configuration 2, 6 2, 8\nor [He] 2s2 2p4 [He] 2s2 2p6 or [Ne]\nThe compound Na2O formation from Sodiam (Na+), Oxide (O-2).\nTwo ‘Na’ atoms transfer one electron each to one oxygen atom to\nform 2Na+ and O2- , Each Na+ gets ‘Ne’ configuration and O2- gets ‘Ne’\nconfiguration. These ions (2Na+ and O2-) attract to form Na2O.\n2Na+ (g) + O2-\n(g) g Na2O(s)\nEg-4. Formation of aluminium chloride (AlCl3):\nAluminium chloride formation can be explained as follows:",
+      "text_sha256": "8bb20fd1352a345b8ff99fdae93f2273164d39ce927d8329956ea28580620a1d"
+    },
+    {
+      "evidence_id": "E3",
+      "book_id": "physical_sciences",
+      "source_file": "X Physics EM 2025-26.pdf",
+      "pdf_page": 198,
+      "textbook_page": 183,
+      "text": "Government’s Gift for Students’ Progress 183 Chemical Bonding\nc) What is the valency of element X?\nd) How many covalent bonds are there in the molecule?\ne) To which groups the elements X and Y belong? (AS2)\n3. How bond energies and bond lengths of molecule help us in predicting their chemical properties?\nExplain with examples. (AS1)\n4. Draw simple diagrams to show the arrangement of valence electrons in the following compounds:\n(AS5)\na) Calcium oxide (CaO) (b) Water (H2O) (c) Chlorine (Cl2)\n5. Represent each of the following atoms using Lewis notation: (AS5)\n(a) beryllium (b) calcium (c) lithium d) bromine (Br2)\n(e) calcium chloride (CaCl2) (f) carbon dioxide (CO2)\nII. Application of Concepts\n1. Explain the formation of sodium chloride and calcium oxide on the basis of the concept of electron\ntransfer from one atom to another atom. (AS1)\n2. A, B, and C are three elements with atomic numbers 6, 11 and 17 respectively.\ni) Which of these cannot form ionic bond? Why? (AS1)\nii) Which of these cannot form covalent bond? Why? (AS1)\niii) Which of these can form ionic as well as covalent bonds? (AS1)\n3. How does Lewis dot structure helps in understanding bond formation between atoms? (AS1)\n4. Explain the formation of the following molecules using valence bond theory\na) N2 molecule b) O2 molecule\nIII. Higher Order Thinking questions\n1. Two chemical reactions are described below. (AS5)\n· Nitrogen and hydrogen react to form ammonia (NH3)\n· Carbon and hydrogen bond together to form a molecule of methane (CH4).\nFor each reaction, give:\na) The valence of each of the atoms involved in the reaction. (AS1)\nb) The Lewis structure of the product that is formed. (AS5)",
+      "text_sha256": "b5e9f7566d271fb06c1ce543fcc010469c9519c420d8a187ee2037df3947a2a0"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Sodium chloride (NaCl) and calcium oxide (CaO) are formed through the transfer of electrons between atoms, which leads to the formation of ions that are attracted to each other due to electrostatic forces. This type of bond is called an ionic bond.\\n\\nFormation of Sodium Chloride (NaCl):\\n- Sodium (Na) is a metal with one electron in its outermost shell. It loses this electron to achieve a stable electron configuration similar to that of neon (Ne). This forms a positively charged sodium ion (Na+).\\n- Chlorine (Cl) is a non-metal with seven electrons in its outermost shell. It gains one electron to achieve a stable electron configuration similar to that of argon (Ar). This forms a negatively charged chloride ion (Cl-).\\n- The oppositely charged ions (Na+ and Cl-) are attracted to each other due to electrostatic forces, forming the ionic compound sodium chloride (NaCl).\\n\\nFormation of Calcium Oxide (CaO):\\n- Calcium (Ca) is a metal with two electrons in its outermost shell. It loses these two electrons to achieve a stable electron configuration similar to that of neon (Ne). This forms a positively charged calcium ion (Ca2+).\\n- Oxygen (O) is a non-metal with six electrons in its outermost shell. It gains two electrons to achieve a stable electron configuration similar to that of neon (Ne). This forms a negatively charged oxide ion (O2-).\\n- The oppositely charged ions (Ca2+ and O2-) are attracted to each other due to electrostatic forces, forming the ionic compound calcium oxide (CaO).\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 180,\n      \"textbook_page\": 165\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 96.78737569999066,
+    "latency_seconds": 242.25946399997338,
+    "usage": {
+      "completion_tokens": 421,
+      "prompt_tokens": 1755,
+      "total_tokens": 2176,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-vFoc3vNoibVjlQrBqkguyM5Rgo3IDzU5",
+    "peak_rss_bytes": 22514941952
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Sodium chloride (NaCl) and calcium oxide (CaO) are formed through the transfer of electrons between atoms, which leads to the formation of ions that are attracted to each other due to electrostatic forces. This type of bond is called an ionic bond.\n\nFormation of Sodium Chloride (NaCl):\n- Sodium (Na) is a metal with one electron in its outermost shell. It loses this electron to achieve a stable electron configuration similar to that of neon (Ne). This forms a positively charged sodium ion (Na+).\n- Chlorine (Cl) is a non-metal with seven electrons in its outermost shell. It gains one electron to achieve a stable electron configuration similar to that of argon (Ar). This forms a negatively charged chloride ion (Cl-).\n- The oppositely charged ions (Na+ and Cl-) are attracted to each other due to electrostatic forces, forming the ionic compound sodium chloride (NaCl).\n\nFormation of Calcium Oxide (CaO):\n- Calcium (Ca) is a metal with two electrons in its outermost shell. It loses these two electrons to achieve a stable electron configuration similar to that of neon (Ne). This forms a positively charged calcium ion (Ca2+).\n- Oxygen (O) is a non-metal with six electrons in its outermost shell. It gains two electrons to achieve a stable electron configuration similar to that of neon (Ne). This forms a negatively charged oxide ion (O2-).\n- The oppositely charged ions (Ca2+ and O2-) are attracted to each other due to electrostatic forces, forming the ionic compound calcium oxide (CaO).",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 180,
+        "textbook_page": 165
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Show Na losing one electron and Cl gaining one to form Na⁺ and Cl⁻",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Show Ca losing two electrons and O gaining two to form Ca²⁺ and O²⁻",
+        "token_recall": 0.7143,
+        "matched": true
+      },
+      {
+        "point": "Connect transfer to stable outer-shell configurations",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Explain electrostatic attraction and the formulae NaCl and CaO",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 249
+  },
+  "completed_at": "2026-07-17T16:02:02+00:00"
+}

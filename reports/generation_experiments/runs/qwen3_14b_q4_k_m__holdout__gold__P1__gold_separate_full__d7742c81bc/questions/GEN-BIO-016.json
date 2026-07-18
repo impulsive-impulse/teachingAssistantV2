@@ -1,0 +1,108 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__gold__P1__gold_separate_full__d7742c81bc",
+  "question_id": "GEN-BIO-016",
+  "question": "How does sex determination take place in humans?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "606eaac576cd3769e8db84a2df2464afc410fbcf497338493d87c74f7951b5b8",
+  "context_sha256": "251fba41bd15b91a4b0aad731a75eef9ca877a04c2d521797d40e07bbd65ccc4",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 197,
+      "textbook_page": 188,
+      "text": "188 Heredity and EvolutionGovernment’s Gift for Students’ Progress\n!\nNow we know that these are known as ‘genes’. Gene is a segment of a\nnucleic acid called ‘DNA ’ which is present in the nucleus of every cell. It\ncontrols the expression of a trait or character. In some viruses RNA can\ncontrol the expression of a character.\nDo you know?\nIn 1950s, the structure of DNA was worked\nout by Rosalind Franklin, Francis Crick, James\nWatson and Maurice Wilkins. They discovered\nthat DNA molecule looks rather like a spiral\nstair case, having a shape known as a double\nhelix. The framework of stair case consists of\nalternate sugar and phosphate groups and the\nsteps which join the framework together are the\npairs of chemical compounds called bases,\nnamely adenine, guanine, thymine and cytosine.\nWatson, Crick and Wilkins were jointly awarded the Nobel Prize in the year 1962\n(Rosalind had died by that time. So she was not included).\nWilkins Franklin\nCrick Watson\nTraits are determined by the chemical nature\nof DNA and a slight change in it leads to\nvariations. Colour of the hair, the skin etc. are\nexamples of trait. Slight inheritable changes in\nthe chemical structure of DNA may lead to\nchange in the characteristic or trait of offspring\nof an organism, which leads to ‘Variations’.\nWe inherited our traits from our parents. Let us see how sex is\ndetermined in human beings. Each human cell contains 23 pairs (46) of\nchromosomes. Out of 23 pairs 22 pairs of chromosomes are autosomes.\nChromosomes whose number and morphology do not differ between\nmales and females of a species are called autosomes. The remaining pair\nis called allosomes or sex chromosomes. These are of two types, one is\n‘X’ and the other is ‘Y’. These two chromosomes determine the sex of an\nindividual. Females have two ‘X’ chromosomes in their cells (XX). Males\nhave one ‘X’ and one ‘Y’ chromosomes in their cells (XY). All the gametes\n(ova) produced by a woman have only X chromosomes. The gametes\n(sperm) produced by a man are of two types one with X chromosome and\nthe other one with Y chromosome. If the sperm carries Y chromosome\nand fertilizes the ovum (X chromosome) then the baby will have XY\ncondition. So the baby will be a boy.\n8.4 Sex determination in human beings",
+      "text_sha256": "49f636b7e428713d83a86a28d130553d41eaac9fd07465701b6c3db6c3856e2a"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 198,
+      "textbook_page": 189,
+      "text": "Reflection of light at curved surfaces189 Heredity and EvolutionGovernment’s Gift for Students’ Progress\nx What will happen if the sperm containing X\nchromosomes fertilizes the ovum?\nx Who decides the sex of the baby – mother or\nfather?\nx Is it right to blame a women that girl baby is\nborn?\nx Is the sex also a character or trait? Does it\nfollow Mendels’ law of dominance?\nx Were all your traits similar to that of your\nparents?\nDo you know?\nDiscovery of the sex chromosomes\nWalter Sutton and Thomas Hunt\nMorgan in the year 1956 studied on a\nsmall fruit fly ( Drosophila\nmelanogaster ) at Columbia\nUniversity. The discovery of sex linked\ntraits in Drosophila indicated that\ngenes are on chromosomes. They\nworked out the details of inheritance\nin Drosophila.\nFather Mother\nBaby girl Baby boy Baby girl Baby boy\n22\n+X\n22\n+Y 22+X 22+X\n(44+XX) (44+XY) (44+XX) (44+XY)\nParents\nGametes\nOffspings\n44+XY 44+XX\nGyno\nSperm\nAndro\nSperm\nEggs\nFig-3\nmother’s sex\nchromosomes\nfather’s sex\nchromosomes\nmale\nchild\nfemale\nchild\n8.5 Evolution\nVariations develop during reproduction in organisms. Sexual\nreproduction and errors in DNA copying leads to variations in offsprings\nin a population. The same are also passed on to their offspring.\nLet us try to study the consequences of variations in the population of\nan insect in an environment.\nActivity-5\nVariations in beetle population\nObserve the below diagram showing variation in beetle population and\nits impact. This is only an assumption.\nLet us consider a group of twelve beetles as shown in 1st figure. They\nlive in bushes on green leaves. Their population will grow by sexual\nreproduction. So they were able to generate variations in population.\nSex determination in human beings\n!",
+      "text_sha256": "0d3f4a718893b067e07fbcffad8d68db1f40b0a51830fb8af168606f66d12a4f"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"In humans, sex determination is based on the type of sex chromosomes inherited from the parents. Each human cell contains 23 pairs of chromosomes, out of which 22 pairs are autosomes, and the last pair is the sex chromosomes. Females have two X chromosomes (XX), while males have one X and one Y chromosome (XY). The mother can only produce eggs with an X chromosome, while the father can produce two types of sperm: one with an X chromosome and the other with a Y chromosome. If a sperm carrying an X chromosome fertilizes the egg, the child will have XX chromosomes and be a girl. If a sperm carrying a Y chromosome fertilizes the egg, the child will have XY chromosomes and be a boy. Therefore, the sex of the child is determined by the type of sperm that fertilizes the egg, which is contributed by the father.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 197,\n      \"textbook_page\": 188\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 59.02146519999951,
+    "latency_seconds": 122.91114059998654,
+    "usage": {
+      "completion_tokens": 252,
+      "prompt_tokens": 1219,
+      "total_tokens": 1471,
+      "prompt_tokens_details": {
+        "cached_tokens": 127
+      }
+    },
+    "response_id": "chatcmpl-UUY5jTa7HUmwJiKiytVRg3FmaFdBNcbQ",
+    "peak_rss_bytes": 20166316032
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "In humans, sex determination is based on the type of sex chromosomes inherited from the parents. Each human cell contains 23 pairs of chromosomes, out of which 22 pairs are autosomes, and the last pair is the sex chromosomes. Females have two X chromosomes (XX), while males have one X and one Y chromosome (XY). The mother can only produce eggs with an X chromosome, while the father can produce two types of sperm: one with an X chromosome and the other with a Y chromosome. If a sperm carrying an X chromosome fertilizes the egg, the child will have XX chromosomes and be a girl. If a sperm carrying a Y chromosome fertilizes the egg, the child will have XY chromosomes and be a boy. Therefore, the sex of the child is determined by the type of sperm that fertilizes the egg, which is contributed by the father.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 197,
+        "textbook_page": 188
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Females are XX and males are XY",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Ova carry only X",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Sperm carry either X or Y",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "X-bearing sperm plus X ovum gives XX; Y-bearing sperm plus X ovum gives XY",
+        "token_recall": 0.4286,
+        "matched": false
+      },
+      {
+        "point": "The fertilising sperm determines chromosomal sex",
+        "token_recall": 0.6,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.8,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 149
+  },
+  "completed_at": "2026-07-17T15:36:58+00:00"
+}

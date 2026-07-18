@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P2__gold_separate_full__14a86d960a",
+  "question_id": "GEN-BIO-015",
+  "question": "Explain Mendel’s monohybrid experiment with an example. Which law of inheritance does it demonstrate?",
+  "book_id": "biology",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "bde271d316438197dc7163dd12df7957eb46338e54a9a408bcb073dc44fd02c8",
+  "context_sha256": "fbb6ec4e9487d3144a4ac96feba3fe862e466c0ec8801585c097fa8bc7772726",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 189,
+      "textbook_page": 180,
+      "text": "180 Heredity and EvolutionGovernment’s Gift for Students’ Progress\nTable-4: The results of Mendel’s monohybrid crosses for seven characters in pea plants\nCharacter Dominant\nTrait\nRecessive\nTrait\nF2 Generation\n(Phenotype)\nDominant : Recessive\nRatio\nPurple\nFlower colour\nWhite\n705 : 224 3.15 : 1\nAxial\nFlower\nposition\nTerminal\n651 : 207 3.14 : 1\nYellow\nSeed colour 6022 : 2001 3.01 : 1\nRound\nSeed shape\nWrinkled\n5474 : 1850 2.96 : 1\nInflated\nPod shape\nConstricted\n882 : 299 2.95 : 1\nGreen\nPod colour\nYellow\n428 : 152 2.82 : 1\nTall\nStem length\nDwarf\n787 : 277 2.84 : 1",
+      "text_sha256": "2acffcd3f734a342e6b535790a065b6ae3c30c3a730f299dac8777ee4435d279"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 191,
+      "textbook_page": 182,
+      "text": "182 Heredity and EvolutionGovernment’s Gift for Students’ Progress\nx By the process of repeated self-pollination, Mendel produced seeds of\nvarieties he called ‘pure’.\nx He would often start experimentation with such pure variety and allowed\nthe plant to grow and start flowering, then he would cross-pollinate\nthem as shown in the figure.\n8.2.3 Monohybrid Cross\nA cross-pollination between a pure breed of yellow seed\nbearing plant and green seed bearing plant gave the following\nresults :\nFirst Filial / F1-generation : (Filial means progeny)\nAll pea seeds were Yellow. On self-pollination of these pea\nplants the following results were obtained :\nAll pea seeds were yellow\nSecond Filial / F2-generation : The F2 generation had about\n75% of yellow seeded pea plants and 25% of green seeded\npea plants, i.e. they appear in 3 : 1 ratio.\nAdding to above results, Mendel made following\nobseravtions :\n1. A set of peas (about 25%) obtained in F2 generation are\nyellow seeded plants (Homozygous dominant).\n2. A Set of peas (about 50%) obtained in F2 generation are\nheterozygous yellow and give yellow and green seeds in\n3:1 on self pollination.\n3. A set of peas (about 25%) obtained in F2 generation are\ngreen seeded. On self-pollination they keep producing\ngreen seeded plants (Homozygous recessive).\n1 2 3\nParents\nF1 generation\nF2 generation\nPhenotype\n(3:1)\nMendel made some assumptions by which he could explain his\nobservations.\nAssumption 1: Every pea plant has two ‘factors’ which are responsible\nfor producing a particular character or trait. The determining agent\nresponsible for each trait is called a factor.\nMendel carefully choose the plants which did not produce a mixed\nresult (pure). In our example of yellow and green peas, a pure breed\n(parental stage) will have both the ‘factors’ of the same type.\nA pure breed (parental) yellow seed producing pea will have both the\n‘factors’ of the same type. Let us denote them by ‘YY’.\n25%\nYY\n50%\nYy\n25%\nyy\nGenotype\n(1:2:1)",
+      "text_sha256": "c2ec93888b1b85caae0056b724eb3051d064cf1f4d585a36bbe94b521069db29"
+    },
+    {
+      "evidence_id": "E3",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 192,
+      "textbook_page": 183,
+      "text": "Reflection of light at curved surfaces183 Heredity and EvolutionGovernment’s Gift for Students’ Progress\nA pure breed (parental) green seed producing pea will also have both\nthe ‘factors’ of the same type. Let us denote them by ‘yy’.\nYY and yy are called homozygous as the factors in them are same. If\nthe combination is Yy then it is called heterozygous.\nAssumption-2 : During reproduction one ‘factor’ from each parent is\ntaken to form a new pair in the progeny.\nAssumption-3 : One of these will always dominate the other if mixed\ntogether. The trait expressed in F1 generation is called dominant. While\nthe other which did not express in F1 is called recessive.Assume that ‘Y’\n(the one causing yellow colour) is a dominating ‘factor’. That means if ‘Y’\nand ‘y’ come together ‘Y’ will dominate. Then the pea seeds will be always\nyellow in colour.\nParental\ngeneration -\nCross pollination\nYy ............... (yellow)\nYy ............... (Yellow)\nYy ............... (yellow)\nYy ............... (Yellow)\nFrom assumption-2, the breed after cross pollination will have one\nfactor from pure breed yellow (Y) and one from the pure breed green (y).\nThat is, all the peas will have the paired factor ‘Yy’ and by assumption-3 all\nthe peas will be Yellow as ‘Y’ factor is dominant.\nAll the pea plants are yellow (F1-Generation). The trait expressed in\nF1 is dominant, not expressed is recessive. This is the law of dominance.\n8.2.4 Self pollination in F1-Generation\nOn self pollinating these peas (ones with Yy factor), the new breed\nhave any combinations of ‘Y’ and ‘y’.\nIt can be YY , Yy, yY or yy. All of them are in equal ratio.\nyY\nYy\nyy\nYyYyY\nY Yy Yy",
+      "text_sha256": "3a8b8683345f1a9503e04cdae1e4ea545bc571561e72e95a6306544a793369bb"
+    },
+    {
+      "evidence_id": "E4",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 193,
+      "textbook_page": 184,
+      "text": "184 Heredity and EvolutionGovernment’s Gift for Students’ Progress\n8.2.5 F2-Generation\nSo in this heap we will get approximately equal number of YY, Yy, yY\nand yy peas. But any pea that has a Y factor will be yellow. Any pea that has\nboth yy will be green. Since all combinations are equally likely:\n1. YY will be approximately 25% and is yellow.\n2. yY will be approximately 25% and is yellow, Yy will be approximately\n25 % and is yellow\n3. yy will be approximately 25% and is green.\nSome seeds appear yellow in colour in F1 generation. When these\nseeds were sown some of the plants produced green coloured seeds. So\nwe can’t determine internal character based on external visible character.\n8.2.6 Phenotype\nThus in F2 generation we can clearly observe that 75 percent are yellow\nseed producing pea plants and 25 percent are green ones. This is known as\n‘Phenotype’(externally visible characters) and this ratio is called\n‘phenotypic ratio’ or monohybrid phenotype ratio. It is 3:1.\n8.2.7 Genotype\nGenetically, in 75 percent yellow seed producing pea plants only 25\npercent pea plants produce yellow seeds that are pure breeds (YY) and are\n‘homozygous’ that is to have the same factors for representing a character.\nRemaining 50 percent yellow seed producing pea plants are (Yy)\nheterozygous . The remaining 25 percent green seed producing pea plants\nare pure (yy) homozygous type.\nThe constitution of pea plants as shown by the representative letters Y\nand y to show the probable nature of factors is known as genotype. This\nratio is known as genotypic ratio or monohybrid genotype ratio. It is\n1:2:1. (25:50:25)\nOn self-pollinating these peas of F2 generation we get,\n1. The YY peas will on self pollination give only yellow (YY) peas. This\nwas explained with the experimental result that this set gave 100%\nyellow peas.\ny\nYyYYY\ny yY yy\nY",
+      "text_sha256": "eec25cff8750a03502b6221e20328e04305ff79e55c9ddefc530b5c8bc9f476b"
+    },
+    {
+      "evidence_id": "E5",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 195,
+      "textbook_page": 186,
+      "text": "186 Heredity and EvolutionGovernment’s Gift for Students’ Progress\n8.2.9 Mendel’s Laws\nMendel propounded that, among a pair of closely related ‘alleles’ or\nfactors for a character, only one expresses itself in the first generation as\none of the allele is dominant over the other. This is so evident that it came\nto be called as Mendel’s Law of Dominance.\nFor expression of each character a pair of factors or alleles are\nresponsible. Each one of these alleles is received from each parent. When\nthis generation forms gametes, these alleles get separate and each one\nenters into a separate gamete randomly. This separation of alleles at the\ntime of formation of gametes is called law of Segregation.\nMendel also explained the process of inheritance of more than one\ncharacter. For this, he proposed law of Independent Assortment. We\nwill learn more about this in further classes, for the basic understanding\nrefer in annexure.\nTraits that may be passed on from one generation to the next are called\nas heritable traits. We have studied some of them for the pea plant, in the\nexperiments conducted by Mendel.\nActivity-4\nLet us do the following activity to understand the Mendelian principles\nof Heredity.\nMaterials required :\na) 3 cm length and 1cm breadth of chart strips- 4\nb) 2 cm length and 1cm breadth of chart strips- 4\nc) Red buttons - 4\nd) White buttons - 4\ne) Chart, scale, sketch pen, pencil, 2 bags.\nMethod: Prepare a chart with 2¯2 boxes along\nwith number and Symbol as shown in the figure\nGame 1: Monohybrid cross (starting with hybrid parents)\nTake 4 pairs each of long and short strips and put them in two separate\nbags.\nBAG ‘A’\nBAG ‘B’\n1 2\n3 4",
+      "text_sha256": "84a26463882615fc400ff3e7fc74e48312a70bf989c663f41244693761f63e33"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Mendel’s monohybrid experiment involved crossing pea plants with different traits. He started with two purebred pea plants: one with yellow seeds and one with green seeds. When he crossed these plants, all the offspring in the first generation (F1) had yellow seeds. This showed that the yellow seed trait was dominant. When these F1 plants were allowed to self-pollinate, the second generation (F2) showed a 3:1 ratio of yellow to green seeds. This demonstrated the law of dominance, where the dominant trait (yellow) masks the recessive trait (green) in the F1 generation but reappears in the F2 generation in a predictable ratio.\",\n  \"selected_evidence_ids\": [\"E2\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 191,\n      \"textbook_page\": 182\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 193,\n      \"textbook_page\": 184\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 88.92141419999825,
+    "latency_seconds": 180.60199830000056,
+    "usage": {
+      "completion_tokens": 254,
+      "prompt_tokens": 2427,
+      "total_tokens": 2681,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-Of1O73CyVWFIjUPeNRiYhHWo8dZmjUMH",
+    "peak_rss_bytes": 12168269824
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Mendel’s monohybrid experiment involved crossing pea plants with different traits. He started with two purebred pea plants: one with yellow seeds and one with green seeds. When he crossed these plants, all the offspring in the first generation (F1) had yellow seeds. This showed that the yellow seed trait was dominant. When these F1 plants were allowed to self-pollinate, the second generation (F2) showed a 3:1 ratio of yellow to green seeds. This demonstrated the law of dominance, where the dominant trait (yellow) masks the recessive trait (green) in the F1 generation but reappears in the F2 generation in a predictable ratio.",
+    "selected_evidence_ids": [
+      "E2",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E2",
+        "pdf_page": 191,
+        "textbook_page": 182
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 193,
+        "textbook_page": 184
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Cross pure parents differing in one trait",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "F₁ shows only the dominant trait",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "Self the F₁ heterozygotes",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "F₂ phenotype ratio is about 3:1 and genotype ratio 1:2:1",
+        "token_recall": 0.25,
+        "matched": false
+      },
+      {
+        "point": "Relate results to dominance and segregation",
+        "token_recall": 0.25,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.2,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 102
+  },
+  "completed_at": "2026-07-16T20:46:55+00:00"
+}

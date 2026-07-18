@@ -1,0 +1,138 @@
+{
+  "question_id": "PSC-022",
+  "question": "Why does pencil look bent when placed in water",
+  "book_id": "physical_sciences",
+  "diagnostic_type": "weak_evidence_conversational",
+  "prompt_sha256": "84bce76ac4e3cef0c49af704479cc6d859d04669c31ff4430b33ae7253e22fc6",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 72,
+      "textbook_page": 62,
+      "pdf_pages": [
+        72,
+        73,
+        74
+      ],
+      "textbook_pages": [
+        62,
+        63,
+        64
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "62 Refraction of Light at Curved Surfaces\nRefraction of Light at\nCurved Surfaces\n4\nCHAPTER\nIt is a common observation that some people use spectacles for\nreading.\nThe watch repairer uses a small magnifying glass to see tiny\nparts of a watch.\n· Have you ever touched a magnifying glass with your hand?\n· Have you touched the glass in the spectacles used for reading with\nyour hand?\n· Is it a plane surface or curved surface?\n· Is it thicker in the middle or at the edge?\nWe have learnt about refraction of light at a plane surface in the previous\nclass.\nNow let us understand refraction of light at curved surfaces.\nLet us do an activity to understand refraction of light at curved surfaces.\n4.1 Refraction of light at a curved surface\nActivity 1\nDraw an arrow of length 4 cm using a black sketch pen on a thick sheet of\npaper.\nTake an empty cylindrical-shaped transparent vessel such as glass\ntumbler.\nKeep it on the table.\nAsk your friend to bring that sheet of paper\non which arrow was drawn behind the vessel while you looking at it from\nthe other side (The arrow mark should be in horizontal position).\n· What do you see?\nYou will see a diminished (small-sized) image of the arrow\n· Why do you see a diminished image?\nRefraction of Light at Curved Surfaces63\n· Is the image real or virtual?\n· Can you draw a ray diagram showing how it is formed?\nAsk your friend to fill the vessel with water.\nLook at the mark of arrow\nfrom the same position as before.\n· What do you see now?\n· Do you get an inverted image?\n· How could this happen?\nIn the first case, when the vessel is empty, light from the arrow mark\nrefracts at the curved interface, travels through the glass and enters into\nair then it again undergoes refraction on the opposite\ncurved surface of the vessel (at the other end from where\nwe are looking) and comes out into the air.\nIn this way\nlight travels through two media and comes out of the\nvessel and forms a diminished image.\nIn the second case, light enters through the curved\nsurface, travels through water, comes out of the glass and\nforms an inverted image.\nWhen the vessel is filled with water, there is a curved\ninterface between two different media (air and water).\nAssume that the\nrefractive indices of both water and glass are the same (infact they are not\nequal).\nThis setup of air and water separated by a curved surface is shown\nin fig.- 1.\n· What happens to a ray that is incident on a curved\nsurface separating the two media?\n· Are the laws of refraction still valid?\nLet us find out.\nConsider a curved surface separating two different\nmedia as shown in fig.- 2.\nThe centre of the sphere, of\nwhich curved surface is a part, is called as the centre of\ncurvature.\nIt is denoted by letter ‘C’.\nAny line drawn from the centre of curvature to a point\non the curved surface becomes normal to the curved\nsurface at that point.\nThe direction of the normal changes from one point\nto another point on the curved surface.\nThe centre of the curved surface is\ncalled the pole (P) of the curved surface.\nThe line that joins the centre of\ncurvature and the pole is called ‘principal axis’ .\n· How do rays bend when they are incident on a curved surface?\nfig-1\nfig-2\nAir Water\nCurved\nsurface\nP\nC\nLight\nrays Normal\nPrincipalaxis\n64 Refraction of Light at Curved Surfaces\nAs in the case of plane surfaces, a ray will bend towards the normal if",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00034"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 119,
+      "textbook_page": 109,
+      "pdf_pages": [
+        119,
+        120,
+        121
+      ],
+      "textbook_pages": [
+        109,
+        110,
+        111
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "· The splitting of white light into colours (VIBGYOR) depending on the wave lengths is called\ndispersion.\n· The process of re-emission of absorbed light in all directions with different intensities by atoms\nor molecules, is called scattering of light.\nI.\nReflections on Concepts\n1.\nHow do you correct the eye defect Myopia? (AS1)\n2.\nExplain the correction of the eye defect Hypermetropia. (AS1)\n3.\nHow do you find experimentally the refractive index of material of a prism? (AS3)\n4.\nExplain the formation of rainbow. (AS1)\n5.\nExplain two activities for the formation of artificial rainbow. (AS3)\n6.\nLight of wavelength l1 enters a medium with refractive index n2 from a medium with\nrefractive index n1.\nWhat is the wave length of light in second medium? (AS 1)\n7.\nWhy does the sky sometimes appear white? (AS 7)\n8.\nA person is viewing a distant object.\nIf a converging lens is placed in front of his eye, will\nhe feel that the size of object has increased?\nWhy? (AS7)\nImprove your learning\nWhat we have learnt\n110 Human Eye and Colourful World\nII.\nApplication of Concepts\n1) Incident ray on one of the face (AB) of a prism and emergent\nray from the face AC are given in figure -1.\nComplete the ray\ndiagram.(AS 5)\n2) Glass is known to be a transparent material.\nBut ground glass\nis opaque and white in colour.Why? (AS7)\n3) A light ray falls on one of the faces of a prism at an angle 40o\nso that it suffers angle of minimum deviation of 30o.\nFind the angle of prism and angle of\nrefraction at the given surface.\n(Ans:50o, 25o) (AS7)\n4) The focal length of a lens suggested to a person with Hypermetropia is 100cm.\nFind the\ndistance of near point and power of the lens. (Ans: 33.33cm, 1D ) (AS 7)\n1) The size of an object as perceived by an eye depends primarily on [ ]\nA) actual size of the object B) distance of the object from the eye\nC) aperture of the pupil D) size if the image formed on the retina\n2) When objects at different distances are seen by the eye which of the following remain\nconstant?\nA) focal length of eye-lens B) object distance from eye-lens [ ]\nC) the radii of curvature of eye-lens D) image distance from eye-lens\n3) During refraction, ________ will not change. [ ]\nA) Wave length B) frequency C) speed of light D) all the above\n4) A ray of light falls on one of the lateral surface of an equilateral glass prism placed on the\nhorizontal surface of a table as shown in fig.\n2.For minimum deviation of ray, which of the\nfollowing is true? [ ]\nA) PQ is parallel to base\nB) QR is parallel to base\nC) RS is parallel to base\nD) either PQ or RS is parallel to base\nP\nQ R\nS\nfig-2\nfig-1\nA\nB\nC\nMirror\nMultiple choice questions\n111 Human Eye and Colourful World\n5) Far point of a person suffering from anyopia is 5m.\nIn order that he has normal vision what\nkind of spectacles should he use [ ]\nA) Concave lense with focal length 5m B) concave lense with focal length 10m\nC) Convex lense with focal length 5m D) convex lense with focal length 2.5m\n6) The process of re-emission of absorbed light in all directions with different intensities by the\natom or molecule is called [ ]\nA) Scattering of light B) dispersion of light C) reflection of light D) refraction of light\nSuggested Experiments\n1.\nConduct an experiment to produce a rainbow in your class room and explain the procedure.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00065"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 89,
+      "textbook_page": 79,
+      "pdf_pages": [
+        89,
+        90
+      ],
+      "textbook_pages": [
+        79,
+        80
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Refraction of Light at Curved Surfaces79\nfig-21\nLens Circular\nlens\nholderStone\nfig-E(6)\nd-x\nd\nx\nScreen\nLamp\nSolution\nThe distance between the lamp and screen is 100cm and ‘x’ be the distance\nbetween lamp and lens.\nFrom fig.- E-6, we have u = - x and\nv = 100-x, f = 21\nBy substituting these in lens formula,\nWe get\n1 11\n21 (100 )=+ - xx\nAfter solving thisequation, we get\nx2 – 100 x + 2100 = 0\nIt is a quadratic equation.\nHence we get two solutions.\nThe solutions\nof the above equation are\nx2-70x-30x+2100=0 _ x (x-70)-30(x-70) = 0 _ (x-70)(x-30) = 0\n\\ x =70cm and x = 30cm.\nWe can place the lens at a distance of 70cm or 30cm from the bulb,\nwe get sharp image.\n· On what factors does the focal length of the lens depend?\nLet us find out.\nActivity 2\nTake the same lens that was used in lab activity.\nNote the average focal\nlength of the lens that was calculated in the lab activity.\nTake a cylindrical\nvessel such as glass tumbler.\nIts height must be much greater than the focal\nlength of the lens. (We require the vessel which has a length (depth) nearly\nequal to four times of the focal length of lens).\nKeep a black stone inside the\nvessel at its bottom.\nNow pour water into the vessel up to a height such that\nthe height of the water level from the top of the stone is greater than focal\nlength of lens.\nNow dip the lens horizontally using a circular lens holder as\nshown in the fig.- (21) above the stone.\nSet the distance between stone and\nlens that is equal to or less than focal length of lens measured in activity 2.\nNow look at the stone through the lens. (Do this in open ground)\n· Can you see the image of the stone?\n· If Yes / Not, why?\nGive your reasons.\nYou can see the image of the stone if the distance between lens and stone is less than\nthe focal length of the lens (in air).\nNow increase the distance between lens and stone\nuntil you cannot see the image of the stone.\n· What do you conclude from this activity?\n· Does the focal length of the lens depend on surrounding medium?\nYou have dipped the lens to a certain height which is greater than the\nfocal length of lens in air.\nBut you can see the image (when lens is raised\nfurther, you could not see the image).\nThis shows that the focal length of\nlens has increased in water.\nThus we conclude that the focal length of lens\ndepends upon the surrounding medium in which it is kept.\n80 Refraction of Light at Curved Surfaces\n4.5 Lens maker’s formula\nImagine a point object ‘O’\nplaced on the principal axis of the\nthin lens as shown in fig.- 22.\nLet\nthis lens be placed in a medium of\nrefractive index na and let refractive\nindex of lens medium be nb.\nConsider a ray, from ‘O’ which is incident on the convex surface of the\nlens with radius of curvature R1 at A as shown in fig.- 22.\nThe incident ray refracts at A.\nLet us assume that, it forms image at Q, if there were no concave\nsurface.\nFrom the fig.-(22), Object distance PO = –u;\nImage distance v = PQ = x\nRadius of curvature R = R1\nn1 = na and n2 = nb\nSubstitute the above values in the equation, 2 1 21n n ( n n)-=v uR\n-\n_ 1\nab abn ( n n)n+=x uR\n-\n...................(1)\nBut the ray that has refracted at A suffers another refraction at B on the",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00045"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 112,
+      "textbook_page": 102,
+      "pdf_pages": [
+        112,
+        113
+      ],
+      "textbook_pages": [
+        102,
+        103
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "to colour?\n· Is the speed of light of each colour different?\nThe situation we witnessed in activities (3) and (4) rule out ray theory\nof light.\nWe can consider that white light is a collection of waves with\ndifferent wavelengths.\nViolet colour is known to have the shortest\nwavelength while red is of the longest wavelength.\nAccording to wave theory, light can be thought of a wave propagating in all\ndirections.\nLight is an electromagnetic wave.\nHere no particle physically\noscillates back and forth.\nInstead, the magnitude of electric and magnetic\nfields, associated with the electromagnetic wave, vary periodically at every\npoint.\nThese oscillating electric and magnetic fields propagate in all\ndirections with the speed of light.\n· Can you guess now, why light splits into different colours when it\npasses through a prism?\nThe reason lies in the fact that, while the speed of light is constant in\nvacuum for all colours, it depends on the wavelength of light when it passes\nthrough a medium.\nWe know that refractive index is the ratio of speeds in\nvacuum and in the medium.\nConsequently, the refractive index of a medium\ndepends on wavelength of light.\nWhen white light passes through a medium,\neach colour selects its least time path and we have refraction of different\ncolours to different extents.\nThis results in separation of colours, producing\na spectrum on the wall and in the mirror as we saw in activities (3) and (4).\nIt has been experimentally found that refractive index decreases with an\nincrease in wavelength.\nIf we compare the wave lengths of seven colours\nin VIBGYOR, red colour has longest wavelength and violet colour has\nshortest wavelength.\nThe refractive index of red is low hence it suffers\nlow deviation.\nWe noticed that when white light passes through a prism, it splits into\nseven colours.\nLet us assume that you have sent a single colour ray through\nthe prism.\n· Does it split into more colours?\nWhy?\nWe know that the frequency of light is the property of the source and\nit is equal to number of waves leaving the source per second.\nThis cannot\nbe changed by any medium.\nHence frequency doesn’t change due to\nrefraction.\nThus coloured light passing through any transparent medium\nretains its colour.\n103 Human Eye and Colourful World\nfig-13\nSun light\nWater drop\nRed\nViolet\n42o\n40o\nWhen refraction occurs at the interface, the number of waves that are\nincident on the interface in a second must be equal to the number of waves\npassing through any point taken in another medium.\nThis means that the\nfrequency of the light wave remains unaltered while its wavelength changes\ndepending on the medium through which it passes.\nWe know that the relation\namong the speed of wave (v), wavelength ( l) and frequency (u) is.\nv = u l (frequency denoted by u)\nFor refraction at any interface, v is proportional to l.\nSpeed of the\nwave increases with increase in wavelength of light and vice versa.\n· Can you give an example in nature, where you observe colours as seen\nin activity 3?\nYour answer certainly is a rainbow.\nThat is a good example of dispersion\nof light.\n· When do you see a rainbow in the sky?\n· Can we create a rainbow artificially?\nLet us see how.\nActivity 5\nSelect a white coloured wall on which the sun rays fall.\nStand in front\nof a wall in such a way that the sun rays fall on your back.\nHold a tube\nthrough which water is flowing.\nPlace your finger in the tube to obstruct\nthe flow of water.\nWater comes out through the small gaps between the",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00060"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 11,
+      "textbook_page": 1,
+      "pdf_pages": [
+        11,
+        12,
+        13
+      ],
+      "textbook_pages": [
+        1,
+        2,
+        3
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Reflection of light at curved surfaces 1\nIn class 7 and 8 you have learnt about the image formation in plane\nmirrors.\nYou also discussed about the spherical mirrors.\nYou know that\nwhy the curved surfaces are known as spherical mirrors.\nYou might have got many doubts while observing your image in bulged\nsurfaces.\n· Is the image formed by a bulged surface same as the image formed by\na plane mirror?\n· Is the mirror used in automobiles a plane mirror?\nWhy is it showing\nsmall images?\n· Why does our image appear thin or bulged out in some mirrors?\n· Can we see inverted image in any mirror?\n· Can we focus sun light at a point using a mirror instead of magnifying\nglass?\n· Are the angle of reflection and angle of incidence also equal for\nreflection by curved surfaces?\nLet us discuss about the reflection of light by spherical mirrors in this\nlesson to get clarity for the above questions.\nReflection of light at\ncurved surfaces1\nCHAPTER\n2 Reflection of light at curved surfaces\n1.1 Reflection of light by spherical mirrors\nThe first law of reflection tells us\nA light ray incident at an angle with the normal at the point of incidence\nwill get reflected making equal angle with the normal.\nThis law is true for all surfaces, be it a plane surface or a curved one.\nThe important words here are ‘the angle made with normal at the point of\nincidence’.\nIf for any surface one can decide the normal and find the incident\nangle, it is possible to deduce the angle made by the reflected ray.\nIt is very\neasy to find a normal at any point on the plane surface but for a curved or\nuneven surface it is not straight forward.\nActivity 1\nFinding the normal to a curved surface\nTake a small piece of thin foam or rubber (like the sole of a slipper).\nPut some pins along a straight line on the foam as shown in the fig.-1(a).\nAll these pins are perpendicular to the plane of foam.\nIf the foam is\nconsidered as a mirror, each pin would represent the normal at that point.\nAny ray incident at the point where the pin makes contact with the surface\nwill reflect with the same angle as the incident ray made with the pinnormal.\nNow bend the foam piece inwards as shown in fig.-1( b), what\ndifferences will you observe to the pins?\nThey still represent the normal at various points, but you will notice\nthat all the pins tend to converge at a point (or intersect at a point).\nIf we bend the foam piece outwards, we will see that the pins seem to\nmove away from each other or in other words they diverge as shown in\nfig.-1(c).\nfig-1(a) fig-1(b) fig-1(c)\nReflection of light at curved surfaces 3\nThis gives us an idea of what is likely to happen with a spherical mirror.\nA concave mirror will be like the rubber sole bent inwards (fig-1(b)) and\nthe convex mirror will be like the rubber sole bent out wards (fig-1(c)).\nFor a concave mirror, like these pins in fig.-1( b), all normals will\nconverge towards a point.\nThis point is called centre of curvature(C) of\nthe mirror.\nThis gives us a clue about how we can find normal at a point on a\nspherical mirror.\nAll that we have to do is to draw a\nline from the point on the mirror to centre of the\nsphere.\nIt is much easier to imagine this in a two",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00000"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"When a pencil is placed in water, it appears bent due to the phenomenon of refraction of light. Refraction occurs when light travels from one medium to another with a different optical density, such as from air to water. As light passes from water to air, it changes direction, causing the pencil to appear bent. This is similar to the activity described in the textbook where an arrow's image appears diminished when viewed through a curved surface filled with water. The bending of light is due to the change in speed of light as it moves between different media, which results in the apparent bending of the pencil.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 72,\n      \"textbook_page\": 62\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 110.25463330000639,
+    "latency_seconds": 151.74683029999142,
+    "usage": {
+      "completion_tokens": 194,
+      "prompt_tokens": 4332,
+      "total_tokens": 4526,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-SMbMm32QPAlg2yFUDpxj8WlK784xoZE9",
+    "peak_rss_bytes": 13485301760
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "When a pencil is placed in water, it appears bent due to the phenomenon of refraction of light. Refraction occurs when light travels from one medium to another with a different optical density, such as from air to water. As light passes from water to air, it changes direction, causing the pencil to appear bent. This is similar to the activity described in the textbook where an arrow's image appears diminished when viewed through a curved surface filled with water. The bending of light is due to the change in speed of light as it moves between different media, which results in the apparent bending of the pencil.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 72,
+        "textbook_page": 62
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "model_abstained": false,
+  "deterministic_citation_support": 0.5116,
+  "model_plus_support_check_abstained": true,
+  "completed_at": "2026-07-17T21:31:56+00:00"
+}

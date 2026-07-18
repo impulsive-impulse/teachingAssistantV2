@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top5_separate_full__29ac243384",
+  "created_at": "2026-07-17T01:31:20+00:00",
+  "model_key": "qwen3_8b_q4_k_m",
+  "model": {
+    "repository": "Qwen/Qwen3-8B-GGUF",
+    "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "filename": "Qwen3-8B-Q4_K_M.gguf",
+    "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+    "quantization": "Q4_K_M",
+    "thinking": false
+  },
+  "model_path": "C:\\Users\\saman\\AppData\\Local\\Temp\\ta_v2_backend_probe_b10046\\models\\Qwen3-8B-Q4_K_M.gguf",
+  "model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+  "runtime": {
+    "engine": "llama.cpp",
+    "build_number": 10046,
+    "build_commit": "32e789fdfd598e9a1872da55ac941e4d94f030bd",
+    "architecture": "windows-arm64",
+    "backend": "cpu",
+    "context_size": 8192,
+    "threads": 10,
+    "threads_batch": 10,
+    "batch_size": 512,
+    "ubatch_size": 256,
+    "gpu_layers": 0,
+    "parallel_slots": 1
+  },
+  "settings": {
+    "seed": 42,
+    "temperature": 0.0,
+    "max_output_tokens": 384,
+    "thinking": false
+  },
+  "split": "development",
+  "question_ids": [
+    "GEN-BIO-001",
+    "GEN-BIO-002",
+    "GEN-BIO-005",
+    "GEN-BIO-007",
+    "GEN-BIO-010",
+    "GEN-BIO-012",
+    "GEN-BIO-014",
+    "GEN-BIO-015",
+    "GEN-PSC-002",
+    "GEN-PSC-003",
+    "GEN-PSC-006",
+    "GEN-PSC-008",
+    "GEN-PSC-009",
+    "GEN-PSC-012",
+    "GEN-PSC-015",
+    "GEN-PSC-018"
+  ],
+  "evaluation_mode": "retrieved",
+  "prompt_strategy": "P1",
+  "context_strategy": "retrieved_top5_separate_full",
+  "specialist_instruction": null,
+  "frozen_input_hashes": {
+    "generation_benchmark": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+    "retrieval_config": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6"
+  },
+  "metrics": {
+    "questions": 16,
+    "completed": 16,
+    "required_point_coverage": 0.4625,
+    "citation_validity": 0.8125,
+    "unsupported_claim_rate": 0.0625,
+    "structured_output_rate": 0.875,
+    "false_insufficient_count": 1,
+    "formula_accuracy": 0.2,
+    "model_load_seconds": 6.2163,
+    "p50_latency_seconds": 215.4992,
+    "p95_latency_seconds": 300.1016,
+    "p50_time_to_first_token_seconds": 153.7239,
+    "p95_time_to_first_token_seconds": 182.0787,
+    "mean_tokens_per_second": 1.1508,
+    "peak_rss_bytes": 18808119296
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "provider_requested": "cpu",
+  "session_providers": [
+    "CPUExecutionProvider"
+  ],
+  "provider_options": {
+    "CPUExecutionProvider": {}
+  },
+  "profile_provider_node_counts": {
+    "CPUExecutionProvider": 1530
+  },
+  "runtime_version": "1.24.4",
+  "python_architecture": "ARM64",
+  "model_path": "X:\\teachingAssistantV2\\temp\\backend_probe_matmul_qdq.onnx",
+  "iterations": 500,
+  "load_seconds": 0.006644799985224381,
+  "mean_latency_ms": 0.06009139976231381,
+  "p50_latency_ms": 0.056899996707215905,
+  "p95_latency_ms": 0.06730001769028604,
+  "max_absolute_error_vs_cpu": 0.0,
+  "max_relative_error_vs_cpu": 0.0,
+  "output_valid": true,
+  "accelerated_without_cpu_nodes": false,
+  "cpu_fallback_disabled": false,
+  "power_information": "not exposed by this runtime"
+}

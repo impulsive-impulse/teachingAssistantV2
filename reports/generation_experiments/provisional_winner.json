@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "completed_at": "2026-07-17T21:19:01+00:00",
+  "status": "complete",
+  "provisional_winner": {
+    "model_key": "qwen3_8b_q4_k_m",
+    "prompt_strategy": "P1",
+    "context_strategy": "retrieved_top5_page_order_compact",
+    "max_output_tokens": 384,
+    "holdout_retrieved_run": "qwen3_8b_q4_k_m__holdout__retrieved__P1__retrieved_top5_page_order_compact__6c1d5ef407",
+    "all_gold_run": "qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f",
+    "all_retrieved_run": "qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb"
+  },
+  "warning": "Provisional until blinded human review; automatic matching is not scientific adjudication."
+}

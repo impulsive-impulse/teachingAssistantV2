@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__holdout__gold__P1__gold_separate_full__07cb1c09e6",
+  "question_id": "GEN-BIO-011",
+  "question": "Why do fish and frog produce a huge number of eggs each year?",
+  "book_id": "biology",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "36182203900731ce7ce17afa07ab8ab1a02c2a8ab881ba7580985b83e28878e1",
+  "context_sha256": "54cf1bb77fa0744753c123de471cbdaf7c3179bbb429922135b31161fa167980",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 139,
+      "textbook_page": 130,
+      "text": "130 ReproductionGovernment’s Gift for Students’ Progress\n6.4 Sexual reproduction\nAs you have studied earlier, sexual reproduction is a method of\nreproduction where fusion of gametes takes place, by a process called\nfertilization. Fertilization may occur either outside the body of the female\norganism (external fertilization) or inside the female’s body (internal\nfertilization). As a matter of fact, in land animals like mammals the eggs are\nfertilised inside the body of female organism. The fertilized egg (the zygote)\nstart dividing and grow into the embryo.\nExternal fertilization is observed in aquatic animals like most of the fishes\nand amphibians. The female lays a vast number of eggs in water and male\nanimal release some millions of sperms on them. As the chance of fertilization\nis controlled by nature which occurs externally, hence it is inevitable to\nproduce a vast number of eggs and sperms.\n6.5 Reproduction in placental mammals - Human beings\nWhile talking about placental mammals especially human beings special\nreproductive organs have developed in males and females to carry out\nreproduction. Let us study them in detail.\n6.6 Male reproductive system\nObserve the Fig-13(a) of male\nreproductive system and findout the parts. (1)\na pair of testes, (2) a pair of vasa efferentia, (3)\na pair of epididymis, (4) a pair of vasa\ndeferentia, (5) a pair of seminal vesicles, (6) a\npair of ejaculatory ducts, (7) prostate gland,\n(8) a pair of cowper’s gland, (9) urethra. Let us\nknown their arrangement and functions.\nTestes : The testes are located outside the\nabdominal cavity within a pouch called scrotum.\nIn each testis highly coiled seminiferous\ntubules are present. The sperms are produced\nin these tubules by meiosis in very large numbers (hundreds of millions).\nMale sex hormone testosterone is also produced in testes.\nx Think why testes are located outside the abdominal cavity?\nThe scrotum helps in maintaining low temperature of the testes\n(2 to 2.5o C lower than the body temperature) necessary for sperm formation.\npenis\nprostate gland\nseminal vesicle\nurethra\nVasdeferens\nUreters\nUrinary bladder\nFig-13(a): Male reproductive system\ntestis\nscrotum\nepididymis",
+      "text_sha256": "20069e035c9afdd7f2d7938e92164b92f19e4e41ba7d065a1b6b20c8dcdcbaf4"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 140,
+      "textbook_page": 131,
+      "text": "Reflection of light at curved surfacesReproduction131Government’s Gift for Students’ Progress\nVasa efferentia : The seminiferous tubules open into vasa efferentia. They\ncarry sperms into the epididymis.\nEpididymis : One in each side, the vasa efferentia open into epididymis\nwhich is a highly coiled tube located along the posterior side of testes.\nSperms are stored in them.\nVasa deferentia : From each epididymis arises vas deferens which ascends\ninto the abdominal cavity looping around the ureter.\nSeminal vesicles : They open into the vas deferens. They produce seminal\nfluid. It is the source of energy for sperms when they are outside the body.\nProstrate gland: The main function of the prostrate gland is to secrete\nprostrate fluid which is one of the component of semen supplies nutrients\nto the sperm.\nCowper’s gland : Secretions of these glands help to neutralise the acidity\nin the walls of urethra and the free flow of the sperm cells\nEjaculatory duct : A duct from seminal vesicles joins the vas deferens and\ncontinues as ejaculatory duct. Two ejaculatory ducts join at the centre of\nurethra.\nUrethra : In males it transports not only urine but also sperms. It is also\ncalled as urino-genital duct.\n6.6.1 The passage of spermetozoa :\nSeminiferous tubules o vasa efferentia o epididymis o vasa\ndeferentia o ejaculatory duct o urethra.\n6.6.2 The sperm:\nObserve the Fig-13(b). The sperm has a head which bears\nacrosome. Acrosome helps the sperm in penetrating into ovum. In\nthe middle of the head male nucleus is present. It fuses with the\nfemale nucleus during fertilisation.\nHead and middle piece are attached by neck. Mitochondria of\nmiddle piece produce energy for the movement of the sperm. The\ntail propels the sperm.\nAcrosome\nHead\nNucleus\nMitochondria\nMiddle piece\nTail\nFig-13(b):\nSperm cell\nNeck",
+      "text_sha256": "c487fdb6d0b8b20934dbdd1102ada1976bef24b565257fcd4e566588b5d5bb7a"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Fish and frogs produce a huge number of eggs each year because they undergo external fertilization. In this process, the eggs are laid in water, and the male releases a large number of sperms to increase the chances of fertilization. Since external fertilization is dependent on natural factors like water currents and the presence of the female, the chances of successful fertilization are low. To compensate for this, a vast number of eggs and sperms are produced to ensure that at least some eggs get fertilized and develop into offspring.\",\n  \"selected_evidence_ids\": [\"E1\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 139,\n      \"textbook_page\": 130\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 23.594485500012524,
+    "latency_seconds": 55.60737010001321,
+    "usage": {
+      "completion_tokens": 180,
+      "prompt_tokens": 1242,
+      "total_tokens": 1422,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-maOrDjGw06VOXfrWp6jA02pzfvsa02BH",
+    "peak_rss_bytes": 11649208320
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Fish and frogs produce a huge number of eggs each year because they undergo external fertilization. In this process, the eggs are laid in water, and the male releases a large number of sperms to increase the chances of fertilization. Since external fertilization is dependent on natural factors like water currents and the presence of the female, the chances of successful fertilization are low. To compensate for this, a vast number of eggs and sperms are produced to ensure that at least some eggs get fertilized and develop into offspring.",
+    "selected_evidence_ids": [
+      "E1"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 139,
+        "textbook_page": 130
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Fertilisation is external in water",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Eggs and sperm are exposed to currents and predators",
+        "token_recall": 0.6,
+        "matched": true
+      },
+      {
+        "point": "The chance of any one gamete/egg surviving and being fertilised is low",
+        "token_recall": 0.1111,
+        "matched": false
+      },
+      {
+        "point": "Large numbers compensate for high loss",
+        "token_recall": 0.6,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.75,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 90
+  },
+  "completed_at": "2026-07-17T11:37:36+00:00"
+}

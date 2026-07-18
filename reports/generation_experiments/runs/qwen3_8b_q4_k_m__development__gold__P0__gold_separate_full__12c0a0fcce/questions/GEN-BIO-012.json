@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__gold__P0__gold_separate_full__12c0a0fcce",
+  "question_id": "GEN-BIO-012",
+  "question": "Write the differences between mitosis and meiosis?",
+  "book_id": "biology",
+  "difficulty": "hard",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": true
+  },
+  "status": "completed",
+  "prompt_sha256": "7adce118fa61cbad3b756f8de20508acda06345d2018a061f4d2654a9107bebb",
+  "context_sha256": "bb56959fc3a0bbaec0514d926a48b06097b6ddd5b578f49b4e758f5fa1c9e7c2",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 151,
+      "textbook_page": 142,
+      "text": "142 ReproductionGovernment’s Gift for Students’ Progress\nCells in some organs, such as heart and brain of an individual may\ndivide slowly. On the other hand bone marrow cells may actively divide to\nproduce red blood cells, which have a short life span nearly 120 days in\nthe body. For example, if you cut your finger and bleed, soon a blood clot\nforms to stop the bleeding. This brings in various chemicals to the site\nthat stimulate skin cells to divide and heal the wound. Cell division ceases\nas the wound is completely healed. In contrast, cancer cells do not respond\nto such growth regulating factors and continuously divide at the expense\nof normal cells, thus ultimately killing the host. So it becomes important\nto understand the processes involved in cell division. The cell cycle will\nhelp us understand this better.\n6.14 Cell cycle\nThe process of cell division is a\nvery small part of the cell cycle. It\ncompletes in 40-60 minutes. The\nperiod between two cell divisions is\ncalled ‘Interphase’. This is actually the\nperiod when the genetic material\n(DNA) makes its copy so that it is\nequally distributed to the daughter cells\nduring mitosis. Interphase can be\ndivided into three phases.\n1) G1 phase: This is the linking\nperiod between the completion of\nmitosis and the beginning of DNA replication (Gap 1 phase). The\ncell size increases during this period.\n2) S phase: This is the period of DNA synthesis (Synthesis phase)\nleading duplication of chromosomes.\n3) G2 phase: This is the time between the end of DNA replication and\nthe beginning of mitosis.(Gap 2 phase). Cell organelles divide and\nprepare chromosome for mitosis.\nG1 (10.5 hrs)\nS (10.5 hrs)\nG1\nS\nG2\nM\nG2 (3.5 hrs)\nM (1 hr)\nFig-28: Cell cycle",
+      "text_sha256": "69450f65e8077dfd1c9c1d041422c980caa123089cfc198353dd563f0a64e031"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 152,
+      "textbook_page": 143,
+      "text": "Reflection of light at curved surfacesReproduction143Government’s Gift for Students’ Progress\nM phase: This is cell division phase. It includes prophase, metaphase,\nanaphase, telophase and cytokinesis.\nTo understand the functional relationship between these phases, Potu\nNarasimha Rao and Johnson (see annexure) conducted some experiments\nusing the cell fusion technique. That is combining two cells in experimental\nconditions. With this cell fusion technique they revealed for the first time\nthe structure of interphase (G1, S and G2) chromosomes that are not\nordinarily visible under the microscope. They provided evidence on\nprogression of cells through the cell cycle in sequential unidirectional\nand controlled way by a series of chemical signals that can diffuse freely\nbetween nucleus and cytoplasm. These experiments are considered to be\na ‘mile stone’ in the cell cycle studies.\nProphase Metaphase Anaphase Telophase\nFig-29: Mitosis - Stages of Karyokinesis\nActivity-4\nObserve different stages of mitotic cell division\nTake permanent slides which shows different stages of mitotic cell\ndivision from your lab kit. Observe carefully under microscope. Draw\ndiagrams what you observe, and compare your observations with the\nfollowing figures. (Fig-29)\nThe division of nucleus (Karyokinesis) followed by the division of\nCytoplasm (Cytokinesis) finally brings about formation of two daughter\ncells. While observing cells in tissues undergoing division, it is not easy\nto differentiate different stages of division. see table-1.",
+      "text_sha256": "b864ca608ecea1543f67b8cab1dff498dcf192f22f651421acfa2ad231f54722"
+    },
+    {
+      "evidence_id": "E3",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 153,
+      "textbook_page": 144,
+      "text": "144 ReproductionGovernment’s Gift for Students’ Progress\nTable-1: Mitosis\n6.14.1 Meiosis\nUnlike mitosis which is a continuous process for division in most of\nthe cells. Meiosis occurs only during the formation of gametes in sexual\nreproduction. Meiosis has two phases. During the first phase of meiosis\nthe parent cell containing two sets of chromosomes (diploid) divides and\ndaughter cells containg one set of chromosomes (haploid) are formed.\nThe second phase of meiosis is similar to normal mitosis. Thus the four\ndaughter cells have just half the number of chromosomes of the parent cell.\nStage Description\n1. Prophase 1. Chromosomes condense and get coiled. They become visible even in\nlight microscope and nucleoli become smaller.\n2. Chromosomes split lengthwise to form chromatids, connected by\ncentromeres.\n3. Nuclear membrane disappears.\n4. Centrosome, containing rod-like centrioles, divide and form ends\nof spindle (probably animal cells only).\n(Note: No pairing of chromosomes as in meiosis).\n2. Metaphase 1. Chromosomes move to cell equator, spindle fibres attached to\ncentromeres.\n3. Anaphase 1. Centromeres split, separating the chromatids.\n2. Spindle fibres attached to centromeres contract, pulling chromatids\ntowards poles\n4. Telophase 1. Chromatids elongate, become invisible, replication at this stage to\nbecome chromosomes.\n2. Nuclear membranes form round daughter nuclei.\n3. Necleolus is resynthesized in each daughter nucleus.\nCytokinesis 1. Nucleus divides into two and division of cytoplasm starts Two cells\nare formed.\n2. Cell membrane pinches to form daughter cells (animals) or new cell\nwall material becomes laid down across spindle equator (plants)",
+      "text_sha256": "ccf846d9331306bebcca9b78286873757e4bf39c5666780ed8d136961832905e"
+    },
+    {
+      "evidence_id": "E4",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 154,
+      "textbook_page": 145,
+      "text": "Reflection of light at curved surfacesReproduction145Government’s Gift for Students’ Progress\nHence meiosis is also called as Reduction Division. The daughter\ncells are haploid in condition. You will learn more about this in further\nclasses.\nx What differences do you find in mitosis and meiosis? Write in a\ntabular form.\nx What would happen if the gamets do not have half the chromosome\nnumber as to their parental cell?\nx How would it affect the progeny formed by sexual reproduction?\n6.15 Reproductive health\nx Why did the government of India fixed the legal marriage age of\nboys (21 years) and girls (18 years)?\nx Do you feel that it is a social responsibility to control birth after\nhaving one or two children?\nx What do you understand by the term ‘Healthy Society’?\nx Will you encourage child marriage? Why?\nAs we have seen, the process of sexual maturation is gradual, and\ntakes place while general body growth is still going on. Therefore,\nsome degree of sexual maturation does not necessarily mean that the body\nor the mind is ready for sexual acts. Further, it is not fit for having and\nbringing up children. How do we decide if the body or the mind is ready\nfor this major responsibility? All of us are under many different kinds of\npressures about these issues. There can be pressure from our friends for\nparticipating in many activities, whether we really want or not. There\ncan be pressure from families to get married and start having children.\nFig-30: Meiosis\nMetaphase 1 Anaphase 1 Telophase 1\nProphase 1\nDaughter cells\nMeiosis-II",
+      "text_sha256": "a7b1628d8ef8fabfc4839bd566b9dd37ec394ce72f89fd4081bca7ac0d957054"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Mitosis and meiosis are both processes of cell division, but they differ in several key aspects. Mitosis is a single division process that results in two identical daughter cells, each with the same number of chromosomes as the parent cell. It is used for growth, repair, and asexual reproduction. Meiosis, on the other hand, is a two-step process that results in four daughter cells, each with half the number of chromosomes as the parent cell. It occurs during the formation of gametes (sperm and eggs) in sexual reproduction. Mitosis involves one round of DNA replication followed by one division, while meiosis involves one round of DNA replication followed by two divisions. Additionally, meiosis includes a unique process called crossing over, where genetic material is exchanged between homologous chromosomes, increasing genetic diversity. Mitosis does not involve crossing over, and the resulting cells are genetically identical to the parent cell, whereas meiosis produces genetically diverse cells.\",\n  \"selected_evidence_ids\": [\"E1\", \"E3\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 151,\n      \"textbook_page\": 142\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 153,\n      \"textbook_page\": 144\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 154,\n      \"textbook_page\": 145\n    }\n  ],\n  \"missing_information\": []\n}",
+    "latency_seconds": 86.87031830000342,
+    "usage": {
+      "completion_tokens": 345,
+      "prompt_tokens": 1790,
+      "total_tokens": 2135,
+      "prompt_tokens_details": {
+        "cached_tokens": 50
+      }
+    },
+    "response_id": "chatcmpl-VYm2GGTBzZaXqRheWSalqkvt39tAOZdf"
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Mitosis and meiosis are both processes of cell division, but they differ in several key aspects. Mitosis is a single division process that results in two identical daughter cells, each with the same number of chromosomes as the parent cell. It is used for growth, repair, and asexual reproduction. Meiosis, on the other hand, is a two-step process that results in four daughter cells, each with half the number of chromosomes as the parent cell. It occurs during the formation of gametes (sperm and eggs) in sexual reproduction. Mitosis involves one round of DNA replication followed by one division, while meiosis involves one round of DNA replication followed by two divisions. Additionally, meiosis includes a unique process called crossing over, where genetic material is exchanged between homologous chromosomes, increasing genetic diversity. Mitosis does not involve crossing over, and the resulting cells are genetically identical to the parent cell, whereas meiosis produces genetically diverse cells.",
+    "selected_evidence_ids": [
+      "E1",
+      "E3",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 151,
+        "textbook_page": 142
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 153,
+        "textbook_page": 144
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 154,
+        "textbook_page": 145
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 3,
+    "citation_count": 3
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Mitosis has one division; meiosis has two",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Mitosis forms two daughter cells; meiosis forms four",
+        "token_recall": 1.0,
+        "matched": true
+      },
+      {
+        "point": "Mitosis preserves chromosome number; meiosis halves it",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Mitosis supports growth/repair; meiosis forms gametes",
+        "token_recall": 0.8571,
+        "matched": true
+      },
+      {
+        "point": "Meiosis creates variation through recombination/segregation",
+        "token_recall": 0.1667,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.6,
+    "citation_validity": 1.0,
+    "unsupported_claims": [
+      "Meiosis produces genetically identical diploid cells"
+    ],
+    "unsupported_claim_rate": 1.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 154
+  },
+  "completed_at": "2026-07-16T19:57:04+00:00"
+}

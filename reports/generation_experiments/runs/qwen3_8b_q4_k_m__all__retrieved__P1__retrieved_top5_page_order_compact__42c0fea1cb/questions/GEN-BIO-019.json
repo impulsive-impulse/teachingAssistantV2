@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb",
+  "question_id": "GEN-BIO-019",
+  "question": "What is sustainable development? How is it useful in natural resource management?",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "f52340ce6a6202fa31c3142186dd600cb0d450e206bf2cac279907f48420511f",
+  "context_sha256": "fa9f3c770cd916fb5f4a4faeff717d82ef9cf76e50985dc453e2368882cc66ba",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 243,
+      "textbook_page": 234,
+      "pdf_pages": [
+        243,
+        244
+      ],
+      "textbook_pages": [
+        234,
+        235
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "have?\nx Since ground water resources are getting depleted at a fast pace\nwhat are the alternatives?\nx How should states and countries work to provide enough irrigation\nfacilities for all?\nIt is comforting to think water is a\nrenewable resource but we must know\nthat limitless exploitation of a\nresource can affect it adversely.\nAccording to United Nations\nDevelopment Programme, “Water\nresource in an area, where annual water\nsupply drops below 1700 m 3 per\nperson, is becoming scarce.” The food\nand Agriculture Organisation of the\nUnited Nations has predicted that by\n2025, 1.8 billion people will be living\nin countries or regions with absolute\nwater scarcity.\nActivity-1\nStudy the different ways in which water is used, misused and recycled\nin the area where you stay.\nPrepare a questionnaire with the help of your\nfriends and teacher and study water used by at least five households in\nyour locality.\nAlso explore and discuss ways to provide water for all.\n10.3 Natural resources around us\nThe Earth’s natural resources include air, water, soil, minerals, fuels,\nplants, and animals.\nConservation is the practice of caring for these\nresources so all living things can benefit from them now and in the future.\nAll the things we need to survive, such as food, water, air, and shelter,\ncome from natural resources.\nSome of these resources can be replaced\nafter they are used and are called renewable resources.\nOther resources,\nsuch as fossil fuels, cannot be replaced at all.\nOnce they are used up, they\nare gone forever.\nOther sources\nTanks 15%\nCannals 37%\nGround water\n43%\nFig-6:\nSources vs area under irrigation\nReflection of light at curved surfaces235 Natural Resources\nThis is because it takes a long time for their formation while their\nconsumption occurs very quickly.\nThese are non renewable resources.\nPeople often waste natural resources.\nAnimals are overhunted.\nForests\nare cleared, exposing land to wind and water damage.\nFertile soil is\nexhausted and lost to erosion because of poor farming practices.\nFuel\nsupplies are depleted.\nWater and air are polluted.\nIf resources are carelessly managed, many will be used up.\nIf used\nwisely and efficiently, however, renewable resources will last much longer.\nThrough conservation, people can reduce waste and manage natural\nresources wisely.\nThe population of human beings has grown enormously in the past\ntwo centuries.\nBillions of people use up resources quickly as they eat\nfood, build houses, produce goods and burn fuel for transportation and\nelectricity.\nThe continuation of life as we know depends on the careful\nuse of natural resources.\nThe need to conserve resources often conflicts with other\nneeds.\nFor some people, a forest area may be a good place to put\na farm.\nA timber company may want to harvest the area’s trees for\nconstruction materials.\nA business company may want to build a\nfactory or shopping mall on the land.\nAll these needs are valid for\nus, but sometimes the plants and animals that live in the area are\nforgotten.\nThe benefits of development need to be weighed against\nthe harm to animals that may be forced to find new habitats, the\ndepletion of resources we may want in the future (such as water\nor timber), or damage to resources we use today.\nx Think of any scarce resource from your surrounding other than water\nand write a short account on its sources, availability and condition.\nRestrictions on water usage are implimented in many regions of the world.\nIn\nAustralia, in response to chronic shortage of water resulting from drought, restrictions\nare imposed on activities like, watering lawns by using sprinkler systems, washing",
+      "retrieval_rank": 5,
+      "source_chunk_id": "biology:fixed:00149"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 244,
+      "textbook_page": 235,
+      "pdf_pages": [
+        244,
+        245,
+        246
+      ],
+      "textbook_pages": [
+        235,
+        236,
+        237
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The benefits of development need to be weighed against\nthe harm to animals that may be forced to find new habitats, the\ndepletion of resources we may want in the future (such as water\nor timber), or damage to resources we use today.\nx Think of any scarce resource from your surrounding other than water\nand write a short account on its sources, availability and condition.\nRestrictions on water usage are implimented in many regions of the world.\nIn\nAustralia, in response to chronic shortage of water resulting from drought, restrictions\nare imposed on activities like, watering lawns by using sprinkler systems, washing\nvehicles, using hose pipes to clean paved areas, and refilling swimming pools.\nAs a\nresult, people have become aware of water consumption.\nThey could prevent the wastage\nof water\nFig-7:\nSustainable Development\nDo you know?!\n236 Natural Resources\nDevelopment and conservation can coexist in harmony.\nWhen we use\nthe environment in ways that ensure we have resources for the future, it is\ncalled sustainable development.\nThere are many different resources we\nneed to manage and conserve to live sustainably.\nx What would you do to motivate others to manage an important\nresource in your locality?\nx How did the villagers in Kothapally resort to sustainable\nmanagement?\n10.4 Forest: an important renewable resource\nx Why do you think forests are very important?\nEvery continent except Antarctica has forests.\nForests are habitat for\nflora and fauna.\nForests serve as a lung for the world and a bed of nutrients\nfor new life to prosper.\nThey provide us innumerable products and in an\nurge to extract them we indiscriminately destroy them.\nPeople clear forests to use the wood, or to make way for farming or\ndevelopment.\nEach year, the Earth loses about 36 million acres of forest\nto deforestation.\nDeforestation destroys wildlife habitats and increases soil erosion.\nIt\nresults the release of gases like CO, CO2, SO2 (also called as green house\ngases) into the atmosphere, contributing to global warming.\nSustainable forestry practices are critical for ensuring resources well\ninto the future.\nPerhaps the bishnoi’s of Rajasthan could tell us how.\nAs\nwe recall brave Amrita Devi and her daughters, followed by villagers who\nclung to trees in the forest surrounding their village and laid down their\nlives to save them, we are faced with a realization about how great a\nmovement towards conservation can be.\nThey were protesting against the\nKings’ order to collect wood for the construction of his palace and\ndefending the pledge of peaceful coexistence taken by them as a bishnoi.\nIt is a set of 29 rules to conserve natures’ resources that every bishnoi\nvows to protect.\nReflection of light at curved surfaces237 Natural Resources\nYou have studied about the Chenchu and Gond tribes of our state and\nare aware of how carefully they extract resources from nature and help\nrevive it. (refer lesson of VII class - Forest our life)\nSome sustainable forestry methods include harvesting with natural\nregeneration in mind, and avoiding certain logging techniques, such as\nremoving all the high-value trees or all the large trees from a forest.\nTrees can also be conserved if consumers recycle some forest\nproducts.\nPeople in China and Mexico, for example, reuse much of their\nwastepaper, including writing paper, wrapping paper, and cardboard.\nIf half\nthe world’s paper were recycled, much of the worldwide demand for new\npaper would be fulfilled, saving many trees.\n10.5 Soil\nSoil is vital to food production.\nWe need high-quality soil to grow the\ncrops that we need.\nSoil is also important to plants that grow in the wild.\nMany other types of conservation efforts, such as plant conservation and",
+      "retrieval_rank": 1,
+      "source_chunk_id": "biology:fixed:00150"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 251,
+      "textbook_page": 242,
+      "pdf_pages": [
+        251,
+        252
+      ],
+      "textbook_pages": [
+        242,
+        243
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "areas should be set aside as parks and wildlife preserves.\nGovernments\nalso enforce laws designed to protect the environment from pollution,\nsuch as requiring factories to install pollution-control devices.\nFinally,\ngovernments often provide incentives for conserving resources.\nMany international organizations are also dedicated to conservation.\nMembers support causes such as saving rain forests, protecting threatened\nanimals, and cleaning up the air.\nThe International Union for the Conservation of Nature (IUCN) is an\nalliance of governments and private groups founded in 1948.\nThe IUCN\nworks to protect wildlife and habitats.\nIn 1980, the group proposed a world\nconservation strategy.\nMany governments have used the IUCN model to\ndevelop their own conservation plans.\nIn addition, the IUCN monitors the\nstatus of endangered wildlife, threatened national parks and preserves, and\nother environments around the world.\nx Take Kothapally village as an example; discuss the role of\norganizations involved in conservation and that of the villagers.\nx Can international, national or state organizations alone manage a\nresource?\nWho are all involved in the whole process of management?\nx Suggest some ways in which you and your friends would like to\nmanage a resource?\nx Are we also an important resource of nature?\nHow?\nx Find out the usage of water in Litres per day in your home?\nDo you\nactually require that much water and how much water is enough in\naccordance with National standards?\nIt is high time to realize that we need natural resources for\ndevelopment, but not at the cost of loss of habitat for living organisms.\nIt\nis time to know our responsibilities to protect natural resources for future\ngenerations.\n(Courtesy: V .\nRatnakar Reddy, Centre for Economic and Social\nStudies , Begampet, Hyderabad - 2003)\nPercolation tank, Micro-irrigation, Borewells, Sustainable development, Biofuels,\nContour strip farming, Dyke Management\nReflection of light at curved surfaces243 Natural Resources\nx Management of resources is essential for their conservation and restoration.\nx Resources are usually local specific and local people need to have control over them.\nx People need to be motivated to reduce pressure on the environment by reducing utilization of\nresources and reusing some of them.\nx We must use our resources judiciously especially fossil fuels, coal and petroleum as they will be\nultimately exhausted.\nx Interstate and intercountry disputes should not hamper availability of a resource.\n1.\nThe British Petroleum statistical Review of World Energy in June measured\ntotal global oil at 188.8 million tonnes, from proved oil resources at the end of\n2010.\nThis is only enough for oil to last for the next 46.2 years.\nWhat measures\nshould be taken to conserve oil?\nWhat will happen if we do not conserve it?\n(AS1)\n2.\nRead the following information carefully and answer the following questions. (AS4)\nVillagers oppose sand mining project Santhabommali (Srikakulam): People of more than 20 villages\nin two mandals of Srikakulam have raised a banner of revolt against the proposed beach sand\nmining project by a private company and threatened to intensify their agitation if the government\ndoes not cancel the project.\nThe sand mining is being taken up to extract rich minerals from the\narea.\nThe villages are located around the forest belt were mining was initiated.\ni) Do you think the villagers are doing a right thing to agitate?\nWhy?\nii) What resources are the villagers trying to save by their agitation?\niii) Will the villagers be benefitted by the rich minerals extracted from sand?\niv) Why does the private company want to carry out mining in the beach area?\nv) What is the role of the government in this aspect?\nvi) How will sand mining in that piece of land affect people of the area?",
+      "retrieval_rank": 3,
+      "source_chunk_id": "biology:fixed:00154"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 252,
+      "textbook_page": 243,
+      "pdf_pages": [
+        252,
+        253,
+        254
+      ],
+      "textbook_pages": [
+        243,
+        244,
+        245
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "The sand mining is being taken up to extract rich minerals from the\narea.\nThe villages are located around the forest belt were mining was initiated.\ni) Do you think the villagers are doing a right thing to agitate?\nWhy?\nii) What resources are the villagers trying to save by their agitation?\niii) Will the villagers be benefitted by the rich minerals extracted from sand?\niv) Why does the private company want to carry out mining in the beach area?\nv) What is the role of the government in this aspect?\nvi) How will sand mining in that piece of land affect people of the area?\n3.\nWhat is sustainable development?\nHow is it helpful in natural resource management? (AS1)\n4.\nWrite a detailed note on management of a natural resource. (AS1)\n5.\nSuggest some ways of reusing a resource in your locality? (AS1)\n6.\nWhy should we conserve forests and wild life? (AS1)\n7.\nSuggest some approaches towards the conservation of forests. (AS1)\n8.\nWhat are the consequences if natural resources are depleted more rapidly. (AS2)\n9.\nPrepare a questionnaire to conduct an interview at a petrol filling station personnel about consumption\nof fossil fuels? (AS2)\n10.\nPrepare model for rain water harvesting / energy saving / soil management, reflecting your innovative\nthoughts. (AS3)\nWhat we have learnt ?\nImprove your learning\n244 Natural Resources\n11.\nList out the procedures followed by the farmers in villages for restoration of natural resources in\nyour area and write a report. (AS4)\n12.\nYou might have heard the Natural Gas drillings near Kakinada by ONGC (Oil and Natural Gas\nCorporation).\nCollect information and prepare a note on the status of Gas production at the basin.\n(AS4)\n13.\nDoes your village or nearest city has a recycling unit of waste materials?\nWrite in detail the steps\ninvolved in it. (AS4)\n14.\nCollect any graph that shows oil (petroleum) consumption in India. (AS4)\ni) Does the production meet consumption in India?\nii) During which period of time shows highest increase in consumption rate?\niii) What change have you observed in the production from past ten years, for example 2012-\n2022?\niv) Suggest some ways to bring down consumption of petroleum.\n15.\nProper utilisation of natural resources is the way to show gratitude to our nation.\nCan you support\nthis statement?\nGive your argument. (AS6)\n16.\nCrop selection and cultivation should be based on availability of water.\nPrepare a slogan to bring\nawareness among farmers about this? (AS7)\n1. ................... plants are used for production of biofuel.\n2.\nBiodiversity is important for more than just food and for ................ also.\n3.\nExample for nonrenewable resource is ..........................\n4. ........................ is the alternative method to prevent ground water depletion.\n5.\nCultivation of paddy is suitable for ................ areas.\n1.\nPercolation tanks helps to ( )\n(A) supply water for agriculture (B) increase ground water level\n(C) preserve rain water (D) prevent overflow of water from tanks during rainy season\n2.\nWhich of the following practice is suitable to farmer with less water resources ( )\n(i) select short term crops, (ii) cultivate comercial crops, (iii) adapt drip system, (iv) crop holiday\n(A) i, iii (B) i, ii, iii (C) i, iv (D) iii, iv\n3.\nWhich of the fossil fuel reserves decrease more rapidly in India ( )\n(A) natural gas (B) coal (C) petroleum (D) all\n4.\nHuge amount of toxic chemicals leak into the surrounding eco system because of ( )\n(A) industries (B) mining (C) pesticides (D) modern technology\n5.\nSustainable development means ( )\n(A) prevention of wastage (B) stable growth\n(C) development without damaging (D) high yieldings in less time\nFill in the blanks\nChoose the correct answer\nReflection of light at curved surfaces245 Natural Resources",
+      "retrieval_rank": 2,
+      "source_chunk_id": "biology:fixed:00155"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 253,
+      "textbook_page": 244,
+      "pdf_pages": [
+        253,
+        254,
+        255
+      ],
+      "textbook_pages": [
+        244,
+        245,
+        246
+      ],
+      "source_file": "X Biology EM 2025-26.pdf",
+      "text": "(i) select short term crops, (ii) cultivate comercial crops, (iii) adapt drip system, (iv) crop holiday\n(A) i, iii (B) i, ii, iii (C) i, iv (D) iii, iv\n3.\nWhich of the fossil fuel reserves decrease more rapidly in India ( )\n(A) natural gas (B) coal (C) petroleum (D) all\n4.\nHuge amount of toxic chemicals leak into the surrounding eco system because of ( )\n(A) industries (B) mining (C) pesticides (D) modern technology\n5.\nSustainable development means ( )\n(A) prevention of wastage (B) stable growth\n(C) development without damaging (D) high yieldings in less time\nFill in the blanks\nChoose the correct answer\nReflection of light at curved surfaces245 Natural Resources\nACADEMIC STANDARDS\n1.\n2.\n3.\n4.\n5.\n6.\n7.\nConceptual understanding\nAsking questions and making\nhypothesis\nExperimentation and field\ninvestigation.\nInformation skills and\nProjects\nCommunication through\ndrawing, model making\nAppreciation and aesthetic\nsense, values\nApplication to daily life,\nconcern to bio diversity .\nChildren are able to explain, cite examples, give reasons,\ncompare and write differences, explain the process of\ngiven concepts in the textbook.\nChildren are able to\ndevelop their own mind mappings.\nChildren are able to ask questions to understand, to\nclarify the concepts and to participate in discussions.\nThey are able to make hypothesis on experimental results\nand given issues.\nTo understand given concepts in the textbook, children\nare able to do experiments on their own.\nThey are able\nto arrange the experimental materials, note their\nobservations, collect alternate expermental materials,\ntake precautions, participate in field investigation and\nmake reports on them.\nChildren are able to collect information (by using\ninterviews, checklist, questionaire) and analyses\nsystematically.\nThey are able to conduct their own\nproject works.\nChildren are able to explain their conceptual\nunderstanding by drawing figures labelling, describing\nthe parts and making models.\nThey are able to plot graphs\nby using given information or collected data.\nChildren are able to appreciate man power and nature,\nand have aesthetic sense towards nature.\nThey are also\nable to follow constitutional values.\nChildren are able to utilize scientific concept to face\ntheir daily life situations.\nThey are able to show concern\ntowards bio diversity.\nS.No.\nAcademic Standard Explanation\n246 Natural Resources\nThe learner...\ni Differentiates organisms, phenomena and processes based on properties or characteristics,\nsuch as, Autotrophic and heterotrophic nutrition, biodegradable and non-biodegradable substances,\netc.\ni Classifies organisms, phenomena and processes based on properties or characteristics,\nsuch as, Autotrophs - heterotrophs, etc.\ni Plans and conducts investigations or experiments to arrive at and verify the facts, principles,\nphenomena or to seek answers to queries on their own,\nsuch as, Which gas is evolved during fermentation?\nWhy does the shoot of a plant moves towards\nlight? etc.\ni Relates processes and phenomena with causes and effects,\nsuch as, Hormones with their functions, etc.\ni Explains processes and phenomena,\nsuch as, Nutrition in human beings and plants, transportation in plants and animals, etc.\ni Draws labelled diagrams, flow charts, concept maps and graphs,\nsuch as, Digestive, respiratory, circulatory, excretory and reproductive systems, etc.\ni Analyses and interprets data, graphs and figures,\nsuch as, Concentration of lactic acid - time, etc.\ni Applies learning to hypothetical situations,\nsuch as, What will happen if all herbivores are removed from an ecosystem?, etc.\ni Applies scientific concepts in daily life and solving problems,\nsuch as, Suggest precautions to prevent sexually transmitted infections, etc.\ni Draws conclusion,\nsuch as, Traits or features are inherited through genes present on chromosomes, etc.\ni T akes initiative to know about scientific discoveries and inventions,\nsuch as, Mendel’s Contribution in understanding the concept of inheritance, etc.\ni Exhibits creativity in designing models using eco-friendly resources,",
+      "retrieval_rank": 4,
+      "source_chunk_id": "biology:fixed:00156"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Sustainable development refers to the use of natural resources in a way that meets the needs of the present without compromising the ability of future generations to meet their own needs. It is useful in natural resource management because it ensures that resources are used wisely and efficiently, reducing waste and helping to conserve them for the future. Through sustainable development, we can balance the needs of people with the need to protect the environment and natural resources.\",\n  \"selected_evidence_ids\": [\"E1\", \"E3\", \"E4\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E1\",\n      \"pdf_page\": 243,\n      \"textbook_page\": 234\n    },\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 251,\n      \"textbook_page\": 242\n    },\n    {\n      \"evidence_id\": \"E4\",\n      \"pdf_page\": 252,\n      \"textbook_page\": 243\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 118.01299810002092,
+    "latency_seconds": 169.5879069000075,
+    "usage": {
+      "completion_tokens": 237,
+      "prompt_tokens": 4372,
+      "total_tokens": 4609,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-gea94bynCMgLR1w0zbRZDwJkpzObPz1E",
+    "peak_rss_bytes": 19289477120
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Sustainable development refers to the use of natural resources in a way that meets the needs of the present without compromising the ability of future generations to meet their own needs. It is useful in natural resource management because it ensures that resources are used wisely and efficiently, reducing waste and helping to conserve them for the future. Through sustainable development, we can balance the needs of people with the need to protect the environment and natural resources.",
+    "selected_evidence_ids": [
+      "E1",
+      "E3",
+      "E4"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 243,
+        "textbook_page": 234
+      },
+      {
+        "evidence_id": "E3",
+        "pdf_page": 251,
+        "textbook_page": 242
+      },
+      {
+        "evidence_id": "E4",
+        "pdf_page": 252,
+        "textbook_page": 243
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 3,
+    "citation_count": 3
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Define sustainable development as using the environment while retaining resources for the future",
+        "token_recall": 0.5556,
+        "matched": true
+      },
+      {
+        "point": "Connect development with conservation",
+        "token_recall": 0.3333,
+        "matched": false
+      },
+      {
+        "point": "Explain management/conservation of renewable and non-renewable resources",
+        "token_recall": 0.3333,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.3333,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 78
+  },
+  "completed_at": "2026-07-17T20:13:52+00:00"
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_14b_q4_k_m__holdout__gold__P1__gold_separate_full__d7742c81bc",
+  "question_id": "GEN-BIO-006",
+  "question": "Differentiate between arteries and veins.",
+  "book_id": "biology",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "d25bae09e1eb5d14d3788cb9117f088ec71f8aab5e50008f744d70d55ca972e0",
+  "context_sha256": "bba477008163345f10246cf6b98e77e677f1cffd8eb0e49b8959ffaac6958c0b",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 69,
+      "textbook_page": 60,
+      "text": "Circulation60Government’s Gift for Students’ Progress\n2. Ask him/her to hold a firm support as shown in the figure. Now the\nblood vessels can be seen more prominently.\n3. Locate a prominent bluish blood vessel.\n4. At the end of the vessel farthest from the elbow apply steady pressure,\nso as to close its cavity.\n5. Now apply pressure from elbow towards the palm slowly and observe\nthe change in the blood vessel. (Take the help of the figures given\nhere.) Observe changes and discuss in your class.\n6. Remove the pressure.\n7. Apply pressure from palm towards elbow and see what happens.\nAnswer the following:\nx Why do blood vessels (just below our skin) bulge on the side away\nfrom the heart when the hand is tied? What do you understand from\nit?\n3.4 Arteries and Veins\nArteries carry blood from the heart to body parts. Veins carry blood\nfrom body organs to heart. Let us observe the structural and functional\ndifferences between arteries and veins [see Fig-9(a) and 9(b)].\n3.4.1 Blood capillaries\nBlood capillaries are the microscopic vessels made of single layer of\ncells. They allow diffusion of various substances. The leucocytes (WBC)\ncan squeeze out of the capillary wall. They establish continuity between\narteries and veins.\nelastic\nfibrous coat\nmuscle layer\nendothelium\nlumen\ntough fibrous coat\nFig-9(a): T.S. of ArteryFig-9(a): T.S. of Artery Fig-9(c): T.S.of Blood capillary\nlumen\nendothelium\nFig-9(b): T.S. of V ein",
+      "text_sha256": "0fe38e40351ed22f49e262d2894fb20327678fc87a0ef04a52a562fdb2d46fe9"
+    },
+    {
+      "evidence_id": "E2",
+      "book_id": "biology",
+      "source_file": "X Biology EM 2025-26.pdf",
+      "pdf_page": 70,
+      "textbook_page": 61,
+      "text": "Circulation61Government’s Gift for Students’ Progress\nx Discuss the differences between pulmonary artery and pulmonary vein.\nLet us perform the following activities to observe arteries and veins\nagain.\nSit on a table with one leg dangling and the other resting on it so that the\nback of one knee rests on the knee of the other. After a time you feel the leg\nwhich is on top give a series of small movements with each heart beat. If you\ndo it for long you will reduce the blood flow to the leg and so develop ‘pins and\nneedles’. Discuss the reasons for the same with your teacher.\nSwing your arm round several times to fill the veins with blood, hold\nthe arm vertically downwards and gently press your finger along a prominent\nvein-stroking it in the reverse direction to the blood flow, i.e., towards the\nhand. Can you see the swellings where you have pushed blood against the\nvalves? Discuss with your teacher about reasons.\nArtery Vein\n1. Thickness of walls(thick / thin)\n2. Valves (present / absent)\n3. Capacity to retain shape when blood is absent\n(can retain/can’t retain)\n4. Direction of blood flow (heart to organs / body\norgans to heart)\n5. Pressure on the blood vessel (low /high)\n6. Type of blood transported\n(oxygenated / de-oxygenated)\nTable-3 Fill in the following table\nS.No Structure / Function of blood vessel\nActivity-4\nThink and discuss\nx Artery walls are very strong and elastic. Why?\nx Why do we compare arteries with tree which divides into\nsmaller branches?\nx The lumen size is bigger in vein when compared with\nartery. Why?",
+      "text_sha256": "35297260e7ef8096ddca45486d5f7a56897042394af3483622de8342629307be"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Arteries and veins are two types of blood vessels that have different structures and functions. Arteries carry blood from the heart to different parts of the body, while veins carry blood from the body back to the heart. Arteries have thick, elastic walls to handle the high pressure of blood coming from the heart. They do not have valves. Veins, on the other hand, have thinner walls and contain valves to prevent the backflow of blood. The lumen (the inner space) of veins is larger compared to arteries, which helps them carry a larger volume of blood. The blood in arteries is usually oxygenated, while the blood in veins is de-oxygenated.\",\n  \"selected_evidence_ids\": [\"E1\", \"E2\"],\n  \"citations\": [\n    {\"evidence_id\": \"E1\", \"pdf_page\": 69, \"textbook_page\": 60},\n    {\"evidence_id\": \"E2\", \"pdf_page\": 70, \"textbook_page\": 61}\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 46.92774520002422,
+    "latency_seconds": 110.28598020001664,
+    "usage": {
+      "completion_tokens": 237,
+      "prompt_tokens": 937,
+      "total_tokens": 1174,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-4YYnNyOk1ISVt26BNoXLneWOiUvHF7V3",
+    "peak_rss_bytes": 19066191872
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Arteries and veins are two types of blood vessels that have different structures and functions. Arteries carry blood from the heart to different parts of the body, while veins carry blood from the body back to the heart. Arteries have thick, elastic walls to handle the high pressure of blood coming from the heart. They do not have valves. Veins, on the other hand, have thinner walls and contain valves to prevent the backflow of blood. The lumen (the inner space) of veins is larger compared to arteries, which helps them carry a larger volume of blood. The blood in arteries is usually oxygenated, while the blood in veins is de-oxygenated.",
+    "selected_evidence_ids": [
+      "E1",
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E1",
+        "pdf_page": 69,
+        "textbook_page": 60
+      },
+      {
+        "evidence_id": "E2",
+        "pdf_page": 70,
+        "textbook_page": 61
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 2,
+    "citation_count": 2
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Arteries carry blood away from the heart; veins carry it toward the heart",
+        "token_recall": 0.7143,
+        "matched": true
+      },
+      {
+        "point": "Arteries have thicker, more elastic muscular walls",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "Veins have thinner walls, wider lumen, and valves",
+        "token_recall": 0.8333,
+        "matched": true
+      },
+      {
+        "point": "State pulmonary-vessel exceptions if oxygenation is discussed",
+        "token_recall": 0.1429,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 111
+  },
+  "completed_at": "2026-07-17T15:25:41+00:00"
+}

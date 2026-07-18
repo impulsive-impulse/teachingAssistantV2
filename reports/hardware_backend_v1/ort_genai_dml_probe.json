@@ -1,0 +1,19 @@
+{
+  "provider": "dml",
+  "runtime": "onnxruntime-genai-directml",
+  "runtime_version": "0.13.1",
+  "architecture": "AMD64",
+  "model_path": "X:\\models\\TeachingAssistantV2\\Gemma3-4B-ONNX-DML\\gemma-3-4b-it\\gpu\\gpu-fp16-io-int4-rtn-block-32",
+  "model_tree_sha256": "a220aa805f64a7bce34e8c6aeb1b037a0027943bdb3d9d3604bef5ef1c11e648",
+  "prompt": "Why does a pencil look bent when partly submerged in water?",
+  "load_seconds": 3.6406644000089727,
+  "time_to_first_token_seconds": 0.00012079998850822449,
+  "latency_seconds": 53.358051599992905,
+  "prompt_tokens": 21,
+  "generated_tokens": 235,
+  "tokens_per_second": 4.404208792362112,
+  "peak_rss_bytes": 6916960256,
+  "output": "\u0434\u0435\u043d\u0442<unused4449><unused5994>\ud808\udc1a<unused5994><unused4752><unused6171><unused4487><unused4910><unused4752><unused4752><unused4752><unused4752><unused4752><unused4752><unused4752><unused4752><unused4752> lifeGuy<unused4752><unused5981><unused4752><unused5981><unused4752><unused4752><unused4752><unused4752> lifeGuy<unused4752><unused4087><unused4752><unused4087><unused4752><unused4087><unused4752><unused4087><unused4752><unused4087><unused4752><unused4087><unused4752><unused4087><unused4752><unused4087><unused4511><unused5981><unused4752><unused4957>\ud808\udd28<unused3986><unused4752><unused5118><unused4752><unused5118><unused4752><unused5118><unused3553><unused5118><unused3384><unused1423><unused1481><unused4752><unused1481><unused4752><unused6171><unused4752><unused4654><unused4487><unused4752><unused5118><unused5118><unused1481><unused5118><unused5118><unused1481><unused1481><unused5118><unused5118><unused1481><unused1481><unused1481><unused5118><unused3553><unused1481><unused1481><unused1481><unused3172><unused1481><unused1481><unused1481><unused1481><unused1481><unused5118><unused1481><unused1481><unused1481><unused1481><unused1481><unused1481><unused1481><unused1481><unused1481><unused2962><unused5118><unused2962><unused4752><unused4752><unused4752><unused5118><unused4752><unused4752><unused5118><unused4752><unused4752><unused4752><unused5118><unused4752><unused5118><unused4752><unused6018><unused4752><unused6171><unused5118><unused4752><unused4752><unused5118><unused3553><unused5118><unused4752><unused4752><unused3553><unused4752><unused5118><unused4752><unused5118><unused4514><unused5118><unused4514><unused5118><unused5118><unused5118><unused5118><unused4752><unused4752><unused5118><unused5118><unused4752><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused4752><unused5118><unused4752><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118><unused5118>",
+  "output_valid": false,
+  "power_information": "not exposed by ORT GenAI"
+}

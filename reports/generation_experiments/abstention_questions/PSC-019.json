@@ -1,0 +1,136 @@
+{
+  "question_id": "PSC-019",
+  "question": "What is the current residential electricity tariff per kWh in Hyderabad?",
+  "book_id": "physical_sciences",
+  "diagnostic_type": "not_answerable",
+  "prompt_sha256": "7b7fb9e97ee47d5109d1d61aa68a9a21a8a3782de68f018f05e061dec721950d",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 224,
+      "textbook_page": 214,
+      "pdf_pages": [
+        224,
+        225,
+        226
+      ],
+      "textbook_pages": [
+        214,
+        215,
+        216
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Let V be the potential difference between the points A and B.\nThe work\ndone by electric field in time ‘t’ is given by\nW = QV .........................(1)\nThis work is equal to the energy lost by the charge while passing\nthrough the conductor.\n· What is the energy lost by the charge in 1 sec?\nIt is equal to W\nt .\nFrom equation (1), we get\nW\nt = QV\nt .........................(2)\nIn above equation Q\nt represents the current (I) flowing through the\nconductor and W\nt represents the work done per second.\nIn lower classes you had studied that power is nothing but the rate\nof doing work.\nHence, W\nt represents electric power (P).\nElectric power P = VI .........................(3)\nThis equation can be used to calculate power consumption by any\nelectric device that is connected in a circuit.\nAccording to the ohm’s law,\nV = IR\nfig-31\nFe\nDirection of electric field\nA B\nl\nQ\nt=0 t\nPotential difference V\n210 Electric Current\nWe can write equation (3) as\nP = I2\nR =\n2V\nR\nThe equation P = VI can also be used to know the power that can be\nextracted from a battery or any source.\nIn such case we modify the\nequation P = VI as\nP = e I.\nWhere e is the emf of the battery.\nLet us consider an example to understand power consumption.\nA bulb is marked 60W and 120V .\nThis means that if this bulb is\nconnected to 120V source, it will able to convert 60J of electrical\nenergy into heat or light in one second.\nThus, the bulbs marked as 60W and 120V will offer a resistance of\n240 W to the flow current through it in normal condition.\nFrom the marking of bulb we can measure the resistance of the bulb.\nFrom the relation P =\n2V\nR a R =\n2V\nP\nSubstituting the values V and P in above equation, we get\nR = 120 120\n60\n´ = 240 W\nIf this bulb is connected to the 12V a battery, the consumption by\nthe bulb is given by\nP =\n2V\nR = 12 12\n240\n´ = 3\n5 = 0.6 W\nSince watt is a small unit of power, a bigger unit Kilowatt is\ngenerally used to express power consumption.\n1 KW = 1000 W = 1000 J/S\nYou might have seen the current bill that comes to your home every\nmonth.\nIn that bill, consumption of electricity is marked in units.\nWhat\ndoes the unit represent?\nThe unit of electric power consumption is equal to 1 KWH (one\nKilo Watt Hour).\n1 KWH = (1000 J/S) (60 x 60 S)\n= 3600 x 1000 J\n= 3.6 x 106 J\n211 Electric Current\n9.10 Overload\n· What do you mean by overload?\n· Why does it cause damage to electric appliances?\nWe frequently hear news about overload of current and damages caused\nby this overload.\nElectricity enters our homes through two wires called lines.\nThese\nline wires have low resistance and the potential difference between the\nwires is usually about 240V .\nThese two line wires run throughout the\nhousehold circuit, to which we connect various appliances such as fan, TV ,\nrefrigerator etc.\nAll the electric devices of our home are connected at different points\nbetween these two wires.\nThis means all the electric appliances are in\nparallel connection.\nHence, potential drop across each device is 240V .\nIf\nwe know the value of resistance of the electric device, we can calculate\nthe current passing through it using the equation I = V/R.\nFor example, the\ncurrent passing through a bulb with resistance 240 W is 1 A.\nBased on the resistance of each electric device, it draws some current",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00130"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 229,
+      "textbook_page": 219,
+      "pdf_pages": [
+        229,
+        230,
+        231
+      ],
+      "textbook_pages": [
+        219,
+        220,
+        221
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "214 Electric Current\nII.\nApplication of concepts\n1.\nExplain overloading of household circuit. (AS1)\n2.\nWhy do we use fuses in household circuits? (AS1)\n3.\nTwo bulbs have ratings 100 W , 220V and 60 W , 220 V .\nWhich one has the greater\nresistance?(AS1)\n4.\nWhy do we consider tungsten as a suitable material for making the filament of a bulb? (AS2)\n5.\nAre the head lights of a car connected in series or parallel?\nWhy? (AS2)\n6.\nWhy should we connect electric appliances in parallel in a household circuit?\nWhat happens\nif they are connected in series? (AS2)\n7.\nIf the resistance of your body is 100000W.\nWhat would be the current that flows in your\nbody when you touch the terminals of a 12V battery? (AS7)\nIII.\nHigher Order Thinking Questions\n1.\nImagine that you have three resistors of 30W each.\nHow many resultant resistances can be\nobtained by connecting these three in different ways?\nDraw the relevant diagrams.\n2.\nA house has 3 tube lights, two fans and a Television.\nEach tube light draws 40W .\nThe fan\ndraws 80W and the Television draws 60W .\nOn the average, all the tube lights are kept on for\nfive hours, two fans for 12 hours and the television for five hours every day.\nFind the cost of\nelectric energy used in 30 days at the r ate of Rs.\n3.00 per Kwh. (AS7)\n1.\nA uniform wire of resistance 50 W is cut into five equal parts.\nThese parts are now connected\nin parallel.\nThen the equivalent resistance of the combination is [ ]\na) 2 W b) 10 W\nc) 250 W d) 6250 W\nMultiple choice questions\n215 Electric Current\n2.\nA charge is moved from a point A to a point B.\nThe work done to move unit charge during this\nprocess is called. [ ]\na) potential at A\nb) potential at B\nc) potential difference between A and B\nd) current from A to B\n3.\nJoule/ coulomb is the same as [ ]\na) 1 watt b) 1 volt\nc) 1 ampere d) 1 ohm\n4.\nThe resistors of values 2 W, 4 W, 6 W are connected in series.\nThe equivalent resistance in the\ncircuit is [ ]\na) 2 W b) 4 W\nc) 12 W d) 6 W\n5.\nThe resistors of values 3 W, 6 W, 18 W are connected in parallel.\nThe equivalent resistance in\nthe circuit is [ ]\na) 12 W b) 36 W\nc) 18 W d) 1.8 W\n6.\nThe resistors of values 6 W, 6 W are connected in series and 12 W are connected in parallel\nThe equivalent resistance of the circuit is [ ]\na) 24 W b) 6 W\nc) 18 W d) 2.4 W\n7.\nThe current in the wire depends [ ]\na) only on the potential difference applied\nb) only on the resistance of the wire\nc) on both of them\nd) none of them\n216 Electric Current\nSuggested Projects\n1.(a) Take a battery and measure the potential difference.\nMake a circuit and measure the potential\ndifference when the battery is connected in the circuit.\nIs there any difference in potential difference\nof battery? (AS4)\n(b) Measure the resistance of a bulb (filament) in open circuit with a multi-meter.\nMake a circuit\nwith elements such as bulb, battery of 12V and key in series.\nClose the key.\nThen again measure\nthe resistance of the same bulb (filament) for every 30 seconds.\nRecord the Observations in a\nproper table.\nWhat can you conclude from the above results? (AS4)\n2.\nCalculate the resistance of verious bulbs that you use at your home and find which one is having",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00133"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 233,
+      "textbook_page": 223,
+      "pdf_pages": [
+        233,
+        234,
+        235
+      ],
+      "textbook_pages": [
+        223,
+        224,
+        225
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "the electron.\nThe electron density (n) of a metal conductor depends on its nature\nso it is also constant for a particular conductor.\nFor a given conductor, the length (l) and cross section area (A) are\nalso constants.\nThe value of t depends on temperature of the conductor.\nWhen the temperature increases the random motion of electrons\nincreases hence the value of t decreases.\nFor a constant temperature of a conductor the value of t becomes\nconstant.\nHence (2m/ne 2t) ( l/A) becomes a constant for a particular\nconductor at constant temperature.\nLet this value be R (called resistance\nof a conductor).\nThe we get\nIR = V (from equation e) ...................(f)\nThis is what we call Ohm’s law.\nWhere R = (2m/ne2t) (l/A) ..................(g)\nIn the above equation 2m/ne 2t is the characteristic value of a\nconductor.\nThe value of resistance R is different for different\ngeomentrical values for a particular conductor (material).\nHence 2m/\nne2t is taken as a constant independent of geomentrical values.\nLet it\nbe r.\nIt is called specific resistance.\nr = 2m/ne2t\nFrom equation (g) we get\nR = rl/A ..................(h)\nNote: Drift velocity and Drift speed are synonoum\n219 Electromagnetism\nIn the previous chapter on ‘Electricity’ you have learnt about the heating\neffects of electric current.\nWe use many electric appliances in our daily\nlife such as electric motor, electric generators, electric calling bells,\nelectric cranes etc.,\n· How do electric appliances work?\n· How do electromagnets work?\nDo you know?\n· Is there any relation between electricity and magnetism?\n· Can we produce magnetism from electricity?\nIn this chapter we will study electromagnetic effects.\nWe also study electric\nmotors which involve magnetic effects of electric current and electric\ngenerator which involves electric effects of moving magnets.\nHans Christian Oersted (1777 - 1851) was one of the leading\nscientists of the 19 th century, played a crucial role in\nunderstanding electromagnetism.\nHe gave lectures which were\nquite popular among the public and also learnt a lot during the\ntours.\nDuring one such lecture in April 1820, Oersted carried\nout an experiment that was never performed before.\nHe placed\na compass needle underneath a wire and then turned on electric\ncurrent.\nThe needle of compass showed deflection.\nOersted recognized the significance of what he had just done.\nElectromagnetism10\nCHAPTER\n220 Electromagnetism\nEarlier, it was believed that electricity and magnetism were two different unconnected\nsciences.\nOersted had demonstrated that they were interconnected.\nThrough this\nobservation he showed that electricity and magnetism were related phenomena.\nSome\nscientists, influenced by this experiment, continued to work in the modern field of\n“electromagnetism”.\nTheir research resulted in several new scientific theories and\nvarious vital inventions like the dynamo and the electric motor, with this a new\ntechnology prospered, leading to inventions such as radio, television and fiber optics.\nThe unit of magnetic field strength is named Oersted in his honour.\nOersted was made a foreign member of the Royal Swedish Academy of Sciences in 1822.\nfig-1\nActivity 1\n10.1 Oersted experiment\nTake a thermocole sheet and fix two thin wooden sticks of height 1cm\nwhich have small slit at the top of their ends as shown in fig-1.\nArrange a\ncopper wire of 24 gauge so that it passes through these slits and make a\ncircuit.\nThe circuit consists of a 3 (or 9) volt battery, key and copper wire\nwhich are connected in series as shown in figure 1.\nNow, keep a magnetic\ncompass below the wire.\nBring a bar magnet close to the compass.\n· Does the needle get deflected by the bar\nmagnet?\n· Why does the needle get deflected by the",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00135"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 226,
+      "textbook_page": 216,
+      "pdf_pages": [
+        226,
+        227,
+        228
+      ],
+      "textbook_pages": [
+        216,
+        217,
+        218
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "household circuit, to which we connect various appliances such as fan, TV ,\nrefrigerator etc.\nAll the electric devices of our home are connected at different points\nbetween these two wires.\nThis means all the electric appliances are in\nparallel connection.\nHence, potential drop across each device is 240V .\nIf\nwe know the value of resistance of the electric device, we can calculate\nthe current passing through it using the equation I = V/R.\nFor example, the\ncurrent passing through a bulb with resistance 240 W is 1 A.\nBased on the resistance of each electric device, it draws some current\nfrom the supply.\nTotal current drawn from the mains is equal to the sum of\nthe currents passing through each device (Junction law).\nIf we add more devices to the household circuit the current drawn\nfrom the mains also increases.\n· What happens when this current increases greatly?\nTo answer this, observe the values noted on digital meters fixed\nat your home.\nYou will notice the following values on the meter.\nPotential difference: 240 V\nCurrent: 5 – 20A\nThis means the line wires that are entering the meter have a\npotential difference of 240V .\nThe minimum and maximum limit\nof current that can be drawn from the mains is 5 – 20A.\nThus, the\nmaximum current that we can draw from the mains is 20A.\nWhen\nthe current drawn from the mains is more than 20A.\nOverheating\noccurs and may cause a fire.\nThis is called over loading.\nSee fig.-\n32.\nIf we switch on devices, such as heater shown in fig.- 32, the\ncurrent drawn from the mains exceeds the max limit 20A.\n· How can we prevent damage due to overloading?\n240V\nFuse\nTV\nFridge\nBulb\nFan\nHeater\n20A\n6A\n8A\n2A\n4A\nfig-32\n212 Electric Current\n· Electric current is expressed as the amount of charge flowing through a particular cross section\narea in unit time.\n· W ork done by the electric force on unit positive charge to move it through a distance from A to\nB in a conductor is called potential difference between those two points.\n· A multi-meter is an electronic measuring instrument that combines several measuring functions\n(electric potential difference, electric current and electric resistance) in one unit.\n· Ohms law: The current through a conductor element is proportional to the potential difference\napplied between its ends, provided the temperature remains constant.\nMathematically V=IR.\nTo prevent damages due to overloading we connect an electric fuse to the\nhousehold circuit as shown in fig.- 32.\nIn this arrangement, the entire current\nfrom the mains must pass through the fuse.\nThe fuse consists of a thin wire of\nlow melting point.\nWhen the current in the fuse exceeds 20A, the wire will\nheat up and melt.\nThe circuit then becomes open and prevents the flow of\ncurrent into the household circuit.\nSo all the electric devices are saved from\ndamage that could be caused by overload.\nThus we can save the house holding wiring and devices by using fuses.\nNote: The value of overload current varies from the household currents to\nfactories.\nThink and discuss\n· What do you mean by short circuit?\n· Why does a short circuit damage electric wiring and devices\nconnected to it?\nKey words\nCharge, Potential difference, Electric current, Multi-meter, Ohm’s law, Resistance,\nResistivity, Kirchhoff’s laws, Electric power, Electric energy.\nWhat we have learnt\n213 Electric Current\n· Ohm’s law is valid for metal conductors at constant temperature.\nIt is not applicable\nfor gaseous conductors and semiconductors.\n· Resistance is the opposition that a substance offers to the motion of electrons.\n· Resistance of a wire depends on the material of the wire, its length and its area of",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00131"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 216,
+      "textbook_page": 206,
+      "pdf_pages": [
+        216,
+        217,
+        218
+      ],
+      "textbook_pages": [
+        206,
+        207,
+        208
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "In series connection of resistors there\nis only one path for the flow of current in\nthe circuit.\nHence, the current in the circuit\nis equal to I.\nAccording to Ohm’s law,\nPotential difference across R1 is , V1 = IR1\nPotential difference across R2 is , V2 = IR2\nPotential difference across R3 is , V3 = IR3\nLet Req is the equivalent resistance of\nthe combination of resistors in series.\nV2\n202 Electric Current\nfig-19keyBattery\nI\nA\nA\nammeter 1\nP\nI2\nI3\nQ\n· What do you mean by equivalent resistance?\nIf the current drawn by a resistor is equal to the current drawn by\nthe combination of resistors then the resistor is called as equivalent resistor\n(provided the source in the circuit is constant).\nSo, we have V = I Req\nSubstituting the values of V1, V2, V3 and V in the equation (1), we get\nIReq = IR1 + IR2 + IR3\nReq = R1 + R2 + R3\nFrom the above equation you can conclude that the sum of individual\nresistances is equal to their equivalent resistance when the resistors are\nconnected in series.\n· What happens when one of the resistors in series breaks down?\nWhen one of the resistors in series breaks down, the circuit\nbecomes open and flow of current cannot take place in the circuit.\nThis is\nthe reason why household electrical appliances are not connected in series.\n· Can you guess in what way household wiring has been done?\nLet us see\n9.7.2 Parallel Connection of resistors\nActivity 7\nUse the bulbs used in activity 6 and connect\nthese bulbs as shown in fig.- 19.\nMeasure the potential difference across each\nbulb using a voltmeter or multi meter.\nNote these\nvalues in your note book.\nWhat do you notice?\nThe\npotential difference at the ends of each bulb is the\nsame.\nThese bulbs are said to be in parallel conne\nction.\nMeasure electric currents flowing through\neach bulb using ammeters.\nNote these values.\nLet I1,I2 and I3 be the currents flowing through\nR1, R2 and R3 resistors respectively.\n· How much current is drawn from the battery?\n· Is it equal to individual currents drawn by the resistors?\nI1\n203 Electric Current\nMeasure the current (I) drawn from the battery using the ammeter\n1.\nYou will notice that the current drawn from the battery is equal to the\nsum of individual currents drawn by the bulbs.\nHence we can write\nI = I1 + I2 + I3 .................. (1)\nEquivalent resistance of a parallel connection\nThe schematic circuit of fig.- 19 is shown in fig.- 20.\nAccording to the Ohm’s law,\nCurrent through R1 is, I1 = 1\nV\nR\nCurrent through R2 is, I2 =\n2\nV\nR\nCurrent through R3, is, I3 =\n3\nV\nR\nLet Req be the equivalent resistance of\nthe resistors is parallel.\nIt is shown in fig.- 21.\nThen we get; I = eq\nV\nR\nSubstituting the values I, I1, I2 and I3 in equation (1), we get\neq\nV\nR = 1\nV\nR +\n2\nV\nR +\n3\nV\nR\neq\n1\nR = 1\n1\nR +\n2\n1\nR +\n3\n1\nR\nThe two resistors R1 and R2 are connected in parallel,\neq\n1\nR = 1\n1\nR +\n2\n1\nR (or)\nReq = 12\n12\nRR\n( R R)+\nThe equivalent resistance of a parallel combination is less than the\nresistance of each of the resistors.\nYou can use this result to explain why the resistance of a metal wire is\ninversely proportional to its area of cross section.\nLet us imagine a thick\nwire as a parallel combination of several thin wires.\nThen the resistance of\nthe combination is less than that of each thin wire.",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00126"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"insufficient_evidence\",\n  \"answer\": \"The provided textbook evidence does not mention the current residential electricity tariff per kWh in Hyderabad. It discusses concepts related to electric current, power, and household circuits but does not provide any information about electricity tariffs or pricing in Hyderabad.\",\n  \"selected_evidence_ids\": [],\n  \"citations\": [],\n  \"missing_information\": [\"current residential electricity tariff per kWh in Hyderabad\"]\n}",
+    "time_to_first_token_seconds": 129.18504660000326,
+    "latency_seconds": 149.78345779998926,
+    "usage": {
+      "completion_tokens": 91,
+      "prompt_tokens": 4675,
+      "total_tokens": 4766,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-zxmZ9fBDYW8djUbjDAj0g4gdhdq9gU9h",
+    "peak_rss_bytes": 12138561536
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "insufficient_evidence",
+    "answer": "The provided textbook evidence does not mention the current residential electricity tariff per kWh in Hyderabad. It discusses concepts related to electric current, power, and household circuits but does not provide any information about electricity tariffs or pricing in Hyderabad.",
+    "selected_evidence_ids": [],
+    "citations": [],
+    "missing_information": [
+      "current residential electricity tariff per kWh in Hyderabad"
+    ],
+    "valid_citation_count": 0,
+    "citation_count": 0
+  },
+  "model_abstained": true,
+  "deterministic_citation_support": 0.0,
+  "model_plus_support_check_abstained": true,
+  "completed_at": "2026-07-17T21:27:07+00:00"
+}

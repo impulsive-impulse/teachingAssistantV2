@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top5_page_order_compact__684f17db77",
+  "question_id": "GEN-PSC-006",
+  "question": "Why does tooth decay start when the pH of mouth is lower than 5.5? (or) What value of pH in the mouth leads to tooth decay? Why?",
+  "book_id": "physical_sciences",
+  "difficulty": "easy",
+  "dependency_flags": {
+    "formula": false,
+    "visual": false,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "prompt_sha256": "60dad99bcd9736c25575f923d62d747afbe5c7053c7ef6179207789a358ff790",
+  "context_sha256": "b3a1d315f1b4c4e51f0dff1de970a59b084c74a7c93cbc45679bab26293c6d12",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 56,
+      "textbook_page": 46,
+      "pdf_pages": [
+        56,
+        57,
+        58,
+        59
+      ],
+      "textbook_pages": [
+        46,
+        47,
+        48,
+        49
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "This indicates that there\nare more ions in HCl solution and fewer ions are present in acetic acid\nsolution.\nMore ions in HCl solution mean more H3O+ions.Therfore it is a\nstrong acid.\nWhereas acetic acid has fewer H3O+ions and hence it is weak\nacid.\nThink and discuss\n· Why do HCl, HNO3 etc., show acidic characters in aqueous solutions\nwhile solutions of compounds like alcohol and glucose do not show\nacidic character?\n· While diluting an acid, why is it recommended that the acid should\nbe added to water and not water to the acid?\nAcids, Bases and Salts47\n3.6.1 pH scale\nA scale for measuring hydrogen ion concentration in a solution is called\npH scale. (The ‘p’ in pH stands for ‘Potenz’.\nIn German Language ‘Potenz’ is\npower). pH value of a solution is simply a number which indicates the acidic\nor basic nature of a solution.\nThe pH of neutral solutions is 7.\nV alues less than 7 on the pH scale\nrepresent an acidic solution.\nAs the pH value increases from 7 to 14, it\nrepresents a decrease in H3O+ ion concentration or an increase in OH– ion\nconcentration in the solution. pH value of a solution above ‘7’ represents a\nbasic solution.\nObserve the following fig-6.\nfig. - 6: Changes in pH values with charge in the concentration of H +, OH - ions.\nCarry out the above experiment by taking bases like dil.\nNaOH (sodium\nhydroxide) and dil.\nNH4OH (ammonium hydroxide) instead of acids.\n· What do you observe?\nExplain your observations.\nThe universal indicator can also be used to know the strength of acid or\nbase.\nUniversal indicator is a mixture of several indicators.\nThe universal\nindicator shows different colours at different concentrations of hydrogen\nions in a solution.\nAcidic\nneutral\nBasic\nReflection of light at curved surfaces48 Acids, Bases and Salts\nNEUTRALACID ALKALI\nstrong weak weak\nfig -7: pH value as shown by different colour in universal indicator\nS.No.\nSolution Colour pH\npaper\nApproximate\npH value\nNature of\nsubstances\nTable-2\n1 HCl\n2 CH3COOH\n3 NH4Cl\n4 CH3COONa\n5 NaHCO3\n6 Na2CO3\n7 NaOH\n8 Distilled water\n9 Lemon juice\n10 Carrot juice\n11 Coffee\n12 Tomato juice\n13 Tap water\n14 Banana juice\n15 Colourless aerated drink\n16 Saliva (before meal)\n17 Saliva (after meal)\nActivity 11\n- Test the pH value of solutions given in table using pH paper.\n- Record your observations in column three of Table – 2.\n- Write approximate pH values in column 4 using Universal Indicator\nsolution, based on your observations write the nature of each\nsubstance.\nAcids, Bases and Salts49\nThe strength of acid or base depends on the concentraction of H3O+ ions or\nOH– produced in solution.\nIf we take hydrochloric acid and acetic acid of the\nsame concentration then they produce different concentration of hydrogen\nions.\nAcids that give more H3O+ ions are said to be strong acids that give\nfewer H3O+ ions are said to be weak acid.\nCan you now predict what weak and\nstrong bases are?\n· What is the nature of each substance on the basis of your observations?\nTo avoid the negative powers\nof H+ concentration in dilute acid\nand base solutions Sorensen\nintroduced the concept of pH.\nDue\nto this pH concept may be\nrestricted for solutions of [H +]\nless than 1 molar.\nDistribution of pH - How to\nread?\nThe pH scale is from 0-14.\nThe pH is an indication of\nconcentration of H+.\nFor example,\nat a pH of zero the hydronium ion\nconcentration is one molar.\nTypically the concentrations of H+\nin water in most solutions fall\nbetween a range of 1 M (pH=0)",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00026"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 59,
+      "textbook_page": 49,
+      "pdf_pages": [
+        59,
+        60,
+        61
+      ],
+      "textbook_pages": [
+        49,
+        50,
+        51
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "· What is the nature of each substance on the basis of your observations?\nTo avoid the negative powers\nof H+ concentration in dilute acid\nand base solutions Sorensen\nintroduced the concept of pH.\nDue\nto this pH concept may be\nrestricted for solutions of [H +]\nless than 1 molar.\nDistribution of pH - How to\nread?\nThe pH scale is from 0-14.\nThe pH is an indication of\nconcentration of H+.\nFor example,\nat a pH of zero the hydronium ion\nconcentration is one molar.\nTypically the concentrations of H+\nin water in most solutions fall\nbetween a range of 1 M (pH=0)\nand 10 -14 M (pH=14).\nFigure 8\ndepicts the pH scale with common\nsolutions.\nbattery acid\nlemon juice\npure rain (H2O in\nequilibrium with\natmospheric CO2\nfreshly\ndistilled water\nseawater\nbaking soda\n(NaHCO3 solution)\nhousehold\nammonia (NH3)\nhousehold lye\n(NaOH solution)\nhousehold bleach\n(Na2CO3 solution)\ngastric fluid\ncarbonated\nbeverages\nvinger\norange juice\nbeer\ncoffee\negg yolks\nmilk\nblood\nmilk of\nmagnesia\n[Mg(OH)2]\nsolution\nfig -8: Solutions and the\nplacement of them on pH\nscale\nDo you know?\nReflection of light at curved surfaces50 Acids, Bases and Salts\n3.6.2 Importance of pH in everyday life\n1.\nAre plants and animals pH sensitive?\nLiving organisms can survive only in a narrow range of pH change.\nWhen pH of rain water is less than 5.6, it is called acid rain.\nWhen acid\nrain flows in to the rivers, it lowers the pH of the river water, the survival\nof aquatic life in such rivers becomes difficult.\n2.\nIs pH change cause of tooth decay?\nTooth decay starts when the pH of the mouth is lower than 5.5.\nTooth enamel, made of calcium phosphate is the hardest substance\nin the body.\nIt does not dissolve in water, but is corroded when the\npH in the mouth is below 5.5.\nBacteria present in the mouth produce\nacids by degradation of sugar and food particles remaining in the\nmouth.\nThe best way to prevent this is to clean the mouth after\neating food.\nUsing tooth pastes, which are generally basic neutralize\nthe excess acid and prevent tooth decay.\n3. pH in our digestive system:\nIt is very interesting to note that our stomach produces hydrochloric\nacid.\nIt helps in the digestion of food without harming the stomach.\nDuring\nindigestion the stomach produces too much acid and this causes pain and\nirritation.\nTo get rid of this pain, people use bases called antacids.\nThese\nantacids neutralize the excess acid in the stomach.\nMagnesium hydroxide\n(milk of magnesia), a mild base, is often used for this purpose.\nActivity 12\nActivity 12\nThink and discuss\n· What will happen if the pH value in our body increases?\n· Why do living organism have narrow pH range?\nAcids, Bases and Salts51\n3.6.3 .\nSelf defense by animals and plants through chemical war fare?\nHave you ever been stung by a honey-bee?\nBee sting leaves an acid which\ncauses pain and irritation.\nUse of a mild base like baking soda on the stung area\ngives relief.\nActivity 12\n- Take dil.\nHC l in a beaker and add two to three drops methyl orange\nindicator.\nNote the colour of the solution\n- Mix antacid tablet powder to the above solution in the beaker.\nNow\nobserve the change in colour of solution.\n· What is the reason for the change in colour of solution?\n· Can you write the chemical equation for this reaction?\n4.\nWhat is the pH of the soil in your garden?\nPlants require a specific pH range for their healthy growth.\nTo find\nout the pH required for the healthy growth of a plant, you can collect the",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00027"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 63,
+      "textbook_page": 53,
+      "pdf_pages": [
+        63,
+        64,
+        65
+      ],
+      "textbook_pages": [
+        53,
+        54,
+        55
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "The salts of a strong acid and weak base are acidic and the pH value is\nless than 7.\nThe salts of a strong base and weak acid are basic in nature and\nthe pH value is more than 7.\n· What do you say about salts of both weak acid and weak base?\nIn such cases the pH depends on the relative strengths of acid and\nbase.\n3.7.3 Chemicals from common salt\nSalts are the ionic compounds which are produced by the neutralization\nof acid with base.\nSalts are electrically neutral.\nThere are number of salts\nbut sodium chloride is the most common among them.\nSodium chloride\nis also known as table salt or common salt.\nSodium chloride is used to\nenhance the taste of food.\nSea water contains many salts dissolved in it.\nSodium chloride is the\npredominant component and it is separated from these salts.\nDeposits of\nsolid salt are also found in several parts of the world.\nThese deposits of\nlarge crystals are often brown due to impurities.\nThis is called rock salt.\nBeds of rock salt were formed when seas of bygone ages dried up.\nRock\nsalt is mined like coal.\nSalt pH Acidic Basic Neutral\nT able - 3\nReflection of light at curved surfaces54 Acids, Bases and Salts\nSalt – a symbol of freedom\nstruggle: You know common salt\nas a substance which enhances the\ntaste of food; it also has played a\nremarkable role in motivating the\npeople towards freedom struggle.\nThe tax levied by the British\ngovernment on common food\nsubstance (salt), for both the poor\nand the rich, made them to become\nunite in the freedom struggle.\nYou must have heard about\nMahatma Gandhi’s Dandi March\nand about ‘salt satyagraha’ in the\nstruggle for freedom of India.\n3.7.4 Common salt – A raw material for chemicals\nThe common salt is an important raw material for various materials of\ndaily use, such as sodium hydroxide, baking soda, washing soda, bleaching\npowder and many more.\nLet us see how one substance is used for making all these different\nsubstances.\n3.7.5 Sodium hydroxide from common salt\nWhen electricity is passed through an aqueous solution of sodium\nchloride (called brine), it decomposes to form sodium hydroxide.\nThe\nprocess is called the chloro-alkali process – because of the products\nformed chloro for chlorine and alkali for sodium hydroxide.\nDo you know?\nAcids, Bases and Salts55\n2 NaCl ( aq) + 2H2O (l) g 2 NaOH (aq) + Cl2 (g) + H2 (g)\nChlorine gas is given off at the anode and hydrogen gas at the cathode,\nsodium hydroxide solution is formed near the cathode the three products\nproduced in this process are all useful Fig.-9 shows the different uses of\nthese products.\n3.7.6 Bleaching Powder\nYou know that chlorine is produced during the electrolysis of aqueous\nsodium chloride (brine).\nThis chlorine gas is used for the manufacture of\nbleaching powder.\nBleaching powder is produced by the action of chlorine\non dry slaked lime [Ca(OH)2].\nBleaching powder is represented by formula\nCaOCl2, though the actual composition is quite complex.\nCa (OH)2 + Cl2 g CaOCl2 + H2O\n3.7.7 Uses of Bleaching Powder:\n1.\nIt is used for bleaching cotton and linen in the textile industry for\nbleaching wood pulp in paper industry and for bleaching washed clothes\nin laundry.\n2.\nUsed as an oxidizing agent in many chemical industries.\n3.\nUsed for disinfecting drinking water to make it free of germs.\n4.\nUsed as a reagent in the preparation of chloroform.\nfig-9: Important product from chloro-alkali process\nat Cathode at Anode\nFuels, margarine,\nammonia for fertilisers\nW ater treatment, swimming pools, PVC,",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00029"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 69,
+      "textbook_page": 59,
+      "pdf_pages": [
+        69,
+        70,
+        71
+      ],
+      "textbook_pages": [
+        59,
+        60,
+        61
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "· Acidic and basic solutions in water conduct electricity because they produce hydrogen ions and\nhydroxide ions respectively.\n· The strength of an acid or an alkali can be tested by using a scale called the pH scale (0-14)\nwhich gives the measure of hydrogen ion concentration in a solution.\n· A neutral solution has a pH of 7, while an acidic solution has a pH less than 7 and a basic\nsolution has a pH more than 7.\n· Living beings carry out their metabolic activities within an optimal pH range.\n· Mixing concentrated acids or bases with water is a highly exothermic process.\n· Acids and bases neutralize each other to form corresponding salts and water.\n· Water of crystallization is the fixed number of water molecules chemically attached to each\nformula unit of a salt in its crystalline form.\n· Salts have various uses in everyday life and in industries.\nI.\nReflections on concepts\n1.\nAn acid or a base is mixed with water.\nIs this process exothermic or\nendothermic one? (AS1)\n2.\nDistilled water does not conduct electricity.\nWhy? (AS1)\n3.\nDraw a neat diagram for showing acid solution in water conducting electricity. (AS5)\n4.\nWhy the flow of acid rain into a river make the survival of aquatic life in a river difficult? (AS7)\n5.\nHow does baking powder make the cake soft and spongy? (AS7)\nII.\nApplication of concepts\n1.\nFive solutions A, B, C, D and E when tested with universal indicator showed pH as 4, 1, 11,\n7 and 9, respectively, classify the solutions as given below.(AS1)\n(a) neutral (b) strongly alkaline (c) strongly acidic\n(d) weakly acidic (e) weakly alkaline\nImprove your learning\nWhat we have learnt\nReflection of light at curved surfaces60 Acids, Bases and Salts\n2.\nWhy does tooth decay start when the pH of mouth is lower than 5.5? (AS1)\n3.\nA milkman adds a very small amount of baking soda to fresh milk.\nWrite reasons for the\nfollowing. (AS2)\na) Why does he shift the pH of the fresh milk from acidic nature to slightly alkaline?\nb) Why does this milk take a long time to set as curd?\n4.\nPlaster of Paris should be stored in moisture – proof container.\nExplain why? (AS1)\n5.\nMagnesium ribbons of same size are taken in test tubes A and B.\nHydrochloric acid is added\nto test tube A, while acetic acid is added to test tube B.\nThe concentrations of both the acids\nare the same.\nIn which test tube will the fizzing occur more vigorously ? why? (AS3)\nIII.\nHigher Order Thinking Questions\n1.\nFresh milk has a pH of 6.6.\nExplain why the pH changes as it turns into curd? (AS3)\n2.\nHow do you prepare an indicator using beetroot?\nExplain. (AS5)\n1.\nThe colour of methyl orange indicator in acidic medium is [ ]\nA) Y ellow B) green C) orange D) red\n2.\nThe colour of phenolphthalein indicator in basic solution is [ ]\nA) yellow B) green C) pink D) orange\n3.\nColour of methyl orange in alkali conditions? [ ]\nA) orange B) yellow C) red D) blue\n4.\nA solution turns red litmus blue, its pH is likely to be [ ]\nA) 1 B) 4 C) 5 D) 10\n5.\nA solution reacts with crushed egg-shells to give a gas that turns lime-water milky.\nThe\nsolution is of [ ]\nA) NaCl B) HCl C) LiCl D) KCl\n6.\nIf a base dissolves in water by what name is it better known? [ ]\nA) neutral B) base C) acid D) alkali\nMultiple choice questions\nAcids, Bases and Salts61\n7.\nWhich of the following substances when mixed together will produce table salt? [ ]",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00032"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 70,
+      "textbook_page": 60,
+      "pdf_pages": [
+        70,
+        71
+      ],
+      "textbook_pages": [
+        60,
+        61
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Colour of methyl orange in alkali conditions? [ ]\nA) orange B) yellow C) red D) blue\n4.\nA solution turns red litmus blue, its pH is likely to be [ ]\nA) 1 B) 4 C) 5 D) 10\n5.\nA solution reacts with crushed egg-shells to give a gas that turns lime-water milky.\nThe\nsolution is of [ ]\nA) NaCl B) HCl C) LiCl D) KCl\n6.\nIf a base dissolves in water by what name is it better known? [ ]\nA) neutral B) base C) acid D) alkali\nMultiple choice questions\nAcids, Bases and Salts61\n7.\nWhich of the following substances when mixed together will produce table salt? [ ]\nA.\nSodium thiosulphate and sulphur dioxide\nB.\nHydrochloric acid and sodium hydroxide\nC.\nChlorine and oxygen\nD.\nNitric acid and sodium hydrogen carbonate\n8.\nWhat colour would hydrochloric acid (pH=1) turn universal indicator? [ ]\nA) orange B) purple C) yellow D) red\n9.\nWhich one of the following types of medicines is used for treating indigestion? [ ]\nA) antibiotic B) analgesic C) antacid D) antiseptic\n10.\nWhat gas is produced when magnesium is made to react with hydrochloric acid? [ ]\nA) hydrogen B) oxygen C) carbon dioxide D) chlorine\nSuggested Experiments\n1.\nCompounds such as alcohols and glucose contain hydrogen but are not categorized as\nacids.\nDescribe an activity to prove it.\n2.\nWhat is meant by “water of crystallization” of a substance?\nDescribe an activity to show the\nwater of crystallization.\nSuggested Projects\n1.\nHow do you Select a good place to plant a tree in your school / at home.Test the soil and\ninvestigate and write a report on it.\n2.\nDo all vegetables are acids?To find this investigate with pH paper and tabulate the values\nand write a report on it.\n3.\nCollect information about importance of the pH value in daily life to human beings as well as\nplants.\n4.\nTry to collect the information for calling calcium sulphate hemihydrates as Plaster\nof Paris.",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00033"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Tooth decay starts when the pH of the mouth is lower than 5.5 because the enamel of the teeth, which is made of calcium phosphate, begins to dissolve in acidic conditions. The pH scale measures the concentration of hydrogen ions (H3O+) in a solution. When the pH is below 5.5, the concentration of H3O+ ions is high enough to corrode the enamel. This happens because bacteria in the mouth break down sugars and food particles, producing acids. These acids lower the pH in the mouth, leading to tooth decay. Maintaining a pH above 5.5 helps prevent this corrosion and protects the teeth.\",\n  \"selected_evidence_ids\": [\"E2\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E2\",\n      \"pdf_page\": 59,\n      \"textbook_page\": 49\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 125.8198326999991,
+    "latency_seconds": 175.3540975999931,
+    "usage": {
+      "completion_tokens": 205,
+      "prompt_tokens": 4320,
+      "total_tokens": 4525,
+      "prompt_tokens_details": {
+        "cached_tokens": 53
+      }
+    },
+    "response_id": "chatcmpl-tnZFFfeWC11w97dv4PFv44XmNx2E2HaY",
+    "peak_rss_bytes": 17820573696
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Tooth decay starts when the pH of the mouth is lower than 5.5 because the enamel of the teeth, which is made of calcium phosphate, begins to dissolve in acidic conditions. The pH scale measures the concentration of hydrogen ions (H3O+) in a solution. When the pH is below 5.5, the concentration of H3O+ ions is high enough to corrode the enamel. This happens because bacteria in the mouth break down sugars and food particles, producing acids. These acids lower the pH in the mouth, leading to tooth decay. Maintaining a pH above 5.5 helps prevent this corrosion and protects the teeth.",
+    "selected_evidence_ids": [
+      "E2"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E2",
+        "pdf_page": 59,
+        "textbook_page": 49
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Bacteria break down food/sugars and produce acids",
+        "token_recall": 0.8571,
+        "matched": true
+      },
+      {
+        "point": "Below about pH 5.5 the acidic medium attacks calcium-phosphate tooth enamel",
+        "token_recall": 0.7,
+        "matched": true
+      },
+      {
+        "point": "Continued demineralisation leads to decay",
+        "token_recall": 0.5,
+        "matched": false
+      }
+    ],
+    "required_point_coverage": 0.6667,
+    "citation_validity": 1.0,
+    "unsupported_claims": [],
+    "unsupported_claim_rate": 0.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 102
+  },
+  "completed_at": "2026-07-16T23:24:18+00:00"
+}
