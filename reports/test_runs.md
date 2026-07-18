@@ -536,3 +536,21 @@ Generation benchmark, retrieval benchmark and frozen retrieval configuration
 hashes remained `f756e633...6680`, `d333768b...c046` and `736fb932...baa6`.
 The winner is useful as a reproducible baseline but misses the coverage and
 formula targets, so it remains provisional pending blinded review.
+
+## Blinded review HTML view — 2026-07-18
+
+Change tested: added a self-contained, read-only HTML renderer for the finalist
+JSONL packet and placed its generated output in the dedicated
+`reports/generation_experiments/review/` subtree.
+
+| Validation | Result |
+|---|---:|
+| Questions rendered | 24 |
+| Anonymous answers rendered | 96 |
+| Default view | Blind mode enabled |
+| External network/assets | None |
+| Python syntax and method documentation | Passed |
+
+Result: the generated view exposes rubric points, citations and collapsed
+evidence while hiding evaluation mode and automatic scores by default. It does
+not mutate the source packet or store reviewer decisions.

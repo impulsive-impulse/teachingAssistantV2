@@ -705,7 +705,10 @@ scored 0.4704 retrieved required-point coverage, 0.9500 citation validity and
 formula targets, so the configuration remains an experiment winner—not a
 frozen production generation baseline—until the blinded packet is reviewed.
 See `reports/generation_experiments/generation_experiments_report.md` and
-`reports/generation_experiments/blinded_human_review_packet.jsonl`.
+`reports/generation_experiments/blinded_human_review_packet.jsonl`. For a
+readable offline review, open
+`reports/generation_experiments/review/blinded_human_review_packet.html`; its
+folder README explains the blinded workflow and regeneration command.
 
 ### Hardware-backend verification
 
