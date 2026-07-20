@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "baseline": "Generation Baseline v1",
+  "reviewed_on": "2026-07-20",
+  "reviewer_role": "project_owner",
+  "review_artifact": "reports/openai_generation_experiments/comparisons/full_40_labeled/local_vs_gpt4o_labeled_comparison.html",
+  "questions_reviewed": 40,
+  "answers_visible_per_question": 4,
+  "review_scope": "high_level_manual_review_of_labeled_local_and_online_answers",
+  "per_question_rubric_scores_recorded": false,
+  "outcome": "accepted",
+  "decision": "Freeze GPT-4o as the quality-oriented online profile and Qwen3-8B Q4_K_M as the offline fallback, both over the same frozen retrieval and context pipeline.",
+  "reviewer_summary": "The reviewed results looked good at an overall level and were accepted for the v1 baseline.",
+  "qualification": "This sign-off establishes project acceptance but must not be represented as a blinded, independently scored, or per-question adjudicated human evaluation."
+}

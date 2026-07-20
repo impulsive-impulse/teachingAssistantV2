@@ -1,12 +1,21 @@
-# Class 10 textbook corpus extraction audit
+# Class 10 textbook RAG
 
-This repository contains the Milestone 1 corpus preparation pipeline for a
-textbook-grounded QA/RAG research project. It extracts every PDF page, preserves
-PDF and printed-page identity, assigns index-grounded chapters, and produces a
-human-readable suitability audit.
+This repository contains the complete, reproducible textbook-grounded RAG
+pipeline for the Biology and Physical Sciences books: corpus extraction,
+reviewed benchmarks, frozen retrieval, controlled local/online generation
+experiments, and the approved generation baseline.
 
-The repository also includes page-level and chunk-level retrieval baselines. They
-do not call an LLM or implement answer generation, query rewriting, or reranking.
+Current production decisions are frozen as:
+
+| Layer | Frozen decision | Status |
+|---|---|---|
+| Retrieval | Retrieval Baseline v1 (`1.0.0`) | Frozen |
+| Online generation | GPT-4o snapshot `gpt-4o-2024-08-06`, P1, retrieved top-5 context, 768-token ceiling | Default quality profile |
+| Offline generation | Qwen3-8B Q4_K_M, P1, retrieved top-5 context, 384-token ceiling | Frozen fallback |
+
+Start with [`docs/REPOSITORY_GUIDE.md`](docs/REPOSITORY_GUIDE.md) for the
+project map, canonical entry points, and distinction between frozen baselines
+and historical experiments.
 
 ## Source books
 
@@ -21,39 +30,20 @@ chemistry chapters; its identifier is therefore `physical_sciences`.
 ## Repository layout
 
 ```text
-books/                         Input PDFs (never modified)
-data/processed/                Generated page JSONL and chapter maps
-reports/                       Generated extraction suitability audit
-scripts/audit_textbooks.py     Source-checkout compatibility entry point
-scripts/generate_retrieval_benchmark.py
-                               Candidate benchmark generator and validator
-scripts/run_page_retrieval.py  Page-level retrieval source entry point
-scripts/run_chunk_retrieval.py Chunk-level retrieval source entry point
-scripts/run_hierarchical_retrieval.py
-                               Hierarchical retrieval source entry point
-scripts/run_candidate_complementarity.py
-                               Existing-retriever candidate audit entry point
-src/textbook_audit/
-  config.py                    Immutable book/chapter/page-offset catalog
-  cli.py                       Command-line interface
-  pipeline.py                  Extraction, mapping, cleaning, and reporting
-  retrieval.py                 Page BM25, dense, RRF, metrics, and reporting
-  chunk_retrieval.py           Chunking, chunk retrieval, gold mapping, reports
-  hierarchical_retrieval.py    Chapter/section/paragraph hierarchy and retrieval
-  candidate_complementarity.py Evidence normalization, unions, overlap, decisions
-tests/test_pipeline.py         Mapping and artifact integrity checks
-tests/test_retrieval.py        Loading, ranking, matching, and metric regressions
-tests/test_chunk_retrieval.py  Chunk boundaries, metadata, gold, and metrics tests
-tests/test_hierarchical_retrieval.py
-                               Hierarchy detection and ranking regressions
-tests/test_candidate_complementarity.py
-                               Deduplication, oracle, overlap, and slice regressions
-pyproject.toml                 Package metadata and dependencies
+books/                Source PDFs; never modified
+config/               Frozen baselines and historical experiment configurations
+data/                 Reviewed benchmarks, processed pages, retrieval outputs, caches
+docs/                 Project navigation and current architecture
+reports/              Frozen decisions, metrics, human-review artifacts, run history
+scripts/              Thin source-checkout CLI entry points
+src/textbook_audit/    Reusable extraction, retrieval, evaluation, and generation code
+tests/                 Unit, regression, checksum, and golden-fixture tests
 ```
 
-Generated artifacts are committed as reproducible Milestone 1 research inputs.
-Running the pipeline overwrites only the four files in `data/processed/` and
-`reports/book_extraction_audit.md`.
+Directory-specific indexes are available in `config/README.md`,
+`reports/README.md`, and `scripts/README.md`. Established experiment paths are
+kept stable because they are referenced by frozen configurations and checksum
+manifests.
 
 ## Setup
 
@@ -691,19 +681,20 @@ temp\python-x64\python.exe scripts\run_generation_experiment_matrix.py `
 ```
 
 The matrix verifies both frozen checksums before every configuration and never
-places rubric fields in prompts. Its automatic winner is provisional until the
-generated blinded review packet is reviewed. Google Gemma repositories require
+places rubric fields in prompts. Its automatic winner was provisional during
+the experiment and is retained as the offline fallback in Generation Baseline
+v1 after human review. Google Gemma repositories require
 the signed-in Hugging Face account to receive their separate gated-model access;
 task approval alone cannot grant that repository license.
 
-Completed v1 result: the preferred balanced configuration is Qwen3-8B
+Completed local result: the preferred balanced configuration is Qwen3-8B
 Q4_K_M, P1 evidence-selection-first prompting, frozen top-five evidence in
 textbook-page order with compact metadata, 384 output tokens, deterministic
 non-thinking inference, and native ARM64 llama.cpp CPU. On all 40 questions it
 scored 0.4704 retrieved required-point coverage, 0.9500 citation validity and
-0.0250 unsupported-claim rate. These results do not meet the coverage or
-formula targets, so the configuration remains an experiment winner—not a
-frozen production generation baseline—until the blinded packet is reviewed.
+0.0250 unsupported-claim rate. It is now frozen as the offline fallback rather
+than the default quality profile; the original provisional report remains as
+historical experiment evidence.
 See `reports/generation_experiments/generation_experiments_report.md` and
 `reports/generation_experiments/blinded_human_review_packet.jsonl`. For a
 readable offline review, open
@@ -739,6 +730,28 @@ The completed 40-question direct comparison is available at
 `reports/openai_generation_experiments/comparisons/full_40_labeled/local_vs_gpt4o_labeled_comparison.html`.
 It explicitly labels every local-Qwen and GPT-4o answer and its gold or
 retrieved evidence mode; identities are visible by default.
+
+## Generation Baseline v1 (frozen)
+
+The project owner's high-level review accepted the complete 40-question labeled
+comparison on 2026-07-20. Generation Baseline v1 therefore freezes GPT-4o
+snapshot `gpt-4o-2024-08-06` as the default quality profile and Qwen3-8B
+Q4_K_M as the offline cost/privacy fallback. Both profiles use Retrieval
+Baseline v1, prompt P1, and the same retrieved top-five page-order context.
+
+The machine-readable decision is `config/generation_baseline_v1.json`; the
+decision report, sign-off scope, and checksum manifest are under
+`reports/generation_baseline_v1/`. Validate the complete lock without calling a
+model:
+
+```powershell
+$env:PYTHONPATH = "src"
+temp\python-x64\python.exe scripts\manage_generation_baseline_v1.py validate
+```
+
+The approval was an overall human acceptability review, not a blinded
+per-question rubric adjudication. That qualification is preserved in the
+sign-off and must accompany any quality claim.
 
 ### Hardware-backend verification
 

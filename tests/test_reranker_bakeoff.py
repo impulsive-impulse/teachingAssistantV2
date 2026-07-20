@@ -133,8 +133,11 @@ class RerankerBakeoffTests(unittest.TestCase):
         self.assertEqual(stopped["metrics"]["overall"]["answerable_questions"], 0)
 
         state = json.loads(paths["state"].read_text(encoding="utf-8"))
-        self.assertIn(state["current_phase"].split()[1],
-                      {"E", "F", "G", "H", "I", "J"})
+        current_phase = state["current_phase"]
+        self.assertTrue(
+            current_phase.startswith("Complete")
+            or current_phase.split()[1] in {"E", "F", "G", "H", "I", "J"}
+        )
         selection = state["current_best_configurations"]["phase_d"]["selection"]
         self.assertEqual(selection["speed_oriented_reranker"],
                          "phase_d_d1_minilm_l6_full_pool")

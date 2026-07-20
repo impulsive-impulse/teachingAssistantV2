@@ -127,6 +127,7 @@ def build_review_packet(output: Path, ledger: list[dict[str, Any]], benchmark: l
 
 def build_report(output: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
     """Build the final Markdown report, diagnostics, and machine-readable summary."""
+    baseline_frozen = (ROOT / "config/generation_baseline_v1.json").is_file()
     ledger = read_jsonl(output / "experiment_runs.jsonl")
     benchmark = read_jsonl(ROOT / "data/benchmarks/generation_benchmark_v1.jsonl")
     benchmark_by_id = {row["question_id"]: row for row in benchmark}
@@ -168,6 +169,10 @@ def build_report(output: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
                   if (output / "abstention_metrics.json").is_file() else None)
     summary = {
         "schema_version": 1, "generated_at": utc_now(), "provisional_winner": winner,
+        "decision_status": (
+            "frozen_as_local_offline_fallback_in_generation_baseline_v1"
+            if baseline_frozen else "provisional_pending_human_review"
+        ),
         "gold_metrics": final_gold["metrics"], "retrieved_metrics": final_retrieved["metrics"],
         "pareto_run_ids": [row["run_id"] for row in frontier],
         "failure_counts": dict(Counter(item["category"] for item in failures)),
@@ -186,13 +191,21 @@ def build_report(output: Path = DEFAULT_OUTPUT) -> dict[str, Any]:
     write_json_atomic(output / "final_summary.json", summary)
     write_jsonl_atomic(output / "retrieved_failure_breakdown.jsonl", failures)
 
+    recommendation_heading = (
+        "## Historical local recommendation (frozen fallback)"
+        if baseline_frozen else "## Provisional recommendation"
+    )
+    status = (
+        "- Status: frozen as the local_offline fallback in Generation Baseline v1."
+        if baseline_frozen else "- Status: provisional until the blinded packet is reviewed."
+    )
     lines = [
-        "# Local generation experiments v1", "", "## Provisional recommendation", "",
+        "# Local generation experiments v1", "", recommendation_heading, "",
         f"- Model: `{winner['model_key']}`",
         f"- Prompt: `{winner['prompt_strategy']}`",
         f"- Retrieved context: `{winner['context_strategy']}`",
         f"- Maximum output: {winner['max_output_tokens']} tokens",
-        "- Status: provisional until the blinded packet is reviewed.", "",
+        status, "",
         "## Configuration roles", "",
         f"- Best lightweight: `{lightweight['model_key']}`; retrieved holdout coverage "
         f"{lightweight['metrics']['required_point_coverage']:.4f}, p95 "

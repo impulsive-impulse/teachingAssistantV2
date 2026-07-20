@@ -1,12 +1,16 @@
 # Local generation experiments v1
 
-## Provisional recommendation
+> Historical experiment report. Its provisional recommendation was reviewed
+> and is now frozen as the `local_offline` fallback in Generation Baseline v1.
+> The current decision is in `config/generation_baseline_v1.json`.
+
+## Historical local recommendation
 
 - Model: `qwen3_8b_q4_k_m`
 - Prompt: `P1`
 - Retrieved context: `retrieved_top5_page_order_compact`
 - Maximum output: 384 tokens
-- Status: provisional until the blinded packet is reviewed.
+- Status: superseded by the frozen Generation Baseline v1 decision.
 
 ## Configuration roles
 

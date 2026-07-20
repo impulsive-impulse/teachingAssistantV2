@@ -9,7 +9,7 @@
     "gold_use": "evaluation only; never candidate construction, scoring, truncation, or reranking",
     "historical_artifacts_immutable": true
   },
-  "current_phase": "Phase J — gated; approved retrieval loop complete",
+  "current_phase": "Complete — Retrieval Baseline v1 and Generation Baseline v1 frozen",
   "approved_plan": [
     {
       "phase": "A",
@@ -59,7 +59,7 @@
     {
       "phase": "J",
       "name": "answer generation",
-      "status": "blocked until a generation benchmark exists"
+      "status": "completed in the separate reviewed generation program; Generation Baseline v1 frozen"
     }
   ],
   "completed_run_ids": [
@@ -595,10 +595,11 @@
       "best_quality": "phase_h_h3_combined_specialist_priors",
       "best_lightweight_cpu": "phase_f_f0_bm25_fixed_600_100",
       "preferred_balanced": "phase_h_h3_combined_specialist_priors",
-      "context_assembly": "phase_i_i0_overlap_merge_metadata_preserving"
+      "context_assembly": "phase_i_i0_overlap_merge_metadata_preserving",
+      "generation_baseline": "config/generation_baseline_v1.json"
     }
   },
-  "exact_next_action": "Review reports/experiments/final_experiment_report.md; create and approve a grounded-answer generation benchmark before Phase J.",
+  "exact_next_action": "No pending v1 baseline work. Validate the frozen retrieval and generation baselines before integration; behavior changes require a new semantic version.",
   "model_cache_status": {
     "bge_small_en_v1_5": {
       "status": "cached",
@@ -655,7 +656,5 @@
     "machine": "ARM64",
     "python": "3.12.10"
   },
-  "unresolved_questions": [
-    "A reviewed generation benchmark for correctness, faithfulness, citations, and abstention is required before Phase J."
-  ]
+  "unresolved_questions": []
 }

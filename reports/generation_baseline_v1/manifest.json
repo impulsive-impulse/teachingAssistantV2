@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "name": "Generation Baseline v1",
+    "semantic_version": "1.0.0",
+    "frozen": true,
+    "approved_on": "2026-07-20",
+    "default_profile": "online_quality",
+    "offline_fallback_profile": "local_offline"
+  },
+  "created_at": "2026-07-20T16:23:24+00:00",
+  "artifacts": [
+    {
+      "path": "config/generation_baseline_v1.json",
+      "size_bytes": 6152,
+      "sha256": "758c0a857b427ab73c790b6031a14762c6653f8714f0fef29830373439ab78ba"
+    },
+    {
+      "path": "data/benchmarks/generation_benchmark_v1.jsonl",
+      "size_bytes": 77603,
+      "sha256": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680"
+    },
+    {
+      "path": "config/retrieval_baseline_v1.yaml",
+      "size_bytes": 8113,
+      "sha256": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6"
+    },
+    {
+      "path": "config/generation_experiments_v1.json",
+      "size_bytes": 2251,
+      "sha256": "a80a31f19c4b606533c319dc1876686ba2cf08e54c1dcef17d745e9c28273f70"
+    },
+    {
+      "path": "config/openai_generation_experiments_v1.json",
+      "size_bytes": 1390,
+      "sha256": "6c57dd2f1a72dc517335f67bcc579d9bfcea3760d5e6c126a645e327fe51a6dd"
+    },
+    {
+      "path": "reports/generation_baseline_v1/human_review_signoff.json",
+      "size_bytes": 949,
+      "sha256": "0716bf94babfdfb6d273e5eb621b4fcfc934eba00846d9e74c84f6543fe60b31"
+    },
+    {
+      "path": "reports/openai_generation_experiments/comparisons/full_40_labeled/comparison_metrics.json",
+      "size_bytes": 3203,
+      "sha256": "72e930bd1a88aad4988560d83e690c69819fdcc53170df93af182f91adf4585d"
+    },
+    {
+      "path": "reports/openai_generation_experiments/comparisons/full_40_labeled/comparison_report.md",
+      "size_bytes": 871,
+      "sha256": "d85a5ddabcfcd83dd5813244ce98439eba05eb03cbd3312f8a9a889e28268282"
+    },
+    {
+      "path": "reports/openai_generation_experiments/comparisons/full_40_labeled/labeled_comparison_packet.jsonl",
+      "size_bytes": 2160423,
+      "sha256": "e48f5f75961e6b22eafe29301dcc0ed5efef9de55114dec74b3f86e5190c395c"
+    },
+    {
+      "path": "reports/openai_generation_experiments/comparisons/full_40_labeled/local_vs_gpt4o_labeled_comparison.html",
+      "size_bytes": 2407527,
+      "sha256": "90af839f16c32d391c5af3416ddf0379ae9ede1da7b3ab342723c9480c416c0c"
+    },
+    {
+      "path": "reports/generation_experiments/runs/qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f/results.jsonl",
+      "size_bytes": 316817,
+      "sha256": "fcca06f1d0c8cf825a0ed29a5fcbe08089df0c9cda50682c87d7dafdbe79fb92"
+    },
+    {
+      "path": "reports/generation_experiments/runs/qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb/results.jsonl",
+      "size_bytes": 898420,
+      "sha256": "e6a23ebdd3adcb4a81ae990ce2bcef6dde28ebc0af015e7048dc9aadc2189406"
+    },
+    {
+      "path": "reports/openai_generation_experiments/runs/openai__gpt_4o__smoke__gold_retrieved__934d177d7dc1/results.jsonl",
+      "size_bytes": 239935,
+      "sha256": "5f953d778f76fc4b4f1b78efecee2f4e04252c7754178306f38982b634c4a33a"
+    },
+    {
+      "path": "reports/openai_generation_experiments/runs/openai__gpt_4o__smoke__gold_retrieved__818769828116/results.jsonl",
+      "size_bytes": 100562,
+      "sha256": "43aefa7acfd5acf68760c409568a4b4919e7746569d10c02b38f5549d40b8adb"
+    },
+    {
+      "path": "reports/openai_generation_experiments/runs/openai__gpt_4o__all__gold_retrieved__0cec6de78267/results.jsonl",
+      "size_bytes": 1011504,
+      "sha256": "a404cf9ee6849823f9bebf05a4c4cbb148d2430f7b15abecd1bfeae2f5963f5b"
+    }
+  ]
+}

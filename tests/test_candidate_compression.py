@@ -201,7 +201,11 @@ class CandidateCompressionTests(unittest.TestCase):
         self.assertTrue(winner["candidate_recall"]["required_invariant_satisfied"])
         self.assertEqual(winner["configuration"]["pool_statistics"]["maximum"], 57)
         state = json.loads(paths["state"].read_text(encoding="utf-8"))
-        self.assertIn(state["current_phase"].split()[1], {"B", "C", "D", "E", "F", "G", "H", "I", "J"})
+        current_phase = state["current_phase"]
+        self.assertTrue(
+            current_phase.startswith("Complete")
+            or current_phase.split()[1] in {"B", "C", "D", "E", "F", "G", "H", "I", "J"}
+        )
         self.assertEqual(state["current_best_configurations"]["phase_a"]["pipeline_name"],
                          "uncompressed_union_t080")
 

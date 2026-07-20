@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "baseline": {
+    "name": "Generation Baseline v1",
+    "semantic_version": "1.0.0",
+    "frozen": true,
+    "approved_on": "2026-07-20",
+    "default_profile": "online_quality",
+    "offline_fallback_profile": "local_offline"
+  },
+  "approval": {
+    "status": "accepted",
+    "review_scope": "high_level_human_review_of_all_40_labeled_questions",
+    "per_question_rubric_scores_recorded": false,
+    "signoff_path": "reports/generation_baseline_v1/human_review_signoff.json"
+  },
+  "frozen_inputs": {
+    "generation_benchmark": {
+      "path": "data/benchmarks/generation_benchmark_v1.jsonl",
+      "sha256": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+      "questions": 40
+    },
+    "retrieval_baseline": {
+      "path": "config/retrieval_baseline_v1.yaml",
+      "sha256": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6",
+      "semantic_version": "1.0.0"
+    },
+    "local_experiment_config": {
+      "path": "config/generation_experiments_v1.json",
+      "sha256": "a80a31f19c4b606533c319dc1876686ba2cf08e54c1dcef17d745e9c28273f70"
+    },
+    "online_experiment_config": {
+      "path": "config/openai_generation_experiments_v1.json",
+      "sha256": "6c57dd2f1a72dc517335f67bcc579d9bfcea3760d5e6c126a645e327fe51a6dd"
+    }
+  },
+  "shared_pipeline": {
+    "prompt_strategy": "P1",
+    "retrieved_context_strategy": "retrieved_top5_page_order_compact",
+    "gold_context_strategy": "gold_separate_full",
+    "retrieval_profile": "Retrieval Baseline v1",
+    "retrieved_evidence_count": 5,
+    "structured_output": "claim_level_answer_with_evidence_ids_and_page_citations",
+    "temperature": 0.0,
+    "query_rewriting": false,
+    "generation_reranking": false,
+    "gold_labels_available_at_runtime": false
+  },
+  "profiles": {
+    "online_quality": {
+      "role": "default_quality_profile",
+      "provider": "openai-responses",
+      "requested_model_during_evaluation": "gpt-4o",
+      "resolved_and_frozen_model": "gpt-4o-2024-08-06",
+      "max_output_tokens": 768,
+      "retries": 0,
+      "result_source": "openai_retrieved"
+    },
+    "local_offline": {
+      "role": "offline_cost_and_privacy_fallback",
+      "engine": "llama.cpp",
+      "engine_build": 10046,
+      "engine_commit": "32e789fdfd598e9a1872da55ac941e4d94f030bd",
+      "model_repository": "Qwen/Qwen3-8B-GGUF",
+      "model_revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+      "model_file": "Qwen3-8B-Q4_K_M.gguf",
+      "model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+      "quantization": "Q4_K_M",
+      "thinking": false,
+      "max_output_tokens": 384,
+      "result_source": "local_retrieved"
+    }
+  },
+  "profile_selection": {
+    "policy": "select_before_generation",
+    "default": "online_quality",
+    "use_local_when": [
+      "offline operation is required",
+      "text must not leave the machine",
+      "provider cost or availability precludes an online call"
+    ],
+    "automatic_cross_provider_retry": false
+  },
+  "evaluation_evidence": {
+    "comparison_metrics": "reports/openai_generation_experiments/comparisons/full_40_labeled/comparison_metrics.json",
+    "comparison_report": "reports/openai_generation_experiments/comparisons/full_40_labeled/comparison_report.md",
+    "labeled_packet": "reports/openai_generation_experiments/comparisons/full_40_labeled/labeled_comparison_packet.jsonl",
+    "labeled_html": "reports/openai_generation_experiments/comparisons/full_40_labeled/local_vs_gpt4o_labeled_comparison.html",
+    "local_results": {
+      "gold": "reports/generation_experiments/runs/qwen3_8b_q4_k_m__all__gold__P1__gold_separate_full__899356a39f/results.jsonl",
+      "retrieved": "reports/generation_experiments/runs/qwen3_8b_q4_k_m__all__retrieved__P1__retrieved_top5_page_order_compact__42c0fea1cb/results.jsonl"
+    },
+    "online_results_in_override_order": [
+      "reports/openai_generation_experiments/runs/openai__gpt_4o__smoke__gold_retrieved__934d177d7dc1/results.jsonl",
+      "reports/openai_generation_experiments/runs/openai__gpt_4o__smoke__gold_retrieved__818769828116/results.jsonl",
+      "reports/openai_generation_experiments/runs/openai__gpt_4o__all__gold_retrieved__0cec6de78267/results.jsonl"
+    ]
+  },
+  "recorded_metrics": {
+    "local_gold": {
+      "questions": 40,
+      "required_point_coverage": 0.4654,
+      "citation_validity": 0.975,
+      "unsupported_claim_rate": 0.025,
+      "structured_output_rate": 0.975,
+      "p95_latency_seconds": 85.7361
+    },
+    "local_retrieved": {
+      "questions": 40,
+      "required_point_coverage": 0.4704,
+      "citation_validity": 0.95,
+      "unsupported_claim_rate": 0.025,
+      "structured_output_rate": 0.975,
+      "p95_latency_seconds": 229.4036
+    },
+    "openai_gold": {
+      "questions": 40,
+      "required_point_coverage": 0.5779,
+      "citation_validity": 1.0,
+      "unsupported_claim_rate": 0.1,
+      "structured_output_rate": 1.0,
+      "p95_latency_seconds": 6.2071
+    },
+    "openai_retrieved": {
+      "questions": 40,
+      "required_point_coverage": 0.545,
+      "citation_validity": 0.95,
+      "unsupported_claim_rate": 0.075,
+      "structured_output_rate": 1.0,
+      "p95_latency_seconds": 8.7332
+    }
+  },
+  "limitations": [
+    "Human acceptance was high-level and did not produce per-question rubric scores.",
+    "Automatic required-point and unsupported-claim metrics are lexical diagnostics, not scientific adjudication.",
+    "Online and local evaluations used different output ceilings: 768 and 384 tokens respectively.",
+    "The benchmark contains 40 questions and does not establish production performance outside the two reviewed textbooks.",
+    "The online alias used during evaluation resolved consistently to gpt-4o-2024-08-06; the frozen profile pins that resolved snapshot."
+  ],
+  "immutability": {
+    "policy": "Any change to the benchmark, retrieval baseline, prompt, context strategy, model snapshot, quantization, output ceiling, decoding, structured schema, or profile selection requires a new semantic baseline version.",
+    "historical_experiment_artifacts_mutable": false
+  }
+}

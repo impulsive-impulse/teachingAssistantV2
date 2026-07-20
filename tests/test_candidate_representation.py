@@ -91,8 +91,11 @@ class CandidateRepresentationTests(unittest.TestCase):
                             for record in rerank_records))
 
         state = json.loads(paths["state"].read_text(encoding="utf-8"))
-        self.assertIn(state["current_phase"].split()[1],
-                      {"C", "D", "E", "F", "G", "H", "I", "J"})
+        current_phase = state["current_phase"]
+        self.assertTrue(
+            current_phase.startswith("Complete")
+            or current_phase.split()[1] in {"C", "D", "E", "F", "G", "H", "I", "J"}
+        )
         winner = state["current_best_configurations"]["phase_b"]
         self.assertEqual(
             winner["run_id"],

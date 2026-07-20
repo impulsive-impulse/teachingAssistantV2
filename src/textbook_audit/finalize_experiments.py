@@ -179,7 +179,7 @@ def _render_report(selection: dict[str, Any], leaderboard: list[dict[str, Any]],
         return f"{count}/{total} ({100 * count / total:.1f}%)"
     lines = ["# Final local RAG experiment report", "",
              "The approved retrieval loop is complete through stable context assembly. "
-             "Phase J was not run because no reviewed generation-quality benchmark exists.", "",
+             "Answer generation was finalized separately under Generation Baseline v1.", "",
              "## Completion audit", "",
              "| Phase | Completed runs | Disposition |",
              "|---|---:|---|",
@@ -192,7 +192,7 @@ def _render_report(selection: dict[str, Any], leaderboard: list[dict[str, Any]],
              f'| G — query processing | {selection["run_counts_by_phase"].get("G", 0)} | Deterministic textbook synonyms retained; Gemma remained separately gated. |',
              f'| H — specialists | {selection["run_counts_by_phase"].get("H", 0)} | Combined equation/table/caption priors retained; base top-five preserved. |',
              f'| I — context assembly | {selection["run_counts_by_phase"].get("I", 0)} | Overlap merge retained. |',
-             "| J — answer generation | 0 | Correctly gated: generation benchmark absent. |", "",
+             "| J — answer generation | 0 | Separate reviewed program; see Generation Baseline v1. |", "",
              f'All {selection["total_completed_runs"]} immutable run records have unique IDs, complete required fields, reproduction commands, and locally existing declared outputs; pending run count is zero. '
              f'The artifact manifest hashes all {selection["artifact_manifest_rows"]} declared files. '
              f'{selection["gitignored_detail_artifacts"]} bulky per-query detail files are reproducible and intentionally excluded from Git; compact configurations, metrics, ledgers, and reports are tracked.', "",
@@ -285,8 +285,8 @@ def _render_report(selection: dict[str, Any], leaderboard: list[dict[str, Any]],
                   "- BGE-reranker-v2-m3 was stopped after an eight-query screen at 154 seconds p95; mxbai-base was stopped as runtime-infeasible after more than 300 seconds without a completed query.",
                   "- Local Gemma rewriting remained a separate unapproved model gate and was not downloaded or run.",
                   "- Locally generated diagram descriptions and multimodal ranking were not run because no multimodal model was approved; visual-caption retrieval and raster extraction were audited separately.",
-                  "- Phase J generation was not run because retrieval labels cannot evaluate answer correctness or grounding.",
-                  "", "Next milestone: create a reviewed generation benchmark covering correctness, context faithfulness, page citations, and abstention on the five negative rows; only then approve Phase J.", ""])
+                  "- Phase J generation was intentionally evaluated in a separate program with its own reviewed benchmark.",
+                  "", "V1 retrieval and generation decisions are frozen. Future behavior changes require a new semantic baseline version.", ""])
     return "\n".join(lines)
 
 
@@ -340,6 +340,8 @@ def run(root: Path) -> dict[str, Any]:
     ranking_rows = read_benchmark(root / "reports" / "experiments" / "runs" /
                                   QUALITY_RUN / "rankings.jsonl")
     failures, categories = remaining_failures(benchmark, ranking_rows)
+    generation_baseline_path = root / "config" / "generation_baseline_v1.json"
+    generation_frozen = generation_baseline_path.is_file()
     selection = {
         "schema_version": 1,
         "total_completed_runs": len(records),
@@ -364,7 +366,11 @@ def run(root: Path) -> dict[str, Any]:
             "eligible_phases": sorted(ELIGIBLE_PHASES),
         },
         "remaining_top5_failures": failures,
-        "generation_status": "blocked: no reviewed generation-quality benchmark",
+        "generation_status": (
+            "completed separately: Generation Baseline v1 frozen"
+            if generation_frozen else
+            "blocked: no reviewed generation-quality benchmark"
+        ),
     }
     selection_path = output_dir / "final_pipeline_selection.json"
     write_json(selection_path, selection)
@@ -374,19 +380,34 @@ def run(root: Path) -> dict[str, Any]:
     # Finalization is a meaningful recovery checkpoint even though it is not a
     # new retrieval run. Keep restart state aligned with the generated handoff.
     state = json.loads(paths["state"].read_text(encoding="utf-8"))
-    state["current_phase"] = "Phase J — gated; approved retrieval loop complete"
+    state["current_phase"] = (
+        "Complete — Retrieval Baseline v1 and Generation Baseline v1 frozen"
+        if generation_frozen else
+        "Phase J — gated; approved retrieval loop complete"
+    )
     state["current_best_configurations"]["final_pipeline_selection"] = {
         "best_quality": QUALITY_RUN,
         "best_lightweight_cpu": LIGHTWEIGHT_RUN,
         "preferred_balanced": BALANCED_RUN,
         "context_assembly": CONTEXT_RUN,
     }
-    state["unresolved_questions"] = [
-        "A reviewed generation benchmark for correctness, faithfulness, citations, and abstention is required before Phase J."
-    ]
-    state["exact_next_action"] = (
-        "Review reports/experiments/final_experiment_report.md; create and approve a grounded-answer generation benchmark before Phase J."
-    )
+    if generation_frozen:
+        state["current_best_configurations"]["final_pipeline_selection"][
+            "generation_baseline"
+        ] = "config/generation_baseline_v1.json"
+        state["unresolved_questions"] = []
+        state["exact_next_action"] = (
+            "No pending v1 baseline work. Validate the frozen retrieval and generation "
+            "baselines before integration; behavior changes require a new semantic version."
+        )
+    else:
+        state["unresolved_questions"] = [
+            "A reviewed generation benchmark for correctness, faithfulness, citations, and abstention is required before Phase J."
+        ]
+        state["exact_next_action"] = (
+            "Review reports/experiments/final_experiment_report.md; create and approve a "
+            "grounded-answer generation benchmark before Phase J."
+        )
     write_json(paths["state"], state)
     render_resume(root, state)
     return {"comparable_runs": len(rows), "pareto_runs": len(frontier_rows),

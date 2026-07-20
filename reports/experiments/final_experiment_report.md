@@ -1,6 +1,6 @@
 # Final local RAG experiment report
 
-The approved retrieval loop is complete through stable context assembly. Phase J was not run because no reviewed generation-quality benchmark exists.
+The approved retrieval loop is complete through stable context assembly. Answer generation was finalized separately under Generation Baseline v1.
 
 ## Completion audit
 
@@ -15,7 +15,7 @@ The approved retrieval loop is complete through stable context assembly. Phase J
 | G — query processing | 8 | Deterministic textbook synonyms retained; Gemma remained separately gated. |
 | H — specialists | 16 | Combined equation/table/caption priors retained; base top-five preserved. |
 | I — context assembly | 12 | Overlap merge retained. |
-| J — answer generation | 0 | Correctly gated: generation benchmark absent. |
+| J — answer generation | 0 | Separate reviewed program; see Generation Baseline v1. |
 
 All 121 immutable run records have unique IDs, complete required fields, reproduction commands, and locally existing declared outputs; pending run count is zero. The artifact manifest hashes all 362 declared files. 120 bulky per-query detail files are reproducible and intentionally excluded from Git; compact configurations, metrics, ledgers, and reports are tracked.
 
@@ -142,6 +142,6 @@ These causes are post-ranking diagnostics based on dependency labels and wording
 - BGE-reranker-v2-m3 was stopped after an eight-query screen at 154 seconds p95; mxbai-base was stopped as runtime-infeasible after more than 300 seconds without a completed query.
 - Local Gemma rewriting remained a separate unapproved model gate and was not downloaded or run.
 - Locally generated diagram descriptions and multimodal ranking were not run because no multimodal model was approved; visual-caption retrieval and raster extraction were audited separately.
-- Phase J generation was not run because retrieval labels cannot evaluate answer correctness or grounding.
+- Phase J generation was intentionally evaluated in a separate program with its own reviewed benchmark.
 
-Next milestone: create a reviewed generation benchmark covering correctness, context faithfulness, page citations, and abstention on the five negative rows; only then approve Phase J.
+V1 retrieval and generation decisions are frozen. Future behavior changes require a new semantic baseline version.

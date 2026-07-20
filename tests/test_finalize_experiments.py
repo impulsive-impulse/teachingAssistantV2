@@ -53,7 +53,10 @@ def test_generated_final_handoff_is_complete_and_consistent() -> None:
     report = (base / "final_experiment_report.md").read_text(encoding="utf-8")
     assert "Exact balanced architecture" in report
     assert "query_final_pipeline.py" in report
-    assert "generation benchmark" in report
+    assert "Generation Baseline v1" in report
+    assert selection["generation_status"] == (
+        "completed separately: Generation Baseline v1 frozen"
+    )
 
 
 def test_every_historical_run_is_unique_complete_and_reproducible() -> None:

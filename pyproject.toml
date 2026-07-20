@@ -60,6 +60,7 @@ generation-phase-a = "textbook_audit.generation_phase_a:main"
 generation-experiment = "textbook_audit.generation_experiments:main"
 openai-generation-experiment = "textbook_audit.openai_generation:main"
 openai-generation-report = "textbook_audit.openai_generation_report:main"
+manage-generation-baseline-v1 = "textbook_audit.generation_baseline:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

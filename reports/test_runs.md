@@ -682,3 +682,29 @@ the report builder's default destination.
 Result: the move changed artifact organization only. The final paired-question
 count remains 40, all four source labels remain visible, and raw run/cache
 traceability is preserved.
+
+## Generation Baseline v1 freeze — 2026-07-20
+
+Change tested: froze the accepted online-quality and local-offline generation
+profiles, added a high-level human sign-off record, generated a 15-artifact
+checksum manifest, made project state/finalizers aware of the completed
+generation phase, and added repository navigation indexes without moving
+stable experiment paths.
+
+| Validation | Result |
+|---|---:|
+| Generation freeze regressions | 5 passed |
+| Completion/finalizer focused suite | 24 passed |
+| First full suite | 163 passed, 3 stale active-phase assertions failed |
+| Corrected checkpoint assertions | 3 passed |
+| Final full repository suite | 166 passed in 84.32 s |
+| Retrieval Baseline v1 checksums | 14 verified, 0 mismatches |
+| Generation Baseline v1 checksums | 15 verified, 0 mismatches |
+| Frozen generation evidence | 40 questions; 40+40 local and 80 online completions |
+| Resolved online model | `gpt-4o-2024-08-06` for all 80 retained answers |
+| Project-authored Markdown links | 11 checked, 0 broken |
+
+Result: the initial full-suite failures were not behavioral regressions; three
+historical checkpoint tests allowed only active Phase B–J labels. They now also
+protect the terminal `Complete` state. No model inference or paid API call was
+made during freeze validation.

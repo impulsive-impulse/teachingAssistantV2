@@ -107,8 +107,11 @@ class FusionRerankingTests(unittest.TestCase):
                             for record in capped))
 
         state = json.loads(paths["state"].read_text(encoding="utf-8"))
-        self.assertIn(state["current_phase"].split()[1],
-                      {"D", "E", "F", "G", "H", "I", "J"})
+        current_phase = state["current_phase"]
+        self.assertTrue(
+            current_phase.startswith("Complete")
+            or current_phase.split()[1] in {"D", "E", "F", "G", "H", "I", "J"}
+        )
         retained = set(state["current_best_configurations"]["phase_c"]["retained_run_ids"])
         self.assertEqual(retained, {
             "phase_c_c1_soft_fusion_no_reranker_full_pool",

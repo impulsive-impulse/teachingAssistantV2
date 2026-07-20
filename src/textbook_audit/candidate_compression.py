@@ -48,7 +48,8 @@ APPROVED_PLAN = [
     {"phase": "G", "name": "deterministic query processing", "status": "approved; Gemma separately gated"},
     {"phase": "H", "name": "textbook retrieval specialists", "status": "approved; multimodal model separately gated"},
     {"phase": "I", "name": "context assembly", "status": "approved"},
-    {"phase": "J", "name": "answer generation", "status": "blocked until a generation benchmark exists"},
+    {"phase": "J", "name": "answer generation",
+     "status": "completed separately; Generation Baseline v1 frozen"},
 ]
 
 

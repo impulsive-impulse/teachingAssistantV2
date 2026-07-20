@@ -1,5 +1,10 @@
 # OpenAI generation comparison v1
 
+> Decision status: complete. The 40-question comparison was accepted at a
+> high level on 2026-07-20 and is now evidence for Generation Baseline v1.
+> See `config/generation_baseline_v1.json` and
+> `reports/generation_baseline_v1/README.md` for the current frozen decision.
+
 This experiment keeps the frozen local winner's benchmark, prompt P1,
 768-token online output limit, gold context, and retrieved top-5 page-order compact
 context unchanged. It replaces only the answer generator with the OpenAI
