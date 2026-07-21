@@ -48,6 +48,18 @@ independently. The application never uses the transcript as model history.
   downloaded, checksum-verified, and reused. Runtime content lives under the
   Git-ignored `app_data/` directory.
 
+## Screenshots and demo
+
+| Textbook library | Textbook upload |
+|---|---|
+| ![Persistent textbook library](docs/assets/screenshots/textbook-library.png) | ![Textbook PDF upload dialog](docs/assets/screenshots/textbook-upload.png) |
+
+| Online/offline comparison | Offline textbook chat |
+|---|---|
+| ![Online and offline answers to the same question](docs/assets/screenshots/online-offline-comparison.png) | ![Persistent offline textbook conversation](docs/assets/screenshots/offline-chat.png) |
+
+[Watch the end-to-end retrieval and generation demo](docs/assets/demo/e2e-retrieval-generation.mp4)
+
 ## Repository structure
 
 ```text

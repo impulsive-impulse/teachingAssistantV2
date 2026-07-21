@@ -8,3 +8,6 @@
 *.jsonl text eol=lf
 *.csv text eol=lf
 .gitignore text eol=lf
+
+# Keep product demos out of ordinary Git history while retaining them in the repository.
+docs/assets/demo/*.mp4 filter=lfs diff=lfs merge=lfs -text
