@@ -92,6 +92,22 @@ def test_messages_are_independent_and_regeneration_reuses_snapshot(tmp_path: Pat
     assert persisted["checksum"] == "b" * 64
 
 
+def test_chat_title_can_be_renamed_and_persists(tmp_path: Path) -> None:
+    database = Database(tmp_path / "app.db")
+    database.initialize()
+    _ready_book(database)
+    repository = ChatRepository(database)
+    chat = repository.create("book-1")
+
+    renamed = repository.update(chat["id"], title="  Photosynthesis review  ")
+
+    assert renamed is not None
+    assert renamed["title"] == "Photosynthesis review"
+    assert repository.get(chat["id"])["title"] == "Photosynthesis review"
+    with pytest.raises(ValueError, match="must not be empty"):
+        repository.update(chat["id"], title="   ")
+
+
 def test_only_one_active_attempt_per_message(tmp_path: Path) -> None:
     database = Database(tmp_path / "app.db")
     database.initialize()

@@ -129,6 +129,14 @@ textarea:focus-visible, select:focus-visible { outline: 3px solid rgba(47, 101, 
 .conversation { min-width: 0; min-height: 0; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; background: var(--paper); }
 .conversation__header { min-height: 79px; padding: 15px 30px; display: flex; align-items: center; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line); }
 .conversation__header h1 { margin: 4px 0 0; font: 600 21px Georgia, serif; }
+.conversation__identity { min-width: 0; }
+.chat-title-display { min-width: 0; display: flex; align-items: center; gap: 5px; }
+.chat-title-display h1 { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chat-title-display .icon-button { width: 30px; height: 30px; flex: 0 0 auto; opacity: .7; }
+.chat-title-editor { margin-top: 3px; display: flex; align-items: center; gap: 3px; }
+.chat-title-editor input { width: min(360px, 34vw); height: 34px; padding: 5px 9px; border: 1px solid #aebdb4; border-radius: 7px; color: var(--ink); background: #fff; font: 600 17px Georgia, serif; }
+.chat-title-editor .icon-button { width: 30px; height: 30px; }
+.chat-title-error { margin: 4px 0 0; color: var(--red); font-size: 11px; }
 .conversation__tools { display: flex; align-items: center; gap: 7px; }
 .backend-toggle { display: inline-flex; padding: 3px; border: 1px solid var(--line); border-radius: 8px; background: #efede7; }
 .backend-toggle button { padding: 6px 9px; display: flex; align-items: center; gap: 5px; border: 0; border-radius: 5px; color: #73756e; background: transparent; cursor: pointer; font-size: 11px; }
@@ -191,6 +199,9 @@ textarea:focus-visible, select:focus-visible { outline: 3px solid rgba(47, 101, 
   .chat-list { display: none; }
   .conversation { height: 100%; }
   .conversation__header { padding-inline: 16px; }
+  .conversation__header--renaming { align-items: flex-start; flex-direction: column; gap: 8px; }
+  .conversation__header--renaming .conversation__identity { width: 100%; }
+  .chat-title-editor input { width: calc(100vw - 145px); }
   .transcript { padding: 22px 14px; }
   .composer { padding: 10px 12px 14px; }
   .answer-card { margin-right: 3%; }

@@ -184,6 +184,10 @@ export const api = {
     method: "PATCH", headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ default_backend: backend }),
   }),
+  renameChat: (chatId: string, title: string) => request<Chat>(`/api/chats/${chatId}`, {
+    method: "PATCH", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ title }),
+  }),
   deleteChat: (chatId: string) => request<{ id: string; deleted: boolean }>(`/api/chats/${chatId}`, { method: "DELETE" }),
   sendMessage: (chatId: string, question: string, backend: Backend | null, acknowledged: boolean) =>
     request<{ message: UserMessage; attempt: Attempt }>(`/api/chats/${chatId}/messages`, {

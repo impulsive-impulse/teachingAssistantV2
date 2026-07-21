@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { ArrowLeft, BookOpen, ChevronDown, ChevronUp, LoaderCircle, Plus, Send, Square, Trash2, Wifi, WifiOff } from "lucide-react";
+import { ArrowLeft, BookOpen, Check, ChevronDown, ChevronUp, LoaderCircle, Pencil, Plus, Send, Square, Trash2, Wifi, WifiOff, X } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { api, type Attempt, type Backend, type SourceItem } from "../../lib/api";
 
@@ -13,6 +13,8 @@ export function ChatPage() {
   const chats = useQuery({ queryKey: ["chats", bookId], queryFn: () => api.chats(bookId), enabled: Boolean(bookId) });
   const [chatId, setChatId] = useState<string | null>(null);
   const [draft, setDraft] = useState("");
+  const [renaming, setRenaming] = useState(false);
+  const [titleDraft, setTitleDraft] = useState("");
   const [override, setOverride] = useState<"inherit" | Backend>("inherit");
   const [acknowledged, setAcknowledged] = useState(() => sessionStorage.getItem("online-disclosure") === "yes");
   const [live, setLive] = useState<Record<string, string>>({});
@@ -21,6 +23,10 @@ export function ChatPage() {
   useEffect(() => {
     if (!chatId && chats.data?.length) setChatId(chats.data[0].id);
   }, [chatId, chats.data]);
+  useEffect(() => {
+    setRenaming(false);
+    setTitleDraft("");
+  }, [chatId]);
   useEffect(() => () => Object.values(streams.current).forEach((stream) => stream.close()), []);
   const transcript = useQuery({
     queryKey: ["transcript", chatId], queryFn: () => api.transcript(chatId!), enabled: Boolean(chatId),
@@ -38,6 +44,16 @@ export function ChatPage() {
   const changeBackend = useMutation({
     mutationFn: (backend: Backend) => api.updateChatBackend(chatId!, backend),
     onSuccess: async () => { await queryClient.invalidateQueries({ queryKey: ["transcript", chatId] }); setOverride("inherit"); },
+  });
+  const renameChat = useMutation({
+    mutationFn: ({ id, title }: { id: string; title: string }) => api.renameChat(id, title),
+    onSuccess: async (_, variables) => {
+      setRenaming(false);
+      await Promise.all([
+        queryClient.invalidateQueries({ queryKey: ["chats", bookId] }),
+        queryClient.invalidateQueries({ queryKey: ["transcript", variables.id] }),
+      ]);
+    },
   });
   const removeChat = useMutation({
     mutationFn: () => api.deleteChat(chatId!),
@@ -70,6 +86,21 @@ export function ChatPage() {
     onSuccess: async (attempt) => { await queryClient.invalidateQueries({ queryKey: ["transcript", chatId] }); watchAttempt(attempt); },
   });
   const acknowledge = (checked: boolean) => { setAcknowledged(checked); if (checked) sessionStorage.setItem("online-disclosure", "yes"); else sessionStorage.removeItem("online-disclosure"); };
+  const beginRename = () => {
+    setTitleDraft(currentChat?.title ?? "");
+    renameChat.reset();
+    setRenaming(true);
+  };
+  const cancelRename = () => {
+    setRenaming(false);
+    setTitleDraft("");
+    renameChat.reset();
+  };
+  const submitRename = () => {
+    const title = titleDraft.trim();
+    if (!title || title === currentChat?.title) return;
+    renameChat.mutate({ id: chatId!, title });
+  };
 
   if (!book) return <main className="chat-loading">Loading textbook…</main>;
   return (
@@ -78,11 +109,11 @@ export function ChatPage() {
         <Link className="text-button" to="/"><ArrowLeft size={15} /> Library</Link>
         <div className="chat-book"><span className="book-cover chat-book__cover">{book.title.slice(0, 1)}</span><div><p className="eyebrow">Selected textbook</p><strong>{book.title}</strong></div></div>
         <button className="button button--secondary" onClick={() => createChat.mutate()} disabled={createChat.isPending}><Plus size={16} /> New chat</button>
-        <div className="chat-list__items">{chats.data?.map((chat) => <button key={chat.id} className={chat.id === chatId ? "active" : ""} onClick={() => setChatId(chat.id)}>{chat.title}</button>)}</div>
+        <div className="chat-list__items">{chats.data?.map((chat) => <button key={chat.id} className={chat.id === chatId ? "active" : ""} onClick={() => { cancelRename(); setChatId(chat.id); }}>{chat.title}</button>)}</div>
       </aside>
       <section className="conversation">
         {!chatId ? <div className="conversation-empty"><BookOpen size={32} /><h1>Ask this textbook</h1><p>Each question is answered independently. Include the topic in your question.</p><button className="button button--primary" onClick={() => createChat.mutate()}>Start a chat</button></div> : <>
-          <header className="conversation__header"><div><p className="eyebrow">Book-scoped chat</p><h1>{currentChat?.title}</h1></div><div className="conversation__tools"><BackendToggle value={defaultBackend} busy={changeBackend.isPending} onChange={(value) => changeBackend.mutate(value)} /><button className="icon-button" aria-label="Delete this chat" disabled={Boolean(activeAttempt) || removeChat.isPending} onClick={() => { if (window.confirm(`Delete “${currentChat?.title ?? "this chat"}” and its transcript?`)) removeChat.mutate(); }}><Trash2 size={16} /></button></div></header>
+          <header className={`conversation__header${renaming ? " conversation__header--renaming" : ""}`}><div className="conversation__identity"><p className="eyebrow">Book-scoped chat</p>{renaming ? <form className="chat-title-editor" onSubmit={(event) => { event.preventDefault(); submitRename(); }}><input aria-label="Chat title" autoFocus maxLength={120} value={titleDraft} onChange={(event) => setTitleDraft(event.target.value)} onKeyDown={(event) => { if (event.key === "Escape") cancelRename(); }} /><button className="icon-button" type="submit" aria-label="Save chat title" disabled={!titleDraft.trim() || titleDraft.trim() === currentChat?.title || renameChat.isPending}><Check size={16} /></button><button className="icon-button" type="button" aria-label="Cancel renaming" onClick={cancelRename}><X size={16} /></button></form> : <div className="chat-title-display"><h1>{currentChat?.title}</h1><button className="icon-button" aria-label="Rename this chat" onClick={beginRename}><Pencil size={15} /></button></div>}{renameChat.isError && <p className="chat-title-error">{renameChat.error.message}</p>}</div><div className="conversation__tools"><BackendToggle value={defaultBackend} busy={changeBackend.isPending} onChange={(value) => changeBackend.mutate(value)} /><button className="icon-button" aria-label="Delete this chat" disabled={Boolean(activeAttempt) || removeChat.isPending} onClick={() => { if (window.confirm(`Delete “${currentChat?.title ?? "this chat"}” and its transcript?`)) removeChat.mutate(); }}><Trash2 size={16} /></button></div></header>
           <div className="transcript">
             {transcript.data?.messages.length === 0 && <div className="conversation-empty"><BookOpen size={30} /><h2>Begin with a self-contained question</h2><p>Earlier messages are displayed here, but never added to retrieval or generation.</p></div>}
             {transcript.data?.messages.map((message) => <article className="message-pair" key={message.id}><div className="user-message">{message.question}</div>{message.attempts.map((attempt) => <AnswerCard key={attempt.id} attempt={attempt} liveText={live[attempt.id]} acknowledged={acknowledged} busy={regenerate.isPending || Boolean(activeAttempt)} onRegenerate={(backend) => regenerate.mutate({ messageId: message.id, backend })} />)}</article>)}
