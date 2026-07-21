@@ -9,6 +9,13 @@ dist/
 books/
 data/retrieval/cache/
 temp/
+app_data/
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/*.tsbuildinfo
+frontend/vite.config.js
+frontend/vite.config.d.ts
 
 # Full per-query experiment payloads are reproducible local evidence and total
 # nearly 1 GB. Keep compact configurations, metrics, ledgers, hashes, and

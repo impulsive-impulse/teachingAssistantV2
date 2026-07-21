@@ -1,5 +1,13 @@
 # Class 10 textbook RAG
 
+> The frozen baselines are being integrated into a Windows localhost
+> application. See [the UX plan](docs/UX_PLAN.md) for the product contract and
+> [the application development guide](docs/APP_DEVELOPMENT.md) for the current
+> implementation architecture and workflow.
+
+After installing the app dependencies on Windows, launch the compiled local
+application with `python scripts/start_textbook_chat.py`.
+
 This repository contains the complete, reproducible textbook-grounded RAG
 pipeline for the Biology and Physical Sciences books: corpus extraction,
 reviewed benchmarks, frozen retrieval, controlled local/online generation

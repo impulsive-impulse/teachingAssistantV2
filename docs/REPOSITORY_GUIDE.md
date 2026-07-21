@@ -15,6 +15,7 @@ commands refer to them by name.
 | How do I inspect local vs online answers? | `reports/openai_generation_experiments/comparisons/full_40_labeled/local_vs_gpt4o_labeled_comparison.html` |
 | How do I query retrieval interactively? | `scripts/query_final_pipeline.py` |
 | What is the plan for the local textbook-chat application? | `docs/UX_PLAN.md` |
+| How is the local application structured and run during development? | `docs/APP_DEVELOPMENT.md` |
 | How do I verify frozen files? | `scripts/manage_retrieval_baseline_v1.py` and `scripts/manage_generation_baseline_v1.py` |
 
 ## End-to-end architecture
