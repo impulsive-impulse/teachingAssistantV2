@@ -1,0 +1,42 @@
+
+
+Name           : Qualcomm(R) Adreno(TM) X1-85 GPU
+DriverVersion  : 31.0.133.1
+DriverDate     : 11/9/2025 5:30:00 AM
+VideoProcessor : Qualcomm(R) Adreno(TM) Graphics
+PNPDeviceID    : ACPI\VEN_QCOM&DEV_0C36&SUBSYS_IDP08380&REV_0088\0
+Status         : OK
+
+
+
+
+
+Status       : OK
+Class        : ComputeAccelerator
+FriendlyName : Snapdragon(R) X Elite - X1E80100 - Qualcomm(R) Hexagon(TM) NPU
+InstanceId   : ACPI\QCOM0D0A\2&DABA3FF&0
+
+Status       : Unknown
+Class        : HIDClass
+FriendlyName : USB Input Device
+InstanceId   : USB\VID_1050&PID_0406&MI_00\6&196F8739&0&0000
+
+Status       : Unknown
+Class        : HIDClass
+FriendlyName : USB Input Device
+InstanceId   : USB\VID_045E&PID_085B&MI_03\8&A4A0441&0&0003
+
+Status       : OK
+Class        : Display
+FriendlyName : Qualcomm(R) Adreno(TM) X1-85 GPU
+InstanceId   : ACPI\VEN_QCOM&DEV_0C36&SUBSYS_IDP08380&REV_0088\0
+
+Status       : Unknown
+Class        : HIDClass
+FriendlyName : USB Input Device
+InstanceId   : USB\VID_045E&PID_0855&MI_00\7&EB4166C&0&0000
+
+Status       : Unknown
+Class        : HIDClass
+FriendlyName : USB Input Device
+InstanceId   : USB\VID_1050&PID_0406&MI_00\6&3638A9BD&0&0000

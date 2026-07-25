@@ -1,0 +1,103 @@
+{
+  "experiment": "qwen3_8b_14b_opencl_adreno_extension",
+  "date": "2026-07-25",
+  "verdict": "compatibility_pass_performance_mixed",
+  "runtime": {
+    "name": "llama.cpp",
+    "build": 10107,
+    "commit": "c0bc8591e",
+    "architecture": "ARM64",
+    "pe_machine_hex": "0xAA64",
+    "backend": "GPUOpenCL",
+    "device": "Qualcomm(R) Adreno(TM) X1-85 GPU",
+    "opencl": "OpenCL 3.0 QUALCOMM build 851.0"
+  },
+  "prompt": "Count from 1 to 100 in order, separated by commas, with no explanation. /no_think",
+  "expected": "exact comma-separated sequence 1 through 100",
+  "models": [
+    {
+      "name": "Qwen3-8B-Q4_K_M",
+      "parameters_billions": 8.19,
+      "format": "GGUF V3",
+      "quantization": "Q4_K_M",
+      "file_size_bytes": 5027783488,
+      "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+      "gpu": {
+        "run": "20260725-124448-qwen3-8b-q4_k_m-gpu",
+        "valid_output": true,
+        "generated_tokens": 296,
+        "layers_offloaded": "37/37",
+        "load_seconds": 67.474,
+        "inference_wall_seconds": 30.966,
+        "prompt_tokens_per_second": 67.572,
+        "generation_tokens_per_second": 9.716,
+        "peak_gpu_percent": 98.34,
+        "peak_gpu_committed_bytes": 5224247296,
+        "peak_working_set_bytes": 10016440320,
+        "opencl_model_buffer_mib": 4455.47,
+        "opencl_kv_buffer_mib": 72.0,
+        "opencl_compute_buffer_mib": 24.13
+      },
+      "cpu_control": {
+        "run": "20260725-124704-qwen3-8b-q4_k_m-cpu",
+        "valid_output": true,
+        "generated_tokens": 296,
+        "layers_offloaded": "0/37",
+        "load_seconds": 18.223,
+        "inference_wall_seconds": 32.002,
+        "prompt_tokens_per_second": 36.286,
+        "generation_tokens_per_second": 9.526,
+        "peak_gpu_percent": 0.0
+      }
+    },
+    {
+      "name": "Qwen3-14B-Q4_K_M",
+      "parameters_billions": 14.77,
+      "format": "GGUF V3",
+      "quantization": "Q4_K_M",
+      "file_size_bytes": 9001752960,
+      "sha256": "500a8806e85ee9c83f3ae08420295592451379b4f8cf2d0f41c15dffeb6b81f0",
+      "gpu": {
+        "run": "20260725-124819-qwen3-14b-q4_k_m-gpu",
+        "valid_output": true,
+        "generated_tokens": 296,
+        "layers_offloaded": "41/41",
+        "load_seconds": 106.914,
+        "inference_wall_seconds": 60.691,
+        "prompt_tokens_per_second": 41.903,
+        "generation_tokens_per_second": 4.941,
+        "peak_gpu_percent": 99.01,
+        "peak_gpu_committed_bytes": 9155624960,
+        "peak_working_set_bytes": 17828847616,
+        "opencl_model_buffer_mib": 8161.89,
+        "opencl_kv_buffer_mib": 80.0,
+        "opencl_compute_buffer_mib": 33.13
+      },
+      "cpu_control": {
+        "run": "20260725-125203-qwen3-14b-q4_k_m-cpu",
+        "valid_output": true,
+        "generated_tokens": 296,
+        "layers_offloaded": "0/41",
+        "load_seconds": 24.191,
+        "inference_wall_seconds": 36.772,
+        "prompt_tokens_per_second": 47.118,
+        "generation_tokens_per_second": 8.21,
+        "peak_gpu_percent": 0.0
+      }
+    }
+  ],
+  "scope": {
+    "validated": [
+      "Qwen3 GGUF V3 Q4_K_M 8.19B on llama.cpp b10107 GPUOpenCL",
+      "Qwen3 GGUF V3 Q4_K_M 14.77B on llama.cpp b10107 GPUOpenCL"
+    ],
+    "not_validated": [
+      "arbitrary local LLMs",
+      "other model architectures or quantizations",
+      "ONNX, DLC, DirectML, Windows ML, QNN, or Genie",
+      "multimodal projectors",
+      "other context sizes or driver/runtime versions"
+    ],
+    "frozen_v1_changed": false
+  }
+}

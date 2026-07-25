@@ -1,0 +1,29 @@
+{
+  "baseline": {
+    "name": "Generation Baseline v1",
+    "semantic_version": "1.0.0",
+    "frozen": true,
+    "approved_on": "2026-07-20",
+    "default_profile": "online_quality",
+    "offline_fallback_profile": "local_offline"
+  },
+  "evidence": {
+    "questions": 40,
+    "profiles": [
+      "online_quality",
+      "local_offline"
+    ],
+    "local_completed": {
+      "gold": 40,
+      "retrieved": 40
+    },
+    "online_completed": 80,
+    "resolved_online_model": "gpt-4o-2024-08-06",
+    "human_review": "accepted"
+  },
+  "checksums": {
+    "artifacts_checked": 15,
+    "mismatches": [],
+    "valid": true
+  }
+}

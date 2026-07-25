@@ -1,0 +1,29 @@
+
+
+Path        : C:\Windows\System32\OpenCL.dll
+Length      : 534832
+FileVersion : 31.0.133.1
+Product     : QUALCOMM Windows on Snapdragon
+Signature   : Valid
+Signer      : CN=Microsoft Windows Hardware Compatibility Publisher, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+
+Path        : C:\Windows\System32\DirectML.dll
+Length      : 11264
+FileVersion : 5.00 (WinBuild.160101.0800)
+Product     : Microsoft® Windows® Operating System
+Signature   : Valid
+Signer      : CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+
+Path        : C:\Windows\System32\directml_arm64.dll
+Length      : 10238496
+FileVersion : 1.15.5+250417-0100.1.os-germanium.7c460ce
+Product     : Microsoft® Windows® Operating System
+Signature   : Valid
+Signer      : CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US
+
+Path        : C:\Windows\System32\vulkan-1.dll
+Length      : 2499544
+FileVersion : 1.3.300.0
+Product     : Vulkan Runtime
+Signature   : Valid
+Signer      : CN=Microsoft Windows, O=Microsoft Corporation, L=Redmond, S=Washington, C=US

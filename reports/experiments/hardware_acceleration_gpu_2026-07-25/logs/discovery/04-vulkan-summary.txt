@@ -1,0 +1,90 @@
+vulkaninfo.exe : WARNING: [Loader Message] Code 0 : loader_add_layer_properties: Can not find 'layer' object in manifest JSON file C:\Program Files\WindowsApps\Microsoft.D3DMappingLayers_1.2606.3.0_arm64__8wekyb3d8bbwe\dzn_icd.arm64.json.
+Skipping this file.
+At X:\teachingAssistantV2\reports\experiments\hardware_acceleration_gpu_2026-07-25\scripts\collect_inventory.ps1:74 char:5
++     & vulkaninfo --summary
++     ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: [Loade...ping this file.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+WARNING: [Loader Message] Code 0 : loader_add_layer_properties: Can not find 'layer' object in manifest JSON file C:\Program Files\WindowsApps\Microsoft.D3DMappingLayers_1.2606.3.0_arm64__8wekyb3d8bbwe\dzn_icd.x64.json.  Skipping this file.
+WARNING: [Loader Message] Code 0 : loader_add_layer_properties: Can not find 'layer' object in manifest JSON file C:\Program Files\WindowsApps\Microsoft.D3DMappingLayers_1.2606.3.0_arm64__8wekyb3d8bbwe\dzn_icd.x86.json.  Skipping this file.
+WARNING: [Loader Message] Code 0 : windows_read_data_files_in_registry: Registry lookup failed to get layer manifest files.
+WARNING: [Loader Message] Code 0 : loader_parse_icd_manifest: Can not find 'ICD' object in ICD JSON file C:\Program Files\WindowsApps\Microsoft.D3DMappingLayers_1.2606.3.0_arm64__8wekyb3d8bbwe\dzn_layer.arm64.json. Skipping ICD JSON
+WARNING: [Loader Message] Code 0 : loader_parse_icd_manifest: Can not find 'ICD' object in ICD JSON file C:\Program Files\WindowsApps\Microsoft.D3DMappingLayers_1.2606.3.0_arm64__8wekyb3d8bbwe\dzn_layer.x64.json. Skipping ICD JSON
+WARNING: [Loader Message] Code 0 : loader_parse_icd_manifest: Can not find 'ICD' object in ICD JSON file C:\Program Files\WindowsApps\Microsoft.D3DMappingLayers_1.2606.3.0_arm64__8wekyb3d8bbwe\dzn_layer.x86.json. Skipping ICD JSON
+WARNING: [Loader Message] Code 0 : vkGetPhysicalDeviceSurfaceCapabilities2KHR: Emulation found unrecognized structure type in pSurfaceInfo->pNext - this struct will be ignored
+WARNING: [Loader Message] Code 0 : vkGetPhysicalDeviceSurfaceCapabilities2KHR: Emulation found unrecognized structure type in pSurfaceInfo->pNext - this struct will be ignored
+WARNING: [Loader Message] Code 0 : vkGetPhysicalDeviceSurfaceCapabilities2KHR: Emulation found unrecognized structure type in pSurfaceInfo->pNext - this struct will be ignored
+==========
+VULKANINFO
+==========
+
+Vulkan Instance Version: 1.3.301
+
+
+Instance Extensions: count = 13
+-------------------------------
+VK_EXT_debug_report                    : extension revision 10
+VK_EXT_debug_utils                     : extension revision 2
+VK_KHR_device_group_creation           : extension revision 1
+VK_KHR_external_fence_capabilities     : extension revision 1
+VK_KHR_external_memory_capabilities    : extension revision 1
+VK_KHR_external_semaphore_capabilities : extension revision 1
+VK_KHR_get_physical_device_properties2 : extension revision 2
+VK_KHR_get_surface_capabilities2       : extension revision 1
+VK_KHR_portability_enumeration         : extension revision 1
+VK_KHR_surface                         : extension revision 25
+VK_KHR_surface_protected_capabilities  : extension revision 1
+VK_KHR_win32_surface                   : extension revision 6
+VK_LUNARG_direct_driver_loading        : extension revision 1
+
+Instance Layers: count = 2
+--------------------------
+VK_LAYER_MSFT_driver_sorting Microsoft driver sorting layer 1.3.275  version 1
+VK_LAYER_MSFT_driver_sorting Microsoft driver sorting layer 1.3.275  version 1
+
+Devices:
+========
+GPU0:
+	apiVersion         = 1.3.295
+	driverVersion      = 0.851.0
+	vendorID           = 0x5143
+	deviceID           = 0x36334330
+	deviceType         = PHYSICAL_DEVICE_TYPE_INTEGRATED_GPU
+	deviceName         = Qualcomm(R) Adreno(TM) X1-85 GPU
+	driverID           = DRIVER_ID_QUALCOMM_PROPRIETARY
+	driverName         = Qualcomm Technologies Inc. Adreno Vulkan Driver
+	driverInfo         = Driver Build: 624fbfb25c, I20d9b72c2f, 1761203054
+Date: 10/23/2025
+Compiler Version: E031.50.28.02
+Driver Branch: PP155
+
+	conformanceVersion = 1.3.9.1
+	deviceUUID         = 43510000-0600-0000-12c5-6000140012c5
+	driverUUID         = 04000000-0100-0000-0300-000000000000
+GPU1:
+	apiVersion         = 1.2.350
+	driverVersion      = 26.1.99
+	vendorID           = 0x4d4f4351
+	deviceID           = 0x36334330
+	deviceType         = PHYSICAL_DEVICE_TYPE_INTEGRATED_GPU
+	deviceName         = Microsoft Direct3D12 (Qualcomm(R) Adreno(TM) X1-85 GPU)
+	driverID           = DRIVER_ID_MESA_DOZEN
+	driverName         = Dozen
+	driverInfo         = Mesa 26.2.0-devel (git-c1445345a4)
+	conformanceVersion = 0.0.0.0
+	deviceUUID         = 23099eda-3164-1ab2-0263-9b03c4254eff
+	driverUUID         = 97a59148-27e3-cc82-fffc-9c451d6f2545
+GPU2:
+	apiVersion         = 1.2.350
+	driverVersion      = 26.1.99
+	vendorID           = 0x1414
+	deviceID           = 0x008c
+	deviceType         = PHYSICAL_DEVICE_TYPE_CPU
+	deviceName         = Microsoft Direct3D12 (Microsoft Basic Render Driver)
+	driverID           = DRIVER_ID_MESA_DOZEN
+	driverName         = Dozen
+	driverInfo         = Mesa 26.2.0-devel (git-c1445345a4)
+	conformanceVersion = 0.0.0.0
+	deviceUUID         = cbf97468-ccff-654e-83d8-6647a64581c2
+	driverUUID         = 97a59148-27e3-cc82-fffc-9c451d6f2545

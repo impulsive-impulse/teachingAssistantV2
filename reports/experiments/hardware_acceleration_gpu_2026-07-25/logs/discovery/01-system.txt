@@ -1,0 +1,11 @@
+
+
+CollectedAt       : 2026-07-25T11:47:51.6593099+05:30
+OS                : Microsoft Windows 11 Enterprise
+Version           : 10.0.26200
+Build             : 26200
+Architecture      : ARM 64-bit Processor
+CPU               : Snapdragon(R) X 12-core X1E80100 @ 3.40 GHz
+Cores             : 12
+LogicalProcessors : 12
+RAMGiB            : 63.49

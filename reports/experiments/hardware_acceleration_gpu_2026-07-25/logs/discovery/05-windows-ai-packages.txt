@@ -1,0 +1,109 @@
+
+
+Name            : Microsoft.WindowsAppRuntime.1.7
+PackageFullName : Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_x86__8wekyb3d8bbwe
+Version         : 7000.785.2325.0
+Architecture    : X86
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_x86__8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.1.7
+PackageFullName : Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_x64__8wekyb3d8bbwe
+Version         : 7000.785.2325.0
+Architecture    : X64
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_x64__8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.1.7
+PackageFullName : Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_arm64__8wekyb3d8bbwe
+Version         : 7000.785.2325.0
+Architecture    : Arm64
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.7_7000.785.2325.0_arm64__8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.1.6
+PackageFullName : Microsoft.WindowsAppRuntime.1.6_6000.519.329.0_x64__8wekyb3d8bbwe
+Version         : 6000.519.329.0
+Architecture    : X64
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.6_6000.519.329.0_x64__8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.1.6
+PackageFullName : Microsoft.WindowsAppRuntime.1.6_6000.519.329.0_x86__8wekyb3d8bbwe
+Version         : 6000.519.329.0
+Architecture    : X86
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.6_6000.519.329.0_x86__8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.1.6
+PackageFullName : Microsoft.WindowsAppRuntime.1.6_6000.519.329.0_arm64__8wekyb3d8bbwe
+Version         : 6000.519.329.0
+Architecture    : Arm64
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.6_6000.519.329.0_arm64__8wekyb3d8bbwe
+
+Name            : WindowsWorkload.EP.Qualcomm.QNN.1.8
+PackageFullName : WindowsWorkload.EP.Qualcomm.QNN.1.8_1.8.41.0_arm64__8wekyb3d8bbwe
+Version         : 1.8.41.0
+Architecture    : Arm64
+InstallLocation : C:\Program Files\WindowsApps\WindowsWorkload.EP.Qualcomm.QNN.1.8_1.8.41.0_arm64__8wekyb3d8bbwe
+
+Name            : WindowsWorkload.EP.Qualcomm.QNN.Framework.1.8
+PackageFullName : WindowsWorkload.EP.Qualcomm.QNN.Framework.1.8_1.8.46.0_arm64__8wekyb3d8bbwe
+Version         : 1.8.46.0
+Architecture    : Arm64
+InstallLocation : C:\Program Files\WindowsApps\WindowsWorkload.EP.Qualcomm.QNN.Framework.1.8_1.8.46.0_arm64__8wekyb3d8bbwe
+
+Name            : Microsoft.AIFabric.CBS.1.6
+PackageFullName : Microsoft.AIFabric.CBS.1.6_1.6.938.100_arm64__8wekyb3d8bbwe
+Version         : 1.6.938.100
+Architecture    : Arm64
+InstallLocation : C:\Windows\SystemApps\Microsoft.AIFabric.CBS.1.6_8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.CBS.1.6
+PackageFullName : Microsoft.WindowsAppRuntime.CBS.1.6_6000.872.154.100_arm64__8wekyb3d8bbwe
+Version         : 6000.872.154.100
+Architecture    : Arm64
+InstallLocation : C:\Windows\SystemApps\Microsoft.WindowsAppRuntime.CBS_8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.CBS.2
+PackageFullName : Microsoft.WindowsAppRuntime.CBS.2_2.1.1.100_arm64__8wekyb3d8bbwe
+Version         : 2.1.1.100
+Architecture    : Arm64
+InstallLocation : C:\Windows\SystemApps\Microsoft.WindowsAppRuntime.CBS.2_8wekyb3d8bbwe
+
+Name            : aimgr
+PackageFullName : aimgr_0.20.60.0_arm64__8wekyb3d8bbwe
+Version         : 0.20.60.0
+Architecture    : Arm64
+InstallLocation : C:\Program Files\WindowsApps\aimgr_0.20.60.0_arm64__8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.1.8
+PackageFullName : Microsoft.WindowsAppRuntime.1.8_8000.921.1539.0_x64__8wekyb3d8bbwe
+Version         : 8000.921.1539.0
+Architecture    : X64
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.8_8000.921.1539.0_x64__8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.1.8
+PackageFullName : Microsoft.WindowsAppRuntime.1.8_8000.921.1539.0_arm64__8wekyb3d8bbwe
+Version         : 8000.921.1539.0
+Architecture    : Arm64
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.8_8000.921.1539.0_arm64__8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.1.8
+PackageFullName : Microsoft.WindowsAppRuntime.1.8_8000.921.1539.0_x86__8wekyb3d8bbwe
+Version         : 8000.921.1539.0
+Architecture    : X86
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.1.8_8000.921.1539.0_x86__8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.2
+PackageFullName : Microsoft.WindowsAppRuntime.2_2.3.1.0_x86__8wekyb3d8bbwe
+Version         : 2.3.1.0
+Architecture    : X86
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.2_2.3.1.0_x86__8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.2
+PackageFullName : Microsoft.WindowsAppRuntime.2_2.3.1.0_x64__8wekyb3d8bbwe
+Version         : 2.3.1.0
+Architecture    : X64
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.2_2.3.1.0_x64__8wekyb3d8bbwe
+
+Name            : Microsoft.WindowsAppRuntime.2
+PackageFullName : Microsoft.WindowsAppRuntime.2_2.3.1.0_arm64__8wekyb3d8bbwe
+Version         : 2.3.1.0
+Architecture    : Arm64
+InstallLocation : C:\Program Files\WindowsApps\Microsoft.WindowsAppRuntime.2_2.3.1.0_arm64__8wekyb3d8bbwe

@@ -1,0 +1,227 @@
+{
+  "status": "success",
+  "success_gates": {
+    "valid_text": true,
+    "gpu_backend_initialized": true,
+    "gpu_activity_measured": true,
+    "no_silent_cpu_fallback": true
+  },
+  "gpu": {
+    "run_directory": "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\logs\\runs\\20260725-123456-gpu",
+    "metadata": {
+      "mode": "gpu",
+      "runtime_build": 10107,
+      "runtime_architecture": "ARM64",
+      "pe_machine_hex": "0xAA64",
+      "backend_requested": "GPUOpenCL",
+      "gpu_layers_requested": 99,
+      "model": "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\models\\qwen2.5-0.5b-instruct-q4_0.gguf",
+      "model_sha256": "7671c0c304e6ce5a7fc577bcb12aba01e2c155cc2efd29b2213c95b18edaf6ed",
+      "prompt": "Count from 1 to 200 in order, separated by commas, with no explanation.",
+      "max_tokens": 512,
+      "command": [
+        "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\runtime\\llama-b10107-bin-win-opencl-adreno-arm64\\llama-server.exe",
+        "--model",
+        "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\models\\qwen2.5-0.5b-instruct-q4_0.gguf",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "18085",
+        "--ctx-size",
+        "512",
+        "--threads",
+        "10",
+        "--threads-batch",
+        "10",
+        "--batch-size",
+        "256",
+        "--ubatch-size",
+        "128",
+        "--parallel",
+        "1",
+        "--seed",
+        "42",
+        "--n-gpu-layers",
+        "99",
+        "--log-verbosity",
+        "5",
+        "--metrics",
+        "--no-webui",
+        "--device",
+        "GPUOpenCL"
+      ],
+      "process_id": 33652,
+      "started_at": "2026-07-25T12:34:56.7870695+05:30",
+      "model_loaded_at": "2026-07-25T12:35:17.9504194+05:30",
+      "inference_started_at": "2026-07-25T12:35:19.0459354+05:30",
+      "inference_finished_at": "2026-07-25T12:35:23.6543380+05:30",
+      "load_seconds": 21.1633499,
+      "inference_seconds": 4.6084026,
+      "response_file": "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\logs\\runs\\20260725-123456-gpu\\response.json",
+      "measurement_file": "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\logs\\runs\\20260725-123456-gpu\\gpu-process.jsonl"
+    },
+    "text": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100",
+    "valid_text": true,
+    "response_usage": {
+      "completion_tokens": 391,
+      "prompt_tokens": 49,
+      "total_tokens": 440,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "response_timings": {
+      "cache_n": 0,
+      "prompt_n": 49,
+      "prompt_ms": 63.217,
+      "prompt_per_token_ms": 1.290142857142857,
+      "prompt_per_second": 775.1079614660614,
+      "predicted_n": 391,
+      "predicted_ms": 4528.309,
+      "predicted_per_token_ms": 11.58135294117647,
+      "predicted_per_second": 86.34569769863319
+    },
+    "backend_evidence": {
+      "opencl_named": true,
+      "adreno_named": true,
+      "gpuopencl_named": true,
+      "offloaded_layers": 25,
+      "total_layers": 25,
+      "complete_layer_offload": true
+    },
+    "measurements": {
+      "all_sample_count": 3,
+      "inference_sample_count": 2,
+      "gpu_max_percent": 92.18166603353318,
+      "gpu_mean_percent_all_engines": 7.652024130732446,
+      "active_gpu_engines": [
+        "pid_33652_luid_0x00000000_0x00014e29_phys_0_eng_0_engtype_3d"
+      ],
+      "gpu_memory_peak_bytes": 781336576,
+      "working_set_peak_bytes": 1377501184,
+      "private_bytes_peak": 1048330240,
+      "cpu_mean_percent_normalized": 0.5713925908014934
+    }
+  },
+  "cpu_control": {
+    "run_directory": "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\logs\\runs\\20260725-123553-cpu",
+    "metadata": {
+      "mode": "cpu",
+      "runtime_build": 10107,
+      "runtime_architecture": "ARM64",
+      "pe_machine_hex": "0xAA64",
+      "backend_requested": "CPU",
+      "gpu_layers_requested": 0,
+      "model": "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\models\\qwen2.5-0.5b-instruct-q4_0.gguf",
+      "model_sha256": "7671c0c304e6ce5a7fc577bcb12aba01e2c155cc2efd29b2213c95b18edaf6ed",
+      "prompt": "Count from 1 to 200 in order, separated by commas, with no explanation.",
+      "max_tokens": 512,
+      "command": [
+        "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\runtime\\llama-b10107-bin-win-opencl-adreno-arm64\\llama-server.exe",
+        "--model",
+        "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\models\\qwen2.5-0.5b-instruct-q4_0.gguf",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "18086",
+        "--ctx-size",
+        "512",
+        "--threads",
+        "10",
+        "--threads-batch",
+        "10",
+        "--batch-size",
+        "256",
+        "--ubatch-size",
+        "128",
+        "--parallel",
+        "1",
+        "--seed",
+        "42",
+        "--n-gpu-layers",
+        "0",
+        "--log-verbosity",
+        "5",
+        "--metrics",
+        "--no-webui"
+      ],
+      "process_id": 25468,
+      "started_at": "2026-07-25T12:35:53.2147258+05:30",
+      "model_loaded_at": "2026-07-25T12:35:54.6061925+05:30",
+      "inference_started_at": "2026-07-25T12:35:55.7139266+05:30",
+      "inference_finished_at": "2026-07-25T12:36:11.0045028+05:30",
+      "load_seconds": 1.3914666999999998,
+      "inference_seconds": 15.290576199999999,
+      "response_file": "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\logs\\runs\\20260725-123553-cpu\\response.json",
+      "measurement_file": "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\logs\\runs\\20260725-123553-cpu\\gpu-process.jsonl"
+    },
+    "text": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100",
+    "valid_text": true,
+    "response_usage": {
+      "completion_tokens": 391,
+      "prompt_tokens": 49,
+      "total_tokens": 440,
+      "prompt_tokens_details": {
+        "cached_tokens": 0
+      }
+    },
+    "response_timings": {
+      "cache_n": 0,
+      "prompt_n": 49,
+      "prompt_ms": 187.35,
+      "prompt_per_token_ms": 3.823469387755102,
+      "prompt_per_second": 261.54256738724314,
+      "predicted_n": 391,
+      "predicted_ms": 15088.793,
+      "predicted_per_token_ms": 38.590263427109974,
+      "predicted_per_second": 25.91327218817304
+    },
+    "backend_evidence": {
+      "opencl_named": true,
+      "adreno_named": true,
+      "gpuopencl_named": true,
+      "offloaded_layers": 0,
+      "total_layers": 25,
+      "complete_layer_offload": false
+    },
+    "measurements": {
+      "all_sample_count": 8,
+      "inference_sample_count": 7,
+      "gpu_max_percent": 0.0,
+      "gpu_mean_percent_all_engines": 0.0,
+      "active_gpu_engines": [],
+      "gpu_memory_peak_bytes": 411049984,
+      "working_set_peak_bytes": 1198223360,
+      "private_bytes_peak": 889757696,
+      "cpu_mean_percent_normalized": 4.112804758191521
+    }
+  },
+  "correctness_check": {
+    "run_directory": "X:\\teachingAssistantV2\\reports\\experiments\\hardware_acceleration_gpu_2026-07-25\\logs\\runs\\20260725-123359-gpu",
+    "prompt": "Answer with only the city name: What is the capital of France?",
+    "text": "Paris",
+    "inference_seconds": 0.114468,
+    "timings": {
+      "cache_n": 0,
+      "prompt_n": 43,
+      "prompt_ms": 69.83500000000001,
+      "prompt_per_token_ms": 1.6240697674418607,
+      "prompt_per_second": 615.7370945800816,
+      "predicted_n": 2,
+      "predicted_ms": 13.63,
+      "predicted_per_token_ms": 6.815,
+      "predicted_per_second": 146.7351430667645
+    }
+  },
+  "artifacts": {
+    "runtime_archive_bytes": 12752128,
+    "runtime_archive_sha256": "1adca072b5ef8203409bb75258faa5ab7476d93fcf1bd38fbc44cb68cb3b1eef",
+    "model_bytes": 428730208,
+    "model_sha256": "7671c0c304e6ce5a7fc577bcb12aba01e2c155cc2efd29b2213c95b18edaf6ed"
+  },
+  "speedup": {
+    "wall_time": 3.3179775135097787,
+    "prompt_tokens_per_second": 2.963601562870747,
+    "generation_tokens_per_second": 3.3321032199878577
+  }
+}

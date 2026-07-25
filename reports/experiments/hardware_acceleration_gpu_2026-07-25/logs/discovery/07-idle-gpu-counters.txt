@@ -1,0 +1,16 @@
+
+InstanceName                                                             CookedValue
+------------                                                             -----------
+pid_21688_luid_0x00000000_0x00015131_phys_0_eng_0_engtype_compute   95.1320653511994
+pid_21688_luid_0x00000000_0x00015131_phys_0_eng_0_engtype_compute   92.5058702168967
+pid_21688_luid_0x00000000_0x00015131_phys_0_eng_0_engtype_compute   84.0848808690241
+pid_21376_luid_0x00000000_0x00014e29_phys_0_eng_0_engtype_3d        7.07196810089079
+pid_21376_luid_0x00000000_0x00014e29_phys_0_eng_0_engtype_3d        6.16969182935702
+pid_21376_luid_0x00000000_0x00014e29_phys_0_eng_0_engtype_3d         5.9004183553581
+pid_2944_luid_0x00000000_0x00014e29_phys_0_eng_0_engtype_3d         2.36697410981811
+pid_2944_luid_0x00000000_0x00014e29_phys_0_eng_0_engtype_3d         1.60360329667696
+pid_2944_luid_0x00000000_0x00014e29_phys_0_eng_0_engtype_3d          1.3156222985648
+pid_4_luid_0x00000000_0x00014e29_phys_0_eng_0_engtype_3d           0.114060331246379
+pid_4_luid_0x00000000_0x00014e29_phys_0_eng_0_engtype_3d           0.106534505909461
+pid_4_luid_0x00000000_0x00014e29_phys_0_eng_0_engtype_3d           0.040062760773037
+pid_3212_luid_0x00000000_0x00014e29_phys_0_eng_0_engtype_3d       0.0288408599673725
