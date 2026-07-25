@@ -1,0 +1,4 @@
+# Operational settings are intentionally separate from the frozen v1 files.
+offline_generation:
+  backend: cpu
+  allow_fallback: false

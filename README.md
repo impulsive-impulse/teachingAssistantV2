@@ -13,9 +13,11 @@ The application is built on the project's frozen research decisions:
 | Online generation | `gpt-4o-2024-08-06`, retrieved top-5 context, 768-token limit |
 | Offline generation | Qwen3-8B Q4_K_M through llama.cpp, retrieved top-5 context, 384-token limit |
 
-The first release is single-user, CPU-only, and bound to `127.0.0.1`. It
-accepts English, text-layer textbook PDFs that pass suitability checks; scans,
-papers, novels, reports, corrupt PDFs, and poor extractions are rejected.
+The first release is single-user, CPU-first, and bound to `127.0.0.1`. On the
+validated Windows ARM64 hardware it can optionally run offline generation on
+the Qualcomm Adreno GPU through OpenCL. It accepts English, text-layer textbook
+PDFs that pass suitability checks; scans, papers, novels, reports, corrupt
+PDFs, and poor extractions are rejected.
 
 ## Top-level flow
 
@@ -46,7 +48,8 @@ independently. The application never uses the transcript as model history.
   retry or provider switch.
 - **Local runtime:** exact Qwen and Windows ARM64 llama.cpp artifacts are
   downloaded, checksum-verified, and reused. Runtime content lives under the
-  Git-ignored `app_data/` directory.
+  Git-ignored `app_data/` directory. CPU remains the default and recommended
+  production backend; `opencl_gpu` is an optional execution-only feature gate.
 
 ## Screenshots and demo
 
@@ -122,6 +125,76 @@ python scripts/start_textbook_chat.py
 Open [http://127.0.0.1:8765](http://127.0.0.1:8765). The launcher opens this
 address automatically. Use the in-app **Set up** action to download and verify
 the frozen offline model/runtime when required.
+
+## Offline CPU and OpenCL GPU backends
+
+The operational setting is resolved only when the resident offline
+`llama-server` starts. It changes the executable/backend arguments, not the
+frozen pipeline: both paths use the same `Qwen3-8B-Q4_K_M.gguf`, retrieval,
+top-five context, P1 prompt, seed, temperature, 384-token limit, and answer
+validator.
+
+The checked-in default is:
+
+```yaml
+offline_generation:
+  backend: cpu
+  allow_fallback: false
+```
+
+Edit `config/runtime.yaml`, or override it for one process:
+
+```powershell
+# Recommended/default CPU path
+$env:TEXTBOOK_CHAT_OFFLINE_BACKEND = "cpu"
+$env:TEXTBOOK_CHAT_OFFLINE_ALLOW_FALLBACK = "false"
+python scripts/start_textbook_chat.py
+
+# Validated Qualcomm Adreno OpenCL path
+$env:TEXTBOOK_CHAT_OFFLINE_BACKEND = "opencl_gpu"
+$env:TEXTBOOK_CHAT_OFFLINE_ALLOW_FALLBACK = "false"
+python scripts/start_textbook_chat.py
+```
+
+Use the in-app offline setup after switching backends. The model is shared and
+is not duplicated. CPU runtime files remain under
+`app_data/models/llama.cpp/bin`; OpenCL runtime files are stored separately
+under `app_data/models/llama.cpp/opencl_gpu/bin`. The OpenCL package is the
+official native Windows ARM64 llama.cpp b10107 Adreno build and must contain
+`llama-server.exe` and `ggml-opencl.dll`; setup verifies the release archive
+checksum, executable build/commit, and every extracted file.
+
+Inspect `GET /api/system/diagnostics` or `GET /api/system/offline/runtime` after
+loading. The offline diagnostic reports:
+
+- requested and active backend;
+- llama.cpp build;
+- selected device;
+- offloaded and expected layer counts;
+- initialization status and whether fallback occurred.
+
+On `opencl_gpu`, startup succeeds only if the current llama.cpp log names
+`Qualcomm(R) Adreno(TM) X1-85 GPU`, enables the Adreno kernels, and reports
+`37/37` Qwen3-8B layers offloaded. Missing DLLs, an unsupported device,
+incomplete offload, or startup failure produces an actionable error. It never
+silently falls back. If `allow_fallback: true` is deliberately configured, the
+GPU error and CPU fallback decision are both logged and exposed in diagnostics.
+
+The validated hardware is Windows 11 ARM64 on Snapdragon X Elite X1E80100 with
+Adreno X1-85. Qwen3-8B generated valid output with complete GPU offload, but
+measured generation performance was currently similar to CPU (9.72 versus
+9.53 tokens/s in the controlled proof). CPU therefore remains recommended.
+
+Troubleshooting and rollback:
+
+1. Confirm the OpenCL runtime setup completed and `ggml-opencl.dll` is present.
+2. Load the provider, then inspect `/api/system/offline/runtime` for the exact
+   initialization error and `logs/llama/llama_server.stderr.log` for device and
+   offload lines.
+3. Keep fallback disabled while diagnosing so a GPU failure cannot be hidden.
+4. Roll back immediately by setting `backend: cpu` in `config/runtime.yaml` or
+   `TEXTBOOK_CHAT_OFFLINE_BACKEND=cpu`, restart the API, and run offline setup
+   only if the verified CPU runtime is absent. No frontend rebuild is needed.
 
 For frontend development, run the API and Vite server in separate terminals:
 

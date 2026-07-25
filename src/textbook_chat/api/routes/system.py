@@ -27,7 +27,10 @@ def get_status(service: SystemStatusService = Depends(system_service)) -> System
 
 
 @router.get("/diagnostics")
-def get_diagnostics(service: SystemStatusService = Depends(system_service)) -> dict:
+def get_diagnostics(
+    service: SystemStatusService = Depends(system_service),
+    runtime=Depends(offline_runtime),
+) -> dict:
     """Return local runtime identities without environment values or content."""
 
     status_payload = service.status().model_dump(mode="json")
@@ -40,11 +43,14 @@ def get_diagnostics(service: SystemStatusService = Depends(system_service)) -> d
             "process_id": os.getpid(),
         },
         "readiness": status_payload,
+        "offline_generation": runtime.status(),
         "security": {
             "binding": "127.0.0.1",
             "api_key_present": service.settings.openai_api_key_present,
             "api_key_value_exposed": False,
-            "automatic_provider_fallback": False,
+            "automatic_provider_fallback": (
+                service.settings.offline_generation.allow_fallback
+            ),
             "automatic_online_retries": 0,
         },
     }

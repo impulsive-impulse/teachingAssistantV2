@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import logging
 import socket
 import threading
 import time
@@ -12,8 +13,12 @@ from typing import Any, Iterator
 
 from textbook_audit.generation_phase_a import LlamaServerConfig, LocalLlamaServer
 
-from ..config import AppSettings
+from ..config import AppSettings, OfflineBackend
 from ..models.offline import OfflineArtifactRegistry
+from .backends import (
+    BackendInitialization,
+    backend_strategy,
+)
 from .online import (
     GenerationCancelled,
     IncrementalAnswerExtractor,
@@ -22,7 +27,7 @@ from .online import (
 
 
 class OfflineRuntimeManager:
-    """Own one verified, CPU-only llama-server and serialize its generations."""
+    """Own one verified backend server while keeping generation logic shared."""
 
     def __init__(self, settings: AppSettings, artifacts: OfflineArtifactRegistry):
         self.settings = settings
@@ -42,6 +47,8 @@ class OfflineRuntimeManager:
         self._state_lock = threading.RLock()
         self._generation_lock = threading.Lock()
         self._server: LocalLlamaServer | None = None
+        self._initialization: BackendInitialization | None = None
+        self._logger = logging.getLogger("textbook_chat.offline_runtime")
 
     @property
     def loaded(self) -> bool:
@@ -53,19 +60,57 @@ class OfflineRuntimeManager:
     def preflight(self) -> None:
         """Reject unavailable offline work before a user message is persisted."""
 
-        if self.artifacts.discover() is None:
-            error = self.artifacts.compatibility_error()
-            raise RuntimeError(error or "Frozen offline provider setup is required.")
+        selected = self.settings.offline_generation.backend
+        if self.artifacts.discover(selected) is not None:
+            return
+        error = self.artifacts.artifact_error(selected)
+        if (
+            selected == "opencl_gpu"
+            and self.settings.offline_generation.allow_fallback
+            and self.artifacts.discover("cpu") is not None
+        ):
+            self._logger.warning(
+                "OpenCL preflight failed; explicit CPU fallback is available: %s", error
+            )
+            return
+        raise RuntimeError(error or "Frozen offline provider setup is required.")
 
     def status(self) -> dict[str, Any]:
-        compatibility = self.artifacts.compatibility_error()
+        selected = self.settings.offline_generation.backend
+        compatibility = self.artifacts.compatibility_error(selected)
+        selected_ready = self.artifacts.discover(selected) is not None
+        fallback_ready = bool(
+            selected == "opencl_gpu"
+            and self.settings.offline_generation.allow_fallback
+            and self.artifacts.discover("cpu") is not None
+        )
+        initialization = self._initialization.as_dict() if self._initialization else {
+            "requested_backend": selected,
+            "active_backend": None,
+            "runtime_build": self.artifacts.runtime_spec(selected).build_number,
+            "selected_device": None,
+            "offloaded_layer_count": 0,
+            "expected_layer_count": 37 if selected == "opencl_gpu" else 0,
+            "initialization_status": "not_initialized",
+            "fallback_used": False,
+            "initialization_error": None,
+        }
         return {
             "state": "loaded" if self.loaded else "unloaded",
-            "artifacts_ready": self.artifacts.discover() is not None,
+            "artifacts_ready": selected_ready or fallback_ready,
+            "selected_artifacts_ready": selected_ready,
+            "fallback_artifacts_ready": fallback_ready,
             "compatible": compatibility is None,
+            "allow_fallback": self.settings.offline_generation.allow_fallback,
+            **initialization,
             "detail": compatibility or (
                 "Offline model is resident in memory." if self.loaded
-                else "Offline model loads on first use or through this settings control."
+                else (
+                    "Selected OpenCL artifacts are unavailable; verified CPU fallback "
+                    "is ready because allow_fallback is true."
+                    if fallback_ready else
+                    "Offline model loads on first use or through this settings control."
+                )
             ),
         }
 
@@ -74,26 +119,93 @@ class OfflineRuntimeManager:
 
         with self._state_lock:
             if self.loaded:
-                return {"state": "loaded", "load_seconds": self._server.load_seconds}
-            resolved = self.artifacts.discover()
-            if resolved is None:
-                error = self.artifacts.compatibility_error()
-                raise RuntimeError(error or "Frozen offline provider setup is required.")
-            server = LocalLlamaServer(LlamaServerConfig(
-                executable=resolved.server_path,
-                model=resolved.model_path,
-                port=_free_loopback_port(),
-                runtime=self.runtime,
-                generation=self.generation,
-                log_dir=self.settings.data_dir / "logs" / "llama",
-            ))
+                return {
+                    "state": "loaded",
+                    "load_seconds": self._server.load_seconds,
+                    **(self._initialization.as_dict() if self._initialization else {}),
+                }
+            selected = self.settings.offline_generation.backend
             try:
-                server.start(timeout_seconds=180)
-            except Exception:
-                server.stop()
-                raise
+                server, initialization = self._start_backend(selected)
+            except Exception as gpu_error:
+                if not (
+                    selected == "opencl_gpu"
+                    and self.settings.offline_generation.allow_fallback
+                ):
+                    self._logger.error(
+                        "Offline backend initialization failed; requested=%s fallback=false error=%s",
+                        selected, gpu_error,
+                    )
+                    raise RuntimeError(
+                        f"{selected} backend initialization failed: {gpu_error}"
+                    ) from gpu_error
+                self._logger.warning(
+                    "OpenCL GPU initialization failed; falling back to CPU because "
+                    "allow_fallback=true: %s",
+                    gpu_error,
+                )
+                try:
+                    server, cpu_initialization = self._start_backend("cpu")
+                except Exception as cpu_error:
+                    raise RuntimeError(
+                        "OpenCL GPU initialization failed and explicit CPU fallback also "
+                        f"failed. GPU: {gpu_error}; CPU: {cpu_error}"
+                    ) from cpu_error
+                initialization = BackendInitialization(
+                    requested_backend="opencl_gpu",
+                    active_backend="cpu",
+                    runtime_build=cpu_initialization.runtime_build,
+                    selected_device=cpu_initialization.selected_device,
+                    offloaded_layers=cpu_initialization.offloaded_layers,
+                    expected_layers=cpu_initialization.expected_layers,
+                    initialization_status="ready_with_fallback",
+                    fallback_used=True,
+                    initialization_error=str(gpu_error),
+                )
             self._server = server
-            return {"state": "loaded", "load_seconds": server.load_seconds}
+            self._initialization = initialization
+            self._logger.info(
+                "Offline backend ready: requested=%s active=%s build=%s device=%s "
+                "offloaded=%s/%s status=%s",
+                initialization.requested_backend,
+                initialization.active_backend,
+                initialization.runtime_build,
+                initialization.selected_device,
+                initialization.offloaded_layers,
+                initialization.expected_layers,
+                initialization.initialization_status,
+            )
+            return {
+                "state": "loaded", "load_seconds": server.load_seconds,
+                **initialization.as_dict(),
+            }
+
+    def _start_backend(
+        self, selected: OfflineBackend
+    ) -> tuple[LocalLlamaServer, BackendInitialization]:
+        strategy = backend_strategy(selected)
+        resolved = self.artifacts.discover(strategy.name)
+        if resolved is None:
+            raise RuntimeError(
+                self.artifacts.artifact_error(strategy.name)
+                or "Frozen offline provider setup is required."
+            )
+        server = LocalLlamaServer(LlamaServerConfig(
+            executable=resolved.server_path,
+            model=resolved.model_path,
+            port=_free_loopback_port(),
+            runtime=strategy.runtime_config(self.runtime),
+            generation=self.generation,
+            log_dir=self.settings.data_dir / "logs" / "llama",
+            extra_arguments=strategy.extra_arguments(),
+        ))
+        try:
+            server.start(timeout_seconds=300 if strategy.name == "opencl_gpu" else 180)
+            initialization = strategy.validate_initialization(server, resolved)
+            return server, initialization
+        except Exception:
+            server.stop()
+            raise
 
     def unload(self) -> dict[str, Any]:
         """Release RAM only when no generation owns the single offline slot."""
@@ -105,6 +217,7 @@ class OfflineRuntimeManager:
                 if self._server:
                     self._server.stop()
                     self._server = None
+                    self._initialization = None
             return {"state": "unloaded"}
         finally:
             self._generation_lock.release()
@@ -115,6 +228,7 @@ class OfflineRuntimeManager:
                 if self._server:
                     self._server.stop()
                     self._server = None
+                    self._initialization = None
 
     def request_payload(self, prompt: str) -> dict[str, Any]:
         """Return the frozen OpenAI-compatible llama.cpp request contract."""
@@ -147,6 +261,8 @@ class OfflineRuntimeManager:
             yield ProviderStreamEvent("started", {
                 "model": self.artifacts.model_filename,
                 "load_seconds": load["load_seconds"],
+                "backend": load.get("active_backend"),
+                "runtime_build": load.get("runtime_build"),
             })
             request = urllib.request.Request(
                 f"http://127.0.0.1:{server.config.port}/v1/chat/completions",
@@ -199,7 +315,9 @@ class OfflineRuntimeManager:
                 "response_id": response_id,
                 "response_status": "completed",
                 "resolved_model": (
-                    f"{self.artifacts.model_filename} · llama.cpp b{self.runtime['build_number']}"
+                    f"{self.artifacts.model_filename} · llama.cpp "
+                    f"b{load.get('runtime_build', self.runtime['build_number'])} · "
+                    f"{load.get('active_backend', 'cpu')}"
                 ),
                 "usage": {
                     "prompt_tokens": int(usage.get("prompt_tokens", 0) or 0),

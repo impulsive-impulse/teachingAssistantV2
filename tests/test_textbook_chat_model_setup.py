@@ -4,6 +4,8 @@ from __future__ import annotations
 
 import time
 from pathlib import Path
+from types import SimpleNamespace
+from unittest.mock import patch
 
 import pytest
 
@@ -67,6 +69,55 @@ def test_setup_reuses_verified_snapshot_without_download(tmp_path: Path) -> None
     with database.connect() as connection:
         versions = {row["version"] for row in connection.execute("SELECT version FROM schema_migrations")}
     assert versions == set(range(1, SCHEMA_VERSION + 1))
+
+
+def test_opencl_setup_reuses_shared_qwen_and_downloads_only_runtime(tmp_path: Path) -> None:
+    database = Database(tmp_path / "app.db")
+    database.initialize()
+    repository = ModelSetupRepository(database)
+
+    class FakeOfflineRegistry:
+        backend = "opencl_gpu"
+        ready = False
+        model = tmp_path / "Qwen3-8B-Q4_K_M.gguf"
+
+        def discover(self):
+            return SimpleNamespace(model_size_bytes=5_027_783_488) if self.ready else None
+
+        def model_candidates(self):
+            return [self.model]
+
+        def verify_model(self, path):
+            return path == self.model
+
+    registry = FakeOfflineRegistry()
+    coordinator = ModelSetupCoordinator(
+        repository, FakeRegistry(SimpleNamespace()), FakeIngestion(), registry  # type: ignore[arg-type]
+    )
+    job = repository.create(ModelSetupCoordinator.OFFLINE_COMPONENT)
+
+    def complete_runtime(_job_uuid: str) -> None:
+        registry.ready = True
+
+    try:
+        with (
+            patch.object(
+                coordinator, "_download_offline_model",
+                side_effect=AssertionError("shared Qwen must not be downloaded"),
+            ),
+            patch.object(coordinator, "_download_llama_runtime", side_effect=complete_runtime)
+            as runtime_download,
+        ):
+            coordinator._run_offline_setup(job["id"])
+    finally:
+        coordinator.shutdown()
+
+    current = repository.get(job["id"])
+    assert current is not None
+    assert current["state"] == "completed"
+    assert current["downloaded_bytes"] == 0
+    assert "Shared frozen Qwen model reused" in current["user_message"]
+    runtime_download.assert_called_once_with(job["id"])
 
 
 FROZEN_SNAPSHOT = (

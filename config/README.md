@@ -17,3 +17,14 @@ matching report directory. Do not silently edit v1.
 
 Experiment configs remain available for reproduction. They are evidence for a
 baseline decision, not the current production source of truth.
+
+## Operational settings
+
+- `runtime.yaml`: mutable application-runtime choices that do not alter a
+  frozen retrieval or generation decision. `offline_generation.backend`
+  accepts `cpu` or `opencl_gpu`; `cpu` is the default.
+
+The environment variables `TEXTBOOK_CHAT_OFFLINE_BACKEND` and
+`TEXTBOOK_CHAT_OFFLINE_ALLOW_FALLBACK` may override these two operational
+values for one process. They cannot change the model, prompt, retrieval
+context, generation parameters, or validators.

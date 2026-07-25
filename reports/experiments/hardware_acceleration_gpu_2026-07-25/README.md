@@ -36,6 +36,10 @@ The same proof was subsequently repeated with cached Qwen3 8.19B and 14.77B
 Q4_K_M models. See `findings/model_scaling_8b_14b.md` and
 `findings/model_scaling_results.json`.
 
+The integrated production `opencl_gpu` strategy was then exercised with the
+shared Qwen3-8B artifact and frozen request settings. See
+`findings/production_pipeline_validation.md`.
+
 ## Required proof
 
 The run is accepted only if all of these are captured:

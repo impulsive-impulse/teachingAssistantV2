@@ -78,6 +78,20 @@
     }
   ],
   "performance_summary": "Compatibility passed for all three tested models. GPU performance was favorable at 0.5B, approximately tied at 8B, and slower than CPU at 14B.",
+  "production_integration": {
+    "validated": true,
+    "backend": "opencl_gpu",
+    "runtime_build": 10107,
+    "model": "Qwen3-8B-Q4_K_M.gguf",
+    "model_reused": true,
+    "selected_device": "Qualcomm(R) Adreno(TM) X1-85 GPU",
+    "layers_offloaded": "37/37",
+    "allow_fallback": false,
+    "fallback_used": false,
+    "load_seconds": 45.29,
+    "valid_streamed_json": true,
+    "evidence": "findings/production_pipeline_validation.md"
+  },
   "version_control": {
     "tracked": [
       "documentation",

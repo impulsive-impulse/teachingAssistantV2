@@ -10,8 +10,9 @@ from __future__ import annotations
 import json
 import os
 import hashlib
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
+from typing import Literal, cast
 
 import yaml
 from dotenv import load_dotenv
@@ -21,6 +22,17 @@ from .domain import FrozenProfileSummary
 
 RETRIEVAL_CONFIG = Path("config/retrieval_baseline_v1.yaml")
 GENERATION_CONFIG = Path("config/generation_baseline_v1.json")
+RUNTIME_CONFIG = Path("config/runtime.yaml")
+
+OfflineBackend = Literal["cpu", "opencl_gpu"]
+
+
+@dataclass(frozen=True)
+class OfflineGenerationSettings:
+    """Mutable execution choice; it must not alter the frozen answer contract."""
+
+    backend: OfflineBackend = "cpu"
+    allow_fallback: bool = False
 
 
 def repository_root() -> Path:
@@ -41,6 +53,9 @@ class AppSettings:
     max_upload_bytes: int
     max_pdf_pages: int
     openai_api_key_present: bool
+    offline_generation: OfflineGenerationSettings = field(
+        default_factory=OfflineGenerationSettings
+    )
 
     @classmethod
     def load(cls, root: Path | None = None) -> "AppSettings":
@@ -56,6 +71,7 @@ class AppSettings:
         port = _bounded_int("TEXTBOOK_CHAT_PORT", 8765, minimum=1, maximum=65535)
         upload_mb = _bounded_int("TEXTBOOK_CHAT_MAX_UPLOAD_MB", 500, 1, 4096)
         max_pages = _bounded_int("TEXTBOOK_CHAT_MAX_PDF_PAGES", 1500, 1, 10000)
+        offline_generation = _load_offline_generation(resolved_root)
         return cls(
             root=resolved_root,
             data_dir=data_dir,
@@ -65,6 +81,7 @@ class AppSettings:
             max_upload_bytes=upload_mb * 1024 * 1024,
             max_pdf_pages=max_pages,
             openai_api_key_present=bool(os.getenv("OPENAI_API_KEY", "").strip()),
+            offline_generation=offline_generation,
         )
 
     def ensure_directories(self) -> None:
@@ -92,6 +109,56 @@ def _bounded_int(name: str, default: int, minimum: int, maximum: int) -> int:
     if not minimum <= value <= maximum:
         raise ValueError(f"{name} must be between {minimum} and {maximum}")
     return value
+
+
+def _load_offline_generation(root: Path) -> OfflineGenerationSettings:
+    """Load the operational backend gate with explicit environment overrides."""
+
+    path = root / RUNTIME_CONFIG
+    payload: object = {}
+    if path.is_file():
+        payload = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    if not isinstance(payload, dict):
+        raise ValueError("runtime configuration must contain a mapping")
+    unknown_root = set(payload) - {"offline_generation"}
+    if unknown_root:
+        raise ValueError(f"unknown runtime configuration fields: {sorted(unknown_root)}")
+    section = payload.get("offline_generation", {})
+    if not isinstance(section, dict):
+        raise ValueError("offline_generation must contain a mapping")
+    unknown = set(section) - {"backend", "allow_fallback"}
+    if unknown:
+        raise ValueError(f"unknown offline_generation fields: {sorted(unknown)}")
+
+    backend = os.getenv(
+        "TEXTBOOK_CHAT_OFFLINE_BACKEND", str(section.get("backend", "cpu"))
+    ).strip().lower()
+    if backend not in {"cpu", "opencl_gpu"}:
+        raise ValueError(
+            "offline_generation.backend must be one of: cpu, opencl_gpu"
+        )
+    configured_fallback = section.get("allow_fallback", False)
+    if not isinstance(configured_fallback, bool):
+        raise ValueError("offline_generation.allow_fallback must be a boolean")
+    fallback_raw = os.getenv("TEXTBOOK_CHAT_OFFLINE_ALLOW_FALLBACK")
+    allow_fallback = (
+        configured_fallback
+        if fallback_raw is None
+        else _parse_boolean("TEXTBOOK_CHAT_OFFLINE_ALLOW_FALLBACK", fallback_raw)
+    )
+    return OfflineGenerationSettings(
+        backend=cast(OfflineBackend, backend),
+        allow_fallback=allow_fallback,
+    )
+
+
+def _parse_boolean(name: str, raw: str) -> bool:
+    normalized = raw.strip().lower()
+    if normalized in {"1", "true", "yes", "on"}:
+        return True
+    if normalized in {"0", "false", "no", "off"}:
+        return False
+    raise ValueError(f"{name} must be a boolean")
 
 
 def validate_frozen_configs(settings: AppSettings) -> FrozenProfileSummary:

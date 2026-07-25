@@ -50,7 +50,9 @@ src/textbook_chat/
     runtime.py            uploaded-book Retrieval Baseline v1 adapter
     registry.py           lazy CPU encoder and per-book runtime cache
   generation/
+    backends.py           CPU/OpenCL strategy, command flags, log validation
     prompt.py             exact P1 prompt and citation validator boundary
+    offline.py            shared resident llama.cpp streaming provider
     online.py             pinned Responses API streaming provider
 ```
 
@@ -67,7 +69,54 @@ Important invariants already enforced are:
   references that same row and never retrieves again.
 - Transcript messages are displayed but are never supplied as model history.
 - Online disclosure is enforced by the API as well as represented in the UI.
-- Provider failure never triggers an automatic retry or backend switch.
+- Provider failure never triggers an automatic online/offline switch. The
+  offline OpenCL strategy also fails closed unless its operational
+  `allow_fallback` flag explicitly permits and records a CPU fallback.
+
+## Offline execution strategies
+
+`config/runtime.yaml` contains the typed operational gate:
+
+```yaml
+offline_generation:
+  backend: cpu
+  allow_fallback: false
+```
+
+`AppSettings.load()` validates it at API startup. The backend factory itself is
+resolved later, when the resident offline server starts. This keeps frontend
+assets and the shared generation provider independent of the execution
+backend. Environment overrides are available as
+`TEXTBOOK_CHAT_OFFLINE_BACKEND` and
+`TEXTBOOK_CHAT_OFFLINE_ALLOW_FALLBACK`.
+
+The CPU strategy preserves the evaluated b10046 command byte-for-byte. The
+OpenCL strategy uses the verified native ARM64 b10107 Adreno runtime, requests
+`--device GPUOpenCL --n-gpu-layers 99`, and then validates the current process
+session log. Readiness alone is insufficient: the log must prove the OpenCL
+DLL loaded, the Qualcomm Adreno X1-85 was selected, optimized Adreno kernels
+were enabled, and all 37 Qwen3-8B layers were offloaded.
+
+Both strategies receive the same model path and the same shared runtime
+dimensions, request payload, prompt, retrieval context, generation settings,
+stream parser, and answer validator. Backend-specific code is confined to
+`generation/backends.py`, runtime artifact resolution, and setup extraction.
+
+Runtime locations:
+
+```text
+app_data/models/generation/                 shared Qwen3-8B GGUF/cache
+app_data/models/llama.cpp/bin/              frozen CPU b10046 runtime
+app_data/models/llama.cpp/opencl_gpu/bin/   OpenCL Adreno b10107 runtime
+app_data/logs/llama/                         append-only server sessions
+```
+
+`GET /api/system/diagnostics` includes the offline runtime diagnostic; the
+focused `GET /api/system/offline/runtime` endpoint returns the same backend
+state. An OpenCL initialization error is raised to the caller unless fallback
+was explicitly enabled. When enabled, both the GPU failure and CPU decision
+are written to the application log and the diagnostic status becomes
+`ready_with_fallback`.
 
 ## Frontend layout
 
@@ -152,8 +201,8 @@ The app-focused suite covers database migrations, upload and validation gates,
 artifact checksums, model setup, retrieval ranking/scoping, frozen generation
 settings, citation validation, independent message persistence, byte-identical
 regeneration prompts, and coordinator terminal states without making paid calls.
-The complete suite currently passes under the selected x64 runtime (`193
-passed`). A real Biology upload also passed validation, dense indexing, manifest
+The complete suite is expected to pass under the selected x64 runtime. A real
+Biology upload also passed validation, dense indexing, manifest
 publication, and a five-result retrieval smoke query on the Windows ARM host.
 
 ## Current implementation status
@@ -194,11 +243,12 @@ Implemented:
 - Responsive book-scoped chat UI with persistent transcript, chat/per-message
   backend selection, online disclosure, stop state, regeneration, and lazy
   expandable evidence excerpts.
-- Exact Qwen revision/GGUF SHA and official llama.cpp b10046 Windows ARM64
-  archive SHA setup, safe extraction, build/commit verification, and extracted
-  runtime manifest hashing.
-- Resident loopback-only llama.cpp lifecycle with the evaluated CPU flags,
-  serialized streaming, cancellation, explicit unload, and process shutdown.
+- Exact shared Qwen revision/GGUF SHA plus official llama.cpp b10046 CPU and
+  b10107 OpenCL-Adreno Windows ARM64 archive setup, safe extraction,
+  build/commit verification, and extracted runtime manifest hashing.
+- Resident loopback-only llama.cpp lifecycle with CPU/OpenCL strategies,
+  complete Adreno layer-offload validation, explicit opt-in fallback,
+  serialized streaming, cancellation, unload, and process shutdown.
 - Redacted system/per-attempt diagnostics, source-PDF viewing, confirmed
   chat/book deletion with runtime eviction and owned-path checks.
 - Windows launcher with frontend build, dependency/port checks, health polling,

@@ -416,6 +416,7 @@ class LlamaServerConfig:
     runtime: dict[str, Any]
     generation: dict[str, Any]
     log_dir: Path
+    extra_arguments: tuple[str, ...] = ()
 
 
 class LocalLlamaServer:
@@ -427,12 +428,13 @@ class LocalLlamaServer:
         self.process: subprocess.Popen[bytes] | None = None
         self._stdout_handle: Any = None
         self._stderr_handle: Any = None
+        self._stderr_session_offset = 0
         self.load_seconds: float | None = None
 
     def command(self) -> list[str]:
         """Build the exact server command recorded in experiment state."""
         runtime = self.config.runtime
-        return [
+        command = [
             str(self.config.executable), "--model", str(self.config.model),
             "--host", "127.0.0.1", "--port", str(self.config.port),
             "--ctx-size", str(runtime["context_size"]),
@@ -445,6 +447,8 @@ class LocalLlamaServer:
             "--seed", str(self.config.generation["seed"]),
             "--no-webui",
         ]
+        command.extend(self.config.extra_arguments)
+        return command
 
     def start(self, timeout_seconds: float = 180.0) -> None:
         """Start llama-server, persist both logs, and wait for model readiness."""
@@ -460,6 +464,7 @@ class LocalLlamaServer:
         self._stderr_handle.write(marker)
         self._stdout_handle.flush()
         self._stderr_handle.flush()
+        self._stderr_session_offset = self._stderr_handle.tell()
         flags = getattr(subprocess, "CREATE_NO_WINDOW", 0)
         started = time.perf_counter()
         self.process = subprocess.Popen(
@@ -479,6 +484,18 @@ class LocalLlamaServer:
             except (urllib.error.URLError, TimeoutError):
                 time.sleep(0.1)
         raise TimeoutError(f"llama-server was not healthy within {timeout_seconds} seconds")
+
+    def stderr_session_text(self) -> str:
+        """Return only stderr emitted by the current server session."""
+
+        if self._stderr_handle is not None:
+            self._stderr_handle.flush()
+        path = self.config.log_dir / "llama_server.stderr.log"
+        if not path.is_file():
+            return ""
+        with path.open("rb") as handle:
+            handle.seek(self._stderr_session_offset)
+            return handle.read().decode("utf-8", errors="replace")
 
     def generate(self, prompt: str) -> dict[str, Any]:
         """Stream one JSON completion to measure first-token and total latency.

@@ -103,8 +103,28 @@ class SystemStatusService:
         if artifacts:
             return ComponentStatus(
                 state="ready",
-                detail="Qwen SHA-256 and llama.cpp build 10046 manifest are verified.",
+                detail=(
+                    f"Qwen SHA-256 and {artifacts.backend} llama.cpp build "
+                    f"{artifacts.runtime_build} manifest are verified."
+                ),
             )
+        if (
+            self.settings.offline_generation.backend == "opencl_gpu"
+            and self.settings.offline_generation.allow_fallback
+        ):
+            cpu_artifacts = self.offline_registry.discover("cpu")
+            if cpu_artifacts:
+                return ComponentStatus(
+                    state="ready",
+                    detail=(
+                        "OpenCL runtime is not ready; explicit CPU fallback is enabled "
+                        f"and verified at llama.cpp build {cpu_artifacts.runtime_build}."
+                    ),
+                )
         return ComponentStatus(
-            state="setup_required", detail="Pinned Qwen model or llama.cpp runtime requires setup."
+            state="setup_required",
+            detail=(
+                self.offline_registry.artifact_error()
+                or "Pinned Qwen model or llama.cpp runtime requires setup."
+            ),
         )

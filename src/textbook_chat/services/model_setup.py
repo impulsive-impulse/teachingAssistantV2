@@ -13,8 +13,6 @@ from pathlib import Path
 
 from ..models.embedding import EmbeddingArtifactRegistry
 from ..models.offline import (
-    LLAMA_ARCHIVE_SHA256,
-    LLAMA_ARCHIVE_URL,
     OfflineArtifactRegistry,
 )
 from ..repositories import ModelSetupRepository
@@ -194,7 +192,16 @@ class ModelSetupCoordinator:
                     user_message="Frozen offline provider artifacts verified and reused.", terminal=True,
                 )
                 return
-            model_path = self._download_offline_model(job_uuid)
+            model_path = next(
+                (
+                    path for path in self.offline_registry.model_candidates()
+                    if self.offline_registry.verify_model(path)
+                ),
+                None,
+            )
+            reused_model = model_path is not None
+            if model_path is None:
+                model_path = self._download_offline_model(job_uuid)
             if not self.offline_registry.verify_model(model_path):
                 raise RuntimeError("downloaded Qwen GGUF failed its frozen SHA-256 check")
             self._download_llama_runtime(job_uuid)
@@ -203,9 +210,14 @@ class ModelSetupCoordinator:
                 raise RuntimeError("offline artifacts failed final identity and version checks")
             self.repository.update(
                 job_uuid, state="completed", stage="verified", progress=1,
-                downloaded_bytes=verified.model_size_bytes,
+                downloaded_bytes=0 if reused_model else verified.model_size_bytes,
                 total_bytes=verified.model_size_bytes,
-                user_message="Frozen Qwen model and llama.cpp runtime downloaded and verified.",
+                user_message=(
+                    "Shared frozen Qwen model reused; selected llama.cpp runtime "
+                    "downloaded and verified."
+                    if reused_model else
+                    "Frozen Qwen model and llama.cpp runtime downloaded and verified."
+                ),
                 terminal=True,
             )
         except Exception as exc:
@@ -246,20 +258,29 @@ class ModelSetupCoordinator:
         registry = self.offline_registry
         if registry is None:
             raise RuntimeError("offline artifact setup is not configured")
-        archive = registry.runtime_root / "llama-runtime.zip.partial"
-        registry.runtime_root.mkdir(parents=True, exist_ok=True)
+        backend = registry.backend
+        spec = registry.runtime_spec(backend)
+        runtime_dir = registry.runtime_directory(backend)
+        archive = runtime_dir / "llama-runtime.zip.partial"
+        runtime_dir.mkdir(parents=True, exist_ok=True)
         self.repository.update(
             job_uuid, state="running", stage="downloading_llama", progress=0.86,
-            user_message="Downloading llama.cpp build 10046 for Windows ARM64 CPU.",
+            user_message=(
+                f"Downloading llama.cpp build {spec.build_number} for Windows ARM64 "
+                f"{backend}."
+            ),
         )
-        with urllib.request.urlopen(LLAMA_ARCHIVE_URL, timeout=120) as response, archive.open("wb") as output:
+        with urllib.request.urlopen(spec.archive_url, timeout=120) as response, archive.open("wb") as output:
             shutil.copyfileobj(response, output, length=1024 * 1024)
-        digest = hashlib.sha256(archive.read_bytes()).hexdigest()
-        if digest != LLAMA_ARCHIVE_SHA256:
+        digest = hashlib.sha256()
+        with archive.open("rb") as source:
+            for block in iter(lambda: source.read(4 * 1024 * 1024), b""):
+                digest.update(block)
+        if digest.hexdigest() != spec.archive_sha256:
             archive.unlink(missing_ok=True)
             raise RuntimeError("llama.cpp release archive failed its official SHA-256 check")
-        staging = registry.runtime_root / "bin.staging"
-        _assert_runtime_child(registry.runtime_root, staging)
+        staging = runtime_dir / "bin.staging"
+        _assert_runtime_child(runtime_dir, staging)
         if staging.exists():
             shutil.rmtree(staging)
         staging.mkdir(parents=True)
@@ -273,8 +294,8 @@ class ModelSetupCoordinator:
         if len(server_candidates) != 1:
             raise RuntimeError("llama.cpp archive does not contain exactly one server binary")
         extracted_root = server_candidates[0].parent
-        final = registry.runtime_root / "bin"
-        _assert_runtime_child(registry.runtime_root, final)
+        final = runtime_dir / "bin"
+        _assert_runtime_child(runtime_dir, final)
         if final.exists():
             shutil.rmtree(final)
         if extracted_root == staging:
@@ -287,7 +308,7 @@ class ModelSetupCoordinator:
             job_uuid, state="running", stage="verifying_llama", progress=0.96,
             user_message="Verifying llama.cpp build, commit, and extracted file checksums.",
         )
-        registry.write_runtime_manifest(final)
+        registry.write_runtime_manifest(final, backend)
 
 
 def _assert_runtime_child(root: Path, target: Path) -> None:

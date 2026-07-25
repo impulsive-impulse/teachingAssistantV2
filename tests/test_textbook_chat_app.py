@@ -51,6 +51,21 @@ def test_startup_initializes_database_and_reports_locked_profiles(tmp_path: Path
     assert app_settings.database_path.is_file()
 
 
+def test_diagnostics_expose_default_offline_backend_without_secrets(tmp_path: Path) -> None:
+    with TestClient(create_app(settings(tmp_path), run_workers=False)) as client:
+        response = client.get("/api/system/diagnostics")
+
+    assert response.status_code == 200
+    offline = response.json()["offline_generation"]
+    assert offline["requested_backend"] == "cpu"
+    assert offline["active_backend"] is None
+    assert offline["runtime_build"] == 10046
+    assert offline["selected_device"] is None
+    assert offline["offloaded_layer_count"] == 0
+    assert offline["initialization_status"] == "not_initialized"
+    assert response.json()["security"]["automatic_provider_fallback"] is False
+
+
 def test_upload_is_staged_and_byte_identical_duplicate_is_reused(tmp_path: Path) -> None:
     app_settings = settings(tmp_path)
     contents = pdf_bytes()
