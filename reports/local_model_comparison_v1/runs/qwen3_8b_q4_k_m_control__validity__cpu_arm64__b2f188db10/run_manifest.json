@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m_control__validity__cpu_arm64__b2f188db10",
+  "created_at": "2026-07-25T19:18:52+00:00",
+  "model_key": "qwen3_8b_q4_k_m_control",
+  "model": {
+    "control": true,
+    "display_name": "Qwen3-8B Q4_K_M — frozen v1 control",
+    "verification_status": "frozen_production_control",
+    "repository": "Qwen/Qwen3-8B-GGUF",
+    "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+    "artifact": {
+      "filename": "Qwen3-8B-Q4_K_M.gguf",
+      "format": "GGUF",
+      "quantization": "Q4_K_M",
+      "bytes": 5027783488,
+      "gib": 4.682,
+      "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785"
+    },
+    "chat_template": {
+      "source": "official GGUF embedded template",
+      "roles": [
+        "system",
+        "user",
+        "assistant"
+      ],
+      "system_role_supported": true,
+      "instruction_handling": "Historical P1 benchmark prompt in the user message.",
+      "qwen_no_think_prefix": true,
+      "kwargs": {
+        "enable_thinking": false
+      }
+    },
+    "recommended_decoding": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": 40,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "max_output_tokens": 384
+    },
+    "download": {
+      "approved": true,
+      "access_available": true,
+      "destination": "app_data/models/generation",
+      "downloaded_by_experiment": false,
+      "historical_control": true
+    }
+  },
+  "model_path": "X:\\teachingAssistantV2\\app_data\\models\\generation\\models--Qwen--Qwen3-8B-GGUF\\snapshots\\7c41481f57cb95916b40956ab2f0b139b296d974\\Qwen3-8B-Q4_K_M.gguf",
+  "model_sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785",
+  "stage": "validity",
+  "backend": "cpu_arm64",
+  "runtime": {
+    "engine": "llama.cpp",
+    "build_number": 10046,
+    "commit": "32e789fdfd598e9a1872da55ac941e4d94f030bd",
+    "architecture": "windows-arm64",
+    "backend": "cpu",
+    "context_size": 8192,
+    "threads": 10,
+    "threads_batch": 10,
+    "batch_size": 512,
+    "ubatch_size": 256,
+    "gpu_layers": 0,
+    "parallel_slots": 1
+  },
+  "server_command": [
+    "X:\\teachingAssistantV2\\app_data\\models\\llama.cpp\\bin\\llama-server.exe",
+    "--model",
+    "X:\\teachingAssistantV2\\app_data\\models\\generation\\models--Qwen--Qwen3-8B-GGUF\\snapshots\\7c41481f57cb95916b40956ab2f0b139b296d974\\Qwen3-8B-Q4_K_M.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18120",
+    "--ctx-size",
+    "8192",
+    "--threads",
+    "10",
+    "--threads-batch",
+    "10",
+    "--batch-size",
+    "512",
+    "--ubatch-size",
+    "256",
+    "--n-gpu-layers",
+    "0",
+    "--parallel",
+    "1",
+    "--seed",
+    "42",
+    "--no-webui",
+    "--metrics",
+    "--check-tensors"
+  ],
+  "backend_log_evidence": {
+    "backend": "cpu_arm64",
+    "adreno_device_named": false,
+    "opencl_device_selected": false,
+    "adreno_kernels_selected": false,
+    "offloaded_layers": 0,
+    "available_layers": 0,
+    "valid": true
+  },
+  "chat_template": {
+    "source": "official GGUF embedded template",
+    "roles": [
+      "system",
+      "user",
+      "assistant"
+    ],
+    "system_role_supported": true,
+    "instruction_handling": "Historical P1 benchmark prompt in the user message.",
+    "qwen_no_think_prefix": true,
+    "kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "decoding": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 40,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "seed": 42,
+    "max_output_tokens": 384,
+    "chat_template_kwargs": {
+      "enable_thinking": false
+    }
+  },
+  "question_ids": [
+    "GEN-BIO-002"
+  ],
+  "completed_question_ids": [
+    "GEN-BIO-002"
+  ],
+  "frozen_input_hashes": {
+    "retrieval_baseline": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6",
+    "generation_baseline": "758c0a857b427ab73c790b6031a14762c6653f8714f0fef29830373439ab78ba",
+    "historical_generation_experiment": "a80a31f19c4b606533c319dc1876686ba2cf08e54c1dcef17d745e9c28273f70",
+    "generation_benchmark": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+    "development_evidence_source": "58167f04b5fdcdcb4689f624c6c3da6001accc0e82caffe4818de0c98de4d586",
+    "development_evidence_snapshot": "acd83d2a8daa2749972a54ed4ec3e05e5b34feb3896af681b1385c4b2fa6b266"
+  },
+  "metrics": {
+    "questions": 1,
+    "completed": 1,
+    "required_point_coverage": 1.0,
+    "citation_validity": 1.0,
+    "unsupported_claim_rate": 0.0,
+    "structured_output_rate": 1.0,
+    "false_insufficient_count": 0,
+    "formula_accuracy": null,
+    "model_load_seconds": 4.8316,
+    "p50_latency_seconds": 249.927,
+    "p95_latency_seconds": 249.927,
+    "p50_time_to_first_token_seconds": 189.4009,
+    "p95_time_to_first_token_seconds": 189.4009,
+    "mean_tokens_per_second": 0.6682,
+    "mean_prompt_tokens_per_second": 24.59,
+    "mean_generation_tokens_per_second": 2.76,
+    "peak_rss_bytes": 11034517504,
+    "sampled_peak_gpu_local_memory_bytes": 0,
+    "sampled_peak_gpu_nonlocal_memory_bytes": 0,
+    "schema_valid_output_rate": 1.0,
+    "mean_citation_support_token_recall": 0.8108,
+    "multi_passage_completeness": null
+  },
+  "decision": "pending_review",
+  "rejected_reason": null
+}

@@ -1,0 +1,29 @@
+{
+  "run_id": "qwen3_8b_q4_k_m_control__smoke__adreno_opencl__8d4a6abcd9",
+  "decision": "pending_review",
+  "rejected_reason": null,
+  "metrics": {
+    "questions": 8,
+    "completed": 8,
+    "required_point_coverage": 0.6708,
+    "citation_validity": 1.0,
+    "unsupported_claim_rate": 0.125,
+    "structured_output_rate": 1.0,
+    "false_insufficient_count": 0,
+    "formula_accuracy": 0.0,
+    "model_load_seconds": 37.2352,
+    "p50_latency_seconds": 126.6192,
+    "p95_latency_seconds": 148.4959,
+    "p50_time_to_first_token_seconds": 80.2355,
+    "p95_time_to_first_token_seconds": 92.2499,
+    "mean_tokens_per_second": 2.1069,
+    "mean_prompt_tokens_per_second": 55.9825,
+    "mean_generation_tokens_per_second": 5.7313,
+    "peak_rss_bytes": 16064782336,
+    "sampled_peak_gpu_local_memory_bytes": 6388219904,
+    "sampled_peak_gpu_nonlocal_memory_bytes": 0,
+    "schema_valid_output_rate": 1.0,
+    "mean_citation_support_token_recall": 0.6815,
+    "multi_passage_completeness": 0.0
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "schema_version": 1,
+  "run_id": "gemma_3_12b_it_qat_q4_0__validity__adreno_opencl__0bc8ae31c8",
+  "created_at": "2026-07-25T17:46:27+00:00",
+  "model_key": "gemma_3_12b_it_qat_q4_0",
+  "model": {
+    "evaluation_order": 1,
+    "display_name": "Gemma 3 12B IT QAT Q4_0",
+    "verification_status": "downloaded_checksum_verified",
+    "repository": "google/gemma-3-12b-it-qat-q4_0-gguf",
+    "revision": "7929e34ac7c459bbfd1f38d7358e6839f204578b",
+    "gated": "manual",
+    "artifact": {
+      "filename": "gemma-3-12b-it-q4_0.gguf",
+      "format": "GGUF",
+      "quantization": "QAT Q4_0",
+      "bytes": 8074473920,
+      "gib": 7.519,
+      "sha256": "dd53172ff3a7b1b16c8fb3d944b87f42a6228ff2de3825b8813ae90d988434cd"
+    },
+    "optional_vision_projector": {
+      "needed_for_text_benchmark": false,
+      "filename": "mmproj-model-f16-12B.gguf",
+      "bytes": 854200224,
+      "gib": 0.796,
+      "sha256": "30c02d056410848227001830866e0a269fcc28aaf8ca971bded494003de9f5a5"
+    },
+    "license": {
+      "identifier": "gemma",
+      "experiment_compatibility": "compatible_with_conditions",
+      "reason": "Local educational evaluation is permitted subject to the Gemma Terms and Prohibited Use Policy.",
+      "production_distribution_note": "Redistribution or hosted use requires the Gemma terms/use restrictions; non-hosted distribution also requires a Notice file. Legal sign-off remains required before a production v2 decision."
+    },
+    "memory_expectation": {
+      "weight_file_gib": 7.519,
+      "estimated_cpu_peak_gib": "14-22",
+      "estimated_opencl_shared_memory_gib": "10-18",
+      "basis": "Weight size plus 8192-token KV/cache, graph, runtime, and shared-GPU buffers; measurement required."
+    },
+    "llama_cpp": {
+      "cpu_arm64": "expected_supported",
+      "adreno_opencl": "expected_supported",
+      "opencl_quantization_support": "Q4_0 explicitly supported",
+      "model_architecture_support": "Gemma 3 supported by installed llama.cpp builds",
+      "must_verify_from_logs": true
+    },
+    "chat_template": {
+      "source": "official GGUF embedded template",
+      "roles": [
+        "user",
+        "model"
+      ],
+      "system_role_supported": false,
+      "instruction_handling": "Place all benchmark instructions in the initial user message; do not send a system role.",
+      "qwen_no_think_prefix": false
+    },
+    "recommended_decoding": {
+      "temperature": 1.0,
+      "top_p": 0.95,
+      "top_k": 64,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "max_output_tokens": 384
+    },
+    "download": {
+      "approved": true,
+      "approved_on": "2026-07-25",
+      "access_available": true,
+      "destination": "app_data/models/generation",
+      "command": "hf download google/gemma-3-12b-it-qat-q4_0-gguf gemma-3-12b-it-q4_0.gguf --revision 7929e34ac7c459bbfd1f38d7358e6839f204578b --cache-dir app_data/models/generation",
+      "downloaded_by_experiment": true,
+      "downloaded_on": "2026-07-25",
+      "checksum_verified": true
+    },
+    "sources": [
+      "https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-gguf",
+      "https://ai.google.dev/gemma/terms",
+      "https://ai.google.dev/gemma/prohibited_use_policy",
+      "https://ai.google.dev/gemma/docs/core/prompt-structure",
+      "https://github.com/ggml-org/llama.cpp/blob/c0bc8591e/docs/backend/OPENCL.md"
+    ]
+  },
+  "model_path": "X:\\teachingAssistantV2\\app_data\\models\\generation\\models--google--gemma-3-12b-it-qat-q4_0-gguf\\snapshots\\7929e34ac7c459bbfd1f38d7358e6839f204578b\\gemma-3-12b-it-q4_0.gguf",
+  "model_sha256": "dd53172ff3a7b1b16c8fb3d944b87f42a6228ff2de3825b8813ae90d988434cd",
+  "stage": "validity",
+  "backend": "adreno_opencl",
+  "runtime": {
+    "engine": "llama.cpp",
+    "build_number": 10107,
+    "commit": "c0bc8591e",
+    "architecture": "windows-arm64",
+    "backend": "opencl_gpu",
+    "context_size": 8192,
+    "threads": 10,
+    "threads_batch": 10,
+    "batch_size": 512,
+    "ubatch_size": 256,
+    "gpu_layers": 999,
+    "parallel_slots": 1,
+    "required_log_evidence": [
+      "Qualcomm(R) Adreno(TM) X1-85 GPU",
+      "using kernels optimized for Adreno",
+      "offloaded"
+    ],
+    "reject_if_missing_gpu_evidence": true
+  },
+  "server_command": [
+    "X:\\teachingAssistantV2\\app_data\\models\\llama.cpp\\opencl_gpu\\bin\\llama-server.exe",
+    "--model",
+    "X:\\teachingAssistantV2\\app_data\\models\\generation\\models--google--gemma-3-12b-it-qat-q4_0-gguf\\snapshots\\7929e34ac7c459bbfd1f38d7358e6839f204578b\\gemma-3-12b-it-q4_0.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18102",
+    "--ctx-size",
+    "8192",
+    "--threads",
+    "10",
+    "--threads-batch",
+    "10",
+    "--batch-size",
+    "512",
+    "--ubatch-size",
+    "256",
+    "--n-gpu-layers",
+    "999",
+    "--parallel",
+    "1",
+    "--seed",
+    "42",
+    "--no-webui",
+    "--metrics",
+    "-lv",
+    "5",
+    "--check-tensors"
+  ],
+  "backend_log_evidence": {
+    "backend": "adreno_opencl",
+    "adreno_device_named": true,
+    "opencl_device_selected": true,
+    "adreno_kernels_selected": true,
+    "offloaded_layers": 49,
+    "available_layers": 49,
+    "valid": true
+  },
+  "chat_template": {
+    "source": "official GGUF embedded template",
+    "roles": [
+      "user",
+      "model"
+    ],
+    "system_role_supported": false,
+    "instruction_handling": "Place all benchmark instructions in the initial user message; do not send a system role.",
+    "qwen_no_think_prefix": false
+  },
+  "decoding": {
+    "temperature": 1.0,
+    "top_p": 0.95,
+    "top_k": 64,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "seed": 42,
+    "max_output_tokens": 384,
+    "thinking": false,
+    "chat_template_kwargs": {}
+  },
+  "question_ids": [
+    "GEN-BIO-002"
+  ],
+  "completed_question_ids": [
+    "GEN-BIO-002"
+  ],
+  "frozen_input_hashes": {
+    "retrieval_baseline": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6",
+    "generation_baseline": "758c0a857b427ab73c790b6031a14762c6653f8714f0fef29830373439ab78ba",
+    "historical_generation_experiment": "a80a31f19c4b606533c319dc1876686ba2cf08e54c1dcef17d745e9c28273f70",
+    "generation_benchmark": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+    "development_evidence_source": "58167f04b5fdcdcb4689f624c6c3da6001accc0e82caffe4818de0c98de4d586",
+    "development_evidence_snapshot": "acd83d2a8daa2749972a54ed4ec3e05e5b34feb3896af681b1385c4b2fa6b266"
+  },
+  "metrics": {
+    "questions": 1,
+    "completed": 1,
+    "required_point_coverage": 0.75,
+    "citation_validity": 0.0,
+    "unsupported_claim_rate": 0.0,
+    "structured_output_rate": 0.0,
+    "false_insufficient_count": 0,
+    "formula_accuracy": null,
+    "model_load_seconds": 39.6843,
+    "p50_latency_seconds": 108.9605,
+    "p95_latency_seconds": 108.9605,
+    "p50_time_to_first_token_seconds": 82.3594,
+    "p95_time_to_first_token_seconds": 82.3594,
+    "mean_tokens_per_second": 1.4317,
+    "mean_prompt_tokens_per_second": 56.61,
+    "mean_generation_tokens_per_second": 5.86,
+    "peak_rss_bytes": 18467307520,
+    "sampled_peak_gpu_local_memory_bytes": 9603362816,
+    "sampled_peak_gpu_nonlocal_memory_bytes": 0,
+    "mean_citation_support_token_recall": 0.9706,
+    "multi_passage_completeness": null
+  },
+  "decision": "pending_review",
+  "rejected_reason": null
+}

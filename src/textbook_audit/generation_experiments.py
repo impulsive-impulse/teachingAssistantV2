@@ -331,6 +331,14 @@ def summarize(results: list[dict[str, Any]], load_seconds: float | None) -> dict
                     if row["generation"].get("time_to_first_token_seconds") is not None]
     peak_rss = [row["generation"]["peak_rss_bytes"] for row in complete
                 if row["generation"].get("peak_rss_bytes") is not None]
+    gpu_local = [row["generation"]["gpu_local_memory_bytes"] for row in complete
+                 if row["generation"].get("gpu_local_memory_bytes") is not None]
+    gpu_nonlocal = [row["generation"]["gpu_nonlocal_memory_bytes"] for row in complete
+                    if row["generation"].get("gpu_nonlocal_memory_bytes") is not None]
+    prompt_rates = [row["generation"]["prompt_tokens_per_second"] for row in complete
+                    if row["generation"].get("prompt_tokens_per_second") is not None]
+    generation_rates = [row["generation"]["generation_tokens_per_second"] for row in complete
+                        if row["generation"].get("generation_tokens_per_second") is not None]
     formula_rows = [row for row in complete if row["dependency_flags"]["formula"]]
     return {
         "questions": len(results),
@@ -363,7 +371,13 @@ def summarize(results: list[dict[str, Any]], load_seconds: float | None) -> dict
         "p50_time_to_first_token_seconds": percentile(first_tokens, 0.5),
         "p95_time_to_first_token_seconds": percentile(first_tokens, 0.95),
         "mean_tokens_per_second": round(sum(generated) / sum(latencies), 4) if sum(latencies) else None,
+        "mean_prompt_tokens_per_second": round(statistics.mean(prompt_rates), 4)
+        if prompt_rates else None,
+        "mean_generation_tokens_per_second": round(statistics.mean(generation_rates), 4)
+        if generation_rates else None,
         "peak_rss_bytes": max(peak_rss) if peak_rss else None,
+        "sampled_peak_gpu_local_memory_bytes": max(gpu_local) if gpu_local else None,
+        "sampled_peak_gpu_nonlocal_memory_bytes": max(gpu_nonlocal) if gpu_nonlocal else None,
     }
 
 

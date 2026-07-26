@@ -17,6 +17,9 @@
 - `experiments/`: retrieval experiment phases and selection history.
 - `generation_phase_a_v1/`: initial local generation checkpoint.
 - `generation_experiments/`: local model/prompt/context experiment matrix.
+- `local_model_comparison_v1/`: controlled Qwen3-8B comparison against Gemma,
+  gpt-oss, Phi-4, and Granite. The completed result retains Qwen and recommends
+  no Answering Baseline v2 candidate.
 - `openai_generation_experiments/`: GPT-4o runs, cache, and local-vs-online comparisons.
 - `hardware_backend_v1/`: machine/backend compatibility probes.
 

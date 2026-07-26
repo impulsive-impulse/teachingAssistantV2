@@ -1,0 +1,547 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-07-26",
+  "candidates": {
+    "qwen3_8b_q4_k_m_control": {
+      "control": true,
+      "display_name": "Qwen3-8B Q4_K_M — frozen v1 control",
+      "verification_status": "frozen_production_control",
+      "repository": "Qwen/Qwen3-8B-GGUF",
+      "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+      "artifact": {
+        "filename": "Qwen3-8B-Q4_K_M.gguf",
+        "format": "GGUF",
+        "quantization": "Q4_K_M",
+        "bytes": 5027783488,
+        "gib": 4.682,
+        "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785"
+      },
+      "chat_template": {
+        "source": "official GGUF embedded template",
+        "roles": [
+          "system",
+          "user",
+          "assistant"
+        ],
+        "system_role_supported": true,
+        "instruction_handling": "Historical P1 benchmark prompt in the user message.",
+        "qwen_no_think_prefix": true,
+        "kwargs": {
+          "enable_thinking": false
+        }
+      },
+      "recommended_decoding": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": 42,
+        "max_output_tokens": 384
+      },
+      "download": {
+        "approved": true,
+        "access_available": true,
+        "destination": "app_data/models/generation",
+        "downloaded_by_experiment": false,
+        "historical_control": true
+      },
+      "same_harness_results": {
+        "validity_cpu_run_id": "qwen3_8b_q4_k_m_control__validity__cpu_arm64__b2f188db10",
+        "validity_opencl_run_id": "qwen3_8b_q4_k_m_control__validity__adreno_opencl__78e3fe5fda",
+        "smoke_opencl_run_id": "qwen3_8b_q4_k_m_control__smoke__adreno_opencl__8d4a6abcd9",
+        "development_opencl_run_id": "qwen3_8b_q4_k_m_control__development__adreno_opencl__7672067985",
+        "development_results_sha256": "ea500e9d08efa40385a29af1978d0d68cafea7b67510e74f2ff513c7dc8bce96",
+        "development_manifest_sha256": "553a48ddc203586a6579d9d7c9475b27d9e90988c847fbfe02153878e1216d53",
+        "development_metrics": {
+          "questions": 16,
+          "schema_valid_output_rate": 1.0,
+          "citation_validity": 0.9375,
+          "citation_support_token_recall": 0.6492,
+          "required_point_coverage": 0.45,
+          "unsupported_claim_rate": 0.125,
+          "formula_accuracy": 0.0,
+          "multi_passage_completeness": 0.0,
+          "false_insufficient_count": 1,
+          "median_time_to_first_token_seconds": 65.9544,
+          "median_total_latency_seconds": 104.8385,
+          "mean_prompt_tokens_per_second": 67.0481,
+          "mean_generation_tokens_per_second": 6.6562,
+          "peak_rss_bytes": 19797532672,
+          "peak_gpu_local_bytes": 6388219904,
+          "gpu_selection_confirmed": true,
+          "layers_offloaded": "37/37"
+        }
+      }
+    },
+    "gemma_3_12b_it_qat_q4_0": {
+      "evaluation_order": 1,
+      "display_name": "Gemma 3 12B IT QAT Q4_0",
+      "verification_status": "downloaded_checksum_verified",
+      "repository": "google/gemma-3-12b-it-qat-q4_0-gguf",
+      "revision": "7929e34ac7c459bbfd1f38d7358e6839f204578b",
+      "gated": "manual",
+      "artifact": {
+        "filename": "gemma-3-12b-it-q4_0.gguf",
+        "format": "GGUF",
+        "quantization": "QAT Q4_0",
+        "bytes": 8074473920,
+        "gib": 7.519,
+        "sha256": "dd53172ff3a7b1b16c8fb3d944b87f42a6228ff2de3825b8813ae90d988434cd"
+      },
+      "optional_vision_projector": {
+        "needed_for_text_benchmark": false,
+        "filename": "mmproj-model-f16-12B.gguf",
+        "bytes": 854200224,
+        "gib": 0.796,
+        "sha256": "30c02d056410848227001830866e0a269fcc28aaf8ca971bded494003de9f5a5"
+      },
+      "license": {
+        "identifier": "gemma",
+        "experiment_compatibility": "compatible_with_conditions",
+        "reason": "Local educational evaluation is permitted subject to the Gemma Terms and Prohibited Use Policy.",
+        "production_distribution_note": "Redistribution or hosted use requires the Gemma terms/use restrictions; non-hosted distribution also requires a Notice file. Legal sign-off remains required before a production v2 decision."
+      },
+      "memory_expectation": {
+        "weight_file_gib": 7.519,
+        "estimated_cpu_peak_gib": "14-22",
+        "estimated_opencl_shared_memory_gib": "10-18",
+        "basis": "Weight size plus 8192-token KV/cache, graph, runtime, and shared-GPU buffers; measurement required."
+      },
+      "llama_cpp": {
+        "cpu_arm64": "expected_supported",
+        "adreno_opencl": "expected_supported",
+        "opencl_quantization_support": "Q4_0 explicitly supported",
+        "model_architecture_support": "Gemma 3 supported by installed llama.cpp builds",
+        "must_verify_from_logs": true
+      },
+      "chat_template": {
+        "source": "official GGUF embedded template",
+        "roles": [
+          "user",
+          "model"
+        ],
+        "system_role_supported": false,
+        "instruction_handling": "Place all benchmark instructions in the initial user message; do not send a system role.",
+        "qwen_no_think_prefix": false,
+        "kwargs": {}
+      },
+      "recommended_decoding": {
+        "temperature": 1.0,
+        "top_p": 0.95,
+        "top_k": 64,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": 42,
+        "max_output_tokens": 384
+      },
+      "download": {
+        "approved": true,
+        "approved_on": "2026-07-25",
+        "access_available": true,
+        "destination": "app_data/models/generation",
+        "command": "hf download google/gemma-3-12b-it-qat-q4_0-gguf gemma-3-12b-it-q4_0.gguf --revision 7929e34ac7c459bbfd1f38d7358e6839f204578b --cache-dir app_data/models/generation",
+        "downloaded_by_experiment": true,
+        "downloaded_on": "2026-07-25",
+        "checksum_verified": true
+      },
+      "sources": [
+        "https://huggingface.co/google/gemma-3-12b-it-qat-q4_0-gguf",
+        "https://ai.google.dev/gemma/terms",
+        "https://ai.google.dev/gemma/prohibited_use_policy",
+        "https://ai.google.dev/gemma/docs/core/prompt-structure",
+        "https://github.com/ggml-org/llama.cpp/blob/c0bc8591e/docs/backend/OPENCL.md"
+      ],
+      "evaluation": {
+        "decision": "reject",
+        "stopped_after_stage": "smoke",
+        "reason": "smoke_citation_gate_unreachable",
+        "cpu_validity": {
+          "structured_output_valid": true,
+          "citation_validity": 0.0,
+          "time_to_first_token_seconds": 113.2665,
+          "total_latency_seconds": 135.0909,
+          "prompt_tokens_per_second": 41.16,
+          "generation_tokens_per_second": 5.73,
+          "peak_rss_bytes": 15893114880
+        },
+        "opencl_validity": {
+          "structured_output_valid": true,
+          "citation_validity": 0.0,
+          "gpu_selection_confirmed": true,
+          "layers_offloaded": "49/49",
+          "time_to_first_token_seconds": 82.3594,
+          "total_latency_seconds": 108.9605,
+          "prompt_tokens_per_second": 56.61,
+          "generation_tokens_per_second": 5.86,
+          "peak_rss_bytes": 18467307520,
+          "peak_gpu_local_bytes": 9603362816
+        },
+        "opencl_smoke": {
+          "planned_questions": 8,
+          "completed_questions": 3,
+          "early_stop_applied": true,
+          "structured_output_rate": 0.3333,
+          "citation_validity": 0.3333,
+          "required_point_coverage": 0.4167,
+          "unsupported_claim_rate": 0.0,
+          "multi_passage_completeness": 0.0,
+          "median_time_to_first_token_seconds": 81.2007,
+          "median_total_latency_seconds": 122.7893,
+          "mean_prompt_tokens_per_second": 58.6033,
+          "mean_generation_tokens_per_second": 5.2667,
+          "peak_rss_bytes": 21105340416,
+          "peak_gpu_local_bytes": 9604411392
+        },
+        "development_run_allowed": false,
+        "holdout_run_allowed": false
+      }
+    },
+    "gpt_oss_20b_native_mxfp4": {
+      "evaluation_order": 2,
+      "display_name": "gpt-oss-20b native MXFP4",
+      "verification_status": "downloaded_checksum_verified",
+      "repository": "ggml-org/gpt-oss-20b-GGUF",
+      "base_repository": "openai/gpt-oss-20b",
+      "revision": "c9a07b972b8979719fd97b8ff2c10dc79ebf5d26",
+      "gated": false,
+      "artifact": {
+        "filename": "gpt-oss-20b-MXFP4.gguf",
+        "format": "GGUF",
+        "quantization": "native MXFP4 MoE with non-MoE tensors retained at source precision",
+        "bytes": 12109566624,
+        "gib": 11.278,
+        "sha256": "27cd6c432c7672cb812a92f611cf3ba7bbc35928262bb1e1253ff4ee6ae35901"
+      },
+      "license": {
+        "identifier": "Apache-2.0",
+        "experiment_compatibility": "compatible",
+        "reason": "The permissive Apache License 2.0 permits local educational evaluation, modification, and commercial use subject to its notice and attribution conditions.",
+        "production_distribution_note": "Retain the licence and applicable notices for any future distribution; legal sign-off remains required before a production v2 decision."
+      },
+      "memory_expectation": {
+        "weight_file_gib": 11.278,
+        "vendor_minimum_memory_gib": 16,
+        "estimated_cpu_peak_gib": "18-28",
+        "estimated_opencl_shared_memory_gib": "16-26",
+        "basis": "OpenAI states that gpt-oss-20b requires 16 GB; experiment estimates add the 8192-token KV/cache, graph, runtime, and shared-GPU buffers. Measurement is required."
+      },
+      "llama_cpp": {
+        "cpu_arm64": "expected_supported",
+        "adreno_opencl": "expected_supported",
+        "opencl_quantization_support": "MXFP4 explicitly supported",
+        "model_architecture_support": "gpt-oss native MXFP4 is supported by the installed llama.cpp builds",
+        "must_verify_from_logs": true
+      },
+      "chat_template": {
+        "source": "official Harmony template embedded in the GGUF",
+        "roles": [
+          "system",
+          "developer",
+          "user",
+          "assistant"
+        ],
+        "system_role_supported": true,
+        "instruction_handling": "Use the embedded Harmony renderer. Keep the frozen P1 benchmark prompt in the user message and select low reasoning effort through the template kwarg.",
+        "qwen_no_think_prefix": false,
+        "kwargs": {
+          "reasoning_effort": "low"
+        }
+      },
+      "recommended_decoding": {
+        "temperature": 1.0,
+        "top_p": 1.0,
+        "top_k": 0,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": 42,
+        "max_output_tokens": 384
+      },
+      "download": {
+        "approved": true,
+        "approved_on": "2026-07-25",
+        "access_available": true,
+        "destination": "app_data/models/generation",
+        "command": "hf download ggml-org/gpt-oss-20b-GGUF gpt-oss-20b-MXFP4.gguf --revision c9a07b972b8979719fd97b8ff2c10dc79ebf5d26 --cache-dir app_data/models/generation",
+        "downloaded_by_experiment": true,
+        "downloaded_on": "2026-07-26",
+        "dry_run_verified": true,
+        "checksum_verified": true
+      },
+      "sources": [
+        "https://huggingface.co/ggml-org/gpt-oss-20b-GGUF",
+        "https://huggingface.co/openai/gpt-oss-20b",
+        "https://openai.com/open-models/",
+        "https://github.com/openai/gpt-oss",
+        "https://github.com/openai/harmony",
+        "https://github.com/ggml-org/llama.cpp/blob/c0bc8591e/docs/backend/OPENCL.md"
+      ],
+      "evaluation": {
+        "decision": "reject",
+        "stopped_after_stage": "validity",
+        "reason": "opencl_invalid_output_schema_and_cpu_latency_unacceptable",
+        "cpu_validity": {
+          "structured_output_valid": true,
+          "citation_validity": 1.0,
+          "required_point_coverage": 0.5,
+          "time_to_first_token_seconds": 120.3455,
+          "total_latency_seconds": 158.616,
+          "prompt_tokens_per_second": 38.03,
+          "generation_tokens_per_second": 4.65,
+          "peak_rss_bytes": 23937110016
+        },
+        "opencl_validity": {
+          "structured_output_valid": false,
+          "citation_validity": 0.0,
+          "required_point_coverage": 0.0,
+          "gpu_selection_confirmed": true,
+          "layers_offloaded": "25/25",
+          "rejection_detail": "The response exhausted all 384 output tokens inside an unterminated JSON answer string.",
+          "time_to_first_token_seconds": 98.5358,
+          "total_latency_seconds": 136.0847,
+          "prompt_tokens_per_second": 46.39,
+          "generation_tokens_per_second": 10.16,
+          "peak_rss_bytes": 24564047872,
+          "peak_gpu_local_bytes": 12196962304
+        },
+        "smoke_run_allowed": false,
+        "development_run_allowed": false,
+        "holdout_run_allowed": false
+      }
+    },
+    "phi_4_14b": {
+      "evaluation_order": 3,
+      "display_name": "Phi-4 14B Q4_K_S",
+      "verification_status": "downloaded_checksum_verified",
+      "repository": "microsoft/phi-4-gguf",
+      "base_repository": "microsoft/phi-4",
+      "revision": "6edc2ef6664b739a8e11e62f2672ff6afe0c15ac",
+      "gated": false,
+      "artifact": {
+        "filename": "phi-4-Q4_K_S.gguf",
+        "format": "GGUF",
+        "quantization": "Q4_K_S",
+        "bytes": 8440762560,
+        "gib": 7.861,
+        "sha256": "8a8189132ef70cd737e136d38b706e8cb832f9cdf3c744547694769e9313550e"
+      },
+      "license": {
+        "identifier": "MIT",
+        "experiment_compatibility": "compatible",
+        "reason": "The permissive MIT licence permits local educational evaluation, modification, and commercial use subject to retaining its copyright and permission notice.",
+        "production_distribution_note": "Retain the MIT copyright and permission notice for any future distribution; legal sign-off remains required before a production v2 decision."
+      },
+      "memory_expectation": {
+        "weight_file_gib": 7.861,
+        "estimated_cpu_peak_gib": "15-23",
+        "estimated_opencl_shared_memory_gib": "11-20",
+        "basis": "Dense 14B Q4_K_S weights plus the frozen 8192-token KV/cache, graph, runtime, and shared-GPU buffers; measurement required."
+      },
+      "llama_cpp": {
+        "cpu_arm64": "expected_supported",
+        "adreno_opencl": "expected_supported",
+        "opencl_quantization_support": "Q4_K explicitly supported",
+        "model_architecture_support": "Both installed llama.cpp builds list the phi4 chat/model family, and Microsoft's official GGUF card documents llama.cpp use.",
+        "must_verify_from_logs": true
+      },
+      "chat_template": {
+        "source": "official Phi-4 template embedded in the GGUF",
+        "roles": [
+          "system",
+          "user",
+          "assistant"
+        ],
+        "system_role_supported": true,
+        "instruction_handling": "Use the embedded <|im_start|>/<|im_sep|>/<|im_end|> template and keep the frozen P1 benchmark prompt in the user message.",
+        "qwen_no_think_prefix": false,
+        "kwargs": {}
+      },
+      "recommended_decoding": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": 42,
+        "max_output_tokens": 384
+      },
+      "decoding_note": "Microsoft's pinned generation_config defines only token IDs and no sampler recommendation. Deterministic greedy decoding is used for structured RAG reliability and repeatability.",
+      "download": {
+        "approved": true,
+        "approved_on": "2026-07-26",
+        "access_available": true,
+        "destination": "app_data/models/generation",
+        "command": "hf download microsoft/phi-4-gguf phi-4-Q4_K_S.gguf --revision 6edc2ef6664b739a8e11e62f2672ff6afe0c15ac --cache-dir app_data/models/generation",
+        "downloaded_by_experiment": true,
+        "downloaded_on": "2026-07-26",
+        "dry_run_verified": true,
+        "checksum_verified": true
+      },
+      "sources": [
+        "https://huggingface.co/microsoft/phi-4-gguf",
+        "https://huggingface.co/microsoft/phi-4",
+        "https://github.com/ggml-org/llama.cpp/blob/c0bc8591e/docs/backend/OPENCL.md"
+      ],
+      "evaluation": {
+        "decision": "reject",
+        "stopped_after_stage": "validity",
+        "reason": "unacceptable_latency_and_clearly_worse_quality_than_qwen_control",
+        "cpu_validity": {
+          "structured_output_valid": true,
+          "citation_validity": 1.0,
+          "required_point_coverage": 0.5,
+          "unsupported_claim_rate": 0.0,
+          "time_to_first_token_seconds": 197.4805,
+          "total_latency_seconds": 258.0814,
+          "prompt_tokens_per_second": 23.25,
+          "generation_tokens_per_second": 2.79,
+          "peak_rss_bytes": 18390499328
+        },
+        "opencl_validity": {
+          "structured_output_valid": true,
+          "citation_validity": 1.0,
+          "required_point_coverage": 0.25,
+          "unsupported_claim_rate": 0.0,
+          "gpu_selection_confirmed": true,
+          "layers_offloaded": "41/41",
+          "time_to_first_token_seconds": 238.4917,
+          "total_latency_seconds": 274.9759,
+          "prompt_tokens_per_second": 19.26,
+          "generation_tokens_per_second": 3.89,
+          "peak_rss_bytes": 19040440320,
+          "peak_gpu_local_bytes": 10378063872
+        },
+        "smoke_run_allowed": false,
+        "development_run_allowed": false,
+        "holdout_run_allowed": false
+      }
+    },
+    "granite_3_3_8b_instruct": {
+      "evaluation_order": 4,
+      "display_name": "Granite 3.3 8B Instruct Q4_K_M",
+      "verification_status": "downloaded_checksum_verified",
+      "repository": "ibm-granite/granite-3.3-8b-instruct-GGUF",
+      "base_repository": "ibm-granite/granite-3.3-8b-instruct",
+      "revision": "e40e9dd739c7be00fa965c16ce167088190ce114",
+      "base_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+      "gated": false,
+      "artifact": {
+        "filename": "granite-3.3-8b-instruct-Q4_K_M.gguf",
+        "format": "GGUF",
+        "quantization": "Q4_K_M",
+        "bytes": 4942873344,
+        "gib": 4.603,
+        "sha256": "77bcee066a76dcdd10d0d123c87e32c8ec2c74e31b6ffd87ebee49c9ac215dca"
+      },
+      "license": {
+        "spdx": "Apache-2.0",
+        "educational_use": "compatible",
+        "commercial_use": "compatible",
+        "conditions": [
+          "Retain the licence and required notices when redistributing.",
+          "Document material modifications when redistributing modified work.",
+          "Apache-2.0 includes an express patent grant and termination conditions."
+        ]
+      },
+      "expected_memory": {
+        "cpu_peak_gib": "10-16",
+        "opencl_peak_system_gib": "11-18",
+        "opencl_local_gpu_gib": "6-12",
+        "basis": "The 4.603 GiB dense Q4_K_M artifact is close to the 4.682 GiB Qwen control; the frozen 8192-token context, graph, runtime, and shared-GPU buffers must be measured."
+      },
+      "llama_cpp": {
+        "cpu_arm64": "expected_supported",
+        "adreno_opencl": "expected_supported",
+        "opencl_quantization_support": "Q4_K explicitly supported by the pinned installed OpenCL build documentation",
+        "model_architecture_support": "IBM's official GGUF repository gives llama.cpp Q4_K_M server and CLI commands for this exact model.",
+        "must_verify_from_logs": true
+      },
+      "chat_template": {
+        "source": "official Granite template embedded in the GGUF",
+        "roles": [
+          "system",
+          "user",
+          "assistant"
+        ],
+        "system_role_supported": true,
+        "instruction_handling": "Historical P1 benchmark prompt in the user message.",
+        "qwen_no_think_prefix": false,
+        "kwargs": {
+          "thinking": false
+        }
+      },
+      "recommended_decoding": {
+        "temperature": 0.0,
+        "top_p": 1.0,
+        "top_k": 40,
+        "min_p": 0.0,
+        "repeat_penalty": 1.0,
+        "seed": 42,
+        "max_output_tokens": 384
+      },
+      "decoding_note": "IBM's pinned generation_config defines only BOS/EOS/PAD token IDs and no sampler values. Thinking is disabled using the official template option so the model can emit the frozen JSON schema directly; deterministic greedy decoding preserves benchmark repeatability.",
+      "download": {
+        "approved": true,
+        "approved_on": "2026-07-26",
+        "access_available": true,
+        "destination": "app_data/models/generation",
+        "command": "hf download ibm-granite/granite-3.3-8b-instruct-GGUF granite-3.3-8b-instruct-Q4_K_M.gguf --revision e40e9dd739c7be00fa965c16ce167088190ce114 --cache-dir app_data/models/generation",
+        "downloaded_by_experiment": true,
+        "downloaded_on": "2026-07-26",
+        "dry_run_verified": true,
+        "checksum_verified": true
+      },
+      "sources": [
+        "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct-GGUF",
+        "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://github.com/ggml-org/llama.cpp/blob/c0bc8591e/docs/backend/OPENCL.md"
+      ],
+      "evaluation": {
+        "decision": "reject",
+        "stopped_after_stage": "validity",
+        "reason": "systematic_invalid_citation_metadata_and_worse_latency_quality_than_qwen_control",
+        "cpu_validity": {
+          "schema_valid_output": true,
+          "full_validator_valid": false,
+          "citation_validity": 0.0,
+          "required_point_coverage": 0.5,
+          "unsupported_claim_rate": 0.0,
+          "rejection_detail": "The model copied textbook_page 22 into both citation page fields; supplied E1 has pdf_page 31 and textbook_page 22.",
+          "time_to_first_token_seconds": 210.6735,
+          "total_latency_seconds": 259.121,
+          "prompt_tokens_per_second": 26.96,
+          "generation_tokens_per_second": 3.03,
+          "peak_rss_bytes": 11160784896
+        },
+        "opencl_validity": {
+          "schema_valid_output": true,
+          "full_validator_valid": false,
+          "citation_validity": 0.0,
+          "required_point_coverage": 0.5,
+          "unsupported_claim_rate": 0.0,
+          "gpu_selection_confirmed": true,
+          "layers_offloaded": "41/41",
+          "rejection_detail": "The model repeated the identical invalid E1 page metadata used by CPU.",
+          "time_to_first_token_seconds": 94.3445,
+          "total_latency_seconds": 122.8695,
+          "prompt_tokens_per_second": 60.22,
+          "generation_tokens_per_second": 7.22,
+          "peak_rss_bytes": 11909582848,
+          "peak_gpu_local_bytes": 6795227136
+        },
+        "smoke_run_allowed": false,
+        "development_run_allowed": false,
+        "holdout_run_allowed": false
+      }
+    },
+    "phi_4_mini_3_8b": {
+      "optional": true,
+      "verification_status": "deferred"
+    },
+    "mistral_small_3_2_24b": {
+      "optional": true,
+      "verification_status": "deferred"
+    }
+  }
+}

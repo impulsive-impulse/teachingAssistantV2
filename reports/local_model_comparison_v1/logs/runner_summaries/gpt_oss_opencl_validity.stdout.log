@@ -1,0 +1,29 @@
+{
+  "run_id": "gpt_oss_20b_native_mxfp4__validity__adreno_opencl__f287dba3d0",
+  "decision": "reject",
+  "rejected_reason": "invalid_output_schema",
+  "metrics": {
+    "questions": 1,
+    "completed": 1,
+    "required_point_coverage": 0.0,
+    "citation_validity": 0.0,
+    "unsupported_claim_rate": 0.0,
+    "structured_output_rate": 0.0,
+    "false_insufficient_count": 0,
+    "formula_accuracy": null,
+    "model_load_seconds": 33.0901,
+    "p50_latency_seconds": 136.0847,
+    "p95_latency_seconds": 136.0847,
+    "p50_time_to_first_token_seconds": 98.5358,
+    "p95_time_to_first_token_seconds": 98.5358,
+    "mean_tokens_per_second": 2.8218,
+    "mean_prompt_tokens_per_second": 46.39,
+    "mean_generation_tokens_per_second": 10.16,
+    "peak_rss_bytes": 24564047872,
+    "sampled_peak_gpu_local_memory_bytes": 12196962304,
+    "sampled_peak_gpu_nonlocal_memory_bytes": 0,
+    "schema_valid_output_rate": 0.0,
+    "mean_citation_support_token_recall": 0.0,
+    "multi_passage_completeness": null
+  }
+}

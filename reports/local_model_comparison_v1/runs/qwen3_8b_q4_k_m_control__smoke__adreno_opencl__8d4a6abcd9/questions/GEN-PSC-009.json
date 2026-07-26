@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_8b_q4_k_m_control__smoke__adreno_opencl__8d4a6abcd9",
+  "question_id": "GEN-PSC-009",
+  "question": "How is myopia corrected? Explain with a ray diagram.",
+  "book_id": "physical_sciences",
+  "difficulty": "medium",
+  "dependency_flags": {
+    "formula": true,
+    "visual": true,
+    "table": false,
+    "multiple_passages": false
+  },
+  "status": "completed",
+  "corruption_reason": null,
+  "prompt_sha256": "a372a2de616532b136295b50c2316789b707e8d5a5ac4024ef9e42c7b0d627b2",
+  "context_sha256": "7b9a29e8fd7d5687b448f97694a520c38c53dcc4de5bdcd34e0424173d507246",
+  "supplied_evidence": [
+    {
+      "evidence_id": "E1",
+      "pdf_page": 21,
+      "textbook_page": 11,
+      "pdf_pages": [
+        21,
+        22,
+        23
+      ],
+      "textbook_pages": [
+        11,
+        12,
+        13
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "consider a ray that comes from the tip and goes in such a direction that it\nwould go through the centre of curvature if extended backwards.\nThis ray\nis normal to the surface and so will be reflected along the same line in\nopposite direction and will go through centre of curvature.\nWe notice that the two reflected rays (fig.-13) diverge and will not\nmeet.\nWhile doing the experiments for a case such as this we were unable\nto find any place where we get a sharp image on the screen.\nThis ray diagram\ntells us that since the reflected rays are diverging we will not get an image\nanywhere.\nSo even if we had\nmoved the screen much away from\nthe mirror, we would not have\nfound an image.\nIn such situations, however, we\ndo see an image when we look in\nthe mirror.\nIs it possible to explain\nthis image with a ray diagram?\nRemember what we did to find\nthe image in a plane mirror.\nTo\ndecide the position of image we extended the reflected rays backwards till\nthey meet.\nWe will do the same here.\nWhen we look in the mirror we are\nlooking at these diverging reflected rays.\nThey appear to be coming from\none point.\nWe can get this point by extending the rays backwards as shown\nin fig.-14.\nThe image does not really exist the way we see in other cases,\nbut it is visible to us.\nAs seen in the fig.-14, the image will be erect and\nenlarged.\nDoes this match with your observations?\nThis image that we get by extending the rays backwards is called a\nvirtual image.\nWe cannot get this on a screen like a real image.\nR1\nF COP\nR3\nI\nfig-14\n12 Reflection of light at curved surfaces\nThe case in which the object is at the\ncentre of curvature is another interesting\nsituation.\nSee fig.-15.\nFrom the ray diagram (fig.-15) we\nconclude that the image of the object will\nbe formed at the same distance as the\nobject and it will be inverted and of the\nsame size.\nWhat is your observation?\nFrom the ray diagrams and the observations you may have noticed some\npeculiar properties of concave mirrors.\nThey enlarge the image when the\nobject is held close to the mirror (less than the focal length).\nAlso, the\nimage is erect.\nThis property is used at many places and most commonly\nin shaving mirrors and mirrors used by dentists.\nAnother property is the\nway that it can converge the rays to its focal point.\nThis is extensively used\nin many places.\nLook at the shape of TV dish antennas.\nIf you look around you will see many curved\nsurfaces but all surfaces are not concave, many of\nthese are convex.\nHave you observed the rare view mirrors of a car?\nWhat type of surface do they have?\nHave you observed images formed on the rear\nand window glasses of a car?\nWhat type of surfaces\nare these?\nSee fig. -16.\nCan we draw ray diagrams for convex surfaces?\nR1\nR2\nCFP\nfig-15\nfig-16\nThink and discuss\n· Do you get an image when object is placed at F?\n· Draw a ray diagram.\nDo the experiment.\nReflection of light at curved surfaces 13\n1.3 Ray Diagrams: (Image formation by convex mirror)\nOne can draw ray diagrams for a convex mirror too.\nThe ‘easy’ rays\nthat we identified earlier can be used in this case with small modification.\nHere there are three rules which describe these rays.\nThe procedure for\ndrawing the diagram is similar and is not repeated here.",
+      "retrieval_rank": 3,
+      "source_chunk_id": "physical_sciences:fixed:00006"
+    },
+    {
+      "evidence_id": "E2",
+      "pdf_page": 84,
+      "textbook_page": 74,
+      "pdf_pages": [
+        84,
+        85,
+        86
+      ],
+      "textbook_pages": [
+        74,
+        75,
+        76
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "Till now we have drawn ray diagrams for various positions of object\nplaced on principal axis using convex lens.\nDraw ray diagram for an object\nplaced between C1 and F1 for a concave lens.\n· What do you notice?\nVerify your ray diagram with the ray diagram\nwe have drawn for a convex lens.\nSee fig.- 18.\nTry\nto draw ray diagrams for other positions of an\nobject.\nYou will notice that irrespective of the\nposition of object, on the principal axis, you will\nget an erect, virtual image, diminished in size in between the focal point\nand optic centre for concave lens.\nLet us see a few examples of ray diagrams\nE x a m p l e 4\nDraw a ray diagram to locate the position of image when a point source\n(S) is placed on optical axis MN of a convex lens, in such a way that it is\nbeyond focal point (F2).\nSee fig.- E(4).\nSolution\n- Draw a perpendicular line to principal axis passing through the\nfocus (F1).\nfig-17\nC2\nC1F1\nF2\nObject\nImage\nfig-18\nC1\nC2F2\nF1\nObject\nImage\nRefraction of Light at Curved Surfaces75\nF2\nF1\nfig-E5(c)\nF1\nF2\n- Draw a ray from point source (S) in any\ndirection to meet lens at point (PI).\n- Now draw another line parallel to the ray\ndrawn from the point source (S) such that\nit passes through the optic centre (P); This\nline intersects the normal at point FO.\n- Now draw a line passing from point PI to pass through the point FO\nsuch that it meets principal axis at a point say (I).\n- ‘I’ is the image point for the point source (S).\nE x a m p l e 5\nComplete the ray\ndiagram to show the\npaths of the rays after\nrefraction through the\nlenses shown in the fig.-\ns E5(a) and E5(b)?\nSolution: Follow the steps mentioned in Example (4) to complete the ray\ndiagrams.\nYou will notice that the paths of the rays are shown in fig.-s E5(c) and 5(d).\n· Can we realise in practice the results obtained in the ray diagrams\nwhen we perform experiments with a lens?\nLet us see\nAim: Observing the types of images and measuring the object distance\nand image distance from the lens.\nMaterial required: A candle, paper, convex lens (known focal length), Vstand, measuring tape or meter scale.\nProcedure: Take a v-stand and place it on a long (nearly 2m) table at the\nmiddle.\nPlace a convex lens on the v-stand.\nImagine the principal axis of\nthe lens.\nLight a candle and ask your friend to take the candle far away\nfig-E(4)\nS\nF0\nF2M P F1 I\nN\nP/\nfig-E5(a)\nS FM\nF2\nF1\nF1\nF2\nfig-E5(b)\nfig-E5(d)\nLab Activity\n76 Refraction of Light at Curved Surfaces\nfrom the lens along the principal axis.\nAdjust a screen (a sheet of white paper\nplaced perpendicular to the axis) which is on other side of the lens until you get\nan image on it.\n· Why are we using a screen to view this image?\nWhy don’t we see it directly\nwith our eye?\nMeasure the distance of the image\nfrom the v-stand of lens and also\nmeasure the distance between the\ncandle and stand of lens.\nRecord the values in a table 1.\nNow place the candle at a distance of 60 cm from the lens, such that the\nflame of the candle lies on the principal axis of the lens.\nTry to get an image of\nthe candle flame on the other side on a screen.",
+      "retrieval_rank": 2,
+      "source_chunk_id": "physical_sciences:fixed:00042"
+    },
+    {
+      "evidence_id": "E3",
+      "pdf_page": 101,
+      "textbook_page": 91,
+      "pdf_pages": [
+        101,
+        102,
+        103
+      ],
+      "textbook_pages": [
+        91,
+        92,
+        93
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "In this situation, eye-lens has a maximum focal\nlength.\nWhen the object is at infinity,\nu= - ¥; v = 2.5 cm (image distance which is equal\nto distance between eye-lens and retina)\nusing the formula\n1\nf = 11\nvumax\n1\nf = 11\n2.5 + ¥\nmax\n1\nf = 1\n2.5 + 0\nfmax = 2.5 cm\nwe get, fmax = 2.5 cm\nconsider that an object is placed at distance of 25 cm from our eye.\nIn this\nsituation eye has minimum focal length.\nHere u = - 25 cm; v = 2.5 cm\nUsing the formula\n1\nf = 11\nvumin\n1\nf = 11\n2.5 25+\nmin\n1\nf = 11\n25\nmin\n25\nf= 11 = 2.27 cm\nIf the position of an object is between infinity and the point of least\ndistance of distinct vision, then the eye lens adjusts it’s focal length in\nbetween 2.5 cm to 2.27 cm to form a clear image on the retina.\nThe ability of eye-lens to change its focal length is called\n“accommodation of lens”.\n· What happens if the eye lens is not able to adjust its focal length?\n· What happens if the focal length of eye lens is beyond the range of 2.5\ncm to 2.27 cm?\nLet us find out.\n5.3 Defects of V ision\nSometimes the eye may gradually lose its ability for accommodation.\nfig-4(a)\nfig-4(b)\nL\n92 Human Eye and Colourful World\nIn such conditions the person cannot see an object clearly and\ncomfortably.\nThe vision becomes blurred due to accommodation defects\nof the eye lens.\nThere are mainly three common defects of vision.\nThey are:\ni.\nMyopia\nii.\nHypermetropia\niii.\nPresbyopia.\n5.3.1 Myopia\nSome people cannot see objects at long distances but can see nearby\nobjects clearly.\nThis type of defect in vision is called ‘Myopia’.\nIt is also\ncalled ‘near sightedness’.\nFor these people the maximum focal length is\nless than 2.5 cm.\nIn such cases the rays coming from distant objects, after\nrefraction through the eye lens, form an image before the retina as shown\nin figures-5(a) and (b).\nA healthy person can see objects at all distances more than 25 cm\nclearly but a person with myopia\ncan see objects clearly up to a\ncertain distance.\nLet the\nextreme point from where an\nobject appears clearly to a\nperson with myopia be ‘M’\n(shown in fig.-5(c)).\nIf the object is at M or in\nbetween M and point of least\ndistance of distinct vision\n(L),the eye lens can form an\nimage on the retina (see fig.-\n5(c) and 5(d)).\nThis point M is\ncalled ‘far point’.\nThe point of maximum\ndistance at which the eye lens\ncan form an image on the retina\nis called ‘far point’.\nThe defect, in which people cannot see objects beyond far point is\ncalled ‘Myopia’.\nfig-5(a)\nfig-5(b)\nfig-5(c)\nfig-5(d)\nM\nM\nM\nM\nL\nL\nL\nLO\n93 Human Eye and Colourful World\n· What can we do to correct myopia?\nThe eye lens can form\nclear image on the retina,\nwhen an object is placed\nbetween far point and\npoint of least distance of\ndistinct vision.\nIf we are able to bring the image of the object kept beyond\nfar point , between the far point and the point of least distance of distinct\nvision using a lens, this image acts as an object for the eye lens.\nThis can be made possible only when a concave lens is used (recollect\nimage formation by refraction through a concave lens).\n· How can you decide the focal length of the lens to be used to correct\nmyopia?\nTo correct one’s Myopia, we need to select a lens which forms an",
+      "retrieval_rank": 4,
+      "source_chunk_id": "physical_sciences:fixed:00053"
+    },
+    {
+      "evidence_id": "E4",
+      "pdf_page": 104,
+      "textbook_page": 94,
+      "pdf_pages": [
+        104,
+        105,
+        106
+      ],
+      "textbook_pages": [
+        94,
+        95,
+        96
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "This is possible only when a double convex lens is used.\n· How can you decide the focal length of the convex lens to be used?\nTo find the focal length of\nlens, let us consider that the\nobject is at point of least\ndistance of distinct vision (L).\nThen the defect of vision,\nhypermetropia, is corrected when the image of the object at L is formed at\nthe near point (H) by using a bi-convex lens as shown in fig.-6(d).\nThis image acts like an object for the eye lens.\nHence final image\ndue to eye is formed at retina (see fig.- 6(d))\nfig-6(a)\nfig-6(b)\nfig-6(c)\nH\nH\nH\nL\nL\nL\nfig-6(d)\nH\nL\n95 Human Eye and Colourful World\nHere object distance (u) = -25 cm\nImage distance (v) = distance of near point = -d\nLet ‘f’ be the focal length of bi-convex lens.\nUsing lens formula,\n1\nf = 11\nvu-\n1\nf = 11\n25d ---\n1\nf = 11\n25d-+\n1\nf = ( )25\n25\nd\nd\n-\nf= ( )\n25\n25\nd\nd - (f is measured in centimeters)\nWe know that as d > 25cm, so, ‘f’ becomes +ve i.e., we need to use\nbiconvex lens to correct defect of hypermetropia.\n5.3.3 Presbyopia\nPresbyopia is vision defect when the ability of accommodation of the\neye usually decreases with ageing.\nFor most people the near point gradually\nrecedes away.\nThey find it difficult to see nearby objects clearly and\ndistinctly.\nThis happens due to gradual weakening of ciliary muscles and\ndiminishing flexibility of the eye lens.\nThis effect can be seen in aged\npeople.\nSometimes a person may suffer from both myopia and\nhypermetropia with ageing .\nTo correct this type of defect of vision we need bi-focal lenses which\nare formed using both concave and convex lenses.\nIts upper portion consists\nof the concave lens and lower portion consists of the convex lens.\nIf you go to an eye hospital to get tested for vision defects, the doctor\ngives you a prescription that contains some information regarding type of\nlens to be used to correct vision.\n· Have you ever observed details in the prescription?\nYou might have heard people saying “my sight is increased or\ndecreased”.\n· What does it mean?\nSight increased and decreased?\nUsually doctors, after testing for defects of vision, prescribe corrective\nlenses indicating their power which determines the type of lens to be used\nand its focal length.\n· What do you mean by power of lens?\n5.3.4 Power of lens\nThe degree of convergence or divergence of light rays that can be\nachieved by a lens is expressed in terms of its power.\n96 Human Eye and Colourful World\nfig-7\nP\nQ R\nNormal\nNormal\ni1\ni2M N\nIncident ray\nEmergent ray\nA\nd\nThe reciprocal of focal length is called power of lens.\nLet ‘f’ be the focal length of lens.\nPower of lens P =\n1\nf (in m); P =\n100\nf (in cm)\nThe unit of power is dioptre.\nIt is denoted by the letter ‘D’.\nExample1\nDoctor advised to use 2D lens.\nWhat is its focal length?\nSolution: Given that power of lens P = 2D\nUsing, P =\n100\nf (in cm); 2 =\n100\nf\nTherefore, f = 100\n2 = 50 cm.\nThe lens has focal length, f = 50 cm.\n5.4 Dispersion and Scattering of Light\nYou might have seen a rainbow form in the sky just after a rain shower.\nIt must have fascinated you with spectacular colours appearing as a semicircular band of colours.\n· How could the white light of the sun give us various colours of the rainbow?\nIn previous chapters, you have studied the behaviour of light when it",
+      "retrieval_rank": 5,
+      "source_chunk_id": "physical_sciences:fixed:00055"
+    },
+    {
+      "evidence_id": "E5",
+      "pdf_page": 119,
+      "textbook_page": 109,
+      "pdf_pages": [
+        119,
+        120,
+        121
+      ],
+      "textbook_pages": [
+        109,
+        110,
+        111
+      ],
+      "source_file": "X Physics EM 2025-26.pdf",
+      "text": "· The splitting of white light into colours (VIBGYOR) depending on the wave lengths is called\ndispersion.\n· The process of re-emission of absorbed light in all directions with different intensities by atoms\nor molecules, is called scattering of light.\nI.\nReflections on Concepts\n1.\nHow do you correct the eye defect Myopia? (AS1)\n2.\nExplain the correction of the eye defect Hypermetropia. (AS1)\n3.\nHow do you find experimentally the refractive index of material of a prism? (AS3)\n4.\nExplain the formation of rainbow. (AS1)\n5.\nExplain two activities for the formation of artificial rainbow. (AS3)\n6.\nLight of wavelength l1 enters a medium with refractive index n2 from a medium with\nrefractive index n1.\nWhat is the wave length of light in second medium? (AS 1)\n7.\nWhy does the sky sometimes appear white? (AS 7)\n8.\nA person is viewing a distant object.\nIf a converging lens is placed in front of his eye, will\nhe feel that the size of object has increased?\nWhy? (AS7)\nImprove your learning\nWhat we have learnt\n110 Human Eye and Colourful World\nII.\nApplication of Concepts\n1) Incident ray on one of the face (AB) of a prism and emergent\nray from the face AC are given in figure -1.\nComplete the ray\ndiagram.(AS 5)\n2) Glass is known to be a transparent material.\nBut ground glass\nis opaque and white in colour.Why? (AS7)\n3) A light ray falls on one of the faces of a prism at an angle 40o\nso that it suffers angle of minimum deviation of 30o.\nFind the angle of prism and angle of\nrefraction at the given surface.\n(Ans:50o, 25o) (AS7)\n4) The focal length of a lens suggested to a person with Hypermetropia is 100cm.\nFind the\ndistance of near point and power of the lens. (Ans: 33.33cm, 1D ) (AS 7)\n1) The size of an object as perceived by an eye depends primarily on [ ]\nA) actual size of the object B) distance of the object from the eye\nC) aperture of the pupil D) size if the image formed on the retina\n2) When objects at different distances are seen by the eye which of the following remain\nconstant?\nA) focal length of eye-lens B) object distance from eye-lens [ ]\nC) the radii of curvature of eye-lens D) image distance from eye-lens\n3) During refraction, ________ will not change. [ ]\nA) Wave length B) frequency C) speed of light D) all the above\n4) A ray of light falls on one of the lateral surface of an equilateral glass prism placed on the\nhorizontal surface of a table as shown in fig.\n2.For minimum deviation of ray, which of the\nfollowing is true? [ ]\nA) PQ is parallel to base\nB) QR is parallel to base\nC) RS is parallel to base\nD) either PQ or RS is parallel to base\nP\nQ R\nS\nfig-2\nfig-1\nA\nB\nC\nMirror\nMultiple choice questions\n111 Human Eye and Colourful World\n5) Far point of a person suffering from anyopia is 5m.\nIn order that he has normal vision what\nkind of spectacles should he use [ ]\nA) Concave lense with focal length 5m B) concave lense with focal length 10m\nC) Convex lense with focal length 5m D) convex lense with focal length 2.5m\n6) The process of re-emission of absorbed light in all directions with different intensities by the\natom or molecule is called [ ]\nA) Scattering of light B) dispersion of light C) reflection of light D) refraction of light\nSuggested Experiments\n1.\nConduct an experiment to produce a rainbow in your class room and explain the procedure.",
+      "retrieval_rank": 1,
+      "source_chunk_id": "physical_sciences:fixed:00065"
+    }
+  ],
+  "generation": {
+    "raw_text": "{\n  \"status\": \"answered\",\n  \"answer\": \"Myopia, or nearsightedness, is corrected using a concave lens. This lens diverges the light rays before they enter the eye, allowing the eye's lens to focus the image correctly on the retina. When a person with myopia looks at a distant object, the light rays converge before reaching the retina, forming a blurred image. The concave lens adjusts the path of these rays so that they appear to come from a farther point, enabling the eye to focus the image properly. A ray diagram would show the incoming parallel rays from a distant object diverging after passing through the concave lens, and then converging to form an image on the retina.\",\n  \"selected_evidence_ids\": [\"E3\"],\n  \"citations\": [\n    {\n      \"evidence_id\": \"E3\",\n      \"pdf_page\": 101,\n      \"textbook_page\": 91\n    }\n  ],\n  \"missing_information\": []\n}",
+    "time_to_first_token_seconds": 92.24985439999728,
+    "latency_seconds": 129.36634779997985,
+    "usage": {
+      "completion_tokens": 209,
+      "prompt_tokens": 4564,
+      "total_tokens": 4773,
+      "prompt_tokens_details": {
+        "cached_tokens": 125
+      }
+    },
+    "response_id": "chatcmpl-xnD8wfQny7m1FHu0BgetFRBTzgLFLlXM",
+    "peak_rss_bytes": 15359815680,
+    "gpu_local_memory_bytes": 6388219904,
+    "gpu_nonlocal_memory_bytes": 0,
+    "prompt_tokens_per_second": 48.31,
+    "generation_tokens_per_second": 5.63,
+    "prompt_eval_seconds": 91.88216,
+    "generation_eval_seconds": 37.11603
+  },
+  "parsed_output": {
+    "valid": true,
+    "errors": [],
+    "status": "answered",
+    "answer": "Myopia, or nearsightedness, is corrected using a concave lens. This lens diverges the light rays before they enter the eye, allowing the eye's lens to focus the image correctly on the retina. When a person with myopia looks at a distant object, the light rays converge before reaching the retina, forming a blurred image. The concave lens adjusts the path of these rays so that they appear to come from a farther point, enabling the eye to focus the image properly. A ray diagram would show the incoming parallel rays from a distant object diverging after passing through the concave lens, and then converging to form an image on the retina.",
+    "selected_evidence_ids": [
+      "E3"
+    ],
+    "citations": [
+      {
+        "evidence_id": "E3",
+        "pdf_page": 101,
+        "textbook_page": 91
+      }
+    ],
+    "missing_information": [],
+    "valid_citation_count": 1,
+    "citation_count": 1
+  },
+  "output_schema_valid": true,
+  "evaluation": {
+    "required_point_details": [
+      {
+        "point": "Myopia means distant objects are not focused clearly on the retina",
+        "token_recall": 0.5,
+        "matched": false
+      },
+      {
+        "point": "The eye’s far point is finite and the uncorrected image forms before the retina",
+        "token_recall": 0.6667,
+        "matched": true
+      },
+      {
+        "point": "Use a concave/diverging lens",
+        "token_recall": 0.75,
+        "matched": true
+      },
+      {
+        "point": "The lens makes parallel rays appear to come from the far point so the eye focuses them on the retina",
+        "token_recall": 0.6923,
+        "matched": true
+      }
+    ],
+    "required_point_coverage": 0.75,
+    "citation_validity": 1.0,
+    "unsupported_claims": [
+      "Correct myopia with a converging convex lens"
+    ],
+    "unsupported_claim_rate": 1.0,
+    "structured_output_valid": true,
+    "false_insufficient_evidence": false,
+    "answer_word_count": 111,
+    "citation_support_token_recall": 0.4894,
+    "citation_support_screen_pass": false,
+    "multi_passage_complete": null
+  },
+  "completed_at": "2026-07-25T19:38:54+00:00"
+}

@@ -1,0 +1,52 @@
+
+=== llama-server session started 2026-07-25T23:22:10+00:00 ===
+0.00.046.503 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.046.625 I srv          init: The UI is disabled
+0.00.046.627 I srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.046.746 W srv  llama_server: -----------------
+0.00.046.748 W srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+0.00.046.749 W srv  llama_server: this can be a security risk (cross-origin attacks)
+0.00.046.750 W srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+0.00.046.750 W srv  llama_server: -----------------
+0.00.063.067 I srv    load_model: loading model 'X:\teachingAssistantV2\app_data\models\generation\models--ibm-granite--granite-3.3-8b-instruct-GGUF\snapshots\e40e9dd739c7be00fa965c16ce167088190ce114\granite-3.3-8b-instruct-Q4_K_M.gguf'
+0.04.165.223 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 8192, kv_unified = 'false'
+0.04.170.004 I srv  llama_server: model loaded
+0.04.170.014 I srv  llama_server: listening on http://127.0.0.1:18126
+
+=== llama-server session started 2026-07-25T23:22:54+00:00 ===
+0.00.006.103 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.006.218 I srv          init: The UI is disabled
+0.00.006.224 I srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.006.338 W srv  llama_server: -----------------
+0.00.006.343 W srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+0.00.006.344 W srv  llama_server: this can be a security risk (cross-origin attacks)
+0.00.006.344 W srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+0.00.006.344 W srv  llama_server: -----------------
+0.00.019.930 I srv    load_model: loading model 'X:\teachingAssistantV2\app_data\models\generation\models--ibm-granite--granite-3.3-8b-instruct-GGUF\snapshots\e40e9dd739c7be00fa965c16ce167088190ce114\granite-3.3-8b-instruct-Q4_K_M.gguf'
+0.04.073.980 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 8192, kv_unified = 'false'
+0.04.078.741 I srv  llama_server: model loaded
+0.04.078.753 I srv  llama_server: listening on http://127.0.0.1:18126
+0.04.192.639 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.04.192.693 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+0.12.846.724 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    512, progress = 0.09, t =   8.65 s / 59.16 tokens per second
+0.24.027.570 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1024, progress = 0.18, t =  19.83 s / 51.63 tokens per second
+0.37.114.557 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1536, progress = 0.27, t =  32.92 s / 46.66 tokens per second
+0.51.940.095 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   2048, progress = 0.36, t =  47.75 s / 42.89 tokens per second
+1.08.694.186 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   2560, progress = 0.45, t =  64.50 s / 39.69 tokens per second
+1.27.059.022 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   3072, progress = 0.54, t =  82.87 s / 37.07 tokens per second
+1.47.502.778 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   3584, progress = 0.63, t = 103.31 s / 34.69 tokens per second
+2.09.242.945 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   4096, progress = 0.72, t = 125.05 s / 32.75 tokens per second
+2.32.672.881 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   4608, progress = 0.81, t = 148.48 s / 31.03 tokens per second
+2.58.658.332 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   5120, progress = 0.90, t = 174.47 s / 29.35 tokens per second
+3.26.157.440 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   5632, progress = 0.99, t = 201.96 s / 27.89 tokens per second
+4.05.485.740 I slot print_timing: id  0 | task 0 | n_decoded =    100, tg =   3.26 t/s, tg_3s =   3.26 t/s
+4.08.633.780 I slot print_timing: id  0 | task 0 | n_decoded =    110, tg =   3.26 t/s, tg_3s =   3.18 t/s
+4.11.671.552 I slot print_timing: id  0 | task 0 | n_decoded =    120, tg =   3.26 t/s, tg_3s =   3.29 t/s
+4.14.815.035 I slot print_timing: id  0 | task 0 | n_decoded =    130, tg =   3.25 t/s, tg_3s =   3.18 t/s
+4.18.215.838 I slot print_timing: id  0 | task 0 | n_decoded =    137, tg =   3.16 t/s, tg_3s =   2.06 t/s
+4.21.748.165 I slot print_timing: id  0 | task 0 | n_decoded =    144, tg =   3.07 t/s, tg_3s =   1.98 t/s
+4.23.300.939 I slot print_timing: id  0 | task 0 | prompt eval time =  210661.26 ms /  5680 tokens (   37.09 ms per token,    26.96 tokens per second)
+4.23.300.949 I slot print_timing: id  0 | task 0 |        eval time =   48446.94 ms /   147 tokens (  329.57 ms per token,     3.03 tokens per second)
+4.23.300.950 I slot print_timing: id  0 | task 0 |       total time =  259108.20 ms /  5827 tokens
+4.23.300.951 I slot print_timing: id  0 | task 0 |    graphs reused =        146
+4.23.301.314 I slot      release: id  0 | task 0 | stop processing: n_tokens = 5826, truncated = 0

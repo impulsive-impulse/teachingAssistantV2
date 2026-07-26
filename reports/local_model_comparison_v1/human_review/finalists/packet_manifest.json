@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "status": "not_generated_no_alternative_finalists",
+  "run_ids": [],
+  "questions": 0,
+  "reason": "No alternative candidate passed the successive-narrowing gates to produce a second same-stage development run.",
+  "control_development_run_id": "qwen3_8b_q4_k_m_control__development__adreno_opencl__7672067985",
+  "holdout_accessed": false
+}

@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "run_id": "granite_3_3_8b_instruct__validity__cpu_arm64__ad33e0fc55",
+  "created_at": "2026-07-25T23:27:22+00:00",
+  "model_key": "granite_3_3_8b_instruct",
+  "model": {
+    "evaluation_order": 4,
+    "display_name": "Granite 3.3 8B Instruct Q4_K_M",
+    "verification_status": "downloaded_checksum_verified",
+    "repository": "ibm-granite/granite-3.3-8b-instruct-GGUF",
+    "base_repository": "ibm-granite/granite-3.3-8b-instruct",
+    "revision": "e40e9dd739c7be00fa965c16ce167088190ce114",
+    "base_revision": "51dd4bc2ade4059a6bd87649d68aa11e4fb2529b",
+    "gated": false,
+    "artifact": {
+      "filename": "granite-3.3-8b-instruct-Q4_K_M.gguf",
+      "format": "GGUF",
+      "quantization": "Q4_K_M",
+      "bytes": 4942873344,
+      "gib": 4.603,
+      "sha256": "77bcee066a76dcdd10d0d123c87e32c8ec2c74e31b6ffd87ebee49c9ac215dca"
+    },
+    "license": {
+      "spdx": "Apache-2.0",
+      "educational_use": "compatible",
+      "commercial_use": "compatible",
+      "conditions": [
+        "Retain the licence and required notices when redistributing.",
+        "Document material modifications when redistributing modified work.",
+        "Apache-2.0 includes an express patent grant and termination conditions."
+      ]
+    },
+    "expected_memory": {
+      "cpu_peak_gib": "10-16",
+      "opencl_peak_system_gib": "11-18",
+      "opencl_local_gpu_gib": "6-12",
+      "basis": "The 4.603 GiB dense Q4_K_M artifact is close to the 4.682 GiB Qwen control; the frozen 8192-token context, graph, runtime, and shared-GPU buffers must be measured."
+    },
+    "llama_cpp": {
+      "cpu_arm64": "expected_supported",
+      "adreno_opencl": "expected_supported",
+      "opencl_quantization_support": "Q4_K explicitly supported by the pinned installed OpenCL build documentation",
+      "model_architecture_support": "IBM's official GGUF repository gives llama.cpp Q4_K_M server and CLI commands for this exact model.",
+      "must_verify_from_logs": true
+    },
+    "chat_template": {
+      "source": "official Granite template embedded in the GGUF",
+      "roles": [
+        "system",
+        "user",
+        "assistant"
+      ],
+      "system_role_supported": true,
+      "instruction_handling": "Historical P1 benchmark prompt in the user message.",
+      "qwen_no_think_prefix": false,
+      "kwargs": {
+        "thinking": false
+      }
+    },
+    "recommended_decoding": {
+      "temperature": 0.0,
+      "top_p": 1.0,
+      "top_k": 40,
+      "min_p": 0.0,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "max_output_tokens": 384
+    },
+    "decoding_note": "IBM's pinned generation_config defines only BOS/EOS/PAD token IDs and no sampler values. Thinking is disabled using the official template option so the model can emit the frozen JSON schema directly; deterministic greedy decoding preserves benchmark repeatability.",
+    "download": {
+      "approved": true,
+      "approved_on": "2026-07-26",
+      "access_available": true,
+      "destination": "app_data/models/generation",
+      "command": "hf download ibm-granite/granite-3.3-8b-instruct-GGUF granite-3.3-8b-instruct-Q4_K_M.gguf --revision e40e9dd739c7be00fa965c16ce167088190ce114 --cache-dir app_data/models/generation",
+      "downloaded_by_experiment": true,
+      "downloaded_on": "2026-07-26",
+      "dry_run_verified": true,
+      "checksum_verified": true
+    },
+    "sources": [
+      "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct-GGUF",
+      "https://huggingface.co/ibm-granite/granite-3.3-8b-instruct",
+      "https://www.apache.org/licenses/LICENSE-2.0",
+      "https://github.com/ggml-org/llama.cpp/blob/c0bc8591e/docs/backend/OPENCL.md"
+    ]
+  },
+  "model_path": "X:\\teachingAssistantV2\\app_data\\models\\generation\\models--ibm-granite--granite-3.3-8b-instruct-GGUF\\snapshots\\e40e9dd739c7be00fa965c16ce167088190ce114\\granite-3.3-8b-instruct-Q4_K_M.gguf",
+  "model_sha256": "77bcee066a76dcdd10d0d123c87e32c8ec2c74e31b6ffd87ebee49c9ac215dca",
+  "stage": "validity",
+  "backend": "cpu_arm64",
+  "runtime": {
+    "engine": "llama.cpp",
+    "build_number": 10046,
+    "commit": "32e789fdfd598e9a1872da55ac941e4d94f030bd",
+    "architecture": "windows-arm64",
+    "backend": "cpu",
+    "context_size": 8192,
+    "threads": 10,
+    "threads_batch": 10,
+    "batch_size": 512,
+    "ubatch_size": 256,
+    "gpu_layers": 0,
+    "parallel_slots": 1
+  },
+  "server_command": [
+    "X:\\teachingAssistantV2\\app_data\\models\\llama.cpp\\bin\\llama-server.exe",
+    "--model",
+    "X:\\teachingAssistantV2\\app_data\\models\\generation\\models--ibm-granite--granite-3.3-8b-instruct-GGUF\\snapshots\\e40e9dd739c7be00fa965c16ce167088190ce114\\granite-3.3-8b-instruct-Q4_K_M.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18126",
+    "--ctx-size",
+    "8192",
+    "--threads",
+    "10",
+    "--threads-batch",
+    "10",
+    "--batch-size",
+    "512",
+    "--ubatch-size",
+    "256",
+    "--n-gpu-layers",
+    "0",
+    "--parallel",
+    "1",
+    "--seed",
+    "42",
+    "--no-webui",
+    "--metrics",
+    "--check-tensors"
+  ],
+  "backend_log_evidence": {
+    "backend": "cpu_arm64",
+    "adreno_device_named": false,
+    "opencl_device_selected": false,
+    "adreno_kernels_selected": false,
+    "offloaded_layers": 0,
+    "available_layers": 0,
+    "valid": true
+  },
+  "chat_template": {
+    "source": "official Granite template embedded in the GGUF",
+    "roles": [
+      "system",
+      "user",
+      "assistant"
+    ],
+    "system_role_supported": true,
+    "instruction_handling": "Historical P1 benchmark prompt in the user message.",
+    "qwen_no_think_prefix": false,
+    "kwargs": {
+      "thinking": false
+    }
+  },
+  "decoding": {
+    "temperature": 0.0,
+    "top_p": 1.0,
+    "top_k": 40,
+    "min_p": 0.0,
+    "repeat_penalty": 1.0,
+    "seed": 42,
+    "max_output_tokens": 384,
+    "chat_template_kwargs": {
+      "thinking": false
+    }
+  },
+  "question_ids": [
+    "GEN-BIO-002"
+  ],
+  "completed_question_ids": [
+    "GEN-BIO-002"
+  ],
+  "frozen_input_hashes": {
+    "retrieval_baseline": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6",
+    "generation_baseline": "758c0a857b427ab73c790b6031a14762c6653f8714f0fef29830373439ab78ba",
+    "historical_generation_experiment": "a80a31f19c4b606533c319dc1876686ba2cf08e54c1dcef17d745e9c28273f70",
+    "generation_benchmark": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+    "development_evidence_source": "58167f04b5fdcdcb4689f624c6c3da6001accc0e82caffe4818de0c98de4d586",
+    "development_evidence_snapshot": "acd83d2a8daa2749972a54ed4ec3e05e5b34feb3896af681b1385c4b2fa6b266"
+  },
+  "metrics": {
+    "questions": 1,
+    "completed": 1,
+    "required_point_coverage": 0.5,
+    "citation_validity": 0.0,
+    "unsupported_claim_rate": 0.0,
+    "structured_output_rate": 0.0,
+    "false_insufficient_count": 0,
+    "formula_accuracy": null,
+    "model_load_seconds": 4.2366,
+    "p50_latency_seconds": 259.121,
+    "p95_latency_seconds": 259.121,
+    "p50_time_to_first_token_seconds": 210.6735,
+    "p95_time_to_first_token_seconds": 210.6735,
+    "mean_tokens_per_second": 0.5673,
+    "mean_prompt_tokens_per_second": 26.96,
+    "mean_generation_tokens_per_second": 3.03,
+    "peak_rss_bytes": 11160784896,
+    "sampled_peak_gpu_local_memory_bytes": 0,
+    "sampled_peak_gpu_nonlocal_memory_bytes": 0,
+    "schema_valid_output_rate": 1.0,
+    "mean_citation_support_token_recall": 0.7917,
+    "multi_passage_completeness": null
+  },
+  "decision": "pending_review",
+  "rejected_reason": null
+}

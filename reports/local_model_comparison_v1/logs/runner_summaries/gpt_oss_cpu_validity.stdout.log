@@ -1,0 +1,29 @@
+{
+  "run_id": "gpt_oss_20b_native_mxfp4__validity__cpu_arm64__8ff02c18e1",
+  "decision": "pending_review",
+  "rejected_reason": null,
+  "metrics": {
+    "questions": 1,
+    "completed": 1,
+    "required_point_coverage": 0.5,
+    "citation_validity": 1.0,
+    "unsupported_claim_rate": 0.0,
+    "structured_output_rate": 1.0,
+    "false_insufficient_count": 0,
+    "formula_accuracy": null,
+    "model_load_seconds": 9.6594,
+    "p50_latency_seconds": 158.616,
+    "p95_latency_seconds": 158.616,
+    "p50_time_to_first_token_seconds": 120.3455,
+    "p95_time_to_first_token_seconds": 120.3455,
+    "mean_tokens_per_second": 1.1348,
+    "mean_prompt_tokens_per_second": 38.03,
+    "mean_generation_tokens_per_second": 4.65,
+    "peak_rss_bytes": 23937110016,
+    "sampled_peak_gpu_local_memory_bytes": 0,
+    "sampled_peak_gpu_nonlocal_memory_bytes": 0,
+    "schema_valid_output_rate": 1.0,
+    "mean_citation_support_token_recall": 0.6579,
+    "multi_passage_completeness": null
+  }
+}

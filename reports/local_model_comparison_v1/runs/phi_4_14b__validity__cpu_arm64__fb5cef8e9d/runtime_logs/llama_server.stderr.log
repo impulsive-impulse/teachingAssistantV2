@@ -1,0 +1,37 @@
+
+=== llama-server session started 2026-07-25T20:18:20+00:00 ===
+0.00.111.586 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.111.704 I srv          init: The UI is disabled
+0.00.111.706 I srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.111.841 W srv  llama_server: -----------------
+0.00.111.843 W srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+0.00.111.843 W srv  llama_server: this can be a security risk (cross-origin attacks)
+0.00.111.844 W srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+0.00.111.844 W srv  llama_server: -----------------
+0.00.125.444 I srv    load_model: loading model 'X:\teachingAssistantV2\app_data\models\generation\models--microsoft--phi-4-gguf\snapshots\6edc2ef6664b739a8e11e62f2672ff6afe0c15ac\phi-4-Q4_K_S.gguf'
+0.07.654.100 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 8192, kv_unified = 'false'
+0.07.657.540 I srv  llama_server: model loaded
+0.07.657.550 I srv  llama_server: listening on http://127.0.0.1:18123
+0.07.741.527 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.07.741.587 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+0.20.000.241 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =    512, progress = 0.11, t =  12.26 s / 41.77 tokens per second
+0.35.328.045 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1024, progress = 0.22, t =  27.59 s / 37.12 tokens per second
+0.55.776.523 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   1536, progress = 0.33, t =  48.03 s / 31.98 tokens per second
+1.17.734.584 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   2048, progress = 0.45, t =  69.99 s / 29.26 tokens per second
+1.39.159.220 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   2560, progress = 0.56, t =  91.42 s / 28.00 tokens per second
+2.02.899.126 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   3072, progress = 0.67, t = 115.16 s / 26.68 tokens per second
+2.28.580.228 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   3584, progress = 0.78, t = 140.84 s / 25.45 tokens per second
+2.56.734.932 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   4096, progress = 0.89, t = 168.99 s / 24.24 tokens per second
+4.01.574.647 I slot print_timing: id  0 | task 0 | n_decoded =    100, tg =   2.75 t/s, tg_3s =   2.75 t/s
+4.04.952.958 I slot print_timing: id  0 | task 0 | n_decoded =    110, tg =   2.77 t/s, tg_3s =   2.96 t/s
+4.08.287.186 I slot print_timing: id  0 | task 0 | n_decoded =    118, tg =   2.74 t/s, tg_3s =   2.40 t/s
+4.11.336.740 I slot print_timing: id  0 | task 0 | n_decoded =    130, tg =   2.82 t/s, tg_3s =   3.94 t/s
+4.14.529.799 I slot print_timing: id  0 | task 0 | n_decoded =    141, tg =   2.86 t/s, tg_3s =   3.44 t/s
+4.17.737.670 I slot print_timing: id  0 | task 0 | n_decoded =    149, tg =   2.84 t/s, tg_3s =   2.49 t/s
+4.21.043.588 I slot print_timing: id  0 | task 0 | n_decoded =    157, tg =   2.81 t/s, tg_3s =   2.42 t/s
+4.24.095.496 I slot print_timing: id  0 | task 0 | n_decoded =    164, tg =   2.79 t/s, tg_3s =   2.29 t/s
+4.25.809.450 I slot print_timing: id  0 | task 0 | prompt eval time =  197467.51 ms /  4592 tokens (   43.00 ms per token,    23.25 tokens per second)
+4.25.809.491 I slot print_timing: id  0 | task 0 |        eval time =   60600.30 ms /   169 tokens (  358.58 ms per token,     2.79 tokens per second)
+4.25.809.493 I slot print_timing: id  0 | task 0 |       total time =  258067.81 ms /  4761 tokens
+4.25.809.495 I slot print_timing: id  0 | task 0 |    graphs reused =        167
+4.25.809.826 I slot      release: id  0 | task 0 | stop processing: n_tokens = 4760, truncated = 0

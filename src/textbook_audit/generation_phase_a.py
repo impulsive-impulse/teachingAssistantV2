@@ -513,13 +513,30 @@ class LocalLlamaServer:
             "stream": True,
             "stream_options": {"include_usage": True},
             "response_format": {"type": "json_object"},
-            "chat_template_kwargs": {"enable_thinking": generation["thinking"]},
         }
+        for key in (
+            "top_p",
+            "top_k",
+            "min_p",
+            "repeat_penalty",
+            "presence_penalty",
+            "frequency_penalty",
+        ):
+            if key in generation:
+                payload[key] = generation[key]
+        if "chat_template_kwargs" in generation:
+            payload["chat_template_kwargs"] = generation["chat_template_kwargs"]
+        elif "thinking" in generation:
+            payload["chat_template_kwargs"] = {
+                "enable_thinking": generation["thinking"]
+            }
         request = urllib.request.Request(
             f"http://127.0.0.1:{self.config.port}/v1/chat/completions",
             data=json.dumps(payload).encode("utf-8"),
             headers={"Content-Type": "application/json"},
         )
+        stderr_path = self.config.log_dir / "llama_server.stderr.log"
+        request_log_offset = stderr_path.stat().st_size if stderr_path.is_file() else 0
         started = time.perf_counter()
         first_token_seconds: float | None = None
         content_parts: list[str] = []
@@ -548,7 +565,9 @@ class LocalLlamaServer:
                 if delta.get("content"):
                     content_parts.append(delta["content"])
         latency = time.perf_counter() - started
+        timings = self._request_timings(stderr_path, request_log_offset)
         memory = psutil.Process(self.process.pid).memory_info() if self.process else None
+        gpu_memory = self._windows_gpu_process_memory()
         return {
             "raw_text": "".join(content_parts),
             "time_to_first_token_seconds": first_token_seconds,
@@ -556,7 +575,100 @@ class LocalLlamaServer:
             "usage": usage,
             "response_id": response_id,
             "peak_rss_bytes": getattr(memory, "peak_wset", memory.rss) if memory else None,
+            "gpu_local_memory_bytes": gpu_memory["local"] if gpu_memory else None,
+            "gpu_nonlocal_memory_bytes": gpu_memory["nonlocal"] if gpu_memory else None,
+            "prompt_tokens_per_second": timings.get("prompt_tokens_per_second"),
+            "generation_tokens_per_second": timings.get("generation_tokens_per_second"),
+            "prompt_eval_seconds": timings.get("prompt_eval_seconds"),
+            "generation_eval_seconds": timings.get("generation_eval_seconds"),
         }
+
+    @staticmethod
+    def _request_timings(path: Path, offset: int) -> dict[str, float]:
+        """Parse llama.cpp's authoritative per-request timing lines."""
+
+        if not path.is_file():
+            return {}
+        # The server writes its timing lines immediately before completing the
+        # streaming request. A tiny bounded retry handles filesystem buffering.
+        text = ""
+        for _ in range(5):
+            with path.open("rb") as handle:
+                handle.seek(offset)
+                text = handle.read().decode("utf-8", errors="replace")
+            if "eval time =" in text:
+                break
+            time.sleep(0.05)
+        prompt_matches = re.findall(
+            r"prompt eval time\s*=\s*([0-9.]+)\s*ms\s*/\s*\d+\s*tokens.*?"
+            r"([0-9.]+)\s*tokens per second",
+            text,
+        )
+        generation_matches = re.findall(
+            r"(?<!prompt )eval time\s*=\s*([0-9.]+)\s*ms\s*/\s*\d+\s*tokens.*?"
+            r"([0-9.]+)\s*tokens per second",
+            text,
+        )
+        values: dict[str, float] = {}
+        if prompt_matches:
+            milliseconds, rate = prompt_matches[-1]
+            values["prompt_eval_seconds"] = float(milliseconds) / 1000
+            values["prompt_tokens_per_second"] = float(rate)
+        if generation_matches:
+            milliseconds, rate = generation_matches[-1]
+            values["generation_eval_seconds"] = float(milliseconds) / 1000
+            values["generation_tokens_per_second"] = float(rate)
+        return values
+
+    def _windows_gpu_process_memory(self) -> dict[str, int] | None:
+        """Read current Windows GPU memory counters for the server process.
+
+        OpenCL model allocations normally remain resident across requests, so
+        the post-generation value is a useful comparable high-water proxy. The
+        experiment still labels this as a sampled value rather than a true
+        continuous peak.
+        """
+
+        if os.name != "nt" or self.process is None:
+            return None
+        script = (
+            f"$targetProcessId={int(self.process.pid)};"
+            "$samples=Get-Counter "
+            "'\\GPU Process Memory(*)\\Local Usage',"
+            "'\\GPU Process Memory(*)\\Non Local Usage' "
+            "-ErrorAction SilentlyContinue | "
+            "Select-Object -ExpandProperty CounterSamples | "
+            "Where-Object { $_.InstanceName -like ('pid_'+$targetProcessId+'_*') };"
+            "$local=($samples | Where-Object {$_.Path -like '*\\local usage'} | "
+            "Measure-Object CookedValue -Sum).Sum;"
+            "$nonlocal=($samples | Where-Object {$_.Path -like '*\\non local usage'} | "
+            "Measure-Object CookedValue -Sum).Sum;"
+            "[pscustomobject]@{local=[int64]$local;nonlocal=[int64]$nonlocal} | "
+            "ConvertTo-Json -Compress"
+        )
+        try:
+            completed = subprocess.run(
+                [
+                    "powershell",
+                    "-NoProfile",
+                    "-NonInteractive",
+                    "-Command",
+                    script,
+                ],
+                capture_output=True,
+                text=True,
+                timeout=10,
+                check=False,
+            )
+            if completed.returncode != 0 or not completed.stdout.strip():
+                return None
+            value = json.loads(completed.stdout)
+            return {
+                "local": int(value.get("local") or 0),
+                "nonlocal": int(value.get("nonlocal") or 0),
+            }
+        except (OSError, subprocess.TimeoutExpired, json.JSONDecodeError, ValueError):
+            return None
 
     def stop(self) -> None:
         """Terminate the local server and close log handles even after failure."""

@@ -1,0 +1,28 @@
+{
+  "run_id": "gemma_3_12b_it_qat_q4_0__smoke__adreno_opencl__7a5dfe84c2",
+  "decision": "reject",
+  "rejected_reason": "smoke_citation_gate_unreachable",
+  "metrics": {
+    "questions": 3,
+    "completed": 3,
+    "required_point_coverage": 0.4167,
+    "citation_validity": 0.3333,
+    "unsupported_claim_rate": 0.0,
+    "structured_output_rate": 0.3333,
+    "false_insufficient_count": 0,
+    "formula_accuracy": null,
+    "model_load_seconds": 33.2571,
+    "p50_latency_seconds": 122.7893,
+    "p95_latency_seconds": 140.991,
+    "p50_time_to_first_token_seconds": 81.2007,
+    "p95_time_to_first_token_seconds": 86.4193,
+    "mean_tokens_per_second": 1.8424,
+    "mean_prompt_tokens_per_second": 58.6033,
+    "mean_generation_tokens_per_second": 5.2667,
+    "peak_rss_bytes": 21105340416,
+    "sampled_peak_gpu_local_memory_bytes": 9604411392,
+    "sampled_peak_gpu_nonlocal_memory_bytes": 0,
+    "mean_citation_support_token_recall": 0.5724,
+    "multi_passage_completeness": 0.0
+  }
+}

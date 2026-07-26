@@ -26,3 +26,17 @@ approval before paid execution.
 
 Report builders (`build_*`) transform existing artifacts and do not perform
 model inference unless their documentation explicitly says otherwise.
+
+## Local Model Comparison v1
+
+- `freeze_local_model_comparison_evidence.py`: pin the historical development
+  top-five evidence into the isolated comparison directory.
+- `run_local_model_comparison.py`: run validity, smoke, development, or gated
+  holdout stages with checksum and backend-log verification.
+- `build_local_model_comparison_report.py`: regenerate CPU/GPU tables,
+  gate-aware quality leaderboard, winners, and the v2 recommendation.
+- `build_local_model_human_review.py`: build a deterministic blinded packet
+  only when at least two same-stage finalist runs received identical evidence.
+- `resume_verified_download.py` and `parallel_verified_download.py`: resume an
+  explicitly approved artifact with strict range, byte-boundary, and SHA-256
+  checks. Model data remains under Git-ignored `app_data`.

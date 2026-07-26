@@ -1,0 +1,28 @@
+{
+  "run_id": "gemma_3_12b_it_qat_q4_0__validity__cpu_arm64__b9e802d22a",
+  "decision": "reject",
+  "rejected_reason": "invalid_structured_output",
+  "metrics": {
+    "questions": 1,
+    "completed": 1,
+    "required_point_coverage": 0.5,
+    "citation_validity": 0.0,
+    "unsupported_claim_rate": 0.0,
+    "structured_output_rate": 0.0,
+    "false_insufficient_count": 0,
+    "formula_accuracy": null,
+    "model_load_seconds": 7.4798,
+    "p50_latency_seconds": 135.0909,
+    "p95_latency_seconds": 135.0909,
+    "p50_time_to_first_token_seconds": 113.2665,
+    "p95_time_to_first_token_seconds": 113.2665,
+    "mean_tokens_per_second": 0.9253,
+    "mean_prompt_tokens_per_second": 41.16,
+    "mean_generation_tokens_per_second": 5.73,
+    "peak_rss_bytes": 15893114880,
+    "sampled_peak_gpu_local_memory_bytes": 0,
+    "sampled_peak_gpu_nonlocal_memory_bytes": 0,
+    "mean_citation_support_token_recall": 0.9,
+    "multi_passage_completeness": null
+  }
+}
