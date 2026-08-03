@@ -11,7 +11,7 @@ commands refer to them by name.
 | What retrieval pipeline is approved? | `config/retrieval_baseline_v1.yaml` |
 | What generation profiles are approved? | `config/generation_baseline_v1.json` |
 | Why were those generation profiles selected? | `reports/generation_baseline_v1/README.md` |
-| Did a newer local model beat Qwen3-8B? | `reports/local_model_comparison_v1/benchmark_tables.md` |
+| Did a newer local model beat Qwen3-8B? | `reports/local_model_comparison_v1/benchmark_tables.md` and `reports/local_model_comparison_v2_qwen36_27b/benchmark_tables.md` |
 | What exactly did the human review approve? | `reports/generation_baseline_v1/human_review_signoff.json` |
 | How do I inspect local vs online answers? | `reports/openai_generation_experiments/comparisons/full_40_labeled/local_vs_gpt4o_labeled_comparison.html` |
 | How do I query retrieval interactively? | `scripts/query_final_pipeline.py` |
@@ -50,6 +50,9 @@ availability requires it.
 - `reports/generation_baseline_v1/`: frozen generation decision and checksums.
 - `reports/local_model_comparison_v1/`: controlled 2026 local-model comparison,
   raw run evidence, compatibility matrix, leaderboard, and no-v2 recommendation.
+- `reports/local_model_comparison_v2_qwen36_27b/`: isolated Qwen3.6-27B CPU and
+  Adreno validity investigation, early-stop evidence, and retained-control
+  recommendation.
 - `reports/experiments/`: historical retrieval experiment ledger and artifacts.
 - `reports/generation_experiments/`: historical local generation matrix.
 - `reports/openai_generation_experiments/`: historical online comparison and paid-call cache.

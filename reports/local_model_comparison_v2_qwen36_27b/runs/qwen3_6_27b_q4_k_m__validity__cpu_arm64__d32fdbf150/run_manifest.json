@@ -1,0 +1,221 @@
+{
+  "schema_version": 1,
+  "run_id": "qwen3_6_27b_q4_k_m__validity__cpu_arm64__d32fdbf150",
+  "created_at": "2026-08-03T18:34:17+00:00",
+  "model_key": "qwen3_6_27b_q4_k_m",
+  "model": {
+    "evaluation_order": 1,
+    "display_name": "Qwen3.6-27B Q4_K_M",
+    "verification_status": "downloaded_checksum_verified",
+    "repository": "ggml-org/Qwen3.6-27B-GGUF",
+    "base_repository": "Qwen/Qwen3.6-27B",
+    "revision": "8a7ee08e8b9bfb857107ecc25a5599d2f38b76f8",
+    "base_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+    "gated": false,
+    "artifact": {
+      "filename": "Qwen3.6-27B-Q4_K_M.gguf",
+      "format": "GGUF",
+      "quantization": "Q4_K_M",
+      "bytes": 19095766304,
+      "gib": 17.784,
+      "sha256": "65b753ea835627f7b511143c6ceb976525c7f21f5df8c664bc0a9c23d1c49921"
+    },
+    "optional_vision_projector": {
+      "needed_for_text_benchmark": false,
+      "filename": "mmproj-Qwen3.6-27B-Q8_0.gguf",
+      "bytes": 629247104
+    },
+    "license": {
+      "identifier": "Apache-2.0",
+      "experiment_compatibility": "compatible",
+      "reason": "Apache License 2.0 permits local educational evaluation, modification, and commercial use subject to its notice and attribution conditions.",
+      "production_distribution_note": "Retain the licence and applicable notices for any future distribution; legal sign-off remains required before a production baseline decision."
+    },
+    "memory_expectation": {
+      "weight_file_gib": 17.784,
+      "estimated_cpu_peak_gib": "28-42",
+      "estimated_opencl_shared_memory_gib": "24-40",
+      "basis": "Dense 27B Q4_K_M weights plus the frozen 8192-token KV/cache, recurrent state, graph, runtime, and shared-GPU buffers; measurement is required."
+    },
+    "llama_cpp": {
+      "cpu_arm64": "expected_supported",
+      "adreno_opencl": "expected_supported_requires_probe",
+      "model_architecture": "qwen3_5 hybrid Gated DeltaNet/attention",
+      "installed_binary_evidence": "Both pinned builds contain qwen35 and Gated DeltaNet support; the OpenCL build also contains the gated_delta_net kernel.",
+      "must_verify_from_logs": true,
+      "known_risk": "Hybrid recurrent-cache models have reported prompt-cache reprocessing issues in llama.cpp; this single-turn benchmark still requires latency and corruption checks."
+    },
+    "chat_template": {
+      "source": "official embedded Qwen3.6 GGUF template",
+      "roles": [
+        "system",
+        "user",
+        "assistant"
+      ],
+      "system_role_supported": true,
+      "instruction_handling": "Keep the frozen P1 benchmark prompt in the user message and disable thinking through the official template kwarg so the 384-token structured schema is directly emitted.",
+      "qwen_no_think_prefix": false,
+      "kwargs": {
+        "enable_thinking": false,
+        "preserve_thinking": false
+      }
+    },
+    "recommended_decoding": {
+      "temperature": 0.7,
+      "top_p": 0.8,
+      "top_k": 20,
+      "min_p": 0.0,
+      "presence_penalty": 1.5,
+      "repeat_penalty": 1.0,
+      "seed": 42,
+      "max_output_tokens": 384
+    },
+    "download": {
+      "approved": true,
+      "approved_on": "2026-08-03",
+      "approval_basis": "User instructed the assistant to proceed after exact artifact, size, licence, and storage requirements were disclosed.",
+      "access_available": true,
+      "destination": "app_data/models/generation",
+      "command": "hf download ggml-org/Qwen3.6-27B-GGUF Qwen3.6-27B-Q4_K_M.gguf --revision 8a7ee08e8b9bfb857107ecc25a5599d2f38b76f8 --cache-dir app_data/models/generation",
+      "downloaded_by_experiment": true,
+      "downloaded_on": "2026-08-03",
+      "dry_run_verified": true,
+      "checksum_verified": true
+    },
+    "sources": [
+      "https://qwen.ai/blog?id=qwen3.6-27b",
+      "https://huggingface.co/Qwen/Qwen3.6-27B",
+      "https://huggingface.co/ggml-org/Qwen3.6-27B-GGUF",
+      "https://www.apache.org/licenses/LICENSE-2.0",
+      "https://github.com/ggml-org/llama.cpp/issues/22746"
+    ],
+    "evaluation": {
+      "decision": "pending",
+      "next_stage": "validity"
+    }
+  },
+  "model_path": "X:\\teachingAssistantV2\\app_data\\models\\generation\\qwen3.6-27b\\Qwen3.6-27B-Q4_K_M.gguf",
+  "model_sha256": "65b753ea835627f7b511143c6ceb976525c7f21f5df8c664bc0a9c23d1c49921",
+  "stage": "validity",
+  "backend": "cpu_arm64",
+  "runtime": {
+    "engine": "llama.cpp",
+    "build_number": 10046,
+    "commit": "32e789fdfd598e9a1872da55ac941e4d94f030bd",
+    "architecture": "windows-arm64",
+    "backend": "cpu",
+    "context_size": 8192,
+    "threads": 10,
+    "threads_batch": 10,
+    "batch_size": 512,
+    "ubatch_size": 256,
+    "gpu_layers": 0,
+    "parallel_slots": 1
+  },
+  "server_command": [
+    "X:\\teachingAssistantV2\\app_data\\models\\llama.cpp\\bin\\llama-server.exe",
+    "--model",
+    "X:\\teachingAssistantV2\\app_data\\models\\generation\\qwen3.6-27b\\Qwen3.6-27B-Q4_K_M.gguf",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18111",
+    "--ctx-size",
+    "8192",
+    "--threads",
+    "10",
+    "--threads-batch",
+    "10",
+    "--batch-size",
+    "512",
+    "--ubatch-size",
+    "256",
+    "--n-gpu-layers",
+    "0",
+    "--parallel",
+    "1",
+    "--seed",
+    "42",
+    "--no-webui",
+    "--metrics",
+    "--check-tensors"
+  ],
+  "backend_log_evidence": {
+    "backend": "cpu_arm64",
+    "adreno_device_named": false,
+    "opencl_device_selected": false,
+    "adreno_kernels_selected": false,
+    "offloaded_layers": 0,
+    "available_layers": 0,
+    "valid": true
+  },
+  "chat_template": {
+    "source": "official embedded Qwen3.6 GGUF template",
+    "roles": [
+      "system",
+      "user",
+      "assistant"
+    ],
+    "system_role_supported": true,
+    "instruction_handling": "Keep the frozen P1 benchmark prompt in the user message and disable thinking through the official template kwarg so the 384-token structured schema is directly emitted.",
+    "qwen_no_think_prefix": false,
+    "kwargs": {
+      "enable_thinking": false,
+      "preserve_thinking": false
+    }
+  },
+  "decoding": {
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "min_p": 0.0,
+    "presence_penalty": 1.5,
+    "repeat_penalty": 1.0,
+    "seed": 42,
+    "max_output_tokens": 384,
+    "chat_template_kwargs": {
+      "enable_thinking": false,
+      "preserve_thinking": false
+    }
+  },
+  "question_ids": [
+    "GEN-BIO-002"
+  ],
+  "completed_question_ids": [
+    "GEN-BIO-002"
+  ],
+  "frozen_input_hashes": {
+    "retrieval_baseline": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6",
+    "generation_baseline": "758c0a857b427ab73c790b6031a14762c6653f8714f0fef29830373439ab78ba",
+    "historical_generation_experiment": "a80a31f19c4b606533c319dc1876686ba2cf08e54c1dcef17d745e9c28273f70",
+    "generation_benchmark": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680",
+    "development_evidence_source": "58167f04b5fdcdcb4689f624c6c3da6001accc0e82caffe4818de0c98de4d586",
+    "development_evidence_snapshot": "acd83d2a8daa2749972a54ed4ec3e05e5b34feb3896af681b1385c4b2fa6b266"
+  },
+  "metrics": {
+    "questions": 1,
+    "completed": 1,
+    "required_point_coverage": 0.75,
+    "citation_validity": 1.0,
+    "unsupported_claim_rate": 0.0,
+    "structured_output_rate": 1.0,
+    "false_insufficient_count": 0,
+    "formula_accuracy": null,
+    "model_load_seconds": 28.0853,
+    "p50_latency_seconds": 578.215,
+    "p95_latency_seconds": 578.215,
+    "p50_time_to_first_token_seconds": 396.7041,
+    "p95_time_to_first_token_seconds": 396.7041,
+    "mean_tokens_per_second": 0.4721,
+    "mean_prompt_tokens_per_second": 12.32,
+    "mean_generation_tokens_per_second": 1.5,
+    "peak_rss_bytes": 38649298944,
+    "sampled_peak_gpu_local_memory_bytes": 0,
+    "sampled_peak_gpu_nonlocal_memory_bytes": 0,
+    "schema_valid_output_rate": 1.0,
+    "mean_citation_support_token_recall": 0.88,
+    "multi_passage_completeness": null
+  },
+  "decision": "pending_review",
+  "rejected_reason": null
+}

@@ -18,6 +18,11 @@ Phi-4 14B, and Granite 3.3 8B without changing those frozen profiles. None
 passed the successive-narrowing gates, so Qwen3-8B remains the approved local
 model. See `reports/local_model_comparison_v1/README.md`.
 
+A subsequent isolated Qwen3.6-27B Q4_K_M investigation confirmed native ARM64
+CPU and full Adreno OpenCL offload, but stopped at validity because latency and
+memory were substantially worse than the Qwen3-8B control. See
+`reports/local_model_comparison_v2_qwen36_27b/README.md`.
+
 The first release is single-user, CPU-first, and bound to `127.0.0.1`. On the
 validated Windows ARM64 hardware it can optionally run offline generation on
 the Qualcomm Adreno GPU through OpenCL. It accepts English, text-layer textbook

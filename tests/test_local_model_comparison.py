@@ -1,4 +1,4 @@
-"""Controls for the isolated Local Model Comparison v1 experiment."""
+"""Controls for isolated, versioned local-model comparison experiments."""
 
 from __future__ import annotations
 
@@ -12,6 +12,7 @@ from textbook_audit.generation_phase_a import LocalLlamaServer
 from textbook_audit.local_model_human_review import build_packet
 from textbook_audit.local_model_report import (
     build_benchmark_table,
+    build_control_reference,
     build_final_decision,
     build_gate_leaderboard,
     build_quality_table,
@@ -270,6 +271,45 @@ def test_gate_leaderboard_and_final_decision_require_all_rejections() -> None:
     assert "narrowing is incomplete" in build_final_decision(registry)
 
 
+def test_versioned_report_support_preserves_v1_conclusions() -> None:
+    registry = json.loads(
+        (EXPERIMENT / "artifact_registry.json").read_text(encoding="utf-8")
+    )
+    decision = build_final_decision(registry)
+    assert "Gemma failed the smoke citation gate" in decision
+    assert "Phi-4 Mini and Mistral Small" in decision
+
+
+def test_control_reference_is_explicitly_labelled_and_optional() -> None:
+    registry = {
+        "candidates": {
+            "control": {
+                "control": True,
+                "display_name": "Frozen control",
+            },
+            "candidate": {
+                "evaluation_order": 1,
+                "evaluation": {
+                    "control_opencl_validity_reference": {
+                        "ttft_seconds": 10,
+                        "latency_seconds": 20,
+                        "prompt_tokens_per_second": 30,
+                        "generation_tokens_per_second": 4,
+                        "peak_rss_gib": 5,
+                        "sampled_peak_gpu_local_memory_gib": 3,
+                    }
+                },
+            },
+        }
+    }
+    reference = build_control_reference(registry)
+    assert "Frozen control validity reference" in reference
+    assert "not rerun or modified" in reference
+    assert "| Frozen control | adreno_opencl | 10.00 | 20.00 |" in reference
+    del registry["candidates"]["candidate"]["evaluation"]
+    assert build_control_reference(registry) == ""
+
+
 def test_parallel_download_ranges_cover_boundary_exactly() -> None:
     intervals = ranges(7, 31, 4)
     assert intervals[0][0] == 7
@@ -279,3 +319,13 @@ def test_parallel_download_ranges_cover_boundary_exactly() -> None:
         left_end + 1 == right_start
         for (_, left_end), (right_start, _) in zip(intervals, intervals[1:])
     )
+
+
+def test_versioned_experiment_configuration_is_not_the_completed_v1() -> None:
+    experiment = ROOT / "reports/local_model_comparison_v2_qwen36_27b"
+    if not experiment.is_dir():
+        pytest.skip("Qwen3.6 comparison metadata has not been created")
+    config = json.loads((experiment / "experiment_config.json").read_text(encoding="utf-8"))
+    assert config["experiment_id"] == "local_model_comparison_v2_qwen36_27b"
+    assert config["production_baselines_mutable"] is False
+    assert experiment != EXPERIMENT

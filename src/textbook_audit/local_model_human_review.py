@@ -207,14 +207,25 @@ def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-id", action="append", required=True)
     parser.add_argument(
+        "--experiment-dir",
+        type=Path,
+        default=EXPERIMENT_DIR,
+    )
+    parser.add_argument(
         "--output-dir",
         type=Path,
-        default=EXPERIMENT_DIR / "human_review/finalists",
+        default=None,
     )
     args = parser.parse_args(argv)
+    experiment_dir = args.experiment_dir.resolve()
+    output_dir = (
+        args.output_dir.resolve()
+        if args.output_dir is not None
+        else experiment_dir / "human_review/finalists"
+    )
     print(
         json.dumps(
-            build_review(args.run_id, args.output_dir.resolve()),
+            build_review(args.run_id, output_dir, experiment_dir),
             indent=2,
         )
     )

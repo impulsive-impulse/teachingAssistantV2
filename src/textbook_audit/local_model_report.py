@@ -1,4 +1,4 @@
-"""Deterministic report tables for Local Model Comparison v1."""
+"""Deterministic report tables for versioned local-model comparisons."""
 
 from __future__ import annotations
 
@@ -77,7 +77,7 @@ def build_benchmark_table(manifests: list[dict[str, Any]]) -> str:
     header = (
         "| Model | Stage | Backend | Questions | GPU offload | TTFT p50 (s) | "
         "Latency p50 (s) | Prompt tok/s | Gen tok/s | Peak RAM (GiB) | "
-        "GPU local (GiB) | Decision |\n"
+        "GPU local (GiB) | Run gate result |\n"
         "|---|---|---|---:|---|---:|---:|---:|---:|---:|---:|---|"
     )
     rows = [header]
@@ -119,7 +119,7 @@ def build_quality_table(manifests: list[dict[str, Any]]) -> str:
     header = (
         "| Model | Stage | Backend | N | Coverage | Citation valid | "
         "Citation support | Unsupported | Formula | Multi-passage | "
-        "Schema valid | Full validator | Decision |\n"
+        "Schema valid | Full validator | Run gate result |\n"
         "|---|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---|"
     )
     rows = [header]
@@ -145,6 +145,44 @@ def build_quality_table(manifests: list[dict[str, Any]]) -> str:
             )
         )
     return "\n".join(rows) + "\n"
+
+
+def build_control_reference(registry: dict[str, Any]) -> str:
+    """Render an explicitly labelled frozen-control reference when recorded."""
+
+    candidates = registry.get("candidates", {})
+    control = next(
+        (value for value in candidates.values() if value.get("control")), None
+    )
+    reference = next(
+        (
+            value.get("evaluation", {}).get("control_opencl_validity_reference")
+            for value in candidates.values()
+            if value.get("evaluation_order") is not None
+            and value.get("evaluation", {}).get(
+                "control_opencl_validity_reference"
+            )
+        ),
+        None,
+    )
+    if control is None or reference is None:
+        return ""
+    return (
+        "## Frozen control validity reference\n\n"
+        "This row is copied from the checksum-pinned v1 control manifest named "
+        "in `artifact_registry.json`; it was not rerun or modified in this "
+        "experiment.\n\n"
+        "| Model | Backend | TTFT (s) | Latency (s) | Prompt tok/s | Gen tok/s "
+        "| Peak RAM (GiB) | GPU local (GiB) |\n"
+        "|---|---|---:|---:|---:|---:|---:|---:|\n"
+        f"| {control['display_name']} | adreno_opencl | "
+        f"{_number(reference.get('ttft_seconds'))} | "
+        f"{_number(reference.get('latency_seconds'))} | "
+        f"{_number(reference.get('prompt_tokens_per_second'))} | "
+        f"{_number(reference.get('generation_tokens_per_second'))} | "
+        f"{_number(reference.get('peak_rss_gib'))} | "
+        f"{_number(reference.get('sampled_peak_gpu_local_memory_gib'))} |\n\n"
+    )
 
 
 def build_gate_leaderboard(
@@ -190,8 +228,11 @@ def build_gate_leaderboard(
             eligibility = "retained control"
             outcome = "Only model to pass smoke and complete development"
         else:
-            eligibility = "ineligible"
-            outcome = evaluation.get("reason", "rejected").replace("_", " ")
+            decision = evaluation.get("decision", "pending")
+            eligibility = "ineligible" if decision == "reject" else "pending"
+            outcome = evaluation.get(
+                "reason", evaluation.get("next_stage", decision)
+            ).replace("_", " ")
         rows.append(
             "| {model} | {stage} | {backend} | {n} | {coverage} | "
             "{citation} | {schema} | {ttft} | {latency} | {eligibility} | "
@@ -230,30 +271,69 @@ def build_final_decision(registry: dict[str, Any]) -> str:
             "Ordered candidate narrowing is incomplete. Winner declarations, "
             "blinded review, and any holdout decision remain pending.\n"
         )
+    legacy_v1_required = {
+        "gemma_3_12b_it_qat_q4_0",
+        "gpt_oss_20b_native_mxfp4",
+        "phi_4_14b",
+        "granite_3_3_8b_instruct",
+    }
+    required_keys = {
+        key
+        for key, value in candidates.items()
+        if value.get("evaluation_order") is not None
+    }
+    if required_keys == legacy_v1_required:
+        return (
+            "- **Best quality model:** Qwen3-8B Q4_K_M control. It is the only "
+            "model that passed smoke and completed the frozen development "
+            "benchmark.\n"
+            "- **Best speed model (eligible models):** Qwen3-8B Q4_K_M control. "
+            "Its OpenCL validity TTFT/latency were 73.29/100.70 s, faster than "
+            "every required alternative on the identical case. Gemma had the "
+            "fastest raw CPU validity latency, but is ineligible because it "
+            "failed citation reliability.\n"
+            "- **Best balanced model:** Qwen3-8B Q4_K_M control, based on its "
+            "only successful combination of schema reliability, citations, "
+            "coverage, latency, and memory.\n"
+            "- **Comparison against Qwen:** Gemma failed the smoke citation "
+            "gate; gpt-oss produced invalid OpenCL JSON and excessive latency; "
+            "Phi-4 was markedly slower with lower coverage; Granite "
+            "systematically emitted invalid citation page metadata and was "
+            "slower/less complete.\n"
+            "- **Blinded human review:** no packet was generated because no "
+            "alternative reached development/finalist status. The packet "
+            "builder requires at least two same-stage runs with identical "
+            "evidence, which prevents presenting a one-model packet as a "
+            "blinded comparison.\n"
+            "- **Holdout:** untouched. No alternative satisfied the finalist "
+            "gate.\n"
+            "- **Answering Baseline v2 recommendation:** do not advance any "
+            "tested candidate. Retain the frozen Answering Baseline v1/Qwen3-8B "
+            "control. The optional Phi-4 Mini and Mistral Small candidates "
+            "remain separate future experiments requiring their own artifact "
+            "review and approval.\n"
+        )
+    control = next(
+        (value for value in candidates.values() if value.get("control")),
+        {"display_name": "the frozen control"},
+    )
+    rejected = "; ".join(
+        f"{candidate['display_name']}: "
+        f"{candidate['evaluation'].get('reason', 'rejected').replace('_', ' ')}"
+        for candidate in required
+    )
+    control_name = control["display_name"]
     return (
-        "- **Best quality model:** Qwen3-8B Q4_K_M control. It is the only model "
-        "that passed smoke and completed the frozen development benchmark.\n"
-        "- **Best speed model (eligible models):** Qwen3-8B Q4_K_M control. Its "
-        "OpenCL validity TTFT/latency were 73.29/100.70 s, faster than every "
-        "required alternative on the identical case. Gemma had the fastest raw "
-        "CPU validity latency, but is ineligible because it failed citation "
-        "reliability.\n"
-        "- **Best balanced model:** Qwen3-8B Q4_K_M control, based on its only "
-        "successful combination of schema reliability, citations, coverage, "
-        "latency, and memory.\n"
-        "- **Comparison against Qwen:** Gemma failed the smoke citation gate; "
-        "gpt-oss produced invalid OpenCL JSON and excessive latency; Phi-4 was "
-        "markedly slower with lower coverage; Granite systematically emitted "
-        "invalid citation page metadata and was slower/less complete.\n"
+        f"- **Best quality model:** {control_name}; no candidate passed all "
+        "successive-narrowing gates.\n"
+        f"- **Best speed model (eligible models):** {control_name}.\n"
+        f"- **Best balanced model:** {control_name}.\n"
+        f"- **Comparison against the control:** {rejected}.\n"
         "- **Blinded human review:** no packet was generated because no "
-        "alternative reached development/finalist status. The packet builder "
-        "requires at least two same-stage runs with identical evidence, which "
-        "prevents presenting a one-model packet as a blinded comparison.\n"
-        "- **Holdout:** untouched. No alternative satisfied the finalist gate.\n"
+        "alternative reached development/finalist status.\n"
+        "- **Holdout:** untouched; no alternative satisfied the finalist gate.\n"
         "- **Answering Baseline v2 recommendation:** do not advance any tested "
-        "candidate. Retain the frozen Answering Baseline v1/Qwen3-8B control. "
-        "The optional Phi-4 Mini and Mistral Small candidates remain separate "
-        "future experiments requiring their own artifact review and approval.\n"
+        "candidate; retain the frozen production control.\n"
     )
 
 
@@ -265,9 +345,12 @@ def write_tables(experiment_dir: Path) -> Path:
     content = (
         "# Generated benchmark tables\n\n"
         "This file is generated from immutable run manifests. Validity and "
-        "early-stopped smoke rows are not quality-leaderboard finals.\n\n"
+        "early-stopped smoke rows are not quality-leaderboard finals. The "
+        "Decision column records the runner's immediate gate result; final "
+        "eligibility is recorded in the leaderboard.\n\n"
         "## CPU/GPU benchmark table\n\n"
         f"{build_benchmark_table(manifests)}\n"
+        f"{build_control_reference(registry)}"
         "## Quality observations by completed stage\n\n"
         f"{build_quality_table(manifests)}\n"
         "## Gate-aware quality leaderboard\n\n"

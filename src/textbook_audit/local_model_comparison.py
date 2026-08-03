@@ -340,7 +340,11 @@ def run_comparison(
         candidate["chat_template"].get("kwargs", {})
     )
     run_id = make_run_id(model_key, stage, backend, artifact, runtime, decoding)
-    run_dir = EXPERIMENT_DIR / "runs" / run_id
+    # Keep every run beside the selected experiment configuration. This makes
+    # alternate versioned experiments safe without mutating the completed v1
+    # evidence directory.
+    experiment_dir = config_path.resolve().parent
+    run_dir = experiment_dir / "runs" / run_id
     question_dir = run_dir / "questions"
     question_dir.mkdir(parents=True, exist_ok=True)
     extra = ["--metrics"]

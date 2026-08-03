@@ -1,0 +1,161 @@
+{
+  "schema_version": 1,
+  "updated_on": "2026-08-04",
+  "candidates": {
+    "qwen3_8b_q4_k_m_control": {
+      "control": true,
+      "display_name": "Qwen3-8B Q4_K_M — frozen v1 control",
+      "verification_status": "frozen_production_control",
+      "repository": "Qwen/Qwen3-8B-GGUF",
+      "revision": "7c41481f57cb95916b40956ab2f0b139b296d974",
+      "artifact": {
+        "filename": "Qwen3-8B-Q4_K_M.gguf",
+        "format": "GGUF",
+        "quantization": "Q4_K_M",
+        "bytes": 5027783488,
+        "gib": 4.682,
+        "sha256": "d98cdcbd03e17ce47681435b5150e34c1417f50b5c0019dd560e4882c5745785"
+      },
+      "comparison_source": {
+        "experiment": "reports/local_model_comparison_v1",
+        "development_run_id": "qwen3_8b_q4_k_m_control__development__adreno_opencl__7672067985",
+        "development_results_sha256": "ea500e9d08efa40385a29af1978d0d68cafea7b67510e74f2ff513c7dc8bce96",
+        "development_manifest_sha256": "553a48ddc203586a6579d9d7c9475b27d9e90988c847fbfe02153878e1216d53"
+      }
+    },
+    "qwen3_6_27b_q4_k_m": {
+      "evaluation_order": 1,
+      "display_name": "Qwen3.6-27B Q4_K_M",
+      "verification_status": "downloaded_checksum_verified",
+      "repository": "ggml-org/Qwen3.6-27B-GGUF",
+      "base_repository": "Qwen/Qwen3.6-27B",
+      "revision": "8a7ee08e8b9bfb857107ecc25a5599d2f38b76f8",
+      "base_revision": "6a9e13bd6fc8f0983b9b99948120bc37f49c13e9",
+      "gated": false,
+      "artifact": {
+        "filename": "Qwen3.6-27B-Q4_K_M.gguf",
+        "format": "GGUF",
+        "quantization": "Q4_K_M",
+        "bytes": 19095766304,
+        "gib": 17.784,
+        "sha256": "65b753ea835627f7b511143c6ceb976525c7f21f5df8c664bc0a9c23d1c49921"
+      },
+      "optional_vision_projector": {
+        "needed_for_text_benchmark": false,
+        "filename": "mmproj-Qwen3.6-27B-Q8_0.gguf",
+        "bytes": 629247104
+      },
+      "license": {
+        "identifier": "Apache-2.0",
+        "experiment_compatibility": "compatible",
+        "reason": "Apache License 2.0 permits local educational evaluation, modification, and commercial use subject to its notice and attribution conditions.",
+        "production_distribution_note": "Retain the licence and applicable notices for any future distribution; legal sign-off remains required before a production baseline decision."
+      },
+      "memory_expectation": {
+        "weight_file_gib": 17.784,
+        "estimated_cpu_peak_gib": "28-42",
+        "estimated_opencl_shared_memory_gib": "24-40",
+        "basis": "Dense 27B Q4_K_M weights plus the frozen 8192-token KV/cache, recurrent state, graph, runtime, and shared-GPU buffers; measurement is required."
+      },
+      "llama_cpp": {
+        "cpu_arm64": "expected_supported",
+        "adreno_opencl": "expected_supported_requires_probe",
+        "model_architecture": "qwen3_5 hybrid Gated DeltaNet/attention",
+        "installed_binary_evidence": "Both pinned builds contain qwen35 and Gated DeltaNet support; the OpenCL build also contains the gated_delta_net kernel.",
+        "must_verify_from_logs": true,
+        "known_risk": "Hybrid recurrent-cache models have reported prompt-cache reprocessing issues in llama.cpp; this single-turn benchmark still requires latency and corruption checks."
+      },
+      "chat_template": {
+        "source": "official embedded Qwen3.6 GGUF template",
+        "roles": [
+          "system",
+          "user",
+          "assistant"
+        ],
+        "system_role_supported": true,
+        "instruction_handling": "Keep the frozen P1 benchmark prompt in the user message and disable thinking through the official template kwarg so the 384-token structured schema is directly emitted.",
+        "qwen_no_think_prefix": false,
+        "kwargs": {
+          "enable_thinking": false,
+          "preserve_thinking": false
+        }
+      },
+      "recommended_decoding": {
+        "temperature": 0.7,
+        "top_p": 0.8,
+        "top_k": 20,
+        "min_p": 0.0,
+        "presence_penalty": 1.5,
+        "repeat_penalty": 1.0,
+        "seed": 42,
+        "max_output_tokens": 384
+      },
+      "download": {
+        "approved": true,
+        "approved_on": "2026-08-03",
+        "approval_basis": "User instructed the assistant to proceed after exact artifact, size, licence, and storage requirements were disclosed.",
+        "access_available": true,
+        "destination": "app_data/models/generation",
+        "command": "hf download ggml-org/Qwen3.6-27B-GGUF Qwen3.6-27B-Q4_K_M.gguf --revision 8a7ee08e8b9bfb857107ecc25a5599d2f38b76f8 --cache-dir app_data/models/generation",
+        "downloaded_by_experiment": true,
+        "downloaded_on": "2026-08-03",
+        "dry_run_verified": true,
+        "checksum_verified": true
+      },
+      "sources": [
+        "https://qwen.ai/blog?id=qwen3.6-27b",
+        "https://huggingface.co/Qwen/Qwen3.6-27B",
+        "https://huggingface.co/ggml-org/Qwen3.6-27B-GGUF",
+        "https://www.apache.org/licenses/LICENSE-2.0",
+        "https://github.com/ggml-org/llama.cpp/issues/22746"
+      ],
+      "evaluation": {
+        "decision": "reject",
+        "stopped_after": "validity",
+        "reason": "unacceptable_latency_and_memory",
+        "next_stage": null,
+        "cpu_run_id": "qwen3_6_27b_q4_k_m__validity__cpu_arm64__d32fdbf150",
+        "opencl_run_id": "qwen3_6_27b_q4_k_m__validity__adreno_opencl__b7f532b812",
+        "output_validity": "passed_on_cpu_and_opencl",
+        "opencl_evidence": {
+          "device": "Qualcomm(R) Adreno(TM) X1-85 GPU",
+          "optimized_adreno_kernels": true,
+          "offloaded_layers": 65,
+          "available_layers": 65,
+          "silent_cpu_fallback": false
+        },
+        "cpu_metrics": {
+          "required_point_coverage": 0.75,
+          "citation_validity": 1.0,
+          "citation_support_token_recall": 0.88,
+          "schema_valid_output_rate": 1.0,
+          "ttft_seconds": 396.7041,
+          "latency_seconds": 578.215,
+          "prompt_tokens_per_second": 12.32,
+          "generation_tokens_per_second": 1.5,
+          "peak_rss_bytes": 38649298944
+        },
+        "opencl_metrics": {
+          "required_point_coverage": 0.75,
+          "citation_validity": 1.0,
+          "citation_support_token_recall": 0.6429,
+          "schema_valid_output_rate": 1.0,
+          "ttft_seconds": 182.2317,
+          "latency_seconds": 348.7179,
+          "prompt_tokens_per_second": 26.82,
+          "generation_tokens_per_second": 1.87,
+          "peak_rss_bytes": 39257780224,
+          "sampled_peak_gpu_local_memory_bytes": 19700875264
+        },
+        "control_opencl_validity_reference": {
+          "ttft_seconds": 73.29,
+          "latency_seconds": 100.7,
+          "prompt_tokens_per_second": 63.55,
+          "generation_tokens_per_second": 6.09,
+          "peak_rss_gib": 10.85,
+          "sampled_peak_gpu_local_memory_gib": 5.95
+        }
+      }
+    }
+  }
+}

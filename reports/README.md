@@ -20,6 +20,9 @@
 - `local_model_comparison_v1/`: controlled Qwen3-8B comparison against Gemma,
   gpt-oss, Phi-4, and Granite. The completed result retains Qwen and recommends
   no Answering Baseline v2 candidate.
+- `local_model_comparison_v2_qwen36_27b/`: isolated Qwen3.6-27B Q4_K_M
+  comparison against the frozen Qwen3-8B control. Completed at the validity
+  gate; Qwen3.6-27B was rejected for unacceptable latency and memory.
 - `openai_generation_experiments/`: GPT-4o runs, cache, and local-vs-online comparisons.
 - `hardware_backend_v1/`: machine/backend compatibility probes.
 
