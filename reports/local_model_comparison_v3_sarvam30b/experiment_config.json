@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "experiment_id": "local_model_comparison_v3_sarvam30b",
+  "created_on": "2026-08-05",
+  "status": "complete_early_stop_gpu_startup",
+  "production_baselines_mutable": false,
+  "frozen_inputs": {
+    "retrieval_baseline": {
+      "path": "config/retrieval_baseline_v1.yaml",
+      "sha256": "736fb9325794caead4439316b6ca546bd782cd7029b4f9f7788f545c5b43baa6"
+    },
+    "generation_baseline": {
+      "path": "config/generation_baseline_v1.json",
+      "sha256": "758c0a857b427ab73c790b6031a14762c6653f8714f0fef29830373439ab78ba"
+    },
+    "historical_generation_experiment": {
+      "path": "config/generation_experiments_v1.json",
+      "sha256": "a80a31f19c4b606533c319dc1876686ba2cf08e54c1dcef17d745e9c28273f70"
+    },
+    "generation_benchmark": {
+      "path": "data/benchmarks/generation_benchmark_v1.jsonl",
+      "sha256": "f756e6333909c72f0e0be82b7bc16c9756f158fb39e16d463442e2bed5266680"
+    },
+    "development_evidence_source": {
+      "path": "reports/generation_experiments/runs/qwen3_8b_q4_k_m__development__retrieved__P1__retrieved_top5_page_order_compact__684f17db77/results.jsonl",
+      "sha256": "58167f04b5fdcdcb4689f624c6c3da6001accc0e82caffe4818de0c98de4d586"
+    },
+    "development_evidence_snapshot": {
+      "path": "reports/local_model_comparison_v2_qwen36_27b/inputs/development_retrieved_top5.jsonl",
+      "sha256": "acd83d2a8daa2749972a54ed4ec3e05e5b34feb3896af681b1385c4b2fa6b266"
+    }
+  },
+  "comparison_contract": {
+    "retrieval_profile": "Retrieval Baseline v1 1.0.0",
+    "prompt_strategy": "P1",
+    "context_strategy": "retrieved_top5_page_order_compact",
+    "evidence_count": 5,
+    "structured_output": "five_key_answer_schema_v1",
+    "citation_validation": "existing_generation_experiment_validator",
+    "seed": 42,
+    "max_output_tokens": 384
+  },
+  "hardware": {
+    "machine": "Microsoft Surface Laptop, 7th Edition",
+    "cpu": "Snapdragon X Elite X1E80100, 12 cores",
+    "ram_gib": 63.49,
+    "gpu": "Qualcomm Adreno X1-85",
+    "gpu_driver": "31.0.133.1",
+    "os": "Windows 11 Enterprise ARM64, build 26200"
+  },
+  "runtime_profiles": {
+    "cpu_arm64": {
+      "engine": "llama.cpp",
+      "build_number": 10046,
+      "commit": "32e789fdfd598e9a1872da55ac941e4d94f030bd",
+      "architecture": "windows-arm64",
+      "backend": "cpu",
+      "binary_root": "app_data/models/llama.cpp/bin",
+      "context_size": 8192,
+      "threads": 10,
+      "threads_batch": 10,
+      "batch_size": 512,
+      "ubatch_size": 256,
+      "gpu_layers": 0,
+      "parallel_slots": 1
+    },
+    "adreno_opencl": {
+      "engine": "llama.cpp",
+      "build_number": 10107,
+      "commit": "c0bc8591e",
+      "architecture": "windows-arm64",
+      "backend": "opencl_gpu",
+      "binary_root": "app_data/models/llama.cpp/opencl_gpu/bin",
+      "context_size": 8192,
+      "threads": 10,
+      "threads_batch": 10,
+      "batch_size": 512,
+      "ubatch_size": 256,
+      "gpu_layers": 999,
+      "parallel_slots": 1,
+      "required_log_evidence": [
+        "Qualcomm(R) Adreno(TM) X1-85 GPU",
+        "using kernels optimized for Adreno",
+        "offloaded"
+      ],
+      "reject_if_missing_gpu_evidence": true
+    }
+  },
+  "candidate_order": [
+    "sarvam_30b_q4_k_m"
+  ],
+  "stage_gates": {
+    "artifact_review": {
+      "requires_exact_revision_and_sha256": true,
+      "requires_license_review": true,
+      "requires_memory_estimate": true,
+      "requires_runtime_review": true,
+      "requires_download_approval": true
+    },
+    "output_validity": {
+      "questions": 1,
+      "requires_non_corrupt_text": true,
+      "requires_valid_json": true
+    },
+    "runtime_probe": {
+      "gpu_first_by_user_request": true,
+      "requires_cpu_before_gpu": false,
+      "requires_opencl": true,
+      "reject_silent_cpu_fallback": true
+    },
+    "smoke": {
+      "questions": 8,
+      "minimum_structured_output_rate": 0.875,
+      "minimum_citation_validity": 0.875
+    },
+    "development": {
+      "questions": 16,
+      "requires_saved_top_five_evidence": true,
+      "requires_human_review_for_finalist": true
+    },
+    "holdout": {
+      "questions": 24,
+      "finalists_only": true
+    }
+  },
+  "early_stop_reasons": [
+    "invalid_or_corrupted_output",
+    "incompatible_runtime",
+    "silent_cpu_fallback",
+    "unacceptable_latency",
+    "clearly_worse_quality"
+  ]
+}

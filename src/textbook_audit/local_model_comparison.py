@@ -281,12 +281,26 @@ def make_run_id(
     runtime: dict[str, Any],
     decoding: dict[str, Any],
 ) -> str:
+    artifact_hash = artifact.get("sha256")
+    if artifact_hash is None:
+        shards = artifact.get("shards", [])
+        if not shards:
+            raise ValueError("artifact has neither sha256 nor shards")
+        artifact_hash = sha256_text(
+            json.dumps(
+                [
+                    {"filename": shard["filename"], "sha256": shard["sha256"]}
+                    for shard in shards
+                ],
+                sort_keys=True,
+            )
+        )
     body = json.dumps(
         {
             "model": model_key,
             "stage": stage,
             "backend": backend,
-            "artifact_sha256": artifact["sha256"],
+            "artifact_sha256": artifact_hash,
             "runtime": runtime,
             "decoding": decoding,
         },
@@ -294,6 +308,60 @@ def make_run_id(
     )
     suffix = hashlib.sha256(body.encode("utf-8")).hexdigest()[:10]
     return f"{model_key}__{stage}__{backend}__{suffix}"
+
+
+def verify_model_artifact(model_path: Path, artifact: dict[str, Any]) -> dict[str, Any]:
+    """Verify a single-file or split GGUF artifact before model loading."""
+
+    shards = artifact.get("shards")
+    if not shards:
+        if model_path.name != artifact["filename"]:
+            raise ValueError("model filename differs from the approved artifact")
+        actual_hash = sha256_file(model_path)
+        if actual_hash != artifact["sha256"]:
+            raise ValueError("model checksum differs from the approved artifact")
+        return {
+            "identity_sha256": actual_hash,
+            "files": [
+                {
+                    "path": str(model_path),
+                    "bytes": model_path.stat().st_size,
+                    "sha256": actual_hash,
+                }
+            ],
+        }
+
+    entry_filename = artifact.get("entry_filename", shards[0]["filename"])
+    if model_path.name != entry_filename:
+        raise ValueError("model filename differs from the approved split-artifact entry")
+    verified_files: list[dict[str, Any]] = []
+    for shard in shards:
+        shard_path = model_path.parent / shard["filename"]
+        if not shard_path.is_file():
+            raise ValueError(f"approved model shard is missing: {shard['filename']}")
+        actual_bytes = shard_path.stat().st_size
+        if actual_bytes != shard["bytes"]:
+            raise ValueError(f"model shard size differs: {shard['filename']}")
+        actual_hash = sha256_file(shard_path)
+        if actual_hash != shard["sha256"]:
+            raise ValueError(f"model shard checksum differs: {shard['filename']}")
+        verified_files.append(
+            {
+                "path": str(shard_path),
+                "bytes": actual_bytes,
+                "sha256": actual_hash,
+            }
+        )
+    identity_hash = sha256_text(
+        json.dumps(
+            [
+                {"filename": shard["filename"], "sha256": shard["sha256"]}
+                for shard in shards
+            ],
+            sort_keys=True,
+        )
+    )
+    return {"identity_sha256": identity_hash, "files": verified_files}
 
 
 def run_comparison(
@@ -313,11 +381,8 @@ def run_comparison(
     artifact = candidate["artifact"]
     if not candidate["download"]["approved"]:
         raise ValueError("candidate download/evaluation is not approved")
-    if model_path.name != artifact["filename"]:
-        raise ValueError("model filename differs from the approved artifact")
-    actual_model_hash = sha256_file(model_path)
-    if actual_model_hash != artifact["sha256"]:
-        raise ValueError("model checksum differs from the approved artifact")
+    verified_artifact = verify_model_artifact(model_path, artifact)
+    actual_model_hash = verified_artifact["identity_sha256"]
 
     historical = load_json(
         ROOT / config["frozen_inputs"]["historical_generation_experiment"]["path"]
@@ -470,6 +535,7 @@ def run_comparison(
         "model": candidate,
         "model_path": str(model_path),
         "model_sha256": actual_model_hash,
+        "model_files": verified_artifact["files"],
         "stage": stage,
         "backend": backend,
         "runtime": runtime,

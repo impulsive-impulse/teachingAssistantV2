@@ -475,7 +475,9 @@ class LocalLlamaServer:
         health_url = f"http://127.0.0.1:{self.config.port}/health"
         while time.perf_counter() - started < timeout_seconds:
             if self.process.poll() is not None:
-                raise RuntimeError(f"llama-server exited during load with {self.process.returncode}")
+                return_code = self.process.returncode
+                self.stop()
+                raise RuntimeError(f"llama-server exited during load with {return_code}")
             try:
                 with urllib.request.urlopen(health_url, timeout=1) as response:
                     if response.status == 200:
@@ -483,6 +485,7 @@ class LocalLlamaServer:
                         return
             except (urllib.error.URLError, TimeoutError):
                 time.sleep(0.1)
+        self.stop()
         raise TimeoutError(f"llama-server was not healthy within {timeout_seconds} seconds")
 
     def stderr_session_text(self) -> str:
@@ -688,7 +691,10 @@ class LocalLlamaServer:
 
     def __enter__(self) -> "LocalLlamaServer":
         """Start the server for a context-managed smoke run."""
-        self.start()
+        timeout_seconds = float(
+            self.config.runtime.get("startup_timeout_seconds", 180.0)
+        )
+        self.start(timeout_seconds=timeout_seconds)
         return self
 
     def __exit__(self, *_: Any) -> None:

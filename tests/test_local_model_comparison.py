@@ -23,6 +23,7 @@ from textbook_audit.local_model_comparison import (
     output_schema_valid,
     runtime_log_evidence,
     smoke_gate_unreachable,
+    verify_model_artifact,
 )
 
 
@@ -329,3 +330,44 @@ def test_versioned_experiment_configuration_is_not_the_completed_v1() -> None:
     assert config["experiment_id"] == "local_model_comparison_v2_qwen36_27b"
     assert config["production_baselines_mutable"] is False
     assert experiment != EXPERIMENT
+
+
+def test_split_artifact_verifies_every_shard(tmp_path: Path) -> None:
+    contents = [b"first shard", b"second shard"]
+    shards = []
+    for index, content in enumerate(contents, start=1):
+        filename = f"model-{index:05d}-of-00002.gguf"
+        (tmp_path / filename).write_bytes(content)
+        shards.append(
+            {
+                "filename": filename,
+                "bytes": len(content),
+                "sha256": hashlib.sha256(content).hexdigest(),
+            }
+        )
+    verified = verify_model_artifact(tmp_path / shards[0]["filename"], {"shards": shards})
+    assert len(verified["files"]) == 2
+    assert verified["files"][1]["sha256"] == shards[1]["sha256"]
+
+
+def test_split_artifact_rejects_a_bad_secondary_shard(tmp_path: Path) -> None:
+    first = tmp_path / "model-00001-of-00002.gguf"
+    second = tmp_path / "model-00002-of-00002.gguf"
+    first.write_bytes(b"good")
+    second.write_bytes(b"bad")
+    artifact = {
+        "shards": [
+            {
+                "filename": first.name,
+                "bytes": 4,
+                "sha256": hashlib.sha256(b"good").hexdigest(),
+            },
+            {
+                "filename": second.name,
+                "bytes": 3,
+                "sha256": hashlib.sha256(b"expected").hexdigest(),
+            },
+        ]
+    }
+    with pytest.raises(ValueError, match="model shard checksum differs"):
+        verify_model_artifact(first, artifact)

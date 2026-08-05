@@ -176,6 +176,29 @@ def test_llama_server_command_freezes_runtime_settings(tmp_path: Path, config: d
     assert command[command.index("--seed") + 1] == "42"
 
 
+def test_llama_server_context_uses_runtime_startup_timeout(
+    tmp_path: Path, config: dict, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    runtime = dict(config["runtime"])
+    runtime["startup_timeout_seconds"] = 600
+    resolved = LlamaServerConfig(
+        executable=tmp_path / "llama-server.exe",
+        model=tmp_path / "model.gguf",
+        port=18090,
+        runtime=runtime,
+        generation=config["generation"],
+        log_dir=tmp_path / "logs",
+    )
+    server = LocalLlamaServer(resolved)
+    observed: list[float] = []
+    monkeypatch.setattr(
+        server, "start", lambda timeout_seconds: observed.append(timeout_seconds)
+    )
+    with server:
+        pass
+    assert observed == [600.0]
+
+
 def test_smoke_summary_counts_completed_outputs() -> None:
     """Aggregate only completed rows and keep manual review as a hard gate."""
     template = {

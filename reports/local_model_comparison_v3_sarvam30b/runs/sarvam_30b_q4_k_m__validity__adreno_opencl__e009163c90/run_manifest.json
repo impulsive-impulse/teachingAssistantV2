@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "run_id": "sarvam_30b_q4_k_m__validity__adreno_opencl__e009163c90",
+  "created_at": "2026-08-05T12:19:04Z",
+  "finished_at": "2026-08-05T12:26:30Z",
+  "model_key": "sarvam_30b_q4_k_m",
+  "model_path": "X:\\teachingAssistantV2\\app_data\\models\\generation\\sarvam-30b-q4_k_m\\sarvam-30b-Q4_K_M.gguf-00001-of-00006.gguf",
+  "model_sha256": "24ddbd3b96d8b134c767b3958dca31ddc41618e6b7e9d57c75f954198e40fcb5",
+  "artifact_verification": "all_six_shards_passed_before_startup",
+  "stage": "validity",
+  "backend": "adreno_opencl",
+  "runtime": {
+    "engine": "llama.cpp",
+    "build_number": 10107,
+    "commit": "c0bc8591e",
+    "context_size": 8192,
+    "threads": 10,
+    "threads_batch": 10,
+    "batch_size": 512,
+    "ubatch_size": 256,
+    "gpu_layers": 999,
+    "parallel_slots": 1
+  },
+  "server_command": [
+    "llama-server.exe",
+    "--model",
+    "sarvam-30b-Q4_K_M.gguf-00001-of-00006.gguf",
+    "--ctx-size",
+    "8192",
+    "--n-gpu-layers",
+    "999",
+    "--check-tensors",
+    "--metrics",
+    "-lv",
+    "5"
+  ],
+  "backend_log_evidence": {
+    "adreno_device_named": true,
+    "opencl_device_selected": true,
+    "adreno_kernels_selected": true,
+    "offloaded_layers": 20,
+    "available_layers": 20,
+    "silent_cpu_fallback": false,
+    "declared_opencl_model_buffer_mib": 18081.84
+  },
+  "startup": {
+    "harness_timeout_seconds": 180,
+    "health_at_timeout": 503,
+    "health_before_manual_termination": 503,
+    "maximum_observed_working_set_gib": 30.08,
+    "minimum_observed_free_ram_gib": 1.88,
+    "terminated_for_memory_safety": true
+  },
+  "question_ids": [],
+  "completed_question_ids": [],
+  "generation_attempted": false,
+  "metrics": {
+    "time_to_first_token_seconds": null,
+    "total_latency_seconds": null,
+    "prompt_tokens_per_second": null,
+    "generation_tokens_per_second": null,
+    "schema_valid_output_rate": null,
+    "citation_validity": null,
+    "required_point_coverage": null
+  },
+  "decision": "reject",
+  "rejected_reason": "unacceptable_opencl_startup_latency_and_memory"
+}
