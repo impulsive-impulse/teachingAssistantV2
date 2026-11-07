@@ -3,7 +3,7 @@
 Status: T01 and T02 committed and published. T03 is complete; the user has
 authorized implementation through T15 with a separate local commit for each
 task. The user will push all commits manually at the end. T04 is implemented
-and committed locally; T05 and T06 are implemented and verified. T07 is next. T16
+and committed locally; T05-T07 are implemented and verified. T08 is in progress. T16
 visibility, sharing, recording, and submission actions remain outside this
 authorization.
 
@@ -263,3 +263,23 @@ complete-document recall of 80.0% dense, 86.7% hybrid, and 60.0% BM25. These are
 baseline context results, not final evaluation or generated-answer gains.
 The final T06 regression batch passed 29 focused checks, including the real
 encoder/index scope, scorer parity, source isolation, and ingestion compatibility.
+
+## T07 implementation checkpoint
+
+The named budgeted cross-document selection component combines query-local
+unit relevance, title mentions connecting candidate sources, and round-robin
+source allocation. It does not read reference answers or supporting facts.
+Its bypass ablation reproduces standard hybrid retrieval and the shared packer
+exactly. Weak local evidence yields an explicit empty/incomplete context rather
+than forcing two-source citations.
+
+The declared development-only grid selected six candidate documents, three
+units per document, title-link weight 0.2, and weak-dense threshold 0.25.
+On the 15 development questions, complete-document recall is 100% versus
+80.0% dense/86.7% hybrid; complete-fact context recall is 93.3%, mean context
+size 728.8 tokens, and document precision drops to 33.3%. These are development
+context measurements, not final or answer-quality claims.
+
+Fifteen focused checks passed for source/label isolation, exact budget, source
+scope, weak evidence, and exact ablation behavior. T11 will freeze the complete
+generation/evaluation pipeline before any final run. No paid calls or pushes.

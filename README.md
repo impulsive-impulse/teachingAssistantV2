@@ -149,6 +149,11 @@ Custom context/fact coverage and paired stratified bootstrap intervals are
 separate from official answer/support metrics. Development-only measurements
 do not constitute final results or answer-generation gains.
 
+T07 adds a query-local source-unit allocator with document-title links and
+round-robin budget allocation. Its parameters were selected on development
+questions only. The named ablation bypasses this component and uses the exact
+standard hybrid context; no gold support labels enter selection.
+
 ## Build and run
 
 Requirements:
