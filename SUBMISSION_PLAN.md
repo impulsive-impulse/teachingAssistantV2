@@ -3,7 +3,7 @@
 Status: T01 and T02 committed and published. T03 is complete; the user has
 authorized implementation through T15 with a separate local commit for each
 task. The user will push all commits manually at the end. T04 is implemented
-and committed locally; T05 is implemented and verified. T06 is in progress. T16
+and committed locally; T05 and T06 are implemented and verified. T07 is next. T16
 visibility, sharing, recording, and submission actions remain outside this
 authorization.
 
@@ -242,3 +242,24 @@ left all corpus artifact hashes unchanged. Both authorized PDFs were imported
 into a real two-document collection with 257/327 original page units and a
 verified saved index. No PDF binaries or derived text were newly tracked.
 Answer generation and paid execution remain later tasks.
+
+## T06 implementation checkpoint
+
+Standard dense top-k, BM25-only, and unweighted dense/BM25 RRF (k=60) are
+implemented without the proposed selector. All references use the shared
+source corpus and an exact 1,024 `o200k_base` token budget including headings.
+The packer clips source characters safely rather than decoding broken token
+prefixes, and its source maps are checked against selected evidence.
+
+The unmodified pinned HotpotQA scorer and Apache license are vendored with
+exact byte-hash checks. Official answer/support/joint EM/F1 are distinct from
+custom complete-document and supporting-fact context coverage. Partial
+sentences cannot inflate complete supporting-fact coverage. Failed outputs
+remain in denominators, and paired 10,000-resample confidence intervals preserve
+bridge/comparison strata.
+
+Development-only retrieval measurements (15 questions, zero paid calls) give
+complete-document recall of 80.0% dense, 86.7% hybrid, and 60.0% BM25. These are
+baseline context results, not final evaluation or generated-answer gains.
+The final T06 regression batch passed 29 focused checks, including the real
+encoder/index scope, scorer parity, source isolation, and ingestion compatibility.

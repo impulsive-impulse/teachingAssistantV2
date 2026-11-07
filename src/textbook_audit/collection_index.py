@@ -161,6 +161,26 @@ class CollectionIndex:
         started = time.perf_counter()
         scores = self.dense_scores(question, model)
         ranking = stable_ranking(scores).tolist()
+        return self.snapshot(question, ranking, scores, top_k, started=started)
+
+    def snapshot(
+        self, question: str, ranking: Sequence[int], scores: np.ndarray, top_k: int = 5,
+        *, started: float | None = None,
+    ) -> dict[str, Any]:
+        if not isinstance(question, str) or not question.strip():
+            raise ValueError("question must not be empty")
+        if isinstance(top_k, bool) or not isinstance(top_k, int) or top_k < 1:
+            raise ValueError("retrieval top-k must be positive")
+        if (
+            any(isinstance(index, bool) or not isinstance(index, int) or not 0 <= index < len(self.chunks)
+                for index in ranking)
+            or len(set(ranking)) != len(ranking)
+        ):
+            raise ValueError("retrieval ranking contains invalid or duplicate corpus indices")
+        scores = np.asarray(scores)
+        if scores.shape != (len(self.chunks),) or not np.isfinite(scores).all():
+            raise ValueError("retrieval scores do not match the indexed corpus")
+        started = time.perf_counter() if started is None else started
         evidence = []
         for rank, index in enumerate(ranking[:top_k], 1):
             chunk = self.chunks[index]
@@ -176,7 +196,7 @@ class CollectionIndex:
                 ],
             })
         context = assemble_context(
-            "overlap_merge_metadata_preserving", ranking, self.chunks, count=top_k,
+            "overlap_merge_metadata_preserving", list(ranking), self.chunks, count=top_k,
         )
         core = {
             "version": INDEX_VERSION, "question": question.strip(),

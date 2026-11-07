@@ -11,5 +11,9 @@ requirements/*.lock text eol=lf
 requirements/*.txt text eol=lf
 .gitignore text eol=lf
 
+# Preserve the pinned upstream scorer/license bytes, including its final blank line.
+src/textbook_audit/vendor/HOTPOT-LICENSE.txt text eol=lf
+src/textbook_audit/vendor/hotpot_evaluate_v1.py whitespace=-blank-at-eof
+
 # Keep product demos out of ordinary Git history while retaining them in the repository.
 docs/assets/demo/*.mp4 filter=lfs diff=lfs merge=lfs -text

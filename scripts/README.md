@@ -26,6 +26,10 @@ these canonical commands over importing experiment internals directly.
   export physically separate runtime/evaluation inputs; `--check` is read-only.
   `--demo --authorized-demo-use` imports the two permitted PDFs into a local
   collection using the same provenance/index contracts. No paid model calls.
+- `evaluate_retrieval_baselines.py`: measure dense, BM25, and RRF references on
+  the 15 development questions only, with exact context-token budgeting and
+  retained source/fact coverage. Does not generate answers or inspect held-out
+  effectiveness.
 - `audit_textbooks.py`: extract and audit page-level textbook data.
 - `generate_retrieval_benchmark.py`: generate/validate retrieval benchmark candidates.
 - `build_generation_benchmark_v1.py`: deterministically rebuild Generation Benchmark v1.

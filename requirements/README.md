@@ -172,6 +172,18 @@ PDFs and their derived text must not be newly committed or redistributed
 without separate permission. Ingestion makes no paid API call and does not
 establish answer quality or evaluation gains.
 
+Run the standard development-only retrieval references after ingestion:
+
+```powershell
+.\.venv-assessment\Scripts\python.exe scripts\evaluate_retrieval_baselines.py
+```
+
+The local JSON output retains all three methods' packed evidence, source maps,
+and custom context coverage. It does not run the generator or use held-out
+rows to choose settings. The official scorer is vendored with its original
+Apache license and pinned byte identity, so report rebuilding will not depend
+on an ignored downloaded scorer file.
+
 ## Restricted-network package installation
 
 An explicitly chosen HTTPS mirror can be used with `--index-url`. The exact

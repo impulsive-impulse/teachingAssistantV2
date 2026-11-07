@@ -143,6 +143,12 @@ and supporting-fact labels. Both corpora use the same document/span contracts
 and collection index; benchmark paragraphs do not pass through textbook-only
 PDF suitability rules.
 
+T06 supplies standard dense top-k, BM25, and unweighted BM25+dense RRF references,
+an exact 1,024-token evidence packer, and the pinned official HotpotQA scorer.
+Custom context/fact coverage and paired stratified bootstrap intervals are
+separate from official answer/support metrics. Development-only measurements
+do not constitute final results or answer-generation gains.
+
 ## Build and run
 
 Requirements:
