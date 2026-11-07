@@ -3,7 +3,7 @@
 Status: T01 and T02 committed and published. T03 is complete; the user has
 authorized implementation through T15 with a separate local commit for each
 task. The user will push all commits manually at the end. T04 is implemented
-and committed locally; T05-T08 are implemented and verified. T09 is next. T16
+and committed locally; T05-T10 are implemented and verified. T11 is next. T16
 visibility, sharing, recording, and submission actions remain outside this
 authorization.
 
@@ -321,3 +321,17 @@ with no retrieval, model loading or provider dispatch. Seven focused accounting/
 replay checks passed; a complete 15-question/four-arm mock-generator run also
 saved 60 rows and rebuilt an identical report. That mock run is only wiring
 evidence, not evaluation data. No real paid calls or pushes have been made.
+
+## T09 implementation checkpoint
+
+The additive collection API/CLI/UI supports ready-book source import,
+multi-document selection, independent questions, durable history, offline/
+online choice, invalid-output handling and exact quote/PDF-page navigation.
+Migration 5 adds collection queries without rewriting existing chats.
+
+The embedding registry shares its verified model with collections; the existing
+offline manager is reused. Online questions require transmission authorization
+and the shared contingency ledger, preserving final/rerun reservations.
+Original source copies and fingerprints keep old answers tied to their actual
+sources after a collection changes. Restart closes active work explicitly.
+Provider exception strings are not exposed in diagnostics.

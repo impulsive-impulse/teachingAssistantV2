@@ -219,6 +219,14 @@ class BookRepository:
             ).fetchone()["count"]
             if memberships:
                 raise RuntimeError("Remove this textbook from collections before deleting it.")
+            retained_answers = connection.execute(
+                "SELECT COUNT(*) AS count FROM collection_queries q, "
+                "json_each(q.payload_json, '$.snapshot.source_documents') source "
+                "JOIN source_documents d ON d.id=json_extract(source.value,'$.document_id') "
+                "WHERE d.book_id=?", (book_uuid,),
+            ).fetchone()["count"]
+            if retained_answers:
+                raise RuntimeError("Keep this textbook while retained collection answers cite its bound source.")
             active_ingestion = connection.execute(
                 "SELECT COUNT(*) AS count FROM ingestion_jobs WHERE book_id=? "
                 "AND state IN ('queued','running','interrupted')", (book_uuid,),
@@ -450,9 +458,83 @@ class CollectionRepository:
 
     def delete(self, collection_id: str) -> None:
         with self.database.connect() as connection:
+            if connection.execute(
+                "SELECT 1 FROM collection_queries WHERE collection_id=? "
+                "AND state IN ('retrieving','generating')", (collection_id,),
+            ).fetchone():
+                raise RuntimeError("Wait for the active collection question before deleting it.")
             cursor = connection.execute("DELETE FROM collections WHERE id=?", (collection_id,))
             if cursor.rowcount != 1:
                 raise LookupError("collection not found")
+
+
+class CollectionQueryRepository:
+    """Independent collection questions; immutable terminal results survive restart."""
+
+    def __init__(self, database: Database):
+        self.database = database
+
+    def create(self, collection: dict[str, Any], question: str, backend: Backend) -> str:
+        query_id = str(uuid4())
+        with self.database.connect() as connection:
+            connection.execute("BEGIN IMMEDIATE")
+            live = connection.execute(
+                "SELECT fingerprint FROM collections WHERE id=?", (collection["id"],),
+            ).fetchone()
+            if live is None:
+                raise LookupError("collection not found")
+            if live["fingerprint"] != collection["fingerprint"]:
+                raise RuntimeError("collection changed; reload before querying")
+            if connection.execute(
+                "SELECT 1 FROM collection_queries WHERE collection_id=? "
+                "AND state IN ('retrieving','generating')", (collection["id"],),
+            ).fetchone():
+                raise RuntimeError("This collection already has an active question.")
+            connection.execute(
+                "INSERT INTO collection_queries(id,collection_id,collection_fingerprint,"
+                "question,backend,state,payload_json,created_at) VALUES (?,?,?,?,?,'retrieving','{}',?)",
+                (query_id, collection["id"], collection["fingerprint"], question, backend.value, utc_now()),
+            )
+        return query_id
+
+    def update(self, query_id: str, state: str, payload: dict[str, Any], error_code: str | None = None) -> None:
+        terminal = state in {"completed", "failed"}
+        with self.database.connect() as connection:
+            cursor = connection.execute(
+                "UPDATE collection_queries SET state=?,payload_json=?,error_code=?,completed_at=? "
+                "WHERE id=? AND state IN ('retrieving','generating')",
+                (state, _json(payload), error_code, utc_now() if terminal else None, query_id),
+            )
+            if cursor.rowcount != 1:
+                raise RuntimeError("collection query result is unavailable or already terminal")
+
+    @staticmethod
+    def _decode(row: Any) -> dict[str, Any]:
+        result = dict(row)
+        result["payload"] = json.loads(result.pop("payload_json"))
+        return result
+
+    def get(self, query_id: str) -> dict[str, Any]:
+        with self.database.connect() as connection:
+            row = connection.execute("SELECT * FROM collection_queries WHERE id=?", (query_id,)).fetchone()
+        if row is None:
+            raise LookupError("collection query not found")
+        return self._decode(row)
+
+    def list(self, collection_id: str) -> list[dict[str, Any]]:
+        with self.database.connect() as connection:
+            rows = connection.execute(
+                "SELECT * FROM collection_queries WHERE collection_id=? ORDER BY created_at,id",
+                (collection_id,),
+            ).fetchall()
+        return [self._decode(row) for row in rows]
+
+    def interrupt_active(self) -> None:
+        with self.database.connect() as connection:
+            connection.execute(
+                "UPDATE collection_queries SET state='failed',error_code='application_restarted',completed_at=? "
+                "WHERE state IN ('retrieving','generating')", (utc_now(),),
+            )
 
 
 class ChatRepository:

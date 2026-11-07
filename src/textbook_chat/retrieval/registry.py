@@ -55,6 +55,11 @@ class RetrievalRuntimeRegistry:
                 key: runtime for key, runtime in self._runtimes.items() if key[0] != book_uuid
             }
 
+    def embedding(self) -> Any:
+        """Share the same verified encoder with additive collection retrieval."""
+        with self._lock:
+            return self._load_embedding()
+
     def _load_embedding(self) -> Any:
         if self._embedding is not None:
             return self._embedding

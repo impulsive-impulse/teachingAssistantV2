@@ -4,6 +4,7 @@ import { BookMarked, Bug, Library, MessageSquareText, Settings, X } from "lucide
 import { Link, Route, Routes, useLocation } from "react-router-dom";
 import { ChatPage } from "./features/chat/ChatPage";
 import { LibraryPage } from "./features/library/LibraryPage";
+import { CollectionPage } from "./features/collections/CollectionPage";
 import { ReadinessStrip } from "./features/system/ReadinessStrip";
 import { api, type ModelSetupJob } from "./lib/api";
 
@@ -54,6 +55,7 @@ export default function App() {
         <div className="brand"><span className="brand__mark"><BookMarked size={21} /></span><span>Marginalia</span></div>
         <nav aria-label="Primary navigation">
           <Link className={`nav-link ${location.pathname === "/" ? "nav-link--active" : ""}`} to="/"><Library size={18} /> Library</Link>
+          <Link className={`nav-link ${location.pathname === "/collections" ? "nav-link--active" : ""}`} to="/collections"><BookMarked size={18} /> Collections</Link>
           <button className="nav-link" disabled><MessageSquareText size={18} /> Recent chats</button>
         </nav>
         <div className="sidebar__bottom">
@@ -75,6 +77,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<LibraryPage />} />
           <Route path="/books/:bookId" element={<ChatPage />} />
+          <Route path="/collections" element={<CollectionPage />} />
         </Routes>
       </div>
       {showDiagnostics && <div className="modal-backdrop" role="presentation"><section className="diagnostics-panel" role="dialog" aria-modal="true" aria-labelledby="diagnostics-title"><button className="icon-button diagnostics-panel__close" aria-label="Close diagnostics" onClick={() => setShowDiagnostics(false)}><X size={19} /></button><p className="eyebrow">Local developer view</p><h2 id="diagnostics-title">System diagnostics</h2><p className="subtle">No API key values or textbook content are included.</p>{diagnostics.isLoading ? <p>Collecting local status…</p> : diagnostics.isError ? <p className="inline-error">Diagnostics are unavailable.</p> : <pre>{JSON.stringify(diagnostics.data, null, 2)}</pre>}</section></div>}

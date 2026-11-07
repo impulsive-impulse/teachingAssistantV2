@@ -13,7 +13,7 @@ from contextlib import contextmanager
 from pathlib import Path
 
 
-SCHEMA_VERSION = 4
+SCHEMA_VERSION = 5
 
 MIGRATION_1 = """
 CREATE TABLE IF NOT EXISTS schema_migrations (
@@ -170,6 +170,24 @@ CREATE TABLE collection_documents (
 CREATE INDEX idx_collection_documents_source ON collection_documents(document_id);
 """
 
+MIGRATION_5 = """
+CREATE TABLE collection_queries (
+    id TEXT PRIMARY KEY,
+    collection_id TEXT NOT NULL REFERENCES collections(id) ON DELETE CASCADE,
+    collection_fingerprint TEXT NOT NULL,
+    question TEXT NOT NULL,
+    backend TEXT NOT NULL CHECK(backend IN ('online','offline')),
+    state TEXT NOT NULL CHECK(state IN ('retrieving','generating','completed','failed')),
+    payload_json TEXT NOT NULL,
+    error_code TEXT,
+    created_at TEXT NOT NULL,
+    completed_at TEXT
+);
+CREATE INDEX idx_collection_query_history ON collection_queries(collection_id,created_at);
+CREATE UNIQUE INDEX idx_active_collection_query ON collection_queries(collection_id)
+    WHERE state IN ('retrieving','generating');
+"""
+
 
 class Database:
     """Own schema initialization and transaction-scoped connections."""
@@ -213,6 +231,12 @@ class Database:
                     "BEGIN IMMEDIATE;\n" + MIGRATION_4 +
                     "\nINSERT INTO schema_migrations(version, applied_at) "
                     "VALUES (4, strftime('%Y-%m-%dT%H:%M:%fZ', 'now'));\nCOMMIT;"
+                )
+            if 5 not in versions:
+                connection.executescript(
+                    "BEGIN IMMEDIATE;\n" + MIGRATION_5 +
+                    "\nINSERT INTO schema_migrations(version, applied_at) "
+                    "VALUES (5, strftime('%Y-%m-%dT%H:%M:%fZ', 'now'));\nCOMMIT;"
                 )
 
     @contextmanager

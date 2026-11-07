@@ -201,3 +201,69 @@ export const api = {
   }),
   sources: (attemptId: string) => request<{ attempt_id: string; snapshot_checksum: string; sources: SourceItem[] }>(`/api/attempts/${attemptId}/sources`),
 };
+
+export interface CollectionSource {
+  id: string;
+  kind: "pdf" | "hotpotqa";
+  title: string;
+  source_sha256: string;
+  unit_count: number;
+}
+
+export interface Collection {
+  id: string;
+  title: string;
+  fingerprint: string;
+  document_ids: string[];
+  documents: CollectionSource[];
+}
+
+export interface ClaimCitation {
+  evidence_id: string;
+  unit_id: string;
+  quote: string;
+  source: {
+    document_id: string;
+    document_title: string;
+    pdf_page: number | null;
+    sentence_index: number | null;
+    char_ranges: [number, number][];
+  };
+}
+
+export interface CollectionQuery {
+  id: string;
+  collection_id: string;
+  collection_fingerprint: string;
+  question: string;
+  backend: Backend;
+  state: "retrieving" | "generating" | "completed" | "failed";
+  error_code: string | null;
+  validation_errors: string[];
+  output: {
+    status: "answered" | "insufficient_evidence";
+    short_answer: string;
+    claims: { text: string; citations: ClaimCitation[] }[];
+    missing_information: string[];
+    semantic_support: string;
+  } | null;
+}
+
+export const collectionApi = {
+  sources: () => request<CollectionSource[]>("/api/sources"),
+  collections: () => request<Collection[]>("/api/collections"),
+  fromBook: (bookId: string) => request<CollectionSource>(`/api/sources/from-book/${encodeURIComponent(bookId)}`, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ local_indexing_authorized: true }),
+  }),
+  create: (title: string, documentIds: string[]) => request<Collection>("/api/collections", {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ title, document_ids: documentIds }),
+  }),
+  history: (collectionId: string) => request<CollectionQuery[]>(`/api/collections/${encodeURIComponent(collectionId)}/queries`),
+  ask: (collectionId: string, question: string, backend: Backend, acknowledged: boolean) =>
+    request<CollectionQuery>(`/api/collections/${encodeURIComponent(collectionId)}/queries`, {
+      method: "POST", headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ question, backend, online_disclosure_acknowledged: acknowledged }),
+    }),
+};

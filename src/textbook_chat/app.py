@@ -11,17 +11,18 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 from . import __version__
-from .api.routes import books, chats, system
+from .api.routes import books, chats, collections, system
 from .config import AppSettings, validate_frozen_configs
 from .database import Database
 from .models.embedding import EmbeddingArtifactRegistry
 from .models.offline import OfflineArtifactRegistry
 from .generation.offline import OfflineRuntimeManager
-from .repositories import BookRepository, ChatRepository, ModelSetupRepository
+from .repositories import BookRepository, ChatRepository, CollectionRepository, CollectionQueryRepository, ModelSetupRepository
 from .retrieval.registry import RetrievalRuntimeRegistry
 from .services.chat import ChatCoordinator, GenerationProviderRegistry
 from .services.ingestion import IngestionCoordinator
 from .services.model_setup import ModelSetupCoordinator
+from .services.collections import CollectionService
 
 
 def create_app(settings: AppSettings | None = None, *, run_workers: bool = True) -> FastAPI:
@@ -57,6 +58,10 @@ def create_app(settings: AppSettings | None = None, *, run_workers: bool = True)
         app.state.generation_providers = generation_providers
         app.state.chat_coordinator = chat_coordinator
         app.state.model_setup = model_setup
+        app.state.collection_service = CollectionService(
+            configured, CollectionRepository(database), retrieval_registry.embedding, offline_runtime,
+        )
+        CollectionQueryRepository(database).interrupt_active()
         app.state.run_workers = run_workers
         if run_workers:
             ingestion.start()
@@ -80,6 +85,7 @@ def create_app(settings: AppSettings | None = None, *, run_workers: bool = True)
     app.include_router(system.router, prefix="/api")
     app.include_router(books.router, prefix="/api")
     app.include_router(chats.router, prefix="/api")
+    app.include_router(collections.router, prefix="/api")
 
     frontend = configured.root / "frontend" / "dist"
     if frontend.is_dir():

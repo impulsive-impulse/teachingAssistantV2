@@ -207,3 +207,16 @@ textarea:focus-visible, select:focus-visible { outline: 3px solid rgba(47, 101, 
   .answer-card { margin-right: 3%; }
   .user-message { max-width: 90%; }
 }
+.collection-page { padding: 32px; }
+.collection-grid { display: grid; grid-template-columns: minmax(240px, 1fr) minmax(360px, 2fr); gap: 24px; align-items: start; }
+.collection-card { padding: 24px; border: 1px solid #dce3e1; border-radius: 12px; background: white; }
+.collection-card h2 { margin: 20px 0 12px; }
+.collection-card label { display: block; margin: 12px 0; }
+.collection-card input:not([type="checkbox"]), .collection-card textarea, .collection-card select { display: block; width: 100%; margin-top: 8px; padding: 10px; border: 1px solid #c8d2d0; border-radius: 6px; }
+.collection-card textarea { min-height: 100px; }
+.collection-card .collection-check { display: flex; align-items: start; gap: 8px; }
+.collection-card .button { margin: 4px 6px 4px 0; }
+.collection-answer { padding: 14px 0; border-bottom: 1px solid #dce3e1; }
+.collection-citation { margin-top: 24px; padding: 16px; background: #f4f7f6; border-radius: 8px; }
+.collection-citation blockquote { margin: 12px 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+@media (max-width: 850px) { .collection-grid { grid-template-columns: minmax(0, 1fr); } .collection-page { padding: 16px; } }

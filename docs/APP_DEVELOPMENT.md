@@ -284,3 +284,42 @@ Still required by `docs/UX_PLAN.md`:
 
 This list is deliberately explicit: a staged upload is not yet an indexed book,
 and the current foundations must not be described as a complete RAG app.
+# Assessment collections (additive v1)
+
+Open **Collections** in the existing app. Upload PDFs in Library, wait for
+ready status, acknowledge local indexing permission, and import each as a
+source. Select both sources and create a collection. Existing book chats and
+their online/offline controls are unchanged.
+
+Collection questions are independent, with durable history. They share the
+assessment selector, 1,024-token context renderer and quoted claim validator.
+The offline backend reuses the resident frozen Qwen runtime (384 output tokens);
+the benchmark uses online GPT-4o (768). The PDF demonstration is not a benchmark
+comparison between these differently sized generators.
+
+Online collection queries require explicit permission to transmit excerpts,
+use the original shared 500-attempt ledger, and consume only its 80-call
+contingency allocation. Local indexing permission alone does **not** authorize
+external PDF transmission. No automatic backend fallback or paid retry exists.
+
+```powershell
+.\.venv-assessment\Scripts\python.exe scripts\ingest_assessment.py --demo --authorized-demo-use
+.\.venv-assessment\Scripts\python.exe scripts\ask_collection.py
+.\.venv-assessment\Scripts\python.exe scripts\ask_collection.py --collection <id> --backend offline --question "<question>"
+```
+
+HTTP: `GET /api/sources`, `POST /api/sources/from-book/{book_id}`,
+`GET/POST /api/collections`, and
+`GET/POST /api/collections/{id}/queries`. Question requests contain `question`,
+`backend`, and `online_disclosure_acknowledged` (false by default).
+`GET /api/collection-queries/{id}/diagnostics` retains raw response, source
+snapshot, context, validation and safe failure metadata. Failed/invalid output
+is never rendered as a grounded answer. Active queries close explicitly as
+failed after a process restart rather than silently resuming paid work.
+
+Citations show exact quotations and original code-point ranges. PDF links open
+`GET /api/sources/{document_id}/file#page=<physical-page>` after original-byte
+verification. Sentence sources open original indexed units via
+`GET /api/sources/{document_id}/units/{unit_id}`. Source copies are independent
+of library rows so deleting a library entry does not destroy collection history.
+Quoted address/lexical validation is not proof of semantic entailment.
