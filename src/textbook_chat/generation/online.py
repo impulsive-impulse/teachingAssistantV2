@@ -98,7 +98,9 @@ class OnlineGenerationProvider:
             kwargs["base_url"] = base_url
         self.client = OpenAI(**kwargs)
 
-    def stream(self, prompt: str, cancel: Event | None = None) -> Iterator[ProviderStreamEvent]:
+    def stream(
+        self, prompt: str, cancel: Event | None = None, *, json_schema: dict[str, Any] | None = None,
+    ) -> Iterator[ProviderStreamEvent]:
         """Stream one structured response; cancellation never starts a retry."""
 
         if not prompt.strip():
@@ -116,9 +118,9 @@ class OnlineGenerationProvider:
             text={
                 "format": {
                     "type": "json_schema",
-                    "name": "grounded_textbook_answer",
+                    "name": "grounded_textbook_answer" if json_schema is None else "grounded_assessment_answer",
                     "strict": True,
-                    "schema": answer_json_schema(),
+                    "schema": answer_json_schema() if json_schema is None else json_schema,
                 }
             },
             stream=True,
@@ -151,6 +153,8 @@ class OnlineGenerationProvider:
                 close()
 
         elapsed = time.perf_counter() - started
+        if final_response is None:
+            raise RuntimeError("OpenAI stream ended without a terminal response")
         usage = getattr(final_response, "usage", None)
         input_tokens = int(getattr(usage, "input_tokens", 0) or 0)
         output_tokens = int(getattr(usage, "output_tokens", 0) or 0)

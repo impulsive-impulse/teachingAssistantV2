@@ -94,6 +94,14 @@ This establishes address validity, not semantic support. A real source can
 still fail to support a model's claim. Claim coverage, insufficient evidence,
 and semantic-support review remain T08 responsibilities.
 
+The T08 contract is `assessment_generation.py`: it has no free-form answer
+channel outside declared claims. Each answered claim requires an exact
+quotation from a retained evidence/unit pair. Its resolved character ranges
+refer to that quotation, not an entire original page. Unknown addresses,
+empty citations, unquoted numbers, and weak lexical support fail explicitly;
+raw responses remain available to the calling runner. The lexical screen is
+not an entailment proof, and semantic source review remains a separate rubric.
+
 ## Local inspection example
 
 Run this Python code from the repository root using the assessment environment.

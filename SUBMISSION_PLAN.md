@@ -3,7 +3,7 @@
 Status: T01 and T02 committed and published. T03 is complete; the user has
 authorized implementation through T15 with a separate local commit for each
 task. The user will push all commits manually at the end. T04 is implemented
-and committed locally; T05-T07 are implemented and verified. T08 is in progress. T16
+and committed locally; T05-T08 are implemented and verified. T09 is next. T16
 visibility, sharing, recording, and submission actions remain outside this
 authorization.
 
@@ -283,3 +283,22 @@ context measurements, not final or answer-quality claims.
 Fifteen focused checks passed for source/label isolation, exact budget, source
 scope, weak evidence, and exact ablation behavior. T11 will freeze the complete
 generation/evaluation pipeline before any final run. No paid calls or pushes.
+
+## T08 implementation checkpoint
+
+Versioned claim-only JSON separates the short benchmark answer from cited
+supporting claims. Non-empty answered outputs cannot pass with empty claims
+or citations. Every citation binds an evidence/unit pair and an exact quote
+from retained context, with resolved original document/title/hash and precise
+quoted character ranges. Invalid JSON/shapes, changed context, unknown pairs,
+unsupported numbers, and weak quoted lexical support fail explicitly.
+
+Insufficient evidence has no factual answer or forced citations and explains
+what is missing. Source text is untrusted data, and the shared prompt instructs
+the generator to preserve intermediate multi-document support and contradictions.
+The online provider accepts this versioned schema without changing its legacy
+default schema or frozen model/limits; a missing terminal response is an error.
+
+The quoted lexical screen is not a semantic-entailment guarantee. T12's
+preselected source-review packet audits that separate property. Twenty-three
+focused new/legacy generation checks passed; no paid calls or pushes.

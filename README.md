@@ -154,6 +154,12 @@ round-robin budget allocation. Its parameters were selected on development
 questions only. The named ablation bypasses this component and uses the exact
 standard hybrid context; no gold support labels enter selection.
 
+T08 adds a versioned claim-only synthesis contract. Answered outputs require
+non-empty cited claims, exact quotations from retained source units, and
+resolvable document/location pairs. Numeric and lexical screens reject obvious
+unsupported claims; semantic support still requires the recorded source-review
+rubric rather than being inferred from valid addresses alone.
+
 ## Build and run
 
 Requirements:
