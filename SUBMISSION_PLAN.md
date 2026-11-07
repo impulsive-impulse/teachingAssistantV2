@@ -335,3 +335,19 @@ and the shared contingency ledger, preserving final/rerun reservations.
 Original source copies and fingerprints keep old answers tied to their actual
 sources after a collection changes. Restart closes active work explicitly.
 Provider exception strings are not exposed in diagnostics.
+
+## T11 implementation checkpoint
+
+All generation development used exactly the same 15 development questions.
+The initial run exposed altered/abbreviated quotes; a shared prompt revision
+reduced proposed invalid output from 60% to 33.3% without relaxing checks.
+Confirmation answer F1 is 53.3% proposed versus 40.0% dense and 33.3% hybrid;
+complete-document context recall remains 100% versus 80.0%/86.7%.
+These are development results, not final gains.
+
+Both runs and all failures are retained as licensed compressed raw artifacts.
+Development spent 50 attempts and confirmation used 52 of the 80 contingency
+attempts; final and rerun allocations remain untouched. A development
+ablation-resampling issue was corrected: identical completed responses are
+now reused even if claims fail validation. The final configuration and
+normalized-LF code hashes are frozen before looking at held-out effectiveness.

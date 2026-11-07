@@ -58,3 +58,12 @@ def test_global_five_hundred_cap_includes_all_phases_and_reserved_attempts(tmp_p
     assert ledger.status()["remaining"] == 0
     with pytest.raises(BudgetExceeded):
         ledger.reserve("one-more", "contingency", "c" * 64)
+
+
+def test_completed_provider_response_with_invalid_claims_is_not_resampled_for_ablation(tmp_path) -> None:
+    ledger = CallLedger(tmp_path / "ledger.db", "a" * 64)
+    attempt = ledger.reserve("same-run", "development", "b" * 64)
+    ledger.start(attempt)
+    ledger.finish(attempt, {"raw_text": "original invalid claims"}, error_code="claim_validation_failed")
+    assert ledger.cached("same-run", "b" * 64)["result"]["raw_text"] == "original invalid claims"
+    assert ledger.cached("different-run", "b" * 64) is None

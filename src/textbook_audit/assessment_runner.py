@@ -3,7 +3,9 @@
 from __future__ import annotations
 
 import argparse
+import gzip
 import json
+import time
 from pathlib import Path
 from typing import Any
 from uuid import uuid4
@@ -31,6 +33,35 @@ def _raw_path(directory: Path, question_id: str, arm: str) -> Path:
     return directory / "raw" / (fingerprint({"question_id": question_id, "arm": arm}) + ".json")
 
 
+def read_raw(path: Path) -> dict[str, Any]:
+    compressed = path.with_suffix(".json.gz")
+    if path.is_file() and compressed.is_file():
+        raise ValueError("raw result has ambiguous plain/compressed copies")
+    if path.is_file():
+        return read_json(path)
+    with gzip.open(compressed, "rt", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def export_run(source: Path, destination: Path, root: Path) -> None:
+    """Publish lossless public-benchmark raw outputs, not copyrighted PDF snapshots."""
+    rebuild(source, root)
+    destination.mkdir(parents=True, exist_ok=False)
+    for name in ("run.json", "references.json", "pipeline.json", "metrics.json"):
+        write_json(destination / name, read_json(source / name))
+    manifest = read_json(source / "run.json")
+    for question_id in manifest["question_ids"]:
+        for arm in ARMS:
+            row = read_raw(_raw_path(source, question_id, arm))
+            if any(document["kind"] != "hotpotqa" for document in row["snapshot"]["source_documents"]):
+                raise PermissionError("only the licensed public benchmark can be exported")
+            target = _raw_path(destination, question_id, arm).with_suffix(".json.gz")
+            target.parent.mkdir(parents=True, exist_ok=True)
+            content = json.dumps(row, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+            target.write_bytes(gzip.compress(content, mtime=0))
+    rebuild(destination, root)
+
+
 def rebuild(directory: Path, root: Path) -> dict[str, Any]:
     manifest = read_json(directory / "run.json")
     if manifest["version"] != RUN_VERSION:
@@ -48,9 +79,9 @@ def rebuild(directory: Path, root: Path) -> dict[str, Any]:
         reference = references[question_id]
         for arm in ARMS:
             path = _raw_path(directory, question_id, arm)
-            if not path.is_file():
+            if not path.is_file() and not path.with_suffix(".json.gz").is_file():
                 raise FileNotFoundError("evaluation is incomplete; a selected question/arm has no raw result")
-            row = read_json(path)
+            row = read_raw(path)
             if row["checksum"] != fingerprint({key: value for key, value in row.items() if key != "checksum"}):
                 raise ValueError("raw result checksum changed")
             if row["question_id"] != question_id or row["arm"] != arm or row["run_id"] != manifest["run_id"]:
@@ -59,10 +90,11 @@ def rebuild(directory: Path, root: Path) -> dict[str, Any]:
             catalog = {document.document_id: document for document in documents}
             validate_context(row["context"], catalog, row["selected_evidence"], encoder)
             generated = row["generation"]
-            valid = generated.get("error_code") is None
-            validation = validate_answer(generated["raw_text"], row["context"], catalog) if valid else {
+            dispatch_complete = generated.get("error_code") in {None, "claim_validation_failed"}
+            validation = validate_answer(generated["raw_text"], row["context"], catalog) if dispatch_complete else {
                 "valid": False, "short_answer": "", "supporting_facts": [],
             }
+            valid = validation["valid"] and generated.get("error_code") is None
             valid = valid and validation["valid"]
             failed += not valid
             reused += generated["cache_reused"]
@@ -80,13 +112,34 @@ def rebuild(directory: Path, root: Path) -> dict[str, Any]:
                 validation.get("short_answer", ""), validation.get("supporting_facts", []),
                 reference, valid_output=bool(valid),
             ))
+            try:
+                payload = json.loads(generated["raw_text"])
+            except (json.JSONDecodeError, TypeError):
+                payload = {}
+            declared = payload.get("claims", []) if isinstance(payload, dict) else []
+            declared = declared if isinstance(declared, list) else []
+            citations = sum(len(claim["citations"]) for claim in declared
+                            if isinstance(claim, dict) and isinstance(claim.get("citations"), list))
+            resolved = sum(len(claim["citations"]) for claim in validation.get("claims", []))
+            cited_claims = sum(bool(claim["citations"]) for claim in validation.get("claims", []))
             values.update({
                 "context_tokens": row["context"]["token_count"],
                 "invalid_output_rate": float(not valid),
                 "false_abstention_rate": float(valid and validation.get("status") == "insufficient_evidence"),
-                "factual_claim_citation_completeness": float(valid and validation.get("status") == "answered"),
+                "factual_claim_citation_completeness": cited_claims / len(declared) if declared else 0.0,
+                "citation_location_validity": resolved / citations if citations else 0.0,
             })
-            scored.append({"question_id": question_id, "arm": arm, "metrics": values})
+            scored.append({
+                "question_id": question_id, "arm": arm, "metrics": values,
+                "operations": {
+                    "input_tokens": generated.get("usage", {}).get("prompt_tokens"),
+                    "output_tokens": generated.get("usage", {}).get("completion_tokens"),
+                    "generation_latency_seconds": generated.get("timing", {}).get("generation_latency_seconds"),
+                    "shared_ranking_latency_ms": row.get("shared_ranking_latency_ms"),
+                    "context_selection_latency_ms": row.get("context_selection_latency_ms"),
+                    "cache_reused": generated["cache_reused"],
+                },
+            })
     ids = manifest["question_ids"]
     by_arm = {arm: [row for row in scored if row["arm"] == arm] for arm in ARMS}
     summaries = {arm: aggregate_scores(rows, ids) for arm, rows in by_arm.items()}
@@ -113,13 +166,19 @@ def rebuild(directory: Path, root: Path) -> dict[str, Any]:
 
 def run_fresh(
     root: Path, directory: Path, phase: str, ledger_path: Path,
-    *, provider: Any | None = None,
+    *, provider: Any | None = None, use_contingency: bool = False,
 ) -> dict[str, Any]:
     pipeline = load_pipeline(root)
     if phase not in {"development", "final_evaluation", "fresh_final_rerun"}:
         raise ValueError("fresh evaluation phase is invalid")
     if phase != "development" and pipeline["status"] != "frozen":
         raise ValueError("final and fresh-rerun execution require a frozen development-selected pipeline")
+    if phase != "development":
+        from .assessment_freeze import verify_freeze
+        verify_freeze(root)
+    if use_contingency and phase != "development":
+        raise ValueError("contingency diagnostics cannot replace the reserved final/rerun phases")
+    budget_phase = "contingency" if use_contingency else phase
     corpus = ingest_benchmark(root, root / "app_data" / "assessment" / "inputs-v1")
     labels = read_evaluation_labels(root / "app_data" / "assessment" / "inputs-v1" / "evaluation" / "labels.json")
     validate_reference_alignment(labels, corpus)
@@ -131,6 +190,7 @@ def run_fresh(
         manifest = read_json(run_path)
         if (
             manifest["phase"] != phase or manifest["question_ids"] != ids
+            or manifest.get("budget_phase", phase) != budget_phase
             or manifest["pipeline_sha256"] != fingerprint(pipeline)
             or manifest["corpus_fingerprint"] != corpus.index.corpus_fingerprint
         ):
@@ -141,6 +201,7 @@ def run_fresh(
         directory.mkdir(parents=True, exist_ok=True)
         manifest = {
             "version": RUN_VERSION, "run_id": phase + "-" + uuid4().hex, "phase": phase,
+            "budget_phase": budget_phase,
             "question_ids": ids, "arms": list(ARMS), "pipeline_sha256": fingerprint(pipeline),
             "protocol_sha256": pipeline["protocol_sha256"], "references_checksum": labels["checksum"],
             "corpus_fingerprint": corpus.index.corpus_fingerprint, "complete": False,
@@ -152,7 +213,9 @@ def run_fresh(
     for question_id in ids:
         question = corpus.question(question_id)
         index = corpus.for_question(question_id)
+        started = time.perf_counter()
         ranked = baseline_rankings(index, question.question, model)
+        shared_ranking_latency = (time.perf_counter() - started) * 1000
         for arm in ARMS:
             path = _raw_path(directory, question_id, arm)
             if path.is_file():
@@ -160,6 +223,7 @@ def run_fresh(
                 if existing["checksum"] != fingerprint({key: value for key, value in existing.items() if key != "checksum"}):
                     raise ValueError("resumed raw output changed")
                 continue
+            packing_started = time.perf_counter()
             if arm in {"dense_top_k", "hybrid_rrf"}:
                 order = ranked[arm]
                 snapshot = index.snapshot(question.question, order["ranking"], order["scores"], top_k=5)
@@ -173,15 +237,18 @@ def run_fresh(
                     ablation=arm == "without_cross_document_selection",
                 )
             validate_context(context, index.catalog, evidence, encoder)
+            selection_latency = (time.perf_counter() - packing_started) * 1000
             generated = dispatch_paid(
                 root, question.question, context, index.catalog, pipeline, ledger,
-                manifest["run_id"], phase, encoder, provider=provider,
+                manifest["run_id"], budget_phase, encoder, provider=provider,
             )
             row = {
                 "version": RUN_VERSION, "run_id": manifest["run_id"], "question_id": question_id,
                 "question": question.question, "runtime_input_sha256": question.runtime_input_sha256,
                 "arm": arm, "snapshot": snapshot, "context": context, "selected_evidence": evidence,
                 "generation": generated,
+                "shared_ranking_latency_ms": shared_ranking_latency,
+                "context_selection_latency_ms": selection_latency,
             }
             write_json(path, {**row, "checksum": fingerprint(row)})
             print(json.dumps({
@@ -205,13 +272,14 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("--phase", choices=("development", "final_evaluation", "fresh_final_rerun"), default="development")
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--ledger", type=Path)
+    parser.add_argument("--use-contingency", action="store_true", help="Development-only diagnostic spending from the separate 80-attempt reserve.")
     args = parser.parse_args(argv)
     root, directory = args.root.resolve(), args.output.resolve()
     if args.cached:
         report = rebuild(directory, root)
     else:
         ledger = args.ledger.resolve() if args.ledger else root / "app_data" / "assessment" / "call_ledger.sqlite"
-        report = run_fresh(root, directory, args.phase, ledger)
+        report = run_fresh(root, directory, args.phase, ledger, use_contingency=args.use_contingency)
     print(json.dumps({
         "phase": report["phase"], "metrics": report["metrics"],
         "cost_estimate_usd": report["known_token_based_cost_estimate_usd"],

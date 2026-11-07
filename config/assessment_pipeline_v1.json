@@ -1,6 +1,6 @@
 {
   "version": "assessment-pipeline-v1",
-  "status": "development",
+  "status": "frozen",
   "protocol_sha256": "61bd6fb0b0fde78a8475c8fe789a9e343b3628f7bdb57a37ca61f5a989a25304",
   "selector": {
     "version": "budgeted-cross-document-selection-v1",
@@ -21,5 +21,7 @@
   "usd_per_million_cached_input_tokens": 1.25,
   "usd_per_million_output_tokens": 10,
   "maximum_estimated_usd_for_500_attempts": 14.08,
-  "pricing_note": "Conservative token-based estimate, not an invoice; unknown failed-request usage is reported separately."
+  "pricing_note": "Conservative token-based estimate, not an invoice; unknown failed-request usage is reported separately.",
+  "generation_contract": "assessment-claims-v2",
+  "same_run_reuse": "completed-provider-response-including-invalid-claims"
 }

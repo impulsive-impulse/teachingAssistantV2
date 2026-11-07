@@ -1,0 +1,53 @@
+{
+  "version": "assessment-run-v1",
+  "run_id": "development-3bdbd06fb4314c87af7dd2cf55f5ad0e",
+  "phase": "development",
+  "question_ids": [
+    "5ab7ece25542995dae37e9f3",
+    "5abc0ba05542996583600409",
+    "5ab43179554299233955004d",
+    "5ab57759554299637185c5a5",
+    "5add596f5542990dbb2f7e4d",
+    "5adfd2f255429925eb1afaa5",
+    "5abf0bf95542997719eab63a",
+    "5abe79c755429976d4830b2a",
+    "5ab55e015542992aa134a2d3",
+    "5ae658855542992ae0d162e3",
+    "5a7553a95542996c70cfaedf",
+    "5adf3e355542993a75d26440",
+    "5adc398755429947ff173912",
+    "5a8e276b5542995a26add468",
+    "5ae3d0bb5542990afbd1e1e5"
+  ],
+  "arms": [
+    "dense_top_k",
+    "hybrid_rrf",
+    "proposed",
+    "without_cross_document_selection"
+  ],
+  "pipeline_sha256": "e9010babebcbcee434cbf5a4e86b4cc4a1c5a343af669bf6e42503395b4f82e7",
+  "protocol_sha256": "61bd6fb0b0fde78a8475c8fe789a9e343b3628f7bdb57a37ca61f5a989a25304",
+  "references_checksum": "47a741916e0090ffbea13cad26f0648e94f1c73fe81c45efb3627d0515733f2c",
+  "corpus_fingerprint": "bd884fde07f14434a05d375ae85f6581de02816a2367f7d861a7a710026515ab",
+  "complete": true,
+  "ledger_status": {
+    "maximum_attempts": 500,
+    "reserved_or_attempted": 50,
+    "remaining": 450,
+    "dispatched_upper_bound": 50,
+    "phase_counts": {
+      "development": 50,
+      "final_evaluation": 0,
+      "fresh_final_rerun": 0,
+      "contingency": 0
+    },
+    "phase_remaining": {
+      "development": 10,
+      "final_evaluation": 180,
+      "fresh_final_rerun": 180,
+      "contingency": 80
+    },
+    "failed": 28,
+    "unfinished": 0
+  }
+}

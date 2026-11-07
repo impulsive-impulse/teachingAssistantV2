@@ -1,0 +1,25 @@
+{
+  "version": "assessment-pipeline-v1",
+  "status": "development",
+  "protocol_sha256": "61bd6fb0b0fde78a8475c8fe789a9e343b3628f7bdb57a37ca61f5a989a25304",
+  "selector": {
+    "version": "budgeted-cross-document-selection-v1",
+    "candidate_documents": 6,
+    "units_per_document": 3,
+    "title_link_weight": 0.2,
+    "weak_dense_threshold": 0.25
+  },
+  "generator": "gpt-4o-2024-08-06",
+  "temperature": 0,
+  "max_output_tokens": 768,
+  "context_token_budget": 1024,
+  "maximum_input_tokens": 8192,
+  "sdk_retries": 0,
+  "price_source": "https://developers.openai.com/api/docs/models/gpt-4o",
+  "price_verified_date": "2026-11-08",
+  "usd_per_million_input_tokens": 2.5,
+  "usd_per_million_cached_input_tokens": 1.25,
+  "usd_per_million_output_tokens": 10,
+  "maximum_estimated_usd_for_500_attempts": 14.08,
+  "pricing_note": "Conservative token-based estimate, not an invoice; unknown failed-request usage is reported separately."
+}

@@ -119,7 +119,8 @@ class CallLedger:
         with self.connect() as connection:
             row = connection.execute(
                 "SELECT id,result_json FROM attempts WHERE run_id=? AND request_sha256=? "
-                "AND state='completed' ORDER BY created_at,id LIMIT 1",
+                "AND (state='completed' OR (error_code='claim_validation_failed' AND started_at IS NOT NULL)) "
+                "ORDER BY created_at,id LIMIT 1",
                 (run_id, request_sha256),
             ).fetchone()
         return {"attempt_id": row["id"], "result": json.loads(row["result_json"])} if row else None

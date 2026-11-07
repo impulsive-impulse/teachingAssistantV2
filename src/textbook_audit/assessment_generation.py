@@ -11,7 +11,7 @@ from .generation_phase_a import CITATION_SUPPORT_THRESHOLD, content_tokens
 from .source_provenance import ProvenanceText, SourceDocument, resolve_citation
 
 
-GENERATION_VERSION = "assessment-claims-v1"
+GENERATION_VERSION = "assessment-claims-v2"
 
 
 def answer_schema() -> dict[str, Any]:
@@ -51,9 +51,18 @@ def render_prompt(question: str, context: dict[str, Any]) -> dict[str, Any]:
         "and separately cited short factual claims that justify it. Include intermediate evidence "
         "needed to connect entities or compare sources. Every factual statement must be inside a claim. "
         "Each claim needs at least one exact supporting quotation from a displayed source unit. "
+        "COPY the quote as one contiguous literal substring of that unit. Preserve capitalization, "
+        "punctuation, quotation marks, Unicode and hyphens exactly; JSON escaping is the only change allowed. "
+        "Never insert ellipses, combine separated phrases, shorten a quotation internally, or paraphrase it. "
+        "Use a short complete source clause and word claims closely to its explicit facts. If a claim "
+        "depends on a pronoun, an entity relationship or another sentence, cite that connecting evidence too. "
+        "Do not add facts to a claim merely because they are plausible or remembered. "
         "Use its evidence_id and unit_id together; never invent identifiers. Preserve quoted numbers. "
         "Do not claim an unsupported numeric calculation. When sources disagree, describe the disagreement "
         "and cite both, rather than silently choosing one. Write plainly.\n"
+        "The short_answer must be explicitly justified in the cited claim text. For example, do not "
+        "give a summed distance as the short answer when claims only provide its separate components. "
+        "Prefer two or three concise claims with brief exact quotes so the entire JSON fits the output limit.\n"
         "Return only JSON with this exact shape:\n" +
         json.dumps({
             "status": "answered", "short_answer": "brief answer",
