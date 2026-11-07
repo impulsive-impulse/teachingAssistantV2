@@ -137,6 +137,12 @@ retrieval snapshots verify their source maps, corpus, model/profile, and vector
 identities. Collection API/UI wiring remains T09; existing book-bound chats
 are preserved.
 
+T05 adds shared ingestion for the frozen benchmark and the authorized PDF demo.
+Runtime questions and source indexes live separately from evaluation answers
+and supporting-fact labels. Both corpora use the same document/span contracts
+and collection index; benchmark paragraphs do not pass through textbook-only
+PDF suitability rules.
+
 ## Build and run
 
 Requirements:

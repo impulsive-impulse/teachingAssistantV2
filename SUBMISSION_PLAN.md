@@ -3,7 +3,7 @@
 Status: T01 and T02 committed and published. T03 is complete; the user has
 authorized implementation through T15 with a separate local commit for each
 task. The user will push all commits manually at the end. T04 is implemented
-and verified; T05 is next. T16
+and committed locally; T05 is implemented and verified. T06 is in progress. T16
 visibility, sharing, recording, and submission actions remain outside this
 authorization.
 
@@ -222,3 +222,23 @@ source-leakage rejection, and migration preservation.
 This is the persistence/index foundation. T05 supplies reproducible benchmark
 and PDF ingestion, and T09 exposes collection chats through the API/UI.
 No paid model calls or pushes have been made.
+
+## T05 implementation checkpoint
+
+Shared ingestion exports the selected runtime questions and the exact
+evaluation references into physically separate directories. The inference
+loader never opens reference labels, rejects forbidden runtime fields, and
+checks each ten-document question projection against T01's frozen fingerprint.
+
+Benchmark paragraphs and authorized PDFs use the same immutable source units,
+exact span metadata, normalized embedding/index format, and collection scopes.
+The benchmark does not enter the textbook-only validation gate or get pooled
+with the demonstration PDFs. CLI acquisition/check and authorized demo import
+are documented in `requirements/README.md`.
+
+Verification passed 44 focused checks and built the real 60-question/
+600-document corpus. The compiled-input `--check` revalidated references and
+left all corpus artifact hashes unchanged. Both authorized PDFs were imported
+into a real two-document collection with 257/327 original page units and a
+verified saved index. No PDF binaries or derived text were newly tracked.
+Answer generation and paid execution remain later tasks.

@@ -22,6 +22,10 @@ these canonical commands over importing experiment internals directly.
 - `build_assessment_protocol.py`: build/verify the pinned, source-reviewed
   HotpotQA subset; `--check` is read-only and `--preview` cannot freeze
   unreviewed questions. Does not run a model or acquire data.
+- `ingest_assessment.py`: build the shared 600-document benchmark index and
+  export physically separate runtime/evaluation inputs; `--check` is read-only.
+  `--demo --authorized-demo-use` imports the two permitted PDFs into a local
+  collection using the same provenance/index contracts. No paid model calls.
 - `audit_textbooks.py`: extract and audit page-level textbook data.
 - `generate_retrieval_benchmark.py`: generate/validate retrieval benchmark candidates.
 - `build_generation_benchmark_v1.py`: deterministically rebuild Generation Benchmark v1.

@@ -143,6 +143,35 @@ on the user's implicit tokenizer cache.
 $env:TIKTOKEN_CACHE_DIR = (Resolve-Path app_data\models\tokenizers).Path
 ```
 
+## Shared source ingestion after setup
+
+```powershell
+# Verify/acquire the frozen benchmark inputs and build local CPU embeddings:
+.\.venv-assessment\Scripts\python.exe scripts\ingest_assessment.py
+
+# Verify an existing compiled corpus without downloads or index changes:
+.\.venv-assessment\Scripts\python.exe scripts\ingest_assessment.py --check
+
+# Only with the previously confirmed PDF indexing/demonstration permission:
+.\.venv-assessment\Scripts\python.exe scripts\ingest_assessment.py `
+  --demo --authorized-demo-use
+```
+
+The benchmark writes `app_data\assessment\inputs-v1\runtime` for inference and
+`app_data\assessment\inputs-v1\evaluation` for reference answers/support labels.
+The runtime loader never opens the evaluation directory. Each question retains
+only its original ten context documents, and its projection is checked against
+the frozen T01 fingerprint. The global 600-document vector cache is reused
+through explicit per-question subset scopes, not searched as a full-corpus
+benchmark.
+
+PDF imports copy only authorized local inputs into owned ignored storage,
+register immutable source records, and build a two-document collection. The
+PDFs remain separate sources; unverified printed labels are omitted. Original
+PDFs and their derived text must not be newly committed or redistributed
+without separate permission. Ingestion makes no paid API call and does not
+establish answer quality or evaluation gains.
+
 ## Restricted-network package installation
 
 An explicitly chosen HTTPS mirror can be used with `--index-url`. The exact
