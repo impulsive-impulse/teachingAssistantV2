@@ -47,3 +47,29 @@ Dataset and these derived benchmark artifacts are
 Changes: deterministic selection/splitting/order, source mapping, contexts,
 generated predictions and evaluation records. The original scorer is separately
 Apache-2.0. No copyrighted demonstration PDF or extracted PDF text is bundled.
+
+## Held-out outcome
+
+All 45 held-out questions and four arms are retained under `final/`.
+Complete-document context recall: **97.78% proposed, 88.89% dense, 80.00%
+hybrid/ablation**. Paired 95% intervals for proposed gains are +2.22 to +17.78
+percentage points over dense and +6.67 to +28.89 over hybrid.
+Answer F1 is 64.20%/61.06%/51.02%; the gain over dense is uncertain
+(-8.24 to +15.29 points). Proposed invalid output is 26.67%, not hidden.
+Hybrid and its equivalent bypass ablation have identical raw predictions.
+The additional BM25-only reference reaches 55.56% complete-document recall.
+
+`final_analysis.json` retains paired intervals and measured operations.
+The exact preselected source-review packets, opaque card IDs, rubric and all
+60 recorded judgments are retained. Ten held-out questions x four arms give
+25 supported, 3 partial, 7 invalid and 5 abstained cards; the proposed arm has
+7 supported, 1 partial, 1 invalid and 1 abstained. Development includes valid
+addresses attached to unsupported dates and incomplete intermediate chains.
+These are **assistant source inspections**, not independent human signoff.
+Claim-support judgments concern original source units; altered quotations can
+still make an otherwise factually supported response invalid.
+
+Final evaluation used **134** new paid attempts; 46 identical logical outputs
+reused within that run. Development and diagnostics used 102. Known total
+token-based estimate before the reserved fresh rerun: **$1.0855075**. Actual
+invoiced dollars are not available. Zero calls are required for report replay.

@@ -1,0 +1,215 @@
+{
+  "version": "assessment-final-analysis-v1",
+  "questions": 45,
+  "paired": {
+    "dense_top_k": {
+      "complete_supporting_document_recall": {
+        "metric": "complete_supporting_document_recall",
+        "questions": 45,
+        "delta": 0.08888888888888889,
+        "confidence_level": 0.95,
+        "confidence_interval": [
+          0.022222222222222223,
+          0.17777777777777778
+        ],
+        "resamples": 10000,
+        "seed": 1729,
+        "stratified_by_question_type": true,
+        "wins": 4,
+        "ties": 41,
+        "losses": 0
+      },
+      "answer_f1": {
+        "metric": "answer_f1",
+        "questions": 45,
+        "delta": 0.031380471380471384,
+        "confidence_level": 0.95,
+        "confidence_interval": [
+          -0.08243097643097642,
+          0.15286195286195287
+        ],
+        "resamples": 10000,
+        "seed": 1729,
+        "stratified_by_question_type": true,
+        "wins": 6,
+        "ties": 35,
+        "losses": 4
+      },
+      "joint_f1": {
+        "metric": "joint_f1",
+        "questions": 45,
+        "delta": 0.014285714285714287,
+        "confidence_level": 0.95,
+        "confidence_interval": [
+          -0.10000264550264551,
+          0.130589947089947
+        ],
+        "resamples": 10000,
+        "seed": 1729,
+        "stratified_by_question_type": true,
+        "wins": 8,
+        "ties": 28,
+        "losses": 9
+      }
+    },
+    "hybrid_rrf": {
+      "complete_supporting_document_recall": {
+        "metric": "complete_supporting_document_recall",
+        "questions": 45,
+        "delta": 0.17777777777777778,
+        "confidence_level": 0.95,
+        "confidence_interval": [
+          0.06666666666666667,
+          0.28888888888888886
+        ],
+        "resamples": 10000,
+        "seed": 1729,
+        "stratified_by_question_type": true,
+        "wins": 8,
+        "ties": 37,
+        "losses": 0
+      },
+      "answer_f1": {
+        "metric": "answer_f1",
+        "questions": 45,
+        "delta": 0.13175084175084176,
+        "confidence_level": 0.95,
+        "confidence_interval": [
+          0.005824915824915832,
+          0.26377104377104377
+        ],
+        "resamples": 10000,
+        "seed": 1729,
+        "stratified_by_question_type": true,
+        "wins": 9,
+        "ties": 33,
+        "losses": 3
+      },
+      "joint_f1": {
+        "metric": "joint_f1",
+        "questions": 45,
+        "delta": 0.10037037037037037,
+        "confidence_level": 0.95,
+        "confidence_interval": [
+          -0.018518518518518514,
+          0.22075925925925904
+        ],
+        "resamples": 10000,
+        "seed": 1729,
+        "stratified_by_question_type": true,
+        "wins": 10,
+        "ties": 30,
+        "losses": 5
+      }
+    },
+    "without_cross_document_selection": {
+      "complete_supporting_document_recall": {
+        "metric": "complete_supporting_document_recall",
+        "questions": 45,
+        "delta": 0.17777777777777778,
+        "confidence_level": 0.95,
+        "confidence_interval": [
+          0.06666666666666667,
+          0.28888888888888886
+        ],
+        "resamples": 10000,
+        "seed": 1729,
+        "stratified_by_question_type": true,
+        "wins": 8,
+        "ties": 37,
+        "losses": 0
+      },
+      "answer_f1": {
+        "metric": "answer_f1",
+        "questions": 45,
+        "delta": 0.13175084175084176,
+        "confidence_level": 0.95,
+        "confidence_interval": [
+          0.005824915824915832,
+          0.26377104377104377
+        ],
+        "resamples": 10000,
+        "seed": 1729,
+        "stratified_by_question_type": true,
+        "wins": 9,
+        "ties": 33,
+        "losses": 3
+      },
+      "joint_f1": {
+        "metric": "joint_f1",
+        "questions": 45,
+        "delta": 0.10037037037037037,
+        "confidence_level": 0.95,
+        "confidence_interval": [
+          -0.018518518518518514,
+          0.22075925925925904
+        ],
+        "resamples": 10000,
+        "seed": 1729,
+        "stratified_by_question_type": true,
+        "wins": 10,
+        "ties": 30,
+        "losses": 5
+      }
+    }
+  },
+  "operations": {
+    "dense_top_k": {
+      "input_tokens": 1243.911111111111,
+      "output_tokens": 152.64444444444445,
+      "generation_latency_seconds": 2.8143844444444444,
+      "shared_ranking_latency_ms": 1236.7553577782626,
+      "context_selection_latency_ms": 228.08393555638355
+    },
+    "hybrid_rrf": {
+      "input_tokens": 1275.088888888889,
+      "output_tokens": 144.26666666666668,
+      "generation_latency_seconds": 2.215711111111111,
+      "shared_ranking_latency_ms": 1236.7553577782626,
+      "context_selection_latency_ms": 267.72903777794755
+    },
+    "proposed": {
+      "input_tokens": 1281.4444444444443,
+      "output_tokens": 154.4,
+      "generation_latency_seconds": 2.1910644444444443,
+      "shared_ranking_latency_ms": 1236.7553577782626,
+      "context_selection_latency_ms": 544.9546133328113
+    },
+    "without_cross_document_selection": {
+      "input_tokens": 1275.088888888889,
+      "output_tokens": 144.26666666666668,
+      "generation_latency_seconds": 2.215711111111111,
+      "shared_ranking_latency_ms": 1236.7553577782626,
+      "context_selection_latency_ms": 636.9111600006969
+    }
+  },
+  "source_review": {
+    "dense_top_k": {
+      "invalid": 2,
+      "supported": 6,
+      "partial": 2
+    },
+    "hybrid_rrf": {
+      "abstained": 2,
+      "invalid": 2,
+      "supported": 6
+    },
+    "proposed": {
+      "supported": 7,
+      "partial": 1,
+      "abstained": 1,
+      "invalid": 1
+    },
+    "without_cross_document_selection": {
+      "abstained": 2,
+      "supported": 6,
+      "invalid": 2
+    }
+  },
+  "source_review_is_human": false,
+  "gain_scope": "positive complete-document context recall against both baselines; answer/joint gains against dense uncertain",
+  "final_paid_attempts": 134,
+  "development_plus_diagnostics_attempts": 102,
+  "known_cost_before_fresh_rerun_usd": 1.0855075,
+  "checksum": "0677bfb0e201ee28176fc681d9b95f4ce59c98c27a185d132ca90fb1b5aabee1"
+}

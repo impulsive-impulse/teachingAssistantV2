@@ -1,0 +1,896 @@
+{
+  "version": "assessment-source-review-packet-v1",
+  "split": "development",
+  "question_ids": [
+    "5adfd2f255429925eb1afaa5",
+    "5ab43179554299233955004d",
+    "5abe79c755429976d4830b2a",
+    "5adf3e355542993a75d26440",
+    "5adc398755429947ff173912"
+  ],
+  "cards": [
+    {
+      "card_id": "1bd9ee74de24",
+      "question_id": "5adfd2f255429925eb1afaa5",
+      "question": "A puzzle-platform video game developed by the Valve Corporation is part of what 2012 action-adventure game?",
+      "short_answer": "Gateways",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Gateways is a 2012 action-adventure platform game.",
+          "citations": [
+            {
+              "evidence_id": "E5",
+              "unit_id": "sentence:000000",
+              "quote": "Gateways is a 2012 action-adventure platform game created by British indie studio Smudged Cat Games.",
+              "title": "Gateways (video game)",
+              "original_unit": "Gateways is a 2012 action-adventure platform game created by British indie studio Smudged Cat Games.",
+              "retained_unit": "Gateways is a 2012 action-adventure platform game created by British indie studio Smudged Cat Games."
+            }
+          ]
+        },
+        {
+          "text": "Gateways is a mixture of gameplay concepts from the \"Portal\" and \"Metroid\" series.",
+          "citations": [
+            {
+              "evidence_id": "E5",
+              "unit_id": "sentence:000001",
+              "quote": "It is a mixture of gameplay concepts from the \"Portal\" and \"Metroid\" series.",
+              "title": "Gateways (video game)",
+              "original_unit": " It is a mixture of gameplay concepts from the \"Portal\" and \"Metroid\" series.",
+              "retained_unit": "It is a mixture of gameplay concepts from the \"Portal\" and \"Metroid\" series."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "Gateways",
+      "reference_support": [
+        {
+          "title": "Gateways (video game)",
+          "sentence_index": 0,
+          "text": "Gateways is a 2012 action-adventure platform game created by British indie studio Smudged Cat Games."
+        },
+        {
+          "title": "Gateways (video game)",
+          "sentence_index": 1,
+          "text": " It is a mixture of gameplay concepts from the \"Portal\" and \"Metroid\" series."
+        },
+        {
+          "title": "Portal (video game)",
+          "sentence_index": 0,
+          "text": "Portal is a puzzle-platform video game developed and published by Valve Corporation."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "3d60aba53598",
+      "question_id": "5adf3e355542993a75d26440",
+      "question": "How long is the bridge in the Öresund Region that connect Copenhagen, Denmark and Malmo, Sweden?",
+      "short_answer": "8 km",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait.",
+          "citations": [
+            {
+              "evidence_id": "E2",
+              "unit_id": "sentence:000001",
+              "quote": "The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait.",
+              "title": "Øresund Bridge",
+              "original_unit": " The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait.",
+              "retained_unit": "The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "8 km",
+      "reference_support": [
+        {
+          "title": "Øresund Region",
+          "sentence_index": 0,
+          "text": "The Øresund or Öresund Region (Danish: \"Øresundsregionen\" ; Swedish: \"Öresundsregionen\" ] ) is a transnational metropolitan area in northern Europe, centred around the Øresund strait and the two cities which lie on either side, Copenhagen, Denmark and Malmö, Sweden."
+        },
+        {
+          "title": "Øresund Bridge",
+          "sentence_index": 0,
+          "text": "The Øresund/Öresund/Oresund Bridge (Danish: \"Øresundsbroen\" , ] ; Swedish: \"Öresundsbron\" , ] ; hybrid name: \"Øresundsbron \") is a combined railway and motorway bridge across the Øresund strait between Sweden and Denmark."
+        },
+        {
+          "title": "Øresund Bridge",
+          "sentence_index": 1,
+          "text": " The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "3e627b42f275",
+      "question_id": "5adfd2f255429925eb1afaa5",
+      "question": "A puzzle-platform video game developed by the Valve Corporation is part of what 2012 action-adventure game?",
+      "short_answer": "",
+      "status": "insufficient_evidence",
+      "claims": [],
+      "reference_answer": "Gateways",
+      "reference_support": [
+        {
+          "title": "Gateways (video game)",
+          "sentence_index": 0,
+          "text": "Gateways is a 2012 action-adventure platform game created by British indie studio Smudged Cat Games."
+        },
+        {
+          "title": "Gateways (video game)",
+          "sentence_index": 1,
+          "text": " It is a mixture of gameplay concepts from the \"Portal\" and \"Metroid\" series."
+        },
+        {
+          "title": "Portal (video game)",
+          "sentence_index": 0,
+          "text": "Portal is a puzzle-platform video game developed and published by Valve Corporation."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "50a24fdee3a8",
+      "question_id": "5abe79c755429976d4830b2a",
+      "question": "Mesih Pasha's uncle became emperor in what year?",
+      "short_answer": "1449",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Constantine XI Palaiologos was the last Byzantine emperor.",
+          "citations": [
+            {
+              "evidence_id": "E1",
+              "unit_id": "sentence:000000",
+              "quote": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+              "title": "Mesih Pasha",
+              "original_unit": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+              "retained_unit": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos."
+            }
+          ]
+        },
+        {
+          "text": "Constantine XI Palaiologos became emperor in 1449.",
+          "citations": [
+            {
+              "evidence_id": "E1",
+              "unit_id": "sentence:000000",
+              "quote": "being a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+              "title": "Mesih Pasha",
+              "original_unit": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+              "retained_unit": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "1449",
+      "reference_support": [
+        {
+          "title": "Mesih Pasha",
+          "sentence_index": 0,
+          "text": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos."
+        },
+        {
+          "title": "Constantine XI Palaiologos",
+          "sentence_index": 0,
+          "text": "Constantine XI Dragases Palaiologos, Latinized as Palaeologus (Greek: Κωνσταντῖνος ΙΑ' Δραγάσης Παλαιολόγος , \"Kōnstantinos XI Dragasēs Palaiologos\", Serbian: Константин XI Драгаш Палеолог, \"Konstantin XI Dragaš Paleolog\" ; 8 February 1405 – 29 May 1453) was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death in battle at the fall of Constantinople."
+        }
+      ],
+      "validator_errors": [
+        "claim 2 asserts a number absent from its cited sources"
+      ]
+    },
+    {
+      "card_id": "57ef54bfcdd4",
+      "question_id": "5adc398755429947ff173912",
+      "question": "Which genus is native to more continents, Nothoscordum or Callirhoe?",
+      "short_answer": "Nothoscordum",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Nothoscordum is native to North and South America.",
+          "citations": [
+            {
+              "evidence_id": "E1",
+              "unit_id": "sentence:000002",
+              "quote": "The genus is native to North and South America",
+              "title": "Nothoscordum",
+              "original_unit": " The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World.",
+              "retained_unit": "The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World."
+            }
+          ]
+        },
+        {
+          "text": "Callirhoe is native to North America.",
+          "citations": [
+            {
+              "evidence_id": "E8",
+              "unit_id": "sentence:000001",
+              "quote": "all are native to the prairies and grasslands of North America.",
+              "title": "Callirhoe (plant)",
+              "original_unit": " Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America.",
+              "retained_unit": "Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "Nothoscordum",
+      "reference_support": [
+        {
+          "title": "Nothoscordum",
+          "sentence_index": 0,
+          "text": "Nothoscordum is a genus of New World plants in the onion tribe within the Amaryllis family."
+        },
+        {
+          "title": "Nothoscordum",
+          "sentence_index": 2,
+          "text": " The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World."
+        },
+        {
+          "title": "Callirhoe (plant)",
+          "sentence_index": 1,
+          "text": " Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "5f2f3cd6face",
+      "question_id": "5adf3e355542993a75d26440",
+      "question": "How long is the bridge in the Öresund Region that connect Copenhagen, Denmark and Malmo, Sweden?",
+      "short_answer": "8 km",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "The Øresund Bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm.",
+          "citations": [
+            {
+              "evidence_id": "E3",
+              "unit_id": "sentence:000001",
+              "quote": "The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait.",
+              "title": "Øresund Bridge",
+              "original_unit": " The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait.",
+              "retained_unit": "The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "8 km",
+      "reference_support": [
+        {
+          "title": "Øresund Region",
+          "sentence_index": 0,
+          "text": "The Øresund or Öresund Region (Danish: \"Øresundsregionen\" ; Swedish: \"Öresundsregionen\" ] ) is a transnational metropolitan area in northern Europe, centred around the Øresund strait and the two cities which lie on either side, Copenhagen, Denmark and Malmö, Sweden."
+        },
+        {
+          "title": "Øresund Bridge",
+          "sentence_index": 0,
+          "text": "The Øresund/Öresund/Oresund Bridge (Danish: \"Øresundsbroen\" , ] ; Swedish: \"Öresundsbron\" , ] ; hybrid name: \"Øresundsbron \") is a combined railway and motorway bridge across the Øresund strait between Sweden and Denmark."
+        },
+        {
+          "title": "Øresund Bridge",
+          "sentence_index": 1,
+          "text": " The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "62fca73218de",
+      "question_id": "5ab43179554299233955004d",
+      "question": "What is the female star of Klepto best known for performing in?",
+      "short_answer": "Meredith Bishop",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Klepto is a 2003 straight-to-DVD independent thriller film starring Meredith Bishop and Jsu Garcia.",
+          "citations": [
+            {
+              "evidence_id": "E1",
+              "unit_id": "sentence:000000",
+              "quote": "Klepto is a 2003 straight-to-DVD independent thriller film starring Meredith Bishop and Jsu Garcia.",
+              "title": "Klepto",
+              "original_unit": "Klepto is a 2003 straight-to-DVD independent thriller film starring Meredith Bishop and Jsu Garcia.",
+              "retained_unit": "Klepto is a 2003 straight-to-DVD independent thriller film starring Meredith Bishop and Jsu Garcia."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "The Secret World of Alex Mack",
+      "reference_support": [
+        {
+          "title": "Klepto",
+          "sentence_index": 0,
+          "text": "Klepto is a 2003 straight-to-DVD independent thriller film starring Meredith Bishop and Jsu Garcia."
+        },
+        {
+          "title": "Meredith Bishop",
+          "sentence_index": 1,
+          "text": " She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\", which ran on the network from 1994-1998."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "702d1e5c5cac",
+      "question_id": "5abe79c755429976d4830b2a",
+      "question": "Mesih Pasha's uncle became emperor in what year?",
+      "short_answer": "1449",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Constantine XI Palaiologos was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death in battle at the fall of Constantinople.",
+          "citations": [
+            {
+              "evidence_id": "E4",
+              "unit_id": "sentence:000000",
+              "quote": "Constantine XI Dragases Palaiologos...was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death in battle at the fall of Constantinople.",
+              "title": "Constantine XI Palaiologos",
+              "original_unit": "Constantine XI Dragases Palaiologos, Latinized as Palaeologus (Greek: Κωνσταντῖνος ΙΑ' Δραγάσης Παλαιολόγος , \"Kōnstantinos XI Dragasēs Palaiologos\", Serbian: Константин XI Драгаш Палеолог, \"Konstantin XI Dragaš Paleolog\" ; 8 February 1405 – 29 May 1453) was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death in battle at the fall of Constantinople.",
+              "retained_unit": "Constantine XI Dragases Palaiologos, Latinized as Palaeologus (Greek: Κωνσταντῖνος ΙΑ' Δραγάσης Παλαιολόγος , \"Kōnstantinos XI Dragasēs Palaiologos\", Serbian: Константин XI Драгаш Палеолог, \"Konstantin XI Dragaš Paleolog\" ; 8 February 1405 – 29 May 1453) was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death in battle at the fall of Constantinople."
+            }
+          ]
+        },
+        {
+          "text": "Mesih Pasha was a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+          "citations": [
+            {
+              "evidence_id": "E1",
+              "unit_id": "sentence:000000",
+              "quote": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+              "title": "Mesih Pasha",
+              "original_unit": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+              "retained_unit": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "1449",
+      "reference_support": [
+        {
+          "title": "Mesih Pasha",
+          "sentence_index": 0,
+          "text": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos."
+        },
+        {
+          "title": "Constantine XI Palaiologos",
+          "sentence_index": 0,
+          "text": "Constantine XI Dragases Palaiologos, Latinized as Palaeologus (Greek: Κωνσταντῖνος ΙΑ' Δραγάσης Παλαιολόγος , \"Kōnstantinos XI Dragasēs Palaiologos\", Serbian: Константин XI Драгаш Палеолог, \"Konstantin XI Dragaš Paleolog\" ; 8 February 1405 – 29 May 1453) was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death in battle at the fall of Constantinople."
+        }
+      ],
+      "validator_errors": [
+        "claim 1 quote is not present in retained source text",
+        "claim 1 failed the quoted lexical-support screen",
+        "claim 1 asserts a number absent from its cited sources"
+      ]
+    },
+    {
+      "card_id": "75acba2eb7f0",
+      "question_id": "5adc398755429947ff173912",
+      "question": "Which genus is native to more continents, Nothoscordum or Callirhoe?",
+      "short_answer": "Nothoscordum",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Nothoscordum is native to North and South America.",
+          "citations": [
+            {
+              "evidence_id": "E1",
+              "unit_id": "sentence:000002",
+              "quote": "The genus is native to North and South America",
+              "title": "Nothoscordum",
+              "original_unit": " The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World.",
+              "retained_unit": "The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World."
+            }
+          ]
+        },
+        {
+          "text": "Callirhoe is native to North America.",
+          "citations": [
+            {
+              "evidence_id": "E2",
+              "unit_id": "sentence:000001",
+              "quote": "all are native to the prairies and grasslands of North America.",
+              "title": "Callirhoe (plant)",
+              "original_unit": " Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America.",
+              "retained_unit": "Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "Nothoscordum",
+      "reference_support": [
+        {
+          "title": "Nothoscordum",
+          "sentence_index": 0,
+          "text": "Nothoscordum is a genus of New World plants in the onion tribe within the Amaryllis family."
+        },
+        {
+          "title": "Nothoscordum",
+          "sentence_index": 2,
+          "text": " The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World."
+        },
+        {
+          "title": "Callirhoe (plant)",
+          "sentence_index": 1,
+          "text": " Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "8b60ee881ba4",
+      "question_id": "5abe79c755429976d4830b2a",
+      "question": "Mesih Pasha's uncle became emperor in what year?",
+      "short_answer": "1449",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Constantine XI Palaiologos was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death.",
+          "citations": [
+            {
+              "evidence_id": "E4",
+              "unit_id": "sentence:000000",
+              "quote": "Constantine XI Dragases Palaiologos...was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death in battle at the fall of Constantinople.",
+              "title": "Constantine XI Palaiologos",
+              "original_unit": "Constantine XI Dragases Palaiologos, Latinized as Palaeologus (Greek: Κωνσταντῖνος ΙΑ' Δραγάσης Παλαιολόγος , \"Kōnstantinos XI Dragasēs Palaiologos\", Serbian: Константин XI Драгаш Палеолог, \"Konstantin XI Dragaš Paleolog\" ; 8 February 1405 – 29 May 1453) was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death in battle at the fall of Constantinople.",
+              "retained_unit": "Constantine XI Dragases Palaiologos, Latinized as Palaeologus (Greek: Κωνσταντῖνος ΙΑ' Δραγάσης Παλαιολόγος , \"Kōnstantinos XI Dragasēs Palaiologos\", Serbian: Константин XI Драгаш Палеолог, \"Konstantin XI Dragaš Paleolog\" ; 8 February 1405 – 29 May 1453) was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death in battle at the fall of Constantinople."
+            }
+          ]
+        },
+        {
+          "text": "Mesih Pasha was a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+          "citations": [
+            {
+              "evidence_id": "E1",
+              "unit_id": "sentence:000000",
+              "quote": "Mesih Pasha...was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+              "title": "Mesih Pasha",
+              "original_unit": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+              "retained_unit": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "1449",
+      "reference_support": [
+        {
+          "title": "Mesih Pasha",
+          "sentence_index": 0,
+          "text": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos."
+        },
+        {
+          "title": "Constantine XI Palaiologos",
+          "sentence_index": 0,
+          "text": "Constantine XI Dragases Palaiologos, Latinized as Palaeologus (Greek: Κωνσταντῖνος ΙΑ' Δραγάσης Παλαιολόγος , \"Kōnstantinos XI Dragasēs Palaiologos\", Serbian: Константин XI Драгаш Палеолог, \"Konstantin XI Dragaš Paleolog\" ; 8 February 1405 – 29 May 1453) was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death in battle at the fall of Constantinople."
+        }
+      ],
+      "validator_errors": [
+        "claim 1 quote is not present in retained source text",
+        "claim 1 failed the quoted lexical-support screen",
+        "claim 1 asserts a number absent from its cited sources",
+        "claim 2 quote is not present in retained source text",
+        "claim 2 failed the quoted lexical-support screen"
+      ]
+    },
+    {
+      "card_id": "a8264ac9206b",
+      "question_id": "5ab43179554299233955004d",
+      "question": "What is the female star of Klepto best known for performing in?",
+      "short_answer": "The Secret World of Alex Mack",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Meredith Anne Bishop is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\".",
+          "citations": [
+            {
+              "evidence_id": "E5",
+              "unit_id": "sentence:000001",
+              "quote": "She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\"",
+              "title": "Meredith Bishop",
+              "original_unit": " She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\", which ran on the network from 1994-1998.",
+              "retained_unit": "She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\", which ran on the network from 1994-1998."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "The Secret World of Alex Mack",
+      "reference_support": [
+        {
+          "title": "Klepto",
+          "sentence_index": 0,
+          "text": "Klepto is a 2003 straight-to-DVD independent thriller film starring Meredith Bishop and Jsu Garcia."
+        },
+        {
+          "title": "Meredith Bishop",
+          "sentence_index": 1,
+          "text": " She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\", which ran on the network from 1994-1998."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "c0b28b3c816b",
+      "question_id": "5adf3e355542993a75d26440",
+      "question": "How long is the bridge in the Öresund Region that connect Copenhagen, Denmark and Malmo, Sweden?",
+      "short_answer": "8 km",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "The Øresund Bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm.",
+          "citations": [
+            {
+              "evidence_id": "E3",
+              "unit_id": "sentence:000001",
+              "quote": "The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait.",
+              "title": "Øresund Bridge",
+              "original_unit": " The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait.",
+              "retained_unit": "The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "8 km",
+      "reference_support": [
+        {
+          "title": "Øresund Region",
+          "sentence_index": 0,
+          "text": "The Øresund or Öresund Region (Danish: \"Øresundsregionen\" ; Swedish: \"Öresundsregionen\" ] ) is a transnational metropolitan area in northern Europe, centred around the Øresund strait and the two cities which lie on either side, Copenhagen, Denmark and Malmö, Sweden."
+        },
+        {
+          "title": "Øresund Bridge",
+          "sentence_index": 0,
+          "text": "The Øresund/Öresund/Oresund Bridge (Danish: \"Øresundsbroen\" , ] ; Swedish: \"Öresundsbron\" , ] ; hybrid name: \"Øresundsbron \") is a combined railway and motorway bridge across the Øresund strait between Sweden and Denmark."
+        },
+        {
+          "title": "Øresund Bridge",
+          "sentence_index": 1,
+          "text": " The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "c4947716e8eb",
+      "question_id": "5adc398755429947ff173912",
+      "question": "Which genus is native to more continents, Nothoscordum or Callirhoe?",
+      "short_answer": "Nothoscordum",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Nothoscordum is native to North and South America.",
+          "citations": [
+            {
+              "evidence_id": "E1",
+              "unit_id": "sentence:000002",
+              "quote": "The genus is native to North and South America.",
+              "title": "Nothoscordum",
+              "original_unit": " The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World.",
+              "retained_unit": "The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World."
+            }
+          ]
+        },
+        {
+          "text": "Callirhoe is native to North America.",
+          "citations": [
+            {
+              "evidence_id": "E2",
+              "unit_id": "sentence:000001",
+              "quote": "All are native to the prairies and grasslands of North America.",
+              "title": "Callirhoe (plant)",
+              "original_unit": " Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America.",
+              "retained_unit": "Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "Nothoscordum",
+      "reference_support": [
+        {
+          "title": "Nothoscordum",
+          "sentence_index": 0,
+          "text": "Nothoscordum is a genus of New World plants in the onion tribe within the Amaryllis family."
+        },
+        {
+          "title": "Nothoscordum",
+          "sentence_index": 2,
+          "text": " The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World."
+        },
+        {
+          "title": "Callirhoe (plant)",
+          "sentence_index": 1,
+          "text": " Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America."
+        }
+      ],
+      "validator_errors": [
+        "claim 1 quote is not present in retained source text",
+        "claim 1 failed the quoted lexical-support screen",
+        "claim 2 quote is not present in retained source text",
+        "claim 2 failed the quoted lexical-support screen"
+      ]
+    },
+    {
+      "card_id": "d28387ca83c0",
+      "question_id": "5adfd2f255429925eb1afaa5",
+      "question": "A puzzle-platform video game developed by the Valve Corporation is part of what 2012 action-adventure game?",
+      "short_answer": "",
+      "status": "insufficient_evidence",
+      "claims": [],
+      "reference_answer": "Gateways",
+      "reference_support": [
+        {
+          "title": "Gateways (video game)",
+          "sentence_index": 0,
+          "text": "Gateways is a 2012 action-adventure platform game created by British indie studio Smudged Cat Games."
+        },
+        {
+          "title": "Gateways (video game)",
+          "sentence_index": 1,
+          "text": " It is a mixture of gameplay concepts from the \"Portal\" and \"Metroid\" series."
+        },
+        {
+          "title": "Portal (video game)",
+          "sentence_index": 0,
+          "text": "Portal is a puzzle-platform video game developed and published by Valve Corporation."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "d48c36f057ba",
+      "question_id": "5ab43179554299233955004d",
+      "question": "What is the female star of Klepto best known for performing in?",
+      "short_answer": "The Secret World of Alex Mack",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Meredith Anne Bishop is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\".",
+          "citations": [
+            {
+              "evidence_id": "E5",
+              "unit_id": "sentence:000001",
+              "quote": "She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\"",
+              "title": "Meredith Bishop",
+              "original_unit": " She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\", which ran on the network from 1994-1998.",
+              "retained_unit": "She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\", which ran on the network from 1994-1998."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "The Secret World of Alex Mack",
+      "reference_support": [
+        {
+          "title": "Klepto",
+          "sentence_index": 0,
+          "text": "Klepto is a 2003 straight-to-DVD independent thriller film starring Meredith Bishop and Jsu Garcia."
+        },
+        {
+          "title": "Meredith Bishop",
+          "sentence_index": 1,
+          "text": " She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\", which ran on the network from 1994-1998."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "dbafe14f24b8",
+      "question_id": "5ab43179554299233955004d",
+      "question": "What is the female star of Klepto best known for performing in?",
+      "short_answer": "The Secret World of Alex Mack",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Meredith Bishop is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\".",
+          "citations": [
+            {
+              "evidence_id": "E3",
+              "unit_id": "sentence:000001",
+              "quote": "She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\", which ran on the network from 1994-1998.",
+              "title": "Meredith Bishop",
+              "original_unit": " She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\", which ran on the network from 1994-1998.",
+              "retained_unit": "She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\", which ran on the network from 1994-1998."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "The Secret World of Alex Mack",
+      "reference_support": [
+        {
+          "title": "Klepto",
+          "sentence_index": 0,
+          "text": "Klepto is a 2003 straight-to-DVD independent thriller film starring Meredith Bishop and Jsu Garcia."
+        },
+        {
+          "title": "Meredith Bishop",
+          "sentence_index": 1,
+          "text": " She is perhaps best known for her role as Annie Mack in Nickelodeon's \"The Secret World of Alex Mack\", which ran on the network from 1994-1998."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "e9eea130697c",
+      "question_id": "5adfd2f255429925eb1afaa5",
+      "question": "A puzzle-platform video game developed by the Valve Corporation is part of what 2012 action-adventure game?",
+      "short_answer": "",
+      "status": "insufficient_evidence",
+      "claims": [],
+      "reference_answer": "Gateways",
+      "reference_support": [
+        {
+          "title": "Gateways (video game)",
+          "sentence_index": 0,
+          "text": "Gateways is a 2012 action-adventure platform game created by British indie studio Smudged Cat Games."
+        },
+        {
+          "title": "Gateways (video game)",
+          "sentence_index": 1,
+          "text": " It is a mixture of gameplay concepts from the \"Portal\" and \"Metroid\" series."
+        },
+        {
+          "title": "Portal (video game)",
+          "sentence_index": 0,
+          "text": "Portal is a puzzle-platform video game developed and published by Valve Corporation."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "ec1bc82ab392",
+      "question_id": "5abe79c755429976d4830b2a",
+      "question": "Mesih Pasha's uncle became emperor in what year?",
+      "short_answer": "1449",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Constantine XI Palaiologos became emperor in 1449.",
+          "citations": [
+            {
+              "evidence_id": "E1",
+              "unit_id": "sentence:000000",
+              "quote": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+              "title": "Mesih Pasha",
+              "original_unit": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos.",
+              "retained_unit": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "1449",
+      "reference_support": [
+        {
+          "title": "Mesih Pasha",
+          "sentence_index": 0,
+          "text": "Mesih Pasha or Misac Pasha (died November 1501) was an Ottoman statesman of Byzantine Greek origin, being a nephew of the last Byzantine emperor, Constantine XI Palaiologos."
+        },
+        {
+          "title": "Constantine XI Palaiologos",
+          "sentence_index": 0,
+          "text": "Constantine XI Dragases Palaiologos, Latinized as Palaeologus (Greek: Κωνσταντῖνος ΙΑ' Δραγάσης Παλαιολόγος , \"Kōnstantinos XI Dragasēs Palaiologos\", Serbian: Константин XI Драгаш Палеолог, \"Konstantin XI Dragaš Paleolog\" ; 8 February 1405 – 29 May 1453) was the last reigning Byzantine Emperor, reigning as a member of the Palaiologos dynasty from 1449 to his death in battle at the fall of Constantinople."
+        }
+      ],
+      "validator_errors": [
+        "claim 1 asserts a number absent from its cited sources"
+      ]
+    },
+    {
+      "card_id": "f8dfeb5488b5",
+      "question_id": "5adc398755429947ff173912",
+      "question": "Which genus is native to more continents, Nothoscordum or Callirhoe?",
+      "short_answer": "Nothoscordum",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "Nothoscordum is native to North and South America.",
+          "citations": [
+            {
+              "evidence_id": "E1",
+              "unit_id": "sentence:000002",
+              "quote": "The genus is native to North and South America",
+              "title": "Nothoscordum",
+              "original_unit": " The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World.",
+              "retained_unit": "The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World."
+            }
+          ]
+        },
+        {
+          "text": "Callirhoe is native to North America.",
+          "citations": [
+            {
+              "evidence_id": "E2",
+              "unit_id": "sentence:000001",
+              "quote": "all are native to the prairies and grasslands of North America",
+              "title": "Callirhoe (plant)",
+              "original_unit": " Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America.",
+              "retained_unit": "Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "Nothoscordum",
+      "reference_support": [
+        {
+          "title": "Nothoscordum",
+          "sentence_index": 0,
+          "text": "Nothoscordum is a genus of New World plants in the onion tribe within the Amaryllis family."
+        },
+        {
+          "title": "Nothoscordum",
+          "sentence_index": 2,
+          "text": " The genus is native to North and South America, though a few species have become naturalized in various parts of the Old World."
+        },
+        {
+          "title": "Callirhoe (plant)",
+          "sentence_index": 1,
+          "text": " Its nine species are commonly known as poppy mallows and all are native to the prairies and grasslands of North America."
+        }
+      ],
+      "validator_errors": []
+    },
+    {
+      "card_id": "fd9702cacfd7",
+      "question_id": "5adf3e355542993a75d26440",
+      "question": "How long is the bridge in the Öresund Region that connect Copenhagen, Denmark and Malmo, Sweden?",
+      "short_answer": "12 km",
+      "status": "answered",
+      "claims": [
+        {
+          "text": "The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait.",
+          "citations": [
+            {
+              "evidence_id": "E8",
+              "unit_id": "sentence:000001",
+              "quote": "The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait.",
+              "title": "Øresund Bridge",
+              "original_unit": " The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait.",
+              "retained_unit": "The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait."
+            }
+          ]
+        },
+        {
+          "text": "The crossing is completed by the 4 km Drogden Tunnel from Peberholm to the Danish island of Amager.",
+          "citations": [
+            {
+              "evidence_id": "E13",
+              "unit_id": "sentence:000002",
+              "quote": "The crossing is completed by the 4 km Drogden Tunnel from Peberholm to the Danish island of Amager.",
+              "title": "Øresund Bridge",
+              "original_unit": " The crossing is completed by the 4 km Drogden Tunnel from Peberholm to the Danish island of Amager.",
+              "retained_unit": "The crossing is completed by the 4 km Drogden Tunnel from Peberholm to the Danish island of Amager."
+            }
+          ]
+        }
+      ],
+      "reference_answer": "8 km",
+      "reference_support": [
+        {
+          "title": "Øresund Region",
+          "sentence_index": 0,
+          "text": "The Øresund or Öresund Region (Danish: \"Øresundsregionen\" ; Swedish: \"Öresundsregionen\" ] ) is a transnational metropolitan area in northern Europe, centred around the Øresund strait and the two cities which lie on either side, Copenhagen, Denmark and Malmö, Sweden."
+        },
+        {
+          "title": "Øresund Bridge",
+          "sentence_index": 0,
+          "text": "The Øresund/Öresund/Oresund Bridge (Danish: \"Øresundsbroen\" , ] ; Swedish: \"Öresundsbron\" , ] ; hybrid name: \"Øresundsbron \") is a combined railway and motorway bridge across the Øresund strait between Sweden and Denmark."
+        },
+        {
+          "title": "Øresund Bridge",
+          "sentence_index": 1,
+          "text": " The bridge runs nearly 8 km from the Swedish coast to the artificial island Peberholm in the middle of the strait."
+        }
+      ],
+      "validator_errors": [
+        "short answer is not justified by the cited factual claims"
+      ]
+    }
+  ],
+  "rubric": {
+    "semantic_support": "Each factual claim follows from its quoted sources and necessary entity links; validity alone is insufficient.",
+    "completeness": "Both required source roles/intermediate facts are present; unsupported short answers, comparisons or arithmetic fail.",
+    "judgment": "supported / partial / unsupported / abstained / invalid; give a source-specific reason.",
+    "reviewer": "Assistant source inspection, not human signoff or a formal entailment proof."
+  },
+  "checksum": "c3bc79437d9d4c097e60bd13697e75a5befa3ed0129204839d638147b81d1482"
+}

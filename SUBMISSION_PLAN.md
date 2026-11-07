@@ -351,3 +351,21 @@ attempts; final and rerun allocations remain untouched. A development
 ablation-resampling issue was corrected: identical completed responses are
 now reused even if claims fail validation. The final configuration and
 normalized-LF code hashes are frozen before looking at held-out effectiveness.
+
+## T12 implementation checkpoint
+
+All 45 held-out questions have four raw answer records. Proposed complete-
+document recall is 97.78% versus dense 88.89% and hybrid 80.00%, with positive
+paired primary-metric intervals against both. Answer F1 is 64.20% proposed
+versus 61.06%/51.02%; the answer/joint improvement over dense is uncertain.
+Proposed invalid-output rate is 26.67% and all failures remain in denominators.
+BM25-only complete-document recall is 55.56%.
+
+The exact bypass ablation equals hybrid on every question. Both preselected
+source-review packets are complete (20 development + 40 held-out cards), with
+explicit assistant judgments separating valid quotations, semantic support,
+missing intermediate facts, wrong answers and abstentions. They are not human
+signoff. Final analysis and compressed raw artifacts are retained and replayable.
+Final generation spent 134 new attempts; total so far is 236, estimated
+$1.0855075 from returned token usage. The 180-attempt fresh-rerun reserve is
+untouched. No pushes were performed.
