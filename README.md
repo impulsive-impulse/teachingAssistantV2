@@ -131,6 +131,12 @@ and persistence. The new path omits unverified printed-page labels and resolves
 citations only to retained source text. It is a versioned foundation, not yet
 collection chat or claim-level synthesis; the legacy application remains intact.
 
+T04 adds immutable source records, fingerprinted collection membership, and a
+shared index that searches all selected documents together. Saved indexes and
+retrieval snapshots verify their source maps, corpus, model/profile, and vector
+identities. Collection API/UI wiring remains T09; existing book-bound chats
+are preserved.
+
 ## Build and run
 
 Requirements:

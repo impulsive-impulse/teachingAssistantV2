@@ -13,7 +13,7 @@ from contextlib import contextmanager
 from pathlib import Path
 
 
-SCHEMA_VERSION = 3
+SCHEMA_VERSION = 4
 
 MIGRATION_1 = """
 CREATE TABLE IF NOT EXISTS schema_migrations (
@@ -144,6 +144,32 @@ ALTER TABLE answer_attempts ADD COLUMN prompt_checksum TEXT;
 ALTER TABLE answer_attempts ADD COLUMN raw_output_text TEXT;
 """
 
+MIGRATION_4 = """
+CREATE TABLE source_documents (
+    id TEXT PRIMARY KEY,
+    kind TEXT NOT NULL CHECK(kind IN ('pdf','hotpotqa')),
+    source_sha256 TEXT NOT NULL CHECK(length(source_sha256)=64),
+    content_sha256 TEXT NOT NULL CHECK(length(content_sha256)=64),
+    source_json TEXT NOT NULL,
+    book_id TEXT UNIQUE REFERENCES books(id) ON DELETE CASCADE,
+    artifact_path TEXT,
+    created_at TEXT NOT NULL
+);
+CREATE TABLE collections (
+    id TEXT PRIMARY KEY,
+    title TEXT NOT NULL,
+    fingerprint TEXT NOT NULL,
+    created_at TEXT NOT NULL,
+    updated_at TEXT NOT NULL
+);
+CREATE TABLE collection_documents (
+    collection_id TEXT NOT NULL REFERENCES collections(id) ON DELETE CASCADE,
+    document_id TEXT NOT NULL REFERENCES source_documents(id) ON DELETE RESTRICT,
+    PRIMARY KEY(collection_id, document_id)
+);
+CREATE INDEX idx_collection_documents_source ON collection_documents(document_id);
+"""
+
 
 class Database:
     """Own schema initialization and transaction-scoped connections."""
@@ -181,6 +207,12 @@ class Database:
                 connection.execute(
                     "INSERT INTO schema_migrations(version, applied_at) "
                     "VALUES (3, strftime('%Y-%m-%dT%H:%M:%fZ', 'now'))"
+                )
+            if 4 not in versions:
+                connection.executescript(
+                    "BEGIN IMMEDIATE;\n" + MIGRATION_4 +
+                    "\nINSERT INTO schema_migrations(version, applied_at) "
+                    "VALUES (4, strftime('%Y-%m-%dT%H:%M:%fZ', 'now'));\nCOMMIT;"
                 )
 
     @contextmanager

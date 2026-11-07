@@ -4,8 +4,11 @@ from __future__ import annotations
 
 import json
 from datetime import UTC, datetime
-from typing import Any
+from pathlib import PureWindowsPath
+from typing import Any, Sequence
 from uuid import uuid4
+
+from textbook_audit.source_provenance import SourceDocument, document_set_fingerprint
 
 from .database import Database
 from .domain import AttemptState, Backend, BookStatus, JobState
@@ -209,6 +212,13 @@ class BookRepository:
             ).fetchone()
             if not book:
                 raise LookupError("book not found")
+            memberships = connection.execute(
+                "SELECT COUNT(*) AS count FROM collection_documents cd "
+                "JOIN source_documents d ON d.id=cd.document_id WHERE d.book_id=?",
+                (book_uuid,),
+            ).fetchone()["count"]
+            if memberships:
+                raise RuntimeError("Remove this textbook from collections before deleting it.")
             active_ingestion = connection.execute(
                 "SELECT COUNT(*) AS count FROM ingestion_jobs WHERE book_id=? "
                 "AND state IN ('queued','running','interrupted')", (book_uuid,),
@@ -237,6 +247,212 @@ class BookRepository:
                 "UPDATE books SET status=?, status_reason='Local deletion did not finish.' "
                 "WHERE id=? AND status='deleting'", (prior_status, book_uuid),
             )
+
+
+class CollectionRepository:
+    """Immutable source records and transactionally versioned document membership."""
+
+    def __init__(self, database: Database):
+        self.database = database
+
+    def register_document(
+        self, document: SourceDocument, *, book_id: str | None = None,
+        artifact_path: str | None = None,
+    ) -> dict[str, Any]:
+        if artifact_path is not None:
+            path = PureWindowsPath(artifact_path)
+            if not artifact_path or path.drive or path.root or ".." in path.parts or not path.parts:
+                raise ValueError("source artifact path must stay relative to application storage")
+        payload = document.to_dict()
+        with self.database.connect() as connection:
+            connection.execute("BEGIN IMMEDIATE")
+            if book_id is not None:
+                book = connection.execute(
+                    "SELECT * FROM books WHERE id=? AND deleted_at IS NULL", (book_id,),
+                ).fetchone()
+                if (
+                    book is None or book["status"] != "ready" or document.kind != "pdf"
+                    or book["sha256"] != document.source_sha256
+                ):
+                    raise ValueError("source document does not match a ready library book")
+            existing = connection.execute(
+                "SELECT * FROM source_documents WHERE id=?", (document.document_id,),
+            ).fetchone()
+            if existing:
+                restored = self._document(existing)
+                if (
+                    restored.content_sha256 != document.content_sha256
+                    or existing["book_id"] != book_id or existing["artifact_path"] != artifact_path
+                ):
+                    raise ValueError("registered source content or ownership differs")
+                return {"id": restored.document_id, "content_sha256": restored.content_sha256}
+            connection.execute(
+                "INSERT INTO source_documents(id,kind,source_sha256,content_sha256,source_json,"
+                "book_id,artifact_path,created_at) VALUES (?,?,?,?,?,?,?,?)",
+                (document.document_id, document.kind, document.source_sha256, document.content_sha256,
+                 _json(payload), book_id, artifact_path, utc_now()),
+            )
+        return {"id": document.document_id, "content_sha256": document.content_sha256}
+
+    @staticmethod
+    def _document(row: Any) -> SourceDocument:
+        document = SourceDocument.from_dict(json.loads(row["source_json"]))
+        if (
+            document.document_id != row["id"] or document.kind != row["kind"]
+            or document.source_sha256 != row["source_sha256"]
+            or document.content_sha256 != row["content_sha256"]
+        ):
+            raise RuntimeError("persisted source identity is inconsistent")
+        return document
+
+    def document(self, document_id: str) -> SourceDocument:
+        with self.database.connect() as connection:
+            row = connection.execute("SELECT * FROM source_documents WHERE id=?", (document_id,)).fetchone()
+        if row is None:
+            raise LookupError("source document not found")
+        return self._document(row)
+
+    def list_documents(self) -> list[dict[str, Any]]:
+        with self.database.connect() as connection:
+            rows = connection.execute("SELECT * FROM source_documents ORDER BY id").fetchall()
+        return [self._summary(row) for row in rows]
+
+    def _summary(self, row: Any) -> dict[str, Any]:
+        document = self._document(row)
+        return {
+            "id": document.document_id, "kind": document.kind, "title": document.title,
+            "source_sha256": document.source_sha256, "content_sha256": document.content_sha256,
+            "book_id": row["book_id"], "unit_count": len(document.units),
+        }
+
+    def _sources(self, connection: Any, document_ids: Sequence[str]) -> list[SourceDocument]:
+        if (
+            not isinstance(document_ids, (list, tuple)) or not document_ids
+            or any(not isinstance(document_id, str) or not document_id for document_id in document_ids)
+            or len(set(document_ids)) != len(document_ids)
+        ):
+            raise ValueError("collection requires distinct non-empty document IDs")
+        placeholders = ",".join("?" for _ in document_ids)
+        rows = connection.execute(
+            f"SELECT * FROM source_documents WHERE id IN ({placeholders}) ORDER BY id", tuple(document_ids),
+        ).fetchall()
+        if len(rows) != len(document_ids):
+            raise LookupError("collection contains an unknown source document")
+        return [self._document(row) for row in rows]
+
+    def create(self, title: str, document_ids: Sequence[str]) -> dict[str, Any]:
+        title = self._title(title)
+        collection_id, now = str(uuid4()), utc_now()
+        with self.database.connect() as connection:
+            connection.execute("BEGIN IMMEDIATE")
+            documents = self._sources(connection, document_ids)
+            connection.execute(
+                "INSERT INTO collections(id,title,fingerprint,created_at,updated_at) VALUES (?,?,?,?,?)",
+                (collection_id, title, document_set_fingerprint(documents), now, now),
+            )
+            connection.executemany(
+                "INSERT INTO collection_documents(collection_id,document_id) VALUES (?,?)",
+                [(collection_id, document.document_id) for document in documents],
+            )
+        result = self.get(collection_id)
+        if result is None:
+            raise RuntimeError("created collection could not be read")
+        return result
+
+    @staticmethod
+    def _title(title: str) -> str:
+        if not isinstance(title, str) or not 1 <= len(title.strip()) <= 120:
+            raise ValueError("collection title must contain 1-120 characters")
+        return title.strip()
+
+    def get(self, collection_id: str) -> dict[str, Any] | None:
+        with self.database.connect() as connection:
+            connection.execute("BEGIN")
+            row = connection.execute("SELECT * FROM collections WHERE id=?", (collection_id,)).fetchone()
+            if row is None:
+                return None
+            members = connection.execute(
+                "SELECT d.* FROM source_documents d JOIN collection_documents cd ON cd.document_id=d.id "
+                "WHERE cd.collection_id=? ORDER BY d.id", (collection_id,),
+            ).fetchall()
+            documents = [self._document(member) for member in members]
+            if not documents or row["fingerprint"] != document_set_fingerprint(documents):
+                raise RuntimeError("collection membership fingerprint is inconsistent")
+            return {
+                **dict(row), "document_ids": [document.document_id for document in documents],
+                "documents": [self._summary(member) for member in members],
+            }
+
+    def list(self) -> list[dict[str, Any]]:
+        with self.database.connect() as connection:
+            ids = [row["id"] for row in connection.execute("SELECT id FROM collections ORDER BY updated_at DESC,id")]
+        result = []
+        for collection_id in ids:
+            collection = self.get(collection_id)
+            if collection is not None:
+                result.append(collection)
+        return result
+
+    def sources(self, collection_id: str, expected_fingerprint: str) -> list[SourceDocument]:
+        with self.database.connect() as connection:
+            connection.execute("BEGIN")
+            row = connection.execute("SELECT * FROM collections WHERE id=?", (collection_id,)).fetchone()
+            if row is None:
+                raise LookupError("collection not found")
+            documents = [self._document(member) for member in connection.execute(
+                "SELECT d.* FROM source_documents d JOIN collection_documents cd ON cd.document_id=d.id "
+                "WHERE cd.collection_id=? ORDER BY d.id", (collection_id,),
+            )]
+            if (
+                not documents or row["fingerprint"] != expected_fingerprint
+                or document_set_fingerprint(documents) != expected_fingerprint
+            ):
+                raise RuntimeError("collection changed; reload before querying")
+            return documents
+
+    def replace_documents(
+        self, collection_id: str, document_ids: Sequence[str], expected_fingerprint: str,
+    ) -> dict[str, Any]:
+        with self.database.connect() as connection:
+            connection.execute("BEGIN IMMEDIATE")
+            row = connection.execute("SELECT * FROM collections WHERE id=?", (collection_id,)).fetchone()
+            if row is None:
+                raise LookupError("collection not found")
+            if row["fingerprint"] != expected_fingerprint:
+                raise RuntimeError("collection changed; reload before updating")
+            documents = self._sources(connection, document_ids)
+            connection.execute("DELETE FROM collection_documents WHERE collection_id=?", (collection_id,))
+            connection.executemany(
+                "INSERT INTO collection_documents(collection_id,document_id) VALUES (?,?)",
+                [(collection_id, document.document_id) for document in documents],
+            )
+            connection.execute(
+                "UPDATE collections SET fingerprint=?,updated_at=? WHERE id=?",
+                (document_set_fingerprint(documents), utc_now(), collection_id),
+            )
+        result = self.get(collection_id)
+        if result is None:
+            raise RuntimeError("updated collection could not be read")
+        return result
+
+    def rename(self, collection_id: str, title: str) -> dict[str, Any]:
+        with self.database.connect() as connection:
+            cursor = connection.execute(
+                "UPDATE collections SET title=?,updated_at=? WHERE id=?",
+                (self._title(title), utc_now(), collection_id),
+            )
+            if cursor.rowcount != 1:
+                raise LookupError("collection not found")
+        result = self.get(collection_id)
+        if result is None:
+            raise LookupError("collection not found")
+        return result
+
+    def delete(self, collection_id: str) -> None:
+        with self.database.connect() as connection:
+            cursor = connection.execute("DELETE FROM collections WHERE id=?", (collection_id,))
+            if cursor.rowcount != 1:
+                raise LookupError("collection not found")
 
 
 class ChatRepository:

@@ -10,6 +10,7 @@ from __future__ import annotations
 import hashlib
 import io
 import re
+from bisect import bisect_right
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any, Iterable, Mapping, Sequence
@@ -195,6 +196,21 @@ def benchmark_document(
         raise ValueError("benchmark sentences must be an ordered string sequence")
     units = tuple(SourceUnit.create("sentence", index, text) for index, text in enumerate(sentences))
     return _document("hotpotqa", title, source_sha256, "hotpotqa-original-sentences-v1", units)
+
+
+def document_set_fingerprint(documents: Sequence[SourceDocument]) -> str:
+    if any(not isinstance(document, SourceDocument) for document in documents):
+        raise ValueError("document set must contain verified source documents")
+    if len({document.document_id for document in documents}) != len(documents):
+        raise ValueError("document set contains duplicate sources")
+    return fingerprint({
+        "provenance_version": PROVENANCE_VERSION,
+        "documents": [
+            {"document_id": document.document_id, "source_sha256": document.source_sha256,
+             "content_sha256": document.content_sha256}
+            for document in sorted(documents, key=lambda document: document.document_id)
+        ],
+    })
 
 
 @dataclass(frozen=True)
@@ -424,6 +440,28 @@ def merge_overlap(left: ProvenanceText, right: ProvenanceText, maximum: int, min
 
 def source_locations(text: ProvenanceText) -> set[tuple[str, str]]:
     return {(span.document_id, span.unit_id) for span in text.spans}
+
+
+def require_retained_spans(text: ProvenanceText, evidence: Sequence[ProvenanceText]) -> None:
+    """Reject source characters that were never present in selected evidence."""
+    grouped: dict[tuple[str, str], list[tuple[int, int]]] = {}
+    for item in evidence:
+        for span in item.spans:
+            grouped.setdefault((span.document_id, span.unit_id), []).append((span.source_start, span.source_end))
+    ranges_by_unit = {}
+    for key, ranges in grouped.items():
+        merged: list[tuple[int, int]] = []
+        for start, end in sorted(set(ranges)):
+            if merged and start <= merged[-1][1]:
+                merged[-1] = (merged[-1][0], max(merged[-1][1], end))
+            else:
+                merged.append((start, end))
+        ranges_by_unit[key] = ([start for start, _end in merged], merged)
+    for span in text.spans:
+        starts, ranges = ranges_by_unit.get((span.document_id, span.unit_id), ([], []))
+        index = bisect_right(starts, span.source_start) - 1
+        if index < 0 or ranges[index][1] < span.source_end:
+            raise ValueError("context contains source characters outside selected evidence")
 
 
 def physical_pages(text: ProvenanceText) -> list[int]:

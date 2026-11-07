@@ -2,7 +2,8 @@
 
 Status: T01 and T02 committed and published. T03 is complete; the user has
 authorized implementation through T15 with a separate local commit for each
-task. The user will push all commits manually at the end. T04 is next; T16
+task. The user will push all commits manually at the end. T04 is implemented
+and verified; T05 is next. T16
 visibility, sharing, recording, and submission actions remain outside this
 authorization.
 
@@ -200,3 +201,24 @@ still not proof that a claim is supported; T08 supplies that separate contract.
 Collection persistence/retrieval, ingestion integration, and application wiring
 remain T04, T05, and T09. The user authorized a local T03 commit and autonomous
 implementation through T15; no pushes will be performed.
+
+## T04 implementation checkpoint
+
+Collection persistence and retrieval are implemented. Migration 4 is additive:
+existing book-bound chats and their messages/snapshots remain unchanged.
+Immutable source records can be shared by collections, and membership updates
+are transactional and guarded by the previous source-set fingerprint.
+
+The shared collection index searches all selected source documents together,
+supports explicit subset scopes, and atomically saves validated corpora and
+normalized vectors. Retrieval snapshots persist exact source maps and
+source/corpus/profile/vector fingerprints; altered text, out-of-scope sources,
+and nonretrieved character ranges are rejected on reload.
+
+The locked environment passed 72 focused checks, including a real ten-document
+HotpotQA scope encoded with the pinned BGE model, index reload, snapshot replay,
+source-leakage rejection, and migration preservation.
+
+This is the persistence/index foundation. T05 supplies reproducible benchmark
+and PDF ingestion, and T09 exposes collection chats through the API/UI.
+No paid model calls or pushes have been made.

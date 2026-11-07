@@ -30,6 +30,18 @@ metadata and retain exact addresses through clipping and persistence. Legacy
 book ingestion and generation still use their frozen contracts; collection
 integration and claim-level citations are subsequent assessment tasks.
 
+SQLite migration 4 adds immutable `source_documents`, `collections`, and
+`collection_documents` without changing existing books, chats, messages, or
+attempts. Collection membership changes use an expected fingerprint so a stale
+query cannot silently broaden its source set. A library book referenced by a
+collection cannot be deleted until that membership is removed.
+
+`textbook_audit/collection_index.py` builds one collection-wide dense corpus,
+not a concatenation of separately truncated single-book results. Its subset
+views search only their explicit source IDs. Index and retrieval JSON
+publication retain source maps plus corpus/profile/vector fingerprints and
+verify them when reloaded. Collection HTTP/chat integration remains T09.
+
 ## Backend layout
 
 ```text
