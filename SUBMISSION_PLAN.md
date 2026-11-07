@@ -1,9 +1,10 @@
 # Assessment submission gap plan
 
-Status: T01 committed and published. T02 completed and reviewed;
-the user authorized its commit and will push manually. T03-T16 have
-not started. Each subsequent task stops at the review boundary with an
-interview-focused explanation; no automatic commits or pushes.
+Status: T01 and T02 committed and published. T03 is complete; the user has
+authorized implementation through T15 with a separate local commit for each
+task. The user will push all commits manually at the end. T04 is next; T16
+visibility, sharing, recording, and submission actions remain outside this
+authorization.
 
 ## Confirmed decisions
 
@@ -17,8 +18,9 @@ interview-focused explanation; no automatic commits or pushes.
   not a promise of completion within a particular number of days.
 - Preserve the existing single-book behavior and historical research. Introduce
   a versioned assessment pipeline instead of silently changing frozen v1 claims.
-- This plan does not authorize repository visibility changes, sharing,
-  committing, pushing, or submitting work.
+- The user's latest instruction authorizes local commits through T15.
+  Repository visibility changes, sharing, pushing, and submission remain
+  unauthorized.
 
 ## Scope and evaluation choices
 
@@ -147,7 +149,7 @@ estimated spend is unacceptable. A call count alone does not guarantee low cost.
 - Submission deadline/time remaining.
 - Monetary comfort with the estimated cost of up to 500 calls.
 - Private submission repository destination and authorization to change/share it.
-- Per-task review and authorization before committing/pushing on main.
+- Final review before the user manually pushes the T03-T15 implementation commits.
 - Whether the walkthrough will be recorded or live.
 
 ## T02 implementation review boundary
@@ -159,5 +161,42 @@ identities, authorized-only PDF import, and clean-clone verification.
 The implementation also fixes the application model downloader: it now
 acquires the exact 11-file frozen BGE snapshot rather than every upstream file.
 The existing single-book runtime and historical research remain unchanged.
-No paid model calls were made. The user approved the T02 review and authorized
-its commit; pushing remains their responsibility. T03 has not started.
+No paid model calls were made. The user approved the T02 review, authorized its
+commit, and pushed it manually. Local `main` and `origin/main` were verified at
+`274c0c1024dce8cc2799b1fb8caf7cb691d89c18` before starting T03.
+
+## T03 implementation review boundary
+
+The shared source/provenance task is complete. See
+`docs/SOURCE_PROVENANCE.md` for the contract and local inspection example.
+
+- PDFs retain a document ID derived from their original bytes; pages and
+  chapters remain locations inside that document, not extra sources.
+- Benchmark documents retain their exact titles, original sentence indices,
+  source/content hashes, and label-independent identities.
+- Exact source spans survive fixed/structured chunking, overlap removal,
+  context selection, word-budget clipping, atomic JSON reloads, and SQLite
+  snapshot restart/regeneration.
+- Citation resolution binds the document and location together and permits
+  only source characters actually retained in the evidence.
+- The new contract omits unverified printed-page labels in favor of physical
+  PDF pages. Legacy v1 artifacts, generation behavior, and saved answers are
+  not silently rewritten.
+
+Verification covered all 600 frozen benchmark context documents and both
+authorized PDFs. The dedicated locked x64 environment passed 130 focused
+checks, including the frozen golden fixtures; 224 direct comparisons also
+matched the pre-T03 legacy chunk/context outputs exactly.
+
+The legacy model cache was absent, so model-backed verification used the exact
+T02 application-local BGE snapshot through a process-local test resolver. This
+did not change production cache discovery or the frozen configuration. The
+dedicated `.venv-assessment` is now prepared locally for later tasks; no paid
+model calls were made.
+
+Interview takeaway: provenance is carried through every transformation, not
+reconstructed as page labels after an answer is generated. A valid address is
+still not proof that a claim is supported; T08 supplies that separate contract.
+Collection persistence/retrieval, ingestion integration, and application wiring
+remain T04, T05, and T09. The user authorized a local T03 commit and autonomous
+implementation through T15; no pushes will be performed.

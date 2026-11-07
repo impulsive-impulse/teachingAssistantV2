@@ -92,6 +92,45 @@ def test_messages_are_independent_and_regeneration_reuses_snapshot(tmp_path: Pat
     assert persisted["checksum"] == "b" * 64
 
 
+def test_exact_provenance_survives_database_restart_and_regeneration(tmp_path: Path) -> None:
+    from textbook_audit.chunk_retrieval import fixed_chunks
+    from textbook_audit.context_assembly import assemble_context
+    from textbook_audit.source_provenance import (
+        ProvenanceText, benchmark_document, resolve_citation, retrieval_units,
+    )
+
+    document = benchmark_document("Stored source", ["One original sentence.", "Another original sentence."], "a" * 64)
+    chunks = fixed_chunks(retrieval_units(document), target=3, overlap=0)
+    contexts = assemble_context("overlap_merge_metadata_preserving", [0, 1], chunks)
+    snapshot = _snapshot("A source question.")
+    snapshot["evidence"] = chunks
+    snapshot["assembled_context"] = contexts
+    database = Database(tmp_path / "app.db")
+    database.initialize()
+    _ready_book(database)
+    repository = ChatRepository(database)
+    chat = repository.create("book-1")
+    message, attempt = repository.create_message_attempt(chat["id"], snapshot["question"])
+    repository.set_attempt_state(attempt["id"], AttemptState.RETRIEVING)
+    repository.persist_retrieval_snapshot(attempt["id"], snapshot)
+    repository.set_attempt_state(attempt["id"], AttemptState.VALIDATING)
+    repository.complete_attempt(
+        attempt["id"], raw_output="{}", output={}, provider_identity="fixture",
+        usage={}, timing={}, validation={"valid": True},
+    )
+    restarted = ChatRepository(Database(database.path))
+    regeneration = restarted.create_regeneration(message["id"], Backend.OFFLINE)
+    restored = restarted.get_snapshot_for_attempt(regeneration["id"])
+    assert restored["evidence"] == chunks
+    assert restored["assembled_context"] == contexts
+    evidence = ProvenanceText.from_dict(restored["assembled_context"][0]["source_provenance"])
+    citation = resolve_citation(
+        evidence, document.document_id, "sentence:000001", {document.document_id: document},
+    )
+    assert citation["document_title"] == document.title
+    assert citation["sentence_index"] == 1
+
+
 def test_chat_title_can_be_renamed_and_persists(tmp_path: Path) -> None:
     database = Database(tmp_path / "app.db")
     database.initialize()

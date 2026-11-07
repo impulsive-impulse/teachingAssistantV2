@@ -124,6 +124,13 @@ public sources, licensing, authorized PDF imports, and offline readiness checks.
 It prepares inputs without making paid model calls; multi-document behavior and
 evaluation remain subsequent tasks.
 
+T03 introduces [shared source provenance](docs/SOURCE_PROVENANCE.md): stable
+document/content identities, exact physical PDF page and benchmark sentence
+locations, and source maps that survive chunking, context assembly, clipping,
+and persistence. The new path omits unverified printed-page labels and resolves
+citations only to retained source text. It is a versioned foundation, not yet
+collection chat or claim-level synthesis; the legacy application remains intact.
+
 ## Build and run
 
 Requirements:

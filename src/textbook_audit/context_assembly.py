@@ -32,6 +32,9 @@ from .experiment_tracking import (
     write_json,
 )
 from .retrieval import read_jsonl, tokenize
+from .source_provenance import (
+    ProvenanceText, merge_overlap, physical_pages, source_locations, truncate_words,
+)
 
 
 PARENT_RUN = "phase_h_h3_combined_specialist_priors"
@@ -90,8 +93,14 @@ def _hard_budget(segments: list[dict[str, Any]], budget: int) -> list[dict[str, 
             break
         kept = words[:remaining]
         if kept:
-            output.append({**segment, "text": " ".join(kept),
-                           "truncated": len(kept) < len(words)})
+            if "source_provenance" in segment:
+                mapped = ProvenanceText.from_dict(segment["source_provenance"])
+                if mapped.text != segment["text"]:
+                    raise ValueError("context text differs from its source provenance")
+                selected = _with_provenance(segment, truncate_words(mapped, remaining))
+            else:
+                selected = {**segment, "text": " ".join(kept)}
+            output.append({**selected, "truncated": len(kept) < len(words)})
             remaining -= len(kept)
     return output
 
@@ -99,7 +108,7 @@ def _hard_budget(segments: list[dict[str, Any]], budget: int) -> list[dict[str, 
 def _ranked_segments(ranking: list[int], chunks: list[dict[str, Any]],
                      count: int = POOL_SIZE) -> list[dict[str, Any]]:
     """Materialize ranked chunk indexes as inspectable context segments."""
-    return [{"source_chunk_ids": [chunks[index]["chunk_id"]],
+    segments = [{"source_chunk_ids": [chunks[index]["chunk_id"]],
              "source_ranks": [rank], "pdf_pages": chunks[index]["pdf_pages"],
              "textbook_pages": chunks[index]["textbook_pages"],
              "chapter_title": chunks[index].get("chapter_title"),
@@ -113,6 +122,91 @@ def _ranked_segments(ranking: list[int], chunks: list[dict[str, Any]],
              }],
              "text": chunks[index]["text"], "truncated": False}
             for rank, index in enumerate(ranking[:count], 1)]
+    for segment, index in zip(segments, ranking[:count], strict=True):
+        chunk = chunks[index]
+        if "source_provenance" not in chunk:
+            continue
+        mapped = ProvenanceText.from_dict(chunk["source_provenance"])
+        if mapped.text != chunk["text"] or len(mapped.document_hashes) != 1:
+            raise ValueError("ranked chunk must retain its exact source document")
+        if (
+            chunk.get("document_id", mapped.document_hashes[0][0]) != mapped.document_hashes[0][0]
+            or chunk.get("evidence_id", mapped.evidence_id) != mapped.evidence_id
+            or not isinstance(chunk["pdf_pages"], list)
+            or any(isinstance(page, bool) or not isinstance(page, int) for page in chunk["pdf_pages"])
+            or chunk["pdf_pages"] != physical_pages(mapped) or chunk["textbook_pages"] != []
+        ):
+            raise ValueError("ranked chunk addresses differ from its source provenance")
+        segment["source_metadata"][0]["source_provenance"] = mapped.to_dict()
+        segment.update(_with_provenance(segment, mapped))
+    if any("source_provenance" in segment for segment in segments) and any(
+        "source_provenance" not in segment for segment in segments
+    ):
+        raise ValueError("cannot assemble exact and legacy evidence together")
+    return segments
+
+
+def _with_provenance(segment: dict[str, Any], text: ProvenanceText) -> dict[str, Any]:
+    """Recompute addresses and contributors after merging or truncation."""
+    kept_by_unit: dict[tuple[str, str], list[tuple[int, int]]] = {}
+    for span in text.spans:
+        kept_by_unit.setdefault((span.document_id, span.unit_id), []).append((span.source_start, span.source_end))
+    for key, ranges in kept_by_unit.items():
+        merged: list[tuple[int, int]] = []
+        for start, end in sorted(set(ranges)):
+            if merged and start <= merged[-1][1]:
+                merged[-1] = (merged[-1][0], max(merged[-1][1], end))
+            else:
+                merged.append((start, end))
+        kept_by_unit[key] = merged
+    metadata = []
+    for source in segment["source_metadata"]:
+        original = ProvenanceText.from_dict(source["source_provenance"])
+        hashes = dict(text.document_hashes)
+        if any(
+            document_id in hashes and hashes[document_id] != content_hash
+            for document_id, content_hash in original.document_hashes
+        ):
+            raise ValueError("context metadata refers to a conflicting source version")
+        original_by_unit: dict[tuple[str, str], list[tuple[int, int]]] = {}
+        for span in original.spans:
+            original_by_unit.setdefault((span.document_id, span.unit_id), []).append((span.source_start, span.source_end))
+        retained = []
+        for key, original_ranges in sorted(original_by_unit.items()):
+            kept_ranges = kept_by_unit.get(key, [])
+            left, right = 0, 0
+            original_ranges = sorted(set(original_ranges))
+            while left < len(original_ranges) and right < len(kept_ranges):
+                original_start, original_end = original_ranges[left]
+                kept_start, kept_end = kept_ranges[right]
+                start, end = max(original_start, kept_start), min(original_end, kept_end)
+                if start < end:
+                    retained.append({
+                        "document_id": key[0], "unit_id": key[1],
+                        "source_start": start, "source_end": end,
+                    })
+                if original_end <= kept_end:
+                    left += 1
+                else:
+                    right += 1
+        if retained:
+            metadata.append({
+                **source, "retained_source_spans": retained, "textbook_pages": [],
+                "pdf_pages": sorted({
+                    int(span["unit_id"].split(":")[1]) for span in retained
+                    if span["unit_id"].startswith("pdf_page:")
+                }),
+                "document_id": original.document_hashes[0][0], "evidence_id": original.evidence_id,
+            })
+    return {
+        **segment, "text": text.text, "source_provenance": text.to_dict(),
+        "evidence_id": text.evidence_id,
+        "document_id": text.document_hashes[0][0] if len(text.document_hashes) == 1 else None,
+        "pdf_pages": physical_pages(text), "textbook_pages": [],
+        "source_metadata": metadata,
+        "source_chunk_ids": [source["chunk_id"] for source in metadata],
+        "source_ranks": [source["source_rank"] for source in metadata],
+    }
 
 
 def _merge_segments(segments: list[dict[str, Any]], same_page_only: bool,
@@ -121,6 +215,27 @@ def _merge_segments(segments: list[dict[str, Any]], same_page_only: bool,
     """Merge adjacent output segments when their source relationship permits."""
     output: list[dict[str, Any]] = []
     for segment in segments:
+        if "source_provenance" in segment:
+            current = ProvenanceText.from_dict(segment["source_provenance"])
+            previous_text = (
+                ProvenanceText.from_dict(output[-1]["source_provenance"]) if output else None
+            )
+            can_merge = (
+                previous_text is not None
+                and len(current.document_hashes) == 1
+                and previous_text.document_hashes == current.document_hashes
+                and (not same_page_only or bool(source_locations(previous_text) & source_locations(current)))
+            )
+            if not can_merge:
+                output.append(dict(segment))
+                continue
+            merged = merge_overlap(previous_text, current, overlap_maximum, overlap_minimum)
+            previous = output[-1]
+            combined = {
+                **previous, "source_metadata": previous["source_metadata"] + segment["source_metadata"],
+            }
+            output[-1] = _with_provenance(combined, merged)
+            continue
         can_merge = bool(output) and (
             not same_page_only
             or bool(set(output[-1]["pdf_pages"]) & set(segment["pdf_pages"])))
@@ -182,8 +297,17 @@ def assemble_context(method: str, ranking: list[int],
             remaining.remove(chosen)
         return output
     if method == "textbook_order":
-        return sorted(base, key=lambda item: (min(item["pdf_pages"]),
-                                               item["source_ranks"][0]))
+        if "source_provenance" in base[0]:
+            return sorted(base, key=lambda item: (
+                min(
+                    (document_id, int(unit_id.split(":")[1]))
+                    for document_id, unit_id in source_locations(
+                        ProvenanceText.from_dict(item["source_provenance"])
+                    )
+                ),
+                item["source_ranks"][0],
+            ))
+        return sorted(base, key=lambda item: (min(item["pdf_pages"]), item["source_ranks"][0]))
     # The top-ranked candidate is treated as presumed direct evidence; related
     # same-section support follows it, then remaining candidates by relevance.
     anchor, remaining = base[0], base[1:]

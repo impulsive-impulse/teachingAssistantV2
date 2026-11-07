@@ -24,6 +24,7 @@ from .retrieval import (BM25, MODEL_NAME, QUERY_PREFIX, RETRIEVERS,
                         failure_category, group_metrics, load_pages,
                         percentile95, read_jsonl, reciprocal_rank_fusion,
                         stable_ranking, tokenize)
+from .source_provenance import ProvenanceText, join_text, normalize_words, physical_pages, source_locations
 
 STRATEGIES = ("fixed", "structured")
 SENTENCE_RE = re.compile(r"(?<=[.!?])\s+(?=[A-Z0-9])")
@@ -35,6 +36,7 @@ class TextPiece:
 
     text: str
     page: dict[str, Any]
+    provenance: ProvenanceText | None = None
 
 
 def split_sentences(text: str, maximum_tokens: int) -> list[str]:
@@ -54,12 +56,63 @@ def split_sentences(text: str, maximum_tokens: int) -> list[str]:
 
 def page_pieces(page: dict[str, Any], maximum_tokens: int) -> list[TextPiece]:
     """Turn one page into paragraph/sentence pieces without discarding page identity."""
+    if "source_provenance" in page:
+        return _provenance_pieces(page, maximum_tokens)
     paragraphs = [p.strip() for p in re.split(r"\n\s*\n|\n", page["cleaned_text"]) if p.strip()]
     pieces: list[TextPiece] = []
     for paragraph in paragraphs:
         for text in split_sentences(paragraph, maximum_tokens):
             pieces.append(TextPiece(text, page))
     return pieces
+
+
+def _provenance_pieces(page: dict[str, Any], maximum_tokens: int) -> list[TextPiece]:
+    source = ProvenanceText.from_dict(page["source_provenance"])
+    if source.text != page["cleaned_text"]:
+        raise ValueError("page text differs from its source provenance")
+    locations = source_locations(source)
+    if source.text.strip():
+        if len(locations) != 1:
+            raise ValueError("page record must retain one source unit")
+        document_id, unit_id = next(iter(locations))
+        if page.get("document_id", document_id) != document_id or page.get("source_unit_id", unit_id) != unit_id:
+            raise ValueError("page record document/location pair differs from its provenance")
+        pdf_page = int(unit_id.split(":")[1]) if unit_id.startswith("pdf_page:") else None
+        if (
+            isinstance(page.get("pdf_page_number"), bool)
+            or pdf_page is not None and not isinstance(page.get("pdf_page_number"), int)
+            or page.get("pdf_page_number") != pdf_page
+        ):
+            raise ValueError("page record physical PDF address differs from its provenance")
+    pieces = []
+    for paragraph in re.finditer(r"[^\n]+", source.text):
+        normalized = normalize_words(source.slice(paragraph.start(), paragraph.end()))
+        start = 0
+        boundaries = [match.start() for match in SENTENCE_RE.finditer(normalized.text)]
+        ends = [match.end() for match in SENTENCE_RE.finditer(normalized.text)]
+        for end, next_start in zip(
+            boundaries + [len(normalized.text)], ends + [len(normalized.text)], strict=True,
+        ):
+            sentence = normalized.slice(start, end)
+            words = list(re.finditer(r"\S+", sentence.text))
+            for index in range(0, len(words), maximum_tokens):
+                selected = words[index:index + maximum_tokens]
+                text = sentence.slice(selected[0].start(), selected[-1].end())
+                pieces.append(TextPiece(text.text, page, text))
+            start = next_start
+    return pieces
+
+
+def _single_provenance_document(pages: list[dict[str, Any]]) -> None:
+    if not any("source_provenance" in page for page in pages):
+        return
+    if any("source_provenance" not in page for page in pages):
+        raise ValueError("cannot mix exact and legacy page provenance")
+    documents = set()
+    for page in pages:
+        documents.update(ProvenanceText.from_dict(page["source_provenance"]).document_hashes)
+    if len(documents) != 1 or len({page["book_id"] for page in pages}) != 1:
+        raise ValueError("chunking must keep each source document distinct")
 
 
 def _unique(values: Iterable[Any]) -> list[Any]:
@@ -72,7 +125,7 @@ def make_chunk(book_id: str, strategy: str, index: int, pieces: list[TextPiece])
     text = "\n".join(piece.text for piece in pieces).strip()
     pages = [piece.page for piece in pieces]
     chunk_id = f"{book_id}:{strategy}:{index:05d}"
-    return {
+    chunk = {
         "chunk_id": chunk_id,
         "chunking_strategy": strategy,
         "book_id": book_id,
@@ -90,6 +143,21 @@ def make_chunk(book_id: str, strategy: str, index: int, pieces: list[TextPiece])
         "has_table": any(bool(p.get("has_table")) for p in pages),
         "text": text,
     }
+    mapped = [piece.provenance for piece in pieces if piece.provenance is not None]
+    if mapped:
+        if len(mapped) != len(pieces):
+            raise ValueError("cannot mix exact and legacy text pieces")
+        provenance = join_text(mapped)
+        if provenance.text != text or len(provenance.document_hashes) != 1:
+            raise ValueError("chunk text must retain one exact source document")
+        chunk.update({
+            "document_id": provenance.document_hashes[0][0],
+            "evidence_id": provenance.evidence_id,
+            "source_provenance": provenance.to_dict(),
+            "pdf_pages": physical_pages(provenance),
+            "textbook_pages": [],
+        })
+    return chunk
 
 
 def _link_chunks(chunks: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -104,6 +172,7 @@ def fixed_chunks(pages: list[dict[str, Any]], target: int = 400, overlap: int = 
     """Create target-sized chunks with overlap, respecting chapter and text boundaries."""
     if target <= 0 or overlap < 0 or overlap >= target:
         raise ValueError("fixed chunk target must be positive and overlap must satisfy 0 <= overlap < target")
+    _single_provenance_document(pages)
     chunks: list[dict[str, Any]] = []
     # Chapters are processed independently, so overlap can never leak across a
     # chapter boundary even when a prior chapter ends with a short chunk.
@@ -135,6 +204,7 @@ def structured_chunks(pages: list[dict[str, Any]], minimum: int = 250,
     """Create coherent section-led chunks, permitting same-section page spans."""
     if minimum <= 0 or maximum < minimum:
         raise ValueError("structured sizes must satisfy 0 < minimum <= maximum")
+    _single_provenance_document(pages)
     chunks: list[dict[str, Any]] = []
     groups: list[tuple[tuple[Any, Any, Any], list[dict[str, Any]]]] = []
     for page in pages:
@@ -159,7 +229,15 @@ def structured_chunks(pages: list[dict[str, Any]], minimum: int = 250,
             if same_chapter and combined <= maximum:
                 # Reconstructing with synthetic text is avoided: append text and
                 # explicitly merge every source/indicator field.
-                previous["text"] += "\n" + "\n".join(p.text for p in pending)
+                tail = make_chunk(pages[0]["book_id"], "structured", len(chunks), pending)
+                if "source_provenance" in previous:
+                    provenance = join_text((
+                        ProvenanceText.from_dict(previous["source_provenance"]),
+                        ProvenanceText.from_dict(tail["source_provenance"]),
+                    ))
+                    previous["source_provenance"] = provenance.to_dict()
+                    previous["evidence_id"] = provenance.evidence_id
+                previous["text"] += "\n" + tail["text"]
                 previous["pdf_pages"] = _unique(previous["pdf_pages"] + [p.page["pdf_page_number"] for p in pending])
                 previous["textbook_pages"] = _unique(previous["textbook_pages"] + [p.page["textbook_page_number"] for p in pending])
                 previous["token_count"] = len(tokenize(previous["text"]))

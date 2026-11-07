@@ -23,6 +23,13 @@ prevent the library or diagnostics UI from opening.
 Runtime content is written below Git-ignored `app_data/`. Tests supply an
 isolated temporary data directory and never write into research artifact trees.
 
+The assessment track adds an opt-in
+[source-provenance contract](SOURCE_PROVENANCE.md) shared by PDFs and benchmark
+sentences. Source-aware chunk/context helpers reject mixed or altered source
+metadata and retain exact addresses through clipping and persistence. Legacy
+book ingestion and generation still use their frozen contracts; collection
+integration and claim-level citations are subsequent assessment tasks.
+
 ## Backend layout
 
 ```text
