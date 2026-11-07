@@ -8,6 +8,8 @@
 
 ## Benchmarks and source review
 
+- `assessment_protocol_v1/`: source-reviewed HotpotQA selection and preregistered
+  comparison rules. T01 only; no new answer-quality results are claimed.
 - `generation_benchmark_v1/`: generation benchmark build and validation.
 - `generation_benchmark_v1_review/`: detailed textbook/source verification.
 - `retrieval_baseline_v1/`: reviewed retrieval benchmark results and failures.

@@ -105,6 +105,18 @@ For deeper details, see [the UX plan](docs/UX_PLAN.md),
 [application development guide](docs/APP_DEVELOPMENT.md), and
 [repository guide](docs/REPOSITORY_GUIDE.md).
 
+## Assessment track (in progress)
+
+The existing application remains single-book scoped. A separate
+[submission plan](SUBMISSION_PLAN.md) tracks the multi-document extension.
+T01 has frozen a source-reviewed HotpotQA distractor subset and fair comparison
+rules; it has not yet produced multi-document answer-generation results.
+
+See [Assessment Context Protocol v1](reports/assessment_protocol_v1/README.md)
+for the benchmark source/license, reproducible 15/45 development/held-out split,
+baselines, metrics, ablation, and 500-call budget. The existing textbooks remain
+the demonstration corpus, not a substitute for the open benchmark.
+
 ## Build and run
 
 Requirements:

@@ -9,6 +9,13 @@
 Any behavior change to a frozen file requires a new semantic version and a new
 matching report directory. Do not silently edit v1.
 
+## Assessment protocol
+
+- `assessment_protocol_v1.json`: source identity, deterministic HotpotQA subset
+  selection, shared comparison constraints, metrics, ablation, and 500-call
+  reservations. This is a new evaluation track, not a change to the frozen
+  textbook profiles. Algorithm selection and measured results remain pending.
+
 ## Historical experiment configurations
 
 - `generation_phase_a_v1.json`: first local generation checkpoint.

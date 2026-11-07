@@ -1,0 +1,641 @@
+{
+  "schema_version": 1,
+  "protocol_id": "assessment_context_v1",
+  "source_sha256": "c20b638ca82b21d04fe12e14ff417ad05153d4d215a65de54497fca4e972f7c6",
+  "review_method": "assistant_source_inspection_before_any_retrieval_or_generation_experiment",
+  "review_date": "2026-11-07",
+  "scope": "Dataset eligibility only. Held-out data is not used for pipeline tuning. This is not a human answer-quality signoff or a proof against pretrained-model memorization.",
+  "dataset_license": "CC-BY-SA-4.0",
+  "accepted": {
+    "5ab7ece25542995dae37e9f3": {
+      "document_requirements": {
+        "James C. Kennedy": "Identify the richest person in Georgia and his company, Cox Enterprises.",
+        "Anne Cox Chambers": "Identify the four business divisions of that company."
+      },
+      "necessity": "The richest-person/company link and the company's divisions occur in different documents."
+    },
+    "5abc0ba05542996583600409": {
+      "document_requirements": {
+        "John Nyskohus": "Identify the clubs the player represented.",
+        "Adelaide City FC": "Resolve which of those clubs has the Black and Whites nickname."
+      },
+      "necessity": "Neither the player's club list alone nor the club's nickname alone establishes both relations."
+    },
+    "5ab43179554299233955004d": {
+      "document_requirements": {
+        "Klepto": "Identify the female star, Meredith Bishop.",
+        "Meredith Bishop": "Identify the series for which that actress is best known."
+      },
+      "necessity": "The film identifies the actress; her biography identifies the requested television work."
+    },
+    "5ab57759554299637185c5a5": {
+      "document_requirements": {
+        "Marie-Clementine Bagration": "Identify her father as Metternich.",
+        "Klemens von Metternich": "Identify the events that forced his resignation."
+      },
+      "necessity": "The parent relationship is not in the statesman's paragraph and the resignation cause is not in the daughter's paragraph."
+    },
+    "5add596f5542990dbb2f7e4d": {
+      "document_requirements": {
+        "Grown-Ups": "Identify Sam Kelly among the film's actors.",
+        "Sam Kelly": "Identify his role in Allo Allo."
+      },
+      "necessity": "The cast list and the actor's role must be joined.",
+      "annotation_caveat": "The supplied biography splits the quoted programme title across sentence boundaries; preserve its original sentence indices."
+    },
+    "5adfd2f255429925eb1afaa5": {
+      "document_requirements": {
+        "Portal (video game)": "Resolve the Valve-developed puzzle-platform game as Portal.",
+        "Gateways (video game)": "Identify the 2012 game whose concepts include Portal."
+      },
+      "necessity": "The developer/genre identification and the later game's borrowed concepts require different sources."
+    },
+    "5abf0bf95542997719eab63a": {
+      "document_requirements": {
+        "Jos\u00e9 Rubia Barcia": "Identify Lorca among the writers about whom Barcia published.",
+        "Federico Garc\u00eda Lorca": "Identify Lorca's additional profession as theatre director."
+      },
+      "necessity": "The publication relationship is distinct from the writer's professions."
+    },
+    "5abe79c755429976d4830b2a": {
+      "document_requirements": {
+        "Mesih Pasha": "Identify his uncle as Constantine XI.",
+        "Constantine XI Palaiologos": "Identify the beginning of that emperor's reign."
+      },
+      "necessity": "One source provides the uncle relationship; the other provides 1449."
+    },
+    "5ab55e015542992aa134a2d3": {
+      "document_requirements": {
+        "Hong Kong Museum of Coastal Defence": "Locate the museum on Hong Kong Island.",
+        "Hong Kong Island": "Obtain the island population, distinct from the museum or all of Hong Kong."
+      },
+      "necessity": "Museum location must be joined to the population of the correct island.",
+      "annotation_caveat": "The population is the historical figure in the supplied snapshot, not a claim about the current population."
+    },
+    "5ae658855542992ae0d162e3": {
+      "document_requirements": {
+        "On Parole": "Identify the band whose first recording was delayed.",
+        "Mot\u00f6rhead": "Identify that band's formation date."
+      },
+      "necessity": "The delayed recording identifies the band; its biography supplies the formation date."
+    },
+    "5a7553a95542996c70cfaedf": {
+      "document_requirements": {
+        "Equestria": "Identify the enemies called Wendigos in the show's setting.",
+        "Wendigo": "Verify the shared name of the requested term."
+      },
+      "necessity": "The fictional enemies and the named term appear in different paragraphs; neither alone establishes the shared-name relation."
+    },
+    "5adf3e355542993a75d26440": {
+      "document_requirements": {
+        "\u00d8resund Region": "Identify the bridge connecting the region and its two cities.",
+        "\u00d8resund Bridge": "Obtain the bridge length separately from the adjoining tunnel."
+      },
+      "necessity": "The region identifies the crossing; the bridge paragraph gives its length and distinguishes the tunnel."
+    },
+    "5adc398755429947ff173912": {
+      "document_requirements": {
+        "Nothoscordum": "Obtain its native range on North and South America.",
+        "Callirhoe (plant)": "Obtain its native range on North America."
+      },
+      "necessity": "The comparison requires the native range of both genera, not naturalized ranges."
+    },
+    "5a8e276b5542995a26add468": {
+      "document_requirements": {
+        "Swervedriver": "Obtain its 1989 formation date.",
+        "Incubus (band)": "Obtain its 1991 formation date."
+      },
+      "necessity": "Both dates are needed to decide which band formed first."
+    },
+    "5ae3d0bb5542990afbd1e1e5": {
+      "document_requirements": {
+        "Dee Dee Ramone": "Establish all three requested musical professions for this person.",
+        "Alex Band": "Establish all three requested musical professions for the other person."
+      },
+      "necessity": "A positive conjunction cannot be supported from only one person's biography."
+    },
+    "5a8ba9d255429971feec4759": {
+      "document_requirements": {
+        "Camp Courtney": "Identify the battle in which its namesake was killed.",
+        "Battle of Okinawa": "Obtain the codename of that battle."
+      },
+      "necessity": "The camp's namesake/battle link and the battle codename require a join."
+    },
+    "5a7f1e805542993067513640": {
+      "document_requirements": {
+        "The Voyage that Shook the World": "Identify the commissioning organization's Young Earth creationist belief.",
+        "Young Earth creationism": "Obtain the time bound attributed to that belief."
+      },
+      "necessity": "The documentary's commissioning organization and its belief's time bound are in different sources.",
+      "annotation_caveat": "The source says less than 10,000 years; the upstream short answer omits the bound. Preserve the reference and report this scoring limitation."
+    },
+    "5ae20e265542994d89d5b325": {
+      "document_requirements": {
+        "Mary MacLane": "Identify the person referred to by the Wild Woman nickname.",
+        "James G. Kiernan": "Identify the psychologist who wrote about that person's disciple."
+      },
+      "necessity": "Nickname resolution and the disciple/writer relation are separate facts.",
+      "annotation_caveat": "The question spells Butte as Buttle; do not silently edit the upstream question."
+    },
+    "5ac4e476554299076e296e34": {
+      "document_requirements": {
+        "The Liberties, Dublin": "Identify the historically working-class neighbourhood.",
+        "Brideville F.C.": "Link the club to that neighbourhood and identify its first cup win."
+      },
+      "necessity": "The neighbourhood description must be joined to the club's location and cup history."
+    },
+    "5ae72fd95542991e8301cbb4": {
+      "document_requirements": {
+        "Newcastle Civic Centre": "Identify the king who formally opened the centre in 1968.",
+        "Olav V of Norway": "Obtain the birth year of that king."
+      },
+      "necessity": "The building's opening and the monarch's birth are recorded in different documents."
+    },
+    "5a7e1a2955429965cec5ea5d": {
+      "document_requirements": {
+        "The Cinematic Orchestra": "Identify its record label as Ninja Tune.",
+        "Ninja Tune": "Obtain the label's base city, not the cities of its satellite offices."
+      },
+      "necessity": "The group-to-label link and the label's headquarters are separate."
+    },
+    "5ae4db9c55429908b6326492": {
+      "document_requirements": {
+        "2019 World Championships in Athletics": "Identify the scheduled championship venue.",
+        "Khalifa International Stadium": "Identify the event hosted there in 2011."
+      },
+      "necessity": "The later event's venue must be joined to an earlier event at the same venue."
+    },
+    "5aba18ee5542994dbf0198b4": {
+      "document_requirements": {
+        "Danilo Erricolo": "Identify the journal for which he is editor.",
+        "IEEE Transactions on Antennas and Propagation": "Obtain that journal's establishment year."
+      },
+      "necessity": "Editor-to-journal identity and journal history require both sources."
+    },
+    "5abe9b095542991f661061ad": {
+      "document_requirements": {
+        "Numidia (TV channel)": "Identify the broadcast city as Algiers.",
+        "Algiers": "Obtain the city population for 2011 rather than the metropolitan estimate."
+      },
+      "necessity": "The channel's location and the correctly scoped historical population are separate."
+    },
+    "5a7fc41455429969796c1b51": {
+      "document_requirements": {
+        "Thug Misses": "Identify the rapper whose debut album this is.",
+        "Khia": "Obtain her worldwide record-sales total, not that album's sales."
+      },
+      "necessity": "The album identifies the performer; the biography supplies the artist-wide total."
+    },
+    "5a7339c85542991f9a20c6a2": {
+      "document_requirements": {
+        "Andrew Robb and David McIlwaine killings": "Identify the county where the Tandragee killings occurred.",
+        "County Armagh": "Obtain that county's nickname."
+      },
+      "necessity": "Event location and county nickname occur in different sources."
+    },
+    "5ae4cb2f55429960a22e01e8": {
+      "document_requirements": {
+        "J. D. Souther": "Identify performers who recorded his songs.",
+        "Linda Ronstadt": "Resolve the individual country/pop singer among those performers and her full name."
+      },
+      "necessity": "The songwriter paragraph lists both Linda Ronstadt and the Eagles; the biography establishes the requested singer classification.",
+      "annotation_caveat": "The question is grammatically incomplete, but its performer relationship and singer constraint remain interpretable."
+    },
+    "5a7dc2495542997cc2c4749a": {
+      "document_requirements": {
+        "Julian Bolling": "Identify his competitions in 1984, including South Asian Games and the Los Angeles Olympics.",
+        "1984 South Asian Games": "Resolve which competition was held in Kathmandu."
+      },
+      "necessity": "His competition history alone does not identify the Kathmandu event, and the event paragraph alone does not establish his participation."
+    },
+    "5ade04465542990dbb2f7f2f": {
+      "document_requirements": {
+        "Nadeem Siddique": "Identify his favourite boxer.",
+        "Sugar Ray Robinson": "Obtain that boxer's birth name."
+      },
+      "necessity": "The preference relation must be joined to the boxer's original name."
+    },
+    "5ae7e9af5542994a481bbe0e": {
+      "document_requirements": {
+        "Antonio Carmona A\u00f1orve": "Identify the city where he was director of police.",
+        "Mexicali": "Obtain the city's 2010 census population, not the metropolitan population."
+      },
+      "necessity": "The office location and the correctly scoped population require separate documents."
+    },
+    "5adcbb815542994ed6169bde": {
+      "document_requirements": {
+        "Beer Wars": "Identify the smaller breweries included in the film.",
+        "Stone Brewing Co.": "Resolve which listed brewery is headquartered in Escondido."
+      },
+      "necessity": "The film's brewery list must be joined to brewery location."
+    },
+    "5a734ca85542994cef4bc51b": {
+      "document_requirements": {
+        "Alhambra (board game)": "Establish its game category.",
+        "Tsuro": "Establish the other game's category."
+      },
+      "necessity": "The common category requires evidence about both games."
+    },
+    "5ae1412a55429920d523434c": {
+      "document_requirements": {
+        "Prol\u00f3gica CP-400": "Establish this product as a personal computer.",
+        "Atari ST": "Establish the other product as a personal computer."
+      },
+      "necessity": "A positive conjunction requires the classification of both products."
+    },
+    "5a8781b65542993e715abf8f": {
+      "document_requirements": {
+        "David O. Russell": "Obtain his nationality.",
+        "Tony Gatlif": "Obtain the other director's nationality."
+      },
+      "necessity": "An equality comparison requires both nationalities; one nationality alone does not establish a mismatch."
+    },
+    "5a7ae38c5542992d025e6721": {
+      "document_requirements": {
+        "Teinosuke Kinugasa": "Obtain his birth and death dates.",
+        "Don O. Newland": "Obtain the other director's birth and death dates."
+      },
+      "necessity": "Compare ages at death, not birth order or death year alone, using both biographies."
+    },
+    "5ab5d43f5542997d4ad1f1f6": {
+      "document_requirements": {
+        "Manru": "Identify the opera's composer as Paderewski.",
+        "Ignacy Jan Paderewski": "Identify the country whose independence he advocated."
+      },
+      "necessity": "Composer identification and his political advocacy require separate paragraphs."
+    },
+    "5ae4f8b755429960a22e0230": {
+      "document_requirements": {
+        "River Fiddich": "Identify the castles along the river.",
+        "Balvenie Castle": "Resolve which listed castle is a ruined castle near Dufftown."
+      },
+      "necessity": "The river paragraph lists multiple castles; the castle description selects the requested one."
+    },
+    "5ade15ae5542990dbb2f7f4c": {
+      "document_requirements": {
+        "Domino Dancing": "Identify the album for which this song was the lead single.",
+        "Introspective": "Obtain that album's release month."
+      },
+      "necessity": "The lead-single/album relation and release month are separate facts."
+    },
+    "5ab2a54b554299295394678e": {
+      "document_requirements": {
+        "Bui National Park": "Identify which dam's reservoir is expected to inundate the park.",
+        "Bui Dam": "Obtain that project's power capacity."
+      },
+      "necessity": "Park inundation and the capacity of the responsible project occur in different sources.",
+      "annotation_caveat": "Size refers to generating capacity in MW, not physical dimensions; the source describes a historical construction timeline."
+    },
+    "5adf9b1e5542992d7e9f93b5": {
+      "document_requirements": {
+        "Boria Sax": "Identify his teaching institution as Mercy College.",
+        "Mercy College (New York)": "Obtain the institution's state."
+      },
+      "necessity": "The person's institution and the institution's location require a join."
+    },
+    "5a7b782455429927d897bfd7": {
+      "document_requirements": {
+        "Staten Island Summer": "Identify the film's cast, including multiple actresses.",
+        "Cecily Strong": "Resolve the actress with the Saturday Night Live role."
+      },
+      "necessity": "The cast list alone cannot distinguish the actresses' television affiliations."
+    },
+    "5a8a2a5555429930ff3c0ccc": {
+      "document_requirements": {
+        "Chris Summers (ice hockey)": "Identify his NHL organization.",
+        "Pittsburgh Penguins": "Obtain that team's current arena in the supplied snapshot."
+      },
+      "necessity": "The player/team relation and the team's arena history require both documents."
+    },
+    "5ae701b2554299572ea54680": {
+      "document_requirements": {
+        "Frank Girardot": "Identify the subject of Name Dropper, not the author.",
+        "Christian Gerhartsreiter": "Obtain the subject's birth year."
+      },
+      "necessity": "The author paragraph identifies the subject but gives only the author's birth year; the subject's biography is required.",
+      "annotation_caveat": "The author and subject share a birth year, so a numerically correct answer from the author's birth date would still be incorrectly supported."
+    },
+    "5adf5fa65542993a75d264db": {
+      "document_requirements": {
+        "Dove Marine Laboratory": "Identify the university that contains the laboratory.",
+        "Newcastle University": "Identify when that institution gained university status."
+      },
+      "necessity": "Institution membership and the institutional transition date are separate facts."
+    },
+    "5a7326cb5542994cef4bc47f": {
+      "document_requirements": {
+        "U.F.O. (Coldplay song)": "Identify that all four band members wrote this song.",
+        "Princess of China": "Identify that the same four members also wrote this song."
+      },
+      "necessity": "The shared authorship claim requires both song credits; Brian Eno's additional credit does not negate the shared band members."
+    },
+    "5ae08dad55429945ae9593b9": {
+      "document_requirements": {
+        "Willie Geist": "Identify the anchor for whom he substitutes.",
+        "Matt Lauer": "Obtain the programme that anchor hosted during 1980-86."
+      },
+      "necessity": "The substitution relationship and the earlier programme require a join."
+    },
+    "5a87bada5542994846c1cddc": {
+      "document_requirements": {
+        "Ravi Sethi": "Identify the relevant research employer as Bell Labs.",
+        "Bell Labs": "Obtain its headquarters location."
+      },
+      "necessity": "The scientist's employment and company headquarters are in separate documents."
+    },
+    "5a8b1a925542997f31a41c6e": {
+      "document_requirements": {
+        "The Deep Blue Sea (1955 film)": "Identify Tom Hiddleston as Freddie in the later adaptation described by this paragraph.",
+        "Tom Hiddleston": "Identify the play for which that actor won the award."
+      },
+      "necessity": "Role-to-actor identity and award history must be joined.",
+      "annotation_caveat": "The source title is the 1955 film, but its text describes the later adaptation; sentence provenance must reference the supplied paragraph, not invent a date."
+    },
+    "5ae2120e5542997283cd23ad": {
+      "document_requirements": {
+        "Distortion Mirrors": "Establish this group as a rock band.",
+        "OK Go": "Establish the other group as a rock band."
+      },
+      "necessity": "A positive conjunction requires both bands' classifications."
+    },
+    "5a831fcc55429940e5e1a96a": {
+      "document_requirements": {
+        "Kurt Cobain": "Establish his musical work.",
+        "Glenn Frey": "Establish the other person's musical work."
+      },
+      "necessity": "Both persons' work must be supported to answer the positive conjunction."
+    },
+    "5adcd9fe5542990d50227d46": {
+      "document_requirements": {
+        "Dieffenbachia": "Identify this genus as flowering plants.",
+        "Carlina": "Identify the other genus as flowering plants."
+      },
+      "necessity": "The shared plant-group classification requires both genera."
+    },
+    "5a8c5c6f554299653c1aa04d": {
+      "document_requirements": {
+        "The Best of LeAnn Rimes": "Identify the songs included on the compilation.",
+        "Can't Fight the Moonlight": "Resolve which included song was a theme and identify its film."
+      },
+      "necessity": "The compilation's track list and a track's film association require both sources."
+    },
+    "5a78a862554299148911f8fe": {
+      "document_requirements": {
+        "Sudan": "Identify the country described as Africa's third largest.",
+        "Netrobalane canopus": "Match that country to the butterfly's range and obtain its common name."
+      },
+      "necessity": "The country ranking and the species range/common-name relation are separate facts in the supplied context set."
+    },
+    "5a8e61165542995085b3741a": {
+      "document_requirements": {
+        "Frank Augustus Miller": "Identify the hotel he owned and developed.",
+        "The Mission Inn Hotel &amp; Spa": "Obtain that hotel's architectural distinction."
+      },
+      "necessity": "The owner-to-hotel relation and the hotel's architectural classification require a join."
+    },
+    "5abbeb7d554299114383a09b": {
+      "document_requirements": {
+        "Pulsed Pressure Cavitation Technique": "Identify the laboratory that developed the technique.",
+        "Oak Ridge National Laboratory": "Identify the department that sponsors that laboratory."
+      },
+      "necessity": "The technique/laboratory link and the laboratory/sponsor link are in different paragraphs."
+    },
+    "5a7184675542994082a3e864": {
+      "document_requirements": {
+        "Ford CD2 platform": "Identify the car associated with the design's underlying platform.",
+        "Mazda Capella": "Establish the manufacturer of that car, not the joint platform developers."
+      },
+      "necessity": "The design-to-car link and the explicit car-manufacturer fact require separate sources; brand names alone are not manufacturing evidence."
+    },
+    "5a81456855429938b614231e": {
+      "document_requirements": {
+        "Valparaiso University": "Obtain its enrollment of about 4,500 students.",
+        "Old Dominion University": "Obtain its enrollment of 24,670 students."
+      },
+      "necessity": "Both enrollment figures are required for the greater-than comparison."
+    },
+    "5a7dc3275542997cc2c4749c": {
+      "document_requirements": {
+        "Kent Baer": "Identify the team for which he is defensive coordinator.",
+        "UNLV Rebels football": "Obtain that team's home stadium in the supplied snapshot."
+      },
+      "necessity": "The coach-to-team relationship and the team's venue require both paragraphs."
+    },
+    "5ae22895554299495565da0c": {
+      "document_requirements": {
+        "Battle of the Catalaunian Plains": "Identify the Visigothic king involved in the battle.",
+        "Visigoths": "Establish the nomadic tribes' classification as Germanic peoples."
+      },
+      "necessity": "The king's participation and his people's nomadic/Germanic classification are separate facts; the battle's mention of Germanic soldiers alone does not establish the king's tribal classification."
+    },
+    "5ae4d3c95542990ba0bbb165": {
+      "document_requirements": {
+        "Nusretiye Clock Tower": "Locate the tower in Istanbul.",
+        "Eski Imaret Mosque": "Locate the mosque in Istanbul."
+      },
+      "necessity": "The shared-city claim requires the locations of both landmarks."
+    }
+  },
+  "excluded": {
+    "5ab8688b55429934fafe6daa": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "Maurice Ward directly identifies the invented material as Starlite. The other paragraph primarily adds the naming qualifier."
+    },
+    "5a74655b55429974ef308bf0": {
+      "reason": "single_document_answer",
+      "evidence": "The film paragraph identifies the director and explicitly calls the film Russian; the general cinema paragraph adds no necessary film identification."
+    },
+    "5adcdc6c5542992c1e3a2437": {
+      "reason": "ambiguous_question",
+      "evidence": "The malformed question has no clear distinction between migration, migrants, and the exact phrase retained as its reference answer."
+    },
+    "5a81b4cc5542995ce29dcc3c": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "Hotride directly names The Prodigy as its performing group; the biography adds formation/location qualifiers."
+    },
+    "5a75083b5542996c70cfae7e": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "The named person's biography directly lists the school he attended; the school paragraph only describes its type."
+    },
+    "5ae1ee6d5542997283cd22fd": {
+      "reason": "single_document_answer",
+      "evidence": "The film paragraph contains the year, genre, and Taylor Nichols in its cast. The biography is not needed."
+    },
+    "5abaf0e055429966062416a3": {
+      "reason": "incorrect_question_premise",
+      "evidence": "The question says the composer was born in 1847, but the source gives 1809 as his birth year and 1847 as his death year."
+    },
+    "5ab2d3c5554299295394687a": {
+      "reason": "single_document_answer",
+      "evidence": "Salt is named in the question, and its paragraph supplies both the director and Schreiber's cast membership."
+    },
+    "5a7c784055429907fabeef98": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "Coffman's paragraph identifies his later office and dates; the other paragraph only confirms who replaced him."
+    },
+    "5a77c6e05542995d831812c7": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "The biography directly identifies the requested Minahasa journalist/novelist; the colonial-history paragraph adds a location qualifier."
+    },
+    "5ac1f4495542991316484bd2": {
+      "reason": "ambiguous_comparison",
+      "evidence": "More scope of profession is not defined as a count, breadth, or duration; the intended comparison cannot be scored unambiguously."
+    },
+    "5a77121a5542994aec3b71db": {
+      "reason": "reference_answer_not_minimal",
+      "evidence": "The reference copies a full film-description sentence instead of the requested film title, penalizing minimal answers under official EM/F1."
+    },
+    "5ae3006c55429928c423959f": {
+      "reason": "single_document_answer",
+      "evidence": "Rihanna's paragraph includes her birth name, birthplace, and Pon de Replay, making the song paragraph unnecessary."
+    },
+    "5a83c2e25542996488c2e4bc": {
+      "reason": "single_document_answer",
+      "evidence": "The stadium paragraph states its name change, its role as the Bears' home field, and the first 2014 Baylor game."
+    },
+    "5a8d5f16554299585d9e37c5": {
+      "reason": "single_positive_property_choice",
+      "evidence": "Yashin's paragraph directly supplies Black Spider. No comparison of two values is needed to choose him."
+    },
+    "5a79c9c05542994bb94570a5": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "Bunda's biography directly contains his requested birth date and house membership; the other source only defines lower house."
+    },
+    "5ab2929a554299449642c900": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "Unbroken identifies the 2010 book and its Olympian protagonist; the biography only adds the evangelist qualifier."
+    },
+    "5a88fc4255429938390d4019": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "Crash Pad directly identifies Kevin Tent, the cast, and the VOD release date. The biography primarily confirms the actress qualifier."
+    },
+    "5adfe0de55429925eb1afae9": {
+      "reason": "single_document_answer",
+      "evidence": "Say Say Say identifies both performers, Pipes of Peace, and George Martin as producer."
+    },
+    "5a775f615542993735360250": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "Green Chair directly identifies the film from the full plot description; the actor biography only adds festival information."
+    },
+    "5adf41a45542993a75d26456": {
+      "reason": "unsupported_reference_time",
+      "evidence": "The question asks the year a screenplay was written, but 2010 is the film release year and the source says filming began in 2009."
+    },
+    "5a84c01e5542991dd0999dd6": {
+      "reason": "ambiguous_question",
+      "evidence": "The first king is described as having two sons who succeeded him; the question does not identify which son's reign is requested."
+    },
+    "5a8b3de95542997f31a41cc3": {
+      "reason": "reference_answer_wrong_type",
+      "evidence": "The question requests a year, but the upstream answer is Tian Tan Buddha, a statue name."
+    },
+    "5a7d3f895542995f4f402248": {
+      "reason": "single_document_answer",
+      "evidence": "Avatar Flight of Passage identifies both its Pandora location and the mountain Banshee ride."
+    },
+    "5a895d305542993b751ca931": {
+      "reason": "single_document_answer",
+      "evidence": "Ashley Young is named in the question and his paragraph supplies both requested teams; Lewis's paragraph also directly identifies Manchester United."
+    },
+    "5abaf6865542996cc5e49f3c": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "Doherty's paragraph directly gives Sean as his sitcom role; the series paragraph only supplies the source-series qualifier."
+    },
+    "5abe7f695542993f32c2a12d": {
+      "reason": "incorrect_question_premise",
+      "evidence": "The question asks about a movie, but the cited source identifies Young Justice as a television series."
+    },
+    "5a7286865542991f9a20c4cb": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "Skindles names Kind Hearts and Coronets directly; the film paragraph only supplies the year and genre qualifiers."
+    },
+    "5a77c4fe55429967ab10527b": {
+      "reason": "single_document_definition",
+      "evidence": "The remix paragraph directly answers the definition supplied in the question; the song is an optional example."
+    },
+    "5a74bfa55542996c70cfadcf": {
+      "reason": "unsupported_ownership_claim",
+      "evidence": "The car paragraph says it was designed to appeal to customers including Oliver Reed, but does not explicitly establish the ownership claim."
+    },
+    "5a78cc7c55429974737f789f": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "The song paragraph names its Lithuanian producer and its Ibiza popularity; the biography only adds best known."
+    },
+    "5a72b9155542992359bc3187": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "The service paragraph uniquely identifies Amtrak's flagship as Acela Express; the station paragraph adds the stop qualifier."
+    },
+    "5ac079e9554299294b218fff": {
+      "reason": "single_document_answer",
+      "evidence": "Rosyth Dockyard explicitly links both the dockyard and Queen Elizabeth-class carriers to the Royal Navy."
+    },
+    "5ae1d32a554299492dc91b9c": {
+      "reason": "single_document_answer",
+      "evidence": "The series paragraph gives the release year of the named novel directly; the Freed paragraph is irrelevant."
+    },
+    "5ae0038655429925eb1afbe0": {
+      "reason": "single_positive_property_choice",
+      "evidence": "Tea Moderna directly identifies itself as Macedonian; reading the other magazine is not necessary to select it."
+    },
+    "5a7fe0b55542994857a76818": {
+      "reason": "single_document_negative_conjunction",
+      "evidence": "Black's Dhaka origin alone disproves that both bands are from Tempe."
+    },
+    "5ae0b8bb55429924de1b7145": {
+      "reason": "single_positive_property_choice",
+      "evidence": "Kennedy's paragraph explicitly calls him a guitarist, which is sufficient to choose him."
+    },
+    "5abcfcf0554299114383a1b4": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "The museum paragraph directly states its location on the Isle of Axholme; the other paragraph adds the traditional-riding qualifier."
+    },
+    "5a8cfa2e554299585d9e378b": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "Jones's biography directly identifies the British actor born in 1965 and his previous football career; the cast paragraph adds film membership."
+    },
+    "5ae56a0d5542990ba0bbb29c": {
+      "reason": "ambiguous_question",
+      "evidence": "The district covers numerous towns in Waldo County, but the question does not specify which town's population is requested."
+    },
+    "5abfca465542993fe9a41e65": {
+      "reason": "single_document_answer",
+      "evidence": "The league paragraph uniquely identifies the 121th Swiss top-tier season; the coach biography only adds a qualifier."
+    },
+    "5a79f6825542996c55b2dcb4": {
+      "reason": "reference_answer_wrong_value",
+      "evidence": "Stender was born in 1951 and Lance in 1952; the requested beginning year is 1951, whereas the reference is 1952."
+    },
+    "5a770bb855429937353601b5": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "White's biography directly identifies him as a former Cowboys punter and gives Arizona State; the other source adds the decade."
+    },
+    "5ac51a055542994611c8b390": {
+      "reason": "single_document_definition",
+      "evidence": "Mossad's paragraph directly gives the Institute translation, while the question does not name the movement in the other paragraph."
+    },
+    "5a8f55f9554299458435d5bd": {
+      "reason": "ambiguous_comparison",
+      "evidence": "Both subjects have several common professions, including actor and director; a single actor reference penalizes other supported answers."
+    },
+    "5ae56fb85542993aec5ec1a9": {
+      "reason": "incorrect_question_premise",
+      "evidence": "The question reverses the sequel relationship: Fade to Black is the sequel to 1992's Flashback, not the other way around."
+    },
+    "5ae765bf5542995703ce8c12": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "Smith's biography identifies the named professions, birth year, Pearl Harbor survival, and retirement rank; the attack paragraph only expands the event description."
+    },
+    "5a75e60e55429976ec32bc88": {
+      "reason": "single_document_answer",
+      "evidence": "The singer biography directly supplies his full name and Mangueira carnival role; the general Rio Carnival paragraph is unnecessary."
+    },
+    "5a8cb288554299585d9e3726": {
+      "reason": "answer_with_qualifier_only_second_source",
+      "evidence": "The Umpqua paragraph directly contains the requested October 1, 2015 date and state; the Oikos paragraph adds the death-toll comparison."
+    },
+    "5a88651b55429938390d3f45": {
+      "reason": "single_positive_property_choice",
+      "evidence": "Bluebeard's Castle directly states one-act opera, making the other opera unnecessary for a positive-property choice."
+    }
+  }
+}

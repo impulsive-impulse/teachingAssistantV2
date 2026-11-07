@@ -1,0 +1,1373 @@
+{
+  "schema_version": 1,
+  "protocol_id": "assessment_context_v1",
+  "dataset_license": "CC-BY-SA-4.0",
+  "protocol_semantic_sha256": "61bd6fb0b0fde78a8475c8fe789a9e343b3628f7bdb57a37ca61f5a989a25304",
+  "source_sha256": "c20b638ca82b21d04fe12e14ff417ad05153d4d215a65de54497fca4e972f7c6",
+  "necessity_review_semantic_sha256": "e7e645d127af2f45b59ee6291a86f7b70c682f0e0fcc363427eeeff47ee294e9",
+  "selection_seed": 1729,
+  "selected_count": 60,
+  "split_counts": {
+    "development": {
+      "bridge": 12,
+      "comparison": 3
+    },
+    "held_out": {
+      "bridge": 36,
+      "comparison": 9
+    }
+  },
+  "source_audit": {
+    "eligible_counts": {
+      "bridge": 5853,
+      "comparison": 1437
+    },
+    "rejection_counts": {
+      "context_count_not_ten": 60,
+      "duplicate_context_document": 4,
+      "source_review:ambiguous_comparison": 2,
+      "source_review:ambiguous_question": 3,
+      "source_review:answer_with_qualifier_only_second_source": 18,
+      "source_review:incorrect_question_premise": 3,
+      "source_review:reference_answer_not_minimal": 1,
+      "source_review:reference_answer_wrong_type": 1,
+      "source_review:reference_answer_wrong_value": 1,
+      "source_review:single_document_answer": 12,
+      "source_review:single_document_definition": 2,
+      "source_review:single_document_negative_conjunction": 1,
+      "source_review:single_positive_property_choice": 4,
+      "source_review:unsupported_ownership_claim": 1,
+      "source_review:unsupported_reference_time": 1,
+      "support_location_unresolvable": 1
+    },
+    "rejected_questions": [
+      {
+        "question_id": "5a7286865542991f9a20c4cb",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a72b9155542992359bc3187",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a73595055429901807dafd6",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a74655b55429974ef308bf0",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5a74bfa55542996c70cfadcf",
+        "reason": "source_review:unsupported_ownership_claim"
+      },
+      {
+        "question_id": "5a75083b5542996c70cfae7e",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a75e60e55429976ec32bc88",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5a76394c5542994ccc918725",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a770bb855429937353601b5",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a77121a5542994aec3b71db",
+        "reason": "source_review:reference_answer_not_minimal"
+      },
+      {
+        "question_id": "5a775f615542993735360250",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a77c4fe55429967ab10527b",
+        "reason": "source_review:single_document_definition"
+      },
+      {
+        "question_id": "5a77c60255429967ab105285",
+        "reason": "duplicate_context_document"
+      },
+      {
+        "question_id": "5a77c6e05542995d831812c7",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a78cc7c55429974737f789f",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a78dc4d55429970f5fffdb6",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a79c9c05542994bb94570a5",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a79f6825542996c55b2dcb4",
+        "reason": "source_review:reference_answer_wrong_value"
+      },
+      {
+        "question_id": "5a7a36e65542990198eaf0ea",
+        "reason": "duplicate_context_document"
+      },
+      {
+        "question_id": "5a7a5aea5542996c55b2dd6f",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a7af08655429931da12c989",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a7c784055429907fabeef98",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a7cd66a554299452d57ba90",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a7d3f895542995f4f402248",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5a7fe0b55542994857a76818",
+        "reason": "source_review:single_document_negative_conjunction"
+      },
+      {
+        "question_id": "5a81b4cc5542995ce29dcc3c",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a836ce55542993344746012",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a83c2e25542996488c2e4bc",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5a83ed9b55429933447460b8",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a84be845542991dd0999dcf",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a84c01e5542991dd0999dd6",
+        "reason": "source_review:ambiguous_question"
+      },
+      {
+        "question_id": "5a86458b5542991e771815ec",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a87954f5542996e4f308856",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a88651b55429938390d3f45",
+        "reason": "source_review:single_positive_property_choice"
+      },
+      {
+        "question_id": "5a88a1475542997e5c09a646",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a88fc4255429938390d4019",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a895d305542993b751ca931",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5a8a49cd55429930ff3c0d71",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a8aee3d55429950cd6afc01",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a8b036d55429971feec45fe",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a8b3de95542997f31a41cc3",
+        "reason": "source_review:reference_answer_wrong_type"
+      },
+      {
+        "question_id": "5a8cb288554299585d9e3726",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a8cfa2e554299585d9e378b",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5a8cfee555429941ae14df5c",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a8d5f16554299585d9e37c5",
+        "reason": "source_review:single_positive_property_choice"
+      },
+      {
+        "question_id": "5a8dfae55542995085b3736b",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a8e08d35542995085b37395",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5a8ec7cc5542995a26add518",
+        "reason": "duplicate_context_document"
+      },
+      {
+        "question_id": "5a8f55f9554299458435d5bd",
+        "reason": "source_review:ambiguous_comparison"
+      },
+      {
+        "question_id": "5ab1d7ac554299449642c7e6",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab26a4b55429970612095fc",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab2929a554299449642c900",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5ab2bc80554299194fa934d7",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab2d3c5554299295394687a",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5ab3c7df55429969a97a81be",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab4f7fc5542991779162d43",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab6006a554299110f2199b5",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab61cf5554299637185c668",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab6369655429953192ad2a1",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab672165542995eadeeffe0",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab67ce2554299710c8d1ead",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab680d15542995eadef0011",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab69f13554299710c8d1ef3",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab6d04c554299710c8d1f70",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab6dbc15542995eadef00cd",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab82bbb5542990e739ec84c",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab8688b55429934fafe6daa",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5ab8f4ee5542991b5579f091",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ab938fb554299131ca422ce",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5abae1055542996cc5e49ec9",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5abaf0e055429966062416a3",
+        "reason": "source_review:incorrect_question_premise"
+      },
+      {
+        "question_id": "5abaf6865542996cc5e49f3c",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5abbf8bc5542993f40c73c35",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5abc7bc45542993a06baf8ef",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5abc7bf5554299114383a129",
+        "reason": "duplicate_context_document"
+      },
+      {
+        "question_id": "5abcfcf0554299114383a1b4",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      },
+      {
+        "question_id": "5abd259d55429924427fcf1a",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5abe7f695542993f32c2a12d",
+        "reason": "source_review:incorrect_question_premise"
+      },
+      {
+        "question_id": "5abfca465542993fe9a41e65",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5abffd10554299012d1db556",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ac079e9554299294b218fff",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5ac082535542992a796ded2f",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ac1f4495542991316484bd2",
+        "reason": "source_review:ambiguous_comparison"
+      },
+      {
+        "question_id": "5ac274fc55429963665199c1",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ac2a3c7554299218029dadb",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ac2ed41554299218029db96",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ac3ac8255429939154138ad",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ac51a055542994611c8b390",
+        "reason": "source_review:single_document_definition"
+      },
+      {
+        "question_id": "5adbe9fa55429944faac23ba",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5adc65e85542996e68525350",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5adcd4325542994d58a2f6ed",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5adcdc6c5542992c1e3a2437",
+        "reason": "source_review:ambiguous_question"
+      },
+      {
+        "question_id": "5add64065542995b365fab25",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ade28b15542997c77aded83",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ade3e69554299728e26c68d",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ade82ba5542992fa25da7a3",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5adeb95d5542992fa25da827",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5adf39295542992d7e9f92df",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5adf41a45542993a75d26456",
+        "reason": "source_review:unsupported_reference_time"
+      },
+      {
+        "question_id": "5adfe0de55429925eb1afae9",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5ae0038655429925eb1afbe0",
+        "reason": "source_review:single_positive_property_choice"
+      },
+      {
+        "question_id": "5ae0b8bb55429924de1b7145",
+        "reason": "source_review:single_positive_property_choice"
+      },
+      {
+        "question_id": "5ae0e183554299422ee9953f",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ae14cf05542990adbacf742",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ae1d32a554299492dc91b9c",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5ae1ee6d5542997283cd22fd",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5ae3006c55429928c423959f",
+        "reason": "source_review:single_document_answer"
+      },
+      {
+        "question_id": "5ae40a2955429970de88d8a3",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ae473545542995dadf2433d",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ae4bcfc55429913cc2044eb",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ae56a0d5542990ba0bbb29c",
+        "reason": "source_review:ambiguous_question"
+      },
+      {
+        "question_id": "5ae56fb85542993aec5ec1a9",
+        "reason": "source_review:incorrect_question_premise"
+      },
+      {
+        "question_id": "5ae61bfd5542992663a4f261",
+        "reason": "support_location_unresolvable"
+      },
+      {
+        "question_id": "5ae6529a55429929b0807b32",
+        "reason": "context_count_not_ten"
+      },
+      {
+        "question_id": "5ae765bf5542995703ce8c12",
+        "reason": "source_review:answer_with_qualifier_only_second_source"
+      }
+    ],
+    "selection_skip_counts": {
+      "overlapping_context_titles": 17
+    },
+    "distinct_context_titles": 600
+  },
+  "manual_claim_review_question_ids": {
+    "development": [
+      "5adfd2f255429925eb1afaa5",
+      "5ab43179554299233955004d",
+      "5abe79c755429976d4830b2a",
+      "5adf3e355542993a75d26440",
+      "5adc398755429947ff173912"
+    ],
+    "held_out": [
+      "5abbeb7d554299114383a09b",
+      "5a8c5c6f554299653c1aa04d",
+      "5ae20e265542994d89d5b325",
+      "5adcbb815542994ed6169bde",
+      "5a8a2a5555429930ff3c0ccc",
+      "5ae4cb2f55429960a22e01e8",
+      "5ae7e9af5542994a481bbe0e",
+      "5a7f1e805542993067513640",
+      "5a831fcc55429940e5e1a96a",
+      "5a81456855429938b614231e"
+    ]
+  },
+  "questions": [
+    {
+      "question_id": "5ab7ece25542995dae37e9f3",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Anne Cox Chambers",
+        "James C. Kennedy"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "f4b54d01bacbcf2fdf042d3890acc16e9fff5c0e3e9b3eaae701c2c28018038a",
+      "runtime_input_sha256": "4c4625e2726bec2a795b7692a89f23ff71e3ab548f1b0d9cd77367997e1c8fc4"
+    },
+    {
+      "question_id": "5abc0ba05542996583600409",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Adelaide City FC",
+        "John Nyskohus"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "81b4da1d1eba702e01151dcd19110c37ea8b0b49e4759f904a55d9fabf87fc9f",
+      "runtime_input_sha256": "392cbc0d477be1c28d847695965a94fdad109ccf412252aa1cfcb3c1d6e4b948"
+    },
+    {
+      "question_id": "5ab43179554299233955004d",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Klepto",
+        "Meredith Bishop"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "e6ed73c27ec2f04bab903bd8e1867613b997a9c30f2d995b6f80dc988c4aea8d",
+      "runtime_input_sha256": "979e2747aa777dc0aabacbceab3540e3e56072a76c09ced099d966ff8849f5b6"
+    },
+    {
+      "question_id": "5ab57759554299637185c5a5",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Klemens von Metternich",
+        "Marie-Clementine Bagration"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "c36d629c924ea57c8a64fdae71667313d87c80bc57c8f29097815f3e134b2046",
+      "runtime_input_sha256": "7bc2a3a86fc39b2f960fe7aa7541d5b6d1cdcf96f8f9a2584746b6f5f217f51a"
+    },
+    {
+      "question_id": "5add596f5542990dbb2f7e4d",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Grown-Ups",
+        "Sam Kelly"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "377f65b8c87d30ee73e24c45d71e18ef30d4c47411c0da951e01424f5db5aeb2",
+      "runtime_input_sha256": "07e2250c938d9ebcab61877e6a1eaa9697799c11ddc9f9fd44b867f5a6b80346"
+    },
+    {
+      "question_id": "5adfd2f255429925eb1afaa5",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Gateways (video game)",
+        "Portal (video game)"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "41d3f00c6a1618292308c6e8b7b1623a1187937b600d61d4a4908bf427ff21a3",
+      "runtime_input_sha256": "cc8533f5212bcc49be817599bf75c97259f354bf85df6a7b22e69f7bb7a0ad8a"
+    },
+    {
+      "question_id": "5abf0bf95542997719eab63a",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Federico García Lorca",
+        "José Rubia Barcia"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "7d49f07e4894e7e2079b227d1592ceb5c184c69de4c9758e1536f3e92e8d6053",
+      "runtime_input_sha256": "1ed13d2b811a6cb088fc3fe97d321f14a4fda1b02cbd9bb4fef18374a7fd4e0b"
+    },
+    {
+      "question_id": "5abe79c755429976d4830b2a",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Constantine XI Palaiologos",
+        "Mesih Pasha"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "41c319699b86df603d42a0481bfca5dae6b001b27282c3265adc02086c5c6bbd",
+      "runtime_input_sha256": "827b5af030019bc737303f1b3ac97af80e5e87571d1fb4993af05f0e02d91917"
+    },
+    {
+      "question_id": "5ab55e015542992aa134a2d3",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Hong Kong Island",
+        "Hong Kong Museum of Coastal Defence"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "624ff2823c1e6f4d9fe61362a4465f68c978bf213337e906cda08cdd50fc683d",
+      "runtime_input_sha256": "3f9f90d2110ea4c763aec6a5bb0635956ef34ba8ab302134dca3ff4f603b5219"
+    },
+    {
+      "question_id": "5ae658855542992ae0d162e3",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Motörhead",
+        "On Parole"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "6b93e4a67b402e9ce8803f3e06b4992feb4046840fa5640673af1579f5f7a92a",
+      "runtime_input_sha256": "202624ada365f111b8cde6c69ac31a8dde2f40cb0e0681b27d12fcfb17cb9169"
+    },
+    {
+      "question_id": "5a7553a95542996c70cfaedf",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Equestria",
+        "Wendigo"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "9cb1290cca325b02562455fcf7547f1557d3c41ecdd396d5fdea1ddeb6c6ba10",
+      "runtime_input_sha256": "f8a6177e220c51616e42731c1305289d879c31289483357f07f62bde87eb2d5e"
+    },
+    {
+      "question_id": "5adf3e355542993a75d26440",
+      "split": "development",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Øresund Bridge",
+        "Øresund Region"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "f6a5ddfde95977f3fa16d98e8681aae972ffb08ac56aa150fbbd5a3c39ab8acd",
+      "runtime_input_sha256": "8c58bce2ec312fe65423ba0410b242549ccb97f393475ee39f9e3a8ff2e0022f"
+    },
+    {
+      "question_id": "5adc398755429947ff173912",
+      "split": "development",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Callirhoe (plant)",
+        "Nothoscordum"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "614f9a3176047ea7a1aa189f087a5c06f776b804a8f0a8a3496c55baea4414e8",
+      "runtime_input_sha256": "d1e43bb0f642b45e025e59f01cfca69964afc3bcf9de58f86ad6ad21b1f5e096"
+    },
+    {
+      "question_id": "5a8e276b5542995a26add468",
+      "split": "development",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Incubus (band)",
+        "Swervedriver"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "553a721011d00c44fbe5d8d9f1ad3a7299e0b233bde8b3e27e778bcefe1d447b",
+      "runtime_input_sha256": "24f0eab8a14270dea1480c6fa571ac947f8efad9dc8f688112aa73bac8bb8c22"
+    },
+    {
+      "question_id": "5ae3d0bb5542990afbd1e1e5",
+      "split": "development",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Alex Band",
+        "Dee Dee Ramone"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "3b2770d1000e15a5967cd4c2c50ce93e9fdf8bd1a5889761780e42c0dfdb186c",
+      "runtime_input_sha256": "0eed3144f9718b2b9432d730c8c04eda05045e488c1553224595811c8d685d1f"
+    },
+    {
+      "question_id": "5a8ba9d255429971feec4759",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Battle of Okinawa",
+        "Camp Courtney"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "b3c2d0bb138160580a211d109a1644886f96a56e66690a0e0d34d836070a145e",
+      "runtime_input_sha256": "328a50bd926424d2e02048174dd5d8f80d3186daf033539c3ade6d35673ac1de"
+    },
+    {
+      "question_id": "5a7f1e805542993067513640",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "The Voyage that Shook the World",
+        "Young Earth creationism"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "21fbff6efc2cb3049e6d28f3374ae68b69d37a14f9822a2082f16ad11affa5c9",
+      "runtime_input_sha256": "a274b39d8f9ba1f38cfdbec237ee5dc80c9df9de919576391312828640308dc6"
+    },
+    {
+      "question_id": "5ae20e265542994d89d5b325",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "James G. Kiernan",
+        "Mary MacLane"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "6d166c51a818f95998ba9058552b09b2b9c527a66733d952a2a58c37d445fce6",
+      "runtime_input_sha256": "d837576f9f0d79991642022e3734e73c10e1da999c96636a1a35051319c0d98b"
+    },
+    {
+      "question_id": "5ac4e476554299076e296e34",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Brideville F.C.",
+        "The Liberties, Dublin"
+      ],
+      "supporting_fact_count": 4,
+      "source_row_sha256": "7a9c79336ea3be682531f5517a716cc04b3b2e7ac4da770a79f831cb40ca3be6",
+      "runtime_input_sha256": "024a64ee0a9cb84a7918eb8ab7000aa8bf8cac917455eb3883b517698184f213"
+    },
+    {
+      "question_id": "5ae72fd95542991e8301cbb4",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Newcastle Civic Centre",
+        "Olav V of Norway"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "7059dec4732a4982b006c4bf91ad6c4d1d2c634b982bc17063baf485b751061b",
+      "runtime_input_sha256": "bb2ff2be2c6840a2b9ddd37d927667cff6e88093fc2d7787d2de4de3b98fe9ec"
+    },
+    {
+      "question_id": "5a7e1a2955429965cec5ea5d",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Ninja Tune",
+        "The Cinematic Orchestra"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "2cc4479c250d0326909eeec66f0f51ab03dae856247982a7a98b4ca2e5793ec6",
+      "runtime_input_sha256": "f4c961858c551fe082ad5ca6504ee531792835e3b053b387e5125fcc21cd2d3a"
+    },
+    {
+      "question_id": "5ae4db9c55429908b6326492",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "2019 World Championships in Athletics",
+        "Khalifa International Stadium"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "4fa5434a9407e4be37c0dd2490ff1bdbdbec18e75051d161f831a1e57db9792d",
+      "runtime_input_sha256": "c41ab0e1a20ab8b4d67fec309f17224c2667a64da7c650d3b46e4d43969890a3"
+    },
+    {
+      "question_id": "5aba18ee5542994dbf0198b4",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Danilo Erricolo",
+        "IEEE Transactions on Antennas and Propagation"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "6e64915c4d5009e571d7bc625992202d78c28e473230a3ee533c3c0f6d4062b3",
+      "runtime_input_sha256": "52d1586bd86dd5d8399710fff06fa7c670fbaeb09829b5cd8043f7c734e526c8"
+    },
+    {
+      "question_id": "5abe9b095542991f661061ad",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Algiers",
+        "Numidia (TV channel)"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "2ebc5b33954ef1e569ad55a54705ab0cb21a9126c0120e2f5c6e44e56e719932",
+      "runtime_input_sha256": "4979f16db1a3224a863a522d9b08d3ba15a995512cfd83d3ee0703c4fea9b6ce"
+    },
+    {
+      "question_id": "5a7fc41455429969796c1b51",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Khia",
+        "Thug Misses"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "df23895c46fa369f9722da7f4f9385235b27f67fd2a87b3a0adcee2756597446",
+      "runtime_input_sha256": "78e63f4c8735642418773ca5473ec633cd03852e8705e051fe9cb8d3d33bd4ad"
+    },
+    {
+      "question_id": "5a7339c85542991f9a20c6a2",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Andrew Robb and David McIlwaine killings",
+        "County Armagh"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "3cf3647d35fcb0fdef3e02ca300eddaa08078d76f7097250dec75230a7e0acdf",
+      "runtime_input_sha256": "2ff5757f082abdd2800c88a079dc5feb373bb47fb221297cb15e6a555536e862"
+    },
+    {
+      "question_id": "5ae4cb2f55429960a22e01e8",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "J. D. Souther",
+        "Linda Ronstadt"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "923218bbb61cbc35021af37f88790867170b344409790cd70ee93d082508fec0",
+      "runtime_input_sha256": "11524bee69078cb6e8b8a3be5f4e1a4500bf63f8b042d122848011ce33ba4fcc"
+    },
+    {
+      "question_id": "5a7dc2495542997cc2c4749a",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "1984 South Asian Games",
+        "Julian Bolling"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "79353803e354281928e6deb6b7131ed6ee2421b70d4e84221230a0b8e66c8f61",
+      "runtime_input_sha256": "18abfab4ae843eb33f83ea103c6ea4a43bc9474a9c1bbcf5a93e3f52e6f9b8ad"
+    },
+    {
+      "question_id": "5ade04465542990dbb2f7f2f",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Nadeem Siddique",
+        "Sugar Ray Robinson"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "3cad549dc91f733203b1af5d91d7fd6ff45028a4407566a9f0c3f6aa1de41231",
+      "runtime_input_sha256": "b0d587b448f76d7b234769ff9f633ee000906be10ef8bc3e0a7b6f82ec5ced4d"
+    },
+    {
+      "question_id": "5ae7e9af5542994a481bbe0e",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Antonio Carmona Añorve",
+        "Mexicali"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "afb1c2c6881d20e3961882f91244221487f84cf7421583bfd66fedfc6ecba1d5",
+      "runtime_input_sha256": "76be8c26f64f8fea2c3b17b7e40048d53dd2493ee936a819d55153d20bca4502"
+    },
+    {
+      "question_id": "5adcbb815542994ed6169bde",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Beer Wars",
+        "Stone Brewing Co."
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "78c06f15add108aa9402a7c424adbe8756f51f9b99357947bbac660e76abf056",
+      "runtime_input_sha256": "a0b64eb3742af46a18273a3c94366c6b9524d537bda3266afb8d6bc7065a5dc1"
+    },
+    {
+      "question_id": "5ab5d43f5542997d4ad1f1f6",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Ignacy Jan Paderewski",
+        "Manru"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "7fa30ab1d6111ea93f9fc9016efc78ca3523d28492e8664cee3c16966270515a",
+      "runtime_input_sha256": "a5b13147b03a2325eda958ca1ca50bdfa35226e402858c670a253d9d26ca185a"
+    },
+    {
+      "question_id": "5ae4f8b755429960a22e0230",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Balvenie Castle",
+        "River Fiddich"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "818d76ed8af4d8dd499636dbd0684dea9195437bd972a04263285bfb37e779bb",
+      "runtime_input_sha256": "9c4fd8dfe5a3ab47c04a1c440fa493f8828b01fefbbc9da73f89cba67347eca0"
+    },
+    {
+      "question_id": "5ade15ae5542990dbb2f7f4c",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Domino Dancing",
+        "Introspective"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "fc9206772b1ba313317c8a86c2eebfed5d43114e18dbbf3bc1b13ab50780d0fd",
+      "runtime_input_sha256": "b555f320026c74bf20da6ebaab047b1f9c404ce41b5fcbdeb64fdb8123c65003"
+    },
+    {
+      "question_id": "5ab2a54b554299295394678e",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Bui Dam",
+        "Bui National Park"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "0a48936d283c1d4d7e7b0e79ebcb42546320e2f1651529613059679afed9114f",
+      "runtime_input_sha256": "82c7c6ef7c21bc6c0143eb0cd0bff933fc069230e006b0c6b92d7d983fc69414"
+    },
+    {
+      "question_id": "5adf9b1e5542992d7e9f93b5",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Boria Sax",
+        "Mercy College (New York)"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "2957b01cac314eb897200674e9a26f5194625d13b6ab7ef0f580bbbfa2417071",
+      "runtime_input_sha256": "445bd20c08eaa13e42756058404e32202504d3a487a5e185c340f7945e90833a"
+    },
+    {
+      "question_id": "5a7b782455429927d897bfd7",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Cecily Strong",
+        "Staten Island Summer"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "c3df71f7916dad33eab5f205ef6fcf691ea64c63ab07bbb594045139e24b1ec3",
+      "runtime_input_sha256": "22192f7eee283667e0e979cfb398a5976b419b13453c800c6047cb3100c77374"
+    },
+    {
+      "question_id": "5a8a2a5555429930ff3c0ccc",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Chris Summers (ice hockey)",
+        "Pittsburgh Penguins"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "f97e0ef2fa9e15200d78887d9b44a16ef81cb6ace3badf36b31a329f4420ca12",
+      "runtime_input_sha256": "bb31a11cacdf397d439f3c12968ddc9ff37619355e6c494d5e42d8cb7df2d868"
+    },
+    {
+      "question_id": "5ae701b2554299572ea54680",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Christian Gerhartsreiter",
+        "Frank Girardot"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "f64cac40b61ec7432d6af357cfb9a9889b36544cce3ff0b2168e81b1bc6605e5",
+      "runtime_input_sha256": "1f7634e8770dd5eaec7d8d107b9900cac67856fcba3dbab8ec9f12f8e6eb778d"
+    },
+    {
+      "question_id": "5adf5fa65542993a75d264db",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Dove Marine Laboratory",
+        "Newcastle University"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "21ec430c875bb0cbf95c2fdcfd60e31490e53d2a84df004c21a4c783e9b223c0",
+      "runtime_input_sha256": "f2184d14715c569054ecb72f088367ab707bfc0b4dff7bd46f3d1620a43eb9fa"
+    },
+    {
+      "question_id": "5a7326cb5542994cef4bc47f",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Princess of China",
+        "U.F.O. (Coldplay song)"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "40bfeb2e84e3a20639772b4cf1714353a7cc8aa0f486ace59d20f92cdcc2f6dd",
+      "runtime_input_sha256": "dc3cc3cc38cc0ba7273751407f8066f3473854cb3034935638641478e69fe548"
+    },
+    {
+      "question_id": "5ae08dad55429945ae9593b9",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Matt Lauer",
+        "Willie Geist"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "389f680800a65609c03802cb9e861a7778cc28d92ff27f907b31c84df7b2dfa9",
+      "runtime_input_sha256": "4f4c749b6952bad2c03998cb6a37e054a91e00420fcc06f9f4f245c8a92255cd"
+    },
+    {
+      "question_id": "5a87bada5542994846c1cddc",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Bell Labs",
+        "Ravi Sethi"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "cd37892abca1b3e6779d100c0718cfa1a8464099a027ed0440ed326644503b45",
+      "runtime_input_sha256": "1b8789428b15fba0f6d20cf508f1a5e0bd80ecb293a4a78916c3673d011186cf"
+    },
+    {
+      "question_id": "5a8b1a925542997f31a41c6e",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "The Deep Blue Sea (1955 film)",
+        "Tom Hiddleston"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "86dcf9d88d898c7c68720cb935c26778917e83ca490561f72a46f65a83f1a909",
+      "runtime_input_sha256": "0fb712fe108a110dff832767dc421c93a82e5a2510d43025383d0324c593ead3"
+    },
+    {
+      "question_id": "5a8c5c6f554299653c1aa04d",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Can't Fight the Moonlight",
+        "The Best of LeAnn Rimes"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "c3fbdfcfbf13f7d46ca1036130b9c67cb68eb209705314bd7a47449a3d1f8910",
+      "runtime_input_sha256": "edfb751ad899cc9ee8bfa6b388c982600b57c95d769446ee35639153f89e3346"
+    },
+    {
+      "question_id": "5a78a862554299148911f8fe",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Netrobalane canopus",
+        "Sudan"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "5282efecf056a4152fb128a8c22be1ea63bbb309067d66041972127d9668087e",
+      "runtime_input_sha256": "6cf68413dd33398933978a4cdacc5f93ecf4fe76886929789e81387f6165c952"
+    },
+    {
+      "question_id": "5a8e61165542995085b3741a",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Frank Augustus Miller",
+        "The Mission Inn Hotel &amp; Spa"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "0e40354a4ee6d448bbf15351170f25c00fb67e591d1fdbff34830d7839a4f624",
+      "runtime_input_sha256": "5388d7ad408dbec7e269d288fc6a1d16a05e614b780be1c3c330295f8048a096"
+    },
+    {
+      "question_id": "5abbeb7d554299114383a09b",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Oak Ridge National Laboratory",
+        "Pulsed Pressure Cavitation Technique"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "62c8343bc4aa9cb7e1ddfeaef34c843784178c8ab2e2ed7b36acfa519d13b848",
+      "runtime_input_sha256": "437d2abe58ab8ec8b3ebdd9b45a0542cf689cf9ea3558385580b4768e696bc9c"
+    },
+    {
+      "question_id": "5a7184675542994082a3e864",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Ford CD2 platform",
+        "Mazda Capella"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "2b94b0d9a361a8185457ef143c936a601588835c06d5d44d124a69ce0bd1c9a5",
+      "runtime_input_sha256": "1793eed98619069e18182f619757d15c2ea31c90c1fc5a58f81fcbb36fd0b337"
+    },
+    {
+      "question_id": "5a7dc3275542997cc2c4749c",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Kent Baer",
+        "UNLV Rebels football"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "8820a9cffe8a5faf049b3b050233838dcc9d0fed0ad10470768c5b8cb7197352",
+      "runtime_input_sha256": "0d5998330cf9954bab62bc72c300512108082ad76e3c3d21c99a33f01008ee66"
+    },
+    {
+      "question_id": "5ae22895554299495565da0c",
+      "split": "held_out",
+      "question_type": "bridge",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Battle of the Catalaunian Plains",
+        "Visigoths"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "220fe3295709be1d631ce1ebbb48cf52e647dc76ab923f5518f17026684b0cae",
+      "runtime_input_sha256": "b5ef1da8e6eb435f14b2bb97b2ddf229449c15a267faf4d289753250fa2f9b75"
+    },
+    {
+      "question_id": "5a734ca85542994cef4bc51b",
+      "split": "held_out",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Alhambra (board game)",
+        "Tsuro"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "92ad60e1247210e64ae3bdafc1910fc35f9bc6a575677dafd1cc104663100c19",
+      "runtime_input_sha256": "4b5f3c2449365aa50b65764156fe07a8d5683541ea76a5708edb87c89514f15a"
+    },
+    {
+      "question_id": "5ae1412a55429920d523434c",
+      "split": "held_out",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Atari ST",
+        "Prológica CP-400"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "b9414b3eccfeccff0ea6a12401a351f6c8ee40bc8704bf4191c66ffef55dfcec",
+      "runtime_input_sha256": "dc442e467839334284295e8625881c1671c31f3710665626cba8ad102e6b25eb"
+    },
+    {
+      "question_id": "5a8781b65542993e715abf8f",
+      "split": "held_out",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "David O. Russell",
+        "Tony Gatlif"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "6dbe0286b480614cc77ab43144e53ec49bdec7a45ed30a88b11025bfc91ee074",
+      "runtime_input_sha256": "2be0ac073a1cfb19d8d363164b52eb147d4d9824fcfe3e8a9f58543f69844b15"
+    },
+    {
+      "question_id": "5a7ae38c5542992d025e6721",
+      "split": "held_out",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Don O. Newland",
+        "Teinosuke Kinugasa"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "39eb4a19cdab92b8b8c638a6c41502d9bdd75a294f987a3d36a5544d2d7084e9",
+      "runtime_input_sha256": "1fb9023b430741ee4681c9f821a648cf5a0118630e8fb9be9b6caf01fef70067"
+    },
+    {
+      "question_id": "5ae4d3c95542990ba0bbb165",
+      "split": "held_out",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Eski Imaret Mosque",
+        "Nusretiye Clock Tower"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "c9649b5bd84e28f37479837c6716301ce0b477d4c4338c62b77ef54174aa3bab",
+      "runtime_input_sha256": "49a4adc1efa7831298f250213da8bb2d280aa06a49d8635e786e866a61b9c0f6"
+    },
+    {
+      "question_id": "5ae2120e5542997283cd23ad",
+      "split": "held_out",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Distortion Mirrors",
+        "OK Go"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "469b83aeaab23393ca79acd3911e611250ac516b90742a1946ddbf3e5936679a",
+      "runtime_input_sha256": "57d81dd285b593fe7e558edec7c043d2311a722c61dddf5bc3d974999244d277"
+    },
+    {
+      "question_id": "5a831fcc55429940e5e1a96a",
+      "split": "held_out",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Glenn Frey",
+        "Kurt Cobain"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "8a532b55bc33c2a851b0709ff741820bfbee2ab0cc7bdfaa3bf87cc14134e6fc",
+      "runtime_input_sha256": "c937206193e6a0b28dcdad28a99df1f850fcd69493a74fed7890bb8f1bcf7446"
+    },
+    {
+      "question_id": "5adcd9fe5542990d50227d46",
+      "split": "held_out",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Carlina",
+        "Dieffenbachia"
+      ],
+      "supporting_fact_count": 2,
+      "source_row_sha256": "69321ea3369288ec7dc64d9ca4d284752860fdc9105b20cfb3c74f166844e5d0",
+      "runtime_input_sha256": "4c46325287264a73e3af09b70e6593b807ab365d90573704f2360980b4149ee9"
+    },
+    {
+      "question_id": "5a81456855429938b614231e",
+      "split": "held_out",
+      "question_type": "comparison",
+      "level": "hard",
+      "context_document_count": 10,
+      "supporting_document_titles": [
+        "Old Dominion University",
+        "Valparaiso University"
+      ],
+      "supporting_fact_count": 3,
+      "source_row_sha256": "5925d3e9d38e36da2c4f08a06f08168ad7c45bf81a8646778505d7580348d3f8",
+      "runtime_input_sha256": "ce13efe88de769e5e741dcc39df6721cc3eee6010c42b369b660b968659d9eaf"
+    }
+  ]
+}

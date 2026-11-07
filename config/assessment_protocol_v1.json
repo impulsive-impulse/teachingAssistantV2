@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "protocol_id": "assessment_context_v1",
+  "status": "protocol_frozen_pipeline_selection_pending",
+  "benchmark": {
+    "name": "HotpotQA",
+    "original_version": "hotpot_dev_distractor_v1",
+    "setting": "distractor",
+    "original_split": "development",
+    "homepage": "https://hotpotqa.github.io/",
+    "paper": "https://aclanthology.org/D18-1259/",
+    "original_url": "http://curtis.ml.cmu.edu/datasets/hotpot/hotpot_dev_distractor_v1.json",
+    "mirror_repository": "hotpotqa/hotpot_qa",
+    "mirror_revision": "1908d6afbbead072334abe2965f91bd2709910ab",
+    "mirror_path": "distractor/validation-00000-of-00001.parquet",
+    "download_url": "https://huggingface.co/datasets/hotpotqa/hotpot_qa/resolve/1908d6afbbead072334abe2965f91bd2709910ab/distractor/validation-00000-of-00001.parquet",
+    "format": "huggingface_hotpotqa_parquet",
+    "size_bytes": 27452575,
+    "sha256": "c20b638ca82b21d04fe12e14ff417ad05153d4d215a65de54497fca4e972f7c6",
+    "expected_rows": 7405,
+    "dataset_license": "CC-BY-SA-4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "license_evidence": "https://raw.githubusercontent.com/hotpotqa/hotpot/3635853403a8735609ee997664e1528f4480762a/README.md"
+  },
+  "selection": {
+    "seed": 1729,
+    "hash_namespace": "sarvam-context-v1",
+    "ordering": "sha256(namespace:seed:question_id), then question_id",
+    "context_document_count": 10,
+    "support_document_count": 2,
+    "disjoint_context_titles": true,
+    "splits": {
+      "development": {
+        "bridge": 12,
+        "comparison": 3
+      },
+      "held_out": {
+        "bridge": 36,
+        "comparison": 9
+      }
+    },
+    "necessity_review": "reports/assessment_protocol_v1/necessity_review.json",
+    "manifest": "data/benchmarks/assessment_protocol_v1/selection_manifest.json"
+  },
+  "runtime_boundary": {
+    "allowed_input_fields": ["id", "question", "context"],
+    "forbidden_input_fields": ["answer", "supporting_facts", "type", "level", "necessity_review"],
+    "corpus_scope": "the same ten original context paragraphs for each question",
+    "document_unit": "one distinct Wikipedia article title, not a sentence or chunk",
+    "labels_available_at_runtime": false,
+    "history_available_at_runtime": false,
+    "shuffle_context": "stable hash order independent of supporting facts"
+  },
+  "comparison_arms": [
+    {
+      "id": "dense_top_k",
+      "role": "standard_baseline",
+      "definition": "Normalized dense similarity; relevance-only selection and packing."
+    },
+    {
+      "id": "hybrid_rrf",
+      "role": "standard_baseline",
+      "definition": "BM25 and dense reciprocal-rank fusion; relevance-only selection and packing."
+    },
+    {
+      "id": "proposed",
+      "role": "proposed_method",
+      "definition": "Development-selected multi-document selection and metadata-preserving context assembly."
+    },
+    {
+      "id": "without_cross_document_selection",
+      "role": "ablation",
+      "definition": "Remove only the proposed cross-document selection component; hold other settings fixed."
+    }
+  ],
+  "retrieval_only_reference": "bm25",
+  "shared_constraints": {
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "embedding_revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "generator": "gpt-4o-2024-08-06",
+    "provider": "openai",
+    "temperature": 0,
+    "max_output_tokens": 768,
+    "context_token_budget": 1024,
+    "context_tokenizer": "o200k_base",
+    "context_budget_includes": "evidence text and its document/location headings",
+    "shared_prompt_and_claim_citation_schema": true,
+    "shared_chunking_and_candidate_corpus": true,
+    "sdk_retries": 0,
+    "paid_judge_enabled": false
+  },
+  "metrics": {
+    "primary": "complete_supporting_document_recall",
+    "primary_definition": "Fraction of questions for which the packed context retains evidence from both annotated supporting documents.",
+    "context_secondary": [
+      "supporting_document_precision",
+      "supporting_document_recall",
+      "supporting_fact_context_precision",
+      "supporting_fact_context_recall",
+      "complete_supporting_fact_context_recall",
+      "context_tokens"
+    ],
+    "answer_and_grounding": [
+      "answer_em",
+      "answer_f1",
+      "supporting_fact_em",
+      "supporting_fact_f1",
+      "joint_em",
+      "joint_f1",
+      "citation_location_validity",
+      "factual_claim_citation_completeness",
+      "manually_reviewed_citation_support",
+      "invalid_output_rate",
+      "false_abstention_rate"
+    ],
+    "operational": [
+      "retrieval_latency_ms",
+      "generation_latency_seconds",
+      "input_tokens",
+      "output_tokens",
+      "paid_attempt_count",
+      "actual_api_cost"
+    ],
+    "scorer": {
+      "url": "https://raw.githubusercontent.com/hotpotqa/hotpot/3635853403a8735609ee997664e1528f4480762a/hotpot_evaluate_v1.py",
+      "upstream_commit": "3635853403a8735609ee997664e1528f4480762a",
+      "sha256": "d35fc91a6db21d791dbdda11daf3856e9359f5701d54e3eefba20d88fecc02c0",
+      "code_license": "Apache-2.0",
+      "answer_prediction": "short_answer, not the entire explanatory prose",
+      "support_prediction": "union of the title/sentence pairs cited by the answer claims",
+      "custom_metrics_must_be_labeled": true
+    }
+  },
+  "analysis": {
+    "denominator": "all selected questions, including provider and validation failures",
+    "invalid_answer_prediction": "",
+    "invalid_support_prediction": [],
+    "no_final_question_replacement": true,
+    "no_held_out_tuning": true,
+    "paired_comparisons": true,
+    "bootstrap_resamples": 10000,
+    "bootstrap_seed": 1729,
+    "confidence_level": 0.95,
+    "stratify_by_question_type": true,
+    "claim_rule": "Report paired gains against both standard baselines, support-fact and answer tradeoffs, and uncertainty; a non-positive gain is an unmet requirement, not grounds to replace losing questions.",
+    "manual_claim_review_counts": {
+      "development": {"bridge": 4, "comparison": 1},
+      "held_out": {"bridge": 8, "comparison": 2}
+    },
+    "manual_claim_review_ordering": "sha256(namespace:claim-review:seed:question_id), then question_id",
+    "manual_claim_review": "Same preselected question IDs across all arms, blinded arm names, recorded support/completeness rubric; no paid judge by default."
+  },
+  "paid_call_budget": {
+    "maximum_attempts": 500,
+    "development": 60,
+    "final_evaluation": 180,
+    "fresh_final_rerun": 180,
+    "contingency": 80,
+    "counts_failed_and_retried_requests": true,
+    "reserve_final_and_rerun_before_exploration": true,
+    "identical_requests_may_reuse_cached_outputs": true,
+    "cached_report_rebuild_attempts": 0,
+    "monetary_ceiling": null,
+    "cost_estimate_required_before_execution": true
+  },
+  "limits": [
+    "This is a filtered 60-question subset of the public development set, not the official hidden test set or leaderboard.",
+    "Each question is bounded to ten original paragraphs; full-Wikipedia retrieval and growing-corpus scalability are not established.",
+    "Necessity review is source-based eligibility screening, not evidence that a pretrained model cannot guess or memorize an answer.",
+    "Held-out questions are held out from pipeline tuning, not unseen to the eligibility reviewer.",
+    "Article titles and sentence annotations are used for evaluation; valid locations alone do not establish semantic citation support.",
+    "Short reference answers and imperfect annotations can undercount correct paraphrases; retain raw predictions and honest error analysis.",
+    "Algorithm-specific settings and the proposed selector remain to be selected on development data and frozen in T11."
+  ]
+}
