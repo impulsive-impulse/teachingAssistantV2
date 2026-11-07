@@ -64,3 +64,35 @@ model inference unless their documentation explicitly says otherwise.
 - `resume_verified_download.py` and `parallel_verified_download.py`: resume an
   explicitly approved artifact with strict range, byte-boundary, and SHA-256
   checks. Model data remains under Git-ignored `app_data`.
+# Assessment execution
+
+Use the hash-locked `.venv-assessment` after the setup in
+`requirements/README.md`. Fresh generation is **explicitly paid**, uses the
+frozen GPT-4o snapshot, disables SDK retries, and reserves attempts in a durable
+SQLite ledger before dispatch. Maximum: 500 attempts, including failures and
+abandoned reservations. The conservative token-based ceiling is $14.08 at the
+recorded prices, not an invoice or a monetary authorization.
+
+```powershell
+.\.venv-assessment\Scripts\python.exe scripts\evaluate_assessment.py --fresh --phase development --output app_data\assessment\runs\development-v1
+.\.venv-assessment\Scripts\python.exe scripts\evaluate_assessment.py --cached --output app_data\assessment\runs\development-v1
+```
+
+Fresh mode acquires/verifies public inputs, builds or verifies the shared
+index, retains raw outputs for all four arms, and scores the complete split.
+An existing owned output directory resumes the **same** run. Use a new output
+directory for fresh inference. Identical requests can reuse results within
+one run only (the bypass ablation matches hybrid). Final phases refuse a
+development-status pipeline. Global provider errors retain their raw failure
+and stop, rather than spending the remaining allowance.
+
+Cached mode reads saved references, source snapshots, contexts and raw outputs.
+It performs no model loading, retrieval, provider calls or source downloads.
+The installed Python dependencies and public, hash-verified tokenizer cache
+remain required; no private embedding/model cache or API key is required.
+Missing rows, modified checksums and incomplete question denominators fail.
+Costs with missing provider usage are reported as unknown, not zero.
+
+For the reserved clean-clone rerun, pass `--phase fresh_final_rerun`, a new
+output directory, and `--ledger X:\teachingAssistantV2\app_data\assessment\call_ledger.sqlite`.
+The original allowance must be shared; a new checkout is not a new budget.

@@ -302,3 +302,22 @@ default schema or frozen model/limits; a missing terminal response is an error.
 The quoted lexical screen is not a semantic-entailment guarantee. T12's
 preselected source-review packet audits that separate property. Twenty-three
 focused new/legacy generation checks passed; no paid calls or pushes.
+
+## T10 implementation checkpoint
+
+Accounting was completed before online collection exposure. The persistent
+ledger reserves every attempt atomically, includes failures/abandoned work,
+enforces 60/180/180/80 phase caps and the global 500 ceiling, and cannot silently
+reset an existing approval. SDK retries are disabled. Provider failures retain
+partial raw output and safe error types/statuses, not exception strings.
+
+The explicit fresh runner verifies/ingests public inputs, executes all four
+arms, persists source/context/raw output, includes invalid results, and resumes
+only the same cohort/config/run. Identical hybrid/ablation requests reuse only
+within a run. A new run never reuses an earlier final response.
+
+Cached scoring reads saved raw artifacts and the prepared public tokenizer,
+with no retrieval, model loading or provider dispatch. Seven focused accounting/
+replay checks passed; a complete 15-question/four-arm mock-generator run also
+saved 60 rows and rebuilt an identical report. That mock run is only wiring
+evidence, not evaluation data. No real paid calls or pushes have been made.
