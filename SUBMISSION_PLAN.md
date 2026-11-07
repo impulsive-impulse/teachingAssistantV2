@@ -1,6 +1,7 @@
 # Assessment submission gap plan
 
-Status: T01 completed and approved by the user for commit/push. T02-T16 have
+Status: T01 committed and published. T02 completed and reviewed;
+the user authorized its commit and will push manually. T03-T16 have
 not started. Each subsequent task stops at the review boundary with an
 interview-focused explanation; no automatic commits or pushes.
 
@@ -148,3 +149,15 @@ estimated spend is unacceptable. A call count alone does not guarantee low cost.
 - Private submission repository destination and authorization to change/share it.
 - Per-task review and authorization before committing/pushing on main.
 - Whether the walkthrough will be recorded or live.
+
+## T02 implementation review boundary
+
+The input/environment task is complete. `requirements/README.md` records the
+one-command setup, supported Windows/x64 Python profile, public source
+identities, authorized-only PDF import, and clean-clone verification.
+
+The implementation also fixes the application model downloader: it now
+acquires the exact 11-file frozen BGE snapshot rather than every upstream file.
+The existing single-book runtime and historical research remain unchanged.
+No paid model calls were made. The user approved the T02 review and authorized
+its commit; pushing remains their responsibility. T03 has not started.

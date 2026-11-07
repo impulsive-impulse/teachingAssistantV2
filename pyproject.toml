@@ -19,6 +19,13 @@ dependencies = [
 [project.optional-dependencies]
 assessment = [
   "pyarrow==25.0.0",
+  "tiktoken==0.14.0",
+  "ujson==6.0.0",
+]
+dev = [
+  "pytest==9.0.3",
+  "setuptools==83.0.0",
+  "wheel==0.48.0",
 ]
 app = [
   "fastapi>=0.115,<1",
@@ -74,6 +81,7 @@ openai-generation-experiment = "textbook_audit.openai_generation:main"
 openai-generation-report = "textbook_audit.openai_generation_report:main"
 manage-generation-baseline-v1 = "textbook_audit.generation_baseline:main"
 assessment-protocol = "textbook_audit.assessment_protocol:main"
+assessment-assets = "textbook_audit.assessment_assets:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -71,6 +71,63 @@ def test_setup_reuses_verified_snapshot_without_download(tmp_path: Path) -> None
     assert versions == set(range(1, SCHEMA_VERSION + 1))
 
 
+def test_setup_download_uses_shared_inventory_and_custom_app_cache(tmp_path: Path) -> None:
+    from textbook_audit.assessment_assets import AssetProgress
+
+    database = Database(tmp_path / "app.db")
+    database.initialize()
+    repository = ModelSetupRepository(database)
+    registry = EmbeddingArtifactRegistry(settings(tmp_path))
+    coordinator = ModelSetupCoordinator(repository, registry, FakeIngestion())
+    job = repository.create(ModelSetupCoordinator.EMBEDDING_COMPONENT)
+    snapshot = registry.application_cache / registry.repository_cache_name / "snapshots" / registry.revision
+
+    def prepare(root, *, directory, progress):
+        assert root == ROOT
+        assert directory == snapshot
+        progress(AssetProgress("model.safetensors", 100, 23, 100))
+        return {"downloaded_bytes": 23, "size_bytes": 100}
+
+    try:
+        with (
+            patch("textbook_audit.assessment_assets.prepare_embedding", side_effect=prepare) as shared,
+            patch.object(registry, "verify_path") as verify,
+        ):
+            assert coordinator._download(job["id"]) == 23
+    finally:
+        coordinator.shutdown()
+    shared.assert_called_once()
+    verify.assert_called_once_with(snapshot)
+    current = repository.get(job["id"])
+    assert current is not None
+    assert current["stage"] == "verifying_checksum"
+    assert current["downloaded_bytes"] == 23
+
+
+def test_setup_integrity_failure_is_durable_and_does_not_resume_ingestion(tmp_path: Path) -> None:
+    database = Database(tmp_path / "app.db")
+    database.initialize()
+    repository = ModelSetupRepository(database)
+    registry = EmbeddingArtifactRegistry(settings(tmp_path))
+    ingestion = FakeIngestion()
+    coordinator = ModelSetupCoordinator(repository, registry, ingestion)
+    job = repository.create(ModelSetupCoordinator.EMBEDDING_COMPONENT)
+    try:
+        with (
+            patch.object(registry, "discover", return_value=None),
+            patch("textbook_audit.assessment_assets.prepare_embedding", side_effect=ValueError("pinned checksum failed")),
+        ):
+            coordinator._run_embedding_setup(job["id"])
+    finally:
+        coordinator.shutdown()
+    current = repository.get(job["id"])
+    assert current is not None
+    assert current["state"] == "failed"
+    assert current["error_code"] == "embedding_setup_failed"
+    assert "pinned checksum failed" in current["internal_detail"]
+    assert ingestion.resume_calls == 0
+
+
 def test_opencl_setup_reuses_shared_qwen_and_downloads_only_runtime(tmp_path: Path) -> None:
     database = Database(tmp_path / "app.db")
     database.initialize()

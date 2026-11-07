@@ -1,0 +1,20 @@
+# Tested Windows x64 / CPython 3.12 CPU profile.
+# Compile the dependency lock from pyproject.toml; never use a private index.
+numpy==2.5.1
+pypdf==6.14.2
+psutil==7.2.2
+PyYAML==6.0.3
+sentence-transformers==5.6.0
+transformers==5.13.1
+huggingface-hub==1.23.0
+fastapi==0.139.2
+uvicorn==0.51.0
+httpx==0.28.1
+openai==2.46.0
+pyarrow==25.0.0
+tiktoken==0.14.0
+ujson==6.0.0
+pytest==9.0.3
+setuptools==83.0.0
+wheel==0.48.0
+torch @ https://download-r2.pytorch.org/whl/cpu/torch-2.13.0%2Bcpu-cp312-cp312-win_amd64.whl#sha256=a8b450c1e58e5800e5b4691dac412f8d2d65a1dc3298166f91596603a3531e6f

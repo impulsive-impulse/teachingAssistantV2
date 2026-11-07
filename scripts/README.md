@@ -13,6 +13,12 @@ these canonical commands over importing experiment internals directly.
 
 ## Corpus and benchmarks
 
+- `setup_assessment.py`: create the dedicated hash-locked Windows x64/Python
+  3.12 CPU environment, acquire inputs, and exercise the real encoder/token
+  counter offline; optionally build the frontend. No paid model calls.
+- `prepare_assessment_assets.py`: acquire exact public benchmark/model/tokenizer/
+  scorer inputs or recheck them with `--check`; demo books require both an
+  explicit local source directory and authorization. See `requirements/README.md`.
 - `build_assessment_protocol.py`: build/verify the pinned, source-reviewed
   HotpotQA subset; `--check` is read-only and `--preview` cannot freeze
   unreviewed questions. Does not run a model or acquire data.

@@ -15,6 +15,10 @@ matching report directory. Do not silently edit v1.
   selection, shared comparison constraints, metrics, ablation, and 500-call
   reservations. This is a new evaluation track, not a change to the frozen
   textbook profiles. Algorithm selection and measured results remain pending.
+- `assessment_assets_v1.json`: curated input inventory for the assessment setup:
+  exact BGE files, explicit tokenizer cache, official scorer/license, and
+  permission-gated local demo-book imports. Benchmark/model identities frozen
+  elsewhere remain authoritative. See `requirements/README.md`.
 
 ## Historical experiment configurations
 

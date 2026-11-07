@@ -117,13 +117,13 @@ class ModelSetupCoordinator:
                 )
                 self.ingestion.resume_waiting()
                 return
-            self._download(job_uuid)
+            downloaded_bytes = self._download(job_uuid)
             verified = self.registry.discover()
             if not verified:
                 raise RuntimeError("download completed but no verified frozen snapshot was found")
             self.repository.update(
                 job_uuid, state="completed", stage="verified", progress=1,
-                downloaded_bytes=verified.size_bytes, total_bytes=verified.size_bytes,
+                downloaded_bytes=downloaded_bytes, total_bytes=verified.size_bytes,
                 user_message="Pinned BGE model downloaded and verified.", terminal=True,
             )
             self.ingestion.resume_waiting()
@@ -136,45 +136,28 @@ class ModelSetupCoordinator:
                 terminal=True,
             )
 
-    def _download(self, job_uuid: str) -> None:
-        """Download each file at the exact commit; Hub cache resumes partial files."""
+    def _download(self, job_uuid: str) -> int:
+        """Use the exact frozen inventory, not extra ONNX/pickle repository files."""
+        from textbook_audit.assessment_assets import AssetProgress, prepare_embedding
 
-        try:
-            from huggingface_hub import HfApi, hf_hub_download, hf_hub_url
-            from huggingface_hub.file_download import get_hf_file_metadata
-        except ImportError as exc:
-            raise RuntimeError("huggingface-hub is not installed") from exc
-
-        api = HfApi()
-        files = sorted(api.list_repo_files(self.registry.model_name, revision=self.registry.revision))
-        sizes: dict[str, int] = {}
-        for filename in files:
-            metadata = get_hf_file_metadata(
-                hf_hub_url(self.registry.model_name, filename, revision=self.registry.revision)
-            )
-            sizes[filename] = int(metadata.size or 0)
-        total = sum(sizes.values())
-        downloaded = 0
-        for index, filename in enumerate(files, 1):
-            self.repository.update(
-                job_uuid, state="running", stage="downloading", progress=0.10 + 0.80 * (index - 1) / max(len(files), 1),
-                downloaded_bytes=downloaded, total_bytes=total,
-                user_message=f"Downloading pinned embedding model file {index} of {len(files)}.",
-            )
-            path = Path(hf_hub_download(
-                repo_id=self.registry.model_name,
-                filename=filename,
-                revision=self.registry.revision,
-                cache_dir=self.registry.application_cache,
-            ))
-            downloaded += path.stat().st_size
         snapshot = self.registry.application_cache / self.registry.repository_cache_name / "snapshots" / self.registry.revision
+
+        def report(event: AssetProgress) -> None:
+            self.repository.update(
+                job_uuid, state="running", stage="downloading",
+                progress=0.10 + 0.80 * event.processed_bytes / event.total_bytes,
+                downloaded_bytes=event.downloaded_bytes, total_bytes=event.total_bytes,
+                user_message=f"Preparing pinned embedding file: {event.filename}",
+            )
+
+        result = prepare_embedding(self.registry.settings.root, directory=snapshot, progress=report)
         self.repository.update(
             job_uuid, state="running", stage="verifying_checksum", progress=0.94,
-            downloaded_bytes=downloaded, total_bytes=total,
+            downloaded_bytes=result["downloaded_bytes"], total_bytes=result["size_bytes"],
             user_message="Verifying the frozen model snapshot checksum.",
         )
         self.registry.verify_path(snapshot)
+        return result["downloaded_bytes"]
 
     def _run_offline_setup(self, job_uuid: str) -> None:
         try:

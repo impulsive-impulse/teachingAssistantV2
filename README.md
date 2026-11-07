@@ -117,6 +117,13 @@ for the benchmark source/license, reproducible 15/45 development/held-out split,
 baselines, metrics, ablation, and 500-call budget. The existing textbooks remain
 the demonstration corpus, not a substitute for the open benchmark.
 
+T02 adds a dedicated, hash-pinned Windows x64/Python 3.12 CPU setup and explicit
+verified input acquisition. See the
+[assessment setup guide](requirements/README.md) for the one-command bootstrap,
+public sources, licensing, authorized PDF imports, and offline readiness checks.
+It prepares inputs without making paid model calls; multi-document behavior and
+evaluation remain subsequent tasks.
+
 ## Build and run
 
 Requirements:

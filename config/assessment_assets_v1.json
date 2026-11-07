@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "asset_profile_id": "assessment_assets_v1",
+  "protocol_file": "config/assessment_protocol_v1.json",
+  "benchmark": {
+    "path": "data/retrieval/cache/assessment_protocol_v1/hotpotqa-validation.parquet",
+    "identity_source": "assessment_protocol_v1.benchmark"
+  },
+  "embedding": {
+    "repository": "BAAI/bge-small-en-v1.5",
+    "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "directory": "app_data/models/embeddings/models--BAAI--bge-small-en-v1.5/snapshots/5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+    "license": "MIT",
+    "license_evidence": "README.md",
+    "expected_file_count": 11,
+    "expected_size_bytes": 134505940,
+    "expected_identity_sha256": "a76ed7f34fddfec52b0d6f9829f767fb2bcf1a05540e272b4ceb2e0081d846b4",
+    "files": [
+      {"path": "1_Pooling/config.json", "size_bytes": 190, "sha256": "d1caf60c96f5fba2157c0c26b76d80818fad6cf0b8eb5e73ec372ff9818eba5c"},
+      {"path": "README.md", "size_bytes": 94783, "sha256": "ddb964361a55c6e5dfca6361615854b260c9c960205d04c7520151aaa1d75837"},
+      {"path": "config.json", "size_bytes": 743, "sha256": "094f8e891b932f2000c92cfc663bac4c62069f5d8af5b5278c4306aef3084750"},
+      {"path": "config_sentence_transformers.json", "size_bytes": 124, "sha256": "940d5f50db195fa6e5e6a4f122c095f77880de259d74b14a65779ed48bdd7c56"},
+      {"path": "model.safetensors", "size_bytes": 133466304, "sha256": "3c9f31665447c8911517620762200d2245a2518d6e7208acc78cd9db317e21ad"},
+      {"path": "modules.json", "size_bytes": 349, "sha256": "84e40c8e006c9b1d6c122e02cba9b02458120b5fb0c87b746c41e0207cf642cf"},
+      {"path": "sentence_bert_config.json", "size_bytes": 52, "sha256": "84e39fda68ccbff05bfa723ae9c0e70e23e2ec373b76e0f8c6e71af72a693cbf"},
+      {"path": "special_tokens_map.json", "size_bytes": 125, "sha256": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3"},
+      {"path": "tokenizer.json", "size_bytes": 711396, "sha256": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"},
+      {"path": "tokenizer_config.json", "size_bytes": 366, "sha256": "9261e7d79b44c8195c1cada2b453e55b00aeb81e907a6664974b4d7776172ab3"},
+      {"path": "vocab.txt", "size_bytes": 231508, "sha256": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"}
+    ]
+  },
+  "context_tokenizer": {
+    "name": "o200k_base",
+    "url": "https://openaipublic.blob.core.windows.net/encodings/o200k_base.tiktoken",
+    "size_bytes": 3613922,
+    "sha256": "446a9538cb6c348e3516120d7c08b09f57c36495e2acfffe59a5bf8b0cfb1a2d",
+    "cache_directory": "app_data/models/tokenizers",
+    "cache_key": "fb374d419588a4632f3f557e76b4b70aebbca790",
+    "license": "MIT",
+    "license_evidence": "https://github.com/openai/tiktoken/blob/0.14.0/LICENSE"
+  },
+  "evaluator": {
+    "directory": "data/retrieval/cache/assessment_protocol_v1/evaluator",
+    "script": {
+      "path": "hotpot_evaluate_v1.py",
+      "size_bytes": 4257,
+      "identity_source": "assessment_protocol_v1.metrics.scorer"
+    },
+    "license": {
+      "path": "LICENSE.txt",
+      "url": "https://raw.githubusercontent.com/hotpotqa/hotpot/3635853403a8735609ee997664e1528f4480762a/LICENSE.txt",
+      "size_bytes": 11338,
+      "sha256": "9c264489d021e5905c0544f75e292c63f78dca56acd2aec395dd36dcc41940c7"
+    }
+  },
+  "demo_books": {
+    "publisher": "Government of Telangana",
+    "edition": "2025-26",
+    "publisher_portal": "https://scert.telangana.gov.in/",
+    "identity_manifest": "reports/retrieval_baseline_v1/manifest.json",
+    "copyright_notice_pdf_page": 4,
+    "permission_required": true,
+    "automatic_download": false,
+    "books": {
+      "biology": {"filename": "X Biology EM 2025-26.pdf", "page_count": 257},
+      "physical_sciences": {"filename": "X Physics EM 2025-26.pdf", "page_count": 327}
+    }
+  },
+  "readiness_report": "app_data/assessment/input_readiness.json"
+}
