@@ -2,8 +2,9 @@
 
 Marginalia is a Windows-local chat application for asking grounded questions
 about uploaded English textbooks. A user adds a digitally generated PDF, waits
-for validation and indexing, selects that book, and starts independent
-book-scoped conversations.
+for validation and indexing, and starts independent book chats or selects a
+collection to ask across documents. The additive assessment context layer is
+evaluated separately on an open multi-document benchmark.
 
 The application is built on the project's frozen research decisions:
 
@@ -105,60 +106,155 @@ For deeper details, see [the UX plan](docs/UX_PLAN.md),
 [application development guide](docs/APP_DEVELOPMENT.md), and
 [repository guide](docs/REPOSITORY_GUIDE.md).
 
-## Assessment track (in progress)
+## Assessment context layer
 
-The existing application remains single-book scoped. A separate
-[submission plan](SUBMISSION_PLAN.md) tracks the multi-document extension.
-T01 has frozen a source-reviewed HotpotQA distractor subset and fair comparison
-rules; it has not yet produced multi-document answer-generation results.
+Start with [DESIGN.md](DESIGN.md) for architecture and tradeoffs,
+[EVAL.md](EVAL.md) for all measured results/failures, and
+[SUBMISSION_PLAN.md](SUBMISSION_PLAN.md) for task/readiness boundaries.
+The new layer provides collection-scoped source retrieval, document-aware
+evidence allocation, exact token packing, claim quotations and source navigation.
+It preserves the historical single-book profiles.
 
-See [Assessment Context Protocol v1](reports/assessment_protocol_v1/README.md)
-for the benchmark source/license, reproducible 15/45 development/held-out split,
-baselines, metrics, ablation, and 500-call budget. The existing textbooks remain
-the demonstration corpus, not a substitute for the open benchmark.
+On the frozen 45-question HotpotQA distractor cohort, complete-document context
+recall is **97.78% proposed / 88.89% dense / 80.00% hybrid**. The primary paired
+coverage gain is positive. Answer F1 is 64.20% / 61.06% / 51.02%; the gain over
+dense is uncertain and proposed invalid output is 26.67%. A genuine fresh
+clean-clone rerun is retained separately. These are small-subset results, not
+leaderboard scores or proof of semantic reliability.
 
-T02 adds a dedicated, hash-pinned Windows x64/Python 3.12 CPU setup and explicit
-verified input acquisition. See the
-[assessment setup guide](requirements/README.md) for the one-command bootstrap,
-public sources, licensing, authorized PDF imports, and offline readiness checks.
-It prepares inputs without making paid model calls; multi-document behavior and
-evaluation remain subsequent tasks.
+**Demo boundary:** two real PDF questions have source-reviewed answers through
+the authorized online path, one generated and one explicitly labeled zero-call
+adapter replay. Local Qwen remains unreliable; two fresh successes under the
+final PDF adapter are not established. Valid addresses alone are not completion.
+Private reviewer access, rights review and the walkthrough remain separate
+handoff work; no blanket submission-ready claim is made.
 
-T03 introduces [shared source provenance](docs/SOURCE_PROVENANCE.md): stable
-document/content identities, exact physical PDF page and benchmark sentence
-locations, and source maps that survive chunking, context assembly, clipping,
-and persistence. The new path omits unverified printed-page labels and resolves
-citations only to retained source text. It is a versioned foundation, not yet
-collection chat or claim-level synthesis; the legacy application remains intact.
+### Reproducible assessment setup
 
-T04 adds immutable source records, fingerprinted collection membership, and a
-shared index that searches all selected documents together. Saved indexes and
-retrieval snapshots verify their source maps, corpus, model/profile, and vector
-identities. Collection API/UI wiring remains T09; existing book-bound chats
-are preserved.
+Use Windows x64 CPython **3.12** installed outside the checkout (tested 3.12.10),
+a short checkout/environment path (at most 60 characters), Git and Node/npm.
+Native Windows ARM64 is additionally required for the currently pinned local
+Qwen/llama.cpp demo; the open benchmark does not need that offline runtime.
 
-T05 adds shared ingestion for the frozen benchmark and the authorized PDF demo.
-Runtime questions and source indexes live separately from evaluation answers
-and supporting-fact labels. Both corpora use the same document/span contracts
-and collection index; benchmark paragraphs do not pass through textbook-only
-PDF suitability rules.
+```powershell
+git -c core.longpaths=true clone --config core.longpaths=true https://github.com/impulsive-impulse/teachingAssistantV2.git C:\src\teachingAssistantV2
+Set-Location C:\src\teachingAssistantV2
+& "C:\Python312\python.exe" scripts\setup_assessment.py --frontend
+.\.venv-assessment\Scripts\python.exe scripts\ingest_assessment.py
+.\.venv-assessment\Scripts\python.exe scripts\ingest_assessment.py --check
+```
 
-T06 supplies standard dense top-k, BM25, and unweighted BM25+dense RRF references,
-an exact 1,024-token evidence packer, and the pinned official HotpotQA scorer.
-Custom context/fact coverage and paired stratified bootstrap intervals are
-separate from official answer/support metrics. Development-only measurements
-do not constitute final results or answer-generation gains.
+Replace the Python path with your separately installed x64 interpreter. The
+hash-locked setup prepares exact public benchmark/BGE/tokenizer/scorer inputs,
+uses no `temp` runtime/private cache, and makes no paid call. The original LFS
+recording is optional, not an evaluation input. See
+[requirements/README.md](requirements/README.md) for exact revisions/hashes,
+restricted-network caches, edition checks and environment troubleshooting.
 
-T07 adds a query-local source-unit allocator with document-title links and
-round-robin budget allocation. Its parameters were selected on development
-questions only. The named ablation bypasses this component and uses the exact
-standard hybrid context; no gold support labels enter selection.
+### Collections: authorized sources, API and CLI
 
-T08 adds a versioned claim-only synthesis contract. Answered outputs require
-non-empty cited claims, exact quotations from retained source units, and
-resolvable document/location pairs. Numeric and lexical screens reject obvious
-unsupported claims; semantic support still requires the recorded source-review
-rubric rather than being inferred from valid addresses alone.
+Only with permission covering local indexing/demonstration of the exact
+2025-26 editions:
+
+```powershell
+.\.venv-assessment\Scripts\python.exe scripts\prepare_assessment_assets.py `
+  --demo-books-dir "D:\AuthorizedTextbooks" --authorized-demo-use
+.\.venv-assessment\Scripts\python.exe scripts\ingest_assessment.py --demo --authorized-demo-use
+.\.venv-assessment\Scripts\python.exe scripts\start_textbook_chat.py --skip-build
+```
+
+Open [http://127.0.0.1:8765](http://127.0.0.1:8765), then **Collections**.
+Alternatively upload PDFs in Library, wait for ready status, acknowledge local
+indexing permission and import them as sources. Create a collection containing
+both sources. Citations expose the quotation, original character ranges and
+verified physical PDF page. Each PDF remains one document.
+
+For offline use, first complete the in-app verified Qwen/llama.cpp **Set up**.
+It downloads multi-gigabyte model artifacts and is not included in benchmark
+setup. Online requests require an explicit transmission acknowledgment and use
+only shared contingency allowance; local indexing permission is not enough.
+
+```powershell
+.\.venv-assessment\Scripts\python.exe scripts\ask_collection.py
+.\.venv-assessment\Scripts\python.exe scripts\ask_collection.py `
+  --collection <id> --backend offline --question "<question>"
+.\.venv-assessment\Scripts\python.exe scripts\validate_assessment_demo.py
+.\.venv-assessment\Scripts\python.exe scripts\validate_assessment_demo.py --check
+# Only with separate permission to transmit retrieved excerpts to OpenAI:
+.\.venv-assessment\Scripts\python.exe scripts\validate_assessment_demo.py `
+  --backend online --authorize-online-transmission
+.\.venv-assessment\Scripts\python.exe scripts\validate_assessment_demo.py --backend online --check
+```
+
+The demo command uses the two source-reviewed questions in
+`config\assessment_demo_v1.json`. It retains failed/insufficient outputs and
+does not equate two source IDs with semantic success. `--check` requires a
+separate local source-review record bound to the actual answers. Book/UI
+no-thinking defaults and benchmark execution remain unchanged.
+`--reuse-query <id>` explicitly retains a verified successful answer.
+`--replay-query <id>` reapplies the PDF adapter to saved native output without
+retrieval or a provider call; the new result is labeled cached replay and the
+original failure is preserved. An unambiguous Yes/No prefix is extracted only
+when the question explicitly requests yes/no; quotations and answer polarity
+are never invented. A replay is not fresh inference.
+
+HTTP examples, against a running local server:
+
+```powershell
+Invoke-RestMethod http://127.0.0.1:8765/api/sources
+$collection = Invoke-RestMethod http://127.0.0.1:8765/api/collections `
+  -Method Post -ContentType "application/json" `
+  -Body '{"title":"My collection","document_ids":["<source-id-1>","<source-id-2>"]}'
+Invoke-RestMethod "http://127.0.0.1:8765/api/collections/$($collection.id)/queries" `
+  -Method Post -ContentType "application/json" `
+  -Body '{"question":"<question>","backend":"offline","online_disclosure_acknowledged":false}'
+```
+
+`GET /api/collections/{id}/queries` returns public history;
+`GET /api/collection-queries/{id}/diagnostics` retains raw/source snapshots.
+`GET /api/sources/{document_id}/file#page=<physical-page>` verifies PDF bytes;
+`GET /api/sources/{document_id}/units/{unit_id}` resolves original source units.
+Failed/invalid output is explicit, never a grounded-answer fallback.
+
+### Fresh inference versus zero-call replay
+
+Committed results can be rebuilt without an API key, dataset download,
+embedding model or retrieval call. The prepared public tokenizer and Python
+dependencies are still needed:
+
+```powershell
+.\.venv-assessment\Scripts\python.exe scripts\evaluate_assessment.py --cached --output reports\assessment_results_v1\final
+.\.venv-assessment\Scripts\python.exe scripts\evaluate_assessment.py --cached --output reports\assessment_results_v1\fresh_final
+```
+
+For **explicitly paid** new inference, put `OPENAI_API_KEY` only in local `.env`
+or the process environment; never in command arguments or committed files.
+After setup, this command verifies/acquires inputs, builds/reuses the public
+index, executes all four arms, retains every raw row and rebuilds metrics:
+
+```powershell
+.\.venv-assessment\Scripts\python.exe scripts\evaluate_assessment.py --fresh `
+  --phase final_evaluation --output app_data\assessment\runs\new-final
+```
+
+An existing owned run directory resumes that same run; a new one generates
+fresh outputs. A second checkout is **not** a new 500-call approval. A separately
+authorized rerun must use `--phase fresh_final_rerun` and `--ledger` pointing to
+the original shared ledger. The already completed rerun need not be repeated.
+Current measured total: 376 attempted calls and $1.7556450 token-based estimate,
+not an invoice. The conservative 500-call cap estimate is $14.08; missing usage
+would be unknown, not zero. Generation means were roughly 2-3 seconds online,
+excluding startup/indexing; default local PDF runs took 136-166 seconds and
+did not answer successfully. The six specifically authorized PDF calls used
+$0.0437425; that approval is exhausted, and the later adapter replay was free.
+Hardware/network and warm-state effects matter.
+
+Historical single-book results remain separate. Their explicit text-only
+[checksum compatibility profile](docs/HISTORICAL_ARTIFACT_IDENTITIES.md) leaves
+binary hashes and original manifests unchanged. PDF redistribution remains
+unauthorized, and future external transmission requires explicit per-run
+permission; obtain permitted local copies rather than bundling or re-uploading
+them.
 
 ## Build and run
 

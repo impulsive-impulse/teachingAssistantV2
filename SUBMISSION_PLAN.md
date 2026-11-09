@@ -4,7 +4,7 @@ Status: T01-T12 are complete. T01/T02 were published by the user; T03-T12 are
 published by the user. The user authorized a separate local commit per task
 through T15 and will push manually. T13 now has two source-reviewed online
 answers: one generated and one explicit zero-call adapter replay; local Qwen
-remains unreliable. T14 documents are drafted; T15's genuine fresh evaluation
+remains unreliable. T14 documents are complete; T15's genuine fresh evaluation
 is complete and final updated-clone
 regressions are in progress. T16 visibility, sharing, recording and submission
 remain outside this authorization.
@@ -436,3 +436,19 @@ local originals, cost, replay boundary and browser evidence without publishing
 textbook quotations. T13 is complete with that explicit cached-result boundary;
 local unrestricted Qwen synthesis and two fresh answers under the final
 adapter are not established. Total project attempts are now 376/500.
+
+## T14 documentation checkpoint
+
+Root `DESIGN.md` explains the architecture, source boundaries, context budget,
+development-selected allocator, exact citations, typed PDF selection, failures
+and tradeoffs. Root `EVAL.md` records all development/final/fresh results,
+uncertainty, source inspection, ablation, measured operations and costs.
+README and the script guide provide exact locked setup, authorized ingestion,
+API/CLI, fresh/cached execution and PDF replay commands.
+
+The documents explicitly retain the stronger limits: answer/joint improvement
+over dense is uncertain; the small public distractor subset is not a
+leaderboard; the PDF receipt includes cached adapter replay; local Qwen is not
+reliable; review is assistant-only; rights/access/recording remain T16.
+No PDF text or credentials are published. Total known token-based estimate is
+$1.755645 for 376 attempts, not an invoice.

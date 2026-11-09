@@ -26,6 +26,17 @@ these canonical commands over importing experiment internals directly.
   export physically separate runtime/evaluation inputs; `--check` is read-only.
   `--demo --authorized-demo-use` imports the two permitted PDFs into a local
   collection using the same provenance/index contracts. No paid model calls.
+- `validate_assessment_demo.py`: run the two source-reviewed textbook questions,
+  retaining explicit failures and a local receipt. Offline is the default.
+  `--backend online --authorize-online-transmission` requires separate rights
+  and permission to send retrieved excerpts, and uses the existing contingency
+  ledger without automatic retries. `--check` (with the same backend) performs
+  zero-call verification of retained answers plus a separate semantic source
+  review bound to their actual raw-output hashes. No textbook text is exported.
+  `--reuse-query` retains an explicit successful result; `--replay-query`
+  reapplies only the PDF adapter to saved native selections, creates a labeled
+  zero-call result and preserves the original failed row. Neither is fresh
+  inference.
 - `evaluate_retrieval_baselines.py`: measure dense, BM25, and RRF references on
   the 15 development questions only, with exact context-token budgeting and
   retained source/fact coverage. Does not generate answers or inspect held-out
