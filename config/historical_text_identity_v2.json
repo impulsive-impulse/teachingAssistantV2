@@ -1,0 +1,21 @@
+{
+  "schema_version": 2,
+  "text_policy": "utf8-crlf-to-lf-only",
+  "artifacts": [
+    {
+      "path": "data/benchmarks/retrieval_benchmark_v1.jsonl",
+      "historical_raw_sha256": "d333768b9c645cf0048a38356bfea69aa4a9e7220010e2cdf6340b91af38c046",
+      "utf8_lf_sha256": "10c622374f0a4a08475bc7af0014a18895191e2808a463066fb06d50786637be"
+    },
+    {
+      "path": "reports/openai_generation_experiments/comparisons/full_40_labeled/comparison_report.md",
+      "historical_raw_sha256": "d85a5ddabcfcd83dd5813244ce98439eba05eb03cbd3312f8a9a889e28268282",
+      "utf8_lf_sha256": "d227bc95995290bdd0c332a62aa581a99a52033d923d6ed102f510dd2c5d2c9c"
+    },
+    {
+      "path": "reports/openai_generation_experiments/comparisons/full_40_labeled/local_vs_gpt4o_labeled_comparison.html",
+      "historical_raw_sha256": "90af839f16c32d391c5af3416ddf0379ae9ede1da7b3ab342723c9480c416c0c",
+      "utf8_lf_sha256": "40a67886e31726b04dac2285ad9c1b0d3a2d57cc20d1dada375ef4edc46a936e"
+    }
+  ]
+}

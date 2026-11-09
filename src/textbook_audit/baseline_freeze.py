@@ -14,6 +14,7 @@ from typing import Any
 
 import psutil
 
+from .artifact_identity import load_text_identity_profile, verify_artifact_identity
 from .embedding_bakeoff import (_evaluation_scopes, _snapshot_path,
                                 accepted_mapping, searchable_pages, summarize)
 from .retrieval import read_jsonl
@@ -218,7 +219,9 @@ def validate_golden(root: Path, runtime: RetrievalBaseline,
             "deterministic": True, "top_five": stable_outputs}
 
 
-def verify_manifest(root: Path, manifest_path: Path) -> dict[str, Any]:
+def verify_manifest(
+    root: Path, manifest_path: Path, *, text_identity_profile: Path | None = None,
+) -> dict[str, Any]:
     """Recompute every repository artifact checksum recorded by the manifest."""
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     artifacts = (list(manifest["source_pdfs"].values())
@@ -226,16 +229,18 @@ def verify_manifest(root: Path, manifest_path: Path) -> dict[str, Any]:
                  + manifest["index_artifacts"] + [manifest["benchmark"]])
     artifacts.append({"path": manifest["configuration"]["path"],
                       "sha256": manifest["configuration"]["sha256"]})
+    text_identities = load_text_identity_profile(text_identity_profile)
     mismatches = []
+    normalized = []
     for artifact in artifacts:
-        path = root / artifact["path"]
-        actual = sha256_file(path) if path.is_file() else None
-        if actual != artifact["sha256"]:
-            mismatches.append({"path": artifact["path"], "expected": artifact["sha256"],
-                               "actual": actual})
+        checked = verify_artifact_identity(root, artifact, text_identities)
+        if not checked["valid"]:
+            mismatches.append(checked)
+        elif checked["verification"] == "utf8-lf-text-v2":
+            normalized.append(checked)
     if mismatches:
         raise AssertionError(f"baseline checksum mismatches: {mismatches}")
-    return {"verified_artifacts": len(artifacts), "mismatches": []}
+    return {"verified_artifacts": len(artifacts), "mismatches": [], "normalized_text_artifacts": normalized}
 
 
 def _clear_indexes(root: Path, config: dict[str, Any]) -> None:
@@ -264,14 +269,20 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
     parser.add_argument("--device")
     parser.add_argument("--force-rebuild", action="store_true")
+    parser.add_argument("--text-identity-profile", type=Path)
     args = parser.parse_args(argv)
     root = args.root.resolve()
     config = load_config(args.config, root)
     report = root / REPORT_DIR
     report.mkdir(parents=True, exist_ok=True)
     if args.action == "checksums":
-        print(json.dumps(verify_manifest(root, report / "manifest.json"), indent=2))
+        profile = args.text_identity_profile
+        if profile is not None and not profile.is_absolute():
+            profile = root / profile
+        print(json.dumps(verify_manifest(root, report / "manifest.json", text_identity_profile=profile), indent=2))
         return
+    if args.text_identity_profile is not None:
+        raise ValueError("--text-identity-profile is a read-only checksums option")
     if args.force_rebuild:
         if args.action != "build":
             raise ValueError("--force-rebuild is valid only with the build action")

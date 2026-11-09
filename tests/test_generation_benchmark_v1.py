@@ -12,6 +12,7 @@ import pytest
 from pypdf import PdfReader
 
 from textbook_audit.baseline_freeze import verify_manifest
+from textbook_audit.artifact_identity import load_text_identity_profile, verify_artifact_identity
 from textbook_audit.generation_benchmark import (
     DEFAULT_BENCHMARK,
     DEFAULT_SCHEMA,
@@ -135,6 +136,10 @@ def test_schema_rejects_missing_and_unknown_fields(rows: list[dict]) -> None:
 
 
 def test_existing_retrieval_assets_remain_immutable() -> None:
-    assert sha256(RETRIEVAL_BENCHMARK) == FROZEN_RETRIEVAL_BENCHMARK_SHA256
+    profile = ROOT / "config" / "historical_text_identity_v2.json"
+    assert verify_artifact_identity(ROOT, {
+        "path": RETRIEVAL_BENCHMARK.relative_to(ROOT).as_posix(),
+        "sha256": FROZEN_RETRIEVAL_BENCHMARK_SHA256,
+    }, load_text_identity_profile(profile))["valid"]
     assert sha256(BASELINE_CONFIG) == FROZEN_BASELINE_CONFIG_SHA256
-    assert verify_manifest(ROOT, BASELINE_MANIFEST)["mismatches"] == []
+    assert verify_manifest(ROOT, BASELINE_MANIFEST, text_identity_profile=profile)["mismatches"] == []

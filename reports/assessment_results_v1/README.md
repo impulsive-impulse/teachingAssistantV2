@@ -73,3 +73,25 @@ Final evaluation used **134** new paid attempts; 46 identical logical outputs
 reused within that run. Development and diagnostics used 102. Known total
 token-based estimate before the reserved fresh rerun: **$1.0855075**. Actual
 invoiced dollars are not available. Zero calls are required for report replay.
+
+## Independent fresh rerun and final reproduction
+
+`fresh_final/` retains a genuine second 45-question/four-arm inference run from
+an independent LF clone and rebuilt public index. Public data/model/tokenizer
+artifacts were explicitly transported and reverified; no original environment,
+private model cache, `.env` or prebuilt benchmark index was copied. The same
+original ledger counted 134 new attempts and 46 same-run reuses.
+
+Fresh proposed/dense/hybrid answer F1: 68.35%/58.84%/44.91%; joint F1:
+58.62%/51.08%/38.66%. Document coverage reproduces exactly. Answer/joint gains
+over dense remain uncertain; do not select the better run or treat repeated
+questions as 90 independent samples. The fresh known cost estimate is
+$0.626395, not an invoice.
+
+The independent final candidate passed 319 targeted backend checks (one
+existing home-cache-only smoke skipped) and its frontend build. Both final
+reports also rebuilt with model/source/index caches unavailable and all network
+access forbidden, matching their retained metric checksums. See
+`reports/assessment_reproducibility_v1.json` and root `EVAL.md` for exact
+boundaries. PDF demo calls/results are separate and do not alter these frozen
+benchmark arms or outputs.

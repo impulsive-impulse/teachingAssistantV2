@@ -5,8 +5,7 @@ published by the user. The user authorized a separate local commit per task
 through T15 and will push manually. T13 now has two source-reviewed online
 answers: one generated and one explicit zero-call adapter replay; local Qwen
 remains unreliable. T14 documents are complete; T15's genuine fresh evaluation
-is complete and final updated-clone
-regressions are in progress. T16 visibility, sharing, recording and submission
+and final updated-clone regressions are complete. T16 visibility, sharing, recording and submission
 remain outside this authorization.
 
 ## Confirmed decisions
@@ -452,3 +451,30 @@ leaderboard; the PDF receipt includes cached adapter replay; local Qwen is not
 reliable; review is assistant-only; rights/access/recording remain T16.
 No PDF text or credentials are published. Total known token-based estimate is
 $1.755645 for 376 attempts, not an invoice.
+
+## T15 clean-clone and reproduction checkpoint
+
+An independent LF clone and locked x64 Python 3.12.10 environment rebuilt the
+public benchmark index and completed the reserved fresh final run: all 45 IDs,
+four arms, 180 retained raw outputs, 134 new attempts and 46 same-run reuses.
+All original execution/code/corpus/profile identities match. Public artifacts
+were explicitly transported and verified; no private cache, original venv,
+`.env` or prebuilt index was copied.
+
+The final candidate passed 319 targeted checks across 29 backend modules and
+the independent frontend build. The one skip is an existing historical
+home-cache-only discovery smoke; actual app-local BGE identity and frozen
+golden fixtures were verified. Both complete cached final reports reproduced
+their checksums with model/source/index caches unavailable, no key and all
+network connections forbidden.
+
+Historical CRLF compatibility is an explicit three-text-file v2 profile.
+Raw PDF/NPZ/model hashes remain strict, historical manifests are unchanged,
+and substantive text changes still fail. Exact local PDFs/old NPZs were
+supplied only for historical regressions, not for benchmark inference.
+
+`reports/assessment_reproducibility_v1.json` records these boundaries.
+No further paid calls or pushes were performed. T01-T15 implementation is
+complete with the documented PDF cached-replay/local-model limits; T16 private
+sharing, rights review of preexisting assets, recording and submission still
+require user decisions.

@@ -283,5 +283,40 @@ derived artifacts.
 
 This setup does not fetch the optional Qwen/ARM64 llama.cpp provider or old
 experimental indexes. Those have separate historical setup procedures. It also
-does not silently repair historical CRLF-dependent checksum claims; their
-documented versioned migration remains T15.
+does not silently repair historical CRLF-dependent checksum claims. Use the
+explicit [text identity v2 profile](../docs/HISTORICAL_ARTIFACT_IDENTITIES.md);
+historical manifests and binary hashes remain unchanged.
+
+## Completed T15 end-to-end verification
+
+The independent short-path LF clone used a separately built locked x64 Python
+3.12.10 environment. Verified public benchmark/BGE/tokenizer files were
+transported explicitly; this was warm artifact transport, not another
+cold-network download. The benchmark index was rebuilt, and the reserved
+45-question/four-arm fresh rerun used the **original shared ledger**: 134 new
+attempts, 180 retained logical outputs, 46 same-run reuses.
+
+The final source candidate passed 319 targeted backend checks across 29 modules.
+One existing historical home-cache-only discovery smoke was skipped; the exact
+application-local BGE snapshot and real eight-case retrieval golden fixture
+were exercised through a process-local test resolver. No frozen production
+resolver or private user cache was changed. The independent frontend passed
+TypeScript/Vite compilation.
+
+For a stronger cached-path check, both complete retained runs were rebuilt
+while the public model cache, source dataset and compiled index were temporarily
+unavailable, the API key was absent, and all network connections were forbidden.
+Both metric checksums matched; no inference occurred, and all isolated assets
+were restored.
+
+Historical retrieval/generation checksum commands passed on real LF files via
+the explicit three-file text identity profile. The two permitted PDFs and
+eight old NPZ caches were separately supplied for those historical regressions,
+with exact raw hashes. They were not inputs to open-benchmark inference and
+are not newly distributed.
+
+The machine-readable record is
+[`assessment_reproducibility_v1.json`](../reports/assessment_reproducibility_v1.json).
+Raw fresh outputs are in `reports\assessment_results_v1\fresh_final`.
+The original T02 direct-public-host TLS limitation above remains explicit;
+this final pass does not claim another cold download or a second API allowance.

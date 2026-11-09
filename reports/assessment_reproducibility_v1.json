@@ -1,0 +1,82 @@
+{
+  "version": "assessment-reproducibility-v1",
+  "status": "verified",
+  "environment": {
+    "platform": "Windows",
+    "python": "CPython 3.12.10",
+    "python_platform": "win-amd64",
+    "independent_virtual_environment": true,
+    "system_site_packages": false,
+    "dependency_lock_sha256": "9f87064bddbf311f74b542305680243797a72261a07114c7d69d56e1287f1daf",
+    "checkout": "Independent short-path LF Git clone; final source candidate applied for verification.",
+    "private_environment_or_model_cache_copied": false,
+    "dotenv_file_copied": false
+  },
+  "acquisition_boundary": {
+    "public_data_embedding_tokenizer": "Explicitly transported and hash-verified public artifacts; warm artifact transport, not a new cold-network download.",
+    "environment": "Built independently from the locked wheelhouse and npm cache; no original virtual environment was copied.",
+    "assessment_index": "Rebuilt from the verified public source data in the independent clone.",
+    "historical_only_assets": "Two exact authorized PDFs and eight exact NPZ caches were separately supplied locally for historical regression; they are not required for the open benchmark and were not committed."
+  },
+  "fresh_final": {
+    "run_id": "fresh_final_rerun-68d8b3f317ce45aea5a30d8cc652e9b3",
+    "question_count": 45,
+    "arm_count": 4,
+    "raw_output_count": 180,
+    "new_paid_attempts": 134,
+    "same_run_identical_request_reuses": 46,
+    "known_token_based_cost_estimate_usd": 0.626395,
+    "shared_original_ledger": true,
+    "pipeline_sha256": "ee191d743434eb85f7f5a44556d221c811a6e2395c813d5d0e64f5d15bb2c1ba",
+    "metrics_checksum": "96cf1508c846abcd16b4ef21acda11143224d2ad6744bbe5b2984f6aab575304",
+    "output_directory": "reports/assessment_results_v1/fresh_final"
+  },
+  "cached_isolation": {
+    "question_arm_records_verified": 360,
+    "runs": ["final", "fresh_final"],
+    "checksums_match_retained_metrics": true,
+    "source_dataset_unavailable": true,
+    "compiled_corpus_index_unavailable": true,
+    "embedding_cache_unavailable": true,
+    "api_key_unavailable": true,
+    "all_network_connections_forbidden": true,
+    "new_model_calls": 0,
+    "isolated_public_caches_restored": true
+  },
+  "regression": {
+    "backend_modules": 29,
+    "passed": 319,
+    "skipped": 1,
+    "failed": 0,
+    "elapsed_seconds": 253.25,
+    "skip_reason": "An existing historical home-cache-only embedding discovery smoke test; the exact public application-local snapshot and real retrieval golden fixtures were verified separately.",
+    "external_network_forbidden": true,
+    "real_embedding_identity": "a76ed7f34fddfec52b0d6f9829f767fb2bcf1a05540e272b4ceb2e0081d846b4",
+    "legacy_model_resolution": "Process-local test resolver to the exact verified public application snapshot; no frozen production code or private cache was changed.",
+    "frontend_typescript_and_vite_build": "passed",
+    "frozen_execution_files_unchanged": 20
+  },
+  "historical_identity_v2": {
+    "profile": "config/historical_text_identity_v2.json",
+    "retrieval_manifest_artifacts_verified": 14,
+    "generation_manifest_artifacts_verified": 15,
+    "explicit_text_newline_compatibility_artifacts": 3,
+    "binary_verification": "Exact raw SHA-256; no PDF, NPZ, model, archive or wheel normalization.",
+    "historical_manifests_rewritten": false
+  },
+  "budget_after_pdf_demonstration": {
+    "project_attempts": 376,
+    "maximum_attempts": 500,
+    "known_token_based_cost_estimate_usd": 1.755645,
+    "cost_is_invoice": false,
+    "unfinished_attempts": 0,
+    "additional_calls_during_regression_or_cached_replay": 0
+  },
+  "remaining_boundaries": [
+    "The filtered distractor subset is not a full-Wikipedia or official hidden-test evaluation.",
+    "Answer and joint improvements over dense remain uncertain.",
+    "The PDF receipt includes one generated answer and one explicit cached adapter replay, not two fresh successes under the final adapter.",
+    "Local Qwen synthesis is not established as reliable.",
+    "Private reviewer access, preexisting textbook-derived rights review, deadline and walkthrough remain T16."
+  ]
+}

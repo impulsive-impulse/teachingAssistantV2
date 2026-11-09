@@ -10,6 +10,7 @@ from pathlib import Path
 import pytest
 
 from textbook_audit.generation_benchmark import read_jsonl
+from textbook_audit.artifact_identity import load_text_identity_profile, verify_artifact_identity
 from textbook_audit.generation_phase_a import (
     DEFAULT_CONFIG,
     LlamaServerConfig,
@@ -50,7 +51,9 @@ def rows() -> list[dict]:
 def test_frozen_benchmark_hashes_are_unchanged() -> None:
     """Protect both user-named immutable benchmark artifacts."""
     assert sha256_file(GENERATION_BENCHMARK) == GENERATION_SHA256
-    assert sha256_file(RETRIEVAL_BENCHMARK) == RETRIEVAL_SHA256
+    assert verify_artifact_identity(ROOT, {
+        "path": RETRIEVAL_BENCHMARK.relative_to(ROOT).as_posix(), "sha256": RETRIEVAL_SHA256,
+    }, load_text_identity_profile(ROOT / "config" / "historical_text_identity_v2.json"))["valid"]
 
 
 def test_split_is_balanced_and_keeps_32_rows_held_out(rows: list[dict], config: dict) -> None:

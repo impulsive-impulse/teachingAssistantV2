@@ -1,0 +1,1094 @@
+{
+  "version": "assessment-evaluation-labels-v1",
+  "protocol_sha256": "61bd6fb0b0fde78a8475c8fe789a9e343b3628f7bdb57a37ca61f5a989a25304",
+  "selection_sha256": "35bde21e6731a9d13b01e2af7c43a416df2c727ec20c764399c2c0df1d30e48a",
+  "source_sha256": "c20b638ca82b21d04fe12e14ff417ad05153d4d215a65de54497fca4e972f7c6",
+  "dataset_license": "CC-BY-SA-4.0",
+  "references": [
+    {
+      "question_id": "5ab7ece25542995dae37e9f3",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "newspapers, television, radio, cable television",
+      "supporting_facts": [
+        [
+          "James C. Kennedy",
+          1
+        ],
+        [
+          "Anne Cox Chambers",
+          0
+        ]
+      ],
+      "source_row_sha256": "f4b54d01bacbcf2fdf042d3890acc16e9fff5c0e3e9b3eaae701c2c28018038a"
+    },
+    {
+      "question_id": "5abc0ba05542996583600409",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "Adelaide City",
+      "supporting_facts": [
+        [
+          "John Nyskohus",
+          0
+        ],
+        [
+          "Adelaide City FC",
+          1
+        ]
+      ],
+      "source_row_sha256": "81b4da1d1eba702e01151dcd19110c37ea8b0b49e4759f904a55d9fabf87fc9f"
+    },
+    {
+      "question_id": "5ab43179554299233955004d",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "The Secret World of Alex Mack",
+      "supporting_facts": [
+        [
+          "Klepto",
+          0
+        ],
+        [
+          "Meredith Bishop",
+          1
+        ]
+      ],
+      "source_row_sha256": "e6ed73c27ec2f04bab903bd8e1867613b997a9c30f2d995b6f80dc988c4aea8d"
+    },
+    {
+      "question_id": "5ab57759554299637185c5a5",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "the liberal revolutions of 1848",
+      "supporting_facts": [
+        [
+          "Marie-Clementine Bagration",
+          0
+        ],
+        [
+          "Klemens von Metternich",
+          0
+        ]
+      ],
+      "source_row_sha256": "c36d629c924ea57c8a64fdae71667313d87c80bc57c8f29097815f3e134b2046"
+    },
+    {
+      "question_id": "5add596f5542990dbb2f7e4d",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "Captain Hans Geering",
+      "supporting_facts": [
+        [
+          "Grown-Ups",
+          1
+        ],
+        [
+          "Sam Kelly",
+          1
+        ]
+      ],
+      "source_row_sha256": "377f65b8c87d30ee73e24c45d71e18ef30d4c47411c0da951e01424f5db5aeb2"
+    },
+    {
+      "question_id": "5adfd2f255429925eb1afaa5",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "Gateways",
+      "supporting_facts": [
+        [
+          "Gateways (video game)",
+          0
+        ],
+        [
+          "Gateways (video game)",
+          1
+        ],
+        [
+          "Portal (video game)",
+          0
+        ]
+      ],
+      "source_row_sha256": "41d3f00c6a1618292308c6e8b7b1623a1187937b600d61d4a4908bf427ff21a3"
+    },
+    {
+      "question_id": "5abf0bf95542997719eab63a",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "theatre director",
+      "supporting_facts": [
+        [
+          "José Rubia Barcia",
+          0
+        ],
+        [
+          "José Rubia Barcia",
+          4
+        ],
+        [
+          "Federico García Lorca",
+          0
+        ]
+      ],
+      "source_row_sha256": "7d49f07e4894e7e2079b227d1592ceb5c184c69de4c9758e1536f3e92e8d6053"
+    },
+    {
+      "question_id": "5abe79c755429976d4830b2a",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "1449",
+      "supporting_facts": [
+        [
+          "Mesih Pasha",
+          0
+        ],
+        [
+          "Constantine XI Palaiologos",
+          0
+        ]
+      ],
+      "source_row_sha256": "41c319699b86df603d42a0481bfca5dae6b001b27282c3265adc02086c5c6bbd"
+    },
+    {
+      "question_id": "5ab55e015542992aa134a2d3",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "1,289,500",
+      "supporting_facts": [
+        [
+          "Hong Kong Museum of Coastal Defence",
+          0
+        ],
+        [
+          "Hong Kong Island",
+          0
+        ],
+        [
+          "Hong Kong Island",
+          1
+        ]
+      ],
+      "source_row_sha256": "624ff2823c1e6f4d9fe61362a4465f68c978bf213337e906cda08cdd50fc683d"
+    },
+    {
+      "question_id": "5ae658855542992ae0d162e3",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "June 1975",
+      "supporting_facts": [
+        [
+          "On Parole",
+          0
+        ],
+        [
+          "On Parole",
+          1
+        ],
+        [
+          "Motörhead",
+          0
+        ]
+      ],
+      "source_row_sha256": "6b93e4a67b402e9ce8803f3e06b4992feb4046840fa5640673af1579f5f7a92a"
+    },
+    {
+      "question_id": "5a7553a95542996c70cfaedf",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "Wendigo",
+      "supporting_facts": [
+        [
+          "Equestria",
+          0
+        ],
+        [
+          "Equestria",
+          4
+        ],
+        [
+          "Wendigo",
+          0
+        ]
+      ],
+      "source_row_sha256": "9cb1290cca325b02562455fcf7547f1557d3c41ecdd396d5fdea1ddeb6c6ba10"
+    },
+    {
+      "question_id": "5adf3e355542993a75d26440",
+      "split": "development",
+      "question_type": "bridge",
+      "answer": "8 km",
+      "supporting_facts": [
+        [
+          "Øresund Region",
+          0
+        ],
+        [
+          "Øresund Bridge",
+          0
+        ],
+        [
+          "Øresund Bridge",
+          1
+        ]
+      ],
+      "source_row_sha256": "f6a5ddfde95977f3fa16d98e8681aae972ffb08ac56aa150fbbd5a3c39ab8acd"
+    },
+    {
+      "question_id": "5adc398755429947ff173912",
+      "split": "development",
+      "question_type": "comparison",
+      "answer": "Nothoscordum",
+      "supporting_facts": [
+        [
+          "Nothoscordum",
+          0
+        ],
+        [
+          "Nothoscordum",
+          2
+        ],
+        [
+          "Callirhoe (plant)",
+          1
+        ]
+      ],
+      "source_row_sha256": "614f9a3176047ea7a1aa189f087a5c06f776b804a8f0a8a3496c55baea4414e8"
+    },
+    {
+      "question_id": "5a8e276b5542995a26add468",
+      "split": "development",
+      "question_type": "comparison",
+      "answer": "Swervedriver",
+      "supporting_facts": [
+        [
+          "Swervedriver",
+          0
+        ],
+        [
+          "Incubus (band)",
+          1
+        ]
+      ],
+      "source_row_sha256": "553a721011d00c44fbe5d8d9f1ad3a7299e0b233bde8b3e27e778bcefe1d447b"
+    },
+    {
+      "question_id": "5ae3d0bb5542990afbd1e1e5",
+      "split": "development",
+      "question_type": "comparison",
+      "answer": "yes",
+      "supporting_facts": [
+        [
+          "Dee Dee Ramone",
+          0
+        ],
+        [
+          "Alex Band",
+          0
+        ]
+      ],
+      "source_row_sha256": "3b2770d1000e15a5967cd4c2c50ce93e9fdf8bd1a5889761780e42c0dfdb186c"
+    },
+    {
+      "question_id": "5a8ba9d255429971feec4759",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Operation Iceberg",
+      "supporting_facts": [
+        [
+          "Camp Courtney",
+          2
+        ],
+        [
+          "Battle of Okinawa",
+          0
+        ]
+      ],
+      "source_row_sha256": "b3c2d0bb138160580a211d109a1644886f96a56e66690a0e0d34d836070a145e"
+    },
+    {
+      "question_id": "5a7f1e805542993067513640",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "10,000 years ago",
+      "supporting_facts": [
+        [
+          "The Voyage that Shook the World",
+          0
+        ],
+        [
+          "Young Earth creationism",
+          0
+        ]
+      ],
+      "source_row_sha256": "21fbff6efc2cb3049e6d28f3374ae68b69d37a14f9822a2082f16ad11affa5c9"
+    },
+    {
+      "question_id": "5ae20e265542994d89d5b325",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "James G. Kiernan",
+      "supporting_facts": [
+        [
+          "James G. Kiernan",
+          0
+        ],
+        [
+          "James G. Kiernan",
+          2
+        ],
+        [
+          "Mary MacLane",
+          2
+        ]
+      ],
+      "source_row_sha256": "6d166c51a818f95998ba9058552b09b2b9c527a66733d952a2a58c37d445fce6"
+    },
+    {
+      "question_id": "5ac4e476554299076e296e34",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "FAI Junior Cup",
+      "supporting_facts": [
+        [
+          "Brideville F.C.",
+          0
+        ],
+        [
+          "Brideville F.C.",
+          2
+        ],
+        [
+          "The Liberties, Dublin",
+          0
+        ],
+        [
+          "The Liberties, Dublin",
+          1
+        ]
+      ],
+      "source_row_sha256": "7a9c79336ea3be682531f5517a716cc04b3b2e7ac4da770a79f831cb40ca3be6"
+    },
+    {
+      "question_id": "5ae72fd95542991e8301cbb4",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "1903",
+      "supporting_facts": [
+        [
+          "Newcastle Civic Centre",
+          2
+        ],
+        [
+          "Olav V of Norway",
+          0
+        ]
+      ],
+      "source_row_sha256": "7059dec4732a4982b006c4bf91ad6c4d1d2c634b982bc17063baf485b751061b"
+    },
+    {
+      "question_id": "5a7e1a2955429965cec5ea5d",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "London",
+      "supporting_facts": [
+        [
+          "The Cinematic Orchestra",
+          1
+        ],
+        [
+          "Ninja Tune",
+          0
+        ]
+      ],
+      "source_row_sha256": "2cc4479c250d0326909eeec66f0f51ab03dae856247982a7a98b4ca2e5793ec6"
+    },
+    {
+      "question_id": "5ae4db9c55429908b6326492",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "The final of 2011 AFC Asian Cup",
+      "supporting_facts": [
+        [
+          "2019 World Championships in Athletics",
+          0
+        ],
+        [
+          "Khalifa International Stadium",
+          2
+        ]
+      ],
+      "source_row_sha256": "4fa5434a9407e4be37c0dd2490ff1bdbdbec18e75051d161f831a1e57db9792d"
+    },
+    {
+      "question_id": "5aba18ee5542994dbf0198b4",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "1952",
+      "supporting_facts": [
+        [
+          "Danilo Erricolo",
+          0
+        ],
+        [
+          "IEEE Transactions on Antennas and Propagation",
+          2
+        ]
+      ],
+      "source_row_sha256": "6e64915c4d5009e571d7bc625992202d78c28e473230a3ee533c3c0f6d4062b3"
+    },
+    {
+      "question_id": "5abe9b095542991f661061ad",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "around 3,500,000.",
+      "supporting_facts": [
+        [
+          "Numidia (TV channel)",
+          0
+        ],
+        [
+          "Algiers",
+          1
+        ]
+      ],
+      "source_row_sha256": "2ebc5b33954ef1e569ad55a54705ab0cb21a9126c0120e2f5c6e44e56e719932"
+    },
+    {
+      "question_id": "5a7fc41455429969796c1b51",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "2 million",
+      "supporting_facts": [
+        [
+          "Thug Misses",
+          0
+        ],
+        [
+          "Khia",
+          2
+        ]
+      ],
+      "source_row_sha256": "df23895c46fa369f9722da7f4f9385235b27f67fd2a87b3a0adcee2756597446"
+    },
+    {
+      "question_id": "5a7339c85542991f9a20c6a2",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "\"Orchard County\"",
+      "supporting_facts": [
+        [
+          "Andrew Robb and David McIlwaine killings",
+          0
+        ],
+        [
+          "County Armagh",
+          2
+        ]
+      ],
+      "source_row_sha256": "3cf3647d35fcb0fdef3e02ca300eddaa08078d76f7097250dec75230a7e0acdf"
+    },
+    {
+      "question_id": "5ae4cb2f55429960a22e01e8",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Linda Maria Ronstadt",
+      "supporting_facts": [
+        [
+          "J. D. Souther",
+          1
+        ],
+        [
+          "Linda Ronstadt",
+          0
+        ]
+      ],
+      "source_row_sha256": "923218bbb61cbc35021af37f88790867170b344409790cd70ee93d082508fec0"
+    },
+    {
+      "question_id": "5a7dc2495542997cc2c4749a",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "1984 South Asian Games",
+      "supporting_facts": [
+        [
+          "Julian Bolling",
+          1
+        ],
+        [
+          "1984 South Asian Games",
+          0
+        ],
+        [
+          "1984 South Asian Games",
+          1
+        ]
+      ],
+      "source_row_sha256": "79353803e354281928e6deb6b7131ed6ee2421b70d4e84221230a0b8e66c8f61"
+    },
+    {
+      "question_id": "5ade04465542990dbb2f7f2f",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Walker Smith Jr.",
+      "supporting_facts": [
+        [
+          "Nadeem Siddique",
+          1
+        ],
+        [
+          "Sugar Ray Robinson",
+          0
+        ]
+      ],
+      "source_row_sha256": "3cad549dc91f733203b1af5d91d7fd6ff45028a4407566a9f0c3f6aa1de41231"
+    },
+    {
+      "question_id": "5ae7e9af5542994a481bbe0e",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "689,775",
+      "supporting_facts": [
+        [
+          "Antonio Carmona Añorve",
+          0
+        ],
+        [
+          "Mexicali",
+          1
+        ]
+      ],
+      "source_row_sha256": "afb1c2c6881d20e3961882f91244221487f84cf7421583bfd66fedfc6ecba1d5"
+    },
+    {
+      "question_id": "5adcbb815542994ed6169bde",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Stone Brewing",
+      "supporting_facts": [
+        [
+          "Beer Wars",
+          1
+        ],
+        [
+          "Stone Brewing Co.",
+          0
+        ]
+      ],
+      "source_row_sha256": "78c06f15add108aa9402a7c424adbe8756f51f9b99357947bbac660e76abf056"
+    },
+    {
+      "question_id": "5ab5d43f5542997d4ad1f1f6",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Polish independence",
+      "supporting_facts": [
+        [
+          "Manru",
+          0
+        ],
+        [
+          "Ignacy Jan Paderewski",
+          0
+        ]
+      ],
+      "source_row_sha256": "7fa30ab1d6111ea93f9fc9016efc78ca3523d28492e8664cee3c16966270515a"
+    },
+    {
+      "question_id": "5ae4f8b755429960a22e0230",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Balvenie Castle",
+      "supporting_facts": [
+        [
+          "River Fiddich",
+          3
+        ],
+        [
+          "Balvenie Castle",
+          0
+        ]
+      ],
+      "source_row_sha256": "818d76ed8af4d8dd499636dbd0684dea9195437bd972a04263285bfb37e779bb"
+    },
+    {
+      "question_id": "5ade15ae5542990dbb2f7f4c",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "October",
+      "supporting_facts": [
+        [
+          "Domino Dancing",
+          0
+        ],
+        [
+          "Introspective",
+          0
+        ],
+        [
+          "Introspective",
+          1
+        ]
+      ],
+      "source_row_sha256": "fc9206772b1ba313317c8a86c2eebfed5d43114e18dbbf3bc1b13ab50780d0fd"
+    },
+    {
+      "question_id": "5ab2a54b554299295394678e",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "400 MW",
+      "supporting_facts": [
+        [
+          "Bui National Park",
+          5
+        ],
+        [
+          "Bui Dam",
+          0
+        ]
+      ],
+      "source_row_sha256": "0a48936d283c1d4d7e7b0e79ebcb42546320e2f1651529613059679afed9114f"
+    },
+    {
+      "question_id": "5adf9b1e5542992d7e9f93b5",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "New York",
+      "supporting_facts": [
+        [
+          "Boria Sax",
+          0
+        ],
+        [
+          "Mercy College (New York)",
+          0
+        ]
+      ],
+      "source_row_sha256": "2957b01cac314eb897200674e9a26f5194625d13b6ab7ef0f580bbbfa2417071"
+    },
+    {
+      "question_id": "5a7b782455429927d897bfd7",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Cecily Strong",
+      "supporting_facts": [
+        [
+          "Staten Island Summer",
+          1
+        ],
+        [
+          "Cecily Strong",
+          0
+        ]
+      ],
+      "source_row_sha256": "c3df71f7916dad33eab5f205ef6fcf691ea64c63ab07bbb594045139e24b1ec3"
+    },
+    {
+      "question_id": "5a8a2a5555429930ff3c0ccc",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "PPG Paints Arena",
+      "supporting_facts": [
+        [
+          "Chris Summers (ice hockey)",
+          0
+        ],
+        [
+          "Pittsburgh Penguins",
+          4
+        ]
+      ],
+      "source_row_sha256": "f97e0ef2fa9e15200d78887d9b44a16ef81cb6ace3badf36b31a329f4420ca12"
+    },
+    {
+      "question_id": "5ae701b2554299572ea54680",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "1961",
+      "supporting_facts": [
+        [
+          "Frank Girardot",
+          1
+        ],
+        [
+          "Christian Gerhartsreiter",
+          0
+        ]
+      ],
+      "source_row_sha256": "f64cac40b61ec7432d6af357cfb9a9889b36544cce3ff0b2168e81b1bc6605e5"
+    },
+    {
+      "question_id": "5adf5fa65542993a75d264db",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "1963",
+      "supporting_facts": [
+        [
+          "Dove Marine Laboratory",
+          0
+        ],
+        [
+          "Newcastle University",
+          4
+        ]
+      ],
+      "source_row_sha256": "21ec430c875bb0cbf95c2fdcfd60e31490e53d2a84df004c21a4c783e9b223c0"
+    },
+    {
+      "question_id": "5a7326cb5542994cef4bc47f",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "was written by all four members of the band",
+      "supporting_facts": [
+        [
+          "U.F.O. (Coldplay song)",
+          1
+        ],
+        [
+          "Princess of China",
+          1
+        ]
+      ],
+      "source_row_sha256": "40bfeb2e84e3a20639772b4cf1714353a7cc8aa0f486ace59d20f92cdcc2f6dd"
+    },
+    {
+      "question_id": "5ae08dad55429945ae9593b9",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "\"PM Magazine\"",
+      "supporting_facts": [
+        [
+          "Willie Geist",
+          2
+        ],
+        [
+          "Matt Lauer",
+          3
+        ]
+      ],
+      "source_row_sha256": "389f680800a65609c03802cb9e861a7778cc28d92ff27f907b31c84df7b2dfa9"
+    },
+    {
+      "question_id": "5a87bada5542994846c1cddc",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Murray Hill",
+      "supporting_facts": [
+        [
+          "Ravi Sethi",
+          0
+        ],
+        [
+          "Bell Labs",
+          0
+        ],
+        [
+          "Bell Labs",
+          1
+        ]
+      ],
+      "source_row_sha256": "cd37892abca1b3e6779d100c0718cfa1a8464099a027ed0440ed326644503b45"
+    },
+    {
+      "question_id": "5a8b1a925542997f31a41c6e",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Cymbeline",
+      "supporting_facts": [
+        [
+          "The Deep Blue Sea (1955 film)",
+          2
+        ],
+        [
+          "Tom Hiddleston",
+          2
+        ]
+      ],
+      "source_row_sha256": "86dcf9d88d898c7c68720cb935c26778917e83ca490561f72a46f65a83f1a909"
+    },
+    {
+      "question_id": "5a8c5c6f554299653c1aa04d",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Coyote Ugly",
+      "supporting_facts": [
+        [
+          "The Best of LeAnn Rimes",
+          0
+        ],
+        [
+          "Can't Fight the Moonlight",
+          1
+        ]
+      ],
+      "source_row_sha256": "c3fbdfcfbf13f7d46ca1036130b9c67cb68eb209705314bd7a47449a3d1f8910"
+    },
+    {
+      "question_id": "5a78a862554299148911f8fe",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "the buff-tipped skipper",
+      "supporting_facts": [
+        [
+          "Netrobalane canopus",
+          0
+        ],
+        [
+          "Sudan",
+          2
+        ]
+      ],
+      "source_row_sha256": "5282efecf056a4152fb128a8c22be1ea63bbb309067d66041972127d9668087e"
+    },
+    {
+      "question_id": "5a8e61165542995085b3741a",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "largest Mission Revival Style building in the United States",
+      "supporting_facts": [
+        [
+          "Frank Augustus Miller",
+          0
+        ],
+        [
+          "The Mission Inn Hotel &amp; Spa",
+          0
+        ],
+        [
+          "The Mission Inn Hotel &amp; Spa",
+          1
+        ]
+      ],
+      "source_row_sha256": "0e40354a4ee6d448bbf15351170f25c00fb67e591d1fdbff34830d7839a4f624"
+    },
+    {
+      "question_id": "5abbeb7d554299114383a09b",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "U.S. Department of Energy",
+      "supporting_facts": [
+        [
+          "Pulsed Pressure Cavitation Technique",
+          1
+        ],
+        [
+          "Oak Ridge National Laboratory",
+          0
+        ]
+      ],
+      "source_row_sha256": "62c8343bc4aa9cb7e1ddfeaef34c843784178c8ab2e2ed7b36acfa519d13b848"
+    },
+    {
+      "question_id": "5a7184675542994082a3e864",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Mazda",
+      "supporting_facts": [
+        [
+          "Ford CD2 platform",
+          2
+        ],
+        [
+          "Mazda Capella",
+          0
+        ]
+      ],
+      "source_row_sha256": "2b94b0d9a361a8185457ef143c936a601588835c06d5d44d124a69ce0bd1c9a5"
+    },
+    {
+      "question_id": "5a7dc3275542997cc2c4749c",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Sam Boyd Stadium",
+      "supporting_facts": [
+        [
+          "Kent Baer",
+          1
+        ],
+        [
+          "UNLV Rebels football",
+          3
+        ]
+      ],
+      "source_row_sha256": "8820a9cffe8a5faf049b3b050233838dcc9d0fed0ad10470768c5b8cb7197352"
+    },
+    {
+      "question_id": "5ae22895554299495565da0c",
+      "split": "held_out",
+      "question_type": "bridge",
+      "answer": "Germanic",
+      "supporting_facts": [
+        [
+          "Battle of the Catalaunian Plains",
+          0
+        ],
+        [
+          "Visigoths",
+          0
+        ]
+      ],
+      "source_row_sha256": "220fe3295709be1d631ce1ebbb48cf52e647dc76ab923f5518f17026684b0cae"
+    },
+    {
+      "question_id": "5a734ca85542994cef4bc51b",
+      "split": "held_out",
+      "question_type": "comparison",
+      "answer": "tile-based board game",
+      "supporting_facts": [
+        [
+          "Alhambra (board game)",
+          0
+        ],
+        [
+          "Tsuro",
+          0
+        ]
+      ],
+      "source_row_sha256": "92ad60e1247210e64ae3bdafc1910fc35f9bc6a575677dafd1cc104663100c19"
+    },
+    {
+      "question_id": "5ae1412a55429920d523434c",
+      "split": "held_out",
+      "question_type": "comparison",
+      "answer": "yes",
+      "supporting_facts": [
+        [
+          "Prológica CP-400",
+          0
+        ],
+        [
+          "Atari ST",
+          0
+        ],
+        [
+          "Atari ST",
+          2
+        ]
+      ],
+      "source_row_sha256": "b9414b3eccfeccff0ea6a12401a351f6c8ee40bc8704bf4191c66ffef55dfcec"
+    },
+    {
+      "question_id": "5a8781b65542993e715abf8f",
+      "split": "held_out",
+      "question_type": "comparison",
+      "answer": "no",
+      "supporting_facts": [
+        [
+          "David O. Russell",
+          0
+        ],
+        [
+          "Tony Gatlif",
+          0
+        ]
+      ],
+      "source_row_sha256": "6dbe0286b480614cc77ab43144e53ec49bdec7a45ed30a88b11025bfc91ee074"
+    },
+    {
+      "question_id": "5a7ae38c5542992d025e6721",
+      "split": "held_out",
+      "question_type": "comparison",
+      "answer": "Teinosuke Kinugasa",
+      "supporting_facts": [
+        [
+          "Teinosuke Kinugasa",
+          0
+        ],
+        [
+          "Don O. Newland",
+          0
+        ]
+      ],
+      "source_row_sha256": "39eb4a19cdab92b8b8c638a6c41502d9bdd75a294f987a3d36a5544d2d7084e9"
+    },
+    {
+      "question_id": "5ae4d3c95542990ba0bbb165",
+      "split": "held_out",
+      "question_type": "comparison",
+      "answer": "Istanbul, Turkey",
+      "supporting_facts": [
+        [
+          "Nusretiye Clock Tower",
+          0
+        ],
+        [
+          "Eski Imaret Mosque",
+          2
+        ]
+      ],
+      "source_row_sha256": "c9649b5bd84e28f37479837c6716301ce0b477d4c4338c62b77ef54174aa3bab"
+    },
+    {
+      "question_id": "5ae2120e5542997283cd23ad",
+      "split": "held_out",
+      "question_type": "comparison",
+      "answer": "yes",
+      "supporting_facts": [
+        [
+          "Distortion Mirrors",
+          0
+        ],
+        [
+          "OK Go",
+          0
+        ]
+      ],
+      "source_row_sha256": "469b83aeaab23393ca79acd3911e611250ac516b90742a1946ddbf3e5936679a"
+    },
+    {
+      "question_id": "5a831fcc55429940e5e1a96a",
+      "split": "held_out",
+      "question_type": "comparison",
+      "answer": "yes",
+      "supporting_facts": [
+        [
+          "Kurt Cobain",
+          0
+        ],
+        [
+          "Glenn Frey",
+          0
+        ]
+      ],
+      "source_row_sha256": "8a532b55bc33c2a851b0709ff741820bfbee2ab0cc7bdfaa3bf87cc14134e6fc"
+    },
+    {
+      "question_id": "5adcd9fe5542990d50227d46",
+      "split": "held_out",
+      "question_type": "comparison",
+      "answer": "flowering plants",
+      "supporting_facts": [
+        [
+          "Dieffenbachia",
+          0
+        ],
+        [
+          "Carlina",
+          0
+        ]
+      ],
+      "source_row_sha256": "69321ea3369288ec7dc64d9ca4d284752860fdc9105b20cfb3c74f166844e5d0"
+    },
+    {
+      "question_id": "5a81456855429938b614231e",
+      "split": "held_out",
+      "question_type": "comparison",
+      "answer": "Old Dominion University",
+      "supporting_facts": [
+        [
+          "Valparaiso University",
+          1
+        ],
+        [
+          "Old Dominion University",
+          0
+        ],
+        [
+          "Old Dominion University",
+          1
+        ]
+      ],
+      "source_row_sha256": "5925d3e9d38e36da2c4f08a06f08168ad7c45bf81a8646778505d7580348d3f8"
+    }
+  ],
+  "checksum": "47a741916e0090ffbea13cad26f0648e94f1c73fe81c45efb3627d0515733f2c"
+}

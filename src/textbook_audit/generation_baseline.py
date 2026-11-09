@@ -171,24 +171,30 @@ def build_manifest(root: Path, config: dict[str, Any]) -> dict[str, Any]:
     }
 
 
-def verify_manifest(root: Path, manifest_path: Path) -> dict[str, Any]:
+def verify_manifest(
+    root: Path, manifest_path: Path, *, text_identity_profile: Path | None = None,
+) -> dict[str, Any]:
     """Recompute every frozen artifact checksum and report exact mismatches."""
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    from .artifact_identity import load_text_identity_profile, verify_artifact_identity
+    text_identities = load_text_identity_profile(text_identity_profile)
     mismatches = []
+    normalized = []
     for item in manifest["artifacts"]:
         path = root / item["path"]
         if not path.is_file():
             mismatches.append({"path": item["path"], "error": "missing"})
             continue
-        actual = sha256_file(path)
-        if actual != item["sha256"]:
-            mismatches.append({
-                "path": item["path"], "expected": item["sha256"], "actual": actual
-            })
+        checked = verify_artifact_identity(root, item, text_identities)
+        if not checked["valid"]:
+            mismatches.append(checked)
+        elif checked["verification"] == "utf8-lf-text-v2":
+            normalized.append(checked)
     return {
         "artifacts_checked": len(manifest["artifacts"]),
         "mismatches": mismatches,
         "valid": not mismatches,
+        "normalized_text_artifacts": normalized,
     }
 
 
@@ -198,6 +204,7 @@ def main(argv: list[str] | None = None) -> None:
     parser.add_argument("action", choices=("manifest", "validate", "checksums"))
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG)
+    parser.add_argument("--text-identity-profile", type=Path)
     args = parser.parse_args(argv)
     root = args.root.resolve()
     config_path = args.config if args.config.is_absolute() else root / args.config
@@ -205,6 +212,8 @@ def main(argv: list[str] | None = None) -> None:
     report_dir = root / "reports/generation_baseline_v1"
     manifest_path = report_dir / "manifest.json"
     if args.action == "manifest":
+        if args.text_identity_profile is not None:
+            raise ValueError("--text-identity-profile cannot rewrite a historical manifest")
         report_dir.mkdir(parents=True, exist_ok=True)
         manifest = build_manifest(root, config)
         manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
@@ -212,7 +221,10 @@ def main(argv: list[str] | None = None) -> None:
         return
     if not manifest_path.is_file():
         raise FileNotFoundError("generation baseline manifest is missing; run the manifest action first")
-    checksums = verify_manifest(root, manifest_path)
+    profile = args.text_identity_profile
+    if profile is not None and not profile.is_absolute():
+        profile = root / profile
+    checksums = verify_manifest(root, manifest_path, text_identity_profile=profile)
     if not checksums["valid"]:
         raise ValueError(f"generation baseline checksum mismatch: {checksums['mismatches']}")
     if args.action == "checksums":
