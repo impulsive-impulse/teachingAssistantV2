@@ -237,6 +237,7 @@ export interface CollectionQuery {
   collection_fingerprint: string;
   question: string;
   backend: Backend;
+  execution_mode: "generated" | "cached_pdf_adapter_replay";
   state: "retrieving" | "generating" | "completed" | "failed";
   error_code: string | null;
   validation_errors: string[];

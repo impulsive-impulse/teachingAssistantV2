@@ -1,0 +1,26 @@
+{
+  "version": "assessment-pdf-demo-v1",
+  "external_pdf_transmission_policy": "Explicit permission and acknowledgment are required for each online invocation; local indexing permission is insufficient.",
+  "backend": "offline",
+  "questions": [
+    {
+      "id": "sunlight-mechanisms",
+      "question": "Does a concave mirror that focuses parallel sun rays at its focal point perform the same conversion of light energy into chemical energy described for photosynthesis? Answer yes or no and cite both textbooks.",
+      "source_roles": {
+        "biology": "Light capture and conversion to chemical energy in photosynthesis.",
+        "physics": "Parallel sunlight converges at the focus of a concave mirror."
+      },
+      "source_review_pages": {"biology": [20, 55], "physics": [14, 27]}
+    },
+    {
+      "id": "bending-response-versus-rays",
+      "question": "Do the coleoptile bending described in Went's auxin experiments and the bending of a light ray between rarer and denser media use the same mechanism? Answer yes or no and use both textbooks to explain the difference.",
+      "source_roles": {
+        "biology": "The coleoptile tip acts through a chemical stimulus identified as auxin.",
+        "physics": "A refracted ray bends and passes through the second medium at an interface."
+      },
+      "source_review_pages": {"biology": [127], "physics": [74, 75]}
+    }
+  ],
+  "limits": "Original PDFs, extracted text, raw local answers and citation quotes remain local. This manifest does not authorize redistribution. A passing receipt still needs semantic source inspection."
+}

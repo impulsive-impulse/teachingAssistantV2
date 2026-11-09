@@ -1,0 +1,84 @@
+{
+  "version": "assessment-demo-validation-v1",
+  "status": "supported_online_with_explicit_cached_adapter_replay",
+  "online_configuration_sha256": "343ab8c780413629928e48f78b21d65c7e8a6632671cd365a7854ddab3cd2a14",
+  "local_failure_configuration_sha256": "0f46379c7ab9d80a62718a89ce5d72545972295dcde9374c34d9e18a0adb4b3a",
+  "backend": "online",
+  "local_profile": "collection-local-extractive-v1",
+  "book_generator_defaults_changed": false,
+  "external_pdf_transmission_authorized": true,
+  "permission_scope": "The user confirmed transmission rights and authorized at most six calls for these two questions. This is not redistribution permission or standing permission for future calls.",
+  "paid_pdf_calls": 6,
+  "known_token_based_cost_estimate_usd": 0.0437425,
+  "cost_is_invoice": false,
+  "online_outcomes": [
+    {
+      "case_id": "sunlight-mechanisms",
+      "query_id": "759d728a-f221-48a5-9a48-290e86e61594",
+      "raw_output_sha256": "87dcf41d55f649922342a06f21f9d928adb5b09ce8890b119c01360ecf634088",
+      "verdict": "supported",
+      "source_pages": {"biology": [55], "physics": [14]},
+      "execution_mode": "generated",
+      "reason": "Source-reviewed contrast between optical convergence and biochemical energy conversion."
+    },
+    {
+      "case_id": "bending-response-versus-rays",
+      "query_id": "6c0feb40-4beb-4476-86fc-987ae035232a",
+      "raw_output_sha256": "b45463913e80c41b4288c7b6e630333a7c00e72b72d359463b94a8f77aae9aff",
+      "verdict": "supported",
+      "source_pages": {"biology": [127], "physics": [74]},
+      "execution_mode": "cached_pdf_adapter_replay",
+      "original_query_id": "b1645e0e-30db-445c-bc62-22a9588708ae",
+      "reason": "The native model selected the correct chemical-stimulus and optical-medium clauses and answered No with extra prose. The explicit yes/no adapter extracts that existing boolean; source clauses are unchanged. This is not fresh inference."
+    }
+  ],
+  "original_paid_query_ids": [
+    "30e99470-32ca-4fb2-85d2-25fce436eeab",
+    "3202edaf-98d5-48a1-86d0-37ac4fda4840",
+    "759d728a-f221-48a5-9a48-290e86e61594",
+    "f898f6bd-e7d8-4fca-b134-99a31ffb1568",
+    "751d46ec-2f51-4667-8099-3bae1179497e",
+    "b1645e0e-30db-445c-bc62-22a9588708ae"
+  ],
+  "original_generation_states": {"completed": 2, "failed_validation": 4},
+  "reviewer": "Assistant source inspection, not independent human review.",
+  "browser_verification": {
+    "collection_sources": 2,
+    "history_rows": 33,
+    "history_excludes_raw_snapshots": true,
+    "cached_replay_label_visible": true,
+    "selected_physics_physical_page": 74,
+    "verified_original_pdf_range_response": 206
+  },
+  "preserved_local_failures": [
+    {
+      "case_id": "sunlight-mechanisms",
+      "query_id": "a559820c-1a02-4b7c-8d8d-fec6cd0ecd8d",
+      "raw_output_sha256": "40644dd179ec66e19bddacc57eb7f7641cf1b6c6113cbec8a9acd92cda806c2b",
+      "generation_status": "insufficient_evidence",
+      "both_sources_cited": false,
+      "generation_latency_seconds": 135.7522,
+      "review": "The selected context did not retain the necessary photosynthesis energy-conversion fact. This is not a successful two-source answer."
+    },
+    {
+      "case_id": "bending-response-versus-rays",
+      "query_id": "b2d86387-ca1c-4aa0-8a5d-3374dc5d275f",
+      "raw_output_sha256": "245269d2ae12f0c5f9586895847fa7d31954fb2d0dca3ecc6b6bacfcf9811b80",
+      "generation_status": "insufficient_evidence",
+      "both_sources_cited": false,
+      "generation_latency_seconds": 166.2597,
+      "review": "Relevant chemical-stimulus and optical-medium clauses were offered, but the local model abstained. This is not a successful two-source answer."
+    }
+  ],
+  "additional_local_attempt": "One isolated Qwen reasoning pass failed JSON decoding. It did not change book/UI defaults and acquired no new model.",
+  "passing_edge_cases": [
+    "Exact physical PDF unit and source-pair resolution",
+    "Unknown and duplicate native source-clause IDs rejected",
+    "Missing evidence can abstain without inventing quotations",
+    "Conflicting values retain both sources without declaring a winner",
+    "One-source answers do not force a second document",
+    "Source-review receipt binds the actual query and raw-output hash",
+    "Public history excludes full private snapshots while diagnostics retain them"
+  ],
+  "limitations": "The supported receipt contains one generated answer and one explicitly labeled zero-call adapter replay, not two fresh successes under the final adapter. The local Qwen demonstration remains unreliable. All failed originals, native outputs, quotes and source text remain in ignored local storage; this report publishes only metadata and source-review judgments. The benchmark generator, validation rules and held-out results were not changed."
+}

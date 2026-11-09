@@ -1,11 +1,13 @@
 # Assessment submission gap plan
 
-Status: T01 and T02 committed and published. T03 is complete; the user has
-authorized implementation through T15 with a separate local commit for each
-task. The user will push all commits manually at the end. T04 is implemented
-and committed locally; T05-T10 are implemented and verified. T11 is next. T16
-visibility, sharing, recording, and submission actions remain outside this
-authorization.
+Status: T01-T12 are complete. T01/T02 were published by the user; T03-T12 are
+published by the user. The user authorized a separate local commit per task
+through T15 and will push manually. T13 now has two source-reviewed online
+answers: one generated and one explicit zero-call adapter replay; local Qwen
+remains unreliable. T14 documents are drafted; T15's genuine fresh evaluation
+is complete and final updated-clone
+regressions are in progress. T16 visibility, sharing, recording and submission
+remain outside this authorization.
 
 ## Confirmed decisions
 
@@ -369,3 +371,68 @@ signoff. Final analysis and compressed raw artifacts are retained and replayable
 Final generation spent 134 new attempts; total so far is 236, estimated
 $1.0855075 from returned token usage. The 180-attempt fresh-rerun reserve is
 untouched. No pushes were performed.
+
+## T13 initial local-only checkpoint: demo gap
+
+The local PDF profile uses explicit source-clause IDs rather than asking Qwen
+to repeatedly copy long quotations. Exact claims and source-pair citations are
+constructed from retained evidence; native selection and adapted output remain
+in ignored diagnostics. Book generation defaults and the frozen benchmark
+execution are unchanged.
+
+New snapshots retain only contributing chunks rather than every PDF chunk.
+Public history projects metadata in SQLite, and the UI stops polling terminal
+history. This fixes roughly 165 MB query snapshots and repeated full-payload
+decoding without deleting the failed diagnostic attempts.
+
+Twenty-nine targeted checks passed for physical-page addressing, exact source
+pairs, missing/conflicting evidence, one-source answers, invalid selections,
+legacy offline limits, bounded history and source-review receipt binding.
+These checks do not replace the two required semantically complete real
+answers. Earlier address-valid answers quoted activities/diagrams; both latest
+default-profile questions abstained. One bounded local reasoning alternative
+failed JSON decoding and was not added as a feature or default.
+
+`reports/assessment_demo_validation_v1.json` records this **incomplete** outcome
+without publishing textbook quotations or extracted text. A successful local
+receipt must have a separate source-support review bound to its exact raw
+answers; citation addresses alone cannot mark the demo complete.
+
+No PDF was sent to OpenAI. The transmission-permission question returned
+user-unavailable, not approval. T13 remains blocked unless a supported local
+path is established or the user explicitly authorizes a permitted online demo.
+The authorized per-task commit records implemented validation work and the
+remaining gap, not a fabricated T13 success.
+
+## T13 authorized online and cached-replay checkpoint
+
+The user subsequently confirmed transmission rights and authorized at most six
+OpenAI calls using retrieved excerpts only. Exactly six were made, with a
+$0.0437425 token-based estimate. No full PDF was uploaded, no paid retry was
+automatic, and no seventh call was made.
+
+The final PDF collection profile selects literal source-clause IDs, preserving
+source punctuation and unit IDs through deterministic adaptation. The frozen
+benchmark prompt, dispatcher, validator and code identities remain unchanged.
+For explicitly yes/no questions, answer adapter v2 extracts an unambiguous
+native Yes/No prefix; it does not guess polarity, repair numeric/entity answers
+or accept contradictory prefixes. The model's original response is retained.
+
+Both real questions now have supported source-reviewed answers. The first is a
+generated answer at Physics 14/Biology 55. The second uses the last genuine
+native response's correct clause selections and No prefix, replayed through
+the corrected adapter at Biology 127/Physics 74. That replay is explicitly
+labeled zero-call, keeps the original failed row immutable, and is **not**
+reported as fresh inference. No new paid allowance was created.
+
+Forty-three focused checks passed. The real browser showed both sources,
+history without raw snapshots, the cached-replay label, exact quoted ranges
+and a verified original PDF link to physical page 74. A separate local review
+is bound to the exact returned answers; `--check --backend online` passed.
+This is assistant source inspection, not independent human signoff.
+
+`reports/assessment_demo_validation_v1.json` records successes, failed paid and
+local originals, cost, replay boundary and browser evidence without publishing
+textbook quotations. T13 is complete with that explicit cached-result boundary;
+local unrestricted Qwen synthesis and two fresh answers under the final
+adapter are not established. Total project attempts are now 376/500.

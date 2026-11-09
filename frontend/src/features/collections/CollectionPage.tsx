@@ -16,10 +16,18 @@ export function CollectionPage() {
   const [acknowledged, setAcknowledged] = useState(false);
   const [citation, setCitation] = useState<ClaimCitation | null>(null);
   const active = collections.data?.find((item) => item.id === selectedId) ?? collections.data?.[0];
+  const ask = useMutation({
+    mutationFn: () => collectionApi.ask(active!.id, question.trim(), backend, acknowledged),
+    onSuccess: () => setQuestion(""),
+    onSettled: () => client.invalidateQueries({ queryKey: ["collection-queries"] }),
+  });
   const history = useQuery({
     queryKey: ["collection-queries", active?.id],
     queryFn: () => collectionApi.history(active!.id),
-    enabled: Boolean(active), refetchInterval: 2000,
+    enabled: Boolean(active),
+    refetchInterval: (query) => ask.isPending || query.state.data?.some(
+      (item) => item.state === "retrieving" || item.state === "generating",
+    ) ? 2000 : false,
   });
   const importBook = useMutation({
     mutationFn: collectionApi.fromBook,
@@ -33,16 +41,12 @@ export function CollectionPage() {
       void client.invalidateQueries({ queryKey: ["collections"] });
     },
   });
-  const ask = useMutation({
-    mutationFn: () => collectionApi.ask(active!.id, question.trim(), backend, acknowledged),
-    onSuccess: () => setQuestion(""),
-    onSettled: () => client.invalidateQueries({ queryKey: ["collection-queries"] }),
-  });
   const error = sources.error ?? collections.error ?? history.error ?? books.error ?? importBook.error ?? create.error ?? ask.error;
   return (
     <main className="collection-page">
       <header><p className="eyebrow">Versioned context layer</p><h1>Ask across documents</h1>
-        <p>Each question is independent. Claims link to original source units; printed page labels are not guessed.</p></header>
+        <p>Each question is independent. Claims link to original source units; printed page labels are not guessed.</p>
+        <p className="subtle">PDF answers select literal source clauses. This profile is separate from the benchmark generator.</p></header>
       {error && <p className="inline-error" role="alert">{error.message}</p>}
       <div className="collection-grid">
         <section className="collection-card" aria-label="Collection and source selection">
@@ -69,7 +73,9 @@ export function CollectionPage() {
           <h2>{active?.title ?? "Create or select a collection"}</h2>
           <p>{active?.documents.map((source) => source.title).join(" + ")}</p>
           {history.data?.map((query) => <article className="collection-answer" key={query.id}>
-            <h3>{query.question}</h3><p className="subtle">{query.backend} · {query.state}</p>
+            <h3>{query.question}</h3><p className="subtle">{query.backend} · {query.state}{
+              query.execution_mode === "cached_pdf_adapter_replay" ? " · cached adapter replay (no new call)" : ""
+            }</p>
             {query.error_code && <p className="inline-error">{query.error_code}: {query.validation_errors.join("; ")}</p>}
             {query.output && <>
               <strong>{query.output.short_answer || "Insufficient evidence"}</strong>

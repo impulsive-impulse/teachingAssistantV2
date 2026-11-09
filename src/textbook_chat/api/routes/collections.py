@@ -111,7 +111,7 @@ def create_collection(payload: CollectionRequest, request: Request) -> dict:
 def queries(collection_id: str, request: Request) -> list[dict]:
     if repository(request).get(collection_id) is None:
         raise HTTPException(404, "Collection not found.")
-    return [public_query(row) for row in CollectionQueryRepository(request.app.state.database).list(collection_id)]
+    return [public_query(row) for row in CollectionQueryRepository(request.app.state.database).list_public(collection_id)]
 
 
 @router.post("/collections/{collection_id}/queries", status_code=201)
@@ -133,3 +133,13 @@ def query_diagnostics(query_id: str, request: Request) -> dict:
         return CollectionQueryRepository(request.app.state.database).get(query_id)
     except LookupError as error:
         raise HTTPException(404, "Collection query not found.") from error
+
+
+@router.post("/collection-queries/{query_id}/replay", status_code=201)
+def replay_query(query_id: str, request: Request) -> dict:
+    try:
+        return request.app.state.collection_service.replay_pdf_query(query_id)
+    except LookupError as error:
+        raise HTTPException(404, "Collection query not found.") from error
+    except (RuntimeError, ValueError) as error:
+        raise HTTPException(409, str(error)) from error

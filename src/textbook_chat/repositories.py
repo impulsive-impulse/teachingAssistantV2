@@ -529,6 +529,21 @@ class CollectionQueryRepository:
             ).fetchall()
         return [self._decode(row) for row in rows]
 
+    def list_public(self, collection_id: str) -> list[dict[str, Any]]:
+        with self.database.connect() as connection:
+            rows = connection.execute(
+                "SELECT id,collection_id,collection_fingerprint,question,backend,state,error_code,"
+                "created_at,completed_at,json_object("
+                "'validation',json_extract(payload_json,'$.validation'),"
+                "'usage',json_extract(payload_json,'$.usage'),"
+                "'timing',json_extract(payload_json,'$.timing'),"
+                "'execution_mode',json_extract(payload_json,'$.execution_mode'),"
+                "'provider_identity',json_extract(payload_json,'$.provider_identity')) AS payload_json "
+                "FROM collection_queries WHERE collection_id=? ORDER BY created_at,id",
+                (collection_id,),
+            ).fetchall()
+        return [self._decode(row) for row in rows]
+
     def interrupt_active(self) -> None:
         with self.database.connect() as connection:
             connection.execute(

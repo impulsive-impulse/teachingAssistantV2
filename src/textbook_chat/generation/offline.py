@@ -230,22 +230,32 @@ class OfflineRuntimeManager:
                     self._server = None
                     self._initialization = None
 
-    def request_payload(self, prompt: str) -> dict[str, Any]:
+    def request_payload(
+        self, prompt: str, *, json_schema: dict[str, Any] | None = None,
+        max_output_tokens: int | None = None,
+    ) -> dict[str, Any]:
         """Return the frozen OpenAI-compatible llama.cpp request contract."""
 
+        limit = int(self.generation["max_output_tokens"]) if max_output_tokens is None else max_output_tokens
+        if isinstance(limit, bool) or not isinstance(limit, int) or not 1 <= limit <= 768:
+            raise ValueError("explicit collection output ceiling must be between 1 and 768")
         return {
             "messages": [{"role": "user", "content": prompt}],
             "temperature": float(self.generation["temperature"]),
             "seed": int(self.generation["seed"]),
-            "max_tokens": int(self.generation["max_output_tokens"]),
+            "max_tokens": limit,
             "stream": True,
             "stream_options": {"include_usage": True},
-            "response_format": {"type": "json_object"},
+            "response_format": (
+                {"type": "json_object"} if json_schema is None else
+                {"type": "json_schema", "json_schema": {"name": "collection_claims", "schema": json_schema}}
+            ),
             "chat_template_kwargs": {"enable_thinking": bool(self.generation["thinking"])},
         }
 
     def stream(
-        self, prompt: str, cancel: threading.Event | None = None
+        self, prompt: str, cancel: threading.Event | None = None, *,
+        json_schema: dict[str, Any] | None = None, max_output_tokens: int | None = None,
     ) -> Iterator[ProviderStreamEvent]:
         """Stream content deltas from the one resident offline server slot."""
 
@@ -266,7 +276,9 @@ class OfflineRuntimeManager:
             })
             request = urllib.request.Request(
                 f"http://127.0.0.1:{server.config.port}/v1/chat/completions",
-                data=json.dumps(self.request_payload(prompt)).encode("utf-8"),
+                data=json.dumps(self.request_payload(
+                    prompt, json_schema=json_schema, max_output_tokens=max_output_tokens,
+                )).encode("utf-8"),
                 headers={"Content-Type": "application/json"},
             )
             started = time.perf_counter()

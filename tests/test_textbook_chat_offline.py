@@ -89,6 +89,19 @@ def test_offline_request_matches_evaluated_cpu_profile(tmp_path: Path) -> None:
     assert payload["response_format"] == {"type": "json_object"}
 
 
+def test_collection_schema_and_ceiling_are_explicit_and_do_not_mutate_book_defaults(tmp_path: Path) -> None:
+    runtime = OfflineRuntimeManager(_settings(tmp_path), OfflineArtifactRegistry(_settings(tmp_path)))
+    schema = {"type": "object", "properties": {"status": {"type": "string"}}}
+    payload = runtime.request_payload("collection", json_schema=schema, max_output_tokens=768)
+    assert payload["max_tokens"] == 768
+    assert payload["response_format"]["json_schema"]["schema"] == schema
+    assert runtime.request_payload("book")["max_tokens"] == 384
+    assert runtime.request_payload("book")["response_format"] == {"type": "json_object"}
+    for invalid in (0, 769, True, "768"):
+        with pytest.raises(ValueError, match="ceiling"):
+            runtime.request_payload("collection", max_output_tokens=invalid)
+
+
 def test_x64_python_on_native_windows_arm64_is_compatible(tmp_path: Path) -> None:
     registry = OfflineArtifactRegistry(_settings(tmp_path))
     with (

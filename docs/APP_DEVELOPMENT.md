@@ -293,9 +293,27 @@ their online/offline controls are unchanged.
 
 Collection questions are independent, with durable history. They share the
 assessment selector, 1,024-token context renderer and quoted claim validator.
-The offline backend reuses the resident frozen Qwen runtime (384 output tokens);
-the benchmark uses online GPT-4o (768). The PDF demonstration is not a benchmark
-comparison between these differently sized generators.
+The offline backend reuses the resident frozen Qwen runtime. Book chats keep
+their 384-token contract; collection requests explicitly allow up to 768.
+PDF collections use a separate `collection-local-extractive-v1` profile: a
+query-ranked shortlist of literal source clauses is displayed to the model,
+which selects IDs and a short synthesis. The adapter constructs exact claims
+and citations, retaining both native selections and adapted output in diagnostics.
+Deictic clauses retain their preceding sentence; activities/questions are not
+offered as answers. Abstention and one-source answers remain possible. Source
+selection and citation validity do not prove semantic completeness.
+
+The assessment benchmark keeps its frozen online GPT-4o generator, prompt and
+768-token ceiling. Local extractive PDF demonstrations are **not** benchmark
+arms or evidence that unrestricted local paraphrasing has been solved.
+Online PDF collections use `collection-online-extractive-v1`: the model selects
+IDs from the same literal-clause shortlist, and the adapter constructs claims
+and exact citations. This avoids invented sentence IDs and changed quotation
+punctuation without relaxing validation. Native selections, source options,
+adapted output and actual prompt/schema checksum remain in diagnostics.
+The prepared PDF request shares the original ledger, provider, pricing and
+fingerprint helpers; its explicit contingency dispatch leaves the frozen
+benchmark dispatcher's original prompt/schema and code identity untouched.
 
 Online collection queries require explicit permission to transmit excerpts,
 use the original shared 500-attempt ledger, and consume only its 80-call
@@ -306,6 +324,10 @@ external PDF transmission. No automatic backend fallback or paid retry exists.
 .\.venv-assessment\Scripts\python.exe scripts\ingest_assessment.py --demo --authorized-demo-use
 .\.venv-assessment\Scripts\python.exe scripts\ask_collection.py
 .\.venv-assessment\Scripts\python.exe scripts\ask_collection.py --collection <id> --backend offline --question "<question>"
+# Only when permission covers transmitting retrieved textbook excerpts:
+.\.venv-assessment\Scripts\python.exe scripts\validate_assessment_demo.py --backend online --authorize-online-transmission
+# Recheck retained answers and their separate source-support review; zero calls:
+.\.venv-assessment\Scripts\python.exe scripts\validate_assessment_demo.py --backend online --check
 ```
 
 HTTP: `GET /api/sources`, `POST /api/sources/from-book/{book_id}`,
@@ -316,6 +338,17 @@ HTTP: `GET /api/sources`, `POST /api/sources/from-book/{book_id}`,
 snapshot, context, validation and safe failure metadata. Failed/invalid output
 is never rendered as a grounded answer. Active queries close explicitly as
 failed after a process restart rather than silently resuming paid work.
+Public history projects answer/usage metadata in SQLite instead of loading raw
+source snapshots into Python. The UI polls only during active queries; full
+snapshots and prior failed attempts remain available through diagnostics.
+The demo CLI's `--reuse-query <id>` can explicitly retain a prior successful
+answer after rechecking its question, backend, collection and source claims.
+It is marked as reuse and does not count the original attempt as a new call.
+`--replay-query <id>` or `POST /api/collection-queries/{id}/replay` reapplies the
+PDF adapter to retained native output without retrieval or provider dispatch.
+It creates a separately labeled result and leaves the original failure intact.
+Adapter v2 extracts only an unambiguous leading Yes/No when explicitly requested
+by the question; numeric/entity answers and quotations are not repaired.
 
 Citations show exact quotations and original code-point ranges. PDF links open
 `GET /api/sources/{document_id}/file#page=<physical-page>` after original-byte
